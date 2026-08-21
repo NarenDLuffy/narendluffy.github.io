@@ -1,6 +1,7 @@
 import { queryOptions } from "@tanstack/react-query";
 import { mockSchedule } from "@/data/mockSchedule";
 import type { ScheduleBundle, Session } from "@/types/schedule";
+import { probeLocalSchedule, type ScheduleOrigin } from "./localSource";
 
 /**
  * Single read boundary for schedule data.
@@ -36,28 +37,44 @@ export interface ScheduleResult {
   bundle: ScheduleBundle;
   /** true when served from local cache or bundled fallback */
   stale: boolean;
+  /** which source produced the bundle currently displayed */
+  origin: ScheduleOrigin;
   error?: string;
 }
 
 export async function loadSchedule(): Promise<ScheduleResult> {
   if (typeof window === "undefined") {
-    return { bundle: mockSchedule, stale: false };
+    return { bundle: mockSchedule, stale: false, origin: "public" };
   }
+
+  let publicBundle: ScheduleBundle | null = null;
+  let publicError: string | undefined;
+
   try {
     const res = await fetch("/schedule/schedule.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const bundle = (await res.json()) as ScheduleBundle;
     if (!bundle?.sessions?.length) throw new Error("empty schedule");
     writeCache(bundle);
-    return { bundle, stale: false };
+    publicBundle = bundle;
   } catch (err) {
-    const cached = readCache();
-    if (cached) {
-      return { bundle: cached, stale: true, error: (err as Error).message };
-    }
-    // Reliability rule: never render an empty timetable.
-    return { bundle: mockSchedule, stale: true, error: (err as Error).message };
+    publicError = (err as Error).message;
   }
+
+  // Optional meeting-local source: only used when it is actually newer.
+  const local = await probeLocalSchedule(publicBundle);
+  if (local) {
+    writeCache(local);
+    return { bundle: local, stale: false, origin: "meeting-local" };
+  }
+
+  if (publicBundle) return { bundle: publicBundle, stale: false, origin: "public" };
+
+  const cached = readCache();
+  if (cached) return { bundle: cached, stale: true, origin: "public", error: publicError };
+
+  // Reliability rule: never render an empty timetable.
+  return { bundle: mockSchedule, stale: true, origin: "public", error: publicError };
 }
 
 export const scheduleQueryOptions = queryOptions({
