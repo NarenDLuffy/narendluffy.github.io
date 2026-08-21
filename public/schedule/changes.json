@@ -1,0 +1,64 @@
+[
+  {
+    "changeId": "c1",
+    "meetingId": "RAN1-126",
+    "detectedAt": "2026-08-21T12:37:00Z",
+    "type": "room_changed",
+    "title": "AI 10.8.2 moved",
+    "detail": "ISAC channel modelling changed room",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "from": "1.1 Himalaya",
+    "to": "0.6/0.7 Madrid/Lisbon",
+    "sourceIds": [
+      "hiroki-v07-1"
+    ]
+  },
+  {
+    "changeId": "c2",
+    "meetingId": "RAN1-126",
+    "detectedAt": "2026-08-21T11:58:00Z",
+    "type": "end_time_changed",
+    "title": "6G Waveform extended",
+    "detail": "Session end time extended",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "from": "16:30",
+    "to": "17:00",
+    "sourceIds": [
+      "main-v07"
+    ]
+  },
+  {
+    "changeId": "c3",
+    "meetingId": "RAN1-126",
+    "detectedAt": "2026-08-21T09:12:00Z",
+    "type": "agenda_item_added",
+    "title": "AI 10.5.4.3 added",
+    "detail": "Model transfer added to Friday AI/ML session",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "to": "0.6/0.7 Madrid/Lisbon 10:30-12:00",
+    "sourceIds": [
+      "sorour-v03"
+    ]
+  },
+  {
+    "changeId": "c4",
+    "meetingId": "RAN1-126",
+    "detectedAt": "2026-08-20T18:40:00Z",
+    "type": "session_added",
+    "title": "A-IoT extra session added",
+    "detail": "Additional A-IoT session on Friday morning",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "to": "0.4 Brussels 10:30-12:00",
+    "sourceIds": [
+      "main-v07"
+    ]
+  }
+]

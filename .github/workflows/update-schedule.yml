@@ -1,0 +1,59 @@
+name: Update schedule
+
+on:
+  schedule:
+    # Every 5 minutes during typical RAN1 meeting hours (Mon-Fri, 06:00-18:00 UTC).
+    - cron: "*/5 6-18 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force full schedule rebuild (ignore source hashes)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: update-schedule
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install ingestion dependencies
+        run: pip install -r ingestion/requirements.txt
+
+      - name: Restore source state cache
+        uses: actions/cache@v4
+        with:
+          path: .ingestion-state
+          key: ingestion-state-${{ github.run_id }}
+          restore-keys: ingestion-state-
+
+      # NOTE: hosted runners cannot reach the meeting-local 10.10.10.10 server.
+      # The public 3GPP source is always used here; meeting-local data is only
+      # ever read client-side by delegates on the venue network.
+      - name: Refresh schedule from public 3GPP sources
+        run: |
+          python -m ingestion.generate_schedule ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit updated schedule
+        run: |
+          if [ -n "$(git status --porcelain public/schedule)" ]; then
+            git config user.name "ran1-live-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add public/schedule
+            git commit -m "chore(schedule): refresh from 3GPP sources"
+            git push
+          else
+            echo "No schedule changes."
+          fi
