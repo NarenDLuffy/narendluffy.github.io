@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import type { Room, Session } from "@/types/schedule";
-import { minutesOf } from "@/services/schedule";
+import { minutesOf } from "@/services/scheduleService";
 import { topicStyle } from "@/lib/topics";
 import { cn } from "@/lib/utils";
 
@@ -52,8 +52,8 @@ export function Timetable({
               className="w-40 shrink-0 border-r border-border px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
             >
               {room.roomName}
-              {room.area ? (
-                <div className="text-[10px] font-normal text-muted-foreground">{room.area}</div>
+              {room.floor ? (
+                <div className="text-[10px] font-normal text-muted-foreground">{room.floor}</div>
               ) : null}
             </Link>
           ))}

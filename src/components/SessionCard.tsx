@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Info, Star, Flag } from "lucide-react";
 import { useState } from "react";
 import type { ScheduleBundle, Session } from "@/types/schedule";
-import { sourceLabel } from "@/services/schedule";
+import { sourceLabel } from "@/services/scheduleService";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { topicStyle } from "@/lib/topics";
 import { cn } from "@/lib/utils";

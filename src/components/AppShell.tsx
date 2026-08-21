@@ -1,9 +1,8 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Clock, CalendarDays, Star, Building2, DoorOpen, GitCompareArrows } from "lucide-react";
 import type { ReactNode } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { scheduleQueryOptions } from "@/services/schedule";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { formatDateRange } from "@/services/meetingService";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -14,58 +13,46 @@ const NAV = [
   { to: "/company", label: "Company", icon: Building2 },
 ] as const;
 
-function formatRange(startDate: string, endDate: string) {
-  const s = new Date(`${startDate}T00:00:00Z`);
-  const e = new Date(`${endDate}T00:00:00Z`);
-  const day = (d: Date) => d.getUTCDate();
-  const month = new Intl.DateTimeFormat("en-GB", { month: "long", timeZone: "UTC" }).format(e);
-  return `${day(s)}-${day(e)} ${month} ${e.getUTCFullYear()}`;
-}
+const STATUS_LABEL = {
+  active: "Current meeting",
+  upcoming: "Upcoming",
+  completed: "Archived",
+} as const;
 
 export function AppShell({ children }: { children: ReactNode }) {
-  const { data } = useQuery(scheduleQueryOptions);
+  const { meeting, bundle, stale, clock, isCurrent } = useActiveMeeting();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const bundle = data?.bundle;
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
-  );
 
-  const updatedAt = bundle
-    ? new Intl.DateTimeFormat("en-GB", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-        timeZone: bundle.meeting.timezone,
-      }).format(new Date(bundle.generatedAt))
-    : "--:--";
+  const updatedAt =
+    bundle && meeting
+      ? new Intl.DateTimeFormat("en-GB", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+          timeZone: meeting.timezone,
+        }).format(new Date(bundle.generatedAt))
+      : "--:--";
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-30 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-2.5">
-          <Link to="/" className="min-w-0 flex-1">
+          <Link to="/meetings" className="min-w-0 flex-1" aria-label="Switch meeting">
             <div className="flex items-baseline gap-2">
               <span className="mono-code text-base font-semibold tracking-tight">
-                {bundle?.meeting.meetingName ?? "RAN1 Live"}
+                {meeting?.name ?? "RAN1 Live"}
               </span>
               <span className="truncate text-xs text-muted-foreground">
-                {bundle
-                  ? `${bundle.meeting.city} · ${formatRange(bundle.meeting.startDate, bundle.meeting.endDate)}`
-                  : "loading schedule"}
+                {meeting
+                  ? `${meeting.city ?? ""}${meeting.city ? " · " : ""}${formatDateRange(meeting.startDate, meeting.endDate)}`
+                  : "discovering meetings"}
               </span>
             </div>
             <div className="mono-code text-[11px] text-muted-foreground">
-              Updated {updatedAt}
-              {data?.stale ? " · cached copy" : ""}
+              {meeting ? STATUS_LABEL[meeting.status] : "…"}
+              {!isCurrent && meeting ? " · switch" : ""}
+              {bundle ? ` · updated ${updatedAt}` : " · no schedule yet"}
+              {stale ? " · cached" : ""}
             </div>
           </Link>
 
@@ -91,10 +78,24 @@ export function AppShell({ children }: { children: ReactNode }) {
             >
               Changes
             </Link>
+            <Link
+              to="/meetings"
+              className={cn(
+                "rounded-md px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+                pathname.startsWith("/meetings") && "bg-secondary text-foreground",
+              )}
+            >
+              Meetings
+            </Link>
           </nav>
 
-          <div className="mono-code shrink-0 rounded-md bg-secondary px-2 py-1 text-sm font-semibold tabular">
+          <div className="mono-code shrink-0 rounded-md bg-secondary px-2 py-1 text-right text-sm font-semibold tabular">
             {clock.localTime || "--:--"}
+            {clock.differsFromDevice ? (
+              <span className="block text-[10px] font-normal text-muted-foreground">
+                you {clock.deviceTime}
+              </span>
+            ) : null}
           </div>
         </div>
       </header>
@@ -103,7 +104,10 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
         Unofficial RAN1 meeting companion. Schedule information is automatically generated from
-        meeting documents and may contain errors.
+        meeting documents and may contain errors.{" "}
+        <Link to="/admin" className="underline underline-offset-2">
+          Ingestion status
+        </Link>
       </p>
 
       <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 backdrop-blur md:hidden">
