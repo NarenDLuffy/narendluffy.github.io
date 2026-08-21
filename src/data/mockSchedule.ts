@@ -118,8 +118,8 @@ function buildSessions(): Session[] {
   const sessions: Session[] = [];
 
   DAYS.forEach((d, dayIndex) => {
-    DAY_PLANS[dayIndex].forEach((slot, i) => {
-      const t = TOPICS[slot.topicKey];
+    (DAY_PLANS[dayIndex] ?? []).forEach((slot, i) => {
+      const t = TOPICS[slot.topicKey]!;
       const items = slot.items ?? t.items.slice(0, 1);
       const detailed = slot.topicKey === "isac" || slot.topicKey === "aiml";
       sessions.push({
