@@ -39,7 +39,7 @@ export interface ScheduleResult {
   stale: boolean;
   /** which source produced the bundle currently displayed */
   origin: ScheduleOrigin;
-  error?: string;
+  error?: string | undefined;
 }
 
 export async function loadSchedule(): Promise<ScheduleResult> {
