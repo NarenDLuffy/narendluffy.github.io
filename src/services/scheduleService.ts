@@ -117,11 +117,12 @@ export async function loadSchedule(meeting: Meeting): Promise<ScheduleResult> {
   if (publicBundle) return { bundle: publicBundle, stale: false, origin: "public" };
 
   const cached = readCache(slug);
-  if (cached) return { bundle: { ...cached, meeting }, stale: true, origin: "public", error };
+  if (cached)
+    return { bundle: { ...cached, meeting }, stale: true, origin: "public", ...(error ? { error } : {}) };
 
   // No schedule published yet for this meeting: that is a normal state before
   // meeting week, never an error page.
-  return { bundle: null, stale: false, origin: "public", error };
+  return { bundle: null, stale: false, origin: "public", ...(error ? { error } : {}) };
 }
 
 export function scheduleQueryOptions(meeting: Meeting | undefined) {
