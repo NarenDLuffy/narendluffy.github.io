@@ -1,13 +1,24 @@
 name: Update schedule
 
+# Event-aware refresh. The workflow itself never knows which meeting is
+# current: the ingestion pipeline discovers that, and the cadence below simply
+# covers "meeting week" hours densely and everything else sparsely. A meeting
+# that starts, moves or ends therefore needs no workflow change.
 on:
   schedule:
-    # Every 5 minutes during typical RAN1 meeting hours (Mon-Fri, 06:00-18:00 UTC).
-    - cron: "*/5 6-18 * * 1-5"
+    # Meeting-week cadence: every 5 minutes, Mon-Fri, 05:00-19:00 UTC.
+    - cron: "*/5 5-19 * * 1-5"
+    # Between meetings / outside session hours: hourly, so a newly published
+    # meeting folder or a pre-meeting schedule is picked up on its own.
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       force:
         description: "Force full schedule rebuild (ignore source hashes)"
+        type: boolean
+        default: false
+      fixtures:
+        description: "Publish the demonstration meetings instead of live documents"
         type: boolean
         default: false
 
@@ -39,20 +50,22 @@ jobs:
           key: ingestion-state-${{ github.run_id }}
           restore-keys: ingestion-state-
 
-      # NOTE: hosted runners cannot reach the meeting-local 10.10.10.10 server.
-      # The public 3GPP source is always used here; meeting-local data is only
-      # ever read client-side by delegates on the venue network.
-      - name: Refresh schedule from public 3GPP sources
+      # NOTE: hosted runners cannot reach the meeting-local source (10.10.10.10).
+      # The public 3GPP source is always used here; meeting-local documents are
+      # only ever read client-side by delegates on the venue network.
+      - name: Discover meetings and refresh schedules
         run: |
-          python -m ingestion.generate_schedule ${{ inputs.force && '--force' || '' }}
+          python -m ingestion.generate_schedule \
+            ${{ inputs.force && '--force' || '' }} \
+            ${{ inputs.fixtures && '--fixtures' || '' }}
 
-      - name: Commit updated schedule
+      - name: Commit updated data
         run: |
-          if [ -n "$(git status --porcelain public/schedule)" ]; then
+          if [ -n "$(git status --porcelain public/data)" ]; then
             git config user.name "ran1-live-bot"
             git config user.email "bot@users.noreply.github.com"
-            git add public/schedule
-            git commit -m "chore(schedule): refresh from 3GPP sources"
+            git add public/data
+            git commit -m "chore(data): refresh meetings and schedules from 3GPP sources"
             git push
           else
             echo "No schedule changes."
