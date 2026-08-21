@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
-import { AlertTriangle, ArrowRight, WifiOff } from "lucide-react";
-import { scheduleQueryOptions, minutesOf } from "@/services/schedule";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { AlertTriangle, ArrowRight } from "lucide-react";
+import { minutesOf } from "@/services/scheduleService";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { SessionCard } from "@/components/SessionCard";
 import { ChangesLink } from "@/components/AppShell";
+import { MeetingBanner } from "@/components/MeetingBanner";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,31 +20,32 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Live, searchable RAN1 meeting schedule built from the chair and sub-chair documents.",
+          "Live, searchable RAN1 meeting schedule built automatically from the published meeting documents.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: NowPage,
 });
 
 function NowPage() {
-  const { data, isLoading } = useQuery(scheduleQueryOptions);
-  const bundle = data?.bundle;
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
+  const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
+
+  if (isLoading) return <LoadingState />;
+  if (!meeting) return <NoMeetingState />;
+
+  const banner = (
+    <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
   );
 
-  if (isLoading || !bundle) {
-    return <p className="py-10 text-center text-sm text-muted-foreground">Loading schedule…</p>;
+  if (!bundle || bundle.sessions.length === 0) {
+    return (
+      <div className="space-y-4">
+        {banner}
+        <NoScheduleState meeting={meeting} />
+      </div>
+    );
   }
 
   const dates = [...new Set(bundle.sessions.map((s) => s.date))].sort();
@@ -65,28 +67,20 @@ function NowPage() {
 
   return (
     <div className="space-y-6">
-      {data?.stale ? (
-        <div className="flex items-start gap-2 rounded-md border border-warn/40 bg-warn/10 p-3 text-sm">
-          <WifiOff className="mt-0.5 size-4 text-warn" />
-          <div>
-            <div className="font-medium">Showing cached schedule</div>
-            <div className="text-xs text-muted-foreground">
-              Last successful download {new Date(bundle.generatedAt).toLocaleTimeString()}
-            </div>
-          </div>
-        </div>
-      ) : null}
+      {banner}
 
       <section>
         <div className="mb-2 flex items-baseline justify-between">
-          <h1 className="text-lg font-semibold">Happening now</h1>
+          <h1 className="text-lg font-semibold">
+            {isToday ? "Happening now" : `Day plan · ${daySessions[0]?.day ?? today}`}
+          </h1>
           <span className="mono-code text-sm text-muted-foreground tabular">
-            {isToday ? clock.localTime : `${bundle.meeting.city} time`}
+            {isToday ? clock.localTime : `${meeting.city ?? "meeting"} time`}
           </span>
         </div>
         {live.length === 0 ? (
           <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
-            No session running right now.
+            {isToday ? "No session running right now." : "Not a meeting day."}
           </p>
         ) : (
           <div className="space-y-2">
@@ -98,11 +92,11 @@ function NowPage() {
       </section>
 
       <section>
-        <h2 className="mb-2 text-lg font-semibold">Starting next</h2>
+        <h2 className="mb-2 text-lg font-semibold">{isToday ? "Starting next" : "Sessions"}</h2>
         <div className="space-y-2">
           {next.length === 0 ? (
             <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
-              Nothing else scheduled today.
+              Nothing else scheduled.
             </p>
           ) : (
             next.map((s) => <SessionCard key={s.sessionId} session={s} bundle={bundle} compact />)
@@ -110,24 +104,26 @@ function NowPage() {
         </div>
       </section>
 
-      <section className="space-y-2">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold">Latest changes</h2>
-          <ChangesLink />
-        </div>
-        {latestChanges.map((c) => (
-          <div key={c.changeId} className="rounded-lg border border-border bg-card p-3 text-sm">
-            <div className="flex items-center gap-2">
-              <AlertTriangle className="size-4 text-warn" />
-              <span className="font-medium">{c.title}</span>
-            </div>
-            <div className="mono-code mt-1 text-xs text-muted-foreground">
-              {c.from ? `${c.from} → ` : ""}
-              {c.to}
-            </div>
+      {latestChanges.length > 0 ? (
+        <section className="space-y-2">
+          <div className="flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Latest changes</h2>
+            <ChangesLink />
           </div>
-        ))}
-      </section>
+          {latestChanges.map((c) => (
+            <div key={c.changeId} className="rounded-lg border border-border bg-card p-3 text-sm">
+              <div className="flex items-center gap-2">
+                <AlertTriangle className="size-4 text-warn" />
+                <span className="font-medium">{c.title}</span>
+              </div>
+              <div className="mono-code mt-1 text-xs text-muted-foreground">
+                {c.from ? `${c.from} → ` : ""}
+                {c.to}
+              </div>
+            </div>
+          ))}
+        </section>
+      ) : null}
 
       <Link
         to="/schedule"

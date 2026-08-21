@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
 import { ChevronRight } from "lucide-react";
-import { scheduleQueryOptions, minutesOf } from "@/services/schedule";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { minutesOf } from "@/services/scheduleService";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { MeetingBanner } from "@/components/MeetingBanner";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/rooms/")({
   head: () => ({
@@ -17,33 +18,37 @@ export const Route = createFileRoute("/rooms/")({
         property: "og:description",
         content: "Room-by-room view of the RAN1 meeting week: now, next and session leads.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: RoomsPage,
 });
 
 function RoomsPage() {
-  const { data } = useQuery(scheduleQueryOptions);
-  const bundle = data?.bundle;
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
+  const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
+
+  if (isLoading) return <LoadingState label="Loading rooms…" />;
+  if (!meeting) return <NoMeetingState />;
+
+  const banner = (
+    <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
   );
 
-  if (!bundle) return <p className="py-10 text-center text-sm text-muted-foreground">Loading…</p>;
+  if (!bundle || bundle.rooms.length === 0) {
+    return (
+      <div className="space-y-4">
+        {banner}
+        <NoScheduleState meeting={meeting} />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-3">
+      {banner}
       <h1 className="text-lg font-semibold">Rooms</h1>
-      <p className="text-xs text-muted-foreground">{bundle.meeting.venue}</p>
+      <p className="text-xs text-muted-foreground">{meeting.venue ?? meeting.city ?? ""}</p>
       <ul className="space-y-2">
         {bundle.rooms.map((room) => {
           const todays = bundle.sessions.filter(
@@ -66,7 +71,7 @@ function RoomsPage() {
                   <span className="block truncate text-xs text-muted-foreground">
                     {live
                       ? `Now: ${live.topic}${live.agendaItems.length ? ` · ${live.agendaItems.join(", ")}` : ""}`
-                      : room.area ?? "No session running"}
+                      : (room.floor ?? room.description ?? "No session running")}
                   </span>
                 </span>
                 <ChevronRight className="size-4 text-muted-foreground" />

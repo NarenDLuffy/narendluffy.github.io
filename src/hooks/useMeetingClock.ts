@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
-import type { Meeting, Session } from "@/types/schedule";
-import { minutesOf } from "@/services/schedule";
+import type { Session } from "@/types/schedule";
+import { minutesOf } from "@/services/scheduleService";
 
-/** Ticking clock expressed in the meeting venue timezone. */
-export function useMeetingClock(meeting: Meeting, tickMs = 30_000) {
+/**
+ * Ticking clock expressed in the meeting timezone. NOW is always meeting-local,
+ * never device-local; the device time is exposed separately so the UI can show
+ * both when they differ.
+ */
+export function useMeetingClock(timezone: string, tickMs = 30_000) {
   const [now, setNow] = useState<Date | null>(null);
+  const tz = timezone || "UTC";
 
   useEffect(() => {
     const tick = () => setNow(new Date());
@@ -13,15 +18,25 @@ export function useMeetingClock(meeting: Meeting, tickMs = 30_000) {
     return () => clearInterval(id);
   }, [tickMs]);
 
-  const fmt = (opts: Intl.DateTimeFormatOptions) =>
+  const fmt = (opts: Intl.DateTimeFormatOptions, zone?: string) =>
     now
-      ? new Intl.DateTimeFormat("en-GB", { timeZone: meeting.timezone, ...opts }).format(now)
+      ? new Intl.DateTimeFormat("en-GB", { timeZone: zone ?? tz, ...opts }).format(now)
       : "";
 
-  const localTime = fmt({ hour: "2-digit", minute: "2-digit", hour12: false });
+  const timeOpts: Intl.DateTimeFormatOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  };
+
+  const localTime = fmt(timeOpts);
+  const deviceZone =
+    typeof Intl !== "undefined" ? Intl.DateTimeFormat().resolvedOptions().timeZone : tz;
+  const deviceTime = fmt(timeOpts, deviceZone);
+
   const localDate = now
     ? new Intl.DateTimeFormat("en-CA", {
-        timeZone: meeting.timezone,
+        timeZone: tz,
         year: "numeric",
         month: "2-digit",
         day: "2-digit",
@@ -30,7 +45,17 @@ export function useMeetingClock(meeting: Meeting, tickMs = 30_000) {
 
   const nowMinutes = localTime ? minutesOf(localTime) : 0;
 
-  return { ready: now !== null, now, localTime, localDate, nowMinutes };
+  return {
+    ready: now !== null,
+    now,
+    timezone: tz,
+    localTime,
+    localDate,
+    nowMinutes,
+    deviceTime,
+    deviceZone,
+    differsFromDevice: Boolean(localTime && deviceTime && localTime !== deviceTime),
+  };
 }
 
 export function isLive(session: Session, date: string, nowMinutes: number) {

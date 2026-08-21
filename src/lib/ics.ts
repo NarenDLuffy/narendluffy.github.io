@@ -24,7 +24,7 @@ export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
     "VERSION:2.0",
     "PRODID:-//RAN1 Live//Unofficial RAN1 companion//EN",
     "CALSCALE:GREGORIAN",
-    `X-WR-CALNAME:${esc(`${bundle.meeting.meetingName} — My agenda`)}`,
+    `X-WR-CALNAME:${esc(`${bundle.meeting.name} — My agenda`)}`,
   ];
 
   sessions.forEach((s) => {
@@ -35,7 +35,7 @@ export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
       `DTSTART;TZID=${bundle.meeting.timezone}:${dt(s.date, s.startTime)}`,
       `DTEND;TZID=${bundle.meeting.timezone}:${dt(s.date, s.endTime)}`,
       `SUMMARY:${esc(`${s.topic}${s.agendaItems.length ? ` (${s.agendaItems.join(", ")})` : ""}`)}`,
-      `LOCATION:${esc(`${s.roomName}, ${bundle.meeting.venue}`)}`,
+      `LOCATION:${esc(`${s.roomName}${bundle.meeting.venue ? `, ${bundle.meeting.venue}` : ""}`)}`,
       `DESCRIPTION:${esc(
         [
           s.sessionLead ? `Lead: ${s.sessionLead}` : "",

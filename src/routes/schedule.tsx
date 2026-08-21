@@ -1,19 +1,15 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { z } from "zod";
 import { Crosshair, Search, X } from "lucide-react";
-import {
-  scheduleQueryOptions,
-  meetingDates,
-  sessionMatchesAgenda,
-  searchSession,
-} from "@/services/schedule";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { meetingDates, sessionMatchesAgenda, searchSession } from "@/services/scheduleService";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { DayTabs } from "@/components/DayTabs";
 import { Timetable } from "@/components/Timetable";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { SourcePanel } from "@/components/SourcePanel";
+import { MeetingBanner } from "@/components/MeetingBanner";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
@@ -38,34 +34,34 @@ export const Route = createFileRoute("/schedule")({
         property: "og:description",
         content: "Room-by-room RAN1 timetable with agenda-item filters you can share by URL.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: SchedulePage,
 });
 
 function SchedulePage() {
-  const { data, isLoading } = useQuery(scheduleQueryOptions);
+  const { meeting, bundle, stale, isCurrent, isLoading, origin, clock } = useActiveMeeting();
   const search = Route.useSearch();
   const navigate = useNavigate({ from: "/schedule" });
   const [nowKey, setNowKey] = useState(0);
   const { bookmarks } = useBookmarks();
-  const bundle = data?.bundle;
 
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
+  if (isLoading) return <LoadingState label="Loading timetable…" />;
+  if (!meeting) return <NoMeetingState />;
+
+  const banner = (
+    <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
   );
 
-  if (isLoading || !bundle) {
-    return <p className="py-10 text-center text-sm text-muted-foreground">Loading timetable…</p>;
+  if (!bundle || bundle.sessions.length === 0) {
+    return (
+      <div className="space-y-4">
+        {banner}
+        <NoScheduleState meeting={meeting} />
+      </div>
+    );
   }
 
   const days = meetingDates(bundle);
@@ -93,13 +89,15 @@ function SchedulePage() {
 
   return (
     <div className="space-y-3">
+      {banner}
+
       <div className="flex items-center gap-2">
         <div className="relative flex-1">
           <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
           <input
             value={q}
             onChange={(e) => setSearch({ q: e.target.value || undefined })}
-            placeholder="Search topic, room, AI, lead"
+            placeholder="Search topic, room, agenda item, lead"
             className="min-h-11 w-full rounded-md border border-input bg-card pl-9 pr-3 text-sm outline-none focus:ring-2 focus:ring-ring"
           />
         </div>
@@ -162,7 +160,7 @@ function SchedulePage() {
         scrollToNowKey={nowKey}
       />
 
-      <SourcePanel bundle={bundle} origin={data?.origin ?? "public"} />
+      <SourcePanel bundle={bundle} meeting={meeting} origin={origin} />
     </div>
   );
 }

@@ -24,7 +24,7 @@ def detect_changes(previous: dict | None, bundle: ScheduleBundle) -> list[Schedu
         changes.append(
             ScheduleChange(
                 changeId=f"{change_type}-{session['sessionId']}-{now}",
-                meetingId=bundle.meeting.meetingId,
+                meetingId=bundle.meeting.id,
                 detectedAt=now,
                 type=change_type,
                 title=title,

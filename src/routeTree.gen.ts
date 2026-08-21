@@ -10,16 +10,24 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AgendaRouteImport } from './routes/agenda'
 import { Route as ChangesRouteImport } from './routes/changes'
 import { Route as CompanyRouteImport } from './routes/company'
 import { Route as ScheduleRouteImport } from './routes/schedule'
+import { Route as MeetingsIndexRouteImport } from './routes/meetings.index'
+import { Route as MeetingsMeetingSlugRouteImport } from './routes/meetings.$meetingSlug'
 import { Route as RoomsIndexRouteImport } from './routes/rooms.index'
 import { Route as RoomsRoomIdRouteImport } from './routes/rooms.$roomId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgendaRoute = AgendaRouteImport.update({
@@ -42,6 +50,16 @@ const ScheduleRoute = ScheduleRouteImport.update({
   path: '/schedule',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MeetingsIndexRoute = MeetingsIndexRouteImport.update({
+  id: '/meetings/',
+  path: '/meetings/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MeetingsMeetingSlugRoute = MeetingsMeetingSlugRouteImport.update({
+  id: '/meetings/$meetingSlug',
+  path: '/meetings/$meetingSlug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RoomsIndexRoute = RoomsIndexRouteImport.update({
   id: '/rooms/',
   path: '/rooms/',
@@ -55,69 +73,90 @@ const RoomsRoomIdRoute = RoomsRoomIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/agenda': typeof AgendaRoute
   '/changes': typeof ChangesRoute
   '/company': typeof CompanyRoute
   '/schedule': typeof ScheduleRoute
+  '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
+  '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/agenda': typeof AgendaRoute
   '/changes': typeof ChangesRoute
   '/company': typeof CompanyRoute
   '/schedule': typeof ScheduleRoute
+  '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
+  '/meetings': typeof MeetingsIndexRoute
   '/rooms': typeof RoomsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/agenda': typeof AgendaRoute
   '/changes': typeof ChangesRoute
   '/company': typeof CompanyRoute
   '/schedule': typeof ScheduleRoute
+  '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
+  '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/agenda'
     | '/changes'
     | '/company'
     | '/schedule'
+    | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
+    | '/meetings/'
     | '/rooms/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin'
     | '/agenda'
     | '/changes'
     | '/company'
     | '/schedule'
+    | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
+    | '/meetings'
     | '/rooms'
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/agenda'
     | '/changes'
     | '/company'
     | '/schedule'
+    | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
+    | '/meetings/'
     | '/rooms/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   AgendaRoute: typeof AgendaRoute
   ChangesRoute: typeof ChangesRoute
   CompanyRoute: typeof CompanyRoute
   ScheduleRoute: typeof ScheduleRoute
+  MeetingsMeetingSlugRoute: typeof MeetingsMeetingSlugRoute
   RoomsRoomIdRoute: typeof RoomsRoomIdRoute
+  MeetingsIndexRoute: typeof MeetingsIndexRoute
   RoomsIndexRoute: typeof RoomsIndexRoute
 }
 
@@ -128,6 +167,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agenda': {
@@ -158,6 +204,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ScheduleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/meetings/': {
+      id: '/meetings/'
+      path: '/meetings'
+      fullPath: '/meetings/'
+      preLoaderRoute: typeof MeetingsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meetings/$meetingSlug': {
+      id: '/meetings/$meetingSlug'
+      path: '/meetings/$meetingSlug'
+      fullPath: '/meetings/$meetingSlug'
+      preLoaderRoute: typeof MeetingsMeetingSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/rooms/': {
       id: '/rooms/'
       path: '/rooms'
@@ -177,11 +237,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   AgendaRoute: AgendaRoute,
   ChangesRoute: ChangesRoute,
   CompanyRoute: CompanyRoute,
   ScheduleRoute: ScheduleRoute,
+  MeetingsMeetingSlugRoute: MeetingsMeetingSlugRoute,
   RoomsRoomIdRoute: RoomsRoomIdRoute,
+  MeetingsIndexRoute: MeetingsIndexRoute,
   RoomsIndexRoute: RoomsIndexRoute,
 }
 export const routeTree = rootRouteImport
