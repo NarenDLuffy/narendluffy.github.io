@@ -13,6 +13,7 @@ import { useMeetingClock } from "@/hooks/useMeetingClock";
 import { DayTabs } from "@/components/DayTabs";
 import { Timetable } from "@/components/Timetable";
 import { useBookmarks } from "@/hooks/useBookmarks";
+import { SourcePanel } from "@/components/SourcePanel";
 import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
@@ -161,9 +162,7 @@ function SchedulePage() {
         scrollToNowKey={nowKey}
       />
 
-      <p className="mono-code text-[11px] text-muted-foreground">
-        Updated from: {bundle.sources.map((s) => s.label).join(" · ")}
-      </p>
+      <SourcePanel bundle={bundle} origin={data?.origin ?? "public"} />
     </div>
   );
 }

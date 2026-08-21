@@ -1,0 +1,1846 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-21T12:37:00Z",
+  "meeting": {
+    "meetingId": "RAN1-126",
+    "meetingName": "RAN1#126",
+    "startDate": "2026-08-17",
+    "endDate": "2026-08-21",
+    "venue": "Fira Barcelona Gran Via",
+    "city": "Barcelona",
+    "timezone": "Europe/Madrid",
+    "status": "live"
+  },
+  "rooms": [
+    {
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "area": "Level 0",
+      "order": 1
+    },
+    {
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "area": "Level 0",
+      "order": 2
+    },
+    {
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "area": "Level 1",
+      "order": 3
+    },
+    {
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "area": "Level 0",
+      "order": 4
+    },
+    {
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "area": "Level 0",
+      "order": 5
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": "RAN1-126-2026-08-17-praetorium-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "Maintenance",
+      "topicKey": "maintenance",
+      "agendaItems": [
+        "8.1"
+      ],
+      "sessionLead": "Chair",
+      "mode": "offline",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-himalaya-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-break-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-himalaya-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-madrid-lisbon-3",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-break-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Lunch",
+      "topicKey": "lunch",
+      "agendaItems": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-praetorium-4",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "mimo",
+      "agendaItems": [
+        "10.4.1"
+      ],
+      "sessionLead": "Younsun",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-brussels-5",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-break-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-himalaya-6",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-17-madrid-lisbon-7",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-17",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "NTN",
+      "topicKey": "ntn",
+      "agendaItems": [
+        "9.6.1"
+      ],
+      "sessionLead": "Xiaodong",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-praetorium-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "mimo",
+      "agendaItems": [
+        "10.4.2"
+      ],
+      "sessionLead": "Younsun",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-brussels-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-break-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-himalaya-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-madrid-lisbon-3",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-break-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Lunch",
+      "topicKey": "lunch",
+      "agendaItems": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-himalaya-4",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-praetorium-5",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "6G Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-break-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-brussels-6",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-18-madrid-lisbon-7",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-18",
+      "day": "Tuesday",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-himalaya-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-praetorium-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "mimo",
+      "agendaItems": [
+        "10.4.1"
+      ],
+      "sessionLead": "Younsun",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-break-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-madrid-lisbon-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-brussels-3",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "NTN",
+      "topicKey": "ntn",
+      "agendaItems": [
+        "9.6.1"
+      ],
+      "sessionLead": "Xiaodong",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-break-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Lunch",
+      "topicKey": "lunch",
+      "agendaItems": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-praetorium-4",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "Maintenance",
+      "topicKey": "maintenance",
+      "agendaItems": [
+        "8.1"
+      ],
+      "sessionLead": "Chair",
+      "mode": "offline",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-himalaya-5",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-break-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-19-brussels-6",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-19",
+      "day": "Wednesday",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-himalaya-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-madrid-lisbon-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-break-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-praetorium-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "mimo",
+      "agendaItems": [
+        "10.4.2"
+      ],
+      "sessionLead": "Younsun",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-brussels-3",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-break-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Lunch",
+      "topicKey": "lunch",
+      "agendaItems": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-himalaya-4",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-madrid-lisbon-5",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "6G Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-break-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-20-praetorium-6",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-20",
+      "day": "Thursday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-himalaya-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "himalaya",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "isac",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-praetorium-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "mimo",
+      "agendaItems": [
+        "10.4.1"
+      ],
+      "sessionLead": "Younsun",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-break-0",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-madrid-lisbon-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "madrid-lisbon",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "AI/ML",
+      "topicKey": "aiml",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime"
+          ]
+        },
+        {
+          "sourceId": "sorour-v03",
+          "contributed": [
+            "agendaItems",
+            "sessionLead",
+            "topic"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-brussels-3",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "roomId": "brussels",
+      "roomName": "0.4 Brussels",
+      "topic": "A-IoT",
+      "topicKey": "aiot",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "sessionLead": "Wei",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-break-1",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Lunch",
+      "topicKey": "lunch",
+      "agendaItems": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-praetorium-4",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "Maintenance",
+      "topicKey": "maintenance",
+      "agendaItems": [
+        "8.1"
+      ],
+      "sessionLead": "Chair",
+      "mode": "offline",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-praetorium-5",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "15:30",
+      "endTime": "17:00",
+      "roomId": "praetorium",
+      "roomName": "Praetorium",
+      "topic": "6G Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "room",
+            "startTime",
+            "endTime",
+            "topic",
+            "agendaItems"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "RAN1-126-2026-08-21-break-2",
+      "meetingId": "RAN1-126",
+      "date": "2026-08-21",
+      "day": "Friday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "expo-foyer",
+      "roomName": "Expo Foyer",
+      "topic": "Coffee break",
+      "topicKey": "break",
+      "agendaItems": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "main-v07",
+          "contributed": [
+            "startTime",
+            "endTime"
+          ]
+        }
+      ]
+    }
+  ],
+  "agendaItems": [
+    {
+      "code": "8.1",
+      "title": "NR maintenance",
+      "topicKey": "maintenance"
+    },
+    {
+      "code": "9.3",
+      "title": "Ambient IoT",
+      "topicKey": "aiot"
+    },
+    {
+      "code": "9.3.1",
+      "title": "A-IoT physical layer design",
+      "parent": "9.3",
+      "topicKey": "aiot"
+    },
+    {
+      "code": "9.3.2",
+      "title": "A-IoT procedures",
+      "parent": "9.3",
+      "topicKey": "aiot"
+    },
+    {
+      "code": "9.3.3",
+      "title": "A-IoT coexistence",
+      "parent": "9.3",
+      "topicKey": "aiot"
+    },
+    {
+      "code": "9.6",
+      "title": "NTN enhancements",
+      "topicKey": "ntn"
+    },
+    {
+      "code": "9.6.1",
+      "title": "NTN downlink coverage",
+      "parent": "9.6",
+      "topicKey": "ntn"
+    },
+    {
+      "code": "10.2",
+      "title": "6G waveform",
+      "topicKey": "waveform"
+    },
+    {
+      "code": "10.2.1",
+      "title": "Waveform candidates evaluation",
+      "parent": "10.2",
+      "topicKey": "waveform"
+    },
+    {
+      "code": "10.4",
+      "title": "6G MIMO",
+      "topicKey": "mimo"
+    },
+    {
+      "code": "10.4.1",
+      "title": "MIMO framework",
+      "parent": "10.4",
+      "topicKey": "mimo"
+    },
+    {
+      "code": "10.4.2",
+      "title": "CSI acquisition",
+      "parent": "10.4",
+      "topicKey": "mimo"
+    },
+    {
+      "code": "10.5",
+      "title": "AI/ML air interface",
+      "topicKey": "aiml"
+    },
+    {
+      "code": "10.5.4",
+      "title": "AI/ML model lifecycle",
+      "parent": "10.5",
+      "topicKey": "aiml"
+    },
+    {
+      "code": "10.5.4.1",
+      "title": "Model identification",
+      "parent": "10.5.4",
+      "topicKey": "aiml"
+    },
+    {
+      "code": "10.5.4.2",
+      "title": "Model monitoring",
+      "parent": "10.5.4",
+      "topicKey": "aiml"
+    },
+    {
+      "code": "10.5.4.3",
+      "title": "Model transfer",
+      "parent": "10.5.4",
+      "topicKey": "aiml"
+    },
+    {
+      "code": "10.8",
+      "title": "6G ISAC",
+      "topicKey": "isac"
+    },
+    {
+      "code": "10.8.1",
+      "title": "ISAC deployment scenarios",
+      "parent": "10.8",
+      "topicKey": "isac"
+    },
+    {
+      "code": "10.8.2",
+      "title": "ISAC channel modelling",
+      "parent": "10.8",
+      "topicKey": "isac"
+    },
+    {
+      "code": "10.8.3",
+      "title": "ISAC evaluation methodology",
+      "parent": "10.8",
+      "topicKey": "isac"
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "main-v07",
+      "fileName": "Draft RAN1#126 online and offline schedules - v07.docx",
+      "label": "Main v07",
+      "role": "main",
+      "owner": "RAN1 Chair",
+      "version": "v07",
+      "retrievedAt": "2026-08-21T12:34:00Z"
+    },
+    {
+      "sourceId": "hiroki-v07-1",
+      "fileName": "RAN1#126 schedule for Hiroki Adhoc2 sessions_v07_1.docx",
+      "label": "Hiroki v07.1",
+      "role": "detail",
+      "owner": "Hiroki",
+      "version": "v07.1",
+      "retrievedAt": "2026-08-21T12:34:00Z"
+    },
+    {
+      "sourceId": "sorour-v03",
+      "fileName": "RAN1#126 Sorour sessions schedule v03.docx",
+      "label": "Sorour v03",
+      "role": "detail",
+      "owner": "Sorour",
+      "version": "v03",
+      "retrievedAt": "2026-08-21T11:02:00Z"
+    }
+  ],
+  "changes": [
+    {
+      "changeId": "c1",
+      "meetingId": "RAN1-126",
+      "detectedAt": "2026-08-21T12:37:00Z",
+      "type": "room_changed",
+      "title": "AI 10.8.2 moved",
+      "detail": "ISAC channel modelling changed room",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "from": "1.1 Himalaya",
+      "to": "0.6/0.7 Madrid/Lisbon",
+      "sourceIds": [
+        "hiroki-v07-1"
+      ]
+    },
+    {
+      "changeId": "c2",
+      "meetingId": "RAN1-126",
+      "detectedAt": "2026-08-21T11:58:00Z",
+      "type": "end_time_changed",
+      "title": "6G Waveform extended",
+      "detail": "Session end time extended",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "from": "16:30",
+      "to": "17:00",
+      "sourceIds": [
+        "main-v07"
+      ]
+    },
+    {
+      "changeId": "c3",
+      "meetingId": "RAN1-126",
+      "detectedAt": "2026-08-21T09:12:00Z",
+      "type": "agenda_item_added",
+      "title": "AI 10.5.4.3 added",
+      "detail": "Model transfer added to Friday AI/ML session",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "to": "0.6/0.7 Madrid/Lisbon 10:30-12:00",
+      "sourceIds": [
+        "sorour-v03"
+      ]
+    },
+    {
+      "changeId": "c4",
+      "meetingId": "RAN1-126",
+      "detectedAt": "2026-08-20T18:40:00Z",
+      "type": "session_added",
+      "title": "A-IoT extra session added",
+      "detail": "Additional A-IoT session on Friday morning",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "to": "0.4 Brussels 10:30-12:00",
+      "sourceIds": [
+        "main-v07"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "conflictId": "x1",
+      "sessionId": "RAN1-126-2026-08-21-himalaya-0",
+      "field": "roomId",
+      "values": [
+        {
+          "sourceId": "main-v07",
+          "value": "himalaya"
+        },
+        {
+          "sourceId": "hiroki-v07-1",
+          "value": "madrid-lisbon"
+        }
+      ],
+      "resolved": false
+    }
+  ]
+}
