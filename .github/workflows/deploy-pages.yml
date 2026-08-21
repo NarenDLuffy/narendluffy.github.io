@@ -1,0 +1,54 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install --frozen-lockfile
+
+      - name: Build static site
+        env:
+          # Set BASE_PATH to "/<repo-name>/" for project pages; leave empty for
+          # a custom domain or user/org pages.
+          BASE_PATH: ${{ vars.BASE_PATH }}
+        run: bun run build
+
+      - name: SPA fallback for client-side routes
+        run: |
+          OUT=dist
+          [ -d "$OUT/client" ] && OUT="$OUT/client"
+          cp "$OUT/index.html" "$OUT/404.html" || true
+          touch "$OUT/.nojekyll"
+          echo "OUT_DIR=$OUT" >> "$GITHUB_ENV"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.OUT_DIR }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
