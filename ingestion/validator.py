@@ -23,7 +23,9 @@ def validate(bundle: ScheduleBundle, previous: dict | None = None) -> list[str]:
     for s in bundle.sessions:
         if s.endTime <= s.startTime:
             errors.append(f"{s.sessionId}: end time not after start time")
-        if not s.sources:
+        # Breaks and lunches are derived from the surrounding grid, so only
+        # real sessions must carry document provenance.
+        if not s.sources and s.kind not in ("break", "lunch"):
             errors.append(f"{s.sessionId}: missing source provenance")
 
     if previous:

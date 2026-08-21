@@ -1,0 +1,37 @@
+[
+  {
+    "changeId": "ran1-126-c1",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-21T21:52:13Z",
+    "type": "room_changed",
+    "title": "Maintenance of Rel-19 moved room",
+    "detail": "A newer revision of the schedule places this session in a different room.",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-126-s0-1-0",
+    "to": "Forum Hall",
+    "sourceIds": [
+      "ran1-126-src-1"
+    ],
+    "from": "Forum Hall"
+  },
+  {
+    "changeId": "ran1-126-c2",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-21T17:52:13Z",
+    "type": "start_time_changed",
+    "title": "AI/ML for air interface starts later",
+    "detail": "Start time shifted after the previous session was extended.",
+    "agendaItems": [
+      "10.1"
+    ],
+    "sessionId": "ran1-126-s0-1-1",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-126-src-1",
+      "ran1-126-src-2"
+    ],
+    "from": "13:30"
+  }
+]
