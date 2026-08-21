@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
-import { ArrowLeft, Lock, MapPin } from "lucide-react";
-import { scheduleQueryOptions, minutesOf } from "@/services/schedule";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { ArrowLeft, MapPin, Users } from "lucide-react";
+import { minutesOf } from "@/services/scheduleService";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 import { SessionCard } from "@/components/SessionCard";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/rooms/$roomId")({
   head: () => ({
@@ -18,6 +19,8 @@ export const Route = createFileRoute("/rooms/$roomId")({
         property: "og:description",
         content: "Now, next and the full day plan for a single RAN1 meeting room.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: RoomPage,
@@ -25,28 +28,21 @@ export const Route = createFileRoute("/rooms/$roomId")({
 
 function RoomPage() {
   const { roomId } = Route.useParams();
-  const { data } = useQuery(scheduleQueryOptions);
-  const bundle = data?.bundle;
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
-  );
+  const { meeting, bundle, isLoading, clock } = useActiveMeeting();
+  const { joined, presence, myRoomId, enter, exit } = useCompanyPresence(meeting?.id);
 
-  if (!bundle) return <p className="py-10 text-center text-sm text-muted-foreground">Loading…</p>;
+  if (isLoading) return <LoadingState label="Loading room…" />;
+  if (!meeting) return <NoMeetingState />;
+  if (!bundle) return <NoScheduleState meeting={meeting} />;
 
   const room = bundle.rooms.find((r) => r.roomId === roomId);
   if (!room) {
     return (
       <div className="py-10 text-center text-sm text-muted-foreground">
-        Unknown room. <Link to="/rooms" className="underline">Back to rooms</Link>
+        Unknown room.{" "}
+        <Link to="/rooms" className="underline">
+          Back to rooms
+        </Link>
       </div>
     );
   }
@@ -64,6 +60,8 @@ function RoomPage() {
       )
     : undefined;
   const next = todays.find((s) => minutesOf(s.startTime) > (isToday ? clock.nowMinutes : -1));
+  const here = presence.filter((p) => p.roomId === roomId);
+  const iAmHere = myRoomId === roomId;
 
   return (
     <div className="space-y-5">
@@ -75,8 +73,8 @@ function RoomPage() {
         <h1 className="text-xl font-semibold">{room.roomName}</h1>
         <p className="flex items-center gap-1 text-xs text-muted-foreground">
           <MapPin className="size-3.5" />
-          {room.area ? `${room.area} · ` : ""}
-          {bundle.meeting.venue}
+          {room.floor ? `${room.floor} · ` : ""}
+          {meeting.venue ?? meeting.city ?? meeting.name}
         </p>
       </header>
 
@@ -104,15 +102,53 @@ function RoomPage() {
         )}
       </section>
 
-      <section className="flex items-start gap-2 rounded-lg border border-border bg-secondary/50 p-3 text-sm">
-        <Lock className="mt-0.5 size-4 text-muted-foreground" />
-        <div>
-          <div className="font-medium">Colleague presence</div>
-          <p className="text-xs text-muted-foreground">
-            Checking into a room and seeing colleagues arrives with verified company sign-in. No
-            GPS is ever used, and presence stays inside your own company.
-          </p>
+      <section className="space-y-2 rounded-lg border border-border bg-card p-3">
+        <div className="flex items-center gap-2">
+          <Users className="size-4 text-muted-foreground" />
+          <h2 className="text-sm font-semibold">Colleagues in this room</h2>
+          <span className="mono-code ml-auto text-xs text-muted-foreground">{here.length}</span>
         </div>
+        {!joined ? (
+          <p className="text-xs text-muted-foreground">
+            Join your company group on the{" "}
+            <Link to="/company" className="underline underline-offset-2">
+              Company page
+            </Link>{" "}
+            to check in. No account required.
+          </p>
+        ) : (
+          <>
+            <ul className="flex flex-wrap gap-1.5">
+              {here.length === 0 ? (
+                <li className="text-xs text-muted-foreground">Nobody checked in here.</li>
+              ) : (
+                here.map((p) => (
+                  <li
+                    key={p.userId}
+                    className="rounded-md border border-border px-2 py-1 text-xs"
+                  >
+                    {p.displayName || "Colleague"}
+                  </li>
+                ))
+              )}
+            </ul>
+            <button
+              type="button"
+              onClick={() => (iAmHere ? void exit() : void enter(room.roomId, live?.sessionId))}
+              className={
+                iAmHere
+                  ? "min-h-11 w-full rounded-md border border-border text-sm font-medium"
+                  : "min-h-11 w-full rounded-md bg-primary text-sm font-semibold text-primary-foreground"
+              }
+            >
+              {iAmHere ? "Check out" : "I'm in this room"}
+            </button>
+            <p className="text-[11px] text-muted-foreground">
+              Voluntary and expires by itself. No GPS, no movement history, visible only to people
+              with your company code.
+            </p>
+          </>
+        )}
       </section>
 
       <section className="space-y-2">
