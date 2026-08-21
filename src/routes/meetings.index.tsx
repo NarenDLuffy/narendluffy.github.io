@@ -95,7 +95,7 @@ function MeetingsPage() {
                       <span className="mono-code block truncate text-xs text-muted-foreground">
                         {formatDateRange(m.startDate, m.endDate)}
                         {m.city ? ` · ${m.city}` : ""}
-                        {m.type !== "plenary" ? ` · ${m.type.replace(/-/g, " ")}` : ""}
+                        {m.type !== "regular" ? ` · ${m.type}` : ""}
                       </span>
                     </span>
                     <ChevronRight className="size-4 text-muted-foreground" />

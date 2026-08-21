@@ -1,11 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
 import { CalendarPlus, Star, Trash2 } from "lucide-react";
-import { scheduleQueryOptions, sessionMatchesAgenda } from "@/services/schedule";
+import { sessionMatchesAgenda } from "@/services/scheduleService";
 import { useBookmarks } from "@/hooks/useBookmarks";
-import { useMeetingClock } from "@/hooks/useMeetingClock";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { MeetingBanner } from "@/components/MeetingBanner";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 import { buildIcs, downloadIcs } from "@/lib/ics";
 import { cn } from "@/lib/utils";
+import type { Session } from "@/types/schedule";
 
 export const Route = createFileRoute("/agenda")({
   head: () => ({
@@ -21,46 +23,51 @@ export const Route = createFileRoute("/agenda")({
         property: "og:description",
         content: "Your followed RAN1 agenda items as a personal timeline with ICS export.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: AgendaPage,
 });
 
 function AgendaPage() {
-  const { data } = useQuery(scheduleQueryOptions);
+  const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
   const { bookmarks, toggle, clear, isBookmarked } = useBookmarks();
-  const bundle = data?.bundle;
-  const clock = useMeetingClock(
-    bundle?.meeting ?? {
-      meetingId: "",
-      meetingName: "",
-      startDate: "",
-      endDate: "",
-      venue: "",
-      city: "",
-      timezone: "UTC",
-      status: "upcoming",
-    },
+
+  if (isLoading) return <LoadingState label="Loading agenda…" />;
+  if (!meeting) return <NoMeetingState />;
+
+  const banner = (
+    <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
   );
 
-  if (!bundle) return <p className="py-10 text-center text-sm text-muted-foreground">Loading…</p>;
+  if (!bundle) {
+    return (
+      <div className="space-y-4">
+        {banner}
+        <NoScheduleState meeting={meeting} />
+      </div>
+    );
+  }
 
   const mine = bundle.sessions
     .filter((s) => s.kind !== "break" && s.kind !== "lunch")
     .filter((s) => bookmarks.length > 0 && sessionMatchesAgenda(s, bookmarks))
     .sort((a, b) => (a.date + a.startTime).localeCompare(b.date + b.startTime));
 
-  const byDay = mine.reduce<Record<string, typeof mine>>((acc, s) => {
+  const byDay = mine.reduce<Record<string, Session[]>>((acc, s) => {
     (acc[s.date] ??= []).push(s);
     return acc;
   }, {});
 
   return (
     <div className="space-y-5">
+      {banner}
+
       <header className="space-y-1">
         <h1 className="text-lg font-semibold">My agenda</h1>
         <p className="text-xs text-muted-foreground">
-          Bookmarks are stored on this device. Sign-in sync arrives with company features.
+          Followed agenda items are stored on this device, per meeting.
         </p>
       </header>
 
@@ -68,32 +75,38 @@ function AgendaPage() {
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Follow agenda items
         </h2>
-        <div className="flex flex-wrap gap-1.5">
-          {bundle.agendaItems.map((a) => (
-            <button
-              key={a.code}
-              type="button"
-              onClick={() => toggle(a.code)}
-              title={a.title}
-              className={cn(
-                "mono-code inline-flex min-h-9 items-center gap-1 rounded-md border px-2.5 text-xs font-medium",
-                isBookmarked(a.code)
-                  ? "border-primary bg-primary/10 text-primary"
-                  : "border-border bg-card text-muted-foreground",
-              )}
-            >
-              {isBookmarked(a.code) ? <Star className="size-3 fill-current" /> : null}
-              {a.code}
-            </button>
-          ))}
-        </div>
+        {bundle.agendaItems.length === 0 ? (
+          <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
+            No agenda items discovered for this meeting yet.
+          </p>
+        ) : (
+          <div className="flex flex-wrap gap-1.5">
+            {bundle.agendaItems.map((a) => (
+              <button
+                key={a.code}
+                type="button"
+                onClick={() => toggle(a.code)}
+                title={a.title}
+                className={cn(
+                  "mono-code inline-flex min-h-9 items-center gap-1 rounded-md border px-2.5 text-xs font-medium",
+                  isBookmarked(a.code)
+                    ? "border-primary bg-primary/10 text-primary"
+                    : "border-border bg-card text-muted-foreground",
+                )}
+              >
+                {isBookmarked(a.code) ? <Star className="size-3 fill-current" /> : null}
+                {a.code}
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
       {mine.length > 0 ? (
         <div className="flex gap-2">
           <button
             type="button"
-            onClick={() => downloadIcs(buildIcs(bundle, mine), `${bundle.meeting.meetingName}-my-agenda.ics`)}
+            onClick={() => downloadIcs(buildIcs(bundle, mine), `${meeting.slug}-my-agenda.ics`)}
             className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-md bg-primary px-3 text-sm font-semibold text-primary-foreground"
           >
             <CalendarPlus className="size-4" /> Export .ics

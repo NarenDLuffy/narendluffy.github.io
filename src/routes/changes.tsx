@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { scheduleQueryOptions, sessionMatchesAgenda } from "@/services/schedule";
+import { sessionMatchesAgenda } from "@/services/scheduleService";
 import { useBookmarks } from "@/hooks/useBookmarks";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { MeetingBanner } from "@/components/MeetingBanner";
+import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 import { cn } from "@/lib/utils";
 import type { ChangeType } from "@/types/schedule";
 
@@ -33,28 +35,41 @@ export const Route = createFileRoute("/changes")({
         property: "og:description",
         content: "Track what moved in the RAN1 schedule since the last document update.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: ChangesPage,
 });
 
 function ChangesPage() {
-  const { data } = useQuery(scheduleQueryOptions);
+  const { meeting, bundle, stale, isCurrent, isLoading } = useActiveMeeting();
   const { bookmarks } = useBookmarks();
   const [onlyMine, setOnlyMine] = useState(false);
-  const bundle = data?.bundle;
 
-  if (!bundle) return <p className="py-10 text-center text-sm text-muted-foreground">Loading…</p>;
+  if (isLoading) return <LoadingState label="Loading changes…" />;
+  if (!meeting) return <NoMeetingState />;
+
+  const banner = (
+    <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
+  );
+
+  if (!bundle) {
+    return (
+      <div className="space-y-4">
+        {banner}
+        <NoScheduleState meeting={meeting} />
+      </div>
+    );
+  }
 
   const changes = [...bundle.changes]
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .filter((c) =>
       !onlyMine
         ? true
-        : sessionMatchesAgenda(
-            { agendaItems: c.agendaItems } as never,
-            bookmarks,
-          ) && bookmarks.length > 0,
+        : bookmarks.length > 0 &&
+          sessionMatchesAgenda({ agendaItems: c.agendaItems } as never, bookmarks),
     );
 
   const time = (iso: string) =>
@@ -62,15 +77,18 @@ function ChangesPage() {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
-      timeZone: bundle.meeting.timezone,
+      timeZone: meeting.timezone,
     }).format(new Date(iso));
 
   return (
     <div className="space-y-4">
+      {banner}
+
       <header className="space-y-1">
         <h1 className="text-lg font-semibold">Schedule changes</h1>
         <p className="text-xs text-muted-foreground">
-          Detected by comparing each parsed schedule with the previous verified version.
+          Detected by comparing each parsed schedule with the previous verified version of this
+          meeting.
         </p>
       </header>
 
@@ -102,7 +120,7 @@ function ChangesPage() {
                 </span>
               </div>
               <div className="mt-0.5 text-xs uppercase tracking-wide text-muted-foreground">
-                {LABEL[c.type]}
+                {LABEL[c.type] ?? c.type}
               </div>
               <p className="mt-1 text-sm">{c.detail}</p>
               {c.from || c.to ? (
