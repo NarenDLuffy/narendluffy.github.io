@@ -35,10 +35,20 @@ def validate(bundle: ScheduleBundle, previous: dict | None = None) -> list[str]:
             errors.append(f"{s.sessionId}: missing source provenance")
 
     if previous:
-        before = len(previous.get("sessions", []))
-        if before and len(bundle.sessions) < before * 0.5:
+        # Compare distinct slots, not raw rows: when several chairs circulate
+        # copies of the same week grid, deduplicating them legitimately reduces
+        # the row count without losing any actual session.
+        def slots(items) -> set[tuple]:
+            return {
+                (i.get("date"), i.get("startTime"), i.get("endTime"), i.get("topic"))
+                for i in items
+            }
+
+        before = slots(previous.get("sessions", []))
+        after = slots(s.to_json() for s in bundle.sessions)
+        if before and len(after) < len(before) * 0.5:
             errors.append(
-                f"session count collapsed from {before} to {len(bundle.sessions)}; refusing publish"
+                f"session coverage collapsed from {len(before)} to {len(after)} slots; refusing publish"
             )
 
     return errors
