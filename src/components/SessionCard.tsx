@@ -54,6 +54,7 @@ export function SessionCard({
 }) {
   const { isBookmarked, toggle } = useBookmarks();
   const [open, setOpen] = useState(false);
+  const breakdown = session.agendaBreakdown ?? [];
 
   return (
     <article
