@@ -274,9 +274,45 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     for session in sessions:
         session.roomId = remap.get(session.roomId, session.roomId)
         session.roomName = names.get(session.roomId, session.roomName)
+    sessions = _dedupe_plenaries(sessions)
     order = {room.roomId: room.order for room in merged_rooms}
     sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return merged_rooms, sessions
+
+
+def _dedupe_plenaries(sessions: list[Session]) -> list[Session]:
+    """A plenary happens in one room only.
+
+    Several chairs copy the same plenary line ("RAN1#126 commences at 09:00 on
+    Monday") into their own table, which would otherwise show the same item in
+    two rooms at once. Keep the richest copy and fold the other sources into it.
+    Parallel breakout sessions are untouched: they only collapse when the
+    plenary kind, time and topic all match.
+    """
+    keepers: dict[tuple[str, str, str, str], Session] = {}
+    out: list[Session] = []
+    for session in sessions:
+        if session.kind != "plenary":
+            out.append(session)
+            continue
+        key = (session.date, session.startTime, session.endTime, session.topicKey)
+        current = keepers.get(key)
+        if current is None:
+            keepers[key] = session
+            out.append(session)
+            continue
+
+        def richness(s: Session) -> int:
+            return len(s.agendaBreakdown or []) + (1 if s.note else 0)
+
+        if richness(session) > richness(current):
+            out[out.index(current)] = session
+            session.sources = list({s.sourceId: s for s in [*current.sources, *session.sources]}.values())
+            keepers[key] = session
+        else:
+            current.sources = list({s.sourceId: s for s in [*current.sources, *session.sources]}.values())
+    return out
+
 
 
 
