@@ -281,6 +281,7 @@ def _parse_table(
     source: ScheduleSource,
     order_offset: int,
     owner_hint: str | None = None,
+    lane_labels: list[tuple[int, str]] | None = None,
 ) -> tuple[list[Room], list[Session]]:
     rows = table.rows
     if len(rows) < 2:
@@ -301,18 +302,34 @@ def _parse_table(
 
     base_name, lead = _room_label(heading, source.label, owner_hint)
 
-    # One table is one track. Several columns under the same weekday are
-    # parallel sessions of that track, not separate tracks, so they must not
-    # become "lane A / lane B" columns of their own.
-    room = Room(
-        roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading)}",
-        meetingId=meeting_id,
-        roomName=base_name,
-        order=order_offset,
-        shortName=base_name[:24],
-        description=heading or None,
-    )
-    rooms: list[Room] = [room]
+    # Chairs often name the physical rooms in floating text boxes drawn above
+    # the parallel columns. When there is one label per parallel column, each
+    # column is that room; otherwise the whole table is one track.
+    lanes = max(per_day_seen.values()) if per_day_seen else 1
+    named_lanes: dict[int, str] = {}
+    if lane_labels and len(lane_labels) == lanes and lanes > 1:
+        for lane_index, (_, name) in enumerate(sorted(lane_labels, key=lambda x: x[0])):
+            named_lanes[lane_index] = name
+
+    def _room_for(lane: int) -> Room:
+        name = named_lanes.get(lane, base_name)
+        room_id = f"{meeting_id}-{_short_hash(name if lane in named_lanes else source.sourceId + heading)}"
+        existing = rooms_by_id.get(room_id)
+        if existing:
+            return existing
+        room = Room(
+            roomId=room_id,
+            meetingId=meeting_id,
+            roomName=name,
+            order=order_offset + lane,
+            shortName=name[:24],
+            description=heading or None,
+        )
+        rooms_by_id[room_id] = room
+        return room
+
+    rooms_by_id: dict[str, Room] = {}
+
 
 
     sessions: list[Session] = []
