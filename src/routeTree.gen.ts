@@ -17,6 +17,7 @@ import { Route as CompanyRouteImport } from './routes/company'
 import { Route as DraftsRouteImport } from './routes/drafts'
 import { Route as ScheduleRouteImport } from './routes/schedule'
 import { Route as DraftsIndexRouteImport } from './routes/drafts.index'
+import { Route as DraftsCodeRouteImport } from './routes/drafts.$code'
 import { Route as MeetingsIndexRouteImport } from './routes/meetings.index'
 import { Route as MeetingsMeetingSlugRouteImport } from './routes/meetings.$meetingSlug'
 import { Route as RoomsIndexRouteImport } from './routes/rooms.index'
@@ -62,6 +63,11 @@ const DraftsIndexRoute = DraftsIndexRouteImport.update({
   path: '/',
   getParentRoute: () => DraftsRoute,
 } as any)
+const DraftsCodeRoute = DraftsCodeRouteImport.update({
+  id: '/$code',
+  path: '/$code',
+  getParentRoute: () => DraftsRoute,
+} as any)
 const MeetingsIndexRoute = MeetingsIndexRouteImport.update({
   id: '/meetings/',
   path: '/meetings/',
@@ -91,6 +97,7 @@ export interface FileRoutesByFullPath {
   '/company': typeof CompanyRoute
   '/drafts': typeof DraftsRouteWithChildren
   '/schedule': typeof ScheduleRoute
+  '/drafts/$code': typeof DraftsCodeRoute
   '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
   '/drafts/': typeof DraftsIndexRoute
@@ -104,6 +111,7 @@ export interface FileRoutesByTo {
   '/changes': typeof ChangesRoute
   '/company': typeof CompanyRoute
   '/schedule': typeof ScheduleRoute
+  '/drafts/$code': typeof DraftsCodeRoute
   '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
   '/drafts': typeof DraftsIndexRoute
@@ -119,6 +127,7 @@ export interface FileRoutesById {
   '/company': typeof CompanyRoute
   '/drafts': typeof DraftsRouteWithChildren
   '/schedule': typeof ScheduleRoute
+  '/drafts/$code': typeof DraftsCodeRoute
   '/meetings/$meetingSlug': typeof MeetingsMeetingSlugRoute
   '/rooms/$roomId': typeof RoomsRoomIdRoute
   '/drafts/': typeof DraftsIndexRoute
@@ -135,6 +144,7 @@ export interface FileRouteTypes {
     | '/company'
     | '/drafts'
     | '/schedule'
+    | '/drafts/$code'
     | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
     | '/drafts/'
@@ -148,6 +158,7 @@ export interface FileRouteTypes {
     | '/changes'
     | '/company'
     | '/schedule'
+    | '/drafts/$code'
     | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
     | '/drafts'
@@ -162,6 +173,7 @@ export interface FileRouteTypes {
     | '/company'
     | '/drafts'
     | '/schedule'
+    | '/drafts/$code'
     | '/meetings/$meetingSlug'
     | '/rooms/$roomId'
     | '/drafts/'
@@ -241,6 +253,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DraftsIndexRouteImport
       parentRoute: typeof DraftsRoute
     }
+    '/drafts/$code': {
+      id: '/drafts/$code'
+      path: '/$code'
+      fullPath: '/drafts/$code'
+      preLoaderRoute: typeof DraftsCodeRouteImport
+      parentRoute: typeof DraftsRoute
+    }
     '/meetings/': {
       id: '/meetings/'
       path: '/meetings'
@@ -273,10 +292,12 @@ declare module '@tanstack/react-router' {
 }
 
 interface DraftsRouteChildren {
+  DraftsCodeRoute: typeof DraftsCodeRoute
   DraftsIndexRoute: typeof DraftsIndexRoute
 }
 
 const DraftsRouteChildren: DraftsRouteChildren = {
+  DraftsCodeRoute: DraftsCodeRoute,
   DraftsIndexRoute: DraftsIndexRoute,
 }
 

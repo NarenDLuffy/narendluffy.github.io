@@ -137,7 +137,7 @@ export function AgendaActivityCard({
   title,
 }: {
   activity: AgendaActivity;
-  title?: string;
+  title?: string | undefined;
 }) {
   const code = activity.agendaItemId;
   return (
