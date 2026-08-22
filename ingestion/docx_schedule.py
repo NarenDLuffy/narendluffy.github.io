@@ -103,6 +103,7 @@ def parse_schedule_docx(
     end_date: str,
     source: ScheduleSource,
     room_order_offset: int = 0,
+    owner_hint: str | None = None,
 ) -> tuple[list[Room], list[Session]]:
     """Rooms and sessions contained in one schedule document."""
     document = docx.Document(path)
@@ -127,6 +128,7 @@ def parse_schedule_docx(
             by_weekday=by_weekday,
             source=source,
             order_offset=room_order_offset + len(rooms),
+            owner_hint=owner_hint,
         )
         for room in table_rooms:
             rooms.setdefault(room.roomId, room)
@@ -135,11 +137,13 @@ def parse_schedule_docx(
     return list(rooms.values()), sessions
 
 
-def _room_label(heading: str, source_label: str) -> tuple[str, str | None]:
+def _room_label(
+    heading: str, source_label: str, owner_hint: str | None = None
+) -> tuple[str, str | None]:
     """(display name, session lead) inferred from the table heading."""
     m = ROOM_RE.search(heading)
     lead_match = OWNER_RE.search(heading)
-    lead = lead_match.group(1) if lead_match else None
+    lead = lead_match.group(1) if lead_match else owner_hint
     if m:
         return m.group(1).strip(), lead
     label = heading or source_label
@@ -161,6 +165,7 @@ def _parse_table(
     by_weekday: dict[str, date],
     source: ScheduleSource,
     order_offset: int,
+    owner_hint: str | None = None,
 ) -> tuple[list[Room], list[Session]]:
     rows = table.rows
     if len(rows) < 2:
@@ -180,7 +185,7 @@ def _parse_table(
         return [], []
 
     lanes = max(pos for _, _, pos in columns) + 1
-    base_name, lead = _room_label(heading, source.label)
+    base_name, lead = _room_label(heading, source.label, owner_hint)
 
     rooms: list[Room] = []
     for lane in range(lanes):

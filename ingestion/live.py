@@ -188,6 +188,18 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     return sorted(best.values(), key=lambda s: s.fileName.lower())
 
 
+OWNER_FOLDER_RE = re.compile(r"([A-Za-z][A-Za-z\-]+)[_\s-]*notes$", re.I)
+
+
+def _owner_hint(url: str) -> str | None:
+    """Chair name implied by the personal folder a document lives in."""
+    parts = [unquote(p) for p in url.split("/") if p]
+    if len(parts) < 2:
+        return None
+    m = OWNER_FOLDER_RE.match(parts[-2])
+    return m.group(1).capitalize() if m else None
+
+
 def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
 ) -> tuple[list[Room], list[Session]]:
@@ -210,6 +222,7 @@ def parse_schedule_sources(
                 end_date=meeting.endDate,
                 source=source,
                 room_order_offset=len(rooms),
+                owner_hint=_owner_hint(source.url),
             )
         except Exception as exc:  # a malformed document must not break the run
             print(f"  could not parse {source.fileName}: {exc}")
