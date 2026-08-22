@@ -13,8 +13,13 @@ shows "schedule not published yet" instead of invented rooms and slots.
 from __future__ import annotations
 
 import hashlib
+import os
+import re
+import tempfile
 from datetime import datetime, timezone
+from urllib.parse import unquote
 
+from .docx_schedule import parse_schedule_docx
 from .meeting_discovery import classify_document, compute_status, revision_parts
 from .models import (
     AgendaItem,
@@ -22,9 +27,31 @@ from .models import (
     Meeting,
     MeetingSourceFolders,
     ScheduleBundle,
+    Room,
     ScheduleSource,
+    Session,
 )
-from .portal import PortalMeeting, fetch_agenda_csv, fetch_meetings, list_folder
+from .portal import (
+    PortalMeeting,
+    _session as http,
+    fetch_agenda_csv,
+    fetch_meetings,
+    list_folder,
+)
+
+
+def download_to_temp(url: str) -> str | None:
+    """Fetch a document into a temp file; None when it cannot be retrieved."""
+    try:
+        response = http.get(url, timeout=60)
+        response.raise_for_status()
+    except Exception:
+        return None
+    suffix = os.path.splitext(unquote(url))[1][:8] or ".bin"
+    fd, path = tempfile.mkstemp(suffix=suffix)
+    with os.fdopen(fd, "wb") as handle:
+        handle.write(response.content)
+    return path
 
 DOC_SUBFOLDERS = ("Agenda", "Inbox", "Invitation")
 DOC_EXTENSIONS = (".doc", ".docx", ".xls", ".xlsx", ".pdf", ".zip", ".csv")
