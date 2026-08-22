@@ -310,6 +310,7 @@ def scan_meeting(
         folders=sorted(folders.values(), key=lambda f: f.normalizedPath),
         artifacts=sorted(artifacts.values(), key=lambda a: a.normalizedPath),
         events=merged_events[:MAX_EVENTS],
+        newEventIds=[e.id for e in new_events],
         unmappedFolders=sorted(set(unmapped)),
         message=None,
     )

@@ -71,7 +71,7 @@ def run(source, previous, agenda) -> tuple[dict[str, Any], list]:
         meeting_id="m1", source=source, agenda_codes=agenda, previous=previous
     )
     payload = index.to_json()
-    fresh = [e for e in index.events if e.detectedAt == index.generatedAt]
+    ids=set(index.newEventIds); fresh = [e for e in index.events if e.id in ids]
     return payload, fresh
 
 
@@ -139,7 +139,7 @@ def main() -> int:
         previous=idx.to_json(),
         config=ScanConfig(hash_files=True),
     )
-    fresh = [e for e in idx2.events if e.detectedAt == idx2.generatedAt]
+    fresh = [e for e in idx2.events if e.id in set(idx2.newEventIds)]
     ok &= check(
         "changed FL summary yields FL_SUMMARY_UPDATED",
         [e.eventType for e in fresh] == ["FL_SUMMARY_UPDATED"],
@@ -154,14 +154,14 @@ def main() -> int:
         meeting_id="m1", source=local, agenda_codes=MEETING_A_AGENDA, previous=idx2.to_json(),
         config=ScanConfig(hash_files=True),
     )
-    local_fresh = [e for e in local_idx.events if e.detectedAt == local_idx.generatedAt]
+    local_fresh = [e for e in local_idx.events if e.id in set(local_idx.newEventIds)]
     pub = FakeSource(fl_tree)
     pub.blobs["/drafts/10.8.2 Measurements/FL_summary.docx"] = b"X"
     pub_idx = scan_meeting(
         meeting_id="m1", source=pub, agenda_codes=MEETING_A_AGENDA, previous=local_idx.to_json(),
         config=ScanConfig(hash_files=True),
     )
-    pub_fresh = [e for e in pub_idx.events if e.detectedAt == pub_idx.generatedAt]
+    pub_fresh = [e for e in pub_idx.events if e.id in set(pub_idx.newEventIds)]
     artifact = pub_idx.artifacts[0]
     ok &= check(
         "identical file on the public source creates no second notification",
@@ -187,7 +187,7 @@ def main() -> int:
         "/drafts/7 NR positioning/7.2 (SL CA)/Rd. 1/": [("draft_proposal.docx", False, 10)],
     }
     idx_b = scan_meeting(meeting_id="m2", source=FakeSource(tree_b), agenda_codes=MEETING_B_AGENDA)
-    fresh_b = [e for e in idx_b.events if e.detectedAt == idx_b.generatedAt]
+    fresh_b = [e for e in idx_b.events if e.id in set(idx_b.newEventIds)]
     codes = {a.agendaItemId for a in idx_b.artifacts}
     ok &= check("rollover: new meeting baselines silently", not fresh_b)
     ok &= check("different meeting maps its own agenda", codes == {"7.2"}, str(codes))

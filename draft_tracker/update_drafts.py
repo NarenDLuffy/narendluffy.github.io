@@ -108,12 +108,11 @@ def main() -> int:
             config=ScanConfig(hash_files=args.hash),
         )
         payload = index.to_json()
-        payload["notifications"] = group_events(
-            [e for e in index.events if e.detectedAt == index.generatedAt]
-        )
+        fresh_ids = set(index.newEventIds)
+        payload["notifications"] = group_events([e for e in index.events if e.id in fresh_ids])
         save_index(slug, payload)
         scanned += 1
-        fresh = sum(1 for e in index.events if e.detectedAt == index.generatedAt)
+        fresh = len(index.newEventIds)
         print(
             f"{slug}: {index.scanState}, {len(index.artifacts)} artifacts, "
             f"{len(index.folders)} folders, {fresh} new event(s)"

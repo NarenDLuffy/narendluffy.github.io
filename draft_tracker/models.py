@@ -113,6 +113,9 @@ class DraftIndex:
     folders: list[DraftFolder] = field(default_factory=list)
     artifacts: list[DraftArtifact] = field(default_factory=list)
     events: list[DraftEvent] = field(default_factory=list)
+    """IDs of events created by the latest scan (freshness is never inferred
+    from timestamps, which can collide within one second)."""
+    newEventIds: list[str] = field(default_factory=list)
     unmappedFolders: list[str] = field(default_factory=list)
     message: str | None = None
 
