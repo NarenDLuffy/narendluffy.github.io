@@ -144,6 +144,12 @@ def _room_label(heading: str, source_label: str) -> tuple[str, str | None]:
         return m.group(1).strip(), lead
     label = heading or source_label
     label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", label).strip()
+    # No room named in the document: fall back to "<owner> <online|offline>",
+    # which is how attendees refer to these parallel session tracks.
+    kind = next((w for w in ("online", "offline", "detailed") if w in label.lower()), None)
+    if lead and kind:
+        return f"{lead} {kind}", lead
+    label = re.sub(r"(?i)(session\s+)?schedule\b", "", label).strip(" -–—:")
     return (label or source_label)[:60], lead
 
 
