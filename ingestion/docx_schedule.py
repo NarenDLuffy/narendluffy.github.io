@@ -215,8 +215,8 @@ def _room_label(
     """(track name, session lead) inferred from the table heading.
 
     Chairs name a physical room when they have one ("room: RAN1_Brk#2",
-    "@Praetorium"); otherwise the table is simply the online or the offline
-    track, which is how the published schedule reads.
+    "@Praetorium"); otherwise the table is that chair's online or offline
+    track, named after the chair so a delegate knows where to go.
     """
     m = ROOM_RE.search(heading)
     lead_match = OWNER_RE.search(heading)
@@ -225,13 +225,13 @@ def _room_label(
         room = re.sub(r"\s*,\s*", " · ", m.group(1).strip())
         return room, lead
     lowered = heading.lower()
-    if "offline" in lowered:
-        return "Offline", lead
-    if "online" in lowered:
-        return "Online", lead
+    for mode in ("offline", "online"):
+        if mode in lowered:
+            return (f"{lead}'s {mode} sessions" if lead else f"{mode.capitalize()} sessions"), lead
     label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", heading or source_label).strip()
     label = re.sub(r"(?i)(session\s+)?schedule\b", "", label).strip(" -–—:")
     return (label or source_label)[:60], lead
+
 
 
 def _parse_table(
@@ -261,22 +261,21 @@ def _parse_table(
     if not columns:
         return [], []
 
-    lanes = max(pos for _, _, pos in columns) + 1
     base_name, lead = _room_label(heading, source.label, owner_hint)
 
-    rooms: list[Room] = []
-    for lane in range(lanes):
-        name = base_name
-        rooms.append(
-            Room(
-                roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading, str(lane))}",
-                meetingId=meeting_id,
-                roomName=name,
-                order=order_offset + lane,
-                shortName=name[:18],
-                description=heading or None,
-            )
-        )
+    # One table is one track. Several columns under the same weekday are
+    # parallel sessions of that track, not separate tracks, so they must not
+    # become "lane A / lane B" columns of their own.
+    room = Room(
+        roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading)}",
+        meetingId=meeting_id,
+        roomName=base_name,
+        order=order_offset,
+        shortName=base_name[:24],
+        description=heading or None,
+    )
+    rooms: list[Room] = [room]
+
 
     sessions: list[Session] = []
     seen: set[str] = set()
@@ -314,12 +313,12 @@ def _parse_table(
                 topic = remainder or _topic("\n".join(text.split("\n")[1:])) or topic
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
-            room = rooms[lane]
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
             session_id = (
                 f"{meeting_id}-"
-                f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic)}"
+                f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic, str(lane))}"
             )
+
             if session_id in seen:
                 continue  # merged cells repeat the same session across columns
             seen.add(session_id)
