@@ -204,7 +204,7 @@ def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
 ) -> tuple[list[Room], list[Session]]:
     """Download every schedule-looking DOCX and merge what it contains."""
-    rooms: dict[str, Room] = {}
+    rooms: list[Room] = []
     sessions: list[Session] = []
     for source in sources:
         if not source.url or not source.fileName.lower().endswith(".docx"):
@@ -227,13 +227,34 @@ def parse_schedule_sources(
         except Exception as exc:  # a malformed document must not break the run
             print(f"  could not parse {source.fileName}: {exc}")
             continue
-        for room in doc_rooms:
-            rooms.setdefault(room.roomId, room)
+        rooms.extend(doc_rooms)
         sessions.extend(doc_sessions)
-    return list(rooms.values()), sessions
+    return _number_parallel_tracks(rooms, sessions)
 
 
-def build_live_bundles(
-    *, start: str = "2025-01-01", end: str = "2028-12-31", with_documents: bool = True
-) -> list[ScheduleBundle]:
-    return [build_bundle(pm, with_documents=with_documents) for pm in fetch_meetings(start, end)]
+def _number_parallel_tracks(
+    rooms: list[Room], sessions: list[Session]
+) -> tuple[list[Room], list[Session]]:
+    """Turn repeated generic track names into "Offline 1", "Offline 2", ...
+
+    Named rooms keep their name; only the anonymous parallel tracks several
+    chairs publish get a number, so the board reads like the schedule document.
+    """
+    totals: dict[str, int] = {}
+    for room in rooms:
+        totals[room.roomName] = totals.get(room.roomName, 0) + 1
+    used: dict[str, int] = {}
+    renamed: dict[str, str] = {}
+    for index, room in enumerate(rooms):
+        base = room.roomName
+        if totals[base] > 1:
+            used[base] = used.get(base, 0) + 1
+            room.roomName = f"{base} {used[base]}"
+        room.shortName = room.roomName[:18]
+        room.order = index
+        renamed[room.roomId] = room.roomName
+    for session in sessions:
+        session.roomName = renamed.get(session.roomId, session.roomName)
+    order = {room.roomId: room.order for room in rooms}
+    sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
+    return rooms, sessions
