@@ -401,4 +401,5 @@ def _parse_table(
             )
 
     used = {s.roomId for s in sessions}
-    return [r for r in rooms if r.roomId in used], sessions
+    return [r for r in rooms_by_id.values() if r.roomId in used], sessions
+
