@@ -167,7 +167,40 @@ def _topic_key(topic: str) -> str:
     return key[:40] or "session"
 
 
+_W_NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+_MC_NS = "{http://schemas.openxmlformats.org/markup-compatibility/2006}"
+_WP_NS = "{http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing}"
+
+
+def _floating_labels(paragraph: Paragraph) -> list[tuple[int, str]]:
+    """Room labels chairs draw as floating text boxes above a schedule table.
+
+    Returns (horizontal offset, label) pairs so the caller can map them onto
+    the parallel columns of the table that follows.
+    """
+    labels: list[tuple[int, str]] = []
+    for anchor in paragraph._p.iter(f"{_MC_NS}AlternateContent"):
+        raw = "".join(t.text or "" for t in anchor.iter(f"{_W_NS}t")).strip()
+        if not raw:
+            continue
+        # The same text appears in both mc:Choice and mc:Fallback.
+        if len(raw) % 2 == 0 and raw[: len(raw) // 2] == raw[len(raw) // 2 :]:
+            raw = raw[: len(raw) // 2]
+        raw = re.sub(r"\s+", " ", raw).strip()
+        if not raw or len(raw) > 60:
+            continue
+        offset = 0
+        pos_h = anchor.find(f".//{_WP_NS}positionH")
+        if pos_h is not None:
+            node = pos_h.find(f"{_WP_NS}posOffset")
+            if node is not None and node.text:
+                offset = int(node.text)
+        labels.append((offset, raw))
+    return labels
+
+
 def parse_schedule_docx(
+
     path: str,
     *,
     meeting_id: str,
@@ -186,9 +219,11 @@ def parse_schedule_docx(
     rooms: dict[str, Room] = {}
     sessions: list[Session] = []
     heading = ""
+    pending_labels: list[str] = []
 
     for block in _iter_blocks(document):
         if isinstance(block, Paragraph):
+            pending_labels.extend(_floating_labels(block))
             if block.text.strip():
                 heading = block.text.strip()
             continue
@@ -201,10 +236,13 @@ def parse_schedule_docx(
             source=source,
             order_offset=room_order_offset + len(rooms),
             owner_hint=owner_hint,
+            lane_labels=pending_labels,
         )
+        pending_labels = []
         for room in table_rooms:
             rooms.setdefault(room.roomId, room)
         sessions.extend(table_sessions)
+
 
     return list(rooms.values()), sessions
 
@@ -243,6 +281,7 @@ def _parse_table(
     source: ScheduleSource,
     order_offset: int,
     owner_hint: str | None = None,
+    lane_labels: list[tuple[int, str]] | None = None,
 ) -> tuple[list[Room], list[Session]]:
     rows = table.rows
     if len(rows) < 2:
@@ -262,19 +301,39 @@ def _parse_table(
         return [], []
 
     base_name, lead = _room_label(heading, source.label, owner_hint)
+    heading_names_room = bool(ROOM_RE.search(heading))
 
-    # One table is one track. Several columns under the same weekday are
-    # parallel sessions of that track, not separate tracks, so they must not
-    # become "lane A / lane B" columns of their own.
-    room = Room(
-        roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading)}",
-        meetingId=meeting_id,
-        roomName=base_name,
-        order=order_offset,
-        shortName=base_name[:24],
-        description=heading or None,
-    )
-    rooms: list[Room] = [room]
+    # Chairs often name the physical rooms in floating text boxes drawn above
+    # the parallel columns. When there is one label per parallel column, each
+    # column is that room; otherwise the whole table is one track.
+    counts = sorted(per_day_seen.values()) if per_day_seen else [1]
+    lanes = counts[len(counts) // 2]  # typical parallel-column count for a day
+    named_lanes: dict[int, str] = {}
+    if lane_labels and len(lane_labels) == lanes and lanes > 1:
+        for lane_index, (_, name) in enumerate(sorted(lane_labels, key=lambda x: x[0])):
+            named_lanes[lane_index] = name
+
+    def _room_for(lane: int) -> Room:
+        name = named_lanes.get(lane, base_name)
+        by_name = lane in named_lanes or heading_names_room
+        room_id = f"{meeting_id}-{_short_hash(name if by_name else source.sourceId + heading)}"
+
+        existing = rooms_by_id.get(room_id)
+        if existing:
+            return existing
+        room = Room(
+            roomId=room_id,
+            meetingId=meeting_id,
+            roomName=name,
+            order=order_offset + lane,
+            shortName=name[:24],
+            description=heading or None,
+        )
+        rooms_by_id[room_id] = room
+        return room
+
+    rooms_by_id: dict[str, Room] = {}
+
 
 
     sessions: list[Session] = []
@@ -314,6 +373,7 @@ def _parse_table(
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
+            room = _room_for(lane)
             session_id = (
                 f"{meeting_id}-"
                 f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic, str(lane))}"
@@ -332,6 +392,7 @@ def _parse_table(
                     endTime=end_time,
                     roomId=room.roomId,
                     roomName=room.roomName,
+
                     topic=topic,
                     topicKey=_topic_key(topic),
                     agendaItems=_agenda_items(text),
@@ -344,4 +405,5 @@ def _parse_table(
             )
 
     used = {s.roomId for s in sessions}
-    return [r for r in rooms if r.roomId in used], sessions
+    return [r for r in rooms_by_id.values() if r.roomId in used], sessions
+
