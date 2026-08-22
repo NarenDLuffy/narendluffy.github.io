@@ -99,6 +99,9 @@ export interface Session {
   /** How the block is split between agenda items, when the chair stated it */
   agendaBreakdown?: AgendaSlot[];
   sessionLead?: string;
+  /** Release/work-area the chair grouped the block under, e.g. 6GR or R20 */
+  group?: string;
+
   mode?: "offline" | "online" | "hybrid";
   kind: SessionKind;
   status: SessionStatus;
