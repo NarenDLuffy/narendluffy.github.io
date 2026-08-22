@@ -16,7 +16,7 @@ from typing import Any
 
 from .models import DraftEvent
 
-IMPORTANT = {"FL_SUMMARY_UPDATED", "NEW_ROUND"}
+IMPORTANT_SEMANTICS = {"FL_SUMMARY_UPDATED", "NEW_ROUND"}
 
 
 def _bucket(iso: str, minutes: int) -> str:
@@ -36,7 +36,9 @@ def group_events(events: list[DraftEvent], window_minutes: int = 10) -> list[dic
     for (agenda, bucket), items in grouped.items():
         counts: dict[str, int] = defaultdict(int)
         for item in items:
-            counts[item.eventType] += 1
+            # Count by semantics when they exist ("FL summary update" reads
+            # better than "draft update"), by filesystem fact otherwise.
+            counts[item.semanticType or item.eventType] += 1
         notifications.append(
             {
                 "agendaItemId": None if agenda == "unmapped" else agenda,
@@ -44,7 +46,7 @@ def group_events(events: list[DraftEvent], window_minutes: int = 10) -> list[dic
                 "detectedAt": max(i.detectedAt for i in items),
                 "total": len(items),
                 "counts": dict(counts),
-                "important": any(i.eventType in IMPORTANT for i in items),
+                "important": any(i.semanticType in IMPORTANT_SEMANTICS for i in items),
                 "eventIds": [i.id for i in items],
                 "summary": summarize(counts),
             }
@@ -59,7 +61,9 @@ def summarize(counts: dict[str, int]) -> str:
         "FILE_UPDATED": ("draft update", "draft updates"),
         "FL_SUMMARY_UPDATED": ("FL summary update", "FL summary updates"),
         "NEW_ROUND": ("new round", "new rounds"),
+        "NEW_FL_FOLDER": ("new FL folder", "new FL folders"),
         "NEW_FOLDER": ("new folder", "new folders"),
+        "FOLDER_REMOVED": ("removed folder", "removed folders"),
         "FILE_REMOVED": ("removed file", "removed files"),
     }
     for key, (one, many) in labels.items():

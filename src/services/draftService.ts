@@ -23,10 +23,26 @@ export const EVENT_LABEL: Record<DraftEvent["eventType"], string> = {
   NEW_FILE: "New file",
   FILE_UPDATED: "Updated",
   NEW_FOLDER: "New folder",
-  NEW_ROUND: "New round",
-  FL_SUMMARY_UPDATED: "FL summary",
   FILE_REMOVED: "Removed",
+  FOLDER_REMOVED: "Folder removed",
 };
+
+const SEMANTIC_LABEL: Record<string, string> = {
+  NEW_ROUND: "New round",
+  NEW_FL_FOLDER: "FL folder",
+  FL_SUMMARY_UPDATED: "FL summary",
+};
+
+/**
+ * Show the semantic label when the scanner was confident, the plain
+ * filesystem fact otherwise. A folder is never called a round on a guess.
+ */
+export function eventLabel(event: DraftEvent): string {
+  return (
+    (event.semanticType ? SEMANTIC_LABEL[event.semanticType] : undefined) ??
+    EVENT_LABEL[event.eventType]
+  );
+}
 
 export interface DraftResult {
   index: DraftIndex | null;
@@ -95,6 +111,108 @@ export function artifactsForAgenda(index: DraftIndex, code: string): DraftArtifa
     .sort((a, b) => (b.modifiedAt ?? b.lastSeenAt).localeCompare(a.modifiedAt ?? a.lastSeenAt));
 }
 
+/** Files the scanner could not attach to any agenda item — kept, never guessed. */
+export function unmappedArtifacts(index: DraftIndex): DraftArtifact[] {
+  return index.artifacts
+    .filter((a) => !a.agendaItemId && !a.removedAt)
+    .sort((a, b) => (b.modifiedAt ?? b.lastSeenAt).localeCompare(a.modifiedAt ?? a.lastSeenAt));
+}
+
+/**
+ * Newest-first ordering for two revisions of the same document.
+ *
+ * The same filename genuinely repeats across folders (Round 1 and Round 2 both
+ * hold `FL_summary_v01.docx`), so recency is decided by folder depth-agnostic
+ * signals in order: explicit version number, server timestamp, first sighting.
+ */
+export function compareRecency(a: DraftArtifact, b: DraftArtifact): number {
+  const ra = a.revision ?? -1;
+  const rb = b.revision ?? -1;
+  const ta = a.modifiedAt ?? a.lastSeenAt ?? "";
+  const tb = b.modifiedAt ?? b.lastSeenAt ?? "";
+  if (ta !== tb) return tb.localeCompare(ta);
+  if (ra !== rb) return rb - ra;
+  return (b.firstSeenAt ?? "").localeCompare(a.firstSeenAt ?? "");
+}
+
+/** Latest FL summary anywhere in the agenda item's subtree (§19). */
+export function latestFlSummary(
+  index: DraftIndex,
+  code: string,
+): DraftArtifact | undefined {
+  return index.artifacts
+    .filter((a) => a.agendaItemId === code && a.fileType === "fl_summary" && !a.removedAt)
+    .sort(compareRecency)[0];
+}
+
+/* ---------- generic directory tree ---------- */
+
+export interface DraftTreeNode {
+  folder: DraftFolder;
+  /** Path segments from the agenda folder down to this folder. */
+  breadcrumbs: string[];
+  files: DraftArtifact[];
+  children: DraftTreeNode[];
+  subtreeFileCount: number;
+}
+
+/**
+ * Rebuild whatever hierarchy the scanner discovered under an agenda item.
+ *
+ * The UI renders this tree as-is: no level is invented when a meeting puts its
+ * files straight into the agenda folder, and no level is dropped when a
+ * moderator nests four folders deep.
+ */
+export function buildDraftTree(index: DraftIndex, code: string): DraftTreeNode[] {
+  const folders = index.folders.filter((f) => f.agendaItemId === code && !f.removedAt);
+  if (folders.length === 0) return [];
+
+  const byPath = new Map(folders.map((f) => [f.normalizedPath, f]));
+  const filesByFolder = new Map<string, DraftArtifact[]>();
+  index.artifacts
+    .filter((a) => a.agendaItemId === code && !a.removedAt)
+    .forEach((a) => {
+      const key = a.folderPath ?? "";
+      const list = filesByFolder.get(key) ?? [];
+      list.push(a);
+      filesByFolder.set(key, list);
+    });
+
+  const nodes = new Map<string, DraftTreeNode>();
+  folders.forEach((folder) => {
+    nodes.set(folder.normalizedPath, {
+      folder,
+      breadcrumbs: [],
+      files: (filesByFolder.get(folder.normalizedPath) ?? []).sort(compareRecency),
+      children: [],
+      subtreeFileCount: 0,
+    });
+  });
+
+  const roots: DraftTreeNode[] = [];
+  nodes.forEach((node, path) => {
+    const parentPath = node.folder.parentPath ?? "";
+    const parent = parentPath && byPath.has(parentPath) ? nodes.get(parentPath) : undefined;
+    if (parent && parent !== node) parent.children.push(node);
+    else roots.push(node);
+    void path;
+  });
+
+  const finish = (node: DraftTreeNode, trail: string[]): number => {
+    node.breadcrumbs = [...trail, node.folder.name];
+    node.children.sort((a, b) => a.folder.name.localeCompare(b.folder.name));
+    let total = node.files.length;
+    node.children.forEach((child) => {
+      total += finish(child, node.breadcrumbs);
+    });
+    node.subtreeFileCount = total;
+    return total;
+  };
+  roots.sort((a, b) => a.folder.normalizedPath.localeCompare(b.folder.normalizedPath));
+  roots.forEach((root) => finish(root, []));
+  return roots;
+}
+
 /**
  * Roll events up per agenda item. `seenAt` (per code) decides what is unread,
  * `since` suppresses history from before the user started following.
@@ -108,6 +226,7 @@ function emptyActivity(code: string, latestFl?: DraftArtifact): AgendaActivity {
     flUpdates: 0,
     newFiles: 0,
     newRounds: 0,
+    newFolders: 0,
     fileCount: 0,
     flCount: 0,
     ...(latestFl ? { latestFlSummary: latestFl } : {}),
@@ -124,14 +243,14 @@ export function buildActivity(
   const out = new Map<string, AgendaActivity>();
   if (!index) return out;
 
+  // Latest FL summary is searched across the whole agenda subtree, wherever a
+  // moderator happened to file it (§19), and duplicated filenames across
+  // rounds resolve to the genuinely newest revision.
   const latestFl = new Map<string, DraftArtifact>();
   index.artifacts.forEach((a) => {
     if (a.fileType !== "fl_summary" || !a.agendaItemId || a.removedAt) return;
     const current = latestFl.get(a.agendaItemId);
-    const stamp = a.modifiedAt ?? a.lastSeenAt;
-    if (!current || stamp > (current.modifiedAt ?? current.lastSeenAt)) {
-      latestFl.set(a.agendaItemId, a);
-    }
+    if (!current || compareRecency(a, current) < 0) latestFl.set(a.agendaItemId, a);
   });
 
   // Seed one entry per agenda item that has files, so the tracker is browsable
@@ -153,9 +272,12 @@ export function buildActivity(
     const entry = out.get(code) ?? emptyActivity(code, latestFl.get(code));
 
     entry.events.push(e);
-    if (e.eventType === "FL_SUMMARY_UPDATED") entry.flUpdates += 1;
+    if (e.semanticType === "FL_SUMMARY_UPDATED") entry.flUpdates += 1;
     if (e.eventType === "NEW_FILE") entry.newFiles += 1;
-    if (e.eventType === "NEW_ROUND") entry.newRounds += 1;
+    if (e.eventType === "NEW_FOLDER") {
+      entry.newFolders += 1;
+      if (e.semanticType === "NEW_ROUND") entry.newRounds += 1;
+    }
 
     const seen = opts.seenAt?.(code);
     const since = opts.since?.(code);

@@ -3,10 +3,16 @@
 Published as `public/data/meetings/<slug>/drafts.json`; the TypeScript mirror
 lives in `src/types/drafts.ts`.
 
-A *logical artifact* (one uploaded document) is modelled separately from the
-*source appearances* of that artifact, so the same file arriving first on the
-meeting-local server and later on the public 3GPP site is one artifact with two
-appearances - and therefore one notification, never two.
+Two principles shape this model:
+
+1. *Filesystem fact is separated from semantic interpretation.* Events describe
+   what happened on the server (NEW_FILE, NEW_FOLDER, ...); an optional
+   `semanticType` adds meaning (NEW_ROUND, FL_SUMMARY_UPDATED) only when the
+   classifier is confident. Nothing downstream may require the semantics.
+2. A *logical artifact* (one uploaded document) is modelled separately from the
+   *source appearances* of that artifact, so the same file arriving first on the
+   meeting-local server and later on the public 3GPP site is one artifact with
+   two appearances - and therefore one notification, never two.
 """
 
 from __future__ import annotations
@@ -14,17 +20,24 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from typing import Any, Literal
 
-DRAFTS_SCHEMA_VERSION = 1
+DRAFTS_SCHEMA_VERSION = 2
 
 SourceType = Literal["public", "meeting-local"]
+
+# Filesystem facts only. No RAN1 vocabulary here, ever.
 EventType = Literal[
     "NEW_FILE",
     "FILE_UPDATED",
     "NEW_FOLDER",
-    "NEW_ROUND",
-    "FL_SUMMARY_UPDATED",
     "FILE_REMOVED",
+    "FOLDER_REMOVED",
 ]
+
+# Optional interpretation layered on top of a filesystem fact.
+SemanticType = Literal["NEW_ROUND", "NEW_FL_FOLDER", "FL_SUMMARY_UPDATED", "OTHER"]
+
+# agenda | round | fl | topic | generic | unknown
+FolderType = str
 
 
 @dataclass
@@ -40,10 +53,17 @@ class DraftFolder:
     agendaConfidence: float = 0.0
     agendaMethod: str = "unmapped"
     parentFolderId: str | None = None
-    roundNumber: int | None = None
+    parentPath: str | None = None
     depth: int = 0
+    folderType: FolderType = "generic"
+    classificationConfidence: float = 0.0
+    roundNumber: int | None = None
     url: str | None = None
+    """Files directly inside this folder."""
     fileCount: int = 0
+    """Files anywhere below this folder, including itself."""
+    subtreeFileCount: int = 0
+    removedAt: str | None = None
 
 
 @dataclass
@@ -70,6 +90,9 @@ class DraftArtifact:
     firstSeenAt: str
     lastSeenAt: str
     agendaItemId: str | None = None
+    """Folder path segments between the agenda folder and the file."""
+    folderPath: str | None = None
+    depth: int = 0
     revision: int | None = None
     contentHash: str | None = None
     size: int | None = None
@@ -90,6 +113,7 @@ class DraftEvent:
     eventType: EventType
     detectedAt: str
     sourceType: SourceType
+    semanticType: SemanticType | None = None
     agendaItemId: str | None = None
     artifactId: str | None = None
     folderId: str | None = None
@@ -99,6 +123,8 @@ class DraftEvent:
     folderPath: str | None = None
     roundNumber: int | None = None
     url: str | None = None
+    """Set when this event is folded into a folder-level group notification."""
+    groupKey: str | None = None
 
 
 @dataclass

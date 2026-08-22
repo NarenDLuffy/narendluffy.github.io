@@ -11,7 +11,7 @@ import {
   EventRow,
   FollowButton,
 } from "@/components/DraftActivity";
-import { relativeTime } from "@/services/draftService";
+import { relativeTime, unmappedArtifacts } from "@/services/draftService";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/drafts/")({
@@ -47,6 +47,9 @@ function DraftsPage() {
     .sort((a, b) =>
       (b.latestAt ?? b.latestFileAt ?? "").localeCompare(a.latestAt ?? a.latestFileAt ?? ""),
     );
+
+  // Files the scanner could not attach to an agenda item are never dropped.
+  const unmapped = index ? unmappedArtifacts(index) : [];
 
   const feed = (index?.events ?? [])
     .slice()
@@ -128,7 +131,7 @@ function DraftsPage() {
                 ["flSummary", "FL summaries"],
                 ["newFile", "New files"],
                 ["fileUpdated", "Updated files"],
-                ["newRound", "New rounds"],
+                ["newFolder", "New folders"],
                 ["fileRemoved", "Removed files"],
               ] as const
             ).map(([key, label]) => (
@@ -216,6 +219,25 @@ function DraftsPage() {
               ))}
             </ol>
           )}
+
+          {unmapped.length > 0 ? (
+            <section>
+              <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+                Unmapped draft activity
+              </h2>
+              <p className="mb-2 text-xs text-muted-foreground">
+                {unmapped.length} file(s) discovered under the drafts tree that could not be
+                matched to an agenda item. Nothing is discarded, and nothing is guessed.
+              </p>
+              <ol className="space-y-1.5">
+                {unmapped.slice(0, 15).map((a) => (
+                  <li key={a.id}>
+                    <ArtifactRow artifact={a} />
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ) : null}
 
           <section>
             <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">

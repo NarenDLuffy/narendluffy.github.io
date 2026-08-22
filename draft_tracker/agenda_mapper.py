@@ -11,8 +11,12 @@ Folder naming is inconsistent between meetings, e.g.
     10.8.1 Evaluations
     10.5.4(DL-ctl-ch&sch&HARQ)
 
-so mapping combines: an agenda-number pattern, the parent folder's mapping and
-a normalized-title comparison against the meeting agenda.
+so mapping combines: an agenda-number pattern, the mapping inherited from the
+nearest mapped ancestor and a normalized-title comparison against the meeting
+agenda. Folders that carry no agenda signal at all - "Round 1", "Further
+discussion", "ABC discussion", anything a moderator invents mid-week - simply
+inherit their ancestor's agenda item. That is the whole rule; no folder name
+vocabulary is required for tracking.
 """
 
 from __future__ import annotations
@@ -22,7 +26,6 @@ from dataclasses import dataclass
 from difflib import SequenceMatcher
 
 CODE_RE = re.compile(r"^\s*(?P<code>\d{1,2}(?:\.\d{1,2}){0,5})\b")
-ROUND_RE = re.compile(r"^\s*(?:round|rd\.?)\s*(?P<n>\d+)\b", re.I)
 
 
 @dataclass(frozen=True)
@@ -36,14 +39,12 @@ class AgendaMapping:
         return self.agenda_item_id is None
 
 
+UNMAPPED = AgendaMapping(None, 0.0, "unmapped")
+
+
 def normalize_name(name: str) -> str:
     text = re.sub(r"[\(\)\[\]_,&/\\-]+", " ", name.lower())
     return re.sub(r"\s+", " ", text).strip()
-
-
-def is_round_folder(name: str) -> int | None:
-    m = ROUND_RE.match(name.strip())
-    return int(m.group("n")) if m else None
 
 
 def extract_code(name: str) -> str | None:
@@ -74,11 +75,8 @@ class AgendaMapper:
                 self.by_title.setdefault(key, code)
 
     def map_folder(self, name: str, parent: AgendaMapping | None) -> AgendaMapping:
+        """Map one folder, given the mapping of its nearest mapped ancestor."""
         parent_code = parent.agenda_item_id if parent else None
-
-        if is_round_folder(name) is not None:
-            # A round folder belongs to the agenda item of its parent folder.
-            return AgendaMapping(parent_code, parent.confidence if parent else 0.0, "round-of-parent")
 
         code = extract_code(name)
         if code:
@@ -88,8 +86,7 @@ class AgendaMapper:
             # explicit number when it sits under a known ancestor.
             if parent_code and code.startswith(parent_code + "."):
                 return AgendaMapping(code, 0.75, "agenda-code-under-parent")
-            ancestor = self._nearest_known_ancestor(code)
-            if ancestor:
+            if self._nearest_known_ancestor(code):
                 return AgendaMapping(code, 0.7, "agenda-code-inferred")
             return AgendaMapping(code, 0.5, "agenda-code-unknown")
 
@@ -103,10 +100,12 @@ class AgendaMapper:
                 return AgendaMapping(best, round(score, 2), "title-similar")
 
         if parent_code:
-            # Sub-folders such as "Contact information" inherit their parent.
-            return AgendaMapping(parent_code, 0.6, "inherited-from-parent")
+            # Any folder with no agenda signal of its own - a round, an FL
+            # folder, "Further discussion", "Wednesday" - belongs to the agenda
+            # item of its nearest mapped ancestor (§8, §9).
+            return AgendaMapping(parent_code, min(parent.confidence if parent else 0.6, 0.6), "inherited-from-ancestor")
 
-        return AgendaMapping(None, 0.0, "unmapped")
+        return UNMAPPED
 
     def _nearest_known_ancestor(self, code: str) -> str | None:
         parts = code.split(".")

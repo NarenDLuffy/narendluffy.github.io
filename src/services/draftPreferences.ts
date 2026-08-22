@@ -19,7 +19,7 @@ export const DEFAULT_PREFS: DraftNotificationPrefs = {
   newFile: true,
   fileUpdated: true,
   flSummary: true,
-  newRound: true,
+  newFolder: true,
   fileRemoved: false,
   grouping: "grouped",
 };
