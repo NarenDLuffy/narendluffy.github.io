@@ -413,11 +413,20 @@ def parse_block_schedule_docx(
     sessions = [s for s in sessions if s.startTime < s.endTime]
     # The same slot written twice (a chair repeating the plenary or their own
     # column in a detail table) is one session.
-    unique: dict[tuple[str, str, str, str, str], Session] = {}
+    unique: dict[tuple[str, str, str, str], Session] = {}
+
+    def informative(session: Session) -> tuple[int, int, int]:
+        topic = session.topic.strip()
+        return (
+            0 if topic.lower().startswith("ai ") else 1,  # drop bare "AI <x>" labels
+            len(session.agendaItems),
+            len(topic),
+        )
+
     for session in sessions:
-        key = (session.date, session.startTime, session.endTime, session.roomId, session.topic.lower())
+        key = (session.date, session.startTime, session.endTime, session.roomId)
         current = unique.get(key)
-        if current is None or len(session.topic) > len(current.topic):
+        if current is None or informative(session) > informative(current):
             unique[key] = session
     sessions = list(unique.values())
     if not sessions:
