@@ -19,6 +19,7 @@ import tempfile
 from datetime import datetime, timezone
 from urllib.parse import unquote
 
+from .block_schedule import parse_block_schedule_docx
 from .docx_schedule import parse_schedule_docx
 from .meeting_discovery import classify_document, compute_status, revision_parts
 from .models import (
@@ -109,6 +110,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
                 )
             )
         sources = discover_sources(meeting, pm.folder_url, _iso(now))
+        sources.extend(manual_sources(meeting, _iso(now)))
         rooms, sessions = parse_schedule_sources(meeting, sources)
         meeting.schedulePublished = bool(sessions)
 
@@ -152,6 +154,47 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
                 if inner_name.lower().endswith(DOC_EXTENSIONS):
                     found.append(_to_source(meeting, inner, inner_name, retrieved_at))
     return _latest_revisions(found)
+
+
+MANUAL_DOCS_DIR = os.path.join(os.path.dirname(__file__), "manual_docs")
+
+
+def manual_sources(meeting: Meeting, retrieved_at: str) -> list[ScheduleSource]:
+    """Documents dropped into ingestion/manual_docs/<meeting-slug>/.
+
+    Chairs sometimes circulate the week grid before it is uploaded to the 3GPP
+    folder. Anything placed here is ingested exactly like a public document and
+    is labelled as such in the source panel; once 3GPP publishes the same file
+    the public copy simply supersedes it by revision.
+    """
+    folder = os.path.join(MANUAL_DOCS_DIR, meeting.slug)
+    if not os.path.isdir(folder):
+        return []
+    found: list[ScheduleSource] = []
+    for name in sorted(os.listdir(folder)):
+        if not name.lower().endswith(DOC_EXTENSIONS):
+            continue
+        path = os.path.join(folder, name)
+        found.append(
+            ScheduleSource(
+                sourceId=f"{meeting.id}-manual-{hashlib.sha1(name.encode()).hexdigest()[:8]}",
+                meetingId=meeting.id,
+                fileName=name,
+                label=name.rsplit(".", 1)[0][:60],
+                type=classify_document(name),  # type: ignore[arg-type]
+                origin="manual",
+                retrievedAt=retrieved_at,
+                revisionParts=revision_parts(name),
+                url=None,
+                contentHash=hashlib.sha256(open(path, "rb").read()).hexdigest(),
+            )
+        )
+    return found
+
+
+def _local_path(source: ScheduleSource) -> str | None:
+    path = os.path.join(MANUAL_DOCS_DIR, source.meetingId, source.fileName)
+    return path if os.path.isfile(path) else None
 
 
 def _to_source(meeting: Meeting, url: str, name: str, retrieved_at: str) -> ScheduleSource:
@@ -206,13 +249,31 @@ def parse_schedule_sources(
     """Download every schedule-looking DOCX and merge what it contains."""
     rooms: list[Room] = []
     sessions: list[Session] = []
+    grids: list[tuple[list[Room], list[Session]]] = []
     for source in sources:
-        if not source.url or not source.fileName.lower().endswith(".docx"):
+        if not source.fileName.lower().endswith(".docx"):
             continue
         if "schedule" not in source.fileName.lower() and source.type == "unknown_schedule":
             continue
-        path = download_to_temp(source.url)
+        path = _local_path(source) or (download_to_temp(source.url) if source.url else None)
         if not path:
+            continue
+        # The week grid ("online and offline schedules") is the authoritative
+        # layout: real rooms, real blocks. Chair notes are only used when no
+        # grid document exists for this meeting.
+        try:
+            block_rooms, block_sessions = parse_block_schedule_docx(
+                path,
+                meeting_id=meeting.id,
+                start_date=meeting.startDate,
+                end_date=meeting.endDate,
+                source=source,
+            )
+        except Exception as exc:
+            print(f"  grid parse failed for {source.fileName}: {exc}")
+            block_rooms, block_sessions = [], []
+        if block_sessions:
+            grids.append((block_rooms, block_sessions))
             continue
         try:
             doc_rooms, doc_sessions = parse_schedule_docx(
@@ -222,13 +283,18 @@ def parse_schedule_sources(
                 end_date=meeting.endDate,
                 source=source,
                 room_order_offset=len(rooms),
-                owner_hint=_owner_hint(source.url),
+                owner_hint=_owner_hint(source.url or ""),
             )
         except Exception as exc:  # a malformed document must not break the run
             print(f"  could not parse {source.fileName}: {exc}")
             continue
         rooms.extend(doc_rooms)
         sessions.extend(doc_sessions)
+    if grids:
+        # Chairs circulate personal copies of the same week grid. The most
+        # complete document wins outright, so the timetable shows one coherent
+        # week instead of the same session repeated per copy.
+        rooms, sessions = max(grids, key=lambda pair: (len(pair[1]), len(pair[0])))
     return _name_tracks(rooms, sessions)
 
 
@@ -262,12 +328,8 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     merged_rooms = list(by_name.values())
 
 
-    def sort_key(room: Room) -> tuple[int, str]:
-        lowered = room.roomName.lower()
-        rank = 2 if "offline" in lowered else 1 if "online" in lowered else 0
-        return (rank, lowered)
-
-    merged_rooms.sort(key=sort_key)
+    # Rooms keep the order the schedule document lays them out in.
+    merged_rooms.sort(key=lambda room: (room.order, room.roomName.lower()))
     for index, room in enumerate(merged_rooms):
         room.order = index
     names = {room.roomId: room.roomName for room in merged_rooms}

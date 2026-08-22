@@ -1,33 +1,53 @@
 [
   {
-    "changeId": "room_changed-ran1-124-72e227f50d-2026-08-22T00:59:35+00:00",
+    "changeId": "room_changed-ran1-124-1f297121-2026-08-22T01:24:00+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-08-22T00:59:35+00:00",
+    "detectedAt": "2026-08-22T01:24:00+00:00",
     "type": "room_changed",
-    "title": "RAN1#124 expected to close at 16:00 moved",
+    "title": "Waveform moved",
     "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-124-72e227f50d",
-    "to": "Detailed  for RAN1_Brk1 (Sorour) at Level 1, A1 room",
-    "sourceIds": [
-      "ran1-124-211244ae",
-      "ran1-124-f68f89f5",
-      "ran1-124-2da12645"
+    "agendaItems": [
+      "10.2.1"
     ],
-    "from": "RAN1_Brk#2 \u00b7 A3 \u00b7 Level 1"
+    "sessionId": "ran1-124-1f297121",
+    "to": "A3",
+    "sourceIds": [
+      "ran1-124-3873961c"
+    ],
+    "from": "J1"
   },
   {
-    "changeId": "session_removed-ran1-124-1e53751769-2026-08-22T00:59:35+00:00",
+    "changeId": "start_time_changed-ran1-124-1f297121-2026-08-22T01:24:00+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-08-22T00:59:35+00:00",
-    "type": "session_removed",
-    "title": "RAN1#124 commences at 09:00 on Monday removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124-1e53751769",
-    "sourceIds": [
-      "ran1-124-2da12645"
+    "detectedAt": "2026-08-22T01:24:00+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
     ],
-    "from": "RAN1_Brk#2 \u00b7 A3 \u00b7 Level 1"
+    "sessionId": "ran1-124-1f297121",
+    "to": "09:30",
+    "sourceIds": [
+      "ran1-124-3873961c"
+    ],
+    "from": "15:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-1f297121-2026-08-22T01:24:00+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-22T01:24:00+00:00",
+    "type": "end_time_changed",
+    "title": "Waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-1f297121",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-124-3873961c"
+    ],
+    "from": "16:30"
   }
 ]

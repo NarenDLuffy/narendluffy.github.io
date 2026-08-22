@@ -42,7 +42,10 @@ export function Timetable({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scrollToNowKey]);
 
+  // Breaks and lunches belong to the whole week grid, not to one room.
+  const bands = sessions.filter((s) => !s.roomId && (s.kind === "break" || s.kind === "lunch"));
   const activeRooms = rooms.filter((r) => sessions.some((s) => s.roomId === r.roomId));
+
 
   // Parallel sessions inside one track share the track's column side by side.
   const layout = new Map<string, { sessions: Session[]; laneOf: Map<string, number>; lanes: number }>();
@@ -109,6 +112,23 @@ export function Timetable({
             />
           ))}
 
+          {bands.map((b) => (
+            <div
+              key={b.sessionId}
+              className="pointer-events-none absolute inset-x-0 z-[5] flex items-center justify-center border-y border-dashed border-border bg-secondary/70"
+              style={{
+                top: (minutesOf(b.startTime) - start) * PX_PER_MIN,
+                height: (minutesOf(b.endTime) - minutesOf(b.startTime)) * PX_PER_MIN,
+              }}
+            >
+              <span className="mono-code text-[10px] uppercase tracking-wide text-muted-foreground">
+                {b.topic} · {b.startTime}–{b.endTime}
+              </span>
+            </div>
+          ))}
+
+
+
           {activeRooms.map((room) => {
             const entry = layout.get(room.roomId)!;
             const { sessions: roomSessions, laneOf, lanes: laneCount } = entry;
@@ -144,8 +164,18 @@ export function Timetable({
                       {!isBreak ? (
                         <span className="topic-bar absolute inset-y-0 left-0 w-1" aria-hidden />
                       ) : null}
-                      <div className={cn("text-[11px] font-semibold leading-tight", !isBreak && "pl-1")}>
-                        {s.topic}
+                      <div
+                        className={cn(
+                          "flex items-baseline gap-1 text-[11px] font-semibold leading-tight",
+                          !isBreak && "pl-1",
+                        )}
+                      >
+                        {s.group ? (
+                          <span className="mono-code shrink-0 rounded bg-secondary px-1 text-[9px] uppercase text-muted-foreground">
+                            {s.group}
+                          </span>
+                        ) : null}
+                        <span className="truncate">{s.topic}</span>
                       </div>
                       {s.agendaItems.length > 0 ? (
                         <div className="mono-code pl-1 text-[10px] text-muted-foreground">
@@ -156,6 +186,7 @@ export function Timetable({
                         {s.startTime}-{s.endTime}
                         {s.sessionLead && h > 60 ? ` · ${s.sessionLead}` : ""}
                       </div>
+
                     </div>
                   );
                 })}
