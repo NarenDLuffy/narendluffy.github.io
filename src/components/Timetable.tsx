@@ -83,20 +83,44 @@ export function Timetable({
             />
           ))}
 
-          {activeRooms.map((room) => (
-            <div key={room.roomId} className="relative w-40 shrink-0 border-r border-border last:border-r-0">
-              {sessions
-                .filter((s) => s.roomId === room.roomId)
-                .map((s) => {
+          {activeRooms.map((room) => {
+            const roomSessions = sessions
+              .filter((s) => s.roomId === room.roomId)
+              .sort((a, b) => minutesOf(a.startTime) - minutesOf(b.startTime));
+            // Parallel sessions of the same track share the column side by side.
+            const laneEnd: number[] = [];
+            const laneOf = new Map<string, number>();
+            for (const s of roomSessions) {
+              const from = minutesOf(s.startTime);
+              let lane = laneEnd.findIndex((e) => e <= from);
+              if (lane === -1) lane = laneEnd.push(from) - 1;
+              laneEnd[lane] = minutesOf(s.endTime);
+              laneOf.set(s.sessionId, lane);
+            }
+            const laneCount = Math.max(1, laneEnd.length);
+            return (
+              <div
+                key={room.roomId}
+                className="relative shrink-0 border-r border-border last:border-r-0"
+                style={{ width: 160 * laneCount }}
+              >
+                {roomSessions.map((s) => {
                   const top = (minutesOf(s.startTime) - start) * PX_PER_MIN;
                   const h = (minutesOf(s.endTime) - minutesOf(s.startTime)) * PX_PER_MIN;
                   const isBreak = s.kind === "break" || s.kind === "lunch";
+                  const lane = laneOf.get(s.sessionId) ?? 0;
                   return (
                     <div
                       key={s.sessionId}
-                      style={{ top, height: h - 2, ...topicStyle(s.topicKey) }}
+                      style={{
+                        top,
+                        height: h - 2,
+                        left: `${(lane / laneCount) * 100}%`,
+                        width: `${(1 / laneCount) * 100}%`,
+                        ...topicStyle(s.topicKey),
+                      }}
                       className={cn(
-                        "absolute inset-x-1 overflow-hidden rounded-md border px-1.5 py-1",
+                        "absolute overflow-hidden rounded-md border px-1.5 py-1",
                         isBreak
                           ? "border-dashed border-border bg-secondary/60"
                           : "border-border bg-card",
@@ -120,8 +144,10 @@ export function Timetable({
                     </div>
                   );
                 })}
-            </div>
-          ))}
+              </div>
+            );
+          })}
+
 
           {showNowMarker && nowMinutes >= start && nowMinutes <= end ? (
             <div
