@@ -332,11 +332,10 @@ def parse_block_schedule_docx(
             if not cells:
                 continue
             label_text = cells[0].text.replace("\n", " ")
-            block = BLOCK_RE.search(label_text)
 
-            # Full-width break band.
+            # Full-width break band (checked first: it also carries a time range).
             joined = " ".join(cell.text for cell in cells).replace("\n", " ")
-            if BREAK_RE.search(label_text) and not block:
+            if BREAK_RE.search(label_text):
                 span = BLOCK_RE.search(joined)
                 if span:
                     for day, day_date in day_dates.items():
@@ -359,6 +358,7 @@ def parse_block_schedule_docx(
                             sources=[SessionSourceRef(source.sourceId, ["break"])],
                         )
                 continue
+            block = BLOCK_RE.search(label_text)
             if not block:
                 continue
 
@@ -393,6 +393,7 @@ def parse_block_schedule_docx(
                     )
                 )
 
+    sessions = [s for s in sessions if s.startTime < s.endTime]
     if not sessions:
         return [], []
     return sorted(rooms.values(), key=lambda r: r.order), [*sessions, *breaks.values()]
