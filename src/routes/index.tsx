@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { AlertTriangle, ArrowRight } from "lucide-react";
 import { minutesOf } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useDrafts } from "@/hooks/useDrafts";
 import { SessionCard } from "@/components/SessionCard";
 import { ChangesLink } from "@/components/AppShell";
 import { MeetingBanner } from "@/components/MeetingBanner";
@@ -31,6 +32,7 @@ export const Route = createFileRoute("/")({
 
 function NowPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
+  const drafts = useDrafts(meeting);
 
   if (isLoading) return <LoadingState />;
   if (!meeting) return <NoMeetingState />;
