@@ -112,6 +112,20 @@ class SessionSourceRef:
 
 
 @dataclass
+class AgendaSlot:
+    """One agenda item inside a session block, with its own share of the time."""
+
+    code: str | None
+    label: str
+    minutes: int | None = None
+    startTime: str | None = None
+    endTime: str | None = None
+
+    def to_json(self) -> dict[str, Any]:
+        return _clean(asdict(self))
+
+
+@dataclass
 class Session:
     sessionId: str
     meetingId: str
@@ -124,6 +138,7 @@ class Session:
     topic: str
     topicKey: str
     agendaItems: list[str] = field(default_factory=list)
+    agendaBreakdown: list[AgendaSlot] = field(default_factory=list)
     sessionLead: str | None = None
     mode: str | None = None
     kind: SessionKind = "session"

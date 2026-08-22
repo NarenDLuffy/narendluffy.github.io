@@ -204,7 +204,7 @@ def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
 ) -> tuple[list[Room], list[Session]]:
     """Download every schedule-looking DOCX and merge what it contains."""
-    rooms: dict[str, Room] = {}
+    rooms: list[Room] = []
     sessions: list[Session] = []
     for source in sources:
         if not source.url or not source.fileName.lower().endswith(".docx"):
@@ -227,10 +227,87 @@ def parse_schedule_sources(
         except Exception as exc:  # a malformed document must not break the run
             print(f"  could not parse {source.fileName}: {exc}")
             continue
-        for room in doc_rooms:
-            rooms.setdefault(room.roomId, room)
+        rooms.extend(doc_rooms)
         sessions.extend(doc_sessions)
-    return list(rooms.values()), sessions
+    return _name_tracks(rooms, sessions)
+
+
+def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
+    """Give every column a name a delegate can act on.
+
+    Order of preference: the physical room the chair wrote down
+    ("Praetorium", "RAN1_Brk#2 - 1.1 Himalaya"), then the chair who runs the
+    column ("Hiroki - offline"), and only as a last resort a plain
+    "Offline breakout" label. Columns that would end up with the same name are
+    merged when their sessions never overlap, so the board shows one lane per
+    real track instead of an arbitrary count of numbered lanes.
+    """
+    by_room: dict[str, list[Session]] = {}
+    for session in sessions:
+        by_room.setdefault(session.roomId, []).append(session)
+
+    def label(room: Room) -> str:
+        name = room.roomName
+        if name not in ("Online", "Offline"):
+            return name
+        mode = name.lower()
+        own = by_room.get(room.roomId, [])
+        leads = [s.sessionLead for s in own if s.sessionLead]
+        if leads:
+            main_lead = max(set(leads), key=leads.count)
+            return f"{main_lead} - {mode}"
+        return "Online session" if mode == "online" else "Offline breakout"
+
+    # Merge lanes that share a name and never run at the same time.
+    lanes: list[tuple[str, list[Room], list[Session]]] = []
+    for room in rooms:
+        name = label(room)
+        own = sorted(by_room.get(room.roomId, []), key=lambda s: (s.date, s.startTime))
+        for lane_name, lane_rooms, lane_sessions in lanes:
+            if lane_name != name:
+                continue
+            clash = any(
+                a.date == b.date and a.startTime < b.endTime and b.startTime < a.endTime
+                for a in lane_sessions
+                for b in own
+            )
+            if not clash:
+                lane_rooms.append(room)
+                lane_sessions.extend(own)
+                break
+        else:
+            lanes.append((name, [room], list(own)))
+
+    # A chair with two genuinely parallel lanes gets "A"/"B" rather than 1/2.
+    seen: dict[str, int] = {}
+    merged_rooms: list[Room] = []
+    remap: dict[str, str] = {}
+    for name, lane_rooms, lane_sessions in lanes:
+        total = sum(1 for other, *_ in lanes if other == name)
+        seen[name] = seen.get(name, 0) + 1
+        final = name if total == 1 else f"{name} ({chr(64 + seen[name])})"
+        keeper = lane_rooms[0]
+        keeper.roomName = final
+        keeper.shortName = final[:24]
+        for room in lane_rooms:
+            remap[room.roomId] = keeper.roomId
+        merged_rooms.append(keeper)
+
+    def sort_key(room: Room) -> tuple[int, str]:
+        lowered = room.roomName.lower()
+        rank = 2 if "offline" in lowered else 1 if "online" in lowered else 0
+        return (rank, lowered)
+
+    merged_rooms.sort(key=sort_key)
+    for index, room in enumerate(merged_rooms):
+        room.order = index
+    names = {room.roomId: room.roomName for room in merged_rooms}
+    for session in sessions:
+        session.roomId = remap.get(session.roomId, session.roomId)
+        session.roomName = names.get(session.roomId, session.roomName)
+    order = {room.roomId: room.order for room in merged_rooms}
+    sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
+    return merged_rooms, sessions
 
 
 def build_live_bundles(

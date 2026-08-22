@@ -96,12 +96,23 @@ export interface Session {
   /** Topic key used for consistent colouring; discovered, not hard-coded */
   topicKey: string;
   agendaItems: string[];
+  /** How the block is split between agenda items, when the chair stated it */
+  agendaBreakdown?: AgendaSlot[];
   sessionLead?: string;
   mode?: "offline" | "online" | "hybrid";
   kind: SessionKind;
   status: SessionStatus;
   note?: string;
   sources: SessionSourceRef[];
+}
+
+/** One agenda item's share of a session block, e.g. 10.5.1.3 for 30 minutes */
+export interface AgendaSlot {
+  code?: string;
+  label: string;
+  minutes?: number;
+  startTime?: string;
+  endTime?: string;
 }
 
 export interface AgendaItem {

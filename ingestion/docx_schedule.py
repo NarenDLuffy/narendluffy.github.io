@@ -20,15 +20,16 @@ from docx.document import Document as DocxDocument
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
-from .models import Room, ScheduleSource, Session, SessionSourceRef
+from .models import AgendaSlot, Room, ScheduleSource, Session, SessionSourceRef
 
 WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 TIME_RANGE_RE = re.compile(r"(\d{1,2})[:.](\d{2})\s*(?:~|-|–|—|to)\s*(\d{1,2})[:.](\d{2})")
 DURATION_RE = re.compile(r"\(\s*\d+\s*(?:min|mins|minutes)?\s*\)", re.I)
 AGENDA_RE = re.compile(r"\b\d{1,2}(?:\.\d+[a-z]?)+\b")
 AI_RE = re.compile(r"\bAI\s*(\d{1,2}(?:\.\d+)*)", re.I)
-ROOM_RE = re.compile(r"(?:room\s*[:：]\s*|@\s*)([^),.]+)", re.I)
+ROOM_RE = re.compile(r"(?:room\s*[:\-]\s*|@\s*)([^)\n]+)", re.I)
 OWNER_RE = re.compile(r"([A-Z][A-Za-z\-]+)(?:'|’)s\b")
+CELL_LEAD_RE = re.compile(r"^([A-Z][a-z]+)\s*(?:\(|,|:|$)")
 BREAK_RE = re.compile(r"\b(break|lunch)\b", re.I)
 SKIP_CELL_RE = re.compile(r"^\s*(tbd|n/?a|to be (assigned|decided)\b.*|-|–)\s*$", re.I)
 
@@ -81,13 +82,84 @@ def _agenda_items(text: str) -> list[str]:
     return seen
 
 
+MINUTES_RE = re.compile(r"\(\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)")
+
+
+def _add_minutes(hhmm: str, minutes: int) -> str:
+    total = int(hhmm[:2]) * 60 + int(hhmm[3:]) + minutes
+    return f"{(total // 60) % 24:02d}:{total % 60:02d}"
+
+
+def _breakdown(text: str, block_start: str, block_end: str) -> list[AgendaSlot]:
+    """Per-agenda-item split of a block: "6GR (120) / .10.5.1.3(30) / ..."."""
+    slots: list[AgendaSlot] = []
+    block_minutes = (
+        int(block_end[:2]) * 60 + int(block_end[3:]) - int(block_start[:2]) * 60 - int(block_start[3:])
+    )
+    for line in text.split("\n"):
+        line = line.strip().lstrip(".").strip()
+        if not line or BREAK_RE.search(line):
+            continue
+        minutes_match = MINUTES_RE.search(line)
+        codes = _agenda_items(line)
+        if not codes and not minutes_match:
+            continue
+        label = MINUTES_RE.sub("", line).strip(" .:-–/")
+        slots.append(
+            AgendaSlot(
+                code=codes[0] if codes else None,
+                label=label or (codes[0] if codes else line),
+                minutes=int(minutes_match.group(1)) if minutes_match else None,
+            )
+        )
+    # A first line stating the whole block length is the block header, not a part.
+    if len(slots) > 1 and slots[0].minutes == block_minutes:
+        slots = slots[1:]
+    # Chairs often write the release on its own line above the topic with the
+    # same duration ("R20 (40)" then "NTN-NR (40)"): that is one slot, not two.
+    merged: list[AgendaSlot] = []
+    index = 0
+    while index < len(slots):
+        current = slots[index]
+        nxt = slots[index + 1] if index + 1 < len(slots) else None
+        if (
+            nxt is not None
+            and current.code is None
+            and current.minutes is not None
+            and current.minutes == nxt.minutes
+        ):
+            nxt.label = f"{current.label} {nxt.label}".strip()
+            merged.append(nxt)
+            index += 2
+            continue
+        merged.append(current)
+        index += 1
+    slots = merged
+    if len(slots) < 2 and not any(s.minutes for s in slots):
+        return []
+    # Lay the parts out back-to-back from the start of the block.
+    cursor = block_start
+    for slot in slots:
+        if slot.minutes is None:
+            continue
+        end = _add_minutes(cursor, slot.minutes)
+        if end > block_end:
+            break
+        slot.startTime, slot.endTime = cursor, end
+        cursor = end
+    return slots
+
+
 def _topic(text: str) -> str:
-    first = text.split("\n", 1)[0]
-    first = TIME_RANGE_RE.sub("", first)
-    first = DURATION_RE.sub("", first)
-    first = re.sub(r"\(\s*\d+\s*\)", "", first)
-    first = first.strip(" .:-–/")
-    return re.sub(r"\s{2,}", " ", first) or "Session"
+    """First line of the cell that actually names a topic."""
+    for line in text.split("\n"):
+        cleaned = TIME_RANGE_RE.sub("", line)
+        cleaned = DURATION_RE.sub("", cleaned)
+        cleaned = re.sub(r"\(\s*\d+\s*\)", "", cleaned)
+        cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" .:-–/")
+        if cleaned and not AGENDA_RE.fullmatch(cleaned):
+            return cleaned
+    return "Session"
 
 
 def _topic_key(topic: str) -> str:
@@ -140,19 +212,24 @@ def parse_schedule_docx(
 def _room_label(
     heading: str, source_label: str, owner_hint: str | None = None
 ) -> tuple[str, str | None]:
-    """(display name, session lead) inferred from the table heading."""
+    """(track name, session lead) inferred from the table heading.
+
+    Chairs name a physical room when they have one ("room: RAN1_Brk#2",
+    "@Praetorium"); otherwise the table is simply the online or the offline
+    track, which is how the published schedule reads.
+    """
     m = ROOM_RE.search(heading)
     lead_match = OWNER_RE.search(heading)
     lead = lead_match.group(1) if lead_match else owner_hint
     if m:
-        return m.group(1).strip(), lead
-    label = heading or source_label
-    label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", label).strip()
-    # No room named in the document: fall back to "<owner> <online|offline>",
-    # which is how attendees refer to these parallel session tracks.
-    kind = next((w for w in ("online", "offline", "detailed") if w in label.lower()), None)
-    if lead and kind:
-        return f"{lead} {kind}", lead
+        room = re.sub(r"\s*,\s*", " · ", m.group(1).strip())
+        return room, lead
+    lowered = heading.lower()
+    if "offline" in lowered:
+        return "Offline", lead
+    if "online" in lowered:
+        return "Online", lead
+    label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", heading or source_label).strip()
     label = re.sub(r"(?i)(session\s+)?schedule\b", "", label).strip(" -–—:")
     return (label or source_label)[:60], lead
 
@@ -189,10 +266,10 @@ def _parse_table(
 
     rooms: list[Room] = []
     for lane in range(lanes):
-        name = base_name if lanes == 1 else f"{base_name} {lane + 1}"
+        name = base_name
         rooms.append(
             Room(
-                roomId=f"{meeting_id}-{_short_hash(name)}",
+                roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading, str(lane))}",
                 meetingId=meeting_id,
                 roomName=name,
                 order=order_offset + lane,
@@ -219,6 +296,8 @@ def _parse_table(
         for cell_index, day, lane in columns:
             if cell_index >= len(cells):
                 continue
+            if cell_index > 0 and cells[cell_index]._tc is cells[cell_index - 1]._tc:
+                continue  # horizontally merged: already emitted in its first column
             text = _cell_text(cells[cell_index])
             if not text or SKIP_CELL_RE.match(text):
                 continue
@@ -227,6 +306,12 @@ def _parse_table(
             if end_time <= start_time:
                 continue
             topic = _topic(text)
+            cell_lead = None
+            lead_match = CELL_LEAD_RE.match(topic)
+            if lead_match and lead_match.group(1).lower() not in ("session", "break", "lunch"):
+                cell_lead = lead_match.group(1)
+                remainder = topic[lead_match.end(1) :].strip(" ():,-")
+                topic = remainder or _topic("\n".join(text.split("\n")[1:])) or topic
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
             room = rooms[lane]
@@ -251,7 +336,8 @@ def _parse_table(
                     topic=topic,
                     topicKey=_topic_key(topic),
                     agendaItems=_agenda_items(text),
-                    sessionLead=lead,
+                    agendaBreakdown=_breakdown(text, start_time, end_time),
+                    sessionLead=cell_lead or lead,
                     kind=kind,  # type: ignore[arg-type]
                     note="\n".join(text.split("\n")[1:])[:280] or None,
                     sources=[SessionSourceRef(sourceId=source.sourceId, contributed=["all"])],

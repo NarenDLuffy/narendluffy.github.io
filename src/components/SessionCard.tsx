@@ -54,6 +54,7 @@ export function SessionCard({
 }) {
   const { isBookmarked, toggle } = useBookmarks();
   const [open, setOpen] = useState(false);
+  const breakdown = session.agendaBreakdown ?? [];
 
   return (
     <article
@@ -94,7 +95,42 @@ export function SessionCard({
           </div>
         </div>
 
-        {session.agendaItems.length > 0 ? (
+        {breakdown.length > 0 ? (
+          <ol className="mt-2 space-y-1">
+            {breakdown.map((slot, index) => (
+              <li
+                key={`${slot.label}-${index}`}
+                className="flex items-baseline gap-2 text-xs leading-tight"
+              >
+                <span className="mono-code w-[76px] shrink-0 tabular text-muted-foreground">
+                  {slot.startTime && slot.endTime
+                    ? `${slot.startTime}-${slot.endTime}`
+                    : slot.minutes
+                      ? `${slot.minutes} min`
+                      : ""}
+                </span>
+                <span className="min-w-0 flex-1 truncate">
+                  {slot.code ? (
+                    <button
+                      type="button"
+                      onClick={() => toggle(slot.code as string)}
+                      className={cn(
+                        "mono-code mr-1 font-medium underline-offset-2 hover:underline",
+                        isBookmarked(slot.code) ? "text-primary" : "",
+                      )}
+                    >
+                      {slot.code}
+                    </button>
+                  ) : null}
+                  {slot.label !== slot.code ? slot.label.replace(slot.code ?? "", "").trim() : null}
+                </span>
+                {slot.minutes ? (
+                  <span className="mono-code shrink-0 text-muted-foreground">{slot.minutes}m</span>
+                ) : null}
+              </li>
+            ))}
+          </ol>
+        ) : session.agendaItems.length > 0 ? (
           <div className="mt-2 flex flex-wrap gap-1.5">
             {session.agendaItems.map((code) => (
               <AgendaChip
