@@ -128,7 +128,7 @@ function DraftsPage() {
                 ["flSummary", "FL summaries"],
                 ["newFile", "New files"],
                 ["fileUpdated", "Updated files"],
-                ["newRound", "New rounds"],
+                ["newFolder", "New folders"],
                 ["fileRemoved", "Removed files"],
               ] as const
             ).map(([key, label]) => (

@@ -1,27 +1,36 @@
 import { Link } from "@tanstack/react-router";
 import { Bell, BellRing, FileText, FolderOpen, Sparkles } from "lucide-react";
-import { EVENT_LABEL, formatSize, relativeTime } from "@/services/draftService";
+import { eventLabel, formatSize, relativeTime } from "@/services/draftService";
 import { cn } from "@/lib/utils";
 import type { AgendaActivity, DraftArtifact, DraftEvent } from "@/types/drafts";
 
 const TONE: Record<DraftEvent["eventType"], string> = {
-  FL_SUMMARY_UPDATED: "bg-primary/10 text-primary border-primary/30",
-  NEW_ROUND: "bg-live/10 text-live border-live/30",
   NEW_FILE: "bg-secondary text-foreground border-border",
   FILE_UPDATED: "bg-secondary text-muted-foreground border-border",
   NEW_FOLDER: "bg-secondary text-muted-foreground border-border",
   FILE_REMOVED: "bg-destructive/10 text-destructive border-destructive/30",
+  FOLDER_REMOVED: "bg-destructive/10 text-destructive border-destructive/30",
 };
 
-export function EventBadge({ type }: { type: DraftEvent["eventType"] }) {
+// Semantics, when the scanner is confident, get their own emphasis.
+const SEMANTIC_TONE: Record<string, string> = {
+  FL_SUMMARY_UPDATED: "bg-primary/10 text-primary border-primary/30",
+  NEW_ROUND: "bg-live/10 text-live border-live/30",
+  NEW_FL_FOLDER: "bg-primary/10 text-primary border-primary/30",
+};
+
+export function EventBadge({ event }: { event: DraftEvent }) {
+  const tone =
+    (event.semanticType ? SEMANTIC_TONE[event.semanticType] : undefined) ??
+    TONE[event.eventType];
   return (
     <span
       className={cn(
         "mono-code shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-semibold uppercase",
-        TONE[type],
+        tone,
       )}
     >
-      {EVENT_LABEL[type]}
+      {eventLabel(event)}
     </span>
   );
 }
@@ -72,7 +81,7 @@ export function FollowButton({
 export function EventRow({ event }: { event: DraftEvent }) {
   const body = (
     <>
-      <EventBadge type={event.eventType} />
+      <EventBadge event={event} />
       <span className="min-w-0 flex-1">
         <span className="block truncate text-sm font-medium">{event.title}</span>
         <span className="block truncate text-xs text-muted-foreground">
@@ -158,6 +167,9 @@ export function AgendaActivityCard({
             activity.flUpdates ? `${activity.flUpdates} FL summary update(s)` : "",
             activity.newFiles ? `${activity.newFiles} new file(s)` : "",
             activity.newRounds ? `${activity.newRounds} new round(s)` : "",
+            activity.newFolders - activity.newRounds > 0
+              ? `${activity.newFolders - activity.newRounds} new folder(s)`
+              : "",
             activity.flCount ? `${activity.flCount} FL summary(ies)` : "",
             activity.fileCount ? `${activity.fileCount} file(s)` : "",
           ]
