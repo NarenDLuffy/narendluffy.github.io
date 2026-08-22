@@ -1,6 +1,5 @@
 import { createFileRoute, useParams } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
-import { ExternalLink, FolderOpen } from "lucide-react";
 import { DraftBreadcrumbs, DraftTree } from "@/components/DraftTree";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
