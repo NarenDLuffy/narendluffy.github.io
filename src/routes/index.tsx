@@ -3,6 +3,7 @@ import { AlertTriangle, ArrowRight } from "lucide-react";
 import { minutesOf } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
+import { AgendaActivityCard } from "@/components/DraftActivity";
 import { SessionCard } from "@/components/SessionCard";
 import { ChangesLink } from "@/components/AppShell";
 import { MeetingBanner } from "@/components/MeetingBanner";
@@ -63,6 +64,11 @@ function NowPage() {
     (s) => minutesOf(s.startTime) <= nowMin && minutesOf(s.endTime) > nowMin,
   );
   const next = daySessions.filter((s) => minutesOf(s.startTime) > nowMin).slice(0, 6);
+  const draftHighlights = [...drafts.activity.values()]
+    .filter((a) => a.agendaItemId !== "unmapped" && a.unreadCount > 0)
+    .filter((a) => drafts.watched.includes(a.agendaItemId) || a.flUpdates > 0)
+    .sort((a, b) => (b.latestAt ?? "").localeCompare(a.latestAt ?? ""))
+    .slice(0, 3);
   const latestChanges = [...bundle.changes]
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .slice(0, 2);
