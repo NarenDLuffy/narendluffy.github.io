@@ -261,22 +261,21 @@ def _parse_table(
     if not columns:
         return [], []
 
-    lanes = max(pos for _, _, pos in columns) + 1
     base_name, lead = _room_label(heading, source.label, owner_hint)
 
-    rooms: list[Room] = []
-    for lane in range(lanes):
-        name = base_name
-        rooms.append(
-            Room(
-                roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading, str(lane))}",
-                meetingId=meeting_id,
-                roomName=name,
-                order=order_offset + lane,
-                shortName=name[:18],
-                description=heading or None,
-            )
-        )
+    # One table is one track. Several columns under the same weekday are
+    # parallel sessions of that track, not separate tracks, so they must not
+    # become "lane A / lane B" columns of their own.
+    room = Room(
+        roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading)}",
+        meetingId=meeting_id,
+        roomName=base_name,
+        order=order_offset,
+        shortName=base_name[:24],
+        description=heading or None,
+    )
+    rooms: list[Room] = [room]
+
 
     sessions: list[Session] = []
     seen: set[str] = set()
