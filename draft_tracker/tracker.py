@@ -246,8 +246,14 @@ def scan_meeting(
         existing.lastSeenAt = detected_at
         existing.removedAt = None
         existing.agendaItemId = (mapping.agenda_item_id if mapping else None) or existing.agendaItemId
+        # Re-apply classification so improvements to the rules take effect on
+        # already-indexed files instead of only on future uploads.
+        existing.fileType = classification.file_type
+        existing.classificationConfidence = classification.confidence
+        existing.documentKey = classification.document_key
         merge_source(existing, appearance)
         seen_artifact_ids.add(existing.id)
+
 
         if content_changed(
             existing, content_hash=content_hash, size=entry.size, modified_at=entry.modified_at
