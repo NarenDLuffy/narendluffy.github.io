@@ -20,7 +20,7 @@ from docx.document import Document as DocxDocument
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
-from .models import Room, ScheduleSource, Session, SessionSourceRef
+from .models import AgendaSlot, Room, ScheduleSource, Session, SessionSourceRef
 
 WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 TIME_RANGE_RE = re.compile(r"(\d{1,2})[:.](\d{2})\s*(?:~|-|–|—|to)\s*(\d{1,2})[:.](\d{2})")
@@ -80,6 +80,48 @@ def _agenda_items(text: str) -> list[str]:
         if code and code not in seen:
             seen.append(code)
     return seen
+
+
+MINUTES_RE = re.compile(r"\(\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)")
+
+
+def _add_minutes(hhmm: str, minutes: int) -> str:
+    total = int(hhmm[:2]) * 60 + int(hhmm[3:]) + minutes
+    return f"{(total // 60) % 24:02d}:{total % 60:02d}"
+
+
+def _breakdown(text: str, block_start: str, block_end: str) -> list[AgendaSlot]:
+    """Per-agenda-item split of a block: "6GR (120) / .10.5.1.3(30) / ..."."""
+    slots: list[AgendaSlot] = []
+    for line in text.split("\n")[1:]:
+        line = line.strip().lstrip(".").strip()
+        if not line or BREAK_RE.search(line):
+            continue
+        minutes_match = MINUTES_RE.search(line)
+        codes = _agenda_items(line)
+        if not codes and not minutes_match:
+            continue
+        label = MINUTES_RE.sub("", line).strip(" .:-–/")
+        slots.append(
+            AgendaSlot(
+                code=codes[0] if codes else None,
+                label=label or (codes[0] if codes else line),
+                minutes=int(minutes_match.group(1)) if minutes_match else None,
+            )
+        )
+    if len(slots) < 2 and not any(s.minutes for s in slots):
+        return []
+    # Lay the parts out back-to-back from the start of the block.
+    cursor = block_start
+    for slot in slots:
+        if slot.minutes is None:
+            continue
+        end = _add_minutes(cursor, slot.minutes)
+        if end > block_end:
+            break
+        slot.startTime, slot.endTime = cursor, end
+        cursor = end
+    return slots
 
 
 def _topic(text: str) -> str:
@@ -267,6 +309,7 @@ def _parse_table(
                     topic=topic,
                     topicKey=_topic_key(topic),
                     agendaItems=_agenda_items(text),
+                    agendaBreakdown=_breakdown(text, start_time, end_time),
                     sessionLead=cell_lead or lead,
                     kind=kind,  # type: ignore[arg-type]
                     note="\n".join(text.split("\n")[1:])[:280] or None,
