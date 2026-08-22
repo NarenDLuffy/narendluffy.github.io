@@ -42,7 +42,10 @@ export function Timetable({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scrollToNowKey]);
 
+  // Breaks and lunches belong to the whole week grid, not to one room.
+  const bands = sessions.filter((s) => !s.roomId && (s.kind === "break" || s.kind === "lunch"));
   const activeRooms = rooms.filter((r) => sessions.some((s) => s.roomId === r.roomId));
+
 
   // Parallel sessions inside one track share the track's column side by side.
   const layout = new Map<string, { sessions: Session[]; laneOf: Map<string, number>; lanes: number }>();
