@@ -106,6 +106,28 @@ function NowPage() {
         </div>
       </section>
 
+      {draftHighlights.length > 0 ? (
+        <section className="space-y-2">
+          <div className="flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Draft activity</h2>
+            <Link
+              to="/drafts"
+              className="text-xs font-medium text-muted-foreground underline underline-offset-2"
+            >
+              All drafts
+            </Link>
+          </div>
+          {draftHighlights.map((a) => (
+            <AgendaActivityCard
+              key={a.agendaItemId}
+              activity={a}
+              title={bundle.agendaItems.find((i) => i.code === a.agendaItemId)?.title}
+            />
+          ))}
+        </section>
+      ) : null}
+
+
       {latestChanges.length > 0 ? (
         <section className="space-y-2">
           <div className="flex items-center justify-between">
