@@ -164,8 +164,18 @@ export function Timetable({
                       {!isBreak ? (
                         <span className="topic-bar absolute inset-y-0 left-0 w-1" aria-hidden />
                       ) : null}
-                      <div className={cn("text-[11px] font-semibold leading-tight", !isBreak && "pl-1")}>
-                        {s.topic}
+                      <div
+                        className={cn(
+                          "flex items-baseline gap-1 text-[11px] font-semibold leading-tight",
+                          !isBreak && "pl-1",
+                        )}
+                      >
+                        {s.group ? (
+                          <span className="mono-code shrink-0 rounded bg-secondary px-1 text-[9px] uppercase text-muted-foreground">
+                            {s.group}
+                          </span>
+                        ) : null}
+                        <span className="truncate">{s.topic}</span>
                       </div>
                       {s.agendaItems.length > 0 ? (
                         <div className="mono-code pl-1 text-[10px] text-muted-foreground">
@@ -176,6 +186,7 @@ export function Timetable({
                         {s.startTime}-{s.endTime}
                         {s.sessionLead && h > 60 ? ` · ${s.sessionLead}` : ""}
                       </div>
+
                     </div>
                   );
                 })}
