@@ -110,7 +110,7 @@ function emptyActivity(code: string, latestFl?: DraftArtifact): AgendaActivity {
     newRounds: 0,
     fileCount: 0,
     flCount: 0,
-    latestFlSummary: latestFl,
+    ...(latestFl ? { latestFlSummary: latestFl } : {}),
   };
 }
 
