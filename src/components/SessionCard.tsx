@@ -4,6 +4,9 @@ import { useState } from "react";
 import type { ScheduleBundle, Session } from "@/types/schedule";
 import { sourceLabel } from "@/services/scheduleService";
 import { useBookmarks } from "@/hooks/useBookmarks";
+import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useDrafts } from "@/hooks/useDrafts";
+import { DraftBadge } from "@/components/DraftActivity";
 import { topicStyle } from "@/lib/topics";
 import { cn } from "@/lib/utils";
 import {
@@ -53,6 +56,10 @@ export function SessionCard({
   compact?: boolean;
 }) {
   const { isBookmarked, toggle } = useBookmarks();
+  const { meeting } = useActiveMeeting();
+  const drafts = useDrafts(meeting);
+  const draftCount = (code: string) => drafts.activity.get(code)?.unreadCount ?? 0;
+  const draftFl = (code: string) => (drafts.activity.get(code)?.flUpdates ?? 0) > 0;
   const [open, setOpen] = useState(false);
   const breakdown = session.agendaBreakdown ?? [];
 
@@ -122,6 +129,11 @@ export function SessionCard({
                       {slot.code}
                     </button>
                   ) : null}
+                  {slot.code && draftCount(slot.code) > 0 ? (
+                    <Link to="/drafts/$code" params={{ code: slot.code }} className="mr-1">
+                      <DraftBadge count={draftCount(slot.code)} important={draftFl(slot.code)} />
+                    </Link>
+                  ) : null}
                   {slot.label !== slot.code ? slot.label.replace(slot.code ?? "", "").trim() : null}
                 </span>
                 {slot.minutes ? (
@@ -133,12 +145,14 @@ export function SessionCard({
         ) : session.agendaItems.length > 0 ? (
           <div className="mt-2 flex flex-wrap gap-1.5">
             {session.agendaItems.map((code) => (
-              <AgendaChip
-                key={code}
-                code={code}
-                starred={isBookmarked(code)}
-                onToggle={toggle}
-              />
+              <span key={code} className="inline-flex items-center gap-1">
+                <AgendaChip code={code} starred={isBookmarked(code)} onToggle={toggle} />
+                {draftCount(code) > 0 ? (
+                  <Link to="/drafts/$code" params={{ code }}>
+                    <DraftBadge count={draftCount(code)} important={draftFl(code)} />
+                  </Link>
+                ) : null}
+              </span>
             ))}
           </div>
         ) : null}
