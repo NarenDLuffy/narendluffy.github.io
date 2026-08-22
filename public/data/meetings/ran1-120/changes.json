@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-120-204666d8dd-2026-08-22T00:21:32+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-22T00:21:32+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-204666d8dd",
+    "to": "Online session (F)",
+    "sourceIds": [
+      "ran1-120-0e6d44a1"
+    ],
+    "from": "Online 8"
+  },
+  {
+    "changeId": "room_changed-ran1-120-fa4198e62d-2026-08-22T00:21:32+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-22T00:21:32+00:00",
+    "type": "room_changed",
+    "title": "R19 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120-fa4198e62d",
+    "to": "Online session (F)",
+    "sourceIds": [
+      "ran1-120-0e6d44a1"
+    ],
+    "from": "Online 8"
+  }
+]
