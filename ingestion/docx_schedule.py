@@ -314,11 +314,11 @@ def _parse_table(
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
-            kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
             session_id = (
                 f"{meeting_id}-"
-                f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic)}"
+                f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic, str(lane))}"
             )
+
             if session_id in seen:
                 continue  # merged cells repeat the same session across columns
             seen.add(session_id)
