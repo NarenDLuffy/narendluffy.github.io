@@ -328,12 +328,8 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     merged_rooms = list(by_name.values())
 
 
-    def sort_key(room: Room) -> tuple[int, str]:
-        lowered = room.roomName.lower()
-        rank = 2 if "offline" in lowered else 1 if "online" in lowered else 0
-        return (rank, lowered)
-
-    merged_rooms.sort(key=sort_key)
+    # Rooms keep the order the schedule document lays them out in.
+    merged_rooms.sort(key=lambda room: (room.order, room.roomName.lower()))
     for index, room in enumerate(merged_rooms):
         room.order = index
     names = {room.roomId: room.roomName for room in merged_rooms}
