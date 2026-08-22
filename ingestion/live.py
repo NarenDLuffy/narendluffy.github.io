@@ -245,6 +245,8 @@ def _number_parallel_tracks(
         totals[room.roomName] = totals.get(room.roomName, 0) + 1
     used: dict[str, int] = {}
     renamed: dict[str, str] = {}
+    # Named rooms and online tracks first, breakout/offline tracks after them.
+    rooms.sort(key=lambda r: (r.roomName.lower().startswith("offline"), r.roomName.lower()))
     for index, room in enumerate(rooms):
         base = room.roomName
         if totals[base] > 1:

@@ -1,35 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T00:14:18Z",
+  "generatedAt": "2026-08-22T00:15:01Z",
   "meetingId": "ran1-122",
   "sessions": [
-    {
-      "sessionId": "ran1-122-2acfa8bf23",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
-      "topic": "RAN1#122 commences at 09:00 on Monday",
-      "topicKey": "ran1-122-commences-at-09-00-on-monday",
-      "agendaItems": [
-        "8.14"
-      ],
-      "sessionLead": "Naoya",
-      "kind": "plenary",
-      "status": "scheduled",
-      "note": "Agenda items 1, 2, 3, 4, 5\nDetailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
     {
       "sessionId": "ran1-122-084729d8b4",
       "meetingId": "ran1-122",
@@ -48,6 +21,60 @@
       "kind": "session",
       "status": "scheduled",
       "note": "Detailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-fcbb3fa830",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-609c94e006",
+      "roomName": "Detailed  for RAN1 Main Session 2",
+      "topic": "Agenda items 1, 2, 3, 4, 5",
+      "topicKey": "agenda-items-1-2-3-4-5",
+      "agendaItems": [
+        "8.14"
+      ],
+      "sessionLead": "Ralf",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
+      "sources": [
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-2acfa8bf23",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-cd56c8e1ce",
+      "roomName": "Online 1",
+      "topic": "RAN1#122 commences at 09:00 on Monday",
+      "topicKey": "ran1-122-commences-at-09-00-on-monday",
+      "agendaItems": [
+        "8.14"
+      ],
+      "sessionLead": "Naoya",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5\nDetailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
@@ -85,23 +112,46 @@
       ]
     },
     {
-      "sessionId": "ran1-122-fcbb3fa830",
+      "sessionId": "ran1-122-bc88d75492",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
-      "startTime": "08:30",
-      "endTime": "10:30",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6G",
+      "topicKey": "r20-6g",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI/ML",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-c5460138e8",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "agenda-items-1-2-3-4-5",
-      "agendaItems": [
-        "8.14"
-      ],
+      "topic": "R20 6G",
+      "topicKey": "r20-6g",
+      "agendaItems": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Detailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
+      "note": "AI/ML",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -122,31 +172,6 @@
       "roomName": "Online 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI/ML",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-bc88d75492",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6G",
-      "topicKey": "r20-6g",
       "agendaItems": [],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -187,21 +212,46 @@
       ]
     },
     {
-      "sessionId": "ran1-122-c5460138e8",
+      "sessionId": "ran1-122-2d27da3df0",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "13:00",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Overall",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-4cbc747dd1",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R20 6G",
-      "topicKey": "r20-6g",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
       "agendaItems": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "AI/ML",
+      "note": "Overall",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -287,81 +337,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-723bf3303e",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\nISAC (30)\nNR/IoT-NTN(30)\nA-IoT (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-2461e1eb9a",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\nAI/ML (60)\nNES (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-2d27da3df0",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Overall",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-18490a35be",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
@@ -437,6 +412,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-723bf3303e",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\nISAC (30)\nNR/IoT-NTN(30)\nA-IoT (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-2461e1eb9a",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\nAI/ML (60)\nNES (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-b3f6e9b63c",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
@@ -487,21 +512,46 @@
       ]
     },
     {
-      "sessionId": "ran1-122-4cbc747dd1",
+      "sessionId": "ran1-122-f45afb5eb5",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Waveform\nFrame structure",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-88f2c92762",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
+      "topic": "6GR",
+      "topicKey": "6gr",
       "agendaItems": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Overall",
+      "note": "Waveform\nFrame structure",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -587,85 +637,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-1ff910091a",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.6",
-        "8.12"
-      ],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\n8.3 (60)\n8.6 (60)\n8.12 (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-e795285bc1",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R20 MIMO",
-      "topicKey": "r20-mimo",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 MIMO (90)\nR19 CRs\nMIMO (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-f45afb5eb5",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform\nFrame structure",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-859f931a18",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
@@ -741,6 +712,60 @@
       ]
     },
     {
+      "sessionId": "ran1-122-1ff910091a",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.3",
+        "8.6",
+        "8.12"
+      ],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\n8.3 (60)\n8.6 (60)\n8.12 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-e795285bc1",
+      "meetingId": "ran1-122",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R20 MIMO",
+      "topicKey": "r20-mimo",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 MIMO (90)\nR19 CRs\nMIMO (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-b3b26fbceb",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
@@ -795,21 +820,46 @@
       ]
     },
     {
-      "sessionId": "ran1-122-88f2c92762",
+      "sessionId": "ran1-122-b85d669ad8",
       "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Channel coding",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-9b69224274",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "6GR",
-      "topicKey": "6gr",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
       "agendaItems": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Waveform\nFrame structure",
+      "note": "Channel coding",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -895,81 +945,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-15b6f1b045",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT(120)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4a065ea558",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\nAI/ML (120)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-b85d669ad8",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Channel coding",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-61a737b75e",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1045,6 +1020,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-15b6f1b045",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT(120)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-4a065ea558",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\nAI/ML (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-496df974ce",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1095,12 +1120,37 @@
       ]
     },
     {
-      "sessionId": "ran1-122-9b69224274",
+      "sessionId": "ran1-122-a4789b2910",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Modulation",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-4cf8487966",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
       "topic": "R20 6GR",
@@ -1109,7 +1159,7 @@
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Channel coding",
+      "note": "Modulation",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -1195,84 +1245,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-dcd4e35efa",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R20 ISAC",
-      "topicKey": "r20-isac",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 ISAC (40)\nSorour\nR20 AI/ML (80)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4d7b83dcc7",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.9",
-        "8.6"
-      ],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\n8.9 (60)\n8.6 (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-a4789b2910",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Modulation",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-71ab0b770c",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1348,6 +1320,59 @@
       ]
     },
     {
+      "sessionId": "ran1-122-dcd4e35efa",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R20 ISAC",
+      "topicKey": "r20-isac",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 ISAC (40)\nSorour\nR20 AI/ML (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-4d7b83dcc7",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.9",
+        "8.6"
+      ],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\n8.9 (60)\n8.6 (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-6ad6974b6f",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1401,21 +1426,54 @@
       ]
     },
     {
-      "sessionId": "ran1-122-4cf8487966",
+      "sessionId": "ran1-122-16f1817f06",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.6",
+        "5",
+        "8.14"
+      ],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 8.6\nAI 5 (30)\nLS for IoT-NTN (ULBC) (60)\nAI 8.14 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-eb01fe370f",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.6",
+        "5",
+        "8.14"
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Modulation",
+      "note": "AI 8.6\nAI 5 (30)\nLS for IoT-NTN (ULBC) (60)\nAI 8.14 (30)",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -1504,85 +1562,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-1a5a943047",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT (120)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-78e755be43",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\nMIMO (60)\nR20 MIMO(60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-16f1817f06",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.6",
-        "5",
-        "8.14"
-      ],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 8.6\nAI 5 (30)\nLS for IoT-NTN (ULBC) (60)\nAI 8.14 (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-1328dad895",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1661,6 +1640,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-1a5a943047",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-78e755be43",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\nMIMO (60)\nR20 MIMO(60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-807298d145",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1711,25 +1740,56 @@
       ]
     },
     {
-      "sessionId": "ran1-122-eb01fe370f",
+      "sessionId": "ran1-122-88009b8d92",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.3",
+        "8.9",
+        "8.12",
+        "8.6"
+      ],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)\nAI 8.6 (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-5bbfd23f39",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
-        "8.6",
-        "5",
-        "8.14"
+        "8.3",
+        "8.9",
+        "8.12",
+        "8.6"
       ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "AI 8.6\nAI 5 (30)\nLS for IoT-NTN (ULBC) (60)\nAI 8.14 (30)",
+      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)\nAI 8.6 (60)",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -1818,86 +1878,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-3cb5cb334f",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "Waveform",
-      "topicKey": "waveform",
-      "agendaItems": [],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform (90)\nFrame structure (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-8600f88576",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 6GR (60)\nEvaluations\nSorour\nR20 NR-NTN (90)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-88009b8d92",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.9",
-        "8.12",
-        "8.6"
-      ],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)\nAI 8.6 (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-2df163b66b",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -1976,6 +1956,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-3cb5cb334f",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Waveform (90)\nFrame structure (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-8600f88576",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 6GR (60)\nEvaluations\nSorour\nR20 NR-NTN (90)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-e8b0889476",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
@@ -2026,26 +2056,46 @@
       ]
     },
     {
-      "sessionId": "ran1-122-5bbfd23f39",
+      "sessionId": "ran1-122-3e0bf607f3",
       "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Energy",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-053bbed2e2",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.9",
-        "8.12",
-        "8.6"
-      ],
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)\nAI 8.6 (60)",
+      "note": "Energy",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -2131,81 +2181,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-a8168e3317",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R20 NTN",
-      "topicKey": "r20-ntn",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 NTN (60)\nR19 CRs\nAI/ML (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-1303ac7383",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R20 ISAC",
-      "topicKey": "r20-isac",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 ISAC (40)\nR20 A-IoT (80)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-3e0bf607f3",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Energy",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-838411a2d5",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2281,6 +2256,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-a8168e3317",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R20 NTN",
+      "topicKey": "r20-ntn",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 NTN (60)\nR19 CRs\nAI/ML (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-1303ac7383",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R20 ISAC",
+      "topicKey": "r20-isac",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 ISAC (40)\nR20 A-IoT (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-23048300c0",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2331,12 +2356,37 @@
       ]
     },
     {
-      "sessionId": "ran1-122-053bbed2e2",
+      "sessionId": "ran1-122-0baf67038b",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Evaluations",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-8cd5d2ba58",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
       "topic": "R20 6GR",
@@ -2345,7 +2395,7 @@
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Energy",
+      "note": "Evaluations",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -2431,81 +2481,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-de80095df0",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R20",
-      "topicKey": "r20",
-      "agendaItems": [],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20\nAI/ML (120)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-cca514f5bd",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs (120)\nA-IoT(60)\nNR/IoT-NTN(60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-0baf67038b",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Evaluations",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-9fe5ec49dc",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2581,6 +2556,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-de80095df0",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nAI/ML (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-cca514f5bd",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs (120)\nA-IoT(60)\nNR/IoT-NTN(60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-3f53d852ca",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2631,12 +2656,37 @@
       ]
     },
     {
-      "sessionId": "ran1-122-8cd5d2ba58",
+      "sessionId": "ran1-122-4bd8b8d390",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R20 6GR",
+      "topicKey": "r20-6gr",
+      "agendaItems": [],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Waveform\nFrame structure",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-98e2dfc8eb",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
       "topic": "R20 6GR",
@@ -2645,7 +2695,7 @@
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Evaluations",
+      "note": "Waveform\nFrame structure",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -2731,85 +2781,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-efdfe2a237",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.9",
-        "8.12"
-      ],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R19 CRs\n8.3 (40)\n8.9 (40)\n8.12 (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-ce0239e715",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [],
-      "sessionLead": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT (60)\nXiaodong\nModulation (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4bd8b8d390",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform\nFrame structure",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-3e30699e3b",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2885,6 +2856,60 @@
       ]
     },
     {
+      "sessionId": "ran1-122-efdfe2a237",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.3",
+        "8.9",
+        "8.12"
+      ],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R19 CRs\n8.3 (40)\n8.9 (40)\n8.12 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-ce0239e715",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [],
+      "sessionLead": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (60)\nXiaodong\nModulation (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-fbffe79a52",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -2939,21 +2964,54 @@
       ]
     },
     {
-      "sessionId": "ran1-122-98e2dfc8eb",
+      "sessionId": "ran1-122-6487c9db9c",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-c2ee59da19",
+      "roomName": "Detailed  for RAN1 Main Session 1",
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.3",
+        "8.9",
+        "8.12"
+      ],
+      "sessionLead": "Naoya",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-9afd20ba61",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
       "roomId": "ran1-122-609c94e006",
       "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R20 6GR",
-      "topicKey": "r20-6gr",
-      "agendaItems": [],
+      "topic": "R19 CRs",
+      "topicKey": "r19-crs",
+      "agendaItems": [
+        "8.3",
+        "8.9",
+        "8.12"
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
-      "note": "Waveform\nFrame structure",
+      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -3041,85 +3099,6 @@
       ]
     },
     {
-      "sessionId": "ran1-122-e28f18c86e",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-dd2eb6692a",
-      "roomName": "Offline 1",
-      "topic": "Channel coding",
-      "topicKey": "channel-coding",
-      "agendaItems": [],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Channel coding (90)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-3852fd291d",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-0e543f985c",
-      "roomName": "Offline 2",
-      "topic": "Waveform",
-      "topicKey": "waveform",
-      "agendaItems": [],
-      "sessionLead": "Xiaodong",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform (90)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-6487c9db9c",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-c2ee59da19",
-      "roomName": "Detailed  for RAN1 Main Session 1",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.9",
-        "8.12"
-      ],
-      "sessionLead": "Naoya",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-122-d20ca57d3a",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -3197,6 +3176,56 @@
       ]
     },
     {
+      "sessionId": "ran1-122-e28f18c86e",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-dd2eb6692a",
+      "roomName": "Offline 1",
+      "topic": "Channel coding",
+      "topicKey": "channel-coding",
+      "agendaItems": [],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Channel coding (90)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-122-3852fd291d",
+      "meetingId": "ran1-122",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-0e543f985c",
+      "roomName": "Offline 2",
+      "topic": "Waveform",
+      "topicKey": "waveform",
+      "agendaItems": [],
+      "sessionLead": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Waveform (90)",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-122-f2ce4b61fd",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
@@ -3237,35 +3266,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "Waveform (90)",
-      "sources": [
-        {
-          "sourceId": "ran1-122-d3c63d8c",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-9afd20ba61",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-609c94e006",
-      "roomName": "Detailed  for RAN1 Main Session 2",
-      "topic": "R19 CRs",
-      "topicKey": "r19-crs",
-      "agendaItems": [
-        "8.3",
-        "8.9",
-        "8.12"
-      ],
-      "sessionLead": "Ralf",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 8.3 (30)\nAI 8.9 (30)\nAI 8.12 (30)",
       "sources": [
         {
           "sourceId": "ran1-122-d3c63d8c",
@@ -3479,7 +3479,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T00:14:18Z",
-    "lastAttemptAt": "2026-08-22T00:14:18Z"
+    "lastSuccessfulAt": "2026-08-22T00:15:01Z",
+    "lastAttemptAt": "2026-08-22T00:15:01Z"
   }
 }

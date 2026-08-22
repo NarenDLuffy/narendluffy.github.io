@@ -1,32 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T00:14:31Z",
+  "generatedAt": "2026-08-22T00:15:14Z",
   "meetingId": "ran1-126",
   "sessions": [
-    {
-      "sessionId": "ran1-126-571e4c1d5d",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "RAN1#126 commences at 09:00 on Monday",
-      "topicKey": "ran1-126-commences-at-09-00-on-monday",
-      "agendaItems": [],
-      "sessionLead": "Hiroki",
-      "kind": "plenary",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
     {
       "sessionId": "ran1-126-91acdeb076",
       "meetingId": "ran1-126",
@@ -55,24 +31,20 @@
       ]
     },
     {
-      "sessionId": "ran1-126-2b86e7ac86",
+      "sessionId": "ran1-126-571e4c1d5d",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-126-171502f0e7",
-      "roomName": "Offline 1",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.1",
-        "10.8.2"
-      ],
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "ran1-126-commences-at-09-00-on-monday",
+      "agendaItems": [],
       "sessionLead": "Hiroki",
-      "kind": "session",
+      "kind": "plenary",
       "status": "scheduled",
-      "note": "R20 A-IoT (60)\n9.3.1\n12:00 - 13:00\n6G ISAC (60)\n10.8.2",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -105,6 +77,34 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2b86e7ac86",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-126-171502f0e7",
+      "roomName": "Offline 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (60)\n9.3.1\n12:00 - 13:00\n6G ISAC (60)\n10.8.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -160,63 +160,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-a5ec28800c",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.1",
-        "10.8.2"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.1\n6G ISAC (60)\n10.8.2",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-6584b80058",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:00",
-      "roomId": "ran1-126-221073a3da",
-      "roomName": "Offline 2",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.1",
-        "10.5.4.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "6G 10.5.4.x(90)\n10.5.4.1, 10.5.4.3\n16:00 - 16:30\n6G waveform (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -306,6 +249,92 @@
       ]
     },
     {
+      "sessionId": "ran1-126-804bfc7f38",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a5ec28800c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.1\n6G ISAC (60)\n10.8.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6584b80058",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:00",
+      "roomId": "ran1-126-221073a3da",
+      "roomName": "Offline 2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1",
+        "10.5.4.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x(90)\n10.5.4.1, 10.5.4.3\n16:00 - 16:30\n6G waveform (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-f8cb8deb0b",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
@@ -357,65 +386,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-804bfc7f38",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.4",
-        "10.7.1",
-        "9.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-2ff27e7ea6",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G waveform",
-      "topicKey": "6g-waveform",
-      "agendaItems": [
-        "10.2.1",
-        "10.5.4",
-        "10.5.4.3",
-        "10.5.4.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.2.1\n6G 10.5.4.x (110)\n10.5.4.3(30), 10.5.4.1(50), 10.5.4.3(30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -510,6 +480,65 @@
       ]
     },
     {
+      "sessionId": "ran1-126-54cb043187",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.2",
+        "10.3.1",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.2 Modulation (60)\nAI 10.3.1 Coding (60)\nAI 10.5.2.1 PDCCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2ff27e7ea6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G waveform",
+      "topicKey": "6g-waveform",
+      "agendaItems": [
+        "10.2.1",
+        "10.5.4",
+        "10.5.4.3",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.2.1\n6G 10.5.4.x (110)\n10.5.4.3(30), 10.5.4.1(50), 10.5.4.3(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-1222242316",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
@@ -563,93 +592,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-54cb043187",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.3.2",
-        "10.3.1",
-        "10.5.2.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.3.2 Modulation (60)\nAI 10.3.1 Coding (60)\nAI 10.5.2.1 PDCCH (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-2d68cb7778",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.2",
-        "10.5.4.4",
-        "10.5.4.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.5.4.2(40), 10.5.4.4(40), 10.5.4.3(40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-c1b63ca864",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:00",
-      "roomId": "ran1-126-221073a3da",
-      "roomName": "Offline 2",
-      "topic": "6G ISAC",
-      "topicKey": "6g-isac",
-      "agendaItems": [
-        "10.8.3",
-        "10.8.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "6G ISAC (90)\n10.8.3, 10.8.1\n10:00 - 10:30\n6G waveform (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -740,6 +682,93 @@
       ]
     },
     {
+      "sessionId": "ran1-126-b1c03b5d67",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2d68cb7778",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.2",
+        "10.5.4.4",
+        "10.5.4.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.2(40), 10.5.4.4(40), 10.5.4.3(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c1b63ca864",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "ran1-126-221073a3da",
+      "roomName": "Offline 2",
+      "topic": "6G ISAC",
+      "topicKey": "6g-isac",
+      "agendaItems": [
+        "10.8.3",
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G ISAC (90)\n10.8.3, 10.8.1\n10:00 - 10:30\n6G waveform (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-487e320e8d",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -789,64 +818,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-b1c03b5d67",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.4",
-        "10.7.1",
-        "9.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-a775bd21cb",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G waveform",
-      "topicKey": "6g-waveform",
-      "agendaItems": [
-        "10.2.1",
-        "10.8.3",
-        "10.8.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.2.1\n6G ISAC (80)\n10.8.3(40), 10.8.1.(40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -939,6 +910,64 @@
       ]
     },
     {
+      "sessionId": "ran1-126-41e55e20a1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1",
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 8.1 AIML\nAI 8.1 MIMO\nAI 8.1 NES",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a775bd21cb",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G waveform",
+      "topicKey": "6g-waveform",
+      "agendaItems": [
+        "10.2.1",
+        "10.8.3",
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.2.1\n6G ISAC (80)\n10.8.3(40), 10.8.1.(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-3b3d8b5223",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -997,35 +1026,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-41e55e20a1",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.1",
-        "6",
-        "8.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 8.1 AIML\nAI 8.1 MIMO\nAI 8.1 NES",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-94ce7c34d1",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -1043,61 +1043,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "R20 A-IoT (30)\n9.3.2",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-6f10a8106d",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "11 TEI20",
-      "topicKey": "11-tei20",
-      "agendaItems": [
-        "8.2",
-        "9.3.2"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Maintenance (50)\n7 x5550/5551, x5794-5796, x5797/5798, x5667, x6450-6452\n8.2 R19 FR3/ISAC CM, A-IoT\nR20 A-IoT (40)\n9.3.2",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-3a97867ffe",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-126-171502f0e7",
-      "roomName": "Offline 1",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT (30)\n9.3.3",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -1192,6 +1137,90 @@
       ]
     },
     {
+      "sessionId": "ran1-126-85ffcc6d9a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.1",
+        "10.5.2.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.3 PUxCH (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6f10a8106d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "11 TEI20",
+      "topicKey": "11-tei20",
+      "agendaItems": [
+        "8.2",
+        "9.3.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Maintenance (50)\n7 x5550/5551, x5794-5796, x5797/5798, x5667, x6450-6452\n8.2 R19 FR3/ISAC CM, A-IoT\nR20 A-IoT (40)\n9.3.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3a97867ffe",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-126-171502f0e7",
+      "roomName": "Offline 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (30)\n9.3.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-86191b499a",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -1243,94 +1272,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-85ffcc6d9a",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.5.2.1",
-        "10.5.2.2",
-        "10.5.2.3"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.3 PUxCH (45)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-9f8fb8879c",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.2",
-        "9.3.3",
-        "9.3.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.2(20), 9.3.3(70), 9.3.1(60),",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-08bf01f868",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-221073a3da",
-      "roomName": "Offline 2",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.2",
-        "10.5.4.4",
-        "10.5.4.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "6G 10.5.4.x(60)\n10.5.4.2, 10.5.4.4, 10.5.4.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -1422,6 +1363,94 @@
       ]
     },
     {
+      "sessionId": "ran1-126-540c2edee5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.2 PDSCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9f8fb8879c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.2",
+        "9.3.3",
+        "9.3.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2(20), 9.3.3(70), 9.3.1(60),",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-08bf01f868",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-126-221073a3da",
+      "roomName": "Offline 2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.2",
+        "10.5.4.4",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x(60)\n10.5.4.2, 10.5.4.4, 10.5.4.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-b26b85a9b5",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -1475,93 +1504,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-540c2edee5",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.3.1",
-        "10.3.2",
-        "10.5.2.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.2 PDSCH (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-4272a7d525",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.4",
-        "10.5.4.1",
-        "10.5.4.2"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.5.4.4(30), 10.5.4.1(60), 10.5.4.2(30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-87bc4de6c8",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-126-171502f0e7",
-      "roomName": "Offline 1",
-      "topic": "6G waveform",
-      "topicKey": "6g-waveform",
-      "agendaItems": [
-        "10.8.2",
-        "10.8.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "6G waveform (30)\n9:00 - 10:00\n6G ISAC (60)\n10.8.2, 10.8.3",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -1652,6 +1594,93 @@
       ]
     },
     {
+      "sessionId": "ran1-126-48cced78ca",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-4272a7d525",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.4",
+        "10.5.4.1",
+        "10.5.4.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.4(30), 10.5.4.1(60), 10.5.4.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-87bc4de6c8",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran1-126-171502f0e7",
+      "roomName": "Offline 1",
+      "topic": "6G waveform",
+      "topicKey": "6g-waveform",
+      "agendaItems": [
+        "10.8.2",
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G waveform (30)\n9:00 - 10:00\n6G ISAC (60)\n10.8.2, 10.8.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-f1991cacc8",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -1701,64 +1730,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-48cced78ca",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.4",
-        "10.7.1",
-        "9.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-6de0b4c793",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G ISAC",
-      "topicKey": "6g-isac",
-      "agendaItems": [
-        "10.8.2",
-        "10.8.3",
-        "10.2.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.8.2(40), 10.8.3(40)\n6G waveform (40)\n10.2.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -1851,6 +1822,64 @@
       ]
     },
     {
+      "sessionId": "ran1-126-2bb4e8a96c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1",
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 6\nAI 8.1 NTN\nAI 8.1 AIML\nAI 8.1 NES",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6de0b4c793",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G ISAC",
+      "topicKey": "6g-isac",
+      "agendaItems": [
+        "10.8.2",
+        "10.8.3",
+        "10.2.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.8.2(40), 10.8.3(40)\n6G waveform (40)\n10.2.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-d65724da31",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -1907,35 +1936,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-2bb4e8a96c",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.1",
-        "6",
-        "8.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 6\nAI 8.1 NTN\nAI 8.1 AIML\nAI 8.1 NES",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-9676fd59d1",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -1954,62 +1954,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "6G 10.5.4.x (30)\n10.5.4.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-6a00b21878",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "11 TEI20 (TBD)",
-      "topicKey": "11-tei20-tbd",
-      "agendaItems": [
-        "8.2"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Maintenance (90-120)\n7 x5548/5549, x5668, x5799/5800, x6217-6220, x6348/6349\n8.2 R19 Duplex, R20 LBCA",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-28ef3fb966",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-221073a3da",
-      "roomName": "Offline 2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.1",
-        "9.3.2",
-        "9.3.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT (120)\n9.3.1, 9.3.2, 9.3.3",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -2104,6 +2048,91 @@
       ]
     },
     {
+      "sessionId": "ran1-126-e3bbffb35e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.1",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6a00b21878",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "11 TEI20 (TBD)",
+      "topicKey": "11-tei20-tbd",
+      "agendaItems": [
+        "8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Maintenance (90-120)\n7 x5548/5549, x5668, x5799/5800, x6217-6220, x6348/6349\n8.2 R19 Duplex, R20 LBCA",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-28ef3fb966",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-221073a3da",
+      "roomName": "Offline 2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (120)\n9.3.1, 9.3.2, 9.3.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-0a630fb2b2",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -2151,64 +2180,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-e3bbffb35e",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.5.2.3",
-        "10.5.2.1",
-        "10.5.2.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-71b367454a",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.1",
-        "9.3.2",
-        "9.3.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.1(50), 9.3.2(50), 9.3.3(50)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -2300,6 +2271,64 @@
       ]
     },
     {
+      "sessionId": "ran1-126-c85d8d7a63",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.3 PUxCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-71b367454a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.1(50), 9.3.2(50), 9.3.3(50)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-68c586b4be",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -2360,35 +2389,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-c85d8d7a63",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.3.1",
-        "10.3.2",
-        "10.5.2.3"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.3 PUxCH (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-9511326324",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -2409,62 +2409,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "6G 10.5.4.x (60)\n10.5.4.3, 10.5.4.2, 10.5.4.4",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-138333e679",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "8.2 R19 LP-WUS, Mobility, TBD",
-      "topicKey": "8-2-r19-lp-wus-mobility-tbd",
-      "agendaItems": [
-        "8.2",
-        "10.2.1"
-      ],
-      "sessionLead": "Maintenance",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "8.2 R19 LP-WUS, Mobility, TBD\n7 TBD\n6G waveform (40)\n10.2.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-f54b253dac",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "08:50",
-      "roomId": "ran1-126-171502f0e7",
-      "roomName": "Offline 1",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "6G 10.5.4.x (20)\n10.5.4.1",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -2560,6 +2504,91 @@
       ]
     },
     {
+      "sessionId": "ran1-126-d8e9ef54f2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.2",
+        "9.4",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.2 MIMO (40)\nR20 NR (40)\nAI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-138333e679",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "8.2 R19 LP-WUS, Mobility, TBD",
+      "topicKey": "8-2-r19-lp-wus-mobility-tbd",
+      "agendaItems": [
+        "8.2",
+        "10.2.1"
+      ],
+      "sessionLead": "Maintenance",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "8.2 R19 LP-WUS, Mobility, TBD\n7 TBD\n6G waveform (40)\n10.2.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f54b253dac",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "08:50",
+      "roomId": "ran1-126-171502f0e7",
+      "roomName": "Offline 1",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x (20)\n10.5.4.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-ec4279cab9",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -2609,64 +2638,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-d8e9ef54f2",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.2",
-        "9.4",
-        "10.7.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.2 MIMO (40)\nR20 NR (40)\nAI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-cef0774fb5",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.2",
-        "9.3.3",
-        "9.3.1"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.2, 9.3.3, 9.3.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -2756,6 +2727,64 @@
       ]
     },
     {
+      "sessionId": "ran1-126-6af574a265",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "AI 6/8.1",
+      "topicKey": "ai-6-8-1",
+      "agendaItems": [
+        "6",
+        "8.1",
+        "9.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 8.1 MIMO\nAI 8.1 NTN\nAI 6\nR20 NR (80)\nAI 9.1 AIML (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-cef0774fb5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.2",
+        "9.3.3",
+        "9.3.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2, 9.3.3, 9.3.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-a0a225b988",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -2813,35 +2842,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-6af574a265",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "AI 6/8.1",
-      "topicKey": "ai-6-8-1",
-      "agendaItems": [
-        "6",
-        "8.1",
-        "9.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 8.1 MIMO\nAI 8.1 NTN\nAI 6\nR20 NR (80)\nAI 9.1 AIML (80)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-21ad891304",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -2861,35 +2861,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "6G ISAC (90)\n10.8.1, 10.8.2, 10.8.3",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-4c7f7792d4",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G ISAC",
-      "topicKey": "6g-isac",
-      "agendaItems": [
-        "10.8.1",
-        "10.8.2",
-        "10.8.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.8.1, 10.8.2, 10.8.3",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -2984,6 +2955,64 @@
       ]
     },
     {
+      "sessionId": "ran1-126-7c2fd65c22",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.2",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.1 PDCCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-4c7f7792d4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G ISAC",
+      "topicKey": "6g-isac",
+      "agendaItems": [
+        "10.8.1",
+        "10.8.2",
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.8.1, 10.8.2, 10.8.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-c530da6ee2",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -3041,35 +3070,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-7c2fd65c22",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.5.2.3",
-        "10.5.2.2",
-        "10.5.2.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.1 PDCCH (30)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-4ab9646bea",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -3117,66 +3117,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": "R20 A-IoT (30)\n9.3.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-01a58ede03",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "6G 10.5.4.x",
-      "topicKey": "6g-10-5-4-x",
-      "agendaItems": [
-        "10.5.4",
-        "10.5.4.1",
-        "10.5.4.3",
-        "10.5.4.2",
-        "10.5.4.4"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.5.4.1, 10.5.4.3, [10.5.4.2, 10.5.4.4]\nEarly dinner (60)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-8fb01e3d2a",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "18:30",
-      "roomId": "ran1-126-221073a3da",
-      "roomName": "Offline 2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.1",
-        "9.3.2",
-        "9.3.3"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "R20 A-IoT (90)\n9.3.1, 9.3.2, 9.3.3\nEarly dinner (60)",
       "sources": [
         {
           "sourceId": "ran1-126-ebdeb935",
@@ -3295,6 +3235,94 @@
       ]
     },
     {
+      "sessionId": "ran1-126-74f8ab2c42",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (50)\nAI 10.3.2 Modulation (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-01a58ede03",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1",
+        "10.5.4.3",
+        "10.5.4.2",
+        "10.5.4.4"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.1, 10.5.4.3, [10.5.4.2, 10.5.4.4]\nEarly dinner (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8fb01e3d2a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "roomId": "ran1-126-221073a3da",
+      "roomName": "Offline 2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (90)\n9.3.1, 9.3.2, 9.3.3\nEarly dinner (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-416985e528",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -3364,63 +3392,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-74f8ab2c42",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "6GR",
-      "topicKey": "6gr",
-      "agendaItems": [
-        "10.3.1",
-        "10.3.2"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 10.3.1 Coding (50)\nAI 10.3.2 Modulation (40)",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-eb6ee933de",
-      "meetingId": "ran1-126",
-      "date": "2026-08-28",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "R20 A-IoT",
-      "topicKey": "r20-a-iot",
-      "agendaItems": [
-        "9.3.3",
-        "9.3.1",
-        "9.3.2"
-      ],
-      "sessionLead": "Hiroki",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.3, 9.3.1, 9.3.2",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
           "contributed": [
             "all"
           ]
@@ -3506,6 +3477,62 @@
       ]
     },
     {
+      "sessionId": "ran1-126-6845362bae",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4035579624",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (60)\n6GR (TBD)\nSweep",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-eb6ee933de",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.3",
+        "9.3.1",
+        "9.3.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.3, 9.3.1, 9.3.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-126-0dbc62c719",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -3551,33 +3578,6 @@
       "kind": "session",
       "status": "scheduled",
       "note": ".10.3.x (120)\nTBD",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-6845362bae",
-      "meetingId": "ran1-126",
-      "date": "2026-08-28",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-4035579624",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "r20-nr",
-      "agendaItems": [
-        "9.1"
-      ],
-      "sessionLead": "Sorour",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 9.1 AIML (60)\n6GR (TBD)\nSweep",
       "sources": [
         {
           "sourceId": "ran1-126-d847dd04",
@@ -3688,30 +3688,6 @@
       ]
     },
     {
-      "sessionId": "ran1-126-3b3041c27c",
-      "meetingId": "ran1-126",
-      "date": "2026-08-28",
-      "day": "Friday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-1bfc887fa8",
-      "roomName": "RAN1_Brk#2",
-      "topic": "RAN1#126 expected to close at 17:00",
-      "topicKey": "ran1-126-expected-to-close-at-17-00",
-      "agendaItems": [],
-      "sessionLead": "Hiroki",
-      "kind": "plenary",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": [
-            "all"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-126-1ee3121918",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -3737,12 +3713,12 @@
       ]
     },
     {
-      "sessionId": "ran1-126-7e6c442dc4",
+      "sessionId": "ran1-126-3b3041c27c",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
-      "startTime": "17:00",
-      "endTime": "19:30",
+      "startTime": "14:30",
+      "endTime": "16:30",
       "roomId": "ran1-126-1bfc887fa8",
       "roomName": "RAN1_Brk#2",
       "topic": "RAN1#126 expected to close at 17:00",
@@ -3784,12 +3760,36 @@
           ]
         }
       ]
+    },
+    {
+      "sessionId": "ran1-126-7e6c442dc4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-1bfc887fa8",
+      "roomName": "RAN1_Brk#2",
+      "topic": "RAN1#126 expected to close at 17:00",
+      "topicKey": "ran1-126-expected-to-close-at-17-00",
+      "agendaItems": [],
+      "sessionLead": "Hiroki",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
     }
   ],
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T00:14:31Z",
-    "lastAttemptAt": "2026-08-22T00:14:31Z"
+    "lastSuccessfulAt": "2026-08-22T00:15:14Z",
+    "lastAttemptAt": "2026-08-22T00:15:14Z"
   }
 }
