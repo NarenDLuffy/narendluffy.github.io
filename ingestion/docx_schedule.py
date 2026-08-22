@@ -29,6 +29,7 @@ AGENDA_RE = re.compile(r"\b\d{1,2}(?:\.\d+[a-z]?)+\b")
 AI_RE = re.compile(r"\bAI\s*(\d{1,2}(?:\.\d+)*)", re.I)
 ROOM_RE = re.compile(r"(?:room\s*[:：]\s*|@\s*)([^),.]+)", re.I)
 OWNER_RE = re.compile(r"([A-Z][A-Za-z\-]+)(?:'|’)s\b")
+CELL_LEAD_RE = re.compile(r"^([A-Z][a-z]+)\s*(?:\(|,|:|$)")
 BREAK_RE = re.compile(r"\b(break|lunch)\b", re.I)
 SKIP_CELL_RE = re.compile(r"^\s*(tbd|n/?a|to be (assigned|decided)\b.*|-|–)\s*$", re.I)
 
@@ -140,19 +141,23 @@ def parse_schedule_docx(
 def _room_label(
     heading: str, source_label: str, owner_hint: str | None = None
 ) -> tuple[str, str | None]:
-    """(display name, session lead) inferred from the table heading."""
+    """(track name, session lead) inferred from the table heading.
+
+    Chairs name a physical room when they have one ("room: RAN1_Brk#2",
+    "@Praetorium"); otherwise the table is simply the online or the offline
+    track, which is how the published schedule reads.
+    """
     m = ROOM_RE.search(heading)
     lead_match = OWNER_RE.search(heading)
     lead = lead_match.group(1) if lead_match else owner_hint
     if m:
         return m.group(1).strip(), lead
-    label = heading or source_label
-    label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", label).strip()
-    # No room named in the document: fall back to "<owner> <online|offline>",
-    # which is how attendees refer to these parallel session tracks.
-    kind = next((w for w in ("online", "offline", "detailed") if w in label.lower()), None)
-    if lead and kind:
-        return f"{lead} {kind}", lead
+    lowered = heading.lower()
+    if "offline" in lowered:
+        return "Offline", lead
+    if "online" in lowered:
+        return "Online", lead
+    label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", heading or source_label).strip()
     label = re.sub(r"(?i)(session\s+)?schedule\b", "", label).strip(" -–—:")
     return (label or source_label)[:60], lead
 
@@ -189,10 +194,10 @@ def _parse_table(
 
     rooms: list[Room] = []
     for lane in range(lanes):
-        name = base_name if lanes == 1 else f"{base_name} {lane + 1}"
+        name = base_name
         rooms.append(
             Room(
-                roomId=f"{meeting_id}-{_short_hash(name)}",
+                roomId=f"{meeting_id}-{_short_hash(source.sourceId, heading, str(lane))}",
                 meetingId=meeting_id,
                 roomName=name,
                 order=order_offset + lane,
@@ -227,6 +232,12 @@ def _parse_table(
             if end_time <= start_time:
                 continue
             topic = _topic(text)
+            cell_lead = None
+            lead_match = CELL_LEAD_RE.match(topic)
+            if lead_match and lead_match.group(1).lower() not in ("session", "break", "lunch"):
+                cell_lead = lead_match.group(1)
+                remainder = topic[lead_match.end(1) :].strip(" ():,-")
+                topic = remainder or _topic("\n".join(text.split("\n")[1:])) or topic
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
             room = rooms[lane]
@@ -251,7 +262,7 @@ def _parse_table(
                     topic=topic,
                     topicKey=_topic_key(topic),
                     agendaItems=_agenda_items(text),
-                    sessionLead=lead,
+                    sessionLead=cell_lead or lead,
                     kind=kind,  # type: ignore[arg-type]
                     note="\n".join(text.split("\n")[1:])[:280] or None,
                     sources=[SessionSourceRef(sourceId=source.sourceId, contributed=["all"])],
