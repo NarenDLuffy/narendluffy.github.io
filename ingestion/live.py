@@ -249,8 +249,7 @@ def parse_schedule_sources(
     """Download every schedule-looking DOCX and merge what it contains."""
     rooms: list[Room] = []
     sessions: list[Session] = []
-    grid_rooms: list[Room] = []
-    grid_sessions: list[Session] = []
+    grids: list[tuple[list[Room], list[Session]]] = []
     for source in sources:
         if not source.fileName.lower().endswith(".docx"):
             continue
@@ -269,14 +268,12 @@ def parse_schedule_sources(
                 start_date=meeting.startDate,
                 end_date=meeting.endDate,
                 source=source,
-                room_order_offset=len(grid_rooms),
             )
         except Exception as exc:
             print(f"  grid parse failed for {source.fileName}: {exc}")
             block_rooms, block_sessions = [], []
         if block_sessions:
-            grid_rooms.extend(block_rooms)
-            grid_sessions.extend(block_sessions)
+            grids.append((block_rooms, block_sessions))
             continue
         try:
             doc_rooms, doc_sessions = parse_schedule_docx(
@@ -293,8 +290,11 @@ def parse_schedule_sources(
             continue
         rooms.extend(doc_rooms)
         sessions.extend(doc_sessions)
-    if grid_sessions:
-        rooms, sessions = grid_rooms, grid_sessions
+    if grids:
+        # Chairs circulate personal copies of the same week grid. The most
+        # complete document wins outright, so the timetable shows one coherent
+        # week instead of the same session repeated per copy.
+        rooms, sessions = max(grids, key=lambda pair: (len(pair[1]), len(pair[0])))
     return _name_tracks(rooms, sessions)
 
 
