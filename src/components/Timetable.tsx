@@ -39,6 +39,25 @@ export function Timetable({
 
   const activeRooms = rooms.filter((r) => sessions.some((s) => s.roomId === r.roomId));
 
+  // Parallel sessions inside one track share the track's column side by side.
+  const layout = new Map<string, { sessions: Session[]; laneOf: Map<string, number>; lanes: number }>();
+  for (const room of activeRooms) {
+    const roomSessions = sessions
+      .filter((s) => s.roomId === room.roomId)
+      .sort((a, b) => minutesOf(a.startTime) - minutesOf(b.startTime));
+    const laneEnd: number[] = [];
+    const laneOf = new Map<string, number>();
+    for (const s of roomSessions) {
+      const from = minutesOf(s.startTime);
+      let lane = laneEnd.findIndex((e) => e <= from);
+      if (lane === -1) lane = laneEnd.push(from) - 1;
+      laneEnd[lane] = minutesOf(s.endTime);
+      laneOf.set(s.sessionId, lane);
+    }
+    layout.set(room.roomId, { sessions: roomSessions, laneOf, lanes: Math.max(1, laneEnd.length) });
+  }
+  const widthOf = (roomId: string) => 160 * (layout.get(roomId)?.lanes ?? 1);
+
   return (
     <div ref={scroller} className="max-h-[70vh] overflow-auto rounded-lg border border-border">
       <div className="min-w-max">
@@ -49,7 +68,8 @@ export function Timetable({
               key={room.roomId}
               to="/rooms/$roomId"
               params={{ roomId: room.roomId }}
-              className="w-40 shrink-0 border-r border-border px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
+              style={{ width: widthOf(room.roomId) }}
+              className="shrink-0 border-r border-border px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
             >
               {room.roomName}
               {room.floor ? (
@@ -58,6 +78,7 @@ export function Timetable({
             </Link>
           ))}
         </div>
+
 
         <div className="relative flex" style={{ height }}>
           <div className="w-12 shrink-0 border-r border-border">
