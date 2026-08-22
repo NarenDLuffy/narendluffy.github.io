@@ -136,6 +136,15 @@ def _paragraph_text(paragraph) -> str:
     return "".join(t.text or "" for t in paragraph.iter(f"{W}t") if id(t) not in boxed).strip()
 
 
+def _heading_room(heading: str, known: list[str]) -> str | None:
+    """A room the heading refers to, when it names one already seen."""
+    lowered = heading.lower()
+    for label in known:
+        if label.lower() in lowered:
+            return label
+    return None
+
+
 def _looks_like_person(label: str) -> bool:
     token = label.strip().strip(".")
     if not token or " " in token or any(ch.isdigit() for ch in token):
@@ -271,6 +280,7 @@ def parse_block_schedule_docx(
         cursor += timedelta(days=1)
 
     rooms: dict[str, Room] = {}
+    known_labels: list[str] = []
     sessions: list[Session] = []
     breaks: dict[tuple[str, str, str], Session] = {}
     pending_labels: list[str] = []
@@ -296,6 +306,9 @@ def parse_block_schedule_docx(
         header = _row_cells(rows[0])
         days = _day_columns(header)
         labels = pending_labels
+        for label in labels:
+            if label not in known_labels:
+                known_labels.append(label)
         heading = pending_heading
         pending_labels, pending_heading = [], ""
         table_index += 1
@@ -311,6 +324,10 @@ def parse_block_schedule_docx(
                 name = labels[0]
             elif labels:
                 name = f"Breakout {index + 1}"
+            elif width == 1 and _heading_room(heading, known_labels):
+                # "Detailed schedule for … @Praetorium" is that room's column,
+                # not a separate track.
+                name = _heading_room(heading, known_labels) or ""
             else:
                 base = re.sub(r"^RAN1#?\d+\s*", "", heading).strip() or f"Track {table_index}"
                 base = re.sub(r"\s*(schedule|sessions?|for)\s*$", "", base, flags=re.I).strip() or base
@@ -394,6 +411,15 @@ def parse_block_schedule_docx(
                 )
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
+    # The same slot written twice (a chair repeating the plenary or their own
+    # column in a detail table) is one session.
+    unique: dict[tuple[str, str, str, str, str], Session] = {}
+    for session in sessions:
+        key = (session.date, session.startTime, session.endTime, session.roomId, session.topic.lower())
+        current = unique.get(key)
+        if current is None or len(session.topic) > len(current.topic):
+            unique[key] = session
+    sessions = list(unique.values())
     if not sessions:
         return [], []
     return sorted(rooms.values(), key=lambda r: r.order), [*sessions, *breaks.values()]
