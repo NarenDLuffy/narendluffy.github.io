@@ -167,7 +167,40 @@ def _topic_key(topic: str) -> str:
     return key[:40] or "session"
 
 
+_W_NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+_MC_NS = "{http://schemas.openxmlformats.org/markup-compatibility/2006}"
+_WP_NS = "{http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing}"
+
+
+def _floating_labels(paragraph: Paragraph) -> list[tuple[int, str]]:
+    """Room labels chairs draw as floating text boxes above a schedule table.
+
+    Returns (horizontal offset, label) pairs so the caller can map them onto
+    the parallel columns of the table that follows.
+    """
+    labels: list[tuple[int, str]] = []
+    for anchor in paragraph._p.iter(f"{_MC_NS}AlternateContent"):
+        raw = "".join(t.text or "" for t in anchor.iter(f"{_W_NS}t")).strip()
+        if not raw:
+            continue
+        # The same text appears in both mc:Choice and mc:Fallback.
+        if len(raw) % 2 == 0 and raw[: len(raw) // 2] == raw[len(raw) // 2 :]:
+            raw = raw[: len(raw) // 2]
+        raw = re.sub(r"\s+", " ", raw).strip()
+        if not raw or len(raw) > 60:
+            continue
+        offset = 0
+        pos_h = anchor.find(f".//{_WP_NS}positionH")
+        if pos_h is not None:
+            node = pos_h.find(f"{_WP_NS}posOffset")
+            if node is not None and node.text:
+                offset = int(node.text)
+        labels.append((offset, raw))
+    return labels
+
+
 def parse_schedule_docx(
+
     path: str,
     *,
     meeting_id: str,
