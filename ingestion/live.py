@@ -240,17 +240,27 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     tables that end up with exactly the same name are the same track published
     twice, so they are merged instead of numbered.
     """
+    def canonical(name: str) -> str:
+        # "RAN1_Brk#2 · 1.1 Himalaya" and "1.1 Himalaya" are the same room.
+        tail = name.split("·")[-1].strip().lower()
+        return re.sub(r"[^a-z0-9]+", "", tail)
+
     by_name: dict[str, Room] = {}
     remap: dict[str, str] = {}
     for room in rooms:
-        keeper = by_name.get(room.roomName)
+        key = canonical(room.roomName)
+        keeper = by_name.get(key)
         if keeper is None:
-            by_name[room.roomName] = room
+            by_name[key] = room
             remap[room.roomId] = room.roomId
         else:
             remap[room.roomId] = keeper.roomId
+            if len(room.roomName) > len(keeper.roomName):
+                keeper.roomName = room.roomName
+                keeper.shortName = room.roomName[:24]
 
     merged_rooms = list(by_name.values())
+
 
     def sort_key(room: Room) -> tuple[int, str]:
         lowered = room.roomName.lower()
