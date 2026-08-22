@@ -56,9 +56,17 @@ def document_key(filename: str) -> tuple[str, int | None]:
 
 
 def classify(filename: str, folder_names: list[str]) -> Classification:
-    lower = filename.lower()
+    # Separators are inconsistent (FL_Summary, FLS-v01, fl summary), so match
+    # against a space-normalised form where word boundaries actually hold.
+    lower = re.sub(r"[^a-z0-9]+", " ", filename.lower()).strip()
     key, revision = document_key(filename)
-    context = " ".join([lower, *[f.lower() for f in folder_names]])
+    context = " ".join(
+        [lower, *[re.sub(r"[^a-z0-9]+", " ", f.lower()) for f in folder_names]]
+    )
+
+    if not filename.lower().endswith(DRAFT_EXTENSIONS):
+        return Classification("unknown", 0.3, key, revision)
+
 
     if not lower.endswith(DRAFT_EXTENSIONS):
         return Classification("unknown", 0.3, key, revision)
