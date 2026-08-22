@@ -301,11 +301,13 @@ def _parse_table(
         return [], []
 
     base_name, lead = _room_label(heading, source.label, owner_hint)
+    heading_names_room = bool(ROOM_RE.search(heading))
 
     # Chairs often name the physical rooms in floating text boxes drawn above
     # the parallel columns. When there is one label per parallel column, each
     # column is that room; otherwise the whole table is one track.
-    lanes = max(per_day_seen.values()) if per_day_seen else 1
+    counts = sorted(per_day_seen.values()) if per_day_seen else [1]
+    lanes = counts[len(counts) // 2]  # typical parallel-column count for a day
     named_lanes: dict[int, str] = {}
     if lane_labels and len(lane_labels) == lanes and lanes > 1:
         for lane_index, (_, name) in enumerate(sorted(lane_labels, key=lambda x: x[0])):
@@ -313,7 +315,9 @@ def _parse_table(
 
     def _room_for(lane: int) -> Room:
         name = named_lanes.get(lane, base_name)
-        room_id = f"{meeting_id}-{_short_hash(name if lane in named_lanes else source.sourceId + heading)}"
+        by_name = lane in named_lanes or heading_names_room
+        room_id = f"{meeting_id}-{_short_hash(name if by_name else source.sourceId + heading)}"
+
         existing = rooms_by_id.get(room_id)
         if existing:
             return existing
