@@ -14,11 +14,17 @@ MIN_SESSIONS = 5
 def validate(bundle: ScheduleBundle, previous: dict | None = None) -> list[str]:
     errors: list[str] = []
 
-    if len(bundle.sessions) < MIN_SESSIONS:
-        errors.append(f"only {len(bundle.sessions)} sessions parsed")
+    # A meeting whose schedule 3GPP has not published yet is legitimately empty:
+    # it is published as metadata only (schedulePublished = false). Session and
+    # room checks apply only once a schedule claims to exist.
+    schedule_claimed = bundle.meeting.schedulePublished or bool(bundle.sessions)
 
-    if not bundle.rooms:
-        errors.append("no rooms discovered")
+    if schedule_claimed:
+        if len(bundle.sessions) < MIN_SESSIONS:
+            errors.append(f"only {len(bundle.sessions)} sessions parsed")
+
+        if not bundle.rooms:
+            errors.append("no rooms discovered")
 
     for s in bundle.sessions:
         if s.endTime <= s.startTime:

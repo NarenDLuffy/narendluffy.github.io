@@ -32,6 +32,7 @@ from pathlib import Path
 
 from .change_detector import detect_changes
 from .fixtures import fixture_meetings
+from .live import build_live_bundles
 from .meeting_discovery import compute_status, select_current
 from .models import SCHEMA_VERSION, ScheduleBundle
 from .validator import validate
@@ -109,12 +110,15 @@ def write_index(bundles: list[ScheduleBundle]) -> None:
 
 
 def build_bundles(force: bool) -> list[ScheduleBundle]:
-    """Wire meeting_discovery -> downloader -> parser -> merger here.
+    """Publish every RAN1 meeting the 3GPP portal knows about.
 
-    Must return one ScheduleBundle per meeting that changed. Raising
-    NotImplementedError keeps the previously published data in place.
+    Metadata comes from the portal meeting service; agenda items and schedule
+    documents come from each meeting's own 3GPP folder. `force` is accepted for
+    the workflow's benefit: the portal response is small, so a full refresh is
+    always performed.
     """
-    raise NotImplementedError("live 3GPP ingestion not connected yet")
+    del force
+    return build_live_bundles()
 
 
 def main() -> int:
