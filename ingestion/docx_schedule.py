@@ -215,8 +215,8 @@ def _room_label(
     """(track name, session lead) inferred from the table heading.
 
     Chairs name a physical room when they have one ("room: RAN1_Brk#2",
-    "@Praetorium"); otherwise the table is simply the online or the offline
-    track, which is how the published schedule reads.
+    "@Praetorium"); otherwise the table is that chair's online or offline
+    track, named after the chair so a delegate knows where to go.
     """
     m = ROOM_RE.search(heading)
     lead_match = OWNER_RE.search(heading)
@@ -225,13 +225,13 @@ def _room_label(
         room = re.sub(r"\s*,\s*", " · ", m.group(1).strip())
         return room, lead
     lowered = heading.lower()
-    if "offline" in lowered:
-        return "Offline", lead
-    if "online" in lowered:
-        return "Online", lead
+    for mode in ("offline", "online"):
+        if mode in lowered:
+            return (f"{lead}'s {mode} sessions" if lead else f"{mode.capitalize()} sessions"), lead
     label = re.sub(r"^RAN1#\d+[-\w]*\s*", "", heading or source_label).strip()
     label = re.sub(r"(?i)(session\s+)?schedule\b", "", label).strip(" -–—:")
     return (label or source_label)[:60], lead
+
 
 
 def _parse_table(
