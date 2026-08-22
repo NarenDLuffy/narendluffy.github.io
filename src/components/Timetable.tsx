@@ -112,6 +112,23 @@ export function Timetable({
             />
           ))}
 
+          {bands.map((b) => (
+            <div
+              key={b.sessionId}
+              className="pointer-events-none absolute inset-x-0 z-[5] flex items-center justify-center border-y border-dashed border-border bg-secondary/70"
+              style={{
+                top: (minutesOf(b.startTime) - start) * PX_PER_MIN,
+                height: (minutesOf(b.endTime) - minutesOf(b.startTime)) * PX_PER_MIN,
+              }}
+            >
+              <span className="mono-code text-[10px] uppercase tracking-wide text-muted-foreground">
+                {b.topic} · {b.startTime}–{b.endTime}
+              </span>
+            </div>
+          ))}
+
+
+
           {activeRooms.map((room) => {
             const entry = layout.get(room.roomId)!;
             const { sessions: roomSessions, laneOf, lanes: laneCount } = entry;
