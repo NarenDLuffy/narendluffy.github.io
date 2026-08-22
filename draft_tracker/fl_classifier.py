@@ -67,10 +67,6 @@ def classify(filename: str, folder_names: list[str]) -> Classification:
     if not filename.lower().endswith(DRAFT_EXTENSIONS):
         return Classification("unknown", 0.3, key, revision)
 
-
-    if not lower.endswith(DRAFT_EXTENSIONS):
-        return Classification("unknown", 0.3, key, revision)
-
     if any(re.search(p, lower) for p in FL_PATTERNS):
         return Classification("fl_summary", 0.9, key, revision)
     if any(re.search(p, context) for p in FL_PATTERNS):
