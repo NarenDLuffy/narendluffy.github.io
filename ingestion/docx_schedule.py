@@ -369,6 +369,7 @@ def _parse_table(
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
+            room = _room_for(lane)
             session_id = (
                 f"{meeting_id}-"
                 f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic, str(lane))}"
@@ -387,6 +388,7 @@ def _parse_table(
                     endTime=end_time,
                     roomId=room.roomId,
                     roomName=room.roomName,
+
                     topic=topic,
                     topicKey=_topic_key(topic),
                     agendaItems=_agenda_items(text),
