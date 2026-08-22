@@ -233,65 +233,24 @@ def parse_schedule_sources(
 
 
 def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
-    """Give every column a name a delegate can act on.
+    """One track per schedule table, named the way the chair wrote it.
 
-    Order of preference: the physical room the chair wrote down
-    ("Praetorium", "RAN1_Brk#2 - 1.1 Himalaya"), then the chair who runs the
-    column ("Hiroki - offline"), and only as a last resort a plain
-    "Offline breakout" label. Columns that would end up with the same name are
-    merged when their sessions never overlap, so the board shows one lane per
-    real track instead of an arbitrary count of numbered lanes.
+    Physical rooms keep their real name ("Praetorium", "RAN1_Brk#2 · 1.1
+    Himalaya"); other tables are that chair's online or offline track. Two
+    tables that end up with exactly the same name are the same track published
+    twice, so they are merged instead of numbered.
     """
-    by_room: dict[str, list[Session]] = {}
-    for session in sessions:
-        by_room.setdefault(session.roomId, []).append(session)
-
-    def label(room: Room) -> str:
-        name = room.roomName
-        if name not in ("Online", "Offline"):
-            return name
-        mode = name.lower()
-        own = by_room.get(room.roomId, [])
-        leads = [s.sessionLead for s in own if s.sessionLead]
-        if leads:
-            main_lead = max(set(leads), key=leads.count)
-            return f"{main_lead} - {mode}"
-        return "Online session" if mode == "online" else "Offline breakout"
-
-    # Merge lanes that share a name and never run at the same time.
-    lanes: list[tuple[str, list[Room], list[Session]]] = []
-    for room in rooms:
-        name = label(room)
-        own = sorted(by_room.get(room.roomId, []), key=lambda s: (s.date, s.startTime))
-        for lane_name, lane_rooms, lane_sessions in lanes:
-            if lane_name != name:
-                continue
-            clash = any(
-                a.date == b.date and a.startTime < b.endTime and b.startTime < a.endTime
-                for a in lane_sessions
-                for b in own
-            )
-            if not clash:
-                lane_rooms.append(room)
-                lane_sessions.extend(own)
-                break
-        else:
-            lanes.append((name, [room], list(own)))
-
-    # A chair with two genuinely parallel lanes gets "A"/"B" rather than 1/2.
-    seen: dict[str, int] = {}
-    merged_rooms: list[Room] = []
+    by_name: dict[str, Room] = {}
     remap: dict[str, str] = {}
-    for name, lane_rooms, lane_sessions in lanes:
-        total = sum(1 for other, *_ in lanes if other == name)
-        seen[name] = seen.get(name, 0) + 1
-        final = name if total == 1 else f"{name} ({chr(64 + seen[name])})"
-        keeper = lane_rooms[0]
-        keeper.roomName = final
-        keeper.shortName = final[:24]
-        for room in lane_rooms:
+    for room in rooms:
+        keeper = by_name.get(room.roomName)
+        if keeper is None:
+            by_name[room.roomName] = room
+            remap[room.roomId] = room.roomId
+        else:
             remap[room.roomId] = keeper.roomId
-        merged_rooms.append(keeper)
+
+    merged_rooms = list(by_name.values())
 
     def sort_key(room: Room) -> tuple[int, str]:
         lowered = room.roomName.lower()
@@ -308,6 +267,7 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     order = {room.roomId: room.order for room in merged_rooms}
     sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return merged_rooms, sessions
+
 
 
 def build_live_bundles(
