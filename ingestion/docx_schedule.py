@@ -202,6 +202,7 @@ def _parse_table(
         )
 
     sessions: list[Session] = []
+    seen: set[str] = set()
     for row in rows[1:]:
         cells = row.cells
         if not cells:
@@ -230,7 +231,13 @@ def _parse_table(
                 continue
             room = rooms[lane]
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
-            session_id = f"{meeting_id}-{_short_hash(room.roomId, day.isoformat(), start_time, topic)}"
+            session_id = (
+                f"{meeting_id}-"
+                f"{_short_hash(room.roomId, day.isoformat(), start_time, end_time, topic)}"
+            )
+            if session_id in seen:
+                continue  # merged cells repeat the same session across columns
+            seen.add(session_id)
             sessions.append(
                 Session(
                     sessionId=session_id,
