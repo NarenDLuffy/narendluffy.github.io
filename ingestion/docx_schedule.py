@@ -109,6 +109,26 @@ def _breakdown(text: str, block_start: str, block_end: str) -> list[AgendaSlot]:
                 minutes=int(minutes_match.group(1)) if minutes_match else None,
             )
         )
+    # Chairs often write the release on its own line above the topic with the
+    # same duration ("R20 (40)" then "NTN-NR (40)"): that is one slot, not two.
+    merged: list[AgendaSlot] = []
+    index = 0
+    while index < len(slots):
+        current = slots[index]
+        nxt = slots[index + 1] if index + 1 < len(slots) else None
+        if (
+            nxt is not None
+            and current.code is None
+            and current.minutes is not None
+            and current.minutes == nxt.minutes
+        ):
+            nxt.label = f"{current.label} {nxt.label}".strip()
+            merged.append(nxt)
+            index += 2
+            continue
+        merged.append(current)
+        index += 1
+    slots = merged
     if len(slots) < 2 and not any(s.minutes for s in slots):
         return []
     # Lay the parts out back-to-back from the start of the block.
