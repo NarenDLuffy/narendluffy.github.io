@@ -130,6 +130,12 @@ def _room_labels_before(paragraph) -> list[str]:
     return ordered
 
 
+def _paragraph_text(paragraph) -> str:
+    """Plain paragraph text, excluding anything inside floating text boxes."""
+    boxed = {id(t) for box in paragraph.iter() if box.tag.endswith("}txbxContent") for t in box.iter(f"{W}t")}
+    return "".join(t.text or "" for t in paragraph.iter(f"{W}t") if id(t) not in boxed).strip()
+
+
 def _looks_like_person(label: str) -> bool:
     token = label.strip().strip(".")
     if not token or " " in token or any(ch.isdigit() for ch in token):
@@ -157,35 +163,69 @@ class _Segment:
 
 
 def _parse_cell(text: str) -> list[_Segment]:
-    """One segment per blank-line separated block inside a cell."""
+    """Split a cell into consecutive sub-blocks.
+
+    A blank line always separates sub-blocks. Chairs also stack them without a
+    blank line, so a line that names a work area or a person *and* carries its
+    own duration starts a new sub-block once the current one is complete.
+    """
     segments: list[_Segment] = []
     for chunk in re.split(r"\n\s*\n", text):
         lines = [line.strip() for line in chunk.split("\n") if line.strip()]
         if not lines:
             continue
-        head, head_minutes = _split_head(lines[0])
-        lead = head if _looks_like_person(head) else None
-        group_parts: list[str] = [] if lead else [head]
-        slots: list[tuple[str, int | None]] = []
-        for line in lines[1:]:
-            label, minutes = _split_head(line)
-            if not label:
-                continue
-            if minutes is None and not line.strip().startswith("."):
-                group_parts.append(label)
-            else:
-                slots.append((label, minutes))
-        group = " ".join(part for part in group_parts if part).strip()
-        segments.append(
-            _Segment(
-                lead=lead,
-                group=group or (head if not lead else ""),
-                minutes=head_minutes,
-                slots=slots,
-                raw=chunk.strip(),
-            )
-        )
+        for group_lines in _split_stacked(lines):
+            segments.append(_segment_from_lines(group_lines))
     return segments
+
+
+def _split_stacked(lines: list[str]) -> list[list[str]]:
+    groups: list[list[str]] = []
+    current: list[str] = []
+    head_minutes: int | None = None
+    slot_minutes = 0
+    for line in lines:
+        label, minutes = _split_head(line)
+        is_item = line.startswith(".")
+        if current and minutes is not None and not is_item:
+            heads_new = _looks_like_person(label) or label.lower() in GROUP_TOKENS
+            finished = head_minutes is None or (slot_minutes and slot_minutes >= head_minutes)
+            if heads_new and finished:
+                groups.append(current)
+                current, head_minutes, slot_minutes = [line], minutes, 0
+                continue
+        if not current:
+            current, head_minutes, slot_minutes = [line], minutes, 0
+            continue
+        current.append(line)
+        if minutes is not None:
+            slot_minutes += minutes
+    if current:
+        groups.append(current)
+    return groups
+
+
+def _segment_from_lines(lines: list[str]) -> _Segment:
+    head, head_minutes = _split_head(lines[0])
+    lead = head if _looks_like_person(head) else None
+    group_parts: list[str] = [] if lead else [head]
+    slots: list[tuple[str, int | None]] = []
+    for line in lines[1:]:
+        label, minutes = _split_head(line)
+        if not label:
+            continue
+        if minutes is None and not line.startswith("."):
+            group_parts.append(label)
+        else:
+            slots.append((label, minutes))
+    group = " ".join(part for part in group_parts if part).strip()
+    return _Segment(
+        lead=lead,
+        group=group or (head if not lead else ""),
+        minutes=head_minutes,
+        slots=slots,
+        raw="\n".join(lines),
+    )
 
 
 def _day_columns(header_cells: list[_Cell]) -> dict[str, tuple[int, int]]:
@@ -235,7 +275,7 @@ def parse_block_schedule_docx(
             labels = _room_labels_before(child)
             if labels:
                 pending_labels = labels
-            heading = "".join(t.text or "" for t in child.iter(f"{W}t")).strip()
+            heading = _paragraph_text(child)
             if heading:
                 pending_heading = heading
             continue
@@ -261,9 +301,11 @@ def parse_block_schedule_docx(
                 name = labels[index]
             elif len(labels) == 1 and width == 1:
                 name = labels[0]
+            elif labels:
+                name = f"Breakout {index + 1}"
             else:
                 base = re.sub(r"^RAN1#?\d+\s*", "", heading).strip() or f"Track {table_index}"
-                base = re.sub(r"\s*(schedule|sessions?)\s*$", "", base, flags=re.I).strip() or base
+                base = re.sub(r"\s*(schedule|sessions?|for)\s*$", "", base, flags=re.I).strip() or base
                 name = base if width == 1 else f"{base} {index + 1}"
             room_id = f"{meeting_id}-room-{_slug(name.lower())}"
             room = rooms.get(room_id)
