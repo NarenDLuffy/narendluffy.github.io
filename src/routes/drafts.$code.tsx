@@ -1,11 +1,17 @@
 import { createFileRoute, useParams } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
 import { ExternalLink, FolderOpen } from "lucide-react";
+import { DraftBreadcrumbs, DraftTree } from "@/components/DraftTree";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 import { ArtifactRow, EventRow, FollowButton } from "@/components/DraftActivity";
-import { artifactsForAgenda, foldersById, relativeTime } from "@/services/draftService";
+import {
+  artifactsForAgenda,
+  buildDraftTree,
+  latestFlSummary,
+  relativeTime,
+} from "@/services/draftService";
 
 export const Route = createFileRoute("/drafts/$code")({
   head: ({ params }) => ({
@@ -45,19 +51,39 @@ function DraftDetailPage() {
     () => (index ? artifactsForAgenda(index, code) : []),
     [index, code],
   );
-  const folders = useMemo(() => {
-    if (!index) return [];
-    const map = foldersById(index);
-    const ids = new Set(artifacts.map((a) => a.folderId));
-    index.folders.filter((f) => f.agendaItemId === code).forEach((f) => ids.add(f.id));
-    return [...ids].map((id) => map.get(id)).filter(Boolean);
-  }, [index, artifacts, code]);
+  // Whatever structure exists on the server, rendered as-is: rounds, custom
+  // folders, deep nesting or plain files sitting in the agenda folder.
+  const tree = useMemo(() => (index ? buildDraftTree(index, code) : []), [index, code]);
+  const treeFolderPaths = useMemo(() => {
+    const paths = new Set<string>();
+    const walk = (nodes: typeof tree) =>
+      nodes.forEach((n) => {
+        paths.add(n.folder.normalizedPath);
+        walk(n.children);
+      });
+    walk(tree);
+    return paths;
+  }, [tree]);
+  const looseFiles = useMemo(
+    () => artifacts.filter((a) => !treeFolderPaths.has(a.folderPath ?? "")),
+    [artifacts, treeFolderPaths],
+  );
+  const latestFl = useMemo(
+    () => (index ? latestFlSummary(index, code) : undefined),
+    [index, code],
+  );
 
   if (isLoading) return <LoadingState label="Loading drafts…" />;
   if (!meeting) return <NoMeetingState />;
 
   const flSummaries = artifacts.filter((a) => a.fileType === "fl_summary");
-  const others = artifacts.filter((a) => a.fileType !== "fl_summary");
+  const unread = activity?.unread ?? [];
+  const unreadCounts = {
+    files: unread.filter((e) => e.eventType === "NEW_FILE").length,
+    updated: unread.filter((e) => e.eventType === "FILE_UPDATED").length,
+    folders: unread.filter((e) => e.eventType === "NEW_FOLDER").length,
+    fl: unread.filter((e) => e.semanticType === "FL_SUMMARY_UPDATED").length,
+  };
 
   return (
     <div className="space-y-5">
@@ -78,47 +104,32 @@ function DraftDetailPage() {
         </p>
       </header>
 
-      {folders.length > 0 ? (
-        <section>
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Folders
-          </h2>
-          <ul className="space-y-1.5">
-            {folders.map((f) =>
-              f ? (
-                <li key={f.id}>
-                  <a
-                    href={f.url ?? "#"}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 rounded-md border border-border bg-card p-2.5 text-sm"
-                  >
-                    <FolderOpen className="size-4 shrink-0 text-muted-foreground" />
-                    <span className="min-w-0 flex-1 truncate">{f.name}</span>
-                    <span className="mono-code shrink-0 text-[11px] text-muted-foreground">
-                      {f.fileCount} file(s)
-                    </span>
-                    <ExternalLink className="size-3.5 shrink-0 text-muted-foreground" />
-                  </a>
-                </li>
-              ) : null,
-            )}
-          </ul>
+      {unread.length > 0 ? (
+        <section className="rounded-lg border border-primary/30 bg-primary/5 p-3">
+          <h2 className="text-sm font-semibold">Since you last looked</h2>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {[
+              unreadCounts.files ? `${unreadCounts.files} new file(s)` : "",
+              unreadCounts.updated ? `${unreadCounts.updated} updated file(s)` : "",
+              unreadCounts.folders ? `${unreadCounts.folders} new folder(s)` : "",
+              unreadCounts.fl ? `${unreadCounts.fl} FL summary update(s)` : "",
+            ]
+              .filter(Boolean)
+              .join(" · ")}{" "}
+            — anywhere below this agenda item.
+          </p>
         </section>
       ) : null}
 
-      {flSummaries.length > 0 ? (
+      {latestFl ? (
         <section>
           <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            FL summaries
+            Latest FL summary
           </h2>
-          <ol className="space-y-1.5">
-            {flSummaries.map((a) => (
-              <li key={a.id}>
-                <ArtifactRow artifact={a} />
-              </li>
-            ))}
-          </ol>
+          <DraftBreadcrumbs trail={(latestFl.folderPath ?? "").split("/").filter(Boolean)} />
+          <div className="mt-1.5">
+            <ArtifactRow artifact={latestFl} />
+          </div>
         </section>
       ) : null}
 
@@ -126,19 +137,7 @@ function DraftDetailPage() {
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Drafts
         </h2>
-        {others.length === 0 ? (
-          <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
-            No drafts indexed for this agenda item yet.
-          </p>
-        ) : (
-          <ol className="space-y-1.5">
-            {others.map((a) => (
-              <li key={a.id}>
-                <ArtifactRow artifact={a} />
-              </li>
-            ))}
-          </ol>
-        )}
+        <DraftTree nodes={tree} looseFiles={looseFiles} />
       </section>
 
       {activity && activity.events.length > 0 ? (
