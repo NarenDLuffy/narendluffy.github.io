@@ -186,9 +186,11 @@ def parse_schedule_docx(
     rooms: dict[str, Room] = {}
     sessions: list[Session] = []
     heading = ""
+    pending_labels: list[str] = []
 
     for block in _iter_blocks(document):
         if isinstance(block, Paragraph):
+            pending_labels.extend(_floating_labels(block))
             if block.text.strip():
                 heading = block.text.strip()
             continue
@@ -201,10 +203,13 @@ def parse_schedule_docx(
             source=source,
             order_offset=room_order_offset + len(rooms),
             owner_hint=owner_hint,
+            lane_labels=pending_labels,
         )
+        pending_labels = []
         for room in table_rooms:
             rooms.setdefault(room.roomId, room)
         sessions.extend(table_sessions)
+
 
     return list(rooms.values()), sessions
 
