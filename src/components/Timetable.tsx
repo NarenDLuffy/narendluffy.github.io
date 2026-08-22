@@ -105,26 +105,15 @@ export function Timetable({
           ))}
 
           {activeRooms.map((room) => {
-            const roomSessions = sessions
-              .filter((s) => s.roomId === room.roomId)
-              .sort((a, b) => minutesOf(a.startTime) - minutesOf(b.startTime));
-            // Parallel sessions of the same track share the column side by side.
-            const laneEnd: number[] = [];
-            const laneOf = new Map<string, number>();
-            for (const s of roomSessions) {
-              const from = minutesOf(s.startTime);
-              let lane = laneEnd.findIndex((e) => e <= from);
-              if (lane === -1) lane = laneEnd.push(from) - 1;
-              laneEnd[lane] = minutesOf(s.endTime);
-              laneOf.set(s.sessionId, lane);
-            }
-            const laneCount = Math.max(1, laneEnd.length);
+            const entry = layout.get(room.roomId)!;
+            const { sessions: roomSessions, laneOf, lanes: laneCount } = entry;
             return (
               <div
                 key={room.roomId}
                 className="relative shrink-0 border-r border-border last:border-r-0"
-                style={{ width: 160 * laneCount }}
+                style={{ width: widthOf(room.roomId) }}
               >
+
                 {roomSessions.map((s) => {
                   const top = (minutesOf(s.startTime) - start) * PX_PER_MIN;
                   const h = (minutesOf(s.endTime) - minutesOf(s.startTime)) * PX_PER_MIN;
