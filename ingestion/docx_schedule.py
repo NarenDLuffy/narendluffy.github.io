@@ -93,7 +93,10 @@ def _add_minutes(hhmm: str, minutes: int) -> str:
 def _breakdown(text: str, block_start: str, block_end: str) -> list[AgendaSlot]:
     """Per-agenda-item split of a block: "6GR (120) / .10.5.1.3(30) / ..."."""
     slots: list[AgendaSlot] = []
-    for line in text.split("\n")[1:]:
+    block_minutes = (
+        int(block_end[:2]) * 60 + int(block_end[3:]) - int(block_start[:2]) * 60 - int(block_start[3:])
+    )
+    for line in text.split("\n"):
         line = line.strip().lstrip(".").strip()
         if not line or BREAK_RE.search(line):
             continue
@@ -109,6 +112,9 @@ def _breakdown(text: str, block_start: str, block_end: str) -> list[AgendaSlot]:
                 minutes=int(minutes_match.group(1)) if minutes_match else None,
             )
         )
+    # A first line stating the whole block length is the block header, not a part.
+    if len(slots) > 1 and slots[0].minutes == block_minutes:
+        slots = slots[1:]
     # Chairs often write the release on its own line above the topic with the
     # same duration ("R20 (40)" then "NTN-NR (40)"): that is one slot, not two.
     merged: list[AgendaSlot] = []
