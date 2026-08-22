@@ -83,12 +83,15 @@ def _agenda_items(text: str) -> list[str]:
 
 
 def _topic(text: str) -> str:
-    first = text.split("\n", 1)[0]
-    first = TIME_RANGE_RE.sub("", first)
-    first = DURATION_RE.sub("", first)
-    first = re.sub(r"\(\s*\d+\s*\)", "", first)
-    first = first.strip(" .:-–/")
-    return re.sub(r"\s{2,}", " ", first) or "Session"
+    """First line of the cell that actually names a topic."""
+    for line in text.split("\n"):
+        cleaned = TIME_RANGE_RE.sub("", line)
+        cleaned = DURATION_RE.sub("", cleaned)
+        cleaned = re.sub(r"\(\s*\d+\s*\)", "", cleaned)
+        cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" .:-–/")
+        if cleaned and not AGENDA_RE.fullmatch(cleaned):
+            return cleaned
+    return "Session"
 
 
 def _topic_key(topic: str) -> str:
@@ -224,6 +227,8 @@ def _parse_table(
         for cell_index, day, lane in columns:
             if cell_index >= len(cells):
                 continue
+            if cell_index > 0 and cells[cell_index]._tc is cells[cell_index - 1]._tc:
+                continue  # horizontally merged: already emitted in its first column
             text = _cell_text(cells[cell_index])
             if not text or SKIP_CELL_RE.match(text):
                 continue

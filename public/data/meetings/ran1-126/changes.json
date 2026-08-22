@@ -1,58 +1,25 @@
 [
   {
-    "changeId": "room_changed-ran1-126-571e4c1d5d-2026-08-22T00:13:51+00:00",
+    "changeId": "room_changed-ran1-126-91acdeb076-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "RAN1#126 commences at 09:00 on Monday moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-571e4c1d5d",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-57b170ef40-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
     "type": "room_changed",
     "title": "RAN1#126 commences at 09:00 on Monday moved",
     "detail": "Session changed room",
     "agendaItems": [
       "10.5.1.1"
     ],
-    "sessionId": "ran1-126-57b170ef40",
-    "to": "Online 3",
+    "sessionId": "ran1-126-91acdeb076",
+    "to": "Online 1",
     "sourceIds": [
       "ran1-126-d847dd04"
     ],
-    "from": "Sorour online 3"
+    "from": "Online 3"
   },
   {
-    "changeId": "room_changed-ran1-126-091cfbfac1-2026-08-22T00:13:51+00:00",
+    "changeId": "room_changed-ran1-126-653de98fe9-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.3.1",
-      "10.8.2"
-    ],
-    "sessionId": "ran1-126-091cfbfac1",
-    "to": "Offline 1",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "Hiroki offline 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-d465002333-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
     "type": "room_changed",
     "title": "6GR moved",
     "detail": "Session changed room",
@@ -61,731 +28,380 @@
       "10.5.1.1",
       "10.5.1.2"
     ],
-    "sessionId": "ran1-126-d465002333",
-    "to": "Online 3",
+    "sessionId": "ran1-126-653de98fe9",
+    "to": "Online 1",
     "sourceIds": [
       "ran1-126-d847dd04"
     ],
-    "from": "Sorour online 3"
+    "from": "Online 3"
   },
   {
-    "changeId": "room_changed-ran1-126-ba1e4db3f4-2026-08-22T00:13:51+00:00",
+    "changeId": "session_added-ran1-126-6584b80058-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.8"
-    ],
-    "sessionId": "ran1-126-ba1e4db3f4",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-0b4355209c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
     "type": "session_added",
-    "title": "R20 added",
+    "title": "6G 10.5.4.x added",
     "detail": "New session in the schedule",
     "agendaItems": [
-      "10.3.2",
-      "10.3.1"
+      "10.5.4",
+      "10.5.4.1",
+      "10.5.4.3"
     ],
-    "sessionId": "ran1-126-0b4355209c",
-    "to": "Offline 5 11:00-13:00",
+    "sessionId": "ran1-126-6584b80058",
+    "to": "Offline 2 14:30-16:00",
     "sourceIds": [
-      "ran1-126-d847dd04"
+      "ran1-126-ebdeb935"
     ]
   },
   {
-    "changeId": "room_changed-ran1-126-a5ec28800c-2026-08-22T00:13:51+00:00",
+    "changeId": "room_changed-ran1-126-bfaa3efadd-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
     "type": "room_changed",
-    "title": "R20 A-IoT moved",
+    "title": "6GR moved",
     "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126-bfaa3efadd",
+    "to": "Offline 4",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "Offline 5"
+  },
+  {
+    "changeId": "room_changed-ran1-126-324527c0d7-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.1.1",
+      "10.5.2.1",
+      "10.7.1"
+    ],
+    "sessionId": "ran1-126-324527c0d7",
+    "to": "Offline 4",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "Offline 5"
+  },
+  {
+    "changeId": "session_added-ran1-126-c1b63ca864-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G ISAC added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.3",
+      "10.8.1"
+    ],
+    "sessionId": "ran1-126-c1b63ca864",
+    "to": "Offline 2 08:30-10:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-94ce7c34d1-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126-94ce7c34d1",
+    "to": "Offline 1 12:30-13:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-3a97867ffe-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126-3a97867ffe",
+    "to": "Offline 1 14:30-15:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-08bf01f868-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G 10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.2",
+      "10.5.4.4",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126-08bf01f868",
+    "to": "Offline 2 17:00-18:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-87bc4de6c8-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G waveform added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.2",
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126-87bc4de6c8",
+    "to": "Offline 1 08:30-09:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-9676fd59d1-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G 10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126-9676fd59d1",
+    "to": "Offline 1 12:30-13:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-9511326324-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G 10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.3",
+      "10.5.4.2",
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126-9511326324",
+    "to": "Offline 2 18:30-19:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-f54b253dac-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G 10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126-f54b253dac",
+    "to": "Offline 1 08:30-08:50",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-4ab9646bea-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "6G 10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.3",
+      "10.5.4.2",
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126-4ab9646bea",
+    "to": "Offline 1 15:50-16:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-484fa0dce1-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126-484fa0dce1",
+    "to": "Offline 2 16:00-16:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-8fb01e3d2a-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126-8fb01e3d2a",
+    "to": "Offline 2 17:00-18:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126-6323a91f91-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "room_changed",
+    "title": "Early dinner moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126-6323a91f91",
+    "to": "Offline 3",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "Offline 4"
+  },
+  {
+    "changeId": "room_changed-ran1-126-0e8aa8193a-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "room_changed",
+    "title": "Any other open issues moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126-0e8aa8193a",
+    "to": "Online 1",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "session_removed-ran1-126-091cfbfac1-2026-08-22T00:14:32+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.1",
       "10.8.2"
     ],
-    "sessionId": "ran1-126-a5ec28800c",
-    "to": "RAN1_Brk#2",
+    "sessionId": "ran1-126-091cfbfac1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "RAN1_Brk#2"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-423c4d27d6-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-423c4d27d6-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.1",
       "10.5.4.3"
     ],
     "sessionId": "ran1-126-423c4d27d6",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-57c422ef21-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-70223f536b-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.4",
-      "10.6"
-    ],
-    "sessionId": "ran1-126-57c422ef21",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-165c941b36-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-165c941b36",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "session_added-ran1-126-f8cb8deb0b-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.3.4",
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126-f8cb8deb0b",
-    "to": "Offline 3 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-624580aadb-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-624580aadb",
-    "to": "Offline 5 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-804bfc7f38-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.4",
-      "10.7.1",
-      "9.2"
-    ],
-    "sessionId": "ran1-126-804bfc7f38",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-2ff27e7ea6-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G waveform moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.2.1",
-      "10.5.4",
-      "10.5.4.3",
-      "10.5.4.1"
-    ],
-    "sessionId": "ran1-126-2ff27e7ea6",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-b2893d65cc-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-b2893d65cc",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-54cb043187-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.3.2",
-      "10.3.1",
-      "10.5.2.1"
-    ],
-    "sessionId": "ran1-126-54cb043187",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-1b255eacd2-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.2.1",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-1b255eacd2",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-1222242316-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.1",
-      "10.5.1.2",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-1222242316",
-    "to": "Offline 3 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-567b2ae6fe-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.6.1.1",
-      "10.5.2.1",
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-567b2ae6fe",
-    "to": "Offline 5 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-2d68cb7778-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G 10.5.4.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.4.2",
-      "10.5.4.4",
-      "10.5.4.3"
-    ],
-    "sessionId": "ran1-126-2d68cb7778",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-70223f536b-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.8.3",
       "10.8.1"
     ],
     "sessionId": "ran1-126-70223f536b",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-0d8dbb0c86-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-1b07464cb8-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.2",
-      "10.5.1.1"
-    ],
-    "sessionId": "ran1-126-0d8dbb0c86",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-3620a771f3-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-3620a771f3",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-da91461971-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-da91461971",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-487e320e8d-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "R20 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.5",
-      "10.6.1.1"
-    ],
-    "sessionId": "ran1-126-487e320e8d",
-    "to": "Offline 3 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-56329a7867-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-56329a7867",
-    "to": "Offline 4 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-b1c03b5d67-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.4",
-      "10.7.1",
-      "9.2"
-    ],
-    "sessionId": "ran1-126-b1c03b5d67",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-a775bd21cb-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G waveform moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.2.1",
-      "10.8.3",
-      "10.8.1"
-    ],
-    "sessionId": "ran1-126-a775bd21cb",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-ed792955a5-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.5",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-ed792955a5",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-cfdfa0e974-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 AI/ML moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "6",
-      "8.1"
-    ],
-    "sessionId": "ran1-126-cfdfa0e974",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-6790ec5d05-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.2.1",
-      "10.8"
-    ],
-    "sessionId": "ran1-126-6790ec5d05",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-3b3d8b5223-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.6.1.2",
-      "10.6.2",
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126-3b3d8b5223",
-    "to": "Offline 3 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-59668fd9c7-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.2.2",
-      "10.5.2.1",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-59668fd9c7",
-    "to": "Offline 4 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-41e55e20a1-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.1",
-      "6",
-      "8.1"
-    ],
-    "sessionId": "ran1-126-41e55e20a1",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-1b07464cb8-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.2"
     ],
     "sessionId": "ran1-126-1b07464cb8",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-6f10a8106d-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-30e14ab240-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "11 TEI20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "8.2",
-      "9.3.2"
-    ],
-    "sessionId": "ran1-126-6f10a8106d",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-30e14ab240-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.3"
     ],
     "sessionId": "ran1-126-30e14ab240",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-5fa7e6b489-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-d313b2f3b9-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6"
-    ],
-    "sessionId": "ran1-126-5fa7e6b489",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-85ffcc6d9a-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.2.1",
-      "10.5.2.2",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-85ffcc6d9a",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-a52f63c1ac-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "TEI moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "7",
-      "8.2"
-    ],
-    "sessionId": "ran1-126-a52f63c1ac",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-86191b499a-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "R20 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126-86191b499a",
-    "to": "Offline 3 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-6ae57fe680-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-6ae57fe680",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-9f8fb8879c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 A-IoT moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.3.2",
-      "9.3.3",
-      "9.3.1"
-    ],
-    "sessionId": "ran1-126-9f8fb8879c",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-d313b2f3b9-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.2",
@@ -793,583 +409,70 @@
       "10.5.4.1"
     ],
     "sessionId": "ran1-126-d313b2f3b9",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-540c2edee5-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-ccb800c21f-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2",
-      "10.5.2.2"
-    ],
-    "sessionId": "ran1-126-540c2edee5",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-f0586453de-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-f0586453de",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-b26b85a9b5-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.2",
-      "10.5.1.1",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-b26b85a9b5",
-    "to": "Offline 3 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-b94303f288-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.2.2",
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-b94303f288",
-    "to": "Offline 4 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-4272a7d525-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G 10.5.4.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.4.4",
-      "10.5.4.1",
-      "10.5.4.2"
-    ],
-    "sessionId": "ran1-126-4272a7d525",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-ccb800c21f-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.8.2",
       "10.8.3"
     ],
     "sessionId": "ran1-126-ccb800c21f",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-488ccca9b6-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-6d2a8beb18-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.1",
-      "10.5.1.3",
-      "10.5.1.2"
-    ],
-    "sessionId": "ran1-126-488ccca9b6",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-359c2de78c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-359c2de78c",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-c3c70f093b-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-c3c70f093b",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-f1991cacc8-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.2.1",
-      "10.8",
-      "10.5.2.1"
-    ],
-    "sessionId": "ran1-126-f1991cacc8",
-    "to": "Offline 3 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-da87d9beb5-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126-da87d9beb5",
-    "to": "Offline 4 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-48cced78ca-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.4",
-      "10.7.1",
-      "9.2"
-    ],
-    "sessionId": "ran1-126-48cced78ca",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-6de0b4c793-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G ISAC moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.8.2",
-      "10.8.3",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-6de0b4c793",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-db51ab2aa7-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.5",
-      "10.4.1",
-      "10.4.2"
-    ],
-    "sessionId": "ran1-126-db51ab2aa7",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-35bc96bcb1-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 AI/ML moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "6",
-      "8.1"
-    ],
-    "sessionId": "ran1-126-35bc96bcb1",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-602eab4529-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.8",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-602eab4529",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-d65724da31-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.2.2",
-      "10.5.2.3",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-d65724da31",
-    "to": "Offline 3 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-ffcd8d921e-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6"
-    ],
-    "sessionId": "ran1-126-ffcd8d921e",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-2bb4e8a96c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.1",
-      "6",
-      "8.1"
-    ],
-    "sessionId": "ran1-126-2bb4e8a96c",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-6d2a8beb18-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.1"
     ],
     "sessionId": "ran1-126-6d2a8beb18",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-6a00b21878-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-80983f5ab4-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "11 TEI20 (TBD) moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "8.2"
-    ],
-    "sessionId": "ran1-126-6a00b21878",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-80983f5ab4-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.1",
       "9.3.2",
       "9.3.3"
     ],
     "sessionId": "ran1-126-80983f5ab4",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-e3bbffb35e-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-ee9250e282-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.2.3",
-      "10.5.2.1",
-      "10.5.2.2"
-    ],
-    "sessionId": "ran1-126-e3bbffb35e",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-11e0d2d178-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "TEI (TBD) moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "7",
-      "8.2"
-    ],
-    "sessionId": "ran1-126-11e0d2d178",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-0a630fb2b2-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2",
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126-0a630fb2b2",
-    "to": "Offline 3 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-897da0b351-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-897da0b351",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "room_changed-ran1-126-71b367454a-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 A-IoT moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.3.1",
-      "9.3.2",
-      "9.3.3"
-    ],
-    "sessionId": "ran1-126-71b367454a",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-0489703ef4-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.4",
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126-0489703ef4",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-c85d8d7a63-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-c85d8d7a63",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "session_added-ran1-126-68c586b4be-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.2",
-      "10.5.1.1",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-68c586b4be",
-    "to": "Offline 3 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-c09a8949e0-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.2.3",
-      "10.7.1",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-c09a8949e0",
-    "to": "Offline 4 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-ee9250e282-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.3",
@@ -1377,445 +480,53 @@
       "10.5.4.4"
     ],
     "sessionId": "ran1-126-ee9250e282",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "session_added-ran1-126-138333e679-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-f6de1ec5ef-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "8.2 R19 LP-WUS, Mobility, TBD added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "8.2",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-138333e679",
-    "to": "RAN1_Brk#2 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-f6de1ec5ef-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.1"
     ],
     "sessionId": "ran1-126-f6de1ec5ef",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-5f5348f570-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-81a71fb629-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.1",
-      "10.5.1.2"
-    ],
-    "sessionId": "ran1-126-5f5348f570",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-36fbb0c5cc-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-36fbb0c5cc",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-c9efae227d-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "AI 7/8.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "7",
-      "8.2",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-c9efae227d",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-ec4279cab9-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.3.1",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-ec4279cab9",
-    "to": "Offline 3 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-5615e871de-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "R20 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.6"
-    ],
-    "sessionId": "ran1-126-5615e871de",
-    "to": "Offline 4 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-d8e9ef54f2-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.2",
-      "9.4",
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-d8e9ef54f2",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-cef0774fb5-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 A-IoT moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.3.2",
-      "9.3.3",
-      "9.3.1"
-    ],
-    "sessionId": "ran1-126-cef0774fb5",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-fc1ae3a148-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.5",
-      "10.4.1",
-      "10.4.2"
-    ],
-    "sessionId": "ran1-126-fc1ae3a148",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-f09650b54f-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "AI 6/8.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "6",
-      "8.1"
-    ],
-    "sessionId": "ran1-126-f09650b54f",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-7962d068d6-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-7962d068d6",
-    "to": "Offline 4",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "start_time_changed-ran1-126-7962d068d6-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "start_time_changed",
-    "title": "R20 start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-126-7962d068d6",
-    "to": "17:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "11:00"
-  },
-  {
-    "changeId": "end_time_changed-ran1-126-7962d068d6-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "end_time_changed",
-    "title": "R20 end time changed",
-    "detail": "End time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-126-7962d068d6",
-    "to": "19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "13:00"
-  },
-  {
-    "changeId": "session_added-ran1-126-a0a225b988-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.2.1",
-      "10.5.2.2",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-a0a225b988",
-    "to": "Offline 3 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-1ed92e3f89-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.6",
-      "10.8"
-    ],
-    "sessionId": "ran1-126-1ed92e3f89",
-    "to": "Offline 4 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-6af574a265-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "AI 6/8.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "6",
-      "8.1",
-      "9.1"
-    ],
-    "sessionId": "ran1-126-6af574a265",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-81a71fb629-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.8.1",
       "10.8.2",
       "10.8.3"
     ],
     "sessionId": "ran1-126-81a71fb629",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-4c7f7792d4-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-81922c661c-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G ISAC moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.8.1",
-      "10.8.2",
-      "10.8.3"
-    ],
-    "sessionId": "ran1-126-4c7f7792d4",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-d5d0e4d057-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6",
-      "10.5.3.1"
-    ],
-    "sessionId": "ran1-126-d5d0e4d057",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-7c2fd65c22-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.2.3",
-      "10.5.2.2",
-      "10.5.2.1"
-    ],
-    "sessionId": "ran1-126-7c2fd65c22",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-1621a81b68-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.8"
-    ],
-    "sessionId": "ran1-126-1621a81b68",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-c530da6ee2-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-c530da6ee2",
-    "to": "Offline 3 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-74f8ab2c42-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126-74f8ab2c42",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "room_changed-ran1-126-81922c661c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "10.5.4",
       "10.5.4.3",
@@ -1823,882 +534,43 @@
       "10.5.4.4"
     ],
     "sessionId": "ran1-126-81922c661c",
-    "to": "Offline 1",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 1"
+    "from": "Offline 1"
   },
   {
-    "changeId": "room_changed-ran1-126-b11577ed6d-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-b11577ed6d-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.1"
     ],
     "sessionId": "ran1-126-b11577ed6d",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
+    "from": "Offline 2"
   },
   {
-    "changeId": "room_changed-ran1-126-01a58ede03-2026-08-22T00:13:51+00:00",
+    "changeId": "session_removed-ran1-126-c61ea4b045-2026-08-22T00:14:32+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6G 10.5.4.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.4.1",
-      "10.5.4.3",
-      "10.5.4.2",
-      "10.5.4.4"
-    ],
-    "sessionId": "ran1-126-01a58ede03",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-c61ea4b045-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Session moved",
-    "detail": "Session changed room",
+    "detectedAt": "2026-08-22T00:14:32+00:00",
+    "type": "session_removed",
+    "title": "Session removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.3.1",
       "9.3.2",
       "9.3.3"
     ],
     "sessionId": "ran1-126-c61ea4b045",
-    "to": "Offline 2",
     "sourceIds": [
       "ran1-126-ebdeb935"
     ],
-    "from": "Hiroki offline 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-6a9cb40d04-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-6a9cb40d04",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-20870893a3-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Early dinner moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-20870893a3",
-    "to": "Offline 4",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-b0c6efdc2e-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-b0c6efdc2e",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-416985e528-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "R20 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.1.1"
-    ],
-    "sessionId": "ran1-126-416985e528",
-    "to": "Offline 3 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-eb6ee933de-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 A-IoT moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.3.3",
-      "9.3.1",
-      "9.3.2"
-    ],
-    "sessionId": "ran1-126-eb6ee933de",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-bdd4ce5380-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "6GR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.1",
-      "10.4"
-    ],
-    "sessionId": "ran1-126-bdd4ce5380",
-    "to": "Online 1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 1"
-  },
-  {
-    "changeId": "room_changed-ran1-126-865ce9dcdc-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 AI/ML moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-865ce9dcdc",
-    "to": "Online 2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-6db938a78c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-6db938a78c",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_added-ran1-126-0dbc62c719-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.4.1",
-      "10.4.2"
-    ],
-    "sessionId": "ran1-126-0dbc62c719",
-    "to": "Offline 3 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126-1b8bd627a3-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "10.3.x added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3"
-    ],
-    "sessionId": "ran1-126-1b8bd627a3",
-    "to": "Offline 4 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-6845362bae-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "R20 NR moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "9.1"
-    ],
-    "sessionId": "ran1-126-6845362bae",
-    "to": "Praetorium",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "session_added-ran1-126-4f91be430d-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_added",
-    "title": "6GR added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126-4f91be430d",
-    "to": "Praetorium 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126-7e6c442dc4-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "RAN1#126 expected to close at 17:00 moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-7e6c442dc4",
-    "to": "RAN1_Brk#2",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "room_changed-ran1-126-f9b52272ba-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "room_changed",
-    "title": "Any other open issues moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126-f9b52272ba",
-    "to": "Online 3",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour online 3"
-  },
-  {
-    "changeId": "session_removed-ran1-126-97f4aa2fbe-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Maintenance removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.2",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-97f4aa2fbe",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ],
-    "from": "RAN1_Brk#2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-30f9b5beb7-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sweep removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126-30f9b5beb7",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Praetorium"
-  },
-  {
-    "changeId": "session_removed-ran1-126-23248892fa-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.5",
-      "10.6.1.1"
-    ],
-    "sessionId": "ran1-126-23248892fa",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-cb4d55ead7-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.8",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-cb4d55ead7",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-70c26e57c7-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.2.1",
-      "10.8",
-      "10.5.2.1"
-    ],
-    "sessionId": "ran1-126-70c26e57c7",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-b6ddad8330-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126-b6ddad8330",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-66f790a946-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.3.1",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-66f790a946",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-c1a19313df-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6"
-    ],
-    "sessionId": "ran1-126-c1a19313df",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-adb3e3c15e-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.4.1",
-      "10.4.2"
-    ],
-    "sessionId": "ran1-126-adb3e3c15e",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-2a23392432-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3"
-    ],
-    "sessionId": "ran1-126-2a23392432",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-9479fbfee9-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.8"
-    ],
-    "sessionId": "ran1-126-9479fbfee9",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-9eea9784ec-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.2",
-      "10.3.1"
-    ],
-    "sessionId": "ran1-126-9eea9784ec",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 3"
-  },
-  {
-    "changeId": "session_removed-ran1-126-55b02bf15e-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6.1.2",
-      "10.6.2",
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126-55b02bf15e",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-840fe9761c-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.2.2",
-      "10.5.2.1",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-840fe9761c",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-63876654a2-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.2.2",
-      "10.5.2.3",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-63876654a2",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-38d8f242d0-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6"
-    ],
-    "sessionId": "ran1-126-38d8f242d0",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-44cfd000f1-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorouri removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.2.1",
-      "10.5.2.2",
-      "10.5.2.3"
-    ],
-    "sessionId": "ran1-126-44cfd000f1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-7edea6e05b-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6",
-      "10.8"
-    ],
-    "sessionId": "ran1-126-7edea6e05b",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-1d0d2db14e-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.3.4",
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126-1d0d2db14e",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-0032c916cc-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126-0032c916cc",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 3"
-  },
-  {
-    "changeId": "session_removed-ran1-126-a5957407df-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126-a5957407df",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-db9a944477-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.3.1",
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126-db9a944477",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-6d1129b5d6-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2",
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126-6d1129b5d6",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-6e4471e08b-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126-6e4471e08b",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-392bb0bc12-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.3.2",
-      "10.5.3.3",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-392bb0bc12",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-b0b456778f-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.1",
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126-b0b456778f",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-6dec7c9ea1-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.1",
-      "10.5.1.2",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-6dec7c9ea1",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-99a5841e85-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6.1.1",
-      "10.5.2.1",
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-99a5841e85",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 3"
-  },
-  {
-    "changeId": "session_removed-ran1-126-28c59da0ba-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.2",
-      "10.5.1.1",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-28c59da0ba",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-af20c66773-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.4",
-      "10.5.2.2",
-      "10.7.1"
-    ],
-    "sessionId": "ran1-126-af20c66773",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-46de724b13-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Xiaodong removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.1.3",
-      "10.5.1.2",
-      "10.5.1.1",
-      "10.4.2",
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126-46de724b13",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-a434d84393-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.2.3",
-      "10.7.1",
-      "10.5.4"
-    ],
-    "sessionId": "ran1-126-a434d84393",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
-  },
-  {
-    "changeId": "session_removed-ran1-126-5404bce111-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Sorour removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.5.1.1"
-    ],
-    "sessionId": "ran1-126-5404bce111",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 1"
-  },
-  {
-    "changeId": "session_removed-ran1-126-f3e435c9dc-2026-08-22T00:13:51+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-22T00:13:51+00:00",
-    "type": "session_removed",
-    "title": "Hiroki removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126-f3e435c9dc",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ],
-    "from": "Sorour offline 2"
+    "from": "Offline 2"
   }
 ]
