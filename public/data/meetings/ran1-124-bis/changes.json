@@ -1,1 +1,3743 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-124-bis-439885fa9c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#124b commences at 09:00 on Monday moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-439885fa9c",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a64104aada-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#124 commences at 09:00 on Monday moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-a64104aada",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-2f31ca625a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#124b commences at 09:00 on Monday moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-2f31ca625a",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1ce6852c36-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-1ce6852c36",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-1c3865a701-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-1c3865a701",
+    "to": "Offline 2 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-6d964aa49c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-6d964aa49c",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f5c4bfc5c6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-f5c4bfc5c6",
+    "to": "Offline 11",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-f5c4bfc5c6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "6GR start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-f5c4bfc5c6",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-f5c4bfc5c6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "6GR end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-f5c4bfc5c6",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-c8a8bf2f52-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.2.1",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-c8a8bf2f52",
+    "to": "Offline 12 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-b3b37cc744-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-b3b37cc744",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-04d0fa8d8c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-04d0fa8d8c",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-3db816fd84-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-3db816fd84",
+    "to": "Offline 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-65b49b63a2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-65b49b63a2",
+    "to": "Offline 13 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-2f5eb43d37-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "8.4 R19 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.4",
+      "8.6",
+      "8.8"
+    ],
+    "sessionId": "ran1-124-bis-2f5eb43d37",
+    "to": "RAN1_Brk#2 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-2bbf8ae62d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-2bbf8ae62d",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-947b8aff6d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-947b8aff6d",
+    "to": "Offline 11 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-31b8de6dc5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1",
+      "10.8.1"
+    ],
+    "sessionId": "ran1-124-bis-31b8de6dc5",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8b6d627fea-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5",
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-8b6d627fea",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-30eee4d463-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-30eee4d463",
+    "to": "Online 1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-9b1d17fe7e-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-9b1d17fe7e",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-998275481e-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8",
+      "10.2.1",
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-998275481e",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-484b11e114-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-484b11e114",
+    "to": "Offline 1 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-bfb8fa6c14-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-bfb8fa6c14",
+    "to": "Offline 13 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-eac6da9960-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5.1",
+      "9.3.1",
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis-eac6da9960",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a2599f8151-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.4",
+      "10.5.2.3",
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-124-bis-a2599f8151",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-b901ba4b64-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1",
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-b901ba4b64",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-df6aa3b0f0-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.4",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.1"
+    ],
+    "sessionId": "ran1-124-bis-df6aa3b0f0",
+    "to": "Detailed  for RAN1 Main Session 1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a1debe8d6d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "TEI20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1",
+      "10.5.4",
+      "10.5.4.3",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-a1debe8d6d",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-03a71bd9e7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.3",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-03a71bd9e7",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c1fda8ee0b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2",
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis-c1fda8ee0b",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e93c026550-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-e93c026550",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-697cf6ca71-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-697cf6ca71",
+    "to": "Offline 12",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-697cf6ca71-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "R20 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-697cf6ca71",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-697cf6ca71-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "R20 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-697cf6ca71",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d5e73e6875-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 8 (60 90) moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8"
+    ],
+    "sessionId": "ran1-124-bis-d5e73e6875",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d743e37dd0-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6",
+      "10.4",
+      "10.5.5"
+    ],
+    "sessionId": "ran1-124-bis-d743e37dd0",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-40387c03d7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1",
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-40387c03d7",
+    "to": "Offline 12 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-3c76825ba6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2.1",
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis-3c76825ba6",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f83027dc80-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8"
+    ],
+    "sessionId": "ran1-124-bis-f83027dc80",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-7c8b8bd19f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "8.7 R19 FR3/ISAC CM added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.7",
+      "8.8",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-7c8b8bd19f",
+    "to": "RAN1_Brk#2 2 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4b1da06f98-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-4b1da06f98",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8e8261e2de-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5",
+      "9.6",
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-8e8261e2de",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d3b683277f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 6/7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "6"
+    ],
+    "sessionId": "ran1-124-bis-d3b683277f",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a7304f91a3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-a7304f91a3",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-eb40504955-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-eb40504955",
+    "to": "Offline 11 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-32daa64de8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-32daa64de8",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-51ba484559-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5.1",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-51ba484559",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-cb8d2395f9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-cb8d2395f9",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-b5981c12df-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 6/7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "6",
+      "8.1",
+      "8.2"
+    ],
+    "sessionId": "ran1-124-bis-b5981c12df",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4d9226e9bb-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-4d9226e9bb",
+    "to": "Offline 9",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-91e4785a5e-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-91e4785a5e",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-54a11febb2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-54a11febb2",
+    "to": "Offline 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-1b0afb65c9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-1b0afb65c9",
+    "to": "Offline 12 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-7ea328672d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "8.8 R19 FR3/ISAC CM added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.8",
+      "8.9",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-7ea328672d",
+    "to": "RAN1_Brk#2 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a1afd07e62-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-a1afd07e62",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d9bab1c537-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis-d9bab1c537",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-7175f8a6f8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis-7175f8a6f8",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-835637ac38-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1",
+      "9.1.2",
+      "9.1.1"
+    ],
+    "sessionId": "ran1-124-bis-835637ac38",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c9bd883aa9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-c9bd883aa9",
+    "to": "Online 2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a3692c601f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-a3692c601f",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-977704a95f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-977704a95f",
+    "to": "Offline 1 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-bffde4216a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2.2",
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis-bffde4216a",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e97f7ba4f5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-e97f7ba4f5",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-7aa16113c3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.1.3",
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-7aa16113c3",
+    "to": "Offline 11 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-041c8fac10-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1",
+      "9.4.1",
+      "10.5.4",
+      "10.5.4.3",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-041c8fac10",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-6fd8dd4eec-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2",
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-6fd8dd4eec",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-16ebfcfccd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-16ebfcfccd",
+    "to": "Detailed  for RAN1 Main Session 1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c1ac4df2f5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-c1ac4df2f5",
+    "to": "Offline 12",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-c1ac4df2f5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "R20 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-c1ac4df2f5",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-c1ac4df2f5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "R20 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-c1ac4df2f5",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-eb15c886f1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8",
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-eb15c886f1",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-9a6caac361-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-9a6caac361",
+    "to": "Offline 11 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-8136577120-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1",
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-8136577120",
+    "to": "Offline 12 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-227c660594-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5.1",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-227c660594",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d77029d9e5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-d77029d9e5",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f8805402e6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.1.3",
+      "10.5.1.2",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-f8805402e6",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-9ec83e5421-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "8.3 R19 Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.3",
+      "8.5",
+      "10.5.4",
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis-9ec83e5421",
+    "to": "RAN1_Brk#2 2 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-49cc691f52-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5",
+      "9.6",
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-49cc691f52",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-60ae1afecf-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-60ae1afecf",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-ef0173795a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 6/7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "6"
+    ],
+    "sessionId": "ran1-124-bis-ef0173795a",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c78f26930b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-c78f26930b",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-da2b3723fd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-da2b3723fd",
+    "to": "Offline 1 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-9e9200c6a0-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-9e9200c6a0",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-45ab5efec9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2.1",
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis-45ab5efec9",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-49ffb1607f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-49ffb1607f",
+    "to": "Offline 11 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-08cf8cfa86-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-08cf8cfa86",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-5e6ed48163-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 6/7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "6",
+      "8.4",
+      "8.6.1",
+      "8.6.2"
+    ],
+    "sessionId": "ran1-124-bis-5e6ed48163",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c40f1add02-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3"
+    ],
+    "sessionId": "ran1-124-bis-c40f1add02",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-4d82968bf7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.4",
+      "10.5.5",
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-4d82968bf7",
+    "to": "Offline 11 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-03f447f687-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-03f447f687",
+    "to": "Offline 12 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-8bd4ada4bc-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "8.3 R19 Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.3",
+      "8.8",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-8bd4ada4bc",
+    "to": "RAN1_Brk#2 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-dec5ba9322-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2",
+      "9.3.3",
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis-dec5ba9322",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-dcf30121a2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1",
+      "9.1.2",
+      "9.1.1",
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis-dcf30121a2",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c69251eacf-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-c69251eacf",
+    "to": "Offline 9",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-75db4284c8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.4",
+      "10.4",
+      "10.5.5"
+    ],
+    "sessionId": "ran1-124-bis-75db4284c8",
+    "to": "Detailed  for RAN1 Main Session 1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8e3f1cf945-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Early dinner moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-8e3f1cf945",
+    "to": "Offline 12",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-2e1cc51bd9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-2e1cc51bd9",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8e1de45fbf-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-8e1de45fbf",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-b15b652099-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1"
+    ],
+    "sessionId": "ran1-124-bis-b15b652099",
+    "to": "Offline 11 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-ac5ec10126-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3",
+      "9.3.1",
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis-ac5ec10126",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-761dbf18fc-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.4",
+      "10.5.5",
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-761dbf18fc",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-90fac2b010-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-90fac2b010",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-96b8a4ffed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G 10.5.4.x moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.4.1",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-96b8a4ffed",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4b2a2b9f34-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-4b2a2b9f34",
+    "to": "Detailed  for RAN1 Main Session 1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-0029c3abb2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-0029c3abb2",
+    "to": "Online 2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-afc5eaa754-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8"
+    ],
+    "sessionId": "ran1-124-bis-afc5eaa754",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-241cedc43d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.6",
+      "10.5.3.1"
+    ],
+    "sessionId": "ran1-124-bis-241cedc43d",
+    "to": "Offline 11 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e6bdc9259b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-e6bdc9259b",
+    "to": "Offline 12",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-e6bdc9259b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "R20 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-e6bdc9259b",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-e6bdc9259b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "R20 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-e6bdc9259b",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f78adf1261-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.5.1",
+      "8.9",
+      "8.8",
+      "8.6"
+    ],
+    "sessionId": "ran1-124-bis-f78adf1261",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-ca4e232fa3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-ca4e232fa3",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-9611b725ed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-9611b725ed",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e4d066bd98-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8",
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-e4d066bd98",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a30a683260-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 Coverage moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.4.1",
+      "10.8.1"
+    ],
+    "sessionId": "ran1-124-bis-a30a683260",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-37ede68fc1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-37ede68fc1",
+    "to": "Offline 10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-819e16a729-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1",
+      "9.5",
+      "9.6"
+    ],
+    "sessionId": "ran1-124-bis-819e16a729",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d7b408e364-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.1.3",
+      "10.6"
+    ],
+    "sessionId": "ran1-124-bis-d7b408e364",
+    "to": "Detailed  for RAN1 Main Session 1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-5151477706-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 6/7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "6"
+    ],
+    "sessionId": "ran1-124-bis-5151477706",
+    "to": "Online 2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-dc861b46be-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-dc861b46be",
+    "to": "Offline 11 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-4bc8855cad-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-4bc8855cad",
+    "to": "Offline 12 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-772e663db8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2.3",
+      "9.3",
+      "9.3.1",
+      "9.3.2.1",
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis-772e663db8",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-6f6a403972-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.1.2",
+      "10.6"
+    ],
+    "sessionId": "ran1-124-bis-6f6a403972",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-0c61cbb03a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "7"
+    ],
+    "sessionId": "ran1-124-bis-0c61cbb03a",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-438bb30628-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis-438bb30628",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-91274858da-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI 7/8 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "7",
+      "8.4",
+      "8.6",
+      "8.2"
+    ],
+    "sessionId": "ran1-124-bis-91274858da",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-3e95b452ff-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-3e95b452ff",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e99cb14e28-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-e99cb14e28",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-7a7270320c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-7a7270320c",
+    "to": "Offline 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-ecff4eb07d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-ecff4eb07d",
+    "to": "Offline 12 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8ad6536a61-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1",
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis-8ad6536a61",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-b64fc0b253-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-b64fc0b253",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-3b4f2331fd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2",
+      "10.8.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-3b4f2331fd",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-cd5d9f4aec-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1",
+      "9.1.2",
+      "9.1.1"
+    ],
+    "sessionId": "ran1-124-bis-cd5d9f4aec",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f90f2e6455-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-f90f2e6455",
+    "to": "Online 2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e777e2ca01-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-e777e2ca01",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-b33b8b71ac-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "? added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-b33b8b71ac",
+    "to": "Offline 1 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1e42a7db53-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2.3",
+      "9.3.1",
+      "9.3.2.1",
+      "9.3.2.2",
+      "9.3"
+    ],
+    "sessionId": "ran1-124-bis-1e42a7db53",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-cbdcfb00e9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-cbdcfb00e9",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-23798688a7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-23798688a7",
+    "to": "Offline 6 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1a070c1d1d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2",
+      "9.3.3",
+      "9.3.1",
+      "10.5.4",
+      "10.5.4.1",
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis-1a070c1d1d",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-12e40ce829-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "17:00 - 17:xx moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.3",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-12e40ce829",
+    "to": "Offline 9",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Hiroki offline 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-67e091e968-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.1",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-67e091e968",
+    "to": "Offline 11 17:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-28277222df-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2",
+      "10.3.1",
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-28277222df",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-cf8257d50d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-cf8257d50d",
+    "to": "Online 7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-59d8c9b5d7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-59d8c9b5d7",
+    "to": "Online 8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-a0f1ada461-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-a0f1ada461",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-c406e4a895-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 Coverage moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.4.1",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-c406e4a895",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-28bb52fa44-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.6.1",
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-28bb52fa44",
+    "to": "Offline 6 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-bd878927ba-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.5",
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-bd878927ba",
+    "to": "Offline 7 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-d809b5457e-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.3",
+      "9.3.1",
+      "9.3.2"
+    ],
+    "sessionId": "ran1-124-bis-d809b5457e",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-e14a1bb397-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.5",
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-e14a1bb397",
+    "to": "Offline 11 08:30-10:30",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4ab50ba9b8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R20 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1",
+      "9.5",
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-4ab50ba9b8",
+    "to": "Detailed  for RAN1_Brk#1 (Sorour\u2019s Session) 1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour detailed 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-445ed7935b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-445ed7935b",
+    "to": "Online 9 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-1a5332e6fb-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.4",
+      "10.5.2.4",
+      "10.5.5",
+      "10.6.1"
+    ],
+    "sessionId": "ran1-124-bis-1a5332e6fb",
+    "to": "Detailed  for RAN1 Main Session 1 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-64b82c87fc-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis-64b82c87fc",
+    "to": "Online 5",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-e33824935f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6GR moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-e33824935f",
+    "to": "Online 6",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4d83bda69c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-4d83bda69c",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-647c9852ed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Session moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-647c9852ed",
+    "to": "Online 9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1f005d64e1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Any other open issues moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-1f005d64e1",
+    "to": "Online 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1166365d6f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#124 expected to close at 16:00 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-1166365d6f",
+    "to": "RAN1_Brk#2 1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-2102708b21-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#124b expected to close at 17:00 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-2102708b21",
+    "to": "RAN1_Brk#2 2",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-8a2d601ad9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sweep removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-8a2d601ad9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour online 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-61935852ce-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6",
+      "10.4",
+      "10.5.5"
+    ],
+    "sessionId": "ran1-124-bis-61935852ce",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-9d196125f1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.2.1",
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-9d196125f1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-7f9e884386-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-7f9e884386",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-f52dc9a2fe-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.2.1",
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-f52dc9a2fe",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-514f8f30f6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6",
+      "10.5.3.1"
+    ],
+    "sessionId": "ran1-124-bis-514f8f30f6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-e6add19644-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-e6add19644",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-74e50d5ab5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-74e50d5ab5",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-d203a7fa7b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorouri removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-d203a7fa7b",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-3fa0b2dde5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.2",
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis-3fa0b2dde5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-3743352c86-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-3743352c86",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-8d90172ed5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-8d90172ed5",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-122f634bf2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-122f634bf2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-8406e48794-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.3.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-8406e48794",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-257c1be455-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis-257c1be455",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-aadcf11db1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-aadcf11db1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-064d12a2a2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorouri removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3",
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-064d12a2a2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-cec3074ef7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-cec3074ef7",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-43da62195f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-43da62195f",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-6e915c40e1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.4",
+      "10.5.5",
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-6e915c40e1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-e2efe4eb3c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorour removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-e2efe4eb3c",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-fb1f6c2655-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2"
+    ],
+    "sessionId": "ran1-124-bis-fb1f6c2655",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-7d94d172e3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorouri removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3"
+    ],
+    "sessionId": "ran1-124-bis-7d94d172e3",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-0dcd602de8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-0dcd602de8",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-6927b120f5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-124-bis-6927b120f5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-f7cf87b986-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-f7cf87b986",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-f412063aa9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorouri removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-f412063aa9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-5527ac42a7-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1"
+    ],
+    "sessionId": "ran1-124-bis-5527ac42a7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-c0b0005d87-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorour removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-c0b0005d87",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-5b02b29168-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki (?) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.0",
+      "10.5.1"
+    ],
+    "sessionId": "ran1-124-bis-5b02b29168",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-bdd59932d5-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sorour removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-bdd59932d5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-2a483425ff-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.4",
+      "8.6",
+      "8.8"
+    ],
+    "sessionId": "ran1-124-bis-2a483425ff",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-2c758dea03-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.8",
+      "8.9",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-2c758dea03",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-1f613bb60a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.3",
+      "8.8",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-1f613bb60a",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-bf215e1729-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Sweep removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.4",
+      "10.5.2.4",
+      "10.5.5",
+      "10.6.1"
+    ],
+    "sessionId": "ran1-124-bis-bf215e1729",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair detailed 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-11eaced0fa-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1",
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-11eaced0fa",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-017d9614c0-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.5",
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-017d9614c0",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-e105f7f0d8-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.3.1",
+      "10.5.2.1",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-e105f7f0d8",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-bdbf9c44cf-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-bdbf9c44cf",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-55bd2117e6-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-55bd2117e6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-fa1fd59a54-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-fa1fd59a54",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-15b3ef6d57-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2.1",
+      "10.5.2.2",
+      "10.5.2.3",
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-15b3ef6d57",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-8f87aec09a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-8f87aec09a",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-4437b26912-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.1.3",
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-4437b26912",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-683ba94e5b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.0",
+      "10.5.1.1",
+      "10.5.1.2",
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-124-bis-683ba94e5b",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Chair offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-3e37e50090-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.7",
+      "8.8",
+      "9.4.1"
+    ],
+    "sessionId": "ran1-124-bis-3e37e50090",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-42466b0dcd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.3",
+      "8.5",
+      "10.5.4",
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis-42466b0dcd",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "RAN1_Brk#2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-82ed2dde0d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.5",
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-82ed2dde0d",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-6f4f8990b9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4",
+      "10.5.1",
+      "10.5.0"
+    ],
+    "sessionId": "ran1-124-bis-6f4f8990b9",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Sorour offline 1"
+  }
+]

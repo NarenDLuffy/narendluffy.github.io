@@ -1,1 +1,1723 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-120-bis-3098f17555-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "RAN1#120 commences at 09:00 on Monday moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-3098f17555",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-e2159d9c61-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Agenda items 1, 2, 3, 4, 5 moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-e2159d9c61",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-74315db33f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-74315db33f",
+    "to": "Offline 5",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-74315db33f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-74315db33f",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-74315db33f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-74315db33f",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-e695c5d681-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "1",
+      "9.2.1",
+      "9.2.2",
+      "9.2.3",
+      "9.24"
+    ],
+    "sessionId": "ran1-120-bis-e695c5d681",
+    "to": "Detailed  for RAN1 Main Session 4",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-bcda3414fa-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "1",
+      "9.2.1",
+      "9.2.2",
+      "9.2.3",
+      "9.2.4"
+    ],
+    "sessionId": "ran1-120-bis-bcda3414fa",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-5911570934-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-5911570934",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-eb762bd598-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-eb762bd598",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-a3b02bdcfd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-a3b02bdcfd",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-f5b8ed5604-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f5b8ed5604",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-f5b8ed5604-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f5b8ed5604",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-f5b8ed5604-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f5b8ed5604",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-d60efe49ea-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120-bis-d60efe49ea",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-24a7cc3b96-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-24a7cc3b96",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c1cb78b5ac-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c1cb78b5ac",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-2a54d37b5a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 7-24GHz moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1",
+      "9.12.1",
+      "9.12.2"
+    ],
+    "sessionId": "ran1-120-bis-2a54d37b5a",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-9d1a87fb8b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-9d1a87fb8b",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c3e0301538-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "UE features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c3e0301538",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-7265a70775-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-7265a70775",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-7265a70775-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-7265a70775",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-7265a70775-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-7265a70775",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-5b82c0b25b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "Session added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-5b82c0b25b",
+    "to": "Online 20 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-d3e92a5ecd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 7-24GHz moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.2",
+      "9.1.4.1"
+    ],
+    "sessionId": "ran1-120-bis-d3e92a5ecd",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-9fd5548129-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2.1",
+      "9.5.1",
+      "9.5.2",
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120-bis-9fd5548129",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8e63e427f1-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO . 9.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120-bis-8e63e427f1",
+    "to": "Online 10",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-7755df5278-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.1"
+    ],
+    "sessionId": "ran1-120-bis-7755df5278",
+    "to": "Online 12",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-1b76722198-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-1b76722198",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-1b76722198-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "NES start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-1b76722198",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-1b76722198-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-1b76722198",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-f30938f727-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f30938f727",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-3014bc2864-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-3014bc2864",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-5da577e5f9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-5da577e5f9",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-5da577e5f9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "LP-WUS start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-5da577e5f9",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-5da577e5f9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "LP-WUS end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-5da577e5f9",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-303f32c14a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.3",
+      "9.1.4.1"
+    ],
+    "sessionId": "ran1-120-bis-303f32c14a",
+    "to": "Online 11",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-b69ec7e061-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "7~24 GHz moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-b69ec7e061",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-817fb83acb-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.1",
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120-bis-817fb83acb",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-0d0df0ba6a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-0d0df0ba6a",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-0d0df0ba6a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "NTN start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-0d0df0ba6a",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-0d0df0ba6a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-0d0df0ba6a",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-852c3794be-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "9.3.1, 9.3.2, 9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120-bis-852c3794be",
+    "to": "Detailed  for RAN1 Main Session 7 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-b2624d44b2-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.1",
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120-bis-b2624d44b2",
+    "to": "Online 12",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c893ad89b9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120-bis-c893ad89b9",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-1c30a64a12-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.1",
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120-bis-1c30a64a12",
+    "to": "Online 11",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-b06e7b46cd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "105+MIMO (9.2.2) moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2.2"
+    ],
+    "sessionId": "ran1-120-bis-b06e7b46cd",
+    "to": "Online 12",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-877b8ab841-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-877b8ab841",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-65df68e223-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "7~24 GHz moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-65df68e223",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8fbd9bbeac-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8fbd9bbeac",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-8fbd9bbeac-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8fbd9bbeac",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-8fbd9bbeac-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8fbd9bbeac",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-eb0ed4e6fb-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "Session added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-eb0ed4e6fb",
+    "to": "Detailed  for RAN1 Main Session 7 11:00-13:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-3b96be1d95-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.1",
+      "9.1.1"
+    ],
+    "sessionId": "ran1-120-bis-3b96be1d95",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-9538bdeb55-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-9538bdeb55",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8e8152f7f3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8e8152f7f3",
+    "to": "Offline 6",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-8e8152f7f3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8e8152f7f3",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-8e8152f7f3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8e8152f7f3",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-02024affab-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-02024affab",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-02024affab-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-02024affab",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-02024affab-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-02024affab",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-1d7b71f051-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 7-24GHz moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1",
+      "9.8.2",
+      "9.12"
+    ],
+    "sessionId": "ran1-120-bis-1d7b71f051",
+    "to": "Offline 6",
+    "sourceIds": [
+      "ran1-120-bis-1b0a55b1"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-463f813250-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.1",
+      "9.1.1"
+    ],
+    "sessionId": "ran1-120-bis-463f813250",
+    "to": "Online 11",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-56e9cc3aaa-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "9.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2.1",
+      "9.2.2"
+    ],
+    "sessionId": "ran1-120-bis-56e9cc3aaa",
+    "to": "Online 12",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c5d86bc33c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "UE features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c5d86bc33c",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-554ff768a9-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.3",
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120-bis-554ff768a9",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-bd10f06303-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-bd10f06303",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-bd10f06303-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "NTN start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-bd10f06303",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-bd10f06303-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-bd10f06303",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-0d23e52d25-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2.1",
+      "9.2.2",
+      "9.2.3"
+    ],
+    "sessionId": "ran1-120-bis-0d23e52d25",
+    "to": "Detailed  for RAN1 Main Session 7",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-44c84a4be3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-44c84a4be3",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8807dd7bd3-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-8807dd7bd3",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8c626f98dd-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.3",
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120-bis-8c626f98dd",
+    "to": "Online 11",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-f62dc7b9aa-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1",
+      "9.8.2"
+    ],
+    "sessionId": "ran1-120-bis-f62dc7b9aa",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-86df2dca9a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "Session added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-86df2dca9a",
+    "to": "Offline 7 17:00-19:30",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c4bff65429-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c4bff65429",
+    "to": "Offline 13",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-4142cf108b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-4142cf108b",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-804eaea500-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "UE features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-804eaea500",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-2b56b2636a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2b56b2636a",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-2b56b2636a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "NES start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2b56b2636a",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-2b56b2636a-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2b56b2636a",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-858c814978-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-858c814978",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-2594e59a53-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "David moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2594e59a53",
+    "to": "Offline 14",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-2594e59a53-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "David start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2594e59a53",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-2594e59a53-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "David end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-2594e59a53",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-8fee7c88db-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "5"
+    ],
+    "sessionId": "ran1-120-bis-8fee7c88db",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c22e3ac256-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c22e3ac256",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-957019d0ed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-957019d0ed",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-957019d0ed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-957019d0ed",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-957019d0ed-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-957019d0ed",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-c7e0096f35-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-c7e0096f35",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-a0fab0d20f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "Session added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-a0fab0d20f",
+    "to": "Offline 7 08:30-10:30",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120-bis-9ec0a7413b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_added",
+    "title": "David added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-9ec0a7413b",
+    "to": "Offline 14 08:30-10:30",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-9be8a3c809-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-9be8a3c809",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 1"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-fd26ae2107-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "UE features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-fd26ae2107",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-dba565db14-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-dba565db14",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-6aa6316032-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-6aa6316032",
+    "to": "Online 20",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120-bis-6aa6316032-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "start_time_changed",
+    "title": "NES start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-6aa6316032",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120-bis-6aa6316032-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "end_time_changed",
+    "title": "NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-6aa6316032",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-57bae6afcc-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-57bae6afcc",
+    "to": "Online 21",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 2"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-e7a84b6778-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-e7a84b6778",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "room_changed-ran1-120-bis-00d13ebe9d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "room_changed",
+    "title": "Any other issues moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-00d13ebe9d",
+    "to": "Online 22",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-199a5b2bca-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Duplex removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-199a5b2bca",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-a73065d0c4-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Duplex removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-a73065d0c4",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-326d612c8d-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Broadcast removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-326d612c8d",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Online 3"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-69ea73db2f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Younsun removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-69ea73db2f",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-1888b11e7c-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Younsun removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-1888b11e7c",
+    "sourceIds": [
+      "ran1-120-bis-f20c90ad"
+    ],
+    "from": "Offline 1"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-f32d7cab5f-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f32d7cab5f",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-41e7851392-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Xiaodong removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-41e7851392",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 2"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-6606120535-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Duplex removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120-bis-6606120535",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Detailed  for RAN1 Main Session"
+  },
+  {
+    "changeId": "session_removed-ran1-120-bis-f55866f65b-2026-08-22T00:13:51+00:00",
+    "meetingId": "ran1-120-bis",
+    "detectedAt": "2026-08-22T00:13:51+00:00",
+    "type": "session_removed",
+    "title": "Mobility removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120-bis-f55866f65b",
+    "sourceIds": [
+      "ran1-120-bis-b6bf0629"
+    ],
+    "from": "Offline 1"
+  }
+]

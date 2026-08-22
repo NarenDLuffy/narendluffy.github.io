@@ -258,3 +258,9 @@ def _number_parallel_tracks(
     order = {room.roomId: room.order for room in rooms}
     sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return rooms, sessions
+
+
+def build_live_bundles(
+    *, start: str = "2025-01-01", end: str = "2028-12-31", with_documents: bool = True
+) -> list[ScheduleBundle]:
+    return [build_bundle(pm, with_documents=with_documents) for pm in fetch_meetings(start, end)]
