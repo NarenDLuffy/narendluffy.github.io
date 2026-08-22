@@ -22,9 +22,14 @@ export function Timetable({
 }) {
   const scroller = useRef<HTMLDivElement>(null);
 
+  // Every day spans the standard meeting window, extended only if a session
+  // published by a chair falls outside it.
+  const DAY_START = 8 * 60 + 30;
+  const DAY_END = 19 * 60 + 30;
   const times = sessions.flatMap((s) => [minutesOf(s.startTime), minutesOf(s.endTime)]);
-  const start = times.length ? Math.floor(Math.min(...times) / 30) * 30 : 8 * 60;
-  const end = times.length ? Math.ceil(Math.max(...times) / 30) * 30 : 18 * 60;
+  const start = Math.min(DAY_START, ...times.map((t) => Math.floor(t / 30) * 30));
+  const end = Math.max(DAY_END, ...times.map((t) => Math.ceil(t / 30) * 30));
+
   const height = (end - start) * PX_PER_MIN;
 
   const ticks: number[] = [];
