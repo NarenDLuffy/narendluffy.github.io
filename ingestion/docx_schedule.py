@@ -313,7 +313,7 @@ def _parse_table(
                 topic = remainder or _topic("\n".join(text.split("\n")[1:])) or topic
             if not topic or SKIP_CELL_RE.match(topic):
                 continue
-            room = rooms[lane]
+            kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
             kind = "plenary" if re.search(r"commenc|close|opening|plenary", text, re.I) else "session"
             session_id = (
                 f"{meeting_id}-"
