@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { AlertTriangle, ArrowRight } from "lucide-react";
 import { minutesOf } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useDrafts } from "@/hooks/useDrafts";
+import { AgendaActivityCard } from "@/components/DraftActivity";
 import { SessionCard } from "@/components/SessionCard";
 import { ChangesLink } from "@/components/AppShell";
 import { MeetingBanner } from "@/components/MeetingBanner";
@@ -31,6 +33,7 @@ export const Route = createFileRoute("/")({
 
 function NowPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
+  const drafts = useDrafts(meeting);
 
   if (isLoading) return <LoadingState />;
   if (!meeting) return <NoMeetingState />;
@@ -61,6 +64,11 @@ function NowPage() {
     (s) => minutesOf(s.startTime) <= nowMin && minutesOf(s.endTime) > nowMin,
   );
   const next = daySessions.filter((s) => minutesOf(s.startTime) > nowMin).slice(0, 6);
+  const draftHighlights = [...drafts.activity.values()]
+    .filter((a) => a.agendaItemId !== "unmapped" && a.unreadCount > 0)
+    .filter((a) => drafts.watched.includes(a.agendaItemId) || a.flUpdates > 0)
+    .sort((a, b) => (b.latestAt ?? "").localeCompare(a.latestAt ?? ""))
+    .slice(0, 3);
   const latestChanges = [...bundle.changes]
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .slice(0, 2);
@@ -103,6 +111,28 @@ function NowPage() {
           )}
         </div>
       </section>
+
+      {draftHighlights.length > 0 ? (
+        <section className="space-y-2">
+          <div className="flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Draft activity</h2>
+            <Link
+              to="/drafts"
+              className="text-xs font-medium text-muted-foreground underline underline-offset-2"
+            >
+              All drafts
+            </Link>
+          </div>
+          {draftHighlights.map((a) => (
+            <AgendaActivityCard
+              key={a.agendaItemId}
+              activity={a}
+              title={bundle.agendaItems.find((i) => i.code === a.agendaItemId)?.title}
+            />
+          ))}
+        </section>
+      ) : null}
+
 
       {latestChanges.length > 0 ? (
         <section className="space-y-2">

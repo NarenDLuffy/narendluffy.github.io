@@ -1,7 +1,17 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Clock, CalendarDays, Star, Building2, DoorOpen, GitCompareArrows } from "lucide-react";
+import {
+  Clock,
+  CalendarDays,
+  Star,
+  Building2,
+  DoorOpen,
+  GitCompareArrows,
+  FileStack,
+} from "lucide-react";
 import type { ReactNode } from "react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useDrafts } from "@/hooks/useDrafts";
+import { DraftBadge } from "@/components/DraftActivity";
 import { formatDateRange } from "@/services/meetingService";
 import { cn } from "@/lib/utils";
 
@@ -9,6 +19,7 @@ const NAV = [
   { to: "/", label: "Now", icon: Clock },
   { to: "/schedule", label: "Schedule", icon: CalendarDays },
   { to: "/agenda", label: "My agenda", icon: Star },
+  { to: "/drafts", label: "Drafts", icon: FileStack },
   { to: "/rooms", label: "Rooms", icon: DoorOpen },
   { to: "/company", label: "Company", icon: Building2 },
 ] as const;
@@ -22,6 +33,7 @@ const STATUS_LABEL = {
 export function AppShell({ children }: { children: ReactNode }) {
   const { meeting, bundle, stale, clock, isCurrent } = useActiveMeeting();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { unreadCount } = useDrafts(meeting);
 
   const updatedAt =
     bundle && meeting
@@ -63,10 +75,16 @@ export function AppShell({ children }: { children: ReactNode }) {
                 to={n.to}
                 className={cn(
                   "rounded-md px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+                  pathname.startsWith(n.to) && n.to !== "/" && "bg-secondary text-foreground",
                   pathname === n.to && "bg-secondary text-foreground",
                 )}
               >
                 {n.label}
+                {n.to === "/drafts" ? (
+                  <span className="ml-1.5 align-middle">
+                    <DraftBadge count={unreadCount} important />
+                  </span>
+                ) : null}
               </Link>
             ))}
             <Link
@@ -124,7 +142,14 @@ export function AppShell({ children }: { children: ReactNode }) {
                   active ? "text-primary" : "text-muted-foreground",
                 )}
               >
-                <Icon className="size-5" strokeWidth={active ? 2.4 : 1.8} />
+                <span className="relative">
+                  <Icon className="size-5" strokeWidth={active ? 2.4 : 1.8} />
+                  {n.to === "/drafts" && unreadCount > 0 ? (
+                    <span className="absolute -right-2 -top-1">
+                      <DraftBadge count={unreadCount} important />
+                    </span>
+                  ) : null}
+                </span>
                 {n.label}
               </Link>
             );

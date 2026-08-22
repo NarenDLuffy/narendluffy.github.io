@@ -1,0 +1,61 @@
+name: Track drafts
+
+# Draft / FL summary tracking runs on its own schedule, deliberately separate
+# from schedule ingestion: draft folders churn much faster during a meeting,
+# and a slow or failing draft scan must never delay the timetable refresh.
+# The pipeline itself decides which meetings are worth scanning (active first,
+# upcoming lightly, completed archived), so no workflow edit is needed when the
+# meeting rolls over.
+on:
+  schedule:
+    # Meeting-week cadence: every 10 minutes during typical session hours.
+    - cron: "*/10 5-19 * * 1-5"
+    # Otherwise a light hourly pass, offset from the schedule workflow.
+    - cron: "42 * * * *"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Scan only this meeting slug (e.g. ran1-126)"
+        type: string
+        required: false
+
+concurrency:
+  group: update-drafts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install ingestion dependencies
+        run: pip install -r ingestion/requirements.txt
+
+      # The committed drafts.json is the state store: the previous snapshot is
+      # what makes "new since last scan" possible, so the checkout above is all
+      # the state this job needs.
+      - name: Scan draft folders
+        run: |
+          python -m draft_tracker.update_drafts \
+            ${{ inputs.slug && format('--slug {0}', inputs.slug) || '' }}
+
+      - name: Commit draft index
+        run: |
+          if [ -n "$(git status --porcelain public/data)" ]; then
+            git config user.name "ran1-live-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add public/data
+            git commit -m "chore(drafts): refresh draft and FL summary index"
+            git push
+          else
+            echo "No draft changes."
+          fi
