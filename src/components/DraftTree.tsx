@@ -111,7 +111,13 @@ export function DraftFolderNode({
           {node.children.length > 0 ? (
             <ul className="space-y-1.5">
               {node.children.map((child) => (
-                <DraftFolderNode key={child.folder.id} node={child} defaultOpen={false} />
+                <DraftFolderNode
+                  key={child.folder.id}
+                  node={child}
+                  // Open a level automatically only when it is small enough to
+                  // stay readable; deep or wide trees stay collapsed.
+                  defaultOpen={node.children.length <= 3 && child.subtreeFileCount > 0}
+                />
               ))}
             </ul>
           ) : null}
