@@ -96,6 +96,8 @@ export interface Session {
   /** Topic key used for consistent colouring; discovered, not hard-coded */
   topicKey: string;
   agendaItems: string[];
+  /** How the block is split between agenda items, when the chair stated it */
+  agendaBreakdown?: AgendaSlot[];
   sessionLead?: string;
   mode?: "offline" | "online" | "hybrid";
   kind: SessionKind;
