@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .notifier import group_events
@@ -120,7 +120,7 @@ def main() -> int:
 
     if scanned == 0:
         print("no meeting currently requires a draft scan")
-    print(f"scanned {scanned} meeting(s) at {datetime.utcnow().isoformat()}Z")
+    print(f"scanned {scanned} meeting(s) at {datetime.now(timezone.utc).isoformat()}Z")
     return 0
 
 
