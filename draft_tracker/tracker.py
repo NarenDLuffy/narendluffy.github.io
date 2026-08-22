@@ -86,14 +86,16 @@ def _rehydrate(previous: dict[str, Any] | None) -> tuple[
         data["sources"] = [DraftArtifactSource(**s) for s in raw.get("sources", [])]
         artifacts[data["id"]] = DraftArtifact(**data)
     known_event_fields = set(DraftEvent.__dataclass_fields__)
-    events = [
-        DraftEvent(**{k: v for k, v in e.items() if k in known_event_fields})
-        for e in previous.get("events", [])
-        # schema v1 modelled these as distinct event types; they are semantics now
-        if e.get("eventType") in DraftEvent.__annotations__.get("eventType", "")
-        or e.get("eventType")
-        in {"NEW_FILE", "FILE_UPDATED", "NEW_FOLDER", "FILE_REMOVED", "FOLDER_REMOVED"}
-    ]
+    # Schema v1 stored NEW_ROUND / FL_SUMMARY_UPDATED as event *types*; they are
+    # semantics now, so old rows are migrated rather than dropped.
+    legacy = {"NEW_ROUND": ("NEW_FOLDER", "NEW_ROUND"), "FL_SUMMARY_UPDATED": ("FILE_UPDATED", "FL_SUMMARY_UPDATED")}
+    events = []
+    for raw in previous.get("events", []):
+        data = {k: v for k, v in raw.items() if k in known_event_fields}
+        migrated = legacy.get(data.get("eventType", ""))
+        if migrated:
+            data["eventType"], data["semanticType"] = migrated
+        events.append(DraftEvent(**data))
     return (
         folders,
         artifacts,
