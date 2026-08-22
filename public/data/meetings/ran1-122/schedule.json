@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T00:15:01Z",
+  "generatedAt": "2026-08-22T00:18:11Z",
   "meetingId": "ran1-122",
   "sessions": [
     {
@@ -17,6 +17,7 @@
       "agendaItems": [
         "8.14"
       ],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -44,6 +45,7 @@
       "agendaItems": [
         "8.14"
       ],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -65,12 +67,13 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "RAN1#122 commences at 09:00 on Monday",
       "topicKey": "ran1-122-commences-at-09-00-on-monday",
       "agendaItems": [
         "8.14"
       ],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "plenary",
       "status": "scheduled",
@@ -92,12 +95,13 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "RAN1#122 commences at 09:00 on Monday",
       "topicKey": "ran1-122-commences-at-09-00-on-monday",
       "agendaItems": [
         "8.14"
       ],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "plenary",
       "status": "scheduled",
@@ -123,6 +127,15 @@
       "topic": "R20 6G",
       "topicKey": "r20-6g",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6G",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -148,6 +161,15 @@
       "topic": "R20 6G",
       "topicKey": "r20-6g",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6G",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -169,10 +191,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -194,10 +225,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -223,6 +263,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -248,6 +297,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -269,10 +327,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -294,10 +361,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19",
       "topicKey": "r19",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO MIMO",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -319,10 +395,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT R20 ISAC",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -344,10 +429,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -369,10 +463,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19",
       "topicKey": "r19",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO MIMO",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -394,10 +497,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT R20 ISAC",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -423,6 +535,22 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "ISAC NR/IoT-NTN",
+          "minutes": 30,
+          "startTime": "14:30",
+          "endTime": "15:00"
+        },
+        {
+          "code": null,
+          "label": "A-IoT",
+          "minutes": 60,
+          "startTime": "15:00",
+          "endTime": "16:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -448,6 +576,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML NES",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -473,6 +610,22 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "ISAC NR/IoT-NTN",
+          "minutes": 30,
+          "startTime": "14:30",
+          "endTime": "15:00"
+        },
+        {
+          "code": null,
+          "label": "A-IoT",
+          "minutes": 60,
+          "startTime": "15:00",
+          "endTime": "16:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -498,6 +651,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML NES",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -523,6 +685,15 @@
       "topic": "6GR",
       "topicKey": "6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "6GR",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -548,6 +719,15 @@
       "topic": "6GR",
       "topicKey": "6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "6GR",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -569,10 +749,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "6GR",
       "topicKey": "6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "6GR",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -594,10 +783,26 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs AI/ML",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -619,10 +824,40 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "ISAC A-IoT",
+          "minutes": 30,
+          "startTime": "18:30",
+          "endTime": "19:00"
+        },
+        {
+          "code": null,
+          "label": "5G Broadcast",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        },
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -644,10 +879,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "6GR",
       "topicKey": "6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "6GR",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -669,10 +913,26 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs AI/ML",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -694,10 +954,40 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "ISAC A-IoT",
+          "minutes": 30,
+          "startTime": "18:30",
+          "endTime": "19:00"
+        },
+        {
+          "code": null,
+          "label": "5G Broadcast",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        },
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -727,6 +1017,29 @@
         "8.6",
         "8.12"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "18:00",
+          "endTime": "19:00"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -752,6 +1065,22 @@
       "topic": "R20 MIMO",
       "topicKey": "r20-mimo",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 MIMO",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -781,6 +1110,29 @@
         "8.6",
         "8.12"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "18:00",
+          "endTime": "19:00"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -806,6 +1158,22 @@
       "topic": "R20 MIMO",
       "topicKey": "r20-mimo",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 MIMO",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -831,6 +1199,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -856,6 +1233,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -877,10 +1263,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -902,10 +1297,26 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "XR MIMO",
+          "minutes": 30,
+          "startTime": "08:30",
+          "endTime": "09:00"
+        },
+        {
+          "code": null,
+          "label": "NES",
+          "minutes": 60,
+          "startTime": "09:00",
+          "endTime": "10:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -927,10 +1338,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-5b71640aca",
-      "roomName": "Online 4",
+      "roomName": "Online - Naoya 4",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Duplex LP-WUS",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -952,10 +1372,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -977,10 +1406,26 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "XR MIMO",
+          "minutes": 30,
+          "startTime": "08:30",
+          "endTime": "09:00"
+        },
+        {
+          "code": null,
+          "label": "NES",
+          "minutes": 60,
+          "startTime": "09:00",
+          "endTime": "10:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1002,10 +1447,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-3b508c6b18",
-      "roomName": "Online 8",
+      "roomName": "Online - Ralf 4",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Duplex LP-WUS",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1031,6 +1485,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1056,6 +1519,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1081,6 +1553,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1106,6 +1587,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1131,6 +1621,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1156,6 +1655,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1177,10 +1685,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1202,10 +1719,40 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19 UE features",
       "topicKey": "r19-ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AIML",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        },
+        {
+          "code": null,
+          "label": "MCE/LBCA",
+          "minutes": 45,
+          "startTime": "11:40",
+          "endTime": "12:25"
+        },
+        {
+          "code": null,
+          "label": "XR",
+          "minutes": 15,
+          "startTime": "12:25",
+          "endTime": "12:40"
+        },
+        {
+          "code": null,
+          "label": "Mobility",
+          "minutes": 20,
+          "startTime": "12:40",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1227,10 +1774,26 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-5b71640aca",
-      "roomName": "Online 4",
+      "roomName": "Online - Naoya 4",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 600,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "A-IoT R20 A-IoT",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1252,10 +1815,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1277,10 +1849,40 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19 UE features",
       "topicKey": "r19-ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AIML",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        },
+        {
+          "code": null,
+          "label": "MCE/LBCA",
+          "minutes": 45,
+          "startTime": "11:40",
+          "endTime": "12:25"
+        },
+        {
+          "code": null,
+          "label": "XR",
+          "minutes": 15,
+          "startTime": "12:25",
+          "endTime": "12:40"
+        },
+        {
+          "code": null,
+          "label": "Mobility",
+          "minutes": 20,
+          "startTime": "12:40",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1302,10 +1904,26 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-3b508c6b18",
-      "roomName": "Online 8",
+      "roomName": "Online - Ralf 4",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 600,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "A-IoT R20 A-IoT",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1331,6 +1949,22 @@
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        },
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 80,
+          "startTime": "11:40",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1359,6 +1993,22 @@
         "8.9",
         "8.6"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "12:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -1384,6 +2034,22 @@
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        },
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 80,
+          "startTime": "11:40",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1411,6 +2077,22 @@
       "agendaItems": [
         "8.9",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "12:00",
+          "endTime": "13:00"
+        }
       ],
       "sessionLead": "Xiaodong",
       "kind": "session",
@@ -1441,6 +2123,43 @@
         "5",
         "8.14"
       ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": "8.6",
+          "label": "AI 8.6",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5",
+          "label": "AI 5",
+          "minutes": 30,
+          "startTime": "15:30",
+          "endTime": "16:00"
+        },
+        {
+          "code": null,
+          "label": "LS for IoT-NTN (ULBC)",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.14",
+          "label": "AI 8.14",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1470,6 +2189,43 @@
         "5",
         "8.14"
       ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": "8.6",
+          "label": "AI 8.6",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5",
+          "label": "AI 5",
+          "minutes": 30,
+          "startTime": "15:30",
+          "endTime": "16:00"
+        },
+        {
+          "code": null,
+          "label": "LS for IoT-NTN (ULBC)",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.14",
+          "label": "AI 8.14",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1491,12 +2247,28 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
         "8.3",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "15:30",
+          "endTime": "16:30"
+        }
       ],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -1519,10 +2291,26 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R20",
       "topicKey": "r20",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "NR-NTN R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 60,
+          "startTime": "15:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1544,10 +2332,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-5b71640aca",
-      "roomName": "Online 4",
+      "roomName": "Online - Naoya 4",
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC NR/IoT-NTN",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1569,12 +2366,28 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
         "8.3",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": "15:30",
+          "endTime": "16:30"
+        }
       ],
       "sessionLead": "Ralf",
       "kind": "session",
@@ -1597,10 +2410,26 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R20",
       "topicKey": "r20",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "NR-NTN R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 60,
+          "startTime": "15:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1622,10 +2451,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-3b508c6b18",
-      "roomName": "Online 8",
+      "roomName": "Online - Ralf 4",
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC NR/IoT-NTN",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1651,6 +2489,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1676,6 +2523,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO R20 MIMO",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1701,6 +2557,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -1726,6 +2591,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO R20 MIMO",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1755,6 +2629,43 @@
         "8.9",
         "8.12",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": "8.3",
+          "label": "AI 8.3",
+          "minutes": 30,
+          "startTime": "18:30",
+          "endTime": "19:00"
+        },
+        {
+          "code": "8.9",
+          "label": "AI 8.9",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        },
+        {
+          "code": "8.12",
+          "label": "AI 8.12",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6",
+          "label": "AI 8.6",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
       ],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -1786,6 +2697,43 @@
         "8.12",
         "8.6"
       ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": "8.3",
+          "label": "AI 8.3",
+          "minutes": 30,
+          "startTime": "18:30",
+          "endTime": "19:00"
+        },
+        {
+          "code": "8.9",
+          "label": "AI 8.9",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        },
+        {
+          "code": "8.12",
+          "label": "AI 8.12",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6",
+          "label": "AI 8.6",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1807,7 +2755,7 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
@@ -1815,6 +2763,43 @@
         "8.9",
         "8.12",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": "8.8",
+          "label": "8.8",
+          "minutes": 10,
+          "startTime": "18:30",
+          "endTime": "18:40"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 40,
+          "startTime": "18:40",
+          "endTime": "19:20"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
       ],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -1837,10 +2822,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R20 AI/ML",
       "topicKey": "r20-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1861,10 +2855,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-5b71640aca",
-      "roomName": "Online 4",
+      "roomName": "Online - Naoya 4",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -1885,7 +2888,7 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
@@ -1893,6 +2896,43 @@
         "8.9",
         "8.12",
         "8.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": "8.8",
+          "label": "8.8",
+          "minutes": 10,
+          "startTime": "18:30",
+          "endTime": "18:40"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 40,
+          "startTime": "18:40",
+          "endTime": "19:20"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6",
+          "label": "8.6",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
       ],
       "sessionLead": "Ralf",
       "kind": "session",
@@ -1915,10 +2955,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R20 AI/ML",
       "topicKey": "r20-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1939,10 +2988,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-3b508c6b18",
-      "roomName": "Online 8",
+      "roomName": "Online - Ralf 4",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 150,
+          "startTime": "17:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -1967,6 +3025,22 @@
       "topic": "Waveform",
       "topicKey": "waveform",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Waveform",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "Frame structure",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -1992,6 +3066,22 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        },
+        {
+          "code": null,
+          "label": "R20 NR-NTN",
+          "minutes": 90,
+          "startTime": "18:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -2017,6 +3107,22 @@
       "topic": "Waveform",
       "topicKey": "waveform",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Waveform",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        },
+        {
+          "code": null,
+          "label": "Frame structure",
+          "minutes": 60,
+          "startTime": "18:30",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -2042,6 +3148,22 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        },
+        {
+          "code": null,
+          "label": "R20 NR-NTN",
+          "minutes": 90,
+          "startTime": "18:00",
+          "endTime": "19:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -2067,6 +3189,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2092,6 +3223,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2113,10 +3253,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2138,10 +3287,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO MIMO",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2163,10 +3321,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AIML NTN",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2188,10 +3355,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "08:30",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2213,10 +3389,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO MIMO",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2238,10 +3423,19 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AIML NTN",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2267,6 +3461,15 @@
       "topic": "R20 NTN",
       "topicKey": "r20-ntn",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 NTN AI/ML",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -2292,6 +3495,22 @@
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC",
+          "minutes": 40,
+          "startTime": "08:30",
+          "endTime": "09:10"
+        },
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 80,
+          "startTime": "09:10",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2317,6 +3536,15 @@
       "topic": "R20 NTN",
       "topicKey": "r20-ntn",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 NTN AI/ML",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -2342,6 +3570,22 @@
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC",
+          "minutes": 40,
+          "startTime": "08:30",
+          "endTime": "09:10"
+        },
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 80,
+          "startTime": "09:10",
+          "endTime": "10:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2367,6 +3611,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2392,6 +3645,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2413,10 +3675,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2438,10 +3709,33 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        },
+        {
+          "code": null,
+          "label": "NES",
+          "minutes": 30,
+          "startTime": "12:00",
+          "endTime": "12:30"
+        },
+        {
+          "code": null,
+          "label": "TEI Broadcast",
+          "minutes": 15,
+          "startTime": "12:30",
+          "endTime": "12:45"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2463,10 +3757,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC R20 A-IoT",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2488,10 +3791,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2513,10 +3825,33 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19UE features",
       "topicKey": "r19ue-features",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        },
+        {
+          "code": null,
+          "label": "NES",
+          "minutes": 30,
+          "startTime": "12:00",
+          "endTime": "12:30"
+        },
+        {
+          "code": null,
+          "label": "TEI Broadcast",
+          "minutes": 15,
+          "startTime": "12:30",
+          "endTime": "12:45"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2538,10 +3873,19 @@
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R20 ISAC",
       "topicKey": "r20-isac",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 ISAC R20 A-IoT",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2567,6 +3911,15 @@
       "topic": "R20",
       "topicKey": "r20",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -2592,6 +3945,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "A-IoT NR/IoT-NTN",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2617,6 +3979,15 @@
       "topic": "R20",
       "topicKey": "r20",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
       "sessionLead": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -2642,6 +4013,15 @@
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "A-IoT NR/IoT-NTN",
+          "minutes": 60,
+          "startTime": "11:00",
+          "endTime": "12:00"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2667,6 +4047,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2692,6 +4081,15 @@
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2713,10 +4111,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2738,10 +4145,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R19 CRs AI/ML",
       "topicKey": "r19-crs-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs AI/ML NR-NTN",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2763,10 +4179,26 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": null,
+          "label": "A-IoT ISAC",
+          "minutes": 30,
+          "startTime": "15:30",
+          "endTime": "16:00"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -2788,10 +4220,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 6GR",
+          "minutes": 120,
+          "startTime": "14:30",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2813,10 +4254,19 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R19 CRs AI/ML",
       "topicKey": "r19-crs-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs AI/ML NR-NTN",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2838,10 +4288,26 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 CRs R19 CRs",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        },
+        {
+          "code": null,
+          "label": "A-IoT ISAC",
+          "minutes": 30,
+          "startTime": "15:30",
+          "endTime": "16:00"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -2871,6 +4337,29 @@
         "8.9",
         "8.12"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 40,
+          "startTime": "14:30",
+          "endTime": "15:10"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 40,
+          "startTime": "15:10",
+          "endTime": "15:50"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 40,
+          "startTime": "15:50",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -2896,6 +4385,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT Modulation",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2925,6 +4423,29 @@
         "8.9",
         "8.12"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 40,
+          "startTime": "14:30",
+          "endTime": "15:10"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 40,
+          "startTime": "15:10",
+          "endTime": "15:50"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 40,
+          "startTime": "15:50",
+          "endTime": "16:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -2950,6 +4471,15 @@
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT Modulation",
+          "minutes": 60,
+          "startTime": "14:30",
+          "endTime": "15:30"
+        }
+      ],
       "sessionLead": "David",
       "kind": "session",
       "status": "scheduled",
@@ -2978,6 +4508,29 @@
         "8.3",
         "8.9",
         "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "AI 8.3",
+          "minutes": 30,
+          "startTime": "17:00",
+          "endTime": "17:30"
+        },
+        {
+          "code": "8.9",
+          "label": "AI 8.9",
+          "minutes": 30,
+          "startTime": "17:30",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.12",
+          "label": "AI 8.12",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
       ],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -3008,6 +4561,29 @@
         "8.9",
         "8.12"
       ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "AI 8.3",
+          "minutes": 30,
+          "startTime": "17:00",
+          "endTime": "17:30"
+        },
+        {
+          "code": "8.9",
+          "label": "AI 8.9",
+          "minutes": 30,
+          "startTime": "17:30",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.12",
+          "label": "AI 8.12",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -3029,13 +4605,36 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
         "8.3",
         "8.9",
         "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 30,
+          "startTime": "17:00",
+          "endTime": "17:30"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 30,
+          "startTime": "17:30",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
       ],
       "sessionLead": "Naoya",
       "kind": "session",
@@ -3058,10 +4657,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-745b8518cb",
-      "roomName": "Online 2",
+      "roomName": "Online - Naoya 2",
       "topic": "R20 AI/ML",
       "topicKey": "r20-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -3082,10 +4690,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-a292de4acc",
-      "roomName": "Online 3",
+      "roomName": "Online - Naoya 3",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -3106,13 +4723,36 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R19 CRs",
       "topicKey": "r19-crs",
       "agendaItems": [
         "8.3",
         "8.9",
         "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 30,
+          "startTime": "17:00",
+          "endTime": "17:30"
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 30,
+          "startTime": "17:30",
+          "endTime": "18:00"
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
       ],
       "sessionLead": "Ralf",
       "kind": "session",
@@ -3135,10 +4775,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-8913a8ae4e",
-      "roomName": "Online 6",
+      "roomName": "Online - Ralf 2",
       "topic": "R20 AI/ML",
       "topicKey": "r20-ai-ml",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 AI/ML",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -3159,10 +4808,19 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-fc9c619a84",
-      "roomName": "Online 7",
+      "roomName": "Online - Ralf 3",
       "topic": "R20 A-IoT",
       "topicKey": "r20-a-iot",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -3187,6 +4845,15 @@
       "topic": "Channel coding",
       "topicKey": "channel-coding",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Channel coding",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -3212,6 +4879,15 @@
       "topic": "Waveform",
       "topicKey": "waveform",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Waveform",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -3237,6 +4913,15 @@
       "topic": "Channel coding",
       "topicKey": "channel-coding",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Channel coding",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -3262,6 +4947,15 @@
       "topic": "Waveform",
       "topicKey": "waveform",
       "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Waveform",
+          "minutes": 90,
+          "startTime": "17:00",
+          "endTime": "18:30"
+        }
+      ],
       "sessionLead": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -3283,10 +4977,11 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR Channel coding",
       "topicKey": "r20-6gr-channel-coding",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -3308,10 +5003,11 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR Channel coding",
       "topicKey": "r20-6gr-channel-coding",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -3333,10 +5029,11 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "session",
       "status": "scheduled",
@@ -3358,10 +5055,11 @@
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "R20 6GR",
       "topicKey": "r20-6gr",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "session",
       "status": "scheduled",
@@ -3383,10 +5081,11 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "Any other open issues",
       "topicKey": "any-other-open-issues",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "plenary",
       "status": "scheduled",
@@ -3408,10 +5107,11 @@
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "Any other open issues",
       "topicKey": "any-other-open-issues",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "plenary",
       "status": "scheduled",
@@ -3433,10 +5133,11 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-cd56c8e1ce",
-      "roomName": "Online 1",
+      "roomName": "Online - Naoya 1",
       "topic": "Any other open issues",
       "topicKey": "any-other-open-issues",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Naoya",
       "kind": "plenary",
       "status": "scheduled",
@@ -3458,10 +5159,11 @@
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-286e564617",
-      "roomName": "Online 5",
+      "roomName": "Online - Ralf 1",
       "topic": "Any other open issues",
       "topicKey": "any-other-open-issues",
       "agendaItems": [],
+      "agendaBreakdown": [],
       "sessionLead": "Ralf",
       "kind": "plenary",
       "status": "scheduled",
@@ -3479,7 +5181,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T00:15:01Z",
-    "lastAttemptAt": "2026-08-22T00:15:01Z"
+    "lastSuccessfulAt": "2026-08-22T00:18:11Z",
+    "lastAttemptAt": "2026-08-22T00:18:11Z"
   }
 }

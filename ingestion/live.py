@@ -229,30 +229,51 @@ def parse_schedule_sources(
             continue
         rooms.extend(doc_rooms)
         sessions.extend(doc_sessions)
-    return _number_parallel_tracks(rooms, sessions)
+    return _name_tracks(rooms, sessions)
 
 
-def _number_parallel_tracks(
-    rooms: list[Room], sessions: list[Session]
-) -> tuple[list[Room], list[Session]]:
-    """Turn repeated generic track names into "Offline 1", "Offline 2", ...
+def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
+    """Give every column a name a delegate can act on.
 
-    Named rooms keep their name; only the anonymous parallel tracks several
-    chairs publish get a number, so the board reads like the schedule document.
+    A track keeps the room the chair wrote down ("RAN1_Brk#2 (1.1 Himalaya)",
+    "Praetorium"). Anonymous parallel columns are named after the chair who runs
+    the sessions in them ("Offline - Xiaodong"), because that is how delegates
+    identify a breakout when no room is printed. Only if a chair genuinely runs
+    two parallel columns do the names get a number.
     """
+    by_room: dict[str, list[Session]] = {}
+    for session in sessions:
+        by_room.setdefault(session.roomId, []).append(session)
+
+    for room in rooms:
+        generic = room.roomName in ("Online", "Offline")
+        if not generic:
+            continue
+        leads = [s.sessionLead for s in by_room.get(room.roomId, []) if s.sessionLead]
+        if leads:
+            main_lead = max(set(leads), key=leads.count)
+            share = leads.count(main_lead) / len(by_room.get(room.roomId, [])) if by_room.get(room.roomId) else 0
+            if share >= 0.5:
+                room.roomName = f"{room.roomName} - {main_lead}"
+
     totals: dict[str, int] = {}
     for room in rooms:
         totals[room.roomName] = totals.get(room.roomName, 0) + 1
     used: dict[str, int] = {}
     renamed: dict[str, str] = {}
-    # Named rooms and online tracks first, breakout/offline tracks after them.
-    rooms.sort(key=lambda r: (r.roomName.lower().startswith("offline"), r.roomName.lower()))
+    # Rooms with a real name first, then online tracks, then offline breakouts.
+    def sort_key(room: Room) -> tuple[int, str]:
+        lowered = room.roomName.lower()
+        rank = 2 if lowered.startswith("offline") else 1 if lowered.startswith("online") else 0
+        return (rank, lowered)
+
+    rooms.sort(key=sort_key)
     for index, room in enumerate(rooms):
         base = room.roomName
         if totals[base] > 1:
             used[base] = used.get(base, 0) + 1
             room.roomName = f"{base} {used[base]}"
-        room.shortName = room.roomName[:18]
+        room.shortName = room.roomName[:22]
         room.order = index
         renamed[room.roomId] = room.roomName
     for session in sessions:

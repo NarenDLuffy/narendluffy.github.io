@@ -222,7 +222,8 @@ def _room_label(
     lead_match = OWNER_RE.search(heading)
     lead = lead_match.group(1) if lead_match else owner_hint
     if m:
-        return m.group(1).strip(), lead
+        room = re.sub(r"\s*,\s*", " · ", m.group(1).strip())
+        return room, lead
     lowered = heading.lower()
     if "offline" in lowered:
         return "Offline", lead
