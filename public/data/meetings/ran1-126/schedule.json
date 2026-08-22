@@ -1,12 +1,4702 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T00:03:58Z",
+  "generatedAt": "2026-08-22T00:09:12Z",
   "meetingId": "ran1-126",
-  "sessions": [],
+  "sessions": [
+    {
+      "sessionId": "ran1-126-ac98b5f3fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "ran1-126-commences-at-09-00-on-monday",
+      "agendaItems": [],
+      "sessionLead": "Hiroki",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-01f855320f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.2",
+        "10.5.4.4",
+        "10.5.4.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.2(40), 10.5.4.4(40), 10.5.4.3(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-274851202b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.4",
+        "10.5.4.1",
+        "10.5.4.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.4(30), 10.5.4.1(60), 10.5.4.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0038a79289",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "Maintenance",
+      "topicKey": "maintenance",
+      "agendaItems": [
+        "8.2",
+        "10.2.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "8.2 R19 LP-WUS, Mobility, TBD\n7 TBD\n6G waveform (40)\n10.2.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1fc1411e42",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.3",
+        "9.3.1",
+        "9.3.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.3, 9.3.1, 9.3.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d1dc76d05e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G waveform",
+      "topicKey": "6g-waveform",
+      "agendaItems": [
+        "10.2.1",
+        "10.8.3",
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.2.1\n6G ISAC (80)\n10.8.3(40), 10.8.1.(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-55d3a3d6b2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G ISAC",
+      "topicKey": "6g-isac",
+      "agendaItems": [
+        "10.8.2",
+        "10.8.3",
+        "10.2.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.8.2(40), 10.8.3(40)\n6G waveform (40)\n10.2.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-08a3abfff3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.2",
+        "9.3.3",
+        "9.3.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2, 9.3.3, 9.3.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8764564466",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.1\n6G ISAC (60)\n10.8.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9456abde6f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "11 TEI20",
+      "topicKey": "11-tei20",
+      "agendaItems": [
+        "8.2",
+        "9.3.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Maintenance (50)\n7 x5550/5551, x5794-5796, x5797/5798, x5667, x6450-6452\n8.2 R19 FR3/ISAC CM, A-IoT\nR20 A-IoT (40)\n9.3.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2a54ab6f81",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "11 TEI20 (TBD)",
+      "topicKey": "11-tei20-tbd",
+      "agendaItems": [
+        "8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Maintenance (90-120)\n7 x5548/5549, x5668, x5799/5800, x6217-6220, x6348/6349\n8.2 R19 Duplex, R20 LBCA",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6cc746e203",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G ISAC",
+      "topicKey": "6g-isac",
+      "agendaItems": [
+        "10.8.1",
+        "10.8.2",
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.8.1, 10.8.2, 10.8.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3f7b545c4e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "RAN1#126 expected to close at 17:00",
+      "topicKey": "ran1-126-expected-to-close-at-17-00",
+      "agendaItems": [],
+      "sessionLead": "Hiroki",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f3437090b4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G waveform",
+      "topicKey": "6g-waveform",
+      "agendaItems": [
+        "10.2.1",
+        "10.5.4",
+        "10.5.4.3",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.2.1\n6G 10.5.4.x (110)\n10.5.4.3(30), 10.5.4.1(50), 10.5.4.3(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3a7ff6432c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.2",
+        "9.3.3",
+        "9.3.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2(20), 9.3.3(70), 9.3.1(60),",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-50feb6eeab",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "R20 A-IoT",
+      "topicKey": "r20-a-iot",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.1(50), 9.3.2(50), 9.3.3(50)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7261252919",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "6G 10.5.4.x",
+      "topicKey": "6g-10-5-4-x",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1",
+        "10.5.4.3",
+        "10.5.4.2",
+        "10.5.4.4"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "10.5.4.1, 10.5.4.3, [10.5.4.2, 10.5.4.4]\nEarly dinner (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5cdc0625c2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-0f6270a068",
+      "roomName": "RAN1_Brk#2",
+      "topic": "RAN1#126 expected to close at 17:00",
+      "topicKey": "ran1-126-expected-to-close-at-17-00",
+      "agendaItems": [],
+      "sessionLead": "Hiroki",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d597cf202d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.8.3",
+        "10.8.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G ISAC (90)\n10.8.3, 10.8.1\n10:00 - 10:30\n6G waveform (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-03a8877ef1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.8.2",
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G waveform (30)\n9:00 - 10:00\n6G ISAC (60)\n10.8.2, 10.8.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-e2bed9db91",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "08:50",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x (20)\n10.5.4.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0f43728115",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.1",
+        "10.8.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (60)\n9.3.1\n12:00 - 13:00\n6G ISAC (60)\n10.8.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-44e9df24e1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "12:30",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (30)\n9.3.2",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-127f35d0cf",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "12:30",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x (30)\n10.5.4.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-30f5fb58f2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:30",
+      "endTime": "13:00",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.8.1",
+        "10.8.2",
+        "10.8.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G ISAC (90)\n10.8.1, 10.8.2, 10.8.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7c7701a13b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:00",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.1",
+        "10.5.4.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x(90)\n10.5.4.1, 10.5.4.3\n16:00 - 16:30\n6G waveform (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-dcbc42747c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (30)\n9.3.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b9ff3fc649",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (120)\n9.3.1, 9.3.2, 9.3.3",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-e94e17b3d2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4806ea53e1",
+      "roomName": "Hiroki offline 1",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.3",
+        "10.5.4.2",
+        "10.5.4.4"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x (40)\n10.5.4.3, [10.5.4.2, 10.5.4.4]",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f6a3368558",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (30)\n9.3.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-fdd276c80f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.2",
+        "10.5.4.4",
+        "10.5.4.1"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x(60)\n10.5.4.2, 10.5.4.4, 10.5.4.1",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-054aac4ea8",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.4.3",
+        "10.5.4.2",
+        "10.5.4.4"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G 10.5.4.x (60)\n10.5.4.3, 10.5.4.2, 10.5.4.4",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f041534d77",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "roomId": "ran1-126-97446d34a5",
+      "roomName": "Hiroki offline 2",
+      "topic": "Session",
+      "topicKey": "session",
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "sessionLead": "Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 A-IoT (90)\n9.3.1, 9.3.2, 9.3.3\nEarly dinner (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a96099d36b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "ran1-126-commences-at-09-00-on-monday",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5\n6GR (30)\n.10.5.1.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3313131613",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "ran1-126-commences-at-09-00-on-monday",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5\n6GR (30)\n.10.5.1.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5ae28f371e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "ran1-126-commences-at-09-00-on-monday",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5\n6GR (30)\n.10.5.1.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6545d8286c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.2",
+        "10.5.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.3(30)\n.10.5.1.2(30)\n.10.5.1.1(60).",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d7a8d243eb",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NTN-NR (40)\n6GR (40)\n.10.7.1 NTN (40)\nR20 (40)\nMIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-47cdb0e75b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.4 (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3f73f2b44e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.1",
+        "10.5.1.3",
+        "10.5.1.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.1(60)\n.10.5.1.3(30)\n.10.5.1.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-190725bf2f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NTN-NR (40)\n6GR (40)\n.10.7.1 NTN (40)\nR20 (40)\nMIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9f66729d2f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.4 (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9d026f2f9e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.3(30)\n.10.5.1.1(60)\n.10.5.1.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5645411692",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "MIMO (40)\nR20 (40)\nNTN-NR (40)\n6GR (40)\n.10.7.1 NTN (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-98252c4ea5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "AI 7/8.2",
+      "topicKey": "ai-7-8-2",
+      "agendaItems": [
+        "7",
+        "8.2",
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR (40)\n.10.2.1 Waveform (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-19004c9835",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.1",
+        "10.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.1(70)\n.10.4.x (50)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0c1addc568",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20 AI/ML",
+      "topicKey": "r20-ai-ml",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Sweep\n6GR (TBD)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-02974d65cc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-87dd384298",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.3(40)\n.10.5.1.1(40)\n.10.5.1.2(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-08d3e61737",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.3(40)\n.10.5.1.1(40)\n.10.5.1.2(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-48bce573d6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.1.3(40)\n.10.5.1.1(40)\n.10.5.1.2(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d0394f8e9b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.5",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.5 (40)\n.10.4.2 (40)\n.10.4.1 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a2406a553d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20 AI/ML",
+      "topicKey": "r20-ai-ml",
+      "agendaItems": [
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 6/8.1 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-96597abec9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.2.1",
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.2.1 Waveform (40)\n.10.8 Sensing (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d31d26c78c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.5",
+        "10.4.1",
+        "10.4.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.5 (40)\n.10.4.1 (40)\n.10.4.2 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-91f1693989",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20 AI/ML",
+      "topicKey": "r20-ai-ml",
+      "agendaItems": [
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 6/8.1 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c525b78688",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.8",
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.8 Sensing (80)\n.10.2.1 Waveform (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2ca1cc5619",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.5",
+        "10.4.1",
+        "10.4.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.5 (40)\n.10.4.1 (40)\n.10.4.2 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-500f3dc8db",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "AI 6/8.1",
+      "topicKey": "ai-6-8-1",
+      "agendaItems": [
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 (80)AI/ML (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a8dfd97a9d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3da92735d9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "Sweep",
+      "topicKey": "sweep",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-bddf9a33fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "Sweep",
+      "topicKey": "sweep",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7f1c5c6ac7",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "Sweep",
+      "topicKey": "sweep",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ccd7c872ef",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.4",
+        "10.6"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.4.x (40)\n.10.6.x (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1b9772cd01",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NTN-NR (40)\n6GR (40)\n.10.7.1 NTN (40)\nR20 (40)\nMIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1b869d35ec",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (60)\n6GR (60)\n.10.8 Sensing (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b3905b0659",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.6"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.6.x (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-714505014c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.1",
+        "10.5.2.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.2.1(30)\n.10.5.2.2(45)\n.10.5.2.3(45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-e5fefdb83d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "TEI",
+      "topicKey": "tei",
+      "agendaItems": [
+        "7",
+        "8.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 7/8.2 (50)\nR20 (40)\nA-IoT Phase2 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b0c52ea606",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.6"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.6.x (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-63150220ba",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.1",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.2.3(45)\n.10.5.2.1(30)\n.10.5.2.2(45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5b51a32deb",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "TEI (TBD)",
+      "topicKey": "tei-tbd",
+      "agendaItems": [
+        "7",
+        "8.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 7/8.2 (~120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6735d3cc2b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.6",
+        "10.5.3.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.6.x (80)\n.10.5.3.1(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-203dfab4dd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.2",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.2.3(45)\n.10.5.2.2(45)\n.10.5.2.1(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8757b3f4db",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.8 Sensing (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1a1bc66b90",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5d32b6305e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-10b390f670",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6a93eda3fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)\n.10.5.3.4(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3b7e262ce3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.2",
+        "10.3.1",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.2 Modulation (60)\n.10.3.1 Channel coding (60)\n.10.5.2.1(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9aa23683ff",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.2.1",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.2.1 Waveform (40)\n.10.5.4 (110)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ce045c28fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)\n.10.5.3.4(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-af4bd3ad97",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.1 Channel coding (60)\n.10.3.2 Modulation (60)\n.10.5.2.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-14043eeef9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (150)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6d14e8ef16",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.4",
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.4(40)\n.10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-89cc5e003a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.1 Channel coding (60)\n.10.3.2 Modulation (60)\n.10.5.2.3(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-299a4136c9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (150)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7060f2c028",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.2(30)\n.10.5.3.3(20)\n.10.5.3.4 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f952783c7b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.1 Channel coding (50)\n.10.3.2 Modulation (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b546099af5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.4(90)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9c936c8dd9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-56f1aa7049",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-dc534a9cf6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6a93eda3fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)\n.10.5.3.4(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3b7e262ce3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.2",
+        "10.3.1",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.2 Modulation (60)\n.10.3.1 Channel coding (60)\n.10.5.2.1(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9aa23683ff",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.2.1",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.2.1 Waveform (40)\n.10.5.4 (110)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ce045c28fc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)\n.10.5.3.4(40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-af4bd3ad97",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.1 Channel coding (60)\n.10.3.2 Modulation (60)\n.10.5.2.2(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-14043eeef9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (150)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6d14e8ef16",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.3.4",
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.5.3.4(40)\n.10.5.3.1(60)\n.10.5.3.2(30)\n.10.5.3.3(20)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-89cc5e003a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.1 Channel coding (60)\n.10.3.2 Modulation (60)\n.10.5.2.3(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-299a4136c9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "R20",
+      "topicKey": "r20",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "A-IoT Phase2 (150)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-51c8787c0c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "Early dinner",
+      "topicKey": "early-dinner",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-01c773a3f0",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "Early dinner",
+      "topicKey": "early-dinner",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ace15f026a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "Early dinner",
+      "topicKey": "early-dinner",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9c936c8dd9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-521ed83656",
+      "roomName": "Sorour online 1",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-56f1aa7049",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-edd1b2d88e",
+      "roomName": "Sorour online 2",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-dc534a9cf6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-182407937a",
+      "roomName": "Sorour online 3",
+      "topic": "Any other open issues",
+      "topicKey": "any-other-open-issues",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "plenary",
+      "status": "scheduled",
+      "note": ". Session reports\nRAN1#126 expected to close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ec0de91fc6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.5",
+        "10.6.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nAI/ML (60)\nXiaodong (60)\n6GR\n.10.5.5 (30)\n.10.6.1.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-17d3ad9aa4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.8",
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.8.x Sensing (90)\n.10.2.1 Waveform(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f4a5c0ebfd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.2.1",
+        "10.8",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.2.1 Waveform(30)\n.10.8.x Sensing (60)\nSorour (30)\n6GR\n.10.5.2.1(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8448fbb8b3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.5"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.5 (30)\nSorour (90)\nR20\nMIMO (30)\nR20\nAI/ML (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0c8233b4c3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.3.1",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.4.x (20)\nXiaodong (60)\n6GR\n.10.5.3.1 (60)\n.10.5.3.4 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3cd537d0a6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.6"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nAI/ML (60)\nXiaodong (60)\n6GR\n.10.6.x (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0d08d44fd1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.4.1",
+        "10.4.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.4.1 (30)\n.10.4.2 (30)\n.On demand",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f82f50d806",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": ".10.3.x (120)\nTBD",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5a020a8257",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nA-IoT (60)\n6GR\n.10.8.x Sensing (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-801ddbfff6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nA-IoT (60)\n6GR\n.10.8.x Sensing (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ab31e474b4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-600f4552cb",
+      "roomName": "Sorour offline 3",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.3.2",
+        "10.3.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nMIMO (40)\n6GR\n.10.3.2 (40)\n.10.3.1 (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c70a01bb2d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6.1.2",
+        "10.6.2",
+        "10.6.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.1.2 (30)\n.10.6.2 (30)\n.10.6.3 (30)\nHiroki (30)\nR20\nA-IoT (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1a9a25fc45",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.2.2",
+        "10.5.2.1",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.2.2(45)\n.10.5.2.1(30)\n.10.5.2.3(45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c0b2dc23b1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.2.2",
+        "10.5.2.3",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.2.2(45)\n.10.5.2.3(45)\nHiroki (120)\n6GR\n.10.5.4 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-afd19b07bc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.x (90)\nSorour (30)\nR20\nMIMO (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b10b2bc0ea",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Sorouri",
+      "topicKey": "sorouri",
+      "agendaItems": [
+        "10.5.2.1",
+        "10.5.2.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.2.1 (30)\n.10.5.2.2 (45)\n.10.5.2.3 (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8d2b72248d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6",
+        "10.8"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.x (30)\nHiroki (90)\n6GR\n.10.8.x Sensing (90)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-507996a45a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.3.4",
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.3.4 (30)\n.10.5.3.1 (45)\n.10.5.3.2 (25)\n.10.5.3.3 (20)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-aa24aeec83",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.5.4",
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.4.x (90)\n.10.2.1 Waveform(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-93e4ae83d6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-600f4552cb",
+      "roomName": "Sorour offline 3",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.5.4",
+        "10.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.4.x (90)\n.10.2.1 Waveform(30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d135750af2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nA-IoT (30)\nSorour (90)\n6GR\n.10.3.1 (45)\n.10.3.2 (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-cadc59c788",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.3.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.3.1 (45)\n.10.5.3.2 (25)\n.10.5.3.3 (20)\n.10.5.3.4 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-cc087957d4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.5"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.3.1 (45)\n.10.3.2 (45)\nXiaodong (30)\n6GR\n.10.5.5 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b50d44001d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nA-IoT (120)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1e115ae4cf",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.3.2",
+        "10.5.3.3",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.3.2 (40)\n.10.5.3.3 (40)\nHiroki (40)\n6GR\n.10.5.4.x (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a82189c3d0",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.3.1 (45)\n.10.3.2 (45)\nHiroki (30)\nR20\nA-IoT (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3c6fe2c4b3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.1(40)\n.10.5.1.2(25)\n.10.4.2 (30)\n.10.4.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d8d6f92800",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6.1.1",
+        "10.5.2.1",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.1.1 (30)\nSorour (120)\n6GR\n.10.5.2.1 (40)\n.10.7.1 NTN (40)\nR20\nNTN-NR (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-09cad1b5ab",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-600f4552cb",
+      "roomName": "Sorour offline 3",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6.1.1",
+        "10.5.2.1",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.1.1 (30)\nSorour (120)\n6GR\n.10.5.2.1 (40)\n.10.7.1 NTN (40)\nR20\nNTN-NR (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b6c679d064",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.2",
+        "10.5.1.1",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.2(25)\n.10.5.1.1(50)\n.10.4.2 (25)\n.10.4.1 (25)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8039673a9e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.2.2",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.4.x (60)\nSorour (90)\n6GR\n.10.5.2.2 (30)\n.10.7.1 NTN (30)\nR20\nNTN-NR (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ee88d198a6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.2",
+        "10.5.1.1",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.2(25)\n.10.5.1.1(40)\n.10.4.2 (30)\n.10.4.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-eaee78d25e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.7.1",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.2.3 (30)\n.10.7.1 NTN (30)\nR20\nNTN-NR (30)\nHiroki (60)\n6GR\n.10.5.4.x (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ff9ca67dd8",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nAI/ML (40)\nXiaodong (50)\n6GR\n.10.5.1.1 (50)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a68050c51c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20\nA-IoT (90)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3c6fe2c4b3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.1",
+        "10.5.1.2",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.1(40)\n.10.5.1.2(25)\n.10.4.2 (30)\n.10.4.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d8d6f92800",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6.1.1",
+        "10.5.2.1",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.1.1 (30)\nSorour (120)\n6GR\n.10.5.2.1 (40)\n.10.7.1 NTN (40)\nR20\nNTN-NR (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-09cad1b5ab",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-600f4552cb",
+      "roomName": "Sorour offline 3",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.6.1.1",
+        "10.5.2.1",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.6.1.1 (30)\nSorour (120)\n6GR\n.10.5.2.1 (40)\n.10.7.1 NTN (40)\nR20\nNTN-NR (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b6c679d064",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.2",
+        "10.5.1.1",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.2(25)\n.10.5.1.1(50)\n.10.4.2 (25)\n.10.4.1 (25)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8039673a9e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Hiroki",
+      "topicKey": "hiroki",
+      "agendaItems": [
+        "10.5.4",
+        "10.5.2.2",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.4.x (60)\nSorour (90)\n6GR\n.10.5.2.2 (30)\n.10.7.1 NTN (30)\nR20\nNTN-NR (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ee88d198a6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Xiaodong",
+      "topicKey": "xiaodong",
+      "agendaItems": [
+        "10.5.1.3",
+        "10.5.1.2",
+        "10.5.1.1",
+        "10.4.2",
+        "10.4.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.1.3(25)\n.10.5.1.2(25)\n.10.5.1.1(40)\n.10.4.2 (30)\n.10.4.1 (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-eaee78d25e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Sorour",
+      "topicKey": "sorour",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.7.1",
+        "10.5.4"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR\n.10.5.2.3 (30)\n.10.7.1 NTN (30)\nR20\nNTN-NR (30)\nHiroki (60)\n6GR\n.10.5.4.x (60)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3e23359db5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-4d12f4d7b0",
+      "roomName": "Sorour offline 1",
+      "topic": "Early dinner",
+      "topicKey": "early-dinner",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-beadfc5a77",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-c2dc2dcbfd",
+      "roomName": "Sorour offline 2",
+      "topic": "Early dinner",
+      "topicKey": "early-dinner",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-819e04f7f1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c28bf39d20",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7b117b8ed2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.2",
+        "9.4",
+        "10.7.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.2 MIMO (40)\nR20 NR (40)\nAI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f057758266",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (60)\n6GR (TBD)\nSweep",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7a265bb2cd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1",
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 8.1 AIML\nAI 8.1 MIMO\nAI 8.1 NES",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-722df9f10b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.1",
+        "6",
+        "8.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.1 AIML (80)\nAI 6/8.1 (40)\nAI 6\nAI 8.1 NTN\nAI 8.1 AIML\nAI 8.1 NES",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8bb9836be6",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "AI 6/8.1",
+      "topicKey": "ai-6-8-1",
+      "agendaItems": [
+        "6",
+        "8.1",
+        "9.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 8.1 MIMO\nAI 8.1 NTN\nAI 6\nR20 NR (80)\nAI 9.1 AIML (80)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-43d0ccbf5d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "Sweep",
+      "topicKey": "sweep",
+      "agendaItems": [],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-58bf75928e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "R20 NR",
+      "topicKey": "r20-nr",
+      "agendaItems": [
+        "9.4",
+        "10.7.1",
+        "9.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 9.4 NTN-NR (40)\n6GR (40)\nAI 10.7.1 NTN (40)\nR20 NR (40)\nAI 9.2 MIMO (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-28fd365b66",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.1",
+        "10.5.2.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.3 PUxCH (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b2faa64f03",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.1",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.1 PDCCH (30)\nAI 10.5.2.2 PDSCH (45)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-4ff81ac680",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.5.2.3",
+        "10.5.2.2",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.5.2.3 PUxCH (45)\nAI 10.5.2.2 PDSCH (45)\nAI 10.5.2.1 PDCCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f1888d4455",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.2",
+        "10.3.1",
+        "10.5.2.1"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.2 Modulation (60)\nAI 10.3.1 Coding (60)\nAI 10.5.2.1 PDCCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7eee6a8c24",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.2 PDSCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-bf27399866",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.2.3"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (60)\nAI 10.3.2 Modulation (60)\nAI 10.5.2.3 PUxCH (30)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6fc2d877b5",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-ecc18a5e62",
+      "roomName": "Praetorium",
+      "topic": "6GR",
+      "topicKey": "6gr",
+      "agendaItems": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "sessionLead": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "AI 10.3.1 Coding (50)\nAI 10.3.2 Modulation (40)",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": [
+            "all"
+          ]
+        }
+      ]
+    }
+  ],
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T00:03:58Z",
-    "lastAttemptAt": "2026-08-22T00:03:58Z"
+    "lastSuccessfulAt": "2026-08-22T00:09:12Z",
+    "lastAttemptAt": "2026-08-22T00:09:12Z"
   }
 }
