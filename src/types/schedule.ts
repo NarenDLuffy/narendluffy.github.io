@@ -106,6 +106,15 @@ export interface Session {
   sources: SessionSourceRef[];
 }
 
+/** One agenda item's share of a session block, e.g. 10.5.1.3 for 30 minutes */
+export interface AgendaSlot {
+  code?: string;
+  label: string;
+  minutes?: number;
+  startTime?: string;
+  endTime?: string;
+}
+
 export interface AgendaItem {
   code: string;
   meetingId: string;
