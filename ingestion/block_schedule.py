@@ -170,10 +170,18 @@ def _parse_cell(text: str) -> list[_Segment]:
     own duration starts a new sub-block once the current one is complete.
     """
     segments: list[_Segment] = []
+    chunks: list[list[str]] = []
     for chunk in re.split(r"\n\s*\n", text):
         lines = [line.strip() for line in chunk.split("\n") if line.strip()]
         if not lines:
             continue
+        # A chunk that opens with an agenda item continues the previous block:
+        # chairs often leave a blank line between items of the same session.
+        if chunks and lines[0].startswith("."):
+            chunks[-1].extend(lines)
+        else:
+            chunks.append(lines)
+    for lines in chunks:
         for group_lines in _split_stacked(lines):
             segments.append(_segment_from_lines(group_lines))
     return segments
