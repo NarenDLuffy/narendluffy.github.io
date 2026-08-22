@@ -20,6 +20,10 @@ FL_PATTERNS = (
     r"^summary\b",
     r"\bfl[\s_-]*(?:draft|report)\b",
 )
+# Some moderators glue the marker into a word ("ISACEvaFLS_v001"), so a
+# separator-free "fls" immediately followed by a version or separator counts too.
+EMBEDDED_FL_RE = re.compile(r"fls(?:[_\-\s.]|v\d|$)", re.I)
+
 CHAIR_PATTERNS = (r"\bchair\b", r"\bchairman\b", r"\bsession\s*notes\b", r"\bagenda\b")
 DRAFT_EXTENSIONS = (".docx", ".doc", ".pptx", ".ppt", ".xlsx", ".xls", ".pdf", ".zip", ".txt")
 
@@ -67,7 +71,9 @@ def classify(filename: str, folder_names: list[str]) -> Classification:
     if not filename.lower().endswith(DRAFT_EXTENSIONS):
         return Classification("unknown", 0.3, key, revision)
 
-    if any(re.search(p, lower) for p in FL_PATTERNS):
+    if any(re.search(p, lower) for p in FL_PATTERNS) or EMBEDDED_FL_RE.search(
+        _stem(filename)
+    ):
         return Classification("fl_summary", 0.9, key, revision)
     if any(re.search(p, context) for p in FL_PATTERNS):
         return Classification("fl_summary", 0.6, key, revision)
