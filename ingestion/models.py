@@ -140,6 +140,7 @@ class Session:
     agendaItems: list[str] = field(default_factory=list)
     agendaBreakdown: list[AgendaSlot] = field(default_factory=list)
     sessionLead: str | None = None
+    group: str | None = None
     mode: str | None = None
     kind: SessionKind = "session"
     status: SessionStatus = "scheduled"
