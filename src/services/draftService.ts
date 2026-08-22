@@ -99,6 +99,21 @@ export function artifactsForAgenda(index: DraftIndex, code: string): DraftArtifa
  * Roll events up per agenda item. `seenAt` (per code) decides what is unread,
  * `since` suppresses history from before the user started following.
  */
+function emptyActivity(code: string, latestFl?: DraftArtifact): AgendaActivity {
+  return {
+    agendaItemId: code,
+    events: [],
+    unread: [],
+    unreadCount: 0,
+    flUpdates: 0,
+    newFiles: 0,
+    newRounds: 0,
+    fileCount: 0,
+    flCount: 0,
+    latestFlSummary: latestFl,
+  };
+}
+
 export function buildActivity(
   index: DraftIndex | null,
   opts: {
@@ -119,20 +134,23 @@ export function buildActivity(
     }
   });
 
+  // Seed one entry per agenda item that has files, so the tracker is browsable
+  // even before (or without) any change events — a fresh baseline scan has no
+  // events but plenty of drafts.
+  index.artifacts.forEach((a) => {
+    const code = a.agendaItemId ?? "unmapped";
+    if (a.removedAt) return;
+    const entry = out.get(code) ?? emptyActivity(code, latestFl.get(code));
+    entry.fileCount += 1;
+    if (a.fileType === "fl_summary") entry.flCount += 1;
+    const stamp = a.modifiedAt ?? a.lastSeenAt;
+    if (stamp && (!entry.latestFileAt || stamp > entry.latestFileAt)) entry.latestFileAt = stamp;
+    out.set(code, entry);
+  });
+
   index.events.forEach((e) => {
     const code = e.agendaItemId ?? "unmapped";
-    const entry =
-      out.get(code) ??
-      ({
-        agendaItemId: code,
-        events: [],
-        unread: [],
-        unreadCount: 0,
-        flUpdates: 0,
-        newFiles: 0,
-        newRounds: 0,
-        latestFlSummary: latestFl.get(code),
-      } as AgendaActivity);
+    const entry = out.get(code) ?? emptyActivity(code, latestFl.get(code));
 
     entry.events.push(e);
     if (e.eventType === "FL_SUMMARY_UPDATED") entry.flUpdates += 1;

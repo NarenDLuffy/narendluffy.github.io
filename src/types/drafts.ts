@@ -132,6 +132,11 @@ export interface AgendaActivity {
   flUpdates: number;
   newFiles: number;
   newRounds: number;
+  /** Total files currently indexed for this agenda item. */
+  fileCount: number;
+  /** How many of those are FL / moderator summaries. */
+  flCount: number;
+  latestFileAt?: string;
   latestAt?: string;
   latestFlSummary?: DraftArtifact;
 }
