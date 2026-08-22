@@ -5,7 +5,12 @@ import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { MeetingBanner } from "@/components/MeetingBanner";
 import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
-import { AgendaActivityCard, EventRow, FollowButton } from "@/components/DraftActivity";
+import {
+  AgendaActivityCard,
+  ArtifactRow,
+  EventRow,
+  FollowButton,
+} from "@/components/DraftActivity";
 import { relativeTime } from "@/services/draftService";
 import { cn } from "@/lib/utils";
 
@@ -36,14 +41,26 @@ function DraftsPage() {
       filter === "all"
         ? true
         : filter === "fl"
-          ? a.flUpdates > 0
+          ? a.flCount > 0 || a.flUpdates > 0
           : drafts.watched.includes(a.agendaItemId),
     )
-    .sort((a, b) => (b.latestAt ?? "").localeCompare(a.latestAt ?? ""));
+    .sort((a, b) =>
+      (b.latestAt ?? b.latestFileAt ?? "").localeCompare(a.latestAt ?? a.latestFileAt ?? ""),
+    );
 
   const feed = (index?.events ?? [])
     .slice()
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
+    .slice(0, 40);
+
+  // Before any change is detected (fresh baseline) show the files themselves,
+  // newest first, so the tracker is never an empty page.
+  const recentFiles = (index?.artifacts ?? [])
+    .filter((a) => !a.removedAt)
+    .slice()
+    .sort((a, b) =>
+      (b.modifiedAt ?? b.lastSeenAt ?? "").localeCompare(a.modifiedAt ?? a.lastSeenAt ?? ""),
+    )
     .slice(0, 40);
 
   return (
@@ -172,7 +189,7 @@ function DraftsPage() {
               <p className="flex items-center gap-2">
                 <Inbox className="size-4" />
                 {filter === "watched"
-                  ? "Nothing new for the agenda items you follow."
+                  ? "Nothing yet for the agenda items you follow."
                   : index.scanState === "baseline"
                     ? "Baseline captured — you'll see uploads from here on."
                     : "No draft changes detected yet."}
@@ -205,10 +222,18 @@ function DraftsPage() {
               Everything, newest first
             </h2>
             {feed.length === 0 ? (
-              <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
-                {index.artifacts.length} file(s) indexed across {index.folders.length} folder(s). New
-                uploads and updates will show up here.
-              </p>
+              <div className="space-y-1.5">
+                <p className="text-xs text-muted-foreground">
+                  {index.artifacts.length} file(s) indexed across {index.folders.length} folder(s).
+                </p>
+                <ol className="space-y-1.5">
+                  {recentFiles.map((a) => (
+                    <li key={a.id}>
+                      <ArtifactRow artifact={a} />
+                    </li>
+                  ))}
+                </ol>
+              </div>
             ) : (
               <ol className="space-y-1.5">
                 {feed.map((e) => (

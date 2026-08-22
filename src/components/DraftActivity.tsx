@@ -158,13 +158,15 @@ export function AgendaActivityCard({
             activity.flUpdates ? `${activity.flUpdates} FL summary update(s)` : "",
             activity.newFiles ? `${activity.newFiles} new file(s)` : "",
             activity.newRounds ? `${activity.newRounds} new round(s)` : "",
+            activity.flCount ? `${activity.flCount} FL summary(ies)` : "",
+            activity.fileCount ? `${activity.fileCount} file(s)` : "",
           ]
             .filter(Boolean)
-            .join(" · ") || "no changes yet"}
+            .join(" · ") || "no files yet"}
         </span>
       </span>
       <span className="mono-code shrink-0 text-[11px] text-muted-foreground">
-        {relativeTime(activity.latestAt)}
+        {relativeTime(activity.latestAt ?? activity.latestFileAt)}
       </span>
     </Link>
   );
