@@ -12,6 +12,8 @@ from dataclasses import dataclass
 
 FL_PATTERNS = (
     r"\bfl[\s_-]*summary\b",
+    r"\bfls\b",
+    r"\bfls[_\s-]",
     r"\bfeature\s*lead\b",
     r"\bsummary\s+(?:on|of|for)\b",
     r"\bmoderator[\s_-]*summary\b",
