@@ -137,8 +137,6 @@ def resolve_timezone(label: str | None, fallback: str = "UTC") -> str:
         sign = 1 if m.group(1) == "+" else -1
         wanted = sign * (int(m.group(2)) * 3600 + int(m.group(3)) * 60)
         now = datetime.now(timezone.utc)
-        for city in [c.strip().lower() for c in cities.split(",") if c.strip()] or [""]:
-            del city
         for zone in sorted(available_timezones()):
             try:
                 offset = now.astimezone(ZoneInfo(zone)).utcoffset()
