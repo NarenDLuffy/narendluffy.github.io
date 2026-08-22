@@ -80,6 +80,156 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
+def dynamic_structure_tests() -> bool:
+    """The directory tree is the source of truth: no template is ever assumed."""
+    ok = True
+    agenda = {"10.8": "ISAC", "10.8.1": "Evaluations", "10.8.2": "Measurements", "10.8.3": "Deployment"}
+
+    # 30: no round folder anywhere; an FL summary simply appears.
+    flat_before = {
+        "/drafts/": [("10.8.1", True, None)],
+        "/drafts/10.8.1/": [("A.docx", False, 1), ("B.docx", False, 2)],
+    }
+    flat_after = {
+        "/drafts/": [("10.8.1", True, None)],
+        "/drafts/10.8.1/": [
+            ("A.docx", False, 1),
+            ("B.docx", False, 2),
+            ("FL_summary.docx", False, 3),
+        ],
+    }
+    base, _ = run(FakeSource(flat_before), None, agenda)
+    _, fresh = run(FakeSource(flat_after), base, agenda)
+    ok &= check(
+        "structure without rounds: single NEW_FILE, no round invented",
+        [e.eventType for e in fresh] == ["NEW_FILE"]
+        and fresh[0].semanticType == "FL_SUMMARY_UPDATED"
+        and all(e.roundNumber is None for e in fresh),
+        str([(e.eventType, e.semanticType) for e in fresh]),
+    )
+
+    # 31: an arbitrary new folder is discovered without any configuration.
+    arb_before = {"/drafts/": [("10.8.1", True, None)], "/drafts/10.8.1/": [("A.docx", False, 1)]}
+    arb_after = {
+        "/drafts/": [("10.8.1", True, None)],
+        "/drafts/10.8.1/": [("A.docx", False, 1), ("Agreement discussion", True, None)],
+        "/drafts/10.8.1/Agreement discussion/": [("B.docx", False, 2)],
+    }
+    base, _ = run(FakeSource(arb_before), None, agenda)
+    idx_arb, fresh = run(FakeSource(arb_after), base, agenda)
+    types = sorted(e.eventType for e in fresh)
+    ok &= check(
+        "arbitrary folder: NEW_FOLDER + NEW_FILE, never NEW_ROUND",
+        types == ["NEW_FILE", "NEW_FOLDER"]
+        and all(e.semanticType != "NEW_ROUND" for e in fresh),
+        str([(e.eventType, e.semanticType, e.title) for e in fresh]),
+    )
+    ok &= check(
+        "unclassified folder stays generic",
+        any(
+            f["name"] == "Agreement discussion" and f["folderType"] == "generic"
+            for f in idx_arb["folders"]
+        ),
+    )
+    group_keys = {e.groupKey for e in fresh}
+    ok &= check(
+        "files inside a brand-new folder share one notification group",
+        len(group_keys) == 1 and None not in group_keys,
+        str(group_keys),
+    )
+
+    # 32: a file four levels below the agenda folder still maps to it.
+    deep = {
+        "/drafts/": [("10.8.1", True, None)],
+        "/drafts/10.8.1/": [("A", True, None)],
+        "/drafts/10.8.1/A/": [("B", True, None)],
+        "/drafts/10.8.1/A/B/": [("C", True, None)],
+        "/drafts/10.8.1/A/B/C/": [("FL_summary.docx", False, 9)],
+    }
+    idx_deep, _ = run(FakeSource(deep), None, agenda)
+    art = idx_deep["artifacts"][0]
+    ok &= check(
+        "deeply nested file maps to the nearest agenda ancestor",
+        art["agendaItemId"] == "10.8.1" and art["fileType"] == "fl_summary",
+        f"{art['agendaItemId']} {art['normalizedPath']}",
+    )
+
+    # 33: three agenda items with three different structures at once.
+    mixed = {
+        "/drafts/": [("10.8.1", True, None), ("10.8.2", True, None), ("10.8.3", True, None)],
+        "/drafts/10.8.1/": [("Round 1", True, None)],
+        "/drafts/10.8.1/Round 1/": [("A.docx", False, 1)],
+        "/drafts/10.8.2/": [("B.docx", False, 2), ("FL.docx", False, 3)],
+        "/drafts/10.8.3/": [("Agreement", True, None)],
+        "/drafts/10.8.3/Agreement/": [("C.docx", False, 4)],
+    }
+    idx_mixed, _ = run(FakeSource(mixed), None, agenda)
+    per_code = {}
+    for a in idx_mixed["artifacts"]:
+        per_code.setdefault(a["agendaItemId"], []).append(a["filename"])
+    ok &= check(
+        "different structures coexist in one meeting",
+        sorted(per_code) == ["10.8.1", "10.8.2", "10.8.3"],
+        str(per_code),
+    )
+    ftypes = {f["name"]: f["folderType"] for f in idx_mixed["folders"]}
+    ok &= check(
+        "only genuine round folders are labelled rounds",
+        ftypes.get("Round 1") == "round" and ftypes.get("Agreement") == "generic",
+        str(ftypes),
+    )
+
+    # 10: an unmappable file is kept, never guessed onto an agenda item.
+    orphan = {
+        "/drafts/": [("Logistics", True, None)],
+        "/drafts/Logistics/": [("bus_times.docx", False, 5)],
+    }
+    idx_orphan, _ = run(FakeSource(orphan), None, agenda)
+    orphan_art = idx_orphan["artifacts"][0]
+    ok &= check(
+        "unmapped file preserved with agendaItemId=null",
+        orphan_art["agendaItemId"] is None
+        and orphan_art["normalizedPath"] == "logistics/bus_times.docx",
+        str(orphan_art["agendaItemId"]),
+    )
+
+    # 20 / 6F: structure appearing mid-week needs no code change.
+    grow_a = {"/drafts/": [("10.8.1", True, None)], "/drafts/10.8.1/": [("fileA.docx", False, 1)]}
+    grow_b = dict(grow_a)
+    grow_b["/drafts/10.8.1/"] = [("fileA.docx", False, 1), ("Revised proposals", True, None)]
+    grow_b["/drafts/10.8.1/Revised proposals/"] = [("fileB.docx", False, 2)]
+    base, _ = run(FakeSource(grow_a), None, agenda)
+    idx_grow, fresh = run(FakeSource(grow_b), base, agenda)
+    ok &= check(
+        "folder created during the meeting is discovered automatically",
+        any(e.eventType == "NEW_FOLDER" and "Revised proposals" in e.title for e in fresh),
+    )
+
+    # 21: a vanished folder is reported as removed, never as a rename.
+    idx_gone, fresh = run(FakeSource(grow_a), idx_grow, agenda)
+    ok &= check(
+        "removed folder yields FOLDER_REMOVED and FILE_REMOVED",
+        sorted({e.eventType for e in fresh}) == ["FILE_REMOVED", "FOLDER_REMOVED"],
+        str([(e.eventType, e.title) for e in fresh]),
+    )
+
+    # 5: same filename repeated per round stays two artifacts, latest resolvable.
+    dup = {
+        "/drafts/": [("10.8.1", True, None)],
+        "/drafts/10.8.1/": [("Round 1", True, None), ("Round 2", True, None)],
+        "/drafts/10.8.1/Round 1/": [("FL_summary_v01.docx", False, 10)],
+        "/drafts/10.8.1/Round 2/": [("FL_summary_v01.docx", False, 11)],
+    }
+    idx_dup, _ = run(FakeSource(dup), None, agenda)
+    ok &= check(
+        "same filename in two rounds stays two distinct artifacts",
+        len(idx_dup["artifacts"]) == 2
+        and len({a["id"] for a in idx_dup["artifacts"]}) == 2,
+        str([a["normalizedPath"] for a in idx_dup["artifacts"]]),
+    )
+    return ok
+
+
 def main() -> int:
     ok = True
 
@@ -104,8 +254,10 @@ def main() -> int:
     # 55: new round.
     after2, fresh = run(FakeSource(meeting_a_tree(extra_file=True, round2=True)), after, MEETING_A_AGENDA)
     ok &= check(
-        "new round folder yields NEW_ROUND for the agenda item",
-        [e.eventType for e in fresh] == ["NEW_ROUND"] and fresh[0].roundNumber == 2,
+        "new round folder yields NEW_FOLDER labelled NEW_ROUND",
+        [e.eventType for e in fresh] == ["NEW_FOLDER"]
+        and fresh[0].semanticType == "NEW_ROUND"
+        and fresh[0].roundNumber == 2,
         str([(e.eventType, e.title) for e in fresh]),
     )
 
@@ -141,9 +293,10 @@ def main() -> int:
     )
     fresh = [e for e in idx2.events if e.id in set(idx2.newEventIds)]
     ok &= check(
-        "changed FL summary yields FL_SUMMARY_UPDATED",
-        [e.eventType for e in fresh] == ["FL_SUMMARY_UPDATED"],
-        str([e.eventType for e in fresh]),
+        "changed FL summary yields FILE_UPDATED labelled FL_SUMMARY_UPDATED",
+        [e.eventType for e in fresh] == ["FILE_UPDATED"]
+        and fresh[0].semanticType == "FL_SUMMARY_UPDATED",
+        str([(e.eventType, e.semanticType) for e in fresh]),
     )
     ok &= check("previous revision metadata is preserved", len(idx2.artifacts[0].revisions) == 2)
 
@@ -204,6 +357,8 @@ def main() -> int:
         "failed scan preserves known data",
         kept.scanState == "delayed" and len(kept.artifacts) == len(after2["artifacts"]),
     )
+
+    ok &= dynamic_structure_tests()
 
     print("\nALL PASS" if ok else "\nFAILURES")
     return 0 if ok else 1
