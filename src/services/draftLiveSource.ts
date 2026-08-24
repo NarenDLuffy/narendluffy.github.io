@@ -216,6 +216,7 @@ export function mergeLive(
         generatedAt: now,
         scanState: "ok",
         monitoring: true,
+        unmappedFolders: [],
         folders: [],
         artifacts: [],
         events: [],
