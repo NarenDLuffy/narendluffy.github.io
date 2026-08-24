@@ -163,86 +163,102 @@ def _split_head(line: str) -> tuple[str, int | None]:
 
 
 @dataclass
+class _Slot:
+    label: str
+    minutes: int | None
+    group: str
+
+
+@dataclass
 class _Segment:
     lead: str | None
     group: str
     minutes: int | None
-    slots: list[tuple[str, int | None]]
+    slots: list[_Slot]
     raw: str
+
+
+def _is_group_token(label: str) -> bool:
+    token = label.strip().strip(".").lower()
+    return token in GROUP_TOKENS
 
 
 def _parse_cell(text: str) -> list[_Segment]:
     """Split a cell into consecutive sub-blocks.
 
-    A blank line always separates sub-blocks. Chairs also stack them without a
-    blank line, so a line that names a work area or a person *and* carries its
-    own duration starts a new sub-block once the current one is complete.
+    A cell reads as a stack of headed blocks, e.g.
+
+        Hiroki (120)
+        R20
+        A-IoT (60)
+
+        6GR
+        .10.8.x Sensing (60)
+
+    The head ("Hiroki (120)") owns the whole 120 minutes; the lines below it are
+    the agenda items sharing that time, each tagged with the work-area label
+    that precedes it ("R20", "6GR"). A blank line does *not* end the head block
+    while the head still has unallocated minutes — chairs use it to separate two
+    work areas inside the same session.
     """
+    lines = [line.strip() for line in text.split("\n") if line.strip()]
     segments: list[_Segment] = []
-    chunks: list[list[str]] = []
-    for chunk in re.split(r"\n\s*\n", text):
-        lines = [line.strip() for line in chunk.split("\n") if line.strip()]
-        if not lines:
-            continue
-        # A chunk that opens with an agenda item continues the previous block:
-        # chairs often leave a blank line between items of the same session.
-        if chunks and lines[0].startswith("."):
-            chunks[-1].extend(lines)
-        else:
-            chunks.append(lines)
-    for lines in chunks:
-        for group_lines in _split_stacked(lines):
-            segments.append(_segment_from_lines(group_lines))
-    return segments
+    current: _Segment | None = None
+    current_group = ""
+    allocated = 0
 
+    def finished() -> bool:
+        if current is None:
+            return True
+        if current.minutes is None:
+            return bool(current.slots)
+        return allocated >= current.minutes
 
-def _split_stacked(lines: list[str]) -> list[list[str]]:
-    groups: list[list[str]] = []
-    current: list[str] = []
-    head_minutes: int | None = None
-    slot_minutes = 0
     for line in lines:
-        label, minutes = _split_head(line)
-        is_item = line.startswith(".")
-        if current and minutes is not None and not is_item:
-            heads_new = _looks_like_person(label) or label.lower() in GROUP_TOKENS
-            finished = head_minutes is None or (slot_minutes and slot_minutes >= head_minutes)
-            if heads_new and finished:
-                groups.append(current)
-                current, head_minutes, slot_minutes = [line], minutes, 0
-                continue
-        if not current:
-            current, head_minutes, slot_minutes = [line], minutes, 0
-            continue
-        current.append(line)
-        if minutes is not None:
-            slot_minutes += minutes
-    if current:
-        groups.append(current)
-    return groups
-
-
-def _segment_from_lines(lines: list[str]) -> _Segment:
-    head, head_minutes = _split_head(lines[0])
-    lead = head if _looks_like_person(head) else None
-    group_parts: list[str] = [] if lead else [head]
-    slots: list[tuple[str, int | None]] = []
-    for line in lines[1:]:
         label, minutes = _split_head(line)
         if not label:
             continue
-        if minutes is None and not line.startswith("."):
-            group_parts.append(label)
-        else:
-            slots.append((label, minutes))
-    group = " ".join(part for part in group_parts if part).strip()
-    return _Segment(
-        lead=lead,
-        group=group or (head if not lead else ""),
-        minutes=head_minutes,
-        slots=slots,
-        raw="\n".join(lines),
-    )
+        is_item = line.startswith(".")
+        heads_new = not is_item and (_looks_like_person(label) or _is_group_token(label))
+
+        if not is_item and minutes is None:
+            # Bare work-area tag: labels the items that follow.
+            if current is None or (finished() and not _looks_like_person(label)):
+                current = _Segment(lead=None, group=label, minutes=None, slots=[], raw=line)
+                segments.append(current)
+                current_group, allocated = label, 0
+            else:
+                current_group = label
+                current.raw += "\n" + line
+            continue
+
+        if current is None or (heads_new and finished()):
+            lead = label if _looks_like_person(label) else None
+            current = _Segment(
+                lead=lead,
+                group="" if lead else label,
+                minutes=minutes,
+                slots=[],
+                raw=line,
+            )
+            segments.append(current)
+            current_group = "" if lead else label
+            allocated = 0
+            continue
+
+        current.raw += "\n" + line
+        group = current_group or current.group
+        # "R20 (40)" directly above "MIMO (40)": the tag repeats the sub-block
+        # length rather than adding to it.
+        if not is_item and _is_group_token(label) and minutes is not None and not current.slots:
+            current_group = label
+            continue
+        current.slots.append(_Slot(label=label, minutes=minutes, group=group))
+        if minutes:
+            allocated += minutes
+
+    return segments
+
 
 
 def _day_columns(header_cells: list[_Cell]) -> dict[str, tuple[int, int]]:
