@@ -1,5 +1,6 @@
 import { queryOptions } from "@tanstack/react-query";
 import { dataUrl } from "@/lib/dataUrl";
+import { probeLiveDrafts, type LiveDraftOrigin } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
   AgendaActivity,
@@ -48,6 +49,11 @@ export interface DraftResult {
   index: DraftIndex | null;
   stale: boolean;
   error?: string;
+  /** Which server actually answered on the last live probe. */
+  liveOrigin?: LiveDraftOrigin;
+  liveCheckedAt?: string;
+  /** Files the live probe found that the published index did not have. */
+  freshCount?: number;
 }
 
 function readCache(slug: string): DraftIndex | null {
@@ -85,13 +91,41 @@ export async function loadDrafts(meeting: Meeting): Promise<DraftResult> {
   }
 }
 
+/**
+ * Published index first, then a live probe of the venue server and the 3GPP
+ * sync mirror. The live crawl is merged over the published index by document
+ * identity, so a file replicated to a second server later in the day stays one
+ * artifact with one unread mark.
+ */
+export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
+  const published = await loadDrafts(meeting);
+  try {
+    const live = await probeLiveDrafts(meeting, published.index);
+    if (live.origin === "published") return published;
+    return {
+      ...published,
+      index: live.index,
+      liveOrigin: live.origin,
+      liveCheckedAt: live.checkedAt,
+      freshCount: live.freshCount,
+    };
+  } catch {
+    return published;
+  }
+}
+
 export function draftsQueryOptions(meeting?: Meeting) {
   return queryOptions({
     queryKey: ["drafts", meeting?.slug ?? "none"],
-    queryFn: () => (meeting ? loadDrafts(meeting) : Promise.resolve({ index: null, stale: false })),
+    queryFn: () =>
+      meeting ? loadDraftsLive(meeting) : Promise.resolve({ index: null, stale: false }),
     enabled: Boolean(meeting),
-    staleTime: 60_000,
-    refetchInterval: 5 * 60_000,
+    // Draft folders churn constantly during a session: check often, and keep
+    // checking while the tab is in the background.
+    staleTime: 20_000,
+    refetchInterval: 60_000,
+    refetchIntervalInBackground: true,
+    refetchOnWindowFocus: true,
   });
 }
 

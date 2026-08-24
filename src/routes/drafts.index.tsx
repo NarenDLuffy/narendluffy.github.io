@@ -12,6 +12,7 @@ import {
   FollowButton,
 } from "@/components/DraftActivity";
 import { relativeTime, unmappedArtifacts } from "@/services/draftService";
+import { ORIGIN_LABEL } from "@/services/draftLiveSource";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/drafts/")({
@@ -78,6 +79,11 @@ function DraftsPage() {
             {index?.lastSuccessfulScanAt
               ? ` Last checked ${relativeTime(index.lastSuccessfulScanAt)}.`
               : ""}
+          </p>
+          <p className="text-[11px] text-muted-foreground">
+            Source:{" "}
+            {ORIGIN_LABEL[drafts.liveOrigin ?? "published"]}
+            {drafts.liveCheckedAt ? ` · checked ${relativeTime(drafts.liveCheckedAt)}` : ""}
           </p>
         </div>
         <div className="flex shrink-0 gap-1.5">

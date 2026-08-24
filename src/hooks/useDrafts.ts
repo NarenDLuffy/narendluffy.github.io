@@ -74,6 +74,9 @@ export function useDrafts(meeting?: Meeting) {
     unreadCount,
     prefs,
     stale: query.data?.stale ?? false,
+    liveOrigin: query.data?.liveOrigin,
+    liveCheckedAt: query.data?.liveCheckedAt,
+    refresh: query.refetch,
     isLoading: query.isLoading,
     isFollowing: (code: string) => follows.includes(code),
     toggleFollow: useCallback(
