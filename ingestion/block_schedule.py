@@ -47,7 +47,7 @@ BLOCK_RE = re.compile(r"(\d{1,2})[:.](\d{2})\s*(?:~|-|–|to)\s*(\d{1,2})[:.](\d
 BREAK_RE = re.compile(r"\b(break|lunch|coffee)\b", re.I)
 DURATION_RE = re.compile(r"\(\s*~?\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)\s*$", re.I)
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
-AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.\d{1,2})+(?:\.x)?)", re.I)
+AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
 STARTS_AT_RE = re.compile(r"\bat\s+(\d{1,2})[:.](\d{2})", re.I)
 
 # Short work-area labels chairs use as a group tag rather than a person.
