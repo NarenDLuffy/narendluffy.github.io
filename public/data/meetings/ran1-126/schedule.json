@@ -1,10 +1,45 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T01:23:59Z",
+  "generatedAt": "2026-08-24T17:28:36Z",
   "meetingId": "ran1-126",
   "sessions": [
     {
-      "sessionId": "ran1-126-87ebc01f",
+      "sessionId": "ran1-126-05958d81",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "Agenda items 1, 2, 3, 4, 5",
+      "topicKey": "07ab94f0",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Agenda items 1, 2, 3, 4, 5",
+          "minutes": 90,
+          "startTime": "08:30",
+          "endTime": "10:00"
+        }
+      ],
+      "group": "Agenda items 1, 2, 3, 4, 5",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f784ae7f",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
@@ -12,25 +47,25 @@
       "endTime": "10:00",
       "roomId": "ran1-126-room-f53f7e7b",
       "roomName": "Expo Foyer",
-      "topic": "RAN1#126 commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "4557c040",
+      "topic": "RAN1#126 commences at 09:00 on Monday",
+      "topicKey": "378b5927",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "RAN1#126 commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
+          "label": "RAN1#126 commences at 09:00 on Monday",
           "minutes": 60,
           "startTime": "09:00",
           "endTime": "10:00"
         }
       ],
-      "group": "RAN1#126 commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
+      "group": "RAN1#126 commences at 09:00 on Monday",
       "kind": "plenary",
       "status": "scheduled",
       "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -67,7 +102,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f63a1fcf",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.1",
+          "label": "10.5.1.1",
+          "minutes": 30,
+          "startTime": "10:00",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -93,7 +165,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -128,7 +200,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -164,7 +236,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -174,14 +246,14 @@
       ]
     },
     {
-      "sessionId": "ran1-126-aabb9df8",
+      "sessionId": "ran1-126-f2380ae1",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "11:00",
       "endTime": "11:40",
-      "roomId": "ran1-126-room-7bdbe616",
-      "roomName": "Breakout 3",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
       "topic": "MIMO",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
@@ -200,7 +272,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-787f6949",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.3",
+          "label": "10.5.1.3",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -237,7 +346,120 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-414a6375",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:40",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.3.x",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.x"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.3.x",
+          "label": "10.3.x",
+          "minutes": 80,
+          "startTime": "11:40",
+          "endTime": "13:00"
+        }
+      ],
+      "sessionLead": "Sorour",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6934c88a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.1",
+          "label": "10.5.1.1",
+          "minutes": 40,
+          "startTime": "11:40",
+          "endTime": "12:20"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1c17f44e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-eed01f30",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8.x"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.8.x",
+          "label": "Sensing",
+          "minutes": 60,
+          "startTime": "12:00",
+          "endTime": "13:00"
+        }
+      ],
+      "sessionLead": "Hiroki",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -274,7 +496,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c57d37ab",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.2",
+          "label": "10.5.1.2",
+          "minutes": 40,
+          "startTime": "12:20",
+          "endTime": "13:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -300,7 +559,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -335,7 +594,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -370,7 +629,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -405,7 +664,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -443,7 +702,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -481,7 +740,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-8999efdb",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "15:10",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.x",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.x"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.x",
+          "label": "10.4.x",
+          "minutes": 40,
+          "startTime": "14:30",
+          "endTime": "15:10"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -519,7 +815,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -556,7 +852,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -593,7 +889,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b990af73",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "15:10",
+      "endTime": "15:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.1",
+          "label": "10.6.1.1",
+          "minutes": 20,
+          "startTime": "15:10",
+          "endTime": "15:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -630,7 +963,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1e57815e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "15:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.2",
+          "label": "10.6.1.2",
+          "minutes": 20,
+          "startTime": "15:30",
+          "endTime": "15:50"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -668,7 +1038,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -678,7 +1048,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-b3803597",
+      "sessionId": "ran1-126-2a1c13bd",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
@@ -686,16 +1056,53 @@
       "endTime": "16:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "f8e05aee",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 NR",
+          "label": "MIMO",
           "minutes": 40,
           "startTime": "15:50",
           "endTime": "16:30"
+        }
+      ],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9e6584ba",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "15:50",
+      "endTime": "16:10",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.2",
+          "label": "10.6.2",
+          "minutes": 20,
+          "startTime": "15:50",
+          "endTime": "16:10"
         }
       ],
       "group": "6GR",
@@ -703,7 +1110,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -741,7 +1148,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -779,7 +1186,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3ecb5e3e",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "16:10",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.3",
+          "label": "10.6.3",
+          "minutes": 20,
+          "startTime": "16:10",
+          "endTime": "16:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -805,7 +1249,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -840,7 +1284,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -877,7 +1321,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -914,7 +1358,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -952,7 +1396,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -990,7 +1434,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-e1691dc1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.1",
+          "label": "10.5.3.1",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1028,7 +1509,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1047,7 +1528,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "10.5.2.1",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.2.1"
       ],
@@ -1060,13 +1541,13 @@
           "endTime": "18:10"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1103,7 +1584,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1140,7 +1621,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1177,7 +1658,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-6be4adbd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.2",
+          "label": "10.5.3.2",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1215,7 +1733,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1234,7 +1752,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
       ],
@@ -1247,13 +1765,13 @@
           "endTime": "18:50"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1290,7 +1808,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1328,7 +1846,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-81e829e8",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "18:30",
+      "endTime": "18:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.3",
+          "label": "10.5.3.3",
+          "minutes": 20,
+          "startTime": "18:30",
+          "endTime": "18:50"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1365,7 +1920,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1384,7 +1939,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN-NR",
-      "topicKey": "be174a58",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -1395,13 +1950,50 @@
           "endTime": "19:30"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-7f137d05",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "18:50",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.4",
+          "label": "10.5.3.4",
+          "minutes": 40,
+          "startTime": "18:50",
+          "endTime": "19:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1438,7 +2030,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1476,7 +2068,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1513,7 +2105,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1548,7 +2140,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1585,7 +2177,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1621,7 +2213,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1631,33 +2223,72 @@
       ]
     },
     {
-      "sessionId": "ran1-126-2fe17f7e",
+      "sessionId": "ran1-126-97d008ea",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "10:00",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "Hiroki",
-      "topicKey": "c94a6449",
-      "agendaItems": [],
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8.x"
+      ],
       "agendaBreakdown": [
         {
-          "code": null,
-          "label": "Hiroki",
-          "minutes": 120,
+          "code": "10.8.x",
+          "label": "Sensing",
+          "minutes": 90,
           "startTime": "08:30",
-          "endTime": "10:30"
+          "endTime": "10:00"
         }
       ],
       "sessionLead": "Hiroki",
-      "group": "Hiroki",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b7c10df3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.3",
+          "label": "10.5.1.3",
+          "minutes": 30,
+          "startTime": "08:30",
+          "endTime": "09:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1694,7 +2325,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-e5319656",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.2",
+          "label": "10.5.1.2",
+          "minutes": 30,
+          "startTime": "09:00",
+          "endTime": "09:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1731,7 +2399,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1768,7 +2436,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1806,7 +2474,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1816,23 +2484,25 @@
       ]
     },
     {
-      "sessionId": "ran1-126-a80cf026",
+      "sessionId": "ran1-126-6a483bb8",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
-      "startTime": "09:50",
+      "startTime": "09:30",
       "endTime": "10:30",
-      "roomId": "ran1-126-room-733c1e66",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "(60)",
       "topicKey": "f8e05aee",
-      "agendaItems": [],
+      "agendaItems": [
+        "10.5.1.1"
+      ],
       "agendaBreakdown": [
         {
-          "code": null,
-          "label": "R20 NR",
-          "minutes": 40,
-          "startTime": "09:50",
+          "code": "10.5.1.1",
+          "label": "(60)",
+          "minutes": 60,
+          "startTime": "09:30",
           "endTime": "10:30"
         }
       ],
@@ -1841,7 +2511,42 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d3489142",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "09:50",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-733c1e66",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 40,
+          "startTime": "09:50",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1879,7 +2584,45 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f2eefb35",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "Waveform",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.2.1",
+          "label": "Waveform",
+          "minutes": 30,
+          "startTime": "10:00",
+          "endTime": "10:30"
+        }
+      ],
+      "sessionLead": "Hiroki",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1905,7 +2648,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -1940,7 +2683,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -1950,7 +2693,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-e27f2ecf",
+      "sessionId": "ran1-126-43855d03",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
@@ -1958,24 +2701,24 @@
       "endTime": "12:20",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20 (80)AI/ML",
-      "topicKey": "fd5fb122",
+      "topic": "AI/ML",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 (80)AI/ML",
+          "label": "AI/ML",
           "minutes": 80,
           "startTime": "11:00",
           "endTime": "12:20"
         }
       ],
-      "group": "R20 (80)AI/ML",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2012,7 +2755,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2050,7 +2793,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2088,7 +2831,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-cdfd0f8a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.5",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.5",
+          "label": "10.5.5",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2126,7 +2906,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2163,7 +2943,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2200,7 +2980,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-eb5b1cf9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.2",
+          "label": "10.4.2",
+          "minutes": 40,
+          "startTime": "11:40",
+          "endTime": "12:20"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2238,7 +3055,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2276,7 +3093,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2314,7 +3131,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2351,7 +3168,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2370,7 +3187,7 @@
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
       "topic": "AI 6/",
-      "topicKey": "2784a7d6",
+      "topicKey": "2bfc3eac",
       "agendaItems": [
         "8.1"
       ],
@@ -2383,12 +3200,49 @@
           "endTime": "13:00"
         }
       ],
-      "group": "AI 6/8.1",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-2ee416fd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.1",
+          "label": "10.4.1",
+          "minutes": 40,
+          "startTime": "12:20",
+          "endTime": "13:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2424,7 +3278,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2450,7 +3304,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -2485,7 +3339,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2522,7 +3376,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2559,7 +3413,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2595,7 +3449,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2633,7 +3487,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0d6dc38a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:05",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.1",
+          "label": "10.6.1.1",
+          "minutes": 35,
+          "startTime": "14:30",
+          "endTime": "15:05"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2670,7 +3561,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2680,70 +3571,72 @@
       ]
     },
     {
-      "sessionId": "ran1-126-9c33b7b1",
+      "sessionId": "ran1-126-045fcbc8",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "15:00",
-      "endTime": "15:40",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "A-IoT Phase2",
-          "minutes": 40,
-          "startTime": "15:00",
-          "endTime": "15:40"
-        }
-      ],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-0ab0b7eb",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "15:00",
-      "endTime": "15:45",
+      "endTime": "16:30",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.3.1",
+      "topic": "10.3.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.1"
+        "10.3.x"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.3.1",
-          "label": "10.3.1",
-          "minutes": 45,
+          "code": "10.3.x",
+          "label": "10.3.x",
+          "minutes": 90,
           "startTime": "15:00",
-          "endTime": "15:45"
+          "endTime": "16:30"
         }
       ],
-      "sessionLead": "Sorour",
+      "sessionLead": "Sorouri",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ea5ba205",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "15:05",
+      "endTime": "15:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.2",
+          "label": "10.6.1.2",
+          "minutes": 35,
+          "startTime": "15:05",
+          "endTime": "15:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2781,7 +3674,42 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-152b9f11",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "15:20",
+      "endTime": "16:00",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "A-IoT Phase2",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "A-IoT Phase2",
+          "minutes": 40,
+          "startTime": "15:20",
+          "endTime": "16:00"
+        }
+      ],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2819,7 +3747,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d00c0b81",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "15:40",
+      "endTime": "16:05",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.2",
+          "label": "10.6.2",
+          "minutes": 25,
+          "startTime": "15:40",
+          "endTime": "16:05"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2856,45 +3821,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-d9c2d1df",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "15:45",
-      "endTime": "16:30",
-      "roomId": "ran1-126-room-eed01f30",
-      "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.3.2",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.3.2",
-          "label": "10.3.2",
-          "minutes": 45,
-          "startTime": "15:45",
-          "endTime": "16:30"
-        }
-      ],
-      "sessionLead": "Sorour",
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2932,7 +3859,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-34c7519b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "16:05",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.3",
+          "label": "10.6.3",
+          "minutes": 25,
+          "startTime": "16:05",
+          "endTime": "16:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -2958,7 +3922,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -2993,7 +3957,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3030,7 +3994,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3065,7 +4029,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3103,7 +4067,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3141,7 +4105,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-9a0261fd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.1",
+          "label": "10.5.3.1",
+          "minutes": 60,
+          "startTime": "17:00",
+          "endTime": "18:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3179,7 +4180,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3217,7 +4218,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3254,7 +4255,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3291,7 +4292,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3310,7 +4311,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "10.5.2.2",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.2.2"
       ],
@@ -3323,13 +4324,50 @@
           "endTime": "18:30"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0b237cfd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.2",
+          "label": "10.5.3.2",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3366,7 +4404,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3385,7 +4423,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
       ],
@@ -3398,13 +4436,50 @@
           "endTime": "19:00"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0dbd36bc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "18:30",
+      "endTime": "18:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.3",
+          "label": "10.5.3.3",
+          "minutes": 20,
+          "startTime": "18:30",
+          "endTime": "18:50"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3442,7 +4517,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3479,7 +4554,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d018fca0",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "18:50",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.4",
+          "label": "10.5.3.4",
+          "minutes": 40,
+          "startTime": "18:50",
+          "endTime": "19:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3516,7 +4628,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3535,7 +4647,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN-NR",
-      "topicKey": "be174a58",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -3546,13 +4658,13 @@
           "endTime": "19:30"
         }
       ],
-      "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "sessionLead": "Sorouri",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3590,7 +4702,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3627,7 +4739,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3662,7 +4774,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3699,7 +4811,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3737,7 +4849,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3775,7 +4887,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-da4b895b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.1",
+          "label": "10.5.1.1",
+          "minutes": 60,
+          "startTime": "08:30",
+          "endTime": "09:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3813,7 +4962,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3832,7 +4981,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "MIMO",
-      "topicKey": "ed9b8ed5",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -3844,12 +4993,12 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "R20 R20",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3886,7 +5035,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3923,7 +5072,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3942,7 +5091,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "AI/ML",
-      "topicKey": "ed9b8ed5",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -3954,12 +5103,12 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "R20 R20",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -3969,24 +5118,26 @@
       ]
     },
     {
-      "sessionId": "ran1-126-0619300b",
+      "sessionId": "ran1-126-6d7f4a98",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-room-733c1e66",
-      "roomName": "Praetorium",
-      "topic": "R20 NR",
+      "startTime": "09:30",
+      "endTime": "10:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
-      "agendaItems": [],
+      "agendaItems": [
+        "10.5.1.3"
+      ],
       "agendaBreakdown": [
         {
-          "code": null,
-          "label": "R20 NR",
-          "minutes": 40,
-          "startTime": "09:50",
-          "endTime": "10:30"
+          "code": "10.5.1.3",
+          "label": "10.5.1.3",
+          "minutes": 30,
+          "startTime": "09:30",
+          "endTime": "10:00"
         }
       ],
       "group": "6GR",
@@ -3994,7 +5145,42 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d819bd0c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "09:50",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-733c1e66",
+      "roomName": "Praetorium",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "MIMO",
+          "minutes": 40,
+          "startTime": "09:50",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4031,7 +5217,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4069,7 +5255,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-27d0608b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.2",
+          "label": "10.5.1.2",
+          "minutes": 30,
+          "startTime": "10:00",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4095,7 +5318,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -4130,7 +5353,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4140,7 +5363,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-a72add3b",
+      "sessionId": "ran1-126-ae936257",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
@@ -4148,24 +5371,24 @@
       "endTime": "12:20",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20 (80)AI/ML",
-      "topicKey": "fd5fb122",
+      "topic": "AI/ML",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 (80)AI/ML",
+          "label": "AI/ML",
           "minutes": 80,
           "startTime": "11:00",
           "endTime": "12:20"
         }
       ],
-      "group": "R20 (80)AI/ML",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4202,7 +5425,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4240,7 +5463,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4278,7 +5501,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a9bf14e9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.5",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.5",
+          "label": "10.5.5",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4315,7 +5575,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-f454d908",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.1",
+          "label": "10.4.1",
+          "minutes": 40,
+          "startTime": "11:40",
+          "endTime": "12:20"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4353,7 +5650,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4390,7 +5687,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4409,7 +5706,7 @@
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
       "topic": "AI 6/",
-      "topicKey": "2784a7d6",
+      "topicKey": "2bfc3eac",
       "agendaItems": [
         "8.1"
       ],
@@ -4422,12 +5719,12 @@
           "endTime": "13:00"
         }
       ],
-      "group": "AI 6/8.1",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4464,7 +5761,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-fd0920bd",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.2",
+          "label": "10.4.2",
+          "minutes": 40,
+          "startTime": "12:20",
+          "endTime": "13:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4502,7 +5836,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4538,7 +5872,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4564,7 +5898,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -4599,7 +5933,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4636,7 +5970,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4673,7 +6007,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4683,26 +6017,26 @@
       ]
     },
     {
-      "sessionId": "ran1-126-b2876c1c",
+      "sessionId": "ran1-126-93514538",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "15:15",
+      "endTime": "16:00",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.3.1",
+      "topic": "10.3.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.1"
+        "10.3.x"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.3.1",
-          "label": "10.3.1",
-          "minutes": 45,
+          "code": "10.3.x",
+          "label": "10.3.x",
+          "minutes": 90,
           "startTime": "14:30",
-          "endTime": "15:15"
+          "endTime": "16:00"
         }
       ],
       "sessionLead": "Sorour",
@@ -4711,7 +6045,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4747,7 +6081,81 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5dc78e39",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "15:05",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.1",
+          "label": "10.6.1.1",
+          "minutes": 35,
+          "startTime": "14:30",
+          "endTime": "15:05"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-bd8df96d",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "15:05",
+      "endTime": "15:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.2",
+          "label": "10.6.1.2",
+          "minutes": 35,
+          "startTime": "15:05",
+          "endTime": "15:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4784,7 +6192,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4794,35 +6202,34 @@
       ]
     },
     {
-      "sessionId": "ran1-126-781e8d64",
+      "sessionId": "ran1-126-6af569c6",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
-      "startTime": "15:15",
-      "endTime": "16:00",
-      "roomId": "ran1-126-room-eed01f30",
-      "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.3.2",
+      "startTime": "15:40",
+      "endTime": "16:05",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.2"
+        "10.6.2"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.3.2",
-          "label": "10.3.2",
-          "minutes": 45,
-          "startTime": "15:15",
-          "endTime": "16:00"
+          "code": "10.6.2",
+          "label": "10.6.2",
+          "minutes": 25,
+          "startTime": "15:40",
+          "endTime": "16:05"
         }
       ],
-      "sessionLead": "Sorour",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4859,7 +6266,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4897,7 +6304,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0276f979",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "16:05",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.3",
+          "label": "10.6.3",
+          "minutes": 25,
+          "startTime": "16:05",
+          "endTime": "16:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4923,7 +6367,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -4958,7 +6402,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -4995,7 +6439,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5030,7 +6474,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5068,7 +6512,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5087,7 +6531,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "10.5.2.3",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.2.3"
       ],
@@ -5101,12 +6545,49 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-d237b58a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "17:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.4",
+          "label": "10.5.3.4",
+          "minutes": 40,
+          "startTime": "17:00",
+          "endTime": "17:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5144,7 +6625,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5163,7 +6644,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN",
-      "topicKey": "be174a58",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
       ],
@@ -5177,12 +6658,12 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5219,7 +6700,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0e71cf80",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:40",
+      "endTime": "18:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.1",
+          "label": "10.5.3.1",
+          "minutes": 60,
+          "startTime": "17:40",
+          "endTime": "18:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5257,7 +6775,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5294,7 +6812,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5313,7 +6831,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "NTN-NR",
-      "topicKey": "be174a58",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -5325,12 +6843,12 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "6GR R20",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5368,7 +6886,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5406,7 +6924,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5443,7 +6961,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-ed87b31a",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "18:40",
+      "endTime": "19:10",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.2",
+          "label": "10.5.3.2",
+          "minutes": 30,
+          "startTime": "18:40",
+          "endTime": "19:10"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5480,7 +7035,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5518,7 +7073,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5555,7 +7110,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-56cdcef9",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "19:10",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.3",
+          "label": "10.5.3.3",
+          "minutes": 20,
+          "startTime": "19:10",
+          "endTime": "19:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5592,7 +7184,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5627,7 +7219,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5637,26 +7229,24 @@
       ]
     },
     {
-      "sessionId": "ran1-126-7dfc5996",
+      "sessionId": "ran1-126-f8c1d21c",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "08:30",
-      "endTime": "09:50",
+      "endTime": "09:10",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "AI 7/",
+      "topic": "6GR",
       "topicKey": "7e6989e7",
-      "agendaItems": [
-        "8.2"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [
         {
-          "code": "8.2",
-          "label": "AI 7/",
-          "minutes": 80,
+          "code": null,
+          "label": "6GR",
+          "minutes": 40,
           "startTime": "08:30",
-          "endTime": "09:50"
+          "endTime": "09:10"
         }
       ],
       "group": "AI 7/8.2",
@@ -5664,7 +7254,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5702,7 +7292,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5738,7 +7328,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-219fa0a2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.3",
+          "label": "10.5.1.3",
+          "minutes": 30,
+          "startTime": "08:30",
+          "endTime": "09:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5776,7 +7403,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5813,7 +7440,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b54318db",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.1",
+          "label": "10.5.1.1",
+          "minutes": 60,
+          "startTime": "09:00",
+          "endTime": "10:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5848,7 +7512,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c56eef3b",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "09:10",
+      "endTime": "09:50",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "Waveform",
+      "topicKey": "7e6989e7",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.2.1",
+          "label": "Waveform",
+          "minutes": 40,
+          "startTime": "09:10",
+          "endTime": "09:50"
+        }
+      ],
+      "group": "AI 7/8.2",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5886,7 +7587,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5923,44 +7624,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-1b3c52ea",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.2.1",
-          "label": "Waveform",
-          "minutes": 40,
-          "startTime": "09:50",
-          "endTime": "10:30"
-        }
-      ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -5998,7 +7662,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6035,7 +7699,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-b30a64f0",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.2",
+          "label": "10.5.1.2",
+          "minutes": 30,
+          "startTime": "10:00",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6061,7 +7762,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -6096,7 +7797,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6106,44 +7807,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-1ea9f9f4",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-room-733c1e66",
-      "roomName": "Praetorium",
-      "topic": "AI 6/",
-      "topicKey": "2784a7d6",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "8.1",
-          "label": "AI 6/",
-          "minutes": 40,
-          "startTime": "11:00",
-          "endTime": "11:40"
-        }
-      ],
-      "group": "AI 6/8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-126-afd32f99",
+      "sessionId": "ran1-126-4020f49a",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
@@ -6151,24 +7815,24 @@
       "endTime": "12:20",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20 NR",
-      "topicKey": "78f5c068",
+      "topic": "R20",
+      "topicKey": "2784a7d6",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 NR",
+          "label": "R20",
           "minutes": 80,
           "startTime": "11:00",
           "endTime": "12:20"
         }
       ],
-      "group": "AI 6/8.1 AI 8.1 MIMO AI 8.1 NTN AI 6",
+      "group": "AI 6/8.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6203,7 +7867,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6241,7 +7905,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6279,7 +7943,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-658d42bc",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.5",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.5",
+          "label": "10.5.5",
+          "minutes": 40,
+          "startTime": "11:00",
+          "endTime": "11:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6317,7 +8018,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6355,7 +8056,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6392,7 +8093,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6402,32 +8103,34 @@
       ]
     },
     {
-      "sessionId": "ran1-126-1e721eef",
+      "sessionId": "ran1-126-cb3075c3",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "11:40",
-      "endTime": "13:00",
-      "roomId": "ran1-126-room-733c1e66",
-      "roomName": "Praetorium",
-      "topic": "R20 (80)AI/ML",
-      "topicKey": "fd5fb122",
-      "agendaItems": [],
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.1"
+      ],
       "agendaBreakdown": [
         {
-          "code": null,
-          "label": "R20 (80)AI/ML",
-          "minutes": 80,
+          "code": "10.4.1",
+          "label": "10.4.1",
+          "minutes": 40,
           "startTime": "11:40",
-          "endTime": "13:00"
+          "endTime": "12:20"
         }
       ],
-      "group": "R20 (80)AI/ML",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6465,7 +8168,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6502,7 +8205,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6512,7 +8215,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-f9888671",
+      "sessionId": "ran1-126-cbdce7ef",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
@@ -6520,26 +8223,61 @@
       "endTime": "13:00",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "AI  AIML",
-      "topicKey": "78f5c068",
-      "agendaItems": [
-        "9.1"
-      ],
+      "topic": "AI/ML",
+      "topicKey": "9296eb35",
+      "agendaItems": [],
       "agendaBreakdown": [
         {
-          "code": "9.1",
-          "label": "AI  AIML",
+          "code": null,
+          "label": "AI/ML",
           "minutes": 40,
           "startTime": "12:20",
           "endTime": "13:00"
         }
       ],
-      "group": "AI 6/8.1 AI 8.1 MIMO AI 8.1 NTN AI 6",
+      "group": "AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3813e997",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.2",
+          "label": "10.4.2",
+          "minutes": 40,
+          "startTime": "12:20",
+          "endTime": "13:00"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6565,7 +8303,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -6600,7 +8338,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6637,7 +8375,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6674,7 +8412,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6712,7 +8450,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6722,26 +8460,26 @@
       ]
     },
     {
-      "sessionId": "ran1-126-752d1aa2",
+      "sessionId": "ran1-126-db4549d4",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "15:15",
+      "endTime": "16:00",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "10.3.1",
+      "topic": "10.3.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.1"
+        "10.3.x"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.3.1",
-          "label": "10.3.1",
-          "minutes": 45,
+          "code": "10.3.x",
+          "label": "10.3.x",
+          "minutes": 90,
           "startTime": "14:30",
-          "endTime": "15:15"
+          "endTime": "16:00"
         }
       ],
       "sessionLead": "Sorour",
@@ -6750,7 +8488,81 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a21b00c7",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "14:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.1",
+          "label": "10.6.1.1",
+          "minutes": 20,
+          "startTime": "14:30",
+          "endTime": "14:50"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5b4e00ae",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "14:50",
+      "endTime": "15:10",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.1.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.1.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1.2",
+          "label": "10.6.1.2",
+          "minutes": 20,
+          "startTime": "14:50",
+          "endTime": "15:10"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6788,7 +8600,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-bf8ecf0f",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:10",
+      "endTime": "15:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.6.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.2",
+          "label": "10.6.2",
+          "minutes": 20,
+          "startTime": "15:10",
+          "endTime": "15:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6825,7 +8674,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6835,35 +8684,34 @@
       ]
     },
     {
-      "sessionId": "ran1-126-20a1a7ad",
+      "sessionId": "ran1-126-44f0a6d6",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
-      "startTime": "15:15",
-      "endTime": "16:00",
-      "roomId": "ran1-126-room-5f8318c0",
-      "roomName": "0.4 Brussels",
-      "topic": "10.3.2",
+      "startTime": "15:30",
+      "endTime": "15:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.6.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.2"
+        "10.6.3"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.3.2",
-          "label": "10.3.2",
-          "minutes": 45,
-          "startTime": "15:15",
-          "endTime": "16:00"
+          "code": "10.6.3",
+          "label": "10.6.3",
+          "minutes": 20,
+          "startTime": "15:30",
+          "endTime": "15:50"
         }
       ],
-      "sessionLead": "Sorour",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6900,7 +8748,80 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-3a24e263",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-eed01f30",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "Hiroki",
+      "topicKey": "f8e05aee",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Hiroki",
+          "minutes": 40,
+          "startTime": "15:50",
+          "endTime": "16:30"
+        }
+      ],
+      "sessionLead": "Xiaodong",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-5856041c",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.1",
+          "label": "10.5.3.1",
+          "minutes": 40,
+          "startTime": "15:50",
+          "endTime": "16:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6937,7 +8858,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6973,7 +8894,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -6999,7 +8920,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -7034,7 +8955,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7071,7 +8992,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7108,7 +9029,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7144,7 +9065,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7180,7 +9101,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-1fa36021",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "17:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.2",
+          "label": "10.5.3.2",
+          "minutes": 30,
+          "startTime": "17:00",
+          "endTime": "17:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7217,7 +9175,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-a5720323",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:30",
+      "endTime": "17:50",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.3",
+          "label": "10.5.3.3",
+          "minutes": 20,
+          "startTime": "17:30",
+          "endTime": "17:50"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7255,7 +9250,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7292,7 +9287,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7329,7 +9324,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0729cc72",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "17:50",
+      "endTime": "18:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.3.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.3.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.3.4",
+          "label": "10.5.3.4",
+          "minutes": 40,
+          "startTime": "17:50",
+          "endTime": "18:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7366,7 +9398,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7376,7 +9408,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-28565d7d",
+      "sessionId": "ran1-126-a7bf25fd",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7384,24 +9416,24 @@
       "endTime": "09:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20 (60)AI/ML",
-      "topicKey": "8528b9a1",
+      "topic": "AI/ML",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 (60)AI/ML",
+          "label": "AI/ML",
           "minutes": 60,
           "startTime": "08:30",
           "endTime": "09:30"
         }
       ],
-      "group": "R20 (60)AI/ML",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7436,7 +9468,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7474,7 +9506,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7493,7 +9525,7 @@
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "10.3.x",
-      "topicKey": "1d9c8ac0",
+      "topicKey": "b1d57811",
       "agendaItems": [
         "10.3.x"
       ],
@@ -7507,12 +9539,49 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "TBD",
+      "group": "10",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-0e597641",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "09:40",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.5.1.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1.1",
+          "label": "10.5.1.1",
+          "minutes": 70,
+          "startTime": "08:30",
+          "endTime": "09:40"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7550,7 +9619,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7560,7 +9629,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-5701b2b8",
+      "sessionId": "ran1-126-ce8ddbe3",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7568,25 +9637,25 @@
       "endTime": "10:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "Sweep 6GR",
-      "topicKey": "de772bf8",
+      "topic": "Sweep",
+      "topicKey": "ef4d07e4",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Sweep 6GR",
+          "label": "Sweep",
           "minutes": 60,
           "startTime": "09:30",
           "endTime": "10:30"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "Sweep",
       "kind": "session",
       "status": "scheduled",
-      "note": "6GR (TBD)",
+      "note": "6GR",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7622,7 +9691,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7659,7 +9728,44 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-c678b984",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "09:40",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "10.4.x",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4.x"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.x",
+          "label": "10.4.x",
+          "minutes": 50,
+          "startTime": "09:40",
+          "endTime": "10:30"
+        }
+      ],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7685,7 +9791,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -7693,7 +9799,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-07e5f221",
+      "sessionId": "ran1-126-0ad37525",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7701,25 +9807,25 @@
       "endTime": "13:00",
       "roomId": "ran1-126-room-f53f7e7b",
       "roomName": "Expo Foyer",
-      "topic": "Sweep 6GR",
-      "topicKey": "de772bf8",
+      "topic": "Sweep",
+      "topicKey": "ef4d07e4",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Sweep 6GR",
+          "label": "Sweep",
           "minutes": 120,
           "startTime": "11:00",
           "endTime": "13:00"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "Sweep",
       "kind": "session",
       "status": "scheduled",
       "note": "6GR",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7729,7 +9835,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-8ef8e593",
+      "sessionId": "ran1-126-36faf7d4",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7737,25 +9843,25 @@
       "endTime": "13:00",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "Sweep 6GR",
-      "topicKey": "de772bf8",
+      "topic": "Sweep",
+      "topicKey": "ef4d07e4",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Sweep 6GR",
+          "label": "Sweep",
           "minutes": 120,
           "startTime": "11:00",
           "endTime": "13:00"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "Sweep",
       "kind": "session",
       "status": "scheduled",
       "note": "6GR",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7765,7 +9871,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-4e4532b5",
+      "sessionId": "ran1-126-89483533",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7773,25 +9879,61 @@
       "endTime": "13:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Sweep 6GR",
-      "topicKey": "de772bf8",
+      "topic": "Sweep",
+      "topicKey": "ef4d07e4",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Sweep 6GR",
+          "label": "Sweep",
           "minutes": 120,
           "startTime": "11:00",
           "endTime": "13:00"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "Sweep",
       "kind": "session",
       "status": "scheduled",
       "note": "6GR",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-126-02bb2c40",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-0bfb14d8",
+      "roomName": "Detailed Schedule for RAN1 Main",
+      "topic": "Sweep",
+      "topicKey": "ef4d07e4",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Sweep",
+          "minutes": 120,
+          "startTime": "11:00",
+          "endTime": "13:00"
+        }
+      ],
+      "group": "Sweep",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7817,7 +9959,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -7825,7 +9967,7 @@
       ]
     },
     {
-      "sessionId": "ran1-126-c924c930",
+      "sessionId": "ran1-126-aa99262a",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -7833,25 +9975,25 @@
       "endTime": "16:30",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "To be assigned by Sorour To be assigned by Hiroki",
-      "topicKey": "8f79e259",
+      "topic": "To be assigned by Sorour",
+      "topicKey": "5d7db03e",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "To be assigned by Sorour To be assigned by Hiroki",
+          "label": "To be assigned by Sorour",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "To be assigned by Sorour To be assigned by Hiroki",
+      "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
       "note": "To be assigned by Hiroki",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "time",
             "topic",
@@ -7877,7 +10019,7 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": [
             "break"
           ]
@@ -7888,7 +10030,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T01:23:59Z",
-    "lastAttemptAt": "2026-08-22T01:23:59Z"
+    "lastSuccessfulAt": "2026-08-24T17:28:36Z",
+    "lastAttemptAt": "2026-08-24T17:28:36Z"
   }
 }

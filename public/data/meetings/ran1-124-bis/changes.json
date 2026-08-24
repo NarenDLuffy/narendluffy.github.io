@@ -1,1 +1,446 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-124-bis-b3f3fce0-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_added",
+    "title": "RAN1#124b commences at 09:00 on Monday added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-b3f3fce0",
+    "to": "MDC Maurice de Cesare 09:00-10:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-f58620e2-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "NTN-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-f58620e2",
+    "to": "Cettina De Cesare 3",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Breakout 3"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-41c61a89-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-41c61a89",
+    "to": "19:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "17:20"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-41c61a89-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "end_time_changed",
+    "title": "Waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis-41c61a89",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "18:10"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-261afb6e-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-261afb6e",
+    "to": "Cettina De Cesare 2 17:00-19:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-6019e4a7-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.4.x moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis-6019e4a7",
+    "to": "Cettina De Cesare 3",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Cettina De Cesare 2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-6019e4a7-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4.x start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis-6019e4a7",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "18:10"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-6019e4a7-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.4.x end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis-6019e4a7",
+    "to": "18:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "19:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-cf98885f-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_added",
+    "title": "R20 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-cf98885f",
+    "to": "Cettina De Cesare 2 08:30-09:15",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-cf4dc282-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.6.x moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-124-bis-cf4dc282",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-b0b4b775-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.4 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.4"
+    ],
+    "sessionId": "ran1-124-bis-b0b4b775",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-4b94796c-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.1.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-124-bis-4b94796c",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-57a47d47-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.5 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.5"
+    ],
+    "sessionId": "ran1-124-bis-57a47d47",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-17bd59bf-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.3.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.1"
+    ],
+    "sessionId": "ran1-124-bis-17bd59bf",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-8ef9f586-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.3.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.2"
+    ],
+    "sessionId": "ran1-124-bis-8ef9f586",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1a6663fd-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.1"
+    ],
+    "sessionId": "ran1-124-bis-1a6663fd",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-1da7292a-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.2.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-124-bis-1da7292a",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-3d9fd6ab-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.2.4 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.4"
+    ],
+    "sessionId": "ran1-124-bis-3d9fd6ab",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis-dd6d64ea-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "room_changed",
+    "title": "10.5.3.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.3.3"
+    ],
+    "sessionId": "ran1-124-bis-dd6d64ea",
+    "to": "b Detailed Schedule for RAN1 Main",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "b Detailed Schedule for RAN1 Main 1"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-3272f9cf-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-3272f9cf",
+    "to": "Cettina De Cesare 2 08:30-09:15",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis-f2b44310-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "start_time_changed",
+    "title": "NTN start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-f2b44310",
+    "to": "18:00",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis-f2b44310-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "end_time_changed",
+    "title": "NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis-f2b44310",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "19:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis-fcaf6a49-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_added",
+    "title": "To be assigned by Sorour added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-fcaf6a49",
+    "to": "Cettina De Cesare 1 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-bd33b140-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_removed",
+    "title": "RAN1#124b commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-bd33b140",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "MDC Maurice de Cesare"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-8485f99b-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_removed",
+    "title": "R20 TEI removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-8485f99b",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Cettina De Cesare 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-283a0fb4-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_removed",
+    "title": "AI 8 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-283a0fb4",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Cettina De Cesare 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-196f903c-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_removed",
+    "title": "AI 8 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-196f903c",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Cettina De Cesare 2"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis-d2947ab3-2026-08-24T17:28:38+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "type": "session_removed",
+    "title": "To be assigned by Sorour To be assigned by Hiroki removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis-d2947ab3",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "Cettina De Cesare 1"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T01:23:41Z",
+  "generatedAt": "2026-08-24T17:28:07Z",
   "meetingId": "ran1-120-bis",
   "sessions": [
     {
@@ -62,6 +62,7 @@
       "group": "RAN1#120 commences at 09:00 on Monday",
       "kind": "plenary",
       "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
         {
           "sourceId": "ran1-120-bis-a92ad485",
@@ -110,7 +111,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-3f08b351",
+      "sessionId": "ran1-120-bis-a03cdfcb",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-07",
       "day": "Monday",
@@ -118,19 +119,20 @@
       "endTime": "10:30",
       "roomId": "ran1-120-bis-room-1649b589",
       "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "07ab94f0",
+      "topic": "Mobility",
+      "topicKey": "1e03a399",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Agenda items 1, 2, 3, 4, 5",
+          "label": "Mobility",
           "minutes": 30,
           "startTime": "10:00",
           "endTime": "10:30"
         }
       ],
-      "group": "Agenda items 1, 2, 3, 4, 5",
+      "sessionLead": "Mobility",
+      "group": "Mobility",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -204,7 +206,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-6745ccaf",
+      "sessionId": "ran1-120-bis-0900e101",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-07",
       "day": "Monday",
@@ -212,8 +214,8 @@
       "endTime": "13:00",
       "roomId": "ran1-120-bis-room-5e5e1a42",
       "roomName": "bis Detailed Schedule for RAN1 Main",
-      "topic": "MIMO (120). , , ,  MIMO might start before morning coffee break depending on progress on AI 1~5 and Mobility Enh",
-      "topicKey": "9d178156",
+      "topic": "MIMO (120). , , ,",
+      "topicKey": "b8e92292",
       "agendaItems": [
         "9.2.1",
         "9.2.2",
@@ -223,13 +225,13 @@
       "agendaBreakdown": [
         {
           "code": "9.2.1",
-          "label": "MIMO (120). , , ,  MIMO might start before morning coffee break depending on progress on AI 1~5 and Mobility Enh",
+          "label": "MIMO (120). , , ,",
           "minutes": 120,
           "startTime": "11:00",
           "endTime": "13:00"
         }
       ],
-      "group": "MIMO (120). 9.2.1, 9.2.2, 9.2.3, 9.2.4 MIMO might start before morning coffee break depending on progress on AI 1~5 and Mobility Enh",
+      "group": "MIMO (120). 9.2.1, 9.2.2, 9.2.3, 9.2.4",
       "kind": "session",
       "status": "scheduled",
       "note": "MIMO might start before morning coffee break depending on progress on AI 1~5 and Mobility Enh.",
@@ -760,12 +762,12 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-6a4e8ef2",
+      "sessionId": "ran1-120-bis-004252e7",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-07",
       "day": "Monday",
-      "startTime": "18:15",
-      "endTime": "19:00",
+      "startTime": "18:00",
+      "endTime": "18:45",
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
       "topic": "9.12.1",
@@ -778,8 +780,8 @@
           "code": "9.12.1",
           "label": "9.12.1",
           "minutes": 45,
-          "startTime": "18:15",
-          "endTime": "19:00"
+          "startTime": "18:00",
+          "endTime": "18:45"
         }
       ],
       "group": "R19 MCE",
@@ -797,11 +799,11 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-ca6092b6",
+      "sessionId": "ran1-120-bis-234a3ea1",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-07",
       "day": "Monday",
-      "startTime": "19:00",
+      "startTime": "18:45",
       "endTime": "19:30",
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
@@ -814,8 +816,8 @@
         {
           "code": "9.12.2",
           "label": "9.12.2",
-          "minutes": 30,
-          "startTime": "19:00",
+          "minutes": 45,
+          "startTime": "18:45",
           "endTime": "19:30"
         }
       ],
@@ -1012,7 +1014,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-0e286f29",
+      "sessionId": "ran1-120-bis-4d89c1b9",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
       "day": "Tuesday",
@@ -1020,24 +1022,21 @@
       "endTime": "10:30",
       "roomId": "ran1-120-bis-room-5e5e1a42",
       "roomName": "bis Detailed Schedule for RAN1 Main",
-      "topic": "MIMO (60).  NES (60). , ,",
-      "topicKey": "4ceae126",
+      "topic": "MIMO (60)",
+      "topicKey": "307b2a7e",
       "agendaItems": [
-        "9.2.1",
-        "9.5.1",
-        "9.5.2",
-        "9.5.3"
+        "9.2.1"
       ],
       "agendaBreakdown": [
         {
           "code": "9.2.1",
-          "label": "MIMO (60).  NES (60). , ,",
+          "label": "MIMO (60)",
           "minutes": 120,
           "startTime": "08:30",
           "endTime": "10:30"
         }
       ],
-      "group": "MIMO (60). 9.2.1 NES (60). 9.5.1, 9.5.2, 9.5.3",
+      "group": "MIMO (60). 9.2.1",
       "kind": "session",
       "status": "scheduled",
       "note": "NES (60). 9.5.1, 9.5.2, 9.5.3",
@@ -1494,7 +1493,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-e5963cbc",
+      "sessionId": "ran1-120-bis-5a01a7b3",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
       "day": "Tuesday",
@@ -1502,19 +1501,19 @@
       "endTime": "16:30",
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
-      "topic": "NTN DL, (e)RedCap",
-      "topicKey": "720828a7",
+      "topic": "NTN",
+      "topicKey": "cdd20435",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "NTN DL, (e)RedCap",
+          "label": "NTN",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "NTN DL, (e)RedCap",
+      "group": "NTN",
       "kind": "session",
       "status": "scheduled",
       "note": "DL, (e)RedCap",
@@ -1630,7 +1629,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-5901f9a2",
+      "sessionId": "ran1-120-bis-55a9fbe7",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
       "day": "Tuesday",
@@ -1638,20 +1637,20 @@
       "endTime": "19:15",
       "roomId": "ran1-120-bis-room-1649b589",
       "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Close by 7:15 pm",
-      "topicKey": "96f359d9",
+      "topic": "LP-WUS",
+      "topicKey": "260c1d30",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "Close by 7:15 pm",
+          "label": "LP-WUS",
           "minutes": 135,
           "startTime": "17:00",
           "endTime": "19:15"
         }
       ],
       "sessionLead": "LP-WUS",
-      "group": "Close by 7:15 pm",
+      "group": "LP-WUS",
       "kind": "session",
       "status": "scheduled",
       "note": "Close by 7:15 pm",
@@ -1676,7 +1675,7 @@
       "roomId": "ran1-120-bis-room-d6072e59",
       "roomName": "RAN1 Adhoc#1 Ballroom B",
       "topic": "UE features",
-      "topicKey": "b7a84f78",
+      "topicKey": "9296eb35",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -1687,7 +1686,7 @@
           "endTime": "17:30"
         }
       ],
-      "group": "AI/ML Close by 7:15 pm",
+      "group": "AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1711,7 +1710,7 @@
       "roomId": "ran1-120-bis-room-9675b618",
       "roomName": "RAN1 Adhoc#2 Ballroom A",
       "topic": "Broadcast",
-      "topicKey": "4bbd2855",
+      "topicKey": "cdd20435",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -1722,7 +1721,7 @@
           "endTime": "17:30"
         }
       ],
-      "group": "NTN Close by 7:15 pm",
+      "group": "NTN",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1746,7 +1745,7 @@
       "roomId": "ran1-120-bis-room-daa856ef",
       "roomName": "Offline#1: Beijing",
       "topic": "MIMO",
-      "topicKey": "b5498ed1",
+      "topicKey": "102b7943",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -1758,7 +1757,7 @@
         }
       ],
       "sessionLead": "NES",
-      "group": "Close by 7:15pm",
+      "group": "MIMO",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1782,7 +1781,7 @@
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
       "topic": "A-IoT",
-      "topicKey": "3b3ee6d9",
+      "topicKey": "c90dc120",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -1793,7 +1792,7 @@
           "endTime": "18:25"
         }
       ],
-      "group": "ISAC Close by 7:15pm",
+      "group": "ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1833,6 +1832,41 @@
         }
       ],
       "group": "LP-WUS (135). 9.6.1, 9.6.2, 9.6.3",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-a92ad485",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-120-bis-8b9b7568",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-08",
+      "day": "Tuesday",
+      "startTime": "18:25",
+      "endTime": "19:30",
+      "roomId": "ran1-120-bis-room-ddbd0a4a",
+      "roomName": "Offline#2: Wuhan",
+      "topic": "Close by 7:15pm",
+      "topicKey": "b5498ed1",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Close by 7:15pm",
+          "minutes": 65,
+          "startTime": "18:25",
+          "endTime": "19:30"
+        }
+      ],
+      "group": "Close by 7:15pm",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2501,7 +2535,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-a026ffc6",
+      "sessionId": "ran1-120-bis-f591d554",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-09",
       "day": "Wednesday",
@@ -2509,19 +2543,19 @@
       "endTime": "16:30",
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
-      "topic": "NTN IoT NTN TDD mode, IoT NTN UL, NR NTN UL",
-      "topicKey": "69c6bb6f",
+      "topic": "NTN",
+      "topicKey": "cdd20435",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "NTN IoT NTN TDD mode, IoT NTN UL, NR NTN UL",
+          "label": "NTN",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "NTN IoT NTN TDD mode, IoT NTN UL, NR NTN UL",
+      "group": "NTN",
       "kind": "session",
       "status": "scheduled",
       "note": "IoT NTN TDD mode, IoT NTN UL, NR NTN UL",
@@ -2823,7 +2857,7 @@
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
       "topic": "9.8.1",
-      "topicKey": "895c9b44",
+      "topicKey": "5f67ba30",
       "agendaItems": [
         "9.8.1"
       ],
@@ -2836,7 +2870,7 @@
           "endTime": "17:50"
         }
       ],
-      "group": "ISAC R19 7-24GHz",
+      "group": "R19 7-24GHz",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2895,7 +2929,7 @@
       "roomId": "ran1-120-bis-room-ddbd0a4a",
       "roomName": "Offline#2: Wuhan",
       "topic": "9.8.2",
-      "topicKey": "895c9b44",
+      "topicKey": "5f67ba30",
       "agendaItems": [
         "9.8.2"
       ],
@@ -2908,7 +2942,7 @@
           "endTime": "18:20"
         }
       ],
-      "group": "ISAC R19 7-24GHz",
+      "group": "R19 7-24GHz",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3467,7 +3501,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-961a0218",
+      "sessionId": "ran1-120-bis-0af3eaef",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
@@ -3475,20 +3509,20 @@
       "endTime": "16:15",
       "roomId": "ran1-120-bis-room-1649b589",
       "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "AI 5 (15)LS x0013",
-      "topicKey": "e3a9432e",
+      "topic": "LP-WUS",
+      "topicKey": "260c1d30",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "AI 5 (15)LS x0013",
+          "label": "LP-WUS",
           "minutes": 105,
           "startTime": "14:30",
           "endTime": "16:15"
         }
       ],
       "sessionLead": "LP-WUS",
-      "group": "AI 5 (15)LS x0013",
+      "group": "LP-WUS",
       "kind": "session",
       "status": "scheduled",
       "note": "AI 5 (15)LS x0013",
@@ -3916,12 +3950,12 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-b2a93b2c",
+      "sessionId": "ran1-120-bis-751cca51",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
-      "startTime": "18:00",
-      "endTime": "19:00",
+      "startTime": "18:30",
+      "endTime": "19:30",
       "roomId": "ran1-120-bis-room-1649b589",
       "roomName": "RAN1 Main Session Ballroom C",
       "topic": "AI/ML",
@@ -3932,8 +3966,8 @@
           "code": null,
           "label": "AI/ML",
           "minutes": 60,
-          "startTime": "18:00",
-          "endTime": "19:00"
+          "startTime": "18:30",
+          "endTime": "19:30"
         }
       ],
       "group": "AI/ML",
@@ -4424,43 +4458,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-bis-4c3586d3",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-11",
-      "day": "Friday",
-      "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Any other issues Session reports",
-      "topicKey": "21023ad6",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Any other issues Session reports",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
-      "group": "Any other issues Session reports",
-      "kind": "plenary",
-      "status": "scheduled",
-      "note": "Session reports",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-120-bis-6012c674",
+      "sessionId": "ran1-120-bis-518f9d08",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-11",
       "day": "Friday",
@@ -4468,19 +4466,19 @@
       "endTime": "16:30",
       "roomId": "ran1-120-bis-room-daa856ef",
       "roomName": "Offline#1: Beijing",
-      "topic": "To be assigned by Xiaodong To be assigned by David",
-      "topicKey": "363c7b46",
+      "topic": "To be assigned by Xiaodong",
+      "topicKey": "f55439d9",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "To be assigned by Xiaodong To be assigned by David",
+          "label": "To be assigned by Xiaodong",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "To be assigned by Xiaodong To be assigned by David",
+      "group": "To be assigned by Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "note": "To be assigned by David",
@@ -4523,7 +4521,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T01:23:41Z",
-    "lastAttemptAt": "2026-08-22T01:23:41Z"
+    "lastSuccessfulAt": "2026-08-24T17:28:07Z",
+    "lastAttemptAt": "2026-08-24T17:28:07Z"
   }
 }

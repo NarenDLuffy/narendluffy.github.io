@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T01:23:40Z",
+  "generatedAt": "2026-08-24T17:28:05Z",
   "meetingId": "ran1-120",
   "sessions": [
     {
@@ -27,44 +27,7 @@
       "group": "RAN1#120 commences at 09:00 on Monday",
       "kind": "plenary",
       "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-120-27a43e83",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "Agenda items 1, 2, 3, 4, 5 Agenda items 6, 7,",
-      "topicKey": "3cc21a06",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "8.1",
-          "label": "Agenda items 1, 2, 3, 4, 5 Agenda items 6, 7,",
-          "minutes": 30,
-          "startTime": "10:00",
-          "endTime": "10:30"
-        }
-      ],
-      "group": "Agenda items 1, 2, 3, 4, 5 Agenda items 6, 7, 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Agenda items 6, 7, 8.1",
+      "note": "Agenda items 1, 2, 3, 4, 5\nAgenda items 6, 7, 8.1",
       "sources": [
         {
           "sourceId": "ran1-120-7a4e9a37",
@@ -136,7 +99,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-086a173d",
+      "sessionId": "ran1-120-f459c43c",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
@@ -144,23 +107,21 @@
       "endTime": "12:00",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "Agenda item  R19 MIMO (60)",
-      "topicKey": "6fe47d28",
+      "topic": "Agenda item",
+      "topicKey": "2e5b8a53",
       "agendaItems": [
-        "8.1",
-        "9.2.1",
-        "9.2.3"
+        "8.1"
       ],
       "agendaBreakdown": [
         {
           "code": "8.1",
-          "label": "Agenda item  R19 MIMO (60)",
+          "label": "Agenda item",
           "minutes": 60,
           "startTime": "11:00",
           "endTime": "12:00"
         }
       ],
-      "group": "Agenda item 8.1 R19 MIMO (60). 9.2.1. 9.2.3",
+      "group": "Agenda item 8.1",
       "kind": "session",
       "status": "scheduled",
       "note": "R19 MIMO (60). 9.2.1. 9.2.3",
@@ -790,7 +751,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-8d5ed560",
+      "sessionId": "ran1-120-bec2284d",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
@@ -798,23 +759,19 @@
       "endTime": "19:30",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R19 LP-WUS (150)",
-      "topicKey": "72a959d7",
-      "agendaItems": [
-        "9.6.1",
-        "9.6.2",
-        "9.6.3"
-      ],
+      "topic": "R19",
+      "topicKey": "22a4047a",
+      "agendaItems": [],
       "agendaBreakdown": [
         {
-          "code": "9.6.1",
-          "label": "R19 LP-WUS (150)",
+          "code": null,
+          "label": "R19",
           "minutes": 150,
           "startTime": "17:00",
           "endTime": "19:30"
         }
       ],
-      "group": "R19 LP-WUS (150). 9.6.1. 9.6.2. 9.6.3",
+      "group": "R19",
       "kind": "session",
       "status": "scheduled",
       "note": "LP-WUS (150). 9.6.1. 9.6.2. 9.6.3",
@@ -974,7 +931,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-21d2ea2f",
+      "sessionId": "ran1-120-237de536",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
@@ -982,19 +939,19 @@
       "endTime": "10:30",
       "roomId": "ran1-120-room-edd11a69",
       "roomName": "Offline2: Delta+Sigma",
-      "topic": "NTN TDD, NR/IoT UL",
-      "topicKey": "a5cd7392",
+      "topic": "NTN",
+      "topicKey": "cdd20435",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "NTN TDD, NR/IoT UL",
+          "label": "NTN",
           "minutes": 120,
           "startTime": "08:30",
           "endTime": "10:30"
         }
       ],
-      "group": "NTN TDD, NR/IoT UL",
+      "group": "NTN",
       "kind": "session",
       "status": "scheduled",
       "note": "TDD, NR/IoT UL",
@@ -1529,7 +1486,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-edcb0eeb",
+      "sessionId": "ran1-120-3e69c758",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
@@ -1537,23 +1494,22 @@
       "endTime": "16:30",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R19 MIMO (90). .  AI  (30). Any open issues on R18 MIMO, NES",
-      "topicKey": "3020b439",
+      "topic": "R19 MIMO (90)",
+      "topicKey": "35ce689f",
       "agendaItems": [
         "9.2.1",
-        "9.2.4",
-        "8.1"
+        "9.2.4"
       ],
       "agendaBreakdown": [
         {
           "code": "9.2.1",
-          "label": "R19 MIMO (90). .  AI  (30). Any open issues on R18 MIMO, NES",
+          "label": "R19 MIMO (90)",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "R19 MIMO (90). 9.2.1. 9.2.4 AI 8.1 (30). Any open issues on R18 MIMO, NES",
+      "group": "R19 MIMO (90). 9.2.1. 9.2.4",
       "kind": "session",
       "status": "scheduled",
       "note": "AI 8.1 (30). Any open issues on  R18 MIMO, NES",
@@ -1842,7 +1798,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-d90ce96a",
+      "sessionId": "ran1-120-ef4ca33a",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
@@ -1850,23 +1806,19 @@
       "endTime": "17:30",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI 6, 7 R19 LP-WUS (120)",
-      "topicKey": "3b3f1c66",
-      "agendaItems": [
-        "9.6.1",
-        "9.6.2",
-        "9.6.3"
-      ],
+      "topic": "AI 6, 7",
+      "topicKey": "e79a7312",
+      "agendaItems": [],
       "agendaBreakdown": [
         {
-          "code": "9.6.1",
-          "label": "AI 6, 7 R19 LP-WUS (120)",
+          "code": null,
+          "label": "AI 6, 7",
           "minutes": 30,
           "startTime": "17:00",
           "endTime": "17:30"
         }
       ],
-      "group": "AI 6, 7 R19 LP-WUS (120). 9.6.1. 9.6.2. 9.6.3",
+      "group": "AI 6, 7",
       "kind": "session",
       "status": "scheduled",
       "note": "R19 LP-WUS (120). 9.6.1. 9.6.2. 9.6.3",
@@ -2332,7 +2284,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-ef42cfa4",
+      "sessionId": "ran1-120-300b647a",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
@@ -2340,19 +2292,19 @@
       "endTime": "13:00",
       "roomId": "ran1-120-room-edd11a69",
       "roomName": "Offline2: Delta+Sigma",
-      "topic": "NTN DL, (e)RedCap",
-      "topicKey": "720828a7",
+      "topic": "NTN",
+      "topicKey": "cdd20435",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "NTN DL, (e)RedCap",
+          "label": "NTN",
           "minutes": 120,
           "startTime": "11:00",
           "endTime": "13:00"
         }
       ],
-      "group": "NTN DL, (e)RedCap",
+      "group": "NTN",
       "kind": "session",
       "status": "scheduled",
       "note": "DL, (e)RedCap",
@@ -3136,7 +3088,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-93adaf2e",
+      "sessionId": "ran1-120-31a9bf20",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
@@ -3144,23 +3096,19 @@
       "endTime": "10:30",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI 7 (20). Any remaining issues R19 LP-WUS (100)",
-      "topicKey": "06f55b6b",
-      "agendaItems": [
-        "9.6.1",
-        "9.6.2",
-        "9.6.3"
-      ],
+      "topic": "AI 7 (20). Any remaining issues",
+      "topicKey": "6e32aafd",
+      "agendaItems": [],
       "agendaBreakdown": [
         {
-          "code": "9.6.1",
-          "label": "AI 7 (20). Any remaining issues R19 LP-WUS (100)",
+          "code": null,
+          "label": "AI 7 (20). Any remaining issues",
           "minutes": 120,
           "startTime": "08:30",
           "endTime": "10:30"
         }
       ],
-      "group": "AI 7 (20). Any remaining issues R19 LP-WUS (100). 9.6.1. 9.6.2. 9.6.3",
+      "group": "AI 7 (20). Any remaining issues",
       "kind": "session",
       "status": "scheduled",
       "note": "R19 LP-WUS (100). 9.6.1. 9.6.2. 9.6.3",
@@ -3176,11 +3124,11 @@
       ]
     },
     {
-      "sessionId": "ran1-120-1ba615a4",
+      "sessionId": "ran1-120-44cd1906",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
-      "startTime": "09:15",
+      "startTime": "09:45",
       "endTime": "10:30",
       "roomId": "ran1-120-room-4a6350db",
       "roomName": "Ballroom I (Level-2)",
@@ -3191,8 +3139,8 @@
         {
           "code": null,
           "label": "MIMO",
-          "minutes": 75,
-          "startTime": "09:15",
+          "minutes": 45,
+          "startTime": "09:45",
           "endTime": "10:30"
         }
       ],
@@ -4069,7 +4017,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-59af34f3",
+      "sessionId": "ran1-120-51f202f2",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
@@ -4077,24 +4025,21 @@
       "endTime": "19:30",
       "roomId": "ran1-120-room-0bfb14d8",
       "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI , 7 (30). Any remaining issues R19 Duplex (120)",
-      "topicKey": "7816d1f7",
+      "topic": "AI , 7 (30). Any remaining issues",
+      "topicKey": "156ff142",
       "agendaItems": [
-        "8.1",
-        "9.3.1",
-        "9.3.2",
-        "9.3.3"
+        "8.1"
       ],
       "agendaBreakdown": [
         {
           "code": "8.1",
-          "label": "AI , 7 (30). Any remaining issues R19 Duplex (120)",
+          "label": "AI , 7 (30). Any remaining issues",
           "minutes": 150,
           "startTime": "17:00",
           "endTime": "19:30"
         }
       ],
-      "group": "AI 8.1, 7 (30). Any remaining issues R19 Duplex (120). 9.3.1. 9.3.2. 9.3.3",
+      "group": "AI 8.1, 7 (30). Any remaining issues",
       "kind": "session",
       "status": "scheduled",
       "note": "R19 Duplex (120). 9.3.1. 9.3.2. 9.3.3",
@@ -4180,7 +4125,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-5fa8f72d",
+      "sessionId": "ran1-120-71f7d257",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
@@ -4188,19 +4133,19 @@
       "endTime": "19:30",
       "roomId": "ran1-120-room-edd11a69",
       "roomName": "Offline2: Delta+Sigma",
-      "topic": "TBD",
-      "topicKey": "0073b8e3",
+      "topic": "R19 AI/ML",
+      "topicKey": "2532d840",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "TBD",
+          "label": "R19 AI/ML",
           "minutes": 120,
           "startTime": "17:30",
           "endTime": "19:30"
         }
       ],
-      "group": "R19 AI/ML",
+      "group": "R19 MCE",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4648,43 +4593,7 @@
       ]
     },
     {
-      "sessionId": "ran1-120-ffca236a",
-      "meetingId": "ran1-120",
-      "date": "2025-02-21",
-      "day": "Friday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 Mobility Any other issues Session reports",
-      "topicKey": "4dc6baeb",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 Mobility Any other issues Session reports",
-          "minutes": 30,
-          "startTime": "14:30",
-          "endTime": "15:00"
-        }
-      ],
-      "group": "R19 Mobility Any other issues Session reports",
-      "kind": "plenary",
-      "status": "scheduled",
-      "note": "Any other issues\nSession reports",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-120-f7a86566",
+      "sessionId": "ran1-120-157e4a07",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
@@ -4692,19 +4601,19 @@
       "endTime": "16:30",
       "roomId": "ran1-120-room-321cdcee",
       "roomName": "Offline1: VIP+Lamda",
-      "topic": "To be assigned by Xiaodong To be assigned by David",
-      "topicKey": "363c7b46",
+      "topic": "To be assigned by Xiaodong",
+      "topicKey": "f55439d9",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "To be assigned by Xiaodong To be assigned by David",
+          "label": "To be assigned by Xiaodong",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "To be assigned by Xiaodong To be assigned by David",
+      "group": "To be assigned by Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "note": "To be assigned by David",
@@ -4747,7 +4656,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T01:23:40Z",
-    "lastAttemptAt": "2026-08-22T01:23:40Z"
+    "lastSuccessfulAt": "2026-08-24T17:28:05Z",
+    "lastAttemptAt": "2026-08-24T17:28:05Z"
   }
 }
