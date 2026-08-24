@@ -201,7 +201,21 @@ def _parse_cell(text: str) -> list[_Segment]:
     while the head still has unallocated minutes — chairs use it to separate two
     work areas inside the same session.
     """
-    lines = [line.strip() for line in text.split("\n") if line.strip()]
+    lines: list[str] = []
+    for raw_line in text.split("\n"):
+        stripped = raw_line.strip()
+        if not stripped:
+            continue
+        # "R20 (80)AI/ML (80)" is two stacked labels typed on one line.
+        if len(re.findall(r"\(\s*~?\s*\d{1,3}[^)]*\)", stripped)) > 1:
+            lines.extend(
+                part.strip()
+                for part in re.split(r"(?<=\))\s*(?=[A-Za-z.])", stripped)
+                if part.strip()
+            )
+        else:
+            lines.append(stripped)
+
     segments: list[_Segment] = []
     current: _Segment | None = None
     current_group = ""
@@ -247,13 +261,8 @@ def _parse_cell(text: str) -> list[_Segment]:
             continue
 
         current.raw += "\n" + line
-        group = current_group or current.group
-        # "R20 (40)" directly above "MIMO (40)": the tag repeats the sub-block
-        # length rather than adding to it.
-        if not is_item and _is_group_token(label) and minutes is not None and not current.slots:
-            current_group = label
-            continue
-        current.slots.append(_Slot(label=label, minutes=minutes, group=group))
+        current.slots.append(_Slot(label=label, minutes=minutes, group=current_group or current.group))
+
         if minutes:
             allocated += minutes
 
