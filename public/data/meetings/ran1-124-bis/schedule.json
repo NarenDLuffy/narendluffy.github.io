@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-22T01:23:53Z",
+  "generatedAt": "2026-08-24T17:28:26Z",
   "meetingId": "ran1-124-bis",
   "sessions": [
     {
-      "sessionId": "ran1-124-bis-bd33b140",
+      "sessionId": "ran1-124-bis-b3f3fce0",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
@@ -12,19 +12,19 @@
       "endTime": "10:00",
       "roomId": "ran1-124-bis-room-3ee08b7d",
       "roomName": "MDC Maurice de Cesare",
-      "topic": "RAN1#124b commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "b4899df1",
+      "topic": "RAN1#124b commences at 09:00 on Monday",
+      "topicKey": "86cd34e7",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "RAN1#124b commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
+          "label": "RAN1#124b commences at 09:00 on Monday",
           "minutes": 60,
           "startTime": "09:00",
           "endTime": "10:00"
         }
       ],
-      "group": "RAN1#124b commences at 09:00 on Monday Agenda items 1, 2, 3, 4, 5",
+      "group": "RAN1#124b commences at 09:00 on Monday",
       "kind": "plenary",
       "status": "scheduled",
       "note": "Agenda items 1, 2, 3, 4, 5",
@@ -176,14 +176,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-9de586e7",
+      "sessionId": "ran1-124-bis-a9a4e10c",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
       "startTime": "11:00",
       "endTime": "11:40",
-      "roomId": "ran1-124-bis-room-7bdbe616",
-      "roomName": "Breakout 3",
+      "roomId": "ran1-124-bis-room-a2162f50",
+      "roomName": "Cettina De Cesare 3",
       "topic": "NTN-NR",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
@@ -323,14 +323,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-2016af30",
+      "sessionId": "ran1-124-bis-f58620e2",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
       "startTime": "11:40",
       "endTime": "12:00",
-      "roomId": "ran1-124-bis-room-7bdbe616",
-      "roomName": "Breakout 3",
+      "roomId": "ran1-124-bis-room-a2162f50",
+      "roomName": "Cettina De Cesare 3",
       "topic": "NTN-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
@@ -382,6 +382,44 @@
         }
       ],
       "sessionLead": "Xiaodong",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-124-bis-bff79085",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-124-bis-room-a2162f50",
+      "roomName": "Cettina De Cesare 3",
+      "topic": "NTN",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.7.1",
+          "label": "NTN",
+          "minutes": 60,
+          "startTime": "12:00",
+          "endTime": "13:00"
+        }
+      ],
+      "sessionLead": "Sorouri",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
@@ -1260,24 +1298,24 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-8485f99b",
+      "sessionId": "ran1-124-bis-261afb6e",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "17:20",
+      "endTime": "19:00",
       "roomId": "ran1-124-bis-room-4c791707",
       "roomName": "Cettina De Cesare 2",
-      "topic": "R20 TEI",
+      "topic": "6GR",
       "topicKey": "19ddc03c",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "R20 TEI",
-          "minutes": 20,
+          "label": "6GR",
+          "minutes": 120,
           "startTime": "17:00",
-          "endTime": "17:20"
+          "endTime": "19:00"
         }
       ],
       "group": "R20 TEI",
@@ -1391,43 +1429,6 @@
           "minutes": 40,
           "startTime": "17:00",
           "endTime": "17:40"
-        }
-      ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-124-bis-de2c4ac3",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "17:20",
-      "endTime": "18:10",
-      "roomId": "ran1-124-bis-room-4c791707",
-      "roomName": "Cettina De Cesare 2",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.2.1",
-          "label": "Waveform",
-          "minutes": 50,
-          "startTime": "17:20",
-          "endTime": "18:10"
         }
       ],
       "group": "6GR",
@@ -1667,43 +1668,6 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-6dc5a793",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "18:10",
-      "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-4c791707",
-      "roomName": "Cettina De Cesare 2",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.5.4.x",
-          "label": "10.5.4.x",
-          "minutes": 80,
-          "startTime": "18:10",
-          "endTime": "19:30"
-        }
-      ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-124-bis-2f45d739",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -1886,6 +1850,43 @@
       ]
     },
     {
+      "sessionId": "ran1-124-bis-41c61a89",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "19:00",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-4c791707",
+      "roomName": "Cettina De Cesare 2",
+      "topic": "Waveform",
+      "topicKey": "19ddc03c",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.2.1",
+          "label": "Waveform",
+          "minutes": 30,
+          "startTime": "19:00",
+          "endTime": "19:30"
+        }
+      ],
+      "group": "R20 TEI",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-124-bis-bc68ca83",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -1995,24 +1996,24 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-283a0fb4",
+      "sessionId": "ran1-124-bis-cf98885f",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:45",
+      "endTime": "09:15",
       "roomId": "ran1-124-bis-room-4c791707",
       "roomName": "Cettina De Cesare 2",
-      "topic": "AI 8",
+      "topic": "R20",
       "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "AI 8",
-          "minutes": 75,
+          "label": "R20",
+          "minutes": 45,
           "startTime": "08:30",
-          "endTime": "09:45"
+          "endTime": "09:15"
         }
       ],
       "group": "AI 8",
@@ -2106,14 +2107,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-c5828aec",
+      "sessionId": "ran1-124-bis-7bcbc97d",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:20",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.0",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2216,6 +2217,41 @@
       ]
     },
     {
+      "sessionId": "ran1-124-bis-66a24c38",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "09:15",
+      "endTime": "10:00",
+      "roomId": "ran1-124-bis-room-4c791707",
+      "roomName": "Cettina De Cesare 2",
+      "topic": "Coverage",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Coverage",
+          "minutes": 45,
+          "startTime": "09:15",
+          "endTime": "10:00"
+        }
+      ],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-124-bis-61295afd",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -2253,14 +2289,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-f4fd7dc8",
+      "sessionId": "ran1-124-bis-6fc507d7",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "09:20",
       "endTime": "10:00",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2314,41 +2350,6 @@
       ],
       "sessionLead": "Xiaodong",
       "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-124-bis-edbd052f",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "09:45",
-      "endTime": "10:30",
-      "roomId": "ran1-124-bis-room-4c791707",
-      "roomName": "Cettina De Cesare 2",
-      "topic": "Coverage",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Coverage",
-          "minutes": 45,
-          "startTime": "09:45",
-          "endTime": "10:30"
-        }
-      ],
-      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2475,14 +2476,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-2dcf0c7f",
+      "sessionId": "ran1-124-bis-4b94796c",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "10:00",
       "endTime": "10:30",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2719,14 +2720,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-0dc1da32",
+      "sessionId": "ran1-124-bis-cf4dc282",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "12:10",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.6.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2904,14 +2905,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-f3e0a4be",
+      "sessionId": "ran1-124-bis-b0b4b775",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "12:10",
       "endTime": "12:35",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3016,14 +3017,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-07a5fa0d",
+      "sessionId": "ran1-124-bis-57a47d47",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "12:35",
       "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3260,14 +3261,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-5c9a582f",
+      "sessionId": "ran1-124-bis-17bd59bf",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:40",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3448,14 +3449,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-6f8f98e7",
+      "sessionId": "ran1-124-bis-8ef9f586",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "15:40",
       "endTime": "16:10",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.3.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3560,14 +3561,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-237f5ee0",
+      "sessionId": "ran1-124-bis-dd6d64ea",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "16:10",
       "endTime": "16:30",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.3.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3775,7 +3776,7 @@
       "roomId": "ran1-124-bis-room-a2162f50",
       "roomName": "Cettina De Cesare 3",
       "topic": "NTN-NR",
-      "topicKey": "9d4189e3",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -3787,7 +3788,7 @@
         }
       ],
       "sessionLead": "Sorouri",
-      "group": "R20 6GR",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3802,14 +3803,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-f5915117",
+      "sessionId": "ran1-124-bis-1a6663fd",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3876,14 +3877,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-bb741f04",
+      "sessionId": "ran1-124-bis-1da7292a",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "17:30",
       "endTime": "18:10",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.2.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3959,7 +3960,7 @@
       "roomId": "ran1-124-bis-room-a2162f50",
       "roomName": "Cettina De Cesare 3",
       "topic": "NTN",
-      "topicKey": "9d4189e3",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
       ],
@@ -3973,7 +3974,7 @@
         }
       ],
       "sessionLead": "Sorouri",
-      "group": "R20 6GR",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4097,14 +4098,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-78c7338b",
+      "sessionId": "ran1-124-bis-588a9047",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "18:10",
       "endTime": "18:50",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.2.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4320,14 +4321,14 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-3940ebc8",
+      "sessionId": "ran1-124-bis-3d9fd6ab",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "18:50",
       "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-20db47d1",
-      "roomName": "b Detailed Schedule for RAN1 Main 1",
+      "roomId": "ran1-124-bis-room-a8d97dc7",
+      "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "10.5.2.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4429,24 +4430,24 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-196f903c",
+      "sessionId": "ran1-124-bis-3272f9cf",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:45",
+      "endTime": "09:15",
       "roomId": "ran1-124-bis-room-4c791707",
       "roomName": "Cettina De Cesare 2",
-      "topic": "AI 8",
+      "topic": "6GR",
       "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "AI 8",
-          "minutes": 75,
+          "label": "6GR",
+          "minutes": 45,
           "startTime": "08:30",
-          "endTime": "09:45"
+          "endTime": "09:15"
         }
       ],
       "group": "AI 8",
@@ -4687,6 +4688,43 @@
       ]
     },
     {
+      "sessionId": "ran1-124-bis-c8d5d465",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "09:15",
+      "endTime": "10:00",
+      "roomId": "ran1-124-bis-room-4c791707",
+      "roomName": "Cettina De Cesare 2",
+      "topic": "10.5.4.x",
+      "topicKey": "9998e570",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.4.x",
+          "label": "10.5.4.x",
+          "minutes": 45,
+          "startTime": "09:15",
+          "endTime": "10:00"
+        }
+      ],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-124-bis-0bcbe2f4",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -4799,43 +4837,6 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-11e4ff9c",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "09:45",
-      "endTime": "10:30",
-      "roomId": "ran1-124-bis-room-4c791707",
-      "roomName": "Cettina De Cesare 2",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.5.4.x",
-          "label": "10.5.4.x",
-          "minutes": 45,
-          "startTime": "09:45",
-          "endTime": "10:30"
-        }
-      ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
       "sessionId": "ran1-124-bis-376216e5",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -4894,6 +4895,42 @@
         }
       ],
       "sessionLead": "Sorour",
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
+      "sessionId": "ran1-124-bis-2d0eee9f",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-a2162f50",
+      "roomName": "Cettina De Cesare 3",
+      "topic": "A-IoT",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "A-IoT",
+          "minutes": 30,
+          "startTime": "10:00",
+          "endTime": "10:30"
+        }
+      ],
+      "sessionLead": "Hiroki",
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
@@ -6530,6 +6567,44 @@
       ]
     },
     {
+      "sessionId": "ran1-124-bis-f2b44310",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-124-bis-room-a2162f50",
+      "roomName": "Cettina De Cesare 3",
+      "topic": "NTN",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.7.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.7.1",
+          "label": "NTN",
+          "minutes": 30,
+          "startTime": "18:00",
+          "endTime": "18:30"
+        }
+      ],
+      "sessionLead": "Sorour",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": [
+            "time",
+            "topic",
+            "room"
+          ]
+        }
+      ]
+    },
+    {
       "sessionId": "ran1-124-bis-c70155b2",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -6587,43 +6662,6 @@
           "minutes": 25,
           "startTime": "18:05",
           "endTime": "18:30"
-        }
-      ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-124-bis-77916804",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "18:30",
-      "endTime": "19:00",
-      "roomId": "ran1-124-bis-room-a2162f50",
-      "roomName": "Cettina De Cesare 3",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [
-        {
-          "code": "10.7.1",
-          "label": "NTN",
-          "minutes": 30,
-          "startTime": "18:30",
-          "endTime": "19:00"
         }
       ],
       "group": "6GR",
@@ -7051,7 +7089,7 @@
       "roomId": "ran1-124-bis-room-4c791707",
       "roomName": "Cettina De Cesare 2",
       "topic": "AI 8",
-      "topicKey": "9998e570",
+      "topicKey": "f8e05aee",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -7062,7 +7100,7 @@
           "endTime": "10:30"
         }
       ],
-      "group": "AI 8",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -8062,7 +8100,7 @@
       "roomId": "ran1-124-bis-room-a2162f50",
       "roomName": "Cettina De Cesare 3",
       "topic": "R20 MIMO",
-      "topicKey": "d3af10fe",
+      "topicKey": "f8e05aee",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -8073,7 +8111,8 @@
           "endTime": "16:30"
         }
       ],
-      "group": "R20 MIMO",
+      "sessionLead": "Sorouri",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -8377,7 +8416,7 @@
       "roomId": "ran1-124-bis-room-a2162f50",
       "roomName": "Cettina De Cesare 3",
       "topic": "AI/ML",
-      "topicKey": "ed9b8ed5",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -8389,7 +8428,7 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "R20 R20",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -8599,7 +8638,7 @@
       "roomId": "ran1-124-bis-room-a2162f50",
       "roomName": "Cettina De Cesare 3",
       "topic": "NTN-NR",
-      "topicKey": "ed9b8ed5",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [
         {
@@ -8611,7 +8650,7 @@
         }
       ],
       "sessionLead": "Sorour",
-      "group": "R20 R20",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9549,7 +9588,7 @@
       "roomId": "ran1-124-bis-room-3ee08b7d",
       "roomName": "MDC Maurice de Cesare",
       "topic": "10.4",
-      "topicKey": "de772bf8",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.4"
       ],
@@ -9562,7 +9601,7 @@
           "endTime": "11:30"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9660,7 +9699,7 @@
       "roomId": "ran1-124-bis-room-a8d97dc7",
       "roomName": "b Detailed Schedule for RAN1 Main",
       "topic": "(20),",
-      "topicKey": "879078cf",
+      "topicKey": "6103b1e6",
       "agendaItems": [
         "10.5.5",
         "10.6.1"
@@ -9674,7 +9713,7 @@
           "endTime": "11:30"
         }
       ],
-      "group": "Sweep 6GR 10.4 (30), 10.5.2.4/1/2 (40),",
+      "group": "10.4 (30), 10.5.2.4/1/2 (40),",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9698,7 +9737,7 @@
       "roomId": "ran1-124-bis-room-3ee08b7d",
       "roomName": "MDC Maurice de Cesare",
       "topic": "/1/2",
-      "topicKey": "de772bf8",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.2.4"
       ],
@@ -9711,7 +9750,7 @@
           "endTime": "12:10"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9735,7 +9774,7 @@
       "roomId": "ran1-124-bis-room-3ee08b7d",
       "roomName": "MDC Maurice de Cesare",
       "topic": "10.5.5",
-      "topicKey": "de772bf8",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.5"
       ],
@@ -9748,7 +9787,7 @@
           "endTime": "12:30"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9772,7 +9811,7 @@
       "roomId": "ran1-124-bis-room-3ee08b7d",
       "roomName": "MDC Maurice de Cesare",
       "topic": "10.6.1",
-      "topicKey": "de772bf8",
+      "topicKey": "f8e05aee",
       "agendaItems": [
         "10.6.1"
       ],
@@ -9785,7 +9824,7 @@
           "endTime": "13:00"
         }
       ],
-      "group": "Sweep 6GR",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -9824,7 +9863,7 @@
       ]
     },
     {
-      "sessionId": "ran1-124-bis-d2947ab3",
+      "sessionId": "ran1-124-bis-fcaf6a49",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
       "day": "Friday",
@@ -9832,19 +9871,19 @@
       "endTime": "16:30",
       "roomId": "ran1-124-bis-room-b6106287",
       "roomName": "Cettina De Cesare 1",
-      "topic": "To be assigned by Sorour To be assigned by Hiroki",
-      "topicKey": "8f79e259",
+      "topic": "To be assigned by Sorour",
+      "topicKey": "5d7db03e",
       "agendaItems": [],
       "agendaBreakdown": [
         {
           "code": null,
-          "label": "To be assigned by Sorour To be assigned by Hiroki",
+          "label": "To be assigned by Sorour",
           "minutes": 120,
           "startTime": "14:30",
           "endTime": "16:30"
         }
       ],
-      "group": "To be assigned by Sorour To be assigned by Hiroki",
+      "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
       "note": "To be assigned by Hiroki",
@@ -9887,7 +9926,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-22T01:23:53Z",
-    "lastAttemptAt": "2026-08-22T01:23:53Z"
+    "lastSuccessfulAt": "2026-08-24T17:28:26Z",
+    "lastAttemptAt": "2026-08-24T17:28:26Z"
   }
 }
