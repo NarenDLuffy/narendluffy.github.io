@@ -475,13 +475,21 @@ def _sessions_for_cell(
         return []
 
     total = block_end - block_start
-    known = [seg.minutes for seg in segments if seg.minutes]
-    remaining_default = max(0, total - sum(known)) // max(1, len(segments) - len(known)) if len(segments) > len(known) else 0
+
+    def seg_length(seg: _Segment) -> int | None:
+        slot_sum = sum(slot.minutes or 0 for slot in seg.slots)
+        if seg.minutes and slot_sum:
+            return max(seg.minutes, slot_sum)
+        return seg.minutes or slot_sum or None
+
+    lengths = [seg_length(seg) for seg in segments]
+    unknown = [i for i, length in enumerate(lengths) if not length]
+    remaining_default = max(0, total - sum(length or 0 for length in lengths)) // len(unknown) if unknown else 0
 
     out: list[Session] = []
     cursor = block_start
-    for segment in segments:
-        length = segment.minutes or remaining_default or (block_end - cursor)
+    for segment, known_length in zip(segments, lengths):
+        length = known_length or remaining_default or max(0, block_end - cursor)
         seg_start = cursor
         seg_end = min(block_end, seg_start + length)
         cursor = seg_end
@@ -515,10 +523,14 @@ def _sessions_for_cell(
         # Each agenda item gets its own share of the block, back to back.
         slot_cursor = seg_start
         span = seg_end - seg_start
-        sized = [minutes for _, minutes in segment.slots if minutes]
-        fallback = max(5, (span - sum(sized)) // max(1, len(segment.slots) - len(sized))) if len(segment.slots) > len(sized) else 0
-        for label, minutes in segment.slots:
-            length = minutes or fallback or max(5, span // len(segment.slots))
+        sized = [slot.minutes for slot in segment.slots if slot.minutes]
+        fallback = (
+            max(5, (span - sum(sized)) // max(1, len(segment.slots) - len(sized)))
+            if len(segment.slots) > len(sized)
+            else 0
+        )
+        for slot in segment.slots:
+            length = slot.minutes or fallback or max(5, span // len(segment.slots))
             slot_start = slot_cursor
             slot_end = min(block_end, slot_start + length)
             slot_cursor = slot_end
@@ -532,12 +544,13 @@ def _sessions_for_cell(
                     room=room,
                     start=slot_start,
                     end=slot_end,
-                    title=label,
-                    group=segment.group,
+                    title=slot.label,
+                    group=slot.group or segment.group,
                     lead=segment.lead,
                     note=None,
                     source=source,
                 )
+
             )
     return out
 
