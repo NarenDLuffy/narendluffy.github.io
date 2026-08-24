@@ -81,8 +81,11 @@ export function parseListing(html: string, baseUrl: string): Entry[] {
 
   let m: RegExpExecArray | null;
   while ((m = lineRe.exec(html))) {
-    const [, stamp, marker, href, label] = m;
-    const name = label.trim();
+    const stamp = m[1];
+    const marker = m[2];
+    const href = m[3] ?? "";
+    const name = (m[4] ?? "").trim();
+    if (!href) continue;
     if (!name || name === ".." || /parent directory/i.test(name)) continue;
     if (/^https?:\/\//i.test(href) && !href.startsWith(baseUrl)) continue;
     if (href.startsWith("?") || href.startsWith("#")) continue;
