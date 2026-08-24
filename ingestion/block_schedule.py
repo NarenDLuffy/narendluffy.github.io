@@ -222,6 +222,16 @@ def _parse_cell(text: str) -> list[_Segment]:
     allocated = 0
 
     def finished() -> bool:
+        """True when the open block can take no more items."""
+        if current is None:
+            return True
+        if current.minutes is None:
+            # A head without its own duration (a plenary note, a bare tag) ends
+            # as soon as a timed head follows it.
+            return True
+        return allocated >= current.minutes
+
+    def tag_finished() -> bool:
         if current is None:
             return True
         if current.minutes is None:
@@ -237,7 +247,7 @@ def _parse_cell(text: str) -> list[_Segment]:
 
         if not is_item and minutes is None:
             # Bare work-area tag: labels the items that follow.
-            if current is None or (finished() and not _looks_like_person(label)):
+            if current is None or (tag_finished() and not _looks_like_person(label)):
                 current = _Segment(lead=None, group=label, minutes=None, slots=[], raw=line)
                 segments.append(current)
                 current_group, allocated = label, 0
