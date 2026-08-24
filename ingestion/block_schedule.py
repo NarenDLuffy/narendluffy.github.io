@@ -340,13 +340,17 @@ def parse_block_schedule_docx(
         if not days:
             continue
 
-        def room_for(day_start: int, day_end: int, col_start: int, col_end: int) -> Room:
-            index = max(0, col_start - day_start)
+        def room_for(day_start: int, day_end: int, col_start: int, rank: int, count: int) -> Room:
             width = max(1, day_end - day_start)
-            if index < len(labels):
+            offset = max(0, col_start - day_start)
+            if labels and count == len(labels):
+                # Cells split the day evenly across the named rooms.
+                index = rank
+            else:
+                # Uneven merges: place the cell by where it sits in the day.
+                index = min(len(labels) - 1, offset * len(labels) // width) if labels else offset
+            if labels and 0 <= index < len(labels):
                 name = labels[index]
-            elif len(labels) == 1 and width == 1:
-                name = labels[0]
             elif labels:
                 name = f"Breakout {index + 1}"
             elif width == 1 and _heading_room(heading, known_labels):
@@ -356,7 +360,8 @@ def parse_block_schedule_docx(
             else:
                 base = re.sub(r"^RAN1#?\d+\s*", "", heading).strip() or f"Track {table_index}"
                 base = re.sub(r"\s*(schedule|sessions?|for)\s*$", "", base, flags=re.I).strip() or base
-                name = base if width == 1 else f"{base} {index + 1}"
+                name = base if count <= 1 else f"{base} {index + 1}"
+
             room_id = f"{meeting_id}-room-{_slug(name.lower())}"
             room = rooms.get(room_id)
             if room is None:
