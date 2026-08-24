@@ -412,33 +412,32 @@ def parse_block_schedule_docx(
             block_start = _minutes(f"{block.group(1)}:{block.group(2)}")
             block_end = _minutes(f"{block.group(3)}:{block.group(4)}")
 
-            for cell in cells[1:]:
-                if not cell.text.strip():
+            for day, (day_start, day_end) in days.items():
+                if day not in day_dates:
                     continue
-                day = next(
-                    (
-                        name
-                        for name, (col_start, col_end) in days.items()
-                        if cell.col_start < col_end and cell.col_end > col_start
-                    ),
-                    None,
-                )
-                if day is None or day not in day_dates:
-                    continue
-                day_start, day_end = days[day]
-                room = room_for(day_start, day_end, cell.col_start, cell.col_end)
-                sessions.extend(
-                    _sessions_for_cell(
-                        cell.text,
-                        meeting_id=meeting_id,
-                        day=day,
-                        day_date=day_dates[day],
-                        room=room,
-                        block_start=block_start,
-                        block_end=block_end,
-                        source=source,
+                in_day = [
+                    cell
+                    for cell in cells[1:]
+                    if cell.col_start < day_end and cell.col_end > day_start
+                ]
+                in_day.sort(key=lambda cell: cell.col_start)
+                for rank, cell in enumerate(in_day):
+                    if not cell.text.strip():
+                        continue
+                    room = room_for(day_start, day_end, cell.col_start, rank, len(in_day))
+                    sessions.extend(
+                        _sessions_for_cell(
+                            cell.text,
+                            meeting_id=meeting_id,
+                            day=day,
+                            day_date=day_dates[day],
+                            room=room,
+                            block_start=block_start,
+                            block_end=block_end,
+                            source=source,
+                        )
                     )
-                )
+
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
     # The same slot written twice (a chair repeating the plenary or their own
