@@ -105,6 +105,15 @@ export function AppShell({ children }: { children: ReactNode }) {
             >
               Meetings
             </Link>
+            <Link
+              to="/help"
+              className={cn(
+                "rounded-md px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+                pathname === "/help" && "bg-secondary text-foreground",
+              )}
+            >
+              How to use
+            </Link>
           </nav>
 
           <div className="mono-code shrink-0 rounded-md bg-secondary px-2 py-1 text-right text-sm font-semibold tabular">
