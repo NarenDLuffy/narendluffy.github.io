@@ -48,6 +48,7 @@ jobs:
       - name: Build static site
         env:
           BASE_PATH: ${{ steps.base.outputs.base }}
+          STATIC_EXPORT: 1
         run: bun run build
 
       - name: SPA fallback for client-side routes
