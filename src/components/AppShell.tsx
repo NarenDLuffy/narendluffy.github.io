@@ -132,6 +132,10 @@ export function AppShell({ children }: { children: ReactNode }) {
       <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
         Unofficial RAN1 meeting companion. Schedule information is automatically generated from
         meeting documents and may contain errors.{" "}
+        <Link to="/help" className="underline underline-offset-2">
+          How to use this site
+        </Link>
+        {" · "}
         <Link to="/admin" className="underline underline-offset-2">
           Ingestion status
         </Link>
