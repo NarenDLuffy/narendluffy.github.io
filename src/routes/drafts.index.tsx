@@ -207,14 +207,15 @@ function DraftsPage() {
               <p className="flex items-center gap-2">
                 <Inbox className="size-4" />
                 {filter === "watched"
-                  ? "Nothing yet for the agenda items you follow."
+                  ? "Nothing yet for your agenda items."
                   : index.scanState === "baseline"
                     ? "Baseline captured — you'll see uploads from here on."
                     : "No draft changes detected yet."}
               </p>
               {filter === "watched" ? (
                 <p className="text-xs">
-                  Follow agenda items below or on any session to get their draft updates here.
+                  Bookmark agenda items in My agenda, or follow them from any session or the “All
+                  agenda items” tab, to see their draft updates here.
                 </p>
               ) : null}
             </div>
