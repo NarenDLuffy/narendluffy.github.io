@@ -38,13 +38,7 @@ function DraftsPage() {
   const index = drafts.index;
   const cards = [...drafts.activity.values()]
     .filter((a) => a.agendaItemId !== "unmapped")
-    .filter((a) =>
-      filter === "all"
-        ? true
-        : filter === "fl"
-          ? a.flCount > 0 || a.flUpdates > 0
-          : drafts.watched.includes(a.agendaItemId),
-    )
+    .filter((a) => filter === "all" || drafts.myItems.includes(a.agendaItemId))
     .sort((a, b) =>
       (b.latestAt ?? b.latestFileAt ?? "").localeCompare(a.latestAt ?? a.latestFileAt ?? ""),
     );
