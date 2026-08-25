@@ -183,7 +183,6 @@ function DraftsPage() {
             {(
               [
                 ["watched", `My items (${drafts.unreadCount})`],
-                ["fl", "FL summaries"],
                 ["all", "All agenda items"],
               ] as const
             ).map(([value, label]) => (
