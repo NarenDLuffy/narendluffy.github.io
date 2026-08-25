@@ -23,12 +23,19 @@ class Public3GPPDraftSource:
 
     source_type = "public"
 
-    def __init__(self, meeting_folder_url: str | None):
+    def __init__(
+        self,
+        meeting_folder_url: str | None,
+        drafts_root_url: str | None = None,
+    ):
         self.meeting_folder_url = meeting_folder_url
+        self.drafts_root_url = drafts_root_url
         self._cache: dict[str, list[NormalizedDirectoryEntry]] = {}
 
     # --- discovery ---------------------------------------------------------
     def discover_drafts_root(self) -> str | None:
+        if self.drafts_root_url:
+            return self.drafts_root_url
         if not self.meeting_folder_url:
             return None
         root = self.meeting_folder_url
