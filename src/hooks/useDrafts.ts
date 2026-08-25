@@ -61,6 +61,12 @@ export function useDrafts(meeting?: Meeting) {
     return [...set];
   }, [prefs.scope, follows, bookmarks, activity]);
 
+  /**
+   * The user's own agenda: bookmarked items plus explicitly followed ones.
+   * Independent of the notification scope, which only drives unread badges.
+   */
+  const myItems = useMemo(() => [...new Set([...follows, ...bookmarks])], [follows, bookmarks]);
+
   const unreadCount = useMemo(
     () => watched.reduce((sum, code) => sum + (activity.get(code)?.unreadCount ?? 0), 0),
     [watched, activity],
