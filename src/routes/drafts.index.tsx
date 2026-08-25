@@ -19,7 +19,7 @@ export const Route = createFileRoute("/drafts/")({
   component: DraftsPage,
 });
 
-type Filter = "watched" | "all" | "fl";
+type Filter = "watched" | "all";
 
 function DraftsPage() {
   const { meeting, bundle, stale, isCurrent, isLoading } = useActiveMeeting();
