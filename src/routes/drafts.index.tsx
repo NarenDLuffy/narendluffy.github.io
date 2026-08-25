@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { CheckCheck, Inbox, Settings2 } from "lucide-react";
+import { CheckCheck, Inbox, RefreshCw, Settings2 } from "lucide-react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { MeetingBanner } from "@/components/MeetingBanner";
@@ -85,6 +85,13 @@ function DraftsPage() {
             {ORIGIN_LABEL[drafts.liveOrigin ?? "published"]}
             {drafts.liveCheckedAt ? ` · checked ${relativeTime(drafts.liveCheckedAt)}` : ""}
           </p>
+          {drafts.lastRefresh ? (
+            <p className="text-[11px] text-muted-foreground" role="status" aria-live="polite">
+              {drafts.lastRefresh.failed
+                ? "Refresh failed — showing the last known index."
+                : `Refreshed ${relativeTime(drafts.lastRefresh.at)}: ${drafts.lastRefresh.added} new, ${drafts.lastRefresh.updated} updated, ${drafts.lastRefresh.total} file(s) indexed.`}
+            </p>
+          ) : null}
         </div>
         <div className="flex shrink-0 gap-1.5">
           <button
@@ -94,6 +101,15 @@ function DraftsPage() {
             className="inline-flex min-h-9 items-center gap-1.5 rounded-md border border-border px-2.5 text-xs font-medium text-muted-foreground"
           >
             <Settings2 className="size-3.5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => void drafts.refreshNow()}
+            disabled={drafts.isRefreshing}
+            className="inline-flex min-h-9 items-center gap-1.5 rounded-md border border-border px-2.5 text-xs font-medium text-muted-foreground disabled:opacity-60"
+          >
+            <RefreshCw className={cn("size-3.5", drafts.isRefreshing && "animate-spin")} />
+            {drafts.isRefreshing ? "Checking…" : "Refresh now"}
           </button>
           <button
             type="button"
