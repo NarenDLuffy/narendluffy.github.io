@@ -1,86 +1,118 @@
 # RAN1 Live
 
-Unofficial meeting-week companion for 3GPP RAN1 delegates.
+Unofficial, mobile-first meeting-week companion for 3GPP RAN1 delegates.
 
-It turns the frequently changing RAN1 chair and sub-chair DOCX schedules into one
-accurate, live, searchable schedule — and (from Phase 3) lets colleagues from the
-same verified company voluntarily share which meeting room they are in.
+It turns the frequently changing RAN1 chair and sub-chair schedule documents into
+one accurate, searchable, live schedule — and tracks draft / FL-summary activity
+in the meeting Inbox as it happens.
 
-> Schedule information is automatically generated from meeting documents and may
-> contain errors. This project is not affiliated with 3GPP.
+> Schedule and draft information is generated automatically from public 3GPP
+> meeting documents and may contain errors. This project is not affiliated with
+> or endorsed by 3GPP.
 
-## Status
+**For delegates:** see [How to use this website](docs/HOW-TO-USE.md).
 
-- **Phase 1 (this build)** — public schedule frontend: NOW, timetable, My agenda,
-  Rooms, Changes, agenda filters, mock RAN1#126 data, GitHub Pages build.
-- **Phase 2** — Python DOCX ingestion, source merging/provenance, change detection,
-  scheduled GitHub Action refresh.
-- **Phase 3** — Supabase auth, verified company domains, RLS-isolated presence and
-  coverage.
-- **Phase 4** — PWA polish, notifications, floorplan, QR check-in, room stewards.
+## Features
+
+- **Automatic meeting discovery** — the meeting registry is built from the
+  official 3GPP portal web service, so every future RAN1 meeting appears without
+  a code change. The current meeting is selected by priority: in progress →
+  upcoming → most recent completed.
+- **Live schedule** — chair/sub-chair `.docx` schedules are discovered
+  recursively under the meeting's `Inbox/`, parsed as a block grid (rooms,
+  parallel tracks, per-agenda-item minute breakdowns, coffee/lunch bands) and
+  merged with provenance per source document.
+- **Now / Timetable / Search** — what is running right now, a fixed
+  08:30–19:30 day grid with parallel tracks, and agenda/topic filters.
+- **My agenda** — bookmark sessions and agenda items, export `.ics`.
+- **Drafts tracker** — the entire Inbox directory tree is discovered
+  recursively (no hard-coded folder names), files are mapped to agenda items by
+  ancestor traversal, and new/updated files raise unread counts. The browser
+  probes the venue server `10.10.10.10` first, falls back to the
+  `Meetings_3GPP_SYNC` mirror, then to the last published snapshot, and
+  de-duplicates the same file arriving on multiple servers.
+- **Rooms & changes** — per-room day views and a diff feed of moved sessions,
+  room changes and agenda edits.
+- **Company presence (optional)** — account-free, voluntary, device-local room
+  check-ins scoped to one meeting, expiring after two hours.
+- **Offline-friendly PWA** — last good bundle cached, stale banner, installable.
 
 ## Architecture
 
 ```
-3GPP schedule sources ──► GitHub Actions ──► Python ingestion ──► normalized JSON
-                                                                      │
-                                                                      ▼
-                                                    React frontend on GitHub Pages
-
-React frontend ◄──► Supabase (company users, presence, bookmarks)   [Phase 3]
+3GPP portal web service ─┐
+3GPP FTP (Inbox/*.docx) ─┼─► GitHub Actions ─► Python ingestion ─► public/data/*.json
+3GPP FTP (draft tree)   ─┘                      (ingestion/, draft_tracker/)
+                                                             │
+                                                             ▼
+                                    React + TanStack Start static build
+                                                             │
+                                                             ▼
+                                                     GitHub Pages
+                                                             │
+   browser also probes 10.10.10.10 (venue) and the SYNC mirror at runtime
 ```
 
-Nothing about a specific meeting is hard-coded: rooms, topics, agenda items and
-meeting identity all come from the generated bundle, so RAN1#127, bis and ad-hoc
-meetings roll over without frontend changes.
+- `ingestion/` — portal discovery, FTP crawling, DOCX block-schedule parsing,
+  merging, validation, change detection.
+- `draft_tracker/` — recursive directory-tree crawl, agenda mapping, snapshot
+  diffing.
+- `src/` — React frontend. Data access is isolated in `src/services/`.
+- `public/data/` — generated public JSON bundles, committed by the workflows.
 
-## Schedule sources
-
-- **Public 3GPP source (default).** The only source used by GitHub Actions.
-- **Meeting-local source (optional, opt-in).** On the venue network the meeting
-  server at `http://10.10.10.10/ftp/RAN/RAN1/Inbox/` often has fresher documents.
-  The browser probes it only when the user enables it on the Schedule page, uses it
-  only when it is newer, and labels it clearly as **Meeting-local source** while
-  keeping full file/version provenance. Hosted runners cannot reach 10.x addresses,
-  so builds never depend on it.
-
-## Layout
-
-```
-src/            React app (routes, components, services, hooks, types)
-public/schedule/ schedule.json · changes.json · sources.json (ingestion output)
-ingestion/      Python pipeline (downloader, parser, merger, validator, …)
-.github/workflows/ update-schedule.yml · deploy-pages.yml
-```
-
-## Development
+## Local development
 
 ```bash
 bun install
-bun run dev
+bun run dev            # http://localhost:8080
+bun run build          # static build (runs the public-data guard first)
+bun run check:public-data
+bun run lint
 ```
 
-## Ingestion
+Python pipelines:
 
 ```bash
-pip install -r ingestion/requirements.txt
-python -m ingestion.generate_schedule          # incremental
-python -m ingestion.generate_schedule --force  # full rebuild
+python -m ingestion.live            # refresh meeting + schedule bundles
+python -m draft_tracker.crawl       # refresh the draft index
 ```
 
-Deterministic `python-docx` table extraction does the parsing; an LLM is only ever
-considered for genuinely ambiguous free text and never resolves a conflict between
-two documents. Validation failures keep the previous verified schedule published.
+## Scheduled updates
 
-## Deployment
+| Workflow | What it does | When |
+| --- | --- | --- |
+| `.github/workflows/update-schedule.yml` | Re-discovers meetings and re-parses schedules | frequently during a meeting week, sparsely otherwise |
+| `.github/workflows/update-drafts.yml` | Re-crawls the Inbox tree and diffs snapshots | every 10 min during meetings |
+| `.github/workflows/deploy-pages.yml` | Builds and deploys the site | on every push to `main` |
 
-`deploy-pages.yml` builds the static site and publishes it to GitHub Pages, copying
-`index.html` to `404.html` so deep links survive a refresh. For a project page set
-the repository variable `BASE_PATH` to `/<repo-name>/`; leave it unset for a custom
-domain.
+## Deploying to GitHub Pages
 
-## Privacy
+The site is a static build — no server required, free forever on `github.io`.
 
-No GPS, no browser geolocation, no movement history and no public delegate
-directory. Company presence is voluntary, expires automatically, and cross-company
-isolation is enforced by Supabase Row Level Security rather than the frontend.
+1. Make the repository **public** (free GitHub Pages requires this).
+2. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Push to `main`. The deploy workflow builds, runs the data guard, adds the SPA
+   `404.html` fallback and `.nojekyll`, and publishes.
+4. Your site is live at `https://<username>.github.io/<repo>/`.
+
+The workflow resolves the base path automatically:
+
+- project site → `/<repo>/`
+- `<username>.github.io` repo or a `CNAME` file present → `/`
+- override with a `BASE_PATH` repository variable if needed
+
+Because of this, dropping a custom domain later needs no code change: delete the
+`CNAME` and the next deploy serves correctly from the `github.io` sub-path.
+
+## Privacy & data classification
+
+Everything published is public 3GPP information. Bookmarks, follows, read state,
+display name and room presence never leave the device. The rules and the build
+guard that enforces them are documented in
+[docs/data-classification.md](docs/data-classification.md);
+`scripts/check-public-data.mjs` fails the build if private data would be shipped.
+
+## Licence / disclaimer
+
+Community project, provided as-is. Always confirm against the official chair
+notes before relying on a time or room.

@@ -24,11 +24,30 @@ jobs:
 
       - run: bun install --frozen-lockfile
 
+      - name: Resolve base path
+        id: base
+        run: |
+          # Custom domain (CNAME present) or user/org site -> served from root.
+          # Project site (username.github.io/repo) -> served from /repo/.
+          # Override by setting the BASE_PATH repository variable.
+          if [ -n "${{ vars.BASE_PATH }}" ]; then
+            BASE="${{ vars.BASE_PATH }}"
+          elif [ -f public/CNAME ] || [ -f CNAME ]; then
+            BASE="/"
+          elif [[ "${{ github.repository }}" == *".github.io" ]]; then
+            BASE="/"
+          else
+            BASE="/${{ github.event.repository.name }}/"
+          fi
+          echo "Using base path: $BASE"
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+
+      - name: Guard against private data in the public build
+        run: node scripts/check-public-data.mjs
+
       - name: Build static site
         env:
-          # Set BASE_PATH to "/<repo-name>/" for project pages; leave empty for
-          # a custom domain or user/org pages.
-          BASE_PATH: ${{ vars.BASE_PATH }}
+          BASE_PATH: ${{ steps.base.outputs.base }}
         run: bun run build
 
       - name: SPA fallback for client-side routes
@@ -38,6 +57,9 @@ jobs:
           cp "$OUT/index.html" "$OUT/404.html" || true
           touch "$OUT/.nojekyll"
           echo "OUT_DIR=$OUT" >> "$GITHUB_ENV"
+
+      - name: Guard built output
+        run: node scripts/check-public-data.mjs "$OUT_DIR"
 
       - uses: actions/upload-pages-artifact@v3
         with:
