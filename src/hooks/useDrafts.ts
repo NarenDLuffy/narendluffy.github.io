@@ -121,6 +121,7 @@ export function useDrafts(meeting?: Meeting) {
     activity,
     follows,
     watched,
+    myItems,
     unreadCount,
     prefs,
     stale: query.data?.stale ?? false,
