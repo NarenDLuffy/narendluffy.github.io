@@ -76,8 +76,8 @@ export function useDrafts(meeting?: Meeting) {
     added: number;
     updated: number;
     total: number;
-    origin?: string;
-    failed?: boolean;
+    origin?: string | undefined;
+    failed?: boolean | undefined;
   } | null>(null);
 
   const refreshNow = useCallback(async () => {
