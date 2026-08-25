@@ -10,6 +10,13 @@ import { minutesOf } from "./scheduleService";
  * is never derived from location. This module is the only place that knows
  * where presence is stored, so the on-device store can be swapped for shared
  * realtime storage without touching any component.
+ *
+ * PRIVACY BOUNDARY (see docs/data-classification.md):
+ * presence and any other person-level data is tier 2 "device-only". It must
+ * never be written into public/, pre-rendered, or bundled into the static
+ * build. A future shared store must implement PresenceStore and fetch over an
+ * access-controlled runtime API only. scripts/check-public-data.mjs enforces
+ * this at build time.
  */
 
 const GROUP_KEY = "ran1live.company.group";

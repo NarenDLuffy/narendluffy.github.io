@@ -105,6 +105,15 @@ export function AppShell({ children }: { children: ReactNode }) {
             >
               Meetings
             </Link>
+            <Link
+              to="/help"
+              className={cn(
+                "rounded-md px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+                pathname === "/help" && "bg-secondary text-foreground",
+              )}
+            >
+              How to use
+            </Link>
           </nav>
 
           <div className="mono-code shrink-0 rounded-md bg-secondary px-2 py-1 text-right text-sm font-semibold tabular">
@@ -123,6 +132,10 @@ export function AppShell({ children }: { children: ReactNode }) {
       <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
         Unofficial RAN1 meeting companion. Schedule information is automatically generated from
         meeting documents and may contain errors.{" "}
+        <Link to="/help" className="underline underline-offset-2">
+          How to use this site
+        </Link>
+        {" · "}
         <Link to="/admin" className="underline underline-offset-2">
           Ingestion status
         </Link>

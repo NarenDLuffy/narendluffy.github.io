@@ -30,3 +30,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Never commit device-only or private data into the public build
+public/**/*.private.*
+public/**/*.secret.*
+public/**/presence*.json
+public/**/attendees*.json
+public/**/checkins*.json
+**/company-users*.json
+.env
+.env.*
