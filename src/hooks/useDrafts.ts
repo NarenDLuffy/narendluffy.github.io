@@ -66,6 +66,50 @@ export function useDrafts(meeting?: Meeting) {
     [watched, activity],
   );
 
+  /**
+   * Manual "Refresh now": rerun the live probe immediately (bypassing the 60s
+   * cycle and staleTime) and report what reconciling the index changed.
+   */
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [lastRefresh, setLastRefresh] = useState<{
+    at: string;
+    added: number;
+    updated: number;
+    total: number;
+    origin?: string;
+    failed?: boolean;
+  } | null>(null);
+
+  const refreshNow = useCallback(async () => {
+    setIsRefreshing(true);
+    const before = new Map(
+      (query.data?.index?.artifacts ?? []).map((a) => [a.id, a.modifiedAt ?? a.lastSeenAt ?? ""]),
+    );
+    try {
+      const result = await query.refetch();
+      const next = result.data?.index?.artifacts ?? [];
+      let added = 0;
+      let updated = 0;
+      for (const a of next) {
+        const prev = before.get(a.id);
+        if (prev === undefined) added += 1;
+        else if ((a.modifiedAt ?? a.lastSeenAt ?? "") !== prev) updated += 1;
+      }
+      setLastRefresh({
+        at: new Date().toISOString(),
+        added,
+        updated,
+        total: next.length,
+        origin: result.data?.liveOrigin,
+        failed: Boolean(result.error),
+      });
+    } catch {
+      setLastRefresh({ at: new Date().toISOString(), added: 0, updated: 0, total: 0, failed: true });
+    } finally {
+      setIsRefreshing(false);
+    }
+  }, [query]);
+
   return {
     index,
     activity,
@@ -77,7 +121,11 @@ export function useDrafts(meeting?: Meeting) {
     liveOrigin: query.data?.liveOrigin,
     liveCheckedAt: query.data?.liveCheckedAt,
     refresh: query.refetch,
+    refreshNow,
+    isRefreshing: isRefreshing || query.isFetching,
+    lastRefresh,
     isLoading: query.isLoading,
+
     isFollowing: (code: string) => follows.includes(code),
     toggleFollow: useCallback(
       (code: string) => meetingId && toggleFollow(meetingId, code),
