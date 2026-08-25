@@ -19,7 +19,7 @@ export const Route = createFileRoute("/drafts/")({
   component: DraftsPage,
 });
 
-type Filter = "watched" | "all" | "fl";
+type Filter = "watched" | "all";
 
 function DraftsPage() {
   const { meeting, bundle, stale, isCurrent, isLoading } = useActiveMeeting();
@@ -38,13 +38,7 @@ function DraftsPage() {
   const index = drafts.index;
   const cards = [...drafts.activity.values()]
     .filter((a) => a.agendaItemId !== "unmapped")
-    .filter((a) =>
-      filter === "all"
-        ? true
-        : filter === "fl"
-          ? a.flCount > 0 || a.flUpdates > 0
-          : drafts.watched.includes(a.agendaItemId),
-    )
+    .filter((a) => filter === "all" || drafts.myItems.includes(a.agendaItemId))
     .sort((a, b) =>
       (b.latestAt ?? b.latestFileAt ?? "").localeCompare(a.latestAt ?? a.latestFileAt ?? ""),
     );
@@ -189,7 +183,6 @@ function DraftsPage() {
             {(
               [
                 ["watched", `My items (${drafts.unreadCount})`],
-                ["fl", "FL summaries"],
                 ["all", "All agenda items"],
               ] as const
             ).map(([value, label]) => (
@@ -214,14 +207,15 @@ function DraftsPage() {
               <p className="flex items-center gap-2">
                 <Inbox className="size-4" />
                 {filter === "watched"
-                  ? "Nothing yet for the agenda items you follow."
+                  ? "Nothing yet for your agenda items."
                   : index.scanState === "baseline"
                     ? "Baseline captured — you'll see uploads from here on."
                     : "No draft changes detected yet."}
               </p>
               {filter === "watched" ? (
                 <p className="text-xs">
-                  Follow agenda items below or on any session to get their draft updates here.
+                  Bookmark agenda items in My agenda, or follow them from any session or the “All
+                  agenda items” tab, to see their draft updates here.
                 </p>
               ) : null}
             </div>
