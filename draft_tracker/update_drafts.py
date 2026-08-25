@@ -24,6 +24,7 @@ from .tracker import ScanConfig, scan_meeting
 DATA_DIR = Path("public/data")
 MEETINGS_DIR = DATA_DIR / "meetings"
 UPCOMING_WINDOW_DAYS = 21
+SYNC_DRAFTS_ROOT = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/drafts/"
 
 
 def _load_meetings() -> list[dict]:
@@ -97,7 +98,13 @@ def main() -> int:
         if not slug or not should_scan(meeting, args.all or bool(args.slug)):
             continue
         folder = _meeting_folder(slug)
-        source = Public3GPPDraftSource(folder)
+        # During the active meeting the sync Inbox is the current source of
+        # truth. The per-meeting archive can lag by hours and was leaving the
+        # UI at 136 files while the sync drafts tree already held thousands.
+        # Keep archive discovery for non-active meetings so their snapshots do
+        # not accidentally inherit files from the current meeting.
+        live_root = SYNC_DRAFTS_ROOT if meeting.get("status") == "active" else None
+        source = Public3GPPDraftSource(folder, drafts_root_url=live_root)
         previous = load_previous(slug)
         index = scan_meeting(
             meeting_id=meeting.get("id", slug),
