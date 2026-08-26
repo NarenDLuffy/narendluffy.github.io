@@ -46,6 +46,8 @@ export interface LiveDraftReport {
   /** Artifacts that the published index did not know about yet. */
   freshCount: number;
   baseUrl?: string;
+  /** Whether the browser could read the venue directory before fallback. */
+  venueStatus: "not-checked" | "available" | "unavailable";
 }
 
 interface Entry {
@@ -398,9 +400,14 @@ export function mergeLive(
 
 function candidateBases(): { origin: LiveDraftOrigin; url: string; sourceType: DraftSourceType }[] {
   const settings = getLocalSourceSettings();
-  const venue = settings.baseUrl?.includes("10.10.10.10")
+  // The schedule source has historically used /ftp/RAN/RAN1/Inbox/. That is
+  // not the drafts tree. Only accept a configured URL when it explicitly
+  // points at the dynamic SYNC drafts Inbox; otherwise use the known drafts
+  // root. This matters especially on a new phone with untouched settings.
+  const configuredDraftsUrl = settings.baseUrl?.includes("/Meetings_3GPP_SYNC/RAN1/Inbox/")
     ? settings.baseUrl
-    : VENUE_DRAFTS_BASE;
+    : null;
+  const venue = configuredDraftsUrl ?? VENUE_DRAFTS_BASE;
   return [
     { origin: "venue", url: venue.replace(/\/?$/, "/"), sourceType: "meeting-local" },
     { origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public" },
@@ -419,12 +426,22 @@ export async function probeLiveDrafts(
 ): Promise<LiveDraftReport> {
   const checkedAt = new Date().toISOString();
   if (typeof window === "undefined") {
-    return { index: published, origin: "published", checkedAt, freshCount: 0 };
+    return {
+      index: published,
+      origin: "published",
+      checkedAt,
+      freshCount: 0,
+      venueStatus: "not-checked",
+    };
   }
   const codes = new Set(agendaCodes);
+  let venueStatus: LiveDraftReport["venueStatus"] = "not-checked";
 
   for (const candidate of candidateBases()) {
     const result = await crawl(candidate.url);
+    if (candidate.origin === "venue") {
+      venueStatus = result && result.files.length > 0 ? "available" : "unavailable";
+    }
     if (!result || result.files.length === 0) continue;
     const { index, freshCount } = mergeLive(published, result, {
       meetingId: meeting.id,
@@ -432,10 +449,23 @@ export async function probeLiveDrafts(
       baseUrl: candidate.url,
       agendaCodes: codes,
     });
-    return { index, origin: candidate.origin, checkedAt, freshCount, baseUrl: candidate.url };
+    return {
+      index,
+      origin: candidate.origin,
+      checkedAt,
+      freshCount,
+      baseUrl: candidate.url,
+      venueStatus,
+    };
   }
 
-  return { index: published, origin: "published", checkedAt, freshCount: 0 };
+  return {
+    index: published,
+    origin: "published",
+    checkedAt,
+    freshCount: 0,
+    venueStatus,
+  };
 }
 
 export const ORIGIN_LABEL: Record<LiveDraftOrigin, string> = {

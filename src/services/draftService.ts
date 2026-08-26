@@ -54,6 +54,7 @@ export interface DraftResult {
   liveCheckedAt?: string;
   /** Files the live probe found that the published index did not have. */
   freshCount?: number;
+  venueStatus?: "not-checked" | "available" | "unavailable";
 }
 
 function readCache(slug: string): DraftIndex | null {
@@ -101,13 +102,21 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
   const published = await loadDrafts(meeting);
   try {
     const live = await probeLiveDrafts(meeting, published.index);
-    if (live.origin === "published") return published;
+    if (live.origin === "published") {
+      return {
+        ...published,
+        liveOrigin: live.origin,
+        liveCheckedAt: live.checkedAt,
+        venueStatus: live.venueStatus,
+      };
+    }
     return {
       ...published,
       index: live.index,
       liveOrigin: live.origin,
       liveCheckedAt: live.checkedAt,
       freshCount: live.freshCount,
+      venueStatus: live.venueStatus,
     };
   } catch {
     return published;
