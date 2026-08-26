@@ -1,42 +1,86 @@
-# Fix Draft updates from public sync and venue Wi-Fi
+# Venue-first drafts: automatic 10.10.10.10 access, sync as fallback
 
-## Confirmed diagnosis
+## The constraint (why it fails today)
 
-- The published RAN1#126 draft index was last scanned on **25 Aug at 15:52 UTC** and contains **1,778 files**.
-- Running the existing scanner now against the public Meetings Sync tree finds **1,933 files and 167 new events**, so the ingestion/parser works and the checked-in snapshot is stale.
-- The public Sync URL is reachable, but browsers reject JavaScript access because the 3GPP server does not provide a CORS permission header. The app currently tries to fetch that URL directly from the browser, so its advertised live fallback cannot work.
-- The venue source is `http://10.10.10.10/...`, while ran1.app is HTTPS. Safari blocks that request as insecure mixed content before local-network permission is considered. A toggle cannot override this browser security rule.
-- Why the scheduled GitHub workflow has not committed the latest snapshot is not visible from the repository files; its execution history must be checked in GitHub Actions.
+A page loaded over **https://** can never read **http://10.10.10.10/...** — every
+browser blocks it as mixed content before any permission prompt appears. This is
+not a setting we can toggle in code, and no server-side proxy can help either:
+10.10.10.10 only exists on the venue Wi-Fi, and our server is not on that Wi-Fi.
 
-## Implementation
+So there are exactly two ways the venue server can be read with **no extra
+laptop, no script, no new app**: the page itself must be loaded over plain
+**http://**, from a device already on the venue Wi-Fi.
 
-1. **Make Public Sync reliable on ran1.app**
-   - Add a thin server function that fetches only allow-listed 3GPP Sync directory URLs.
-   - Keep the existing recursive tree parser and merge/deduplication logic, but route Sync listing requests through this same-origin server function instead of fetching 3GPP directly from the browser.
-   - Validate every requested URL so the function cannot become an open proxy.
+## The approach: an automatic HTTP twin of the same site
 
-2. **Keep GitHub Pages supported**
-   - Static GitHub Pages has no server function, so it will use the regularly generated `drafts.json` snapshot.
-   - Update the Drafts status text to distinguish “live sync” on ran1.app from “published snapshot” on GitHub Pages rather than implying a live browser fallback that cannot work.
+Keep one codebase and one domain. Serve the same app on a plain-HTTP host used
+only at meetings, and make the switch automatic so nobody has to know about it.
 
-3. **Repair and monitor snapshot automation**
-   - Keep the current 10-minute meeting-week scan.
-   - Add a workflow summary showing source URL, artifact count, new events, and scan timestamp.
-   - Ensure a changed draft snapshot triggers the normal deployment workflow after the bot commit.
-   - Document the one-time GitHub check if scheduled workflows are disabled or lack write permission.
+```text
+off-venue      https://ran1.app        -> sync mirror via server proxy (fallback)
+at the venue   http://venue.ran1.app   -> crawls 10.10.10.10 directly (primary)
+                     ^ app auto-detects and offers/performs the hop
+```
 
-4. **Handle the venue server honestly**
-   - Do not add a misleading toggle: it cannot bypass HTTPS mixed-content or CORS restrictions.
-   - Continue a short direct venue probe only where the browser permits it, and report the precise state: connected, browser-blocked, or unreachable.
-   - Use live Public Sync automatically when venue access is blocked.
+- The HTTP twin is a static export of the same build (the GitHub Pages
+  deploy workflow already produces it), published on a host with HTTPS
+  enforcement off for that name only. No second image to maintain: same
+  commit, same UI, one extra deploy target in the existing workflow.
+- On https://ran1.app the Drafts page silently probes for the venue server via
+  an image/`fetch` beacon that fails fast. If the probe suggests venue Wi-Fi,
+  the app shows a one-tap "You're at the venue — switch to venue mode" banner
+  that jumps to the HTTP twin at the same route, carrying follows/bookmarks
+  over in the URL so nothing is lost. Optional "always switch at venues"
+  remembers the choice and hops automatically next time.
+- On the HTTP twin, venue crawling is on by default and Drafts shows
+  "Venue server — live" with the file count and last check time. If the venue
+  server disappears (left the room), it degrades to the sync path automatically.
 
-5. **Optional true venue bridge**
-   - Add a small local uploader that one attendee runs on a laptop connected to meeting Wi-Fi. It reads `10.10.10.10`, sends only the normalized public draft index to an authenticated app endpoint, and makes the latest venue state available to every phone.
-   - This is the only reliable way for an HTTPS website to consume a plain-HTTP, non-CORS LAN server without changes to that server.
+Security note: the HTTP twin is read-only public schedule/draft data. Presence
+check-ins and anything backend-authenticated stay on the HTTPS site; the twin
+links back to it for those actions rather than sending credentials over HTTP.
 
-## Verification
+## Fallback path when 10.10.10.10 is unreachable
 
-- Confirm ran1.app’s Refresh now returns the current Sync count instead of the stale 1,778-file snapshot.
-- Confirm new and replicated files remain deduplicated.
-- Confirm venue failure falls back to Sync with an accurate source/status message.
-- Confirm GitHub Pages still loads the latest generated snapshot without server functions.
+1. **Server-function proxy for the 3GPP sync mirror.** The browser cannot crawl
+   `/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/` directly (CORS). A server function on
+   ran1.app fetches and parses the listing server-side and returns the entries,
+   so the published app updates live, every 60s, with the same dedup/merge rules
+   already in `mergeLive`.
+2. **More frequent snapshots.** Audit and tighten the drafts GitHub Action so
+   the committed `drafts.json` stays close to live (it is currently behind:
+   a manual scan found ~1,933 files vs ~1,778 in the published index). This is
+   what the static github.io export and cold loads read.
+
+## Honest status in the UI
+
+Drafts replaces the vague "unavailable" with the real reason:
+
+- `Venue server — live (N files, updated 12s ago)`
+- `Venue server blocked — this page is HTTPS. Switch to venue mode` (with button)
+- `Venue server not reachable — not on the meeting network. Using 3GPP sync.`
+- `3GPP sync — live via proxy` / `Snapshot from <time>` when the proxy fails.
+
+## Technical details
+
+- `src/services/draftLiveSource.ts`: add an origin-scheme check; when
+  `location.protocol === 'https:'` mark venue as `blocked-mixed-content` instead
+  of attempting and reporting "unavailable". Add a `sync-proxy` candidate that
+  calls the new server function instead of fetching 3GPP directly.
+- New `src/lib/drafts.functions.ts`: `fetchSyncListing({ url })` server fn —
+  validates the URL is under `https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/`,
+  fetches, returns raw HTML for the existing `parseListing` to handle. Bounded
+  depth/requests server-side, cached ~30s.
+- New `src/lib/venueMode.ts`: venue detection beacon, HTTP-twin URL builder,
+  state transfer of follows/bookmarks, and the "always switch" preference.
+- `src/routes/drafts.index.tsx`: venue banner + precise status strings.
+- `.github/workflows/deploy-pages.yml`: add the venue host output (CNAME +
+  HTTPS-enforcement off for that hostname).
+- `.github/workflows/update-drafts.yml`: verify the schedule actually runs and
+  commits; shorten the interval during meeting weeks.
+
+## What is needed from you
+
+The HTTP twin needs one hostname where HTTPS is not forced (e.g.
+`venue.ran1.app` pointed at GitHub Pages with "Enforce HTTPS" unchecked). I set
+up the workflow and DNS instructions; you flip that one checkbox once.
