@@ -8,6 +8,11 @@ import {
   saveIdentity,
   type CompanyIdentity,
 } from "@/services/presenceService";
+import { useSharedPresence } from "@/services/remotePresenceStore";
+
+// Shared, backend-backed presence: check-ins are visible on every device that
+// uses the same company code, not just the device that checked in.
+useSharedPresence();
 
 /**
  * Account-free company presence for one meeting: a shared group code plus a
