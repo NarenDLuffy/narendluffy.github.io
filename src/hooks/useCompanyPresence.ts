@@ -38,7 +38,7 @@ export function useCompanyPresence(meetingId: string | undefined) {
 
   useEffect(() => {
     void refresh();
-    const id = setInterval(() => void refresh(), 60_000);
+    const id = setInterval(() => void refresh(), 20_000);
     return () => clearInterval(id);
   }, [refresh, identity.groupId]);
 
