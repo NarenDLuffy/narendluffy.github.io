@@ -82,8 +82,8 @@ function DraftsPage() {
           {drafts.venueStatus === "unavailable" ? (
             <p className="text-[11px] text-muted-foreground" role="status">
               Venue server unavailable to this browser. On iPhone, Safari may block the venue’s
-              HTTP server without showing a local-network prompt; the public sync mirror is used
-              automatically.
+              HTTP server before showing a local-network prompt; the public sync or last published
+              index is used automatically.
             </p>
           ) : drafts.venueStatus === "available" ? (
             <p className="text-[11px] text-muted-foreground" role="status">
