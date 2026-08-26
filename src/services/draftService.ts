@@ -54,6 +54,7 @@ export interface DraftResult {
   liveCheckedAt?: string;
   /** Files the live probe found that the published index did not have. */
   freshCount?: number;
+  venueStatus?: "not-checked" | "available" | "unavailable";
 }
 
 function readCache(slug: string): DraftIndex | null {
@@ -108,6 +109,7 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
       liveOrigin: live.origin,
       liveCheckedAt: live.checkedAt,
       freshCount: live.freshCount,
+      venueStatus: live.venueStatus,
     };
   } catch {
     return published;

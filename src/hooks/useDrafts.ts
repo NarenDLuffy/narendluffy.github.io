@@ -127,6 +127,7 @@ export function useDrafts(meeting?: Meeting) {
     stale: query.data?.stale ?? false,
     liveOrigin: query.data?.liveOrigin,
     liveCheckedAt: query.data?.liveCheckedAt,
+    venueStatus: query.data?.venueStatus,
     refresh: query.refetch,
     refreshNow,
     isRefreshing: isRefreshing || query.isFetching,
