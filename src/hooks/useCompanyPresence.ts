@@ -8,6 +8,11 @@ import {
   saveIdentity,
   type CompanyIdentity,
 } from "@/services/presenceService";
+import { useSharedPresence } from "@/services/remotePresenceStore";
+
+// Shared, backend-backed presence: check-ins are visible on every device that
+// uses the same company code, not just the device that checked in.
+useSharedPresence();
 
 /**
  * Account-free company presence for one meeting: a shared group code plus a
@@ -33,7 +38,7 @@ export function useCompanyPresence(meetingId: string | undefined) {
 
   useEffect(() => {
     void refresh();
-    const id = setInterval(() => void refresh(), 60_000);
+    const id = setInterval(() => void refresh(), 20_000);
     return () => clearInterval(id);
   }, [refresh, identity.groupId]);
 
