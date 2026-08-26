@@ -102,7 +102,14 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
   const published = await loadDrafts(meeting);
   try {
     const live = await probeLiveDrafts(meeting, published.index);
-    if (live.origin === "published") return published;
+    if (live.origin === "published") {
+      return {
+        ...published,
+        liveOrigin: live.origin,
+        liveCheckedAt: live.checkedAt,
+        venueStatus: live.venueStatus,
+      };
+    }
     return {
       ...published,
       index: live.index,
