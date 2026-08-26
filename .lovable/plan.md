@@ -1,53 +1,42 @@
-# Venue server (10.10.10.10) access
+# Fix Draft updates from public sync and venue Wi-Fi
 
-## The real blocker
+## Confirmed diagnosis
 
-The app is served over HTTPS (ran1.app / github.io). The venue server is plain HTTP at
-`http://10.10.10.10/...`. Browsers block HTTPS pages from loading HTTP resources
-(mixed content) — Safari/iOS blocks it silently, which is why no local-network
-prompt ever appears on iPhone.
+- The published RAN1#126 draft index was last scanned on **25 Aug at 15:52 UTC** and contains **1,778 files**.
+- Running the existing scanner now against the public Meetings Sync tree finds **1,933 files and 167 new events**, so the ingestion/parser works and the checked-in snapshot is stale.
+- The public Sync URL is reachable, but browsers reject JavaScript access because the 3GPP server does not provide a CORS permission header. The app currently tries to fetch that URL directly from the browser, so its advertised live fallback cannot work.
+- The venue source is `http://10.10.10.10/...`, while ran1.app is HTTPS. Safari blocks that request as insecure mixed content before local-network permission is considered. A toggle cannot override this browser security rule.
+- Why the scheduled GitHub workflow has not committed the latest snapshot is not visible from the repository files; its execution history must be checked in GitHub Actions.
 
-So a toggle alone cannot make it work: the browser refuses the request regardless
-of app settings. A toggle is still useful, but it needs an escape hatch alongside it.
+## Implementation
 
-## What to build
+1. **Make Public Sync reliable on ran1.app**
+   - Add a thin server function that fetches only allow-listed 3GPP Sync directory URLs.
+   - Keep the existing recursive tree parser and merge/deduplication logic, but route Sync listing requests through this same-origin server function instead of fetching 3GPP directly from the browser.
+   - Validate every requested URL so the function cannot become an open proxy.
 
-1. **Venue mode toggle** (Drafts page + Settings area)
-   - "Try venue server (10.10.10.10)" on/off, stored locally, default on.
-   - When off, the app never attempts the local request (no permission prompt,
-     no console noise) and goes straight to the public sync mirror.
-   - Editable venue base URL for meetings where the address differs.
+2. **Keep GitHub Pages supported**
+   - Static GitHub Pages has no server function, so it will use the regularly generated `drafts.json` snapshot.
+   - Update the Drafts status text to distinguish “live sync” on ran1.app from “published snapshot” on GitHub Pages rather than implying a live browser fallback that cannot work.
 
-2. **Honest status line with a working path forward**
-   - After a probe, show one of: Connected to venue server / Blocked by browser
-     (HTTPS to HTTP) / Not reachable on this network / Disabled.
-   - When "Blocked", offer the escape hatch below instead of a dead end.
+3. **Repair and monitor snapshot automation**
+   - Keep the current 10-minute meeting-week scan.
+   - Add a workflow summary showing source URL, artifact count, new events, and scan timestamp.
+   - Ensure a changed draft snapshot triggers the normal deployment workflow after the bot commit.
+   - Document the one-time GitHub check if scheduled workflows are disabled or lack write permission.
 
-3. **HTTP mirror of the app for venue use** (the actual fix)
-   - Publish the same static build to an HTTP-reachable URL and link to it from
-     the blocked state as "Open venue edition".
-   - From an HTTP page, requests to `http://10.10.10.10` are same-scheme, iOS
-     shows the local-network prompt, and Drafts sync properly.
-   - If no HTTP host is available, fall back to option 4.
+4. **Handle the venue server honestly**
+   - Do not add a misleading toggle: it cannot bypass HTTPS mixed-content or CORS restrictions.
+   - Continue a short direct venue probe only where the browser permits it, and report the precise state: connected, browser-blocked, or unreachable.
+   - Use live Public Sync automatically when venue access is blocked.
 
-4. **Manual venue import fallback**
-   - A "Paste venue listing" box: the user opens `http://10.10.10.10/ftp/.../Inbox/`
-     in a browser tab, copies the page, pastes it in, and the existing HTML
-     directory-listing parser ingests it into the same dedup/index pipeline.
-   - Also accept a dropped `.zip`/file list. No new backend needed.
+5. **Optional true venue bridge**
+   - Add a small local uploader that one attendee runs on a laptop connected to meeting Wi-Fi. It reads `10.10.10.10`, sends only the normalized public draft index to an authenticated app endpoint, and makes the latest venue state available to every phone.
+   - This is the only reliable way for an HTTPS website to consume a plain-HTTP, non-CORS LAN server without changes to that server.
 
-## Technical notes
+## Verification
 
-- `src/services/draftLiveSource.ts`: add `venueEnabled` + `venueBaseOverride`
-  settings, classify failures as `blocked` (mixed content / TypeError before any
-  network) vs `unreachable` (timeout), reuse the existing listing parser for
-  pasted HTML.
-- `src/services/draftService.ts` / `src/hooks/useDrafts.ts`: pass the new
-  status and settings through; `refreshNow` respects the toggle.
-- `src/routes/drafts.index.tsx`: toggle UI, status chip, paste-import dialog.
-- Help page: short "At the venue" section explaining HTTP vs HTTPS.
-
-## Decision needed
-
-Do you have (or want) an HTTP-served copy of the app for venue use? If not, I
-build items 1, 2 and 4 only, and the paste-import becomes the venue path on iPhone.
+- Confirm ran1.app’s Refresh now returns the current Sync count instead of the stale 1,778-file snapshot.
+- Confirm new and replicated files remain deduplicated.
+- Confirm venue failure falls back to Sync with an accurate source/status message.
+- Confirm GitHub Pages still loads the latest generated snapshot without server functions.
