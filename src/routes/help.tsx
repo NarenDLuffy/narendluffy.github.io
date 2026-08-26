@@ -151,16 +151,24 @@ function HelpPage() {
 
         <Section title="Share this checklist">
           <p>
-            Want to ask colleagues to test the app? Use the markdown checklist below, copy it into
-            Slack or an email, and collect feedback before RAN1#126.
+            Want to ask colleagues to test the app? Copy the short Teams message below, or use the
+            full markdown checklist for detailed feedback.
           </p>
+          <a
+            href="/COLLEAGUE-CHECKLIST-TEAMS.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block underline underline-offset-2"
+          >
+            Copy short Teams message
+          </a>
           <a
             href="/COLLEAGUE-CHECKLIST.md"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block underline underline-offset-2"
           >
-            Open colleague testing checklist
+            Open full colleague testing checklist
           </a>
         </Section>
       </div>
