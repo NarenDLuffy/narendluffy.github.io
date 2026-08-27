@@ -92,7 +92,7 @@ function decodeState(encoded: string): Record<string, string> | null {
 
 /** URL of the same route on the HTTP twin, carrying follows/bookmarks along. */
 export function venueModeUrl(): string {
-  if (!isBrowser()) return `http://${VENUE_HOST}/`;
+  if (!isBrowser() || !VENUE_HOST) return `http://${VENUE_HOST ?? ""}/`;
   const url = new URL(window.location.href);
   url.protocol = "http:";
   url.host = VENUE_HOST;
