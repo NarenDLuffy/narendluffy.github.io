@@ -349,6 +349,64 @@ def _clean_room_names(
     return rooms, sessions
 
 
+ROOM_CODE_RE = re.compile(r"^[A-Za-z0-9+#._/ -]{1,14}$")
+
+
+def _merge_alias_rooms(
+    rooms: list[Room], sessions: list[Session], remap: dict[str, str]
+) -> tuple[list[Room], dict[str, str]]:
+    """Two documents naming the same physical room differently become one track.
+
+    A chair grid may call the plenary room "B1+B2" while a detailed schedule
+    calls it "RAN1 Main". They are recognised as the same room when their
+    blocks occupy essentially the same minutes across the week; the shorter,
+    code-like name is kept and the canonicaliser then reconciles the detail.
+    """
+    spans: dict[str, set[tuple[str, int]]] = {}
+    for session in sessions:
+        room_id = remap.get(session.roomId, session.roomId)
+        start, end = _minutes(session.startTime), _minutes(session.endTime)
+        if end <= start:
+            continue
+        spans.setdefault(room_id, set()).update(
+            (session.date, minute) for minute in range(start, end, 5)
+        )
+
+    merged: dict[str, str] = {}
+    keepers: list[Room] = []
+    for room in rooms:
+        mine = spans.get(room.roomId, set())
+        match = None
+        for keeper in keepers:
+            theirs = spans.get(keeper.roomId, set())
+            if not mine or not theirs:
+                continue
+            overlap = len(mine & theirs) / min(len(mine), len(theirs))
+            if overlap >= 0.7:
+                match = keeper
+                break
+        if match is None:
+            keepers.append(room)
+            continue
+        merged[room.roomId] = match.roomId
+        if ROOM_CODE_RE.match(room.roomName) and not ROOM_CODE_RE.match(match.roomName):
+            match.roomName = room.roomName
+            match.shortName = room.roomName[:24]
+
+    if merged:
+        for source_id, target_id in list(remap.items()):
+            remap[source_id] = merged.get(target_id, target_id)
+    return keepers, remap
+
+
+def _minutes(value: str) -> int:
+    try:
+        hours, minutes = value.split(":")
+        return int(hours) * 60 + int(minutes)
+    except Exception:
+        return 0
+
+
 def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
     """One track per schedule table, named the way the chair wrote it.
 
@@ -379,6 +437,7 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
                 keeper.shortName = room.roomName[:24]
 
     merged_rooms = list(by_name.values())
+    merged_rooms, remap = _merge_alias_rooms(merged_rooms, sessions, remap)
 
 
     # Rooms keep the order the schedule document lays them out in.
