@@ -36,7 +36,21 @@ export const VENUE_HOST: string | null =
   (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? "3gpplive.net";
 
 /** Keys worth carrying over when switching hosts (all device-local, no PII). */
-const TRANSFER_PREFIX = "ran1live.";
+const TRANSFER_KEYS = new Set([
+  "ran1live.company.group",
+  "ran1live.company.name",
+  "ran1live.company.userId",
+  "ran1live.company.presence.v1",
+  "ran1live.company.follows.v1",
+  "ran1live.selectedMeetingId",
+  "ran1live.localSource.enabled",
+  "ran1live.localSource.base",
+  "ran1live.draftFollows.v1",
+  "ran1live.draftSeen.v1",
+  "ran1live.draftPrefs.v1",
+  "ran1live.bookmarks.v1",
+  "ran1live.venueMode.always.v1",
+]);
 
 export function isBrowser(): boolean {
   return typeof window !== "undefined";
