@@ -83,10 +83,13 @@ site data for `3gpplive.net` and reopen via `https://ran1.app`:
 
 **Android — Chrome**
 
-1. Chrome → **⋮ → History → Clear browsing data**.
-2. Tap **Advanced**, select **Cookies and site data** and **Cached images and
+1. Disable HTTPS-First: Chrome → **⋮ → Settings → Privacy and security →
+   Security** → turn off **Always use secure connections**. This is the setting
+   that keeps upgrading the twin to HTTPS even after you clear the cache.
+2. Chrome → **⋮ → History → Clear browsing data**.
+3. Tap **Advanced**, select **Cookies and site data** and **Cached images and
    files**, then **Clear data**.
-3. Reopen **https://ran1.app**.
+4. Reopen **https://ran1.app**.
 
 > Never open `https://3gpplive.net` directly. Always enter through
 > `https://ran1.app` so the hop stays plain HTTP.

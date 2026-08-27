@@ -195,8 +195,10 @@ function HelpPage() {
             Delete.
           </li>
           <li>
-            <strong>Android (Chrome):</strong> Chrome → ⋮ → History → Clear browsing data →
-            Advanced → select Cookies and site data + Cached images and files → Clear data.
+            <strong>Android (Chrome):</strong> first disable HTTPS-First in Chrome → ⋮ → Settings →
+            Privacy and security → Security → turn off <strong>Always use secure connections</strong>. 
+            Then Chrome → ⋮ → History → Clear browsing data → Advanced → select Cookies and site data
+            + Cached images and files → Clear data.
           </li>
         </ul>
       </Section>
