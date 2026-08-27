@@ -12,6 +12,7 @@ import {
   venueBannerDismissed,
   venueBlockedByScheme,
   venueHopFailed,
+  venueModeUrl,
   venueTwinLoadedOverHttps,
   VENUE_HOST,
 } from "@/lib/venueMode";
