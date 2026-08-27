@@ -2,40 +2,57 @@
 
 Goal: give the app a plain-HTTP copy hosted on GitHub Pages so that, when a delegate is on meeting Wi-Fi, the browser can read `http://10.10.10.10/` for live drafts without mixed-content blocking. The secure main app stays on `https://ran1.app` (Lovable) and offers a one-tap switch to the HTTP twin.
 
+## Important: GitHub Pages forces HTTPS on `*.github.io`
+
+You cannot serve `narendluffy.github.io` over plain HTTP. GitHub always redirects it to HTTPS, and an HTTPS page cannot read `http://10.10.10.10/`. So the venue twin **must** use a custom domain with "Enforce HTTPS" unchecked.
+
+Options for the custom domain:
+
+1. **Recommended:** use a subdomain of `ran1.app` that you already control, e.g. `venue.ran1.app`.
+2. **Alternative:** register any cheap domain and point it to GitHub Pages.
+
+The existing `narendluffy.github.io` site can stay as-is, be replaced, or be moved to a project path — it just cannot be the HTTP venue twin.
+
 ## What already exists in the repo
 
 - `.github/workflows/deploy-pages.yml` already builds a static export, writes a `CNAME` from the `VENUE_HOST` repository variable, and deploys to GitHub Pages.
 - `src/lib/venueMode.ts` already knows how to detect HTTPS-blocked venue access, build the HTTP-twin URL, and carry local state across.
 - `src/routes/__root.tsx` and `src/components/VenueModeBanner.tsx` already show the switch banner and consume transferred state.
 
-What is missing is the actual public GitHub repo, Pages site, and DNS record for the subdomain.
+What is missing is the public GitHub repo, Pages site, custom domain, and DNS record.
 
 ## Plan
 
-### 1. Create a public GitHub repository and push the code
+### 1. Create a public GitHub repository for RAN1 Live
 
-- Create a new public repo under your GitHub account (e.g. `karlla1220/ran1-live`). Free GitHub Pages only works on public repos.
+- Create a new public repo under `narendluffy` (e.g. `narendluffy/ran1-live`). Free GitHub Pages only works on public repos.
 - Push the current project code to the `main` branch. The existing `.github/workflows/deploy-pages.yml` will run on every push.
 
-### 2. Enable GitHub Pages
+### 2. Decide what to do with the existing `narendluffy.github.io` site
 
-- In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-- The first run will deploy to the default `github.io` URL. Wait for it to finish.
+Pick one:
 
-### 3. Add the `venue.ran1.app` subdomain in your DNS
+- **Leave it alone:** the new repo can be a project site at `https://narendluffy.github.io/ran1-live/`. This is fine for the secure app, but it is still HTTPS-only and cannot be the venue twin.
+- **Replace it:** rename the current `narendluffy.github.io` repo to something else, then rename `ran1-live` to `narendluffy.github.io`. This makes RAN1 Live the root site.
+- **Use it for the main secure app:** keep `narendluffy.github.io` as the main secure site and only use the custom domain for the venue twin.
 
-Because `ran1.app` currently points to Lovable, you only need to add one record for the subdomain:
+For venue mode, the custom-domain path below is what matters.
 
-- Type: `CNAME`
-- Name: `venue` (or `venue.ran1.app.` depending on your DNS provider)
-- Value: `<your-github-username>.github.io` (replace with your actual GitHub username or org name)
+### 3. Add the custom domain in your DNS
 
-Example: if your GitHub username is `karlla1220`, the value is `karlla1220.github.io`.
+If using `venue.ran1.app`:
+
+- Go to your DNS provider for `ran1.app`.
+- Add a `CNAME` record:
+  - Name: `venue`
+  - Value: `narendluffy.github.io`
+
+If using a different domain, point its apex/subdomain CNAME to `narendluffy.github.io`.
 
 ### 4. Configure the custom domain in GitHub Pages
 
-- In the repo: **Settings → Pages → Custom domain**, enter `venue.ran1.app`.
-- GitHub will verify the DNS record. This can take a few minutes after step 3.
+- In the `ran1-live` repo: **Settings → Pages → Custom domain**, enter `venue.ran1.app` (or your chosen domain).
+- GitHub will verify the DNS record. This can take a few minutes.
 
 ### 5. Disable HTTPS enforcement (critical)
 
@@ -46,9 +63,9 @@ Example: if your GitHub username is `karlla1220`, the value is `karlla1220.githu
 
 - In the repo: **Settings → Secrets and variables → Actions → Variables → New repository variable**.
 - Name: `VENUE_HOST`
-- Value: `venue.ran1.app`
+- Value: `venue.ran1.app` (or your chosen domain)
 
-This tells the deploy workflow to write `venue.ran1.app` into `dist/CNAME` and tells the app where to link for venue mode.
+This tells the deploy workflow to write the domain into `dist/CNAME` and tells the app where to link for venue mode.
 
 ### 7. Re-run the deploy workflow
 
@@ -66,10 +83,10 @@ This tells the deploy workflow to write `venue.ran1.app` into `dist/CNAME` and t
 
 - Main app: `https://ran1.app` — always secure, uses the Lovable-hosted server function for the 3GPP Sync mirror.
 - Venue twin: `http://venue.ran1.app` — plain HTTP, can directly probe `10.10.10.10` when on the meeting LAN.
-- Switching: the secure app detects it is blocked from reading `10.10.10.10` and shows a banner: "Switch to venue mode". Tapping it carries `localStorage` state (bookmarks, follows, read state) to the HTTP twin.
+- Switching: the secure app detects it is blocked from reading `10.10.10.10` and shows a banner: "Switch to venue mode". Tapping it carries `localStorage` state to the HTTP twin.
 
 ## Notes / caveats
 
-- `github.io` domains cannot be served over plain HTTP; GitHub forces HTTPS on them. That is why a custom subdomain is required.
-- If you later stop using `ran1.app`, you can point the apex domain to GitHub Pages instead and use a different subdomain for the venue twin.
+- `github.io` domains cannot be served over plain HTTP; GitHub forces HTTPS on them. That is why a custom domain is required.
+- If you do not control DNS for `ran1.app`, you need to either get access or register a new domain for the venue twin.
 - The HTTP twin is the exact same static build as the secure app; only the host and protocol differ.
