@@ -320,6 +320,35 @@ def parse_schedule_sources(
 
 
 
+DOC_TITLE_RE = re.compile(
+    r"^\W*(?:[a-z]\s+)?(?:detailed\s+|draft\s+)*(?:schedules?|timetables?|agenda)\s+(?:for|of)\s+",
+    re.I,
+)
+
+
+def _clean_room_names(
+    rooms: list[Room], sessions: list[Session]
+) -> tuple[list[Room], list[Session]]:
+    """Strip document-title wording from track names and drop prose tracks.
+
+    A heading like "b Detailed Schedule for RAN1 Main" names the room
+    "RAN1 Main"; a full sentence picked up from a note is not a room at all and
+    its blocks are parse noise, so they are removed.
+    """
+    dropped: set[str] = set()
+    for room in rooms:
+        name = DOC_TITLE_RE.sub("", room.roomName).strip(" -–—:·")
+        if not name or name.endswith(".") or len(name.split()) > 8:
+            dropped.add(room.roomId)
+            continue
+        room.roomName = name
+        room.shortName = name[:24]
+    if dropped:
+        rooms = [room for room in rooms if room.roomId not in dropped]
+        sessions = [s for s in sessions if s.roomId not in dropped]
+    return rooms, sessions
+
+
 def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
     """One track per schedule table, named the way the chair wrote it.
 
@@ -328,6 +357,8 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     tables that end up with exactly the same name are the same track published
     twice, so they are merged instead of numbered.
     """
+    rooms, sessions = _clean_room_names(rooms, sessions)
+
     def canonical(name: str) -> str:
         # "RAN1_Brk#2 · 1.1 Himalaya" and "1.1 Himalaya" are the same room.
         tail = name.split("·")[-1].strip().lower()
