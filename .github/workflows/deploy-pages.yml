@@ -27,12 +27,12 @@ jobs:
       - name: Resolve base path
         id: base
         run: |
-          # Custom domain (CNAME present) or user/org site -> served from root.
+          # The venue twin is always served from its custom domain at root.
           # Project site (username.github.io/repo) -> served from /repo/.
           # Override by setting the BASE_PATH repository variable.
           if [ -n "${{ vars.BASE_PATH }}" ]; then
             BASE="${{ vars.BASE_PATH }}"
-          elif [ -f public/CNAME ] || [ -f CNAME ]; then
+          elif [ -n "${{ vars.VENUE_HOST }}" ]; then
             BASE="/"
           elif [[ "${{ github.repository }}" == *".github.io" ]]; then
             BASE="/"
@@ -51,27 +51,44 @@ jobs:
           STATIC_EXPORT: 1
           # Hostname of the plain-HTTP venue twin (see below). The app links to
           # it when it detects it cannot read the meeting-room server.
-          VITE_VENUE_HOST: ${{ vars.VENUE_HOST }}
+          VITE_VENUE_HOST: ${{ vars.VENUE_HOST || '3gpplive.net' }}
         run: bun run build
 
-      # Venue mode: this Pages site is the plain-HTTP twin of the app, served
-      # from a hostname whose "Enforce HTTPS" box is left unchecked so the
-      # browser is allowed to read http://10.10.10.10 from it. Set the
-      # VENUE_HOST repository variable (e.g. 3gpplive.net) to enable.
-      - name: Custom domain for venue mode
-        if: vars.VENUE_HOST != ''
+      - name: Locate and validate static app
         run: |
-          OUT=dist
-          [ -d "$OUT/client" ] && OUT="$OUT/client"
-          echo "${{ vars.VENUE_HOST }}" > "$OUT/CNAME"
+          if [ -f dist/client/index.html ]; then
+            OUT=dist/client
+          elif [ -f dist/index.html ]; then
+            OUT=dist
+          else
+            echo "Static build did not produce an index.html" >&2
+            exit 1
+          fi
+
+          # Never deploy source/Jekyll output by mistake. A valid Vite app entry
+          # contains generated module assets; the README-rendered page does not.
+          if ! grep -Eq '<script[^>]+type="module"|/assets/[^" ]+\.js' "$OUT/index.html"; then
+            echo "Refusing to deploy: index.html is not the compiled RAN1 Live app" >&2
+            exit 1
+          fi
+          if grep -q 'Jekyll SEO tag' "$OUT/index.html"; then
+            echo "Refusing to deploy Jekyll/README output" >&2
+            exit 1
+          fi
+
+          echo "OUT_DIR=$OUT" >> "$GITHUB_ENV"
+
+      # Keep the custom-domain files inside the uploaded build artifact. The
+      # repository root deliberately has no CNAME, so branch/Jekyll Pages cannot
+      # claim the domain and render README.md instead of this app.
+      - name: Configure venue domain
+        run: |
+          echo "${{ vars.VENUE_HOST || '3gpplive.net' }}" > "$OUT_DIR/CNAME"
+          touch "$OUT_DIR/.nojekyll"
 
       - name: SPA fallback for client-side routes
         run: |
-          OUT=dist
-          [ -d "$OUT/client" ] && OUT="$OUT/client"
-          cp "$OUT/index.html" "$OUT/404.html" || true
-          touch "$OUT/.nojekyll"
-          echo "OUT_DIR=$OUT" >> "$GITHUB_ENV"
+          cp "$OUT_DIR/index.html" "$OUT_DIR/404.html"
 
       - name: Guard built output
         run: node scripts/check-public-data.mjs "$OUT_DIR"

@@ -96,11 +96,11 @@ python -m draft_tracker.crawl       # refresh the draft index
 
 ## Scheduled updates
 
-| Workflow | What it does | When |
-| --- | --- | --- |
+| Workflow                                | What it does                                  | When                                                 |
+| --------------------------------------- | --------------------------------------------- | ---------------------------------------------------- |
 | `.github/workflows/update-schedule.yml` | Re-discovers meetings and re-parses schedules | frequently during a meeting week, sparsely otherwise |
-| `.github/workflows/update-drafts.yml` | Re-crawls the Inbox tree and diffs snapshots | every 10 min during meetings |
-| `.github/workflows/deploy-pages.yml` | Builds and deploys the site | on every push to `main` |
+| `.github/workflows/update-drafts.yml`   | Re-crawls the Inbox tree and diffs snapshots  | every 10 min during meetings                         |
+| `.github/workflows/deploy-pages.yml`    | Builds and deploys the site                   | on every push to `main`                              |
 
 ## Deploying to GitHub Pages
 
@@ -115,11 +115,14 @@ The site is a static build — no server required, free forever on `github.io`.
 The workflow resolves the base path automatically:
 
 - project site → `/<repo>/`
-- `<username>.github.io` repo or a `CNAME` file present → `/`
+- `<username>.github.io` repo or configured venue custom domain → `/`
 - override with a `BASE_PATH` repository variable if needed
 
-Because of this, dropping a custom domain later needs no code change: delete the
-`CNAME` and the next deploy serves correctly from the `github.io` sub-path.
+The venue custom domain is written into the compiled artifact by the deployment
+workflow. Do not add a `CNAME` to the repository root: when Pages is configured
+to deploy from a branch, that can cause GitHub's Jekyll builder to publish this
+README instead of the application. The workflow validates that its artifact is
+the compiled app before deployment.
 
 ## Privacy & data classification
 
