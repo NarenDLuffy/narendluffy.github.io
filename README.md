@@ -45,13 +45,22 @@ in the meeting Inbox as it happens.
 3GPP FTP (draft tree)   ─┘                      (ingestion/, draft_tracker/)
                                                              │
                                                              ▼
-                                    React + TanStack Start static build
+                                     React + TanStack Start static build
                                                              │
-                                                             ▼
-                                                     GitHub Pages
-                                                             │
-   browser also probes 10.10.10.10 (venue) and the SYNC mirror at runtime
+                                    ┌────────────────────────┴────────────────────────┐
+                                    ▼                                                   ▼
+                           https://ran1.app (Lovable)                         http://venue.ran1.app (GitHub Pages)
+                                    │                                                   │
+                  server function proxy for SYNC mirror              direct read of 10.10.10.10 on meeting LAN
+                                    │
+                  browser also probes 10.10.10.10 when possible
 ```
+
+The main app is served by Lovable over HTTPS and uses a server function to crawl
+the public 3GPP SYNC mirror. Because browsers block HTTPS pages from fetching
+HTTP URLs, a separate plain-HTTP copy is hosted on GitHub Pages under a custom
+subdomain (`venue.ran1.app`) for use on the meeting Wi-Fi; that copy can read
+the venue server `10.10.10.10` directly.
 
 - `ingestion/` — portal discovery, FTP crawling, DOCX block-schedule parsing,
   merging, validation, change detection.
