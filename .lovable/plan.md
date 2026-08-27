@@ -1,48 +1,33 @@
 # Make venue mode actually automatic
 
-## What you're seeing
+## The problem in plain language
 
-The "Open venue mode" banner appears because the automatic hop can never succeed as
-currently written, for two reasons:
+You open `https://ran1.app` during a meeting and still see the **Open venue mode** banner instead of being sent to the venue twin automatically.
 
-1. **The toggle probably was never switched on.** The offer banner has two buttons
-   ("Open venue mode" and "Always open venue mode") but no visible state showing whether
-   auto-hop is already enabled. Only the in-venue banner has the checkbox. If you only ever
-   tapped "Open venue mode", the preference was never stored, so every visit shows the offer.
-2. **Even with the toggle on, the reachability probe always fails.** Before hopping, the app
-   fetches `http://3gpplive.net/favicon.png` from the HTTPS page. Browsers block *any*
-   HTTP subresource request from an HTTPS page (mixed content) — including `no-cors` fetches —
-   so the probe rejects every time, auto-hop returns false, and the code falls back to the
-   offer banner. This is the same restriction that forces venue mode to exist at all.
+There are two reasons:
 
-## Fix
+1. **The "always" switch is probably off.** The banner has two buttons but no checkbox in the offer state, so it's not obvious whether auto-hop is enabled. If you only ever tapped **Open venue mode**, the app never stored the "always" preference, so it asks again every time.
+2. **Even with the switch on, the current auto-hop can't work.** Before hopping, the app tries to fetch `http://3gpplive.net/favicon.png` from the HTTPS page. Browsers block any HTTP subresource request from an HTTPS page (mixed-content). The probe always fails, so the app falls back to showing the banner.
 
-- **Remove the probe from the auto-hop path.** A top-level navigation from HTTPS to HTTP is
-  allowed (that's what the button already does); only subresource fetches are blocked. So when
-  the toggle is on, a meeting is active, and the hop isn't marked failed, redirect immediately
-  with `window.location.replace(venueModeUrl())` — no probe, no banner flash.
-- **Keep the safety net.** The existing failed-hop marker still applies: if the browser
-  upgrades the hop to HTTPS, the twin page marks the device as failed, auto-hop stops, and the
-  "Venue mode unavailable" banner explains why. Add a guard so the twin, when it can't reach
-  `10.10.10.10`, offers a one-tap return to `ran1.app` and clears the toggle — so a hop to a
-  dead twin is recoverable rather than sticky.
-- **Make the toggle visible on the offer banner.** Replace the second button with a checkbox
-  "Always open venue mode at meetings" next to the "Open venue mode" button, reflecting the
-  stored value, so you can see whether auto-hop is on and turn it off from either side.
-- Keep `venueTwinReachable()` for use on the HTTP twin only (where it works), or drop it.
+The fix is to stop probing and just hop. A top-level navigation from an HTTPS page to an HTTP URL is allowed — that's exactly what the **Open venue mode** button already does successfully.
 
-## Technical notes
+## What will change
 
-- `src/lib/venueMode.ts` — `autoHopToVenue()` drops the `venueTwinReachable()` gate; probe
-  helper kept but no longer used on the HTTPS side.
-- `src/components/VenueModeBanner.tsx` — auto-hop runs synchronously in the effect when
-  `canAutoHop()` is true (render nothing meanwhile); offer state gets the checkbox; in-venue
-  state gains a "turn off auto-hop and go back" action.
-- `docs/HOW-TO-USE.md` — correct the description of what happens on `ran1.app`.
+- **Auto-hop becomes instant.** When a meeting is active, the toggle is on, and the hop isn't marked failed, the HTTPS page calls `window.location.replace(venueModeUrl())` immediately. No banner flash, no probe.
+- **The offer banner gets a visible checkbox.** Next to **Open venue mode** you'll see **Always open venue mode at meetings**, checked or unchecked, so you can tell and change the preference from either side.
+- **Safety net stays in place.** If the browser upgrades the hop to HTTPS (HSTS), the twin marks the device as failed and stops auto-hopping. If you land on the twin but the meeting-room server isn't reachable, the twin offers a one-tap **Back to ran1.app** and turns the toggle off so you don't get stuck.
+- **The long `?ran1import=...` URL is cleaned immediately.** The twin reads the blob once, writes the transferred settings into its own localStorage, and removes the parameter from the address bar with `history.replaceState`. Users only see it for the split second of the hop.
 
-## Caveat
+## About the `https://3gpplive.net` worry
 
-Without a probe, auto-hop fires whenever a meeting is active and the toggle is on, even off
-meeting Wi-Fi. In that case the twin still loads (it's on GitHub Pages, reachable anywhere) —
-it just can't read `10.10.10.10`, and its banner offers the way back. That's the trade-off for
-a truly zero-tap hop; a pre-flight check is technically impossible from the HTTPS page.
+Because GitHub Pages has **Enforce HTTPS unchecked** for the twin, visiting `https://3gpplive.net` by accident will load over HTTPS but should not pin HSTS. The app itself only ever navigates to `http://3gpplive.net`. To be extra safe, the twin page can detect when it loaded over HTTPS and show a warning instead of functioning normally, reminding the user to go through `ran1.app`.
+
+## Files to touch
+
+- `src/lib/venueMode.ts` — remove the probe gate from `autoHopToVenue()`.
+- `src/components/VenueModeBanner.tsx` — instant auto-hop in the effect; checkbox in the offer state; HTTPS-on-twin warning.
+- `docs/HOW-TO-USE.md` — update the venue-mode description.
+
+## Note on `ran1.net`
+
+A separate alias domain would need its own GitHub Pages custom-domain slot and would still have to be served plain-HTTP. It doesn't remove the mixed-content restriction or the need for the import blob. Keeping `3gpplive.net` as the twin and making the hop silent is the simplest path; the user never needs to type or bookmark the twin address.
