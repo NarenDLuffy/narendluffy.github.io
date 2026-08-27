@@ -91,7 +91,10 @@ appears automatically — the current one is selected for you by default.
 - **Times** are always shown in the meeting's local time zone, not your phone's.
 - **Venue mode**: the plain-HTTP venue twin is only for use on the meeting LAN.
   It does not support account-based features; switch back to the secure site for
-  those.
+  those. The twin must live on its own separate domain — the main site uses
+  strict HTTPS (HSTS) for all its subdomains, so a twin hosted under the same
+  domain would be force-upgraded to HTTPS by the browser and could not read the
+  venue server.
 - **Limitations**: the schedule is parsed from chair/sub-chair DOCX files, so a
   last-minute change made verbally in the room will not appear until an updated
   document is uploaded.

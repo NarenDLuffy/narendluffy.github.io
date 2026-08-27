@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Radio, ShieldCheck, X } from "lucide-react";
+import { AlertTriangle, Radio, ShieldCheck, X } from "lucide-react";
 import {
   alwaysSwitch,
   dismissVenueBanner,
@@ -9,6 +9,7 @@ import {
   switchToVenueMode,
   venueBannerDismissed,
   venueBlockedByScheme,
+  venueHopFailed,
   VENUE_HOST,
 } from "@/lib/venueMode";
 
@@ -27,7 +28,7 @@ export function VenueModeBanner({
   meetingActive: boolean;
   secureHost?: string;
 }) {
-  const [state, setState] = useState<"hidden" | "offer" | "in-venue">("hidden");
+  const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked">("hidden");
 
   useEffect(() => {
     if (inVenueMode()) {
@@ -35,6 +36,12 @@ export function VenueModeBanner({
       return;
     }
     if (!venueBlockedByScheme() || !meetingActive) return;
+    // A twin that the browser already force-upgraded to HTTPS (HSTS), or no
+    // twin configured at all: explain instead of offering a broken switch.
+    if (venueHopFailed() || !VENUE_HOST) {
+      if (!venueBannerDismissed()) setState("blocked");
+      return;
+    }
     if (alwaysSwitch()) {
       switchToVenueMode();
       return;
@@ -56,6 +63,31 @@ export function VenueModeBanner({
             Back to {secureHost}
           </a>
         </p>
+      </div>
+    );
+  }
+
+  if (state === "blocked") {
+    return (
+      <div className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-xs">
+        <AlertTriangle className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
+        <p className="min-w-0 flex-1 text-muted-foreground">
+          <span className="font-medium text-foreground">Venue mode unavailable.</span>{" "}
+          {VENUE_HOST
+            ? "Your browser forced the venue copy of this app to HTTPS, which cannot read the meeting-room server. This happens when the venue host sits under a domain with strict HTTPS (HSTS) — the venue twin must run on its own separate domain."
+            : "The plain-HTTP venue copy of this app is not configured for this deployment yet. Drafts will fall back to the public 3GPP SYNC mirror, which may be a few minutes behind."}
+        </p>
+        <button
+          type="button"
+          aria-label="Dismiss"
+          onClick={() => {
+            dismissVenueBanner();
+            setState("hidden");
+          }}
+          className="shrink-0 text-muted-foreground"
+        >
+          <X className="size-4" />
+        </button>
       </div>
     );
   }

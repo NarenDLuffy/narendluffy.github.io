@@ -18,11 +18,21 @@
 
 const ALWAYS_KEY = "ran1live.venueMode.always.v1";
 const DISMISS_KEY = "ran1live.venueMode.dismissed.v1";
+const FAILED_KEY = "ran1live.venueMode.hopFailed.v1";
 const IMPORT_PARAM = "ran1import";
 
-/** Hostname serving the plain-HTTP twin. Override per deployment if needed. */
-export const VENUE_HOST: string =
-  (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? "venue.ran1.app";
+/**
+ * Hostname serving the plain-HTTP twin. Set per deployment via VITE_VENUE_HOST.
+ *
+ * There is deliberately no built-in default: the twin MUST live on its own
+ * domain, never under a host that sends HSTS with includeSubDomains (the main
+ * site does exactly that, so any *.ran1.app twin is force-upgraded to HTTPS by
+ * the browser before the request even leaves the device). When unset, venue
+ * mode is "not configured" and the banner explains that instead of linking to
+ * a host that cannot work.
+ */
+export const VENUE_HOST: string | null =
+  (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? null;
 
 /** Keys worth carrying over when switching hosts (all device-local, no PII). */
 const TRANSFER_PREFIX = "ran1live.";
@@ -82,7 +92,7 @@ function decodeState(encoded: string): Record<string, string> | null {
 
 /** URL of the same route on the HTTP twin, carrying follows/bookmarks along. */
 export function venueModeUrl(): string {
-  if (!isBrowser()) return `http://${VENUE_HOST}/`;
+  if (!isBrowser() || !VENUE_HOST) return `http://${VENUE_HOST ?? ""}/`;
   const url = new URL(window.location.href);
   url.protocol = "http:";
   url.host = VENUE_HOST;
@@ -110,6 +120,13 @@ export function consumeTransferredState(): boolean {
   const url = new URL(window.location.href);
   const encoded = url.searchParams.get(IMPORT_PARAM);
   if (!encoded) return false;
+  // The import blob is only ever attached by the secure host when sending the
+  // user to the HTTP twin. If it shows up on an https:// page (localhost dev
+  // aside), the browser silently upgraded the hop — HSTS pinned the twin host.
+  // Record that so the banner can explain instead of retrying in a loop.
+  if (window.location.protocol === "https:" && venueBlockedByScheme()) {
+    markVenueHopFailed();
+  }
   const state = decodeState(encoded);
   if (state) {
     for (const [key, value] of Object.entries(state)) {
@@ -128,6 +145,9 @@ export function consumeTransferredState(): boolean {
 
 export function alwaysSwitch(): boolean {
   if (!isBrowser()) return false;
+  // Never auto-switch once a hop has failed on this device — that is how a
+  // browser pinned to HTTPS would be bounced between the two hosts forever.
+  if (venueHopFailed()) return false;
   try {
     return window.localStorage.getItem(ALWAYS_KEY) === "1";
   } catch {
@@ -164,7 +184,40 @@ export function dismissVenueBanner(): void {
 
 /** Navigate to the HTTP twin, remembering the choice when asked. */
 export function switchToVenueMode(remember = false): void {
-  if (!isBrowser()) return;
+  if (!isBrowser() || !VENUE_HOST) return;
   if (remember) setAlwaysSwitch(true);
   window.location.assign(venueModeUrl());
+}
+
+/**
+ * True when a previous hop to the twin was silently upgraded to HTTPS by the
+ * browser (HSTS). Used to stop auto-switching forever once it is known the
+ * twin host cannot be reached over plain HTTP from this device.
+ */
+export function venueHopFailed(): boolean {
+  if (!isBrowser()) return false;
+  try {
+    return window.localStorage.getItem(FAILED_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+export function markVenueHopFailed(): void {
+  if (!isBrowser()) return;
+  try {
+    window.localStorage.setItem(FAILED_KEY, "1");
+  } catch {
+    /* storage unavailable */
+  }
+}
+
+/** Clear the failed-hop marker, e.g. after moving the twin to a new domain. */
+export function clearVenueHopFailed(): void {
+  if (!isBrowser()) return;
+  try {
+    window.localStorage.removeItem(FAILED_KEY);
+  } catch {
+    /* storage unavailable */
+  }
 }
