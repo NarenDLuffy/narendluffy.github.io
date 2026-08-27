@@ -292,7 +292,15 @@ export function mergeLive(
 
 /* ---------- probe ---------- */
 
-function candidateBases(): { origin: LiveDraftOrigin; url: string; sourceType: DraftSourceType }[] {
+type Candidate = {
+  origin: LiveDraftOrigin;
+  url: string;
+  sourceType: DraftSourceType;
+  /** "browser" = fetched by this page, "proxy" = crawled by a server function. */
+  via: "browser" | "proxy";
+};
+
+function candidateBases(): Candidate[] {
   const settings = getLocalSourceSettings();
   // The schedule source has historically used /ftp/RAN/RAN1/Inbox/. That is
   // not the drafts tree. Only accept a configured URL when it explicitly
@@ -302,16 +310,48 @@ function candidateBases(): { origin: LiveDraftOrigin; url: string; sourceType: D
     ? settings.baseUrl
     : null;
   const venue = configuredDraftsUrl ?? VENUE_DRAFTS_BASE;
-  return [
-    { origin: "venue", url: venue.replace(/\/?$/, "/"), sourceType: "meeting-local" },
-    { origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public" },
-  ];
+
+  const candidates: Candidate[] = [];
+  // Skipped entirely on an HTTPS page: the browser would refuse the request
+  // anyway, and attempting it only produces console noise and a wrong
+  // "unavailable" verdict.
+  if (!venueBlockedByScheme()) {
+    candidates.push({
+      origin: "venue",
+      url: venue.replace(/\/?$/, "/"),
+      sourceType: "meeting-local",
+      via: "browser",
+    });
+  }
+  // Direct sync read: usually blocked by CORS, but free to try and instant
+  // when a mirror does send the headers.
+  candidates.push({ origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public", via: "browser" });
+  // Server-side crawl of the same mirror — the reliable fallback.
+  candidates.push({
+    origin: "sync-proxy",
+    url: SYNC_DRAFTS_BASE,
+    sourceType: "public",
+    via: "proxy",
+  });
+  return candidates;
+}
+
+async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
+  try {
+    const { crawlSyncDrafts } = await import("@/lib/drafts.functions");
+    const result = await crawlSyncDrafts({ data: { url } });
+    if (!result?.ok) return null;
+    return { folders: result.folders, files: result.files };
+  } catch {
+    // No server function available (static export) or the crawl failed.
+    return null;
+  }
 }
 
 /**
- * Try the venue server first, then the 3GPP sync mirror, and merge whatever
- * answers over the published index. Returns the published index unchanged when
- * neither is reachable — the common case off the meeting network.
+ * Try the venue server first, then the 3GPP sync mirror (direct, then through
+ * the server proxy), and merge whatever answers over the published index.
+ * Returns the published index unchanged when nothing is reachable.
  */
 export async function probeLiveDrafts(
   meeting: Meeting,
@@ -329,10 +369,11 @@ export async function probeLiveDrafts(
     };
   }
   const codes = new Set(agendaCodes);
-  let venueStatus: LiveDraftReport["venueStatus"] = "not-checked";
+  let venueStatus: VenueStatus = venueBlockedByScheme() ? "blocked-mixed-content" : "not-checked";
 
   for (const candidate of candidateBases()) {
-    const result = await crawl(candidate.url);
+    const result =
+      candidate.via === "proxy" ? await crawlViaProxy(candidate.url) : await crawl(candidate.url);
     if (candidate.origin === "venue") {
       venueStatus = result && result.files.length > 0 ? "available" : "unavailable";
     }
@@ -365,5 +406,7 @@ export async function probeLiveDrafts(
 export const ORIGIN_LABEL: Record<LiveDraftOrigin, string> = {
   venue: "venue server (10.10.10.10)",
   sync: "3GPP sync mirror",
+  "sync-proxy": "3GPP sync mirror (live)",
   published: "published index",
 };
+
