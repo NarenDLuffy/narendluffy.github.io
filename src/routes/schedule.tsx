@@ -1,7 +1,9 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import { Crosshair, Search, X } from "lucide-react";
+import { CalendarPlus, Crosshair, Search, X } from "lucide-react";
+import { buildIcs, downloadIcs } from "@/lib/ics";
+
 import { meetingDates, sessionMatchesAgenda, searchSession } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { DayTabs } from "@/components/DayTabs";
