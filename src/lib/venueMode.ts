@@ -261,6 +261,16 @@ export function venueTwinLoadedOverHttps(): boolean {
   return window.location.protocol === "https:" && window.location.hostname === VENUE_HOST;
 }
 
+/**
+ * Clear the HSTS/failed-hop marker and try the HTTP twin again.
+ * Call this from a user gesture after they have cleared site data.
+ */
+export function retryVenueOverHttp(): void {
+  if (!isBrowser() || !VENUE_HOST) return;
+  clearVenueHopFailed();
+  window.location.replace(venueModeUrl());
+}
+
 /** Turn auto-hop off and forget any failed-hop marker (used by the twin's UI). */
 export function disableAlwaysSwitch(): void {
   setAlwaysSwitch(false);
