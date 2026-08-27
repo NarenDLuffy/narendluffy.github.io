@@ -60,39 +60,21 @@ twin loads.
 Tick **Always open venue mode** on the banner (or from inside venue mode) and you
 never have to think about it again: open `https://ran1.app` as usual, and during
 an active meeting the app redirects itself to the HTTP twin silently. If the twin
-cannot be reached — you are not on the meeting Wi-Fi, or your browser forced the
-hop to HTTPS — the app stays on the secure site and shows the normal banner
-instead of looping.
+cannot be reached, or your browser upgrades the hop to HTTPS, use the secure site
+and its public meeting-sync source instead.
 
-If you ever open the venue copy directly with `https://` (for example by typing
-the twin address), the app shows a warning reminding you to use `ran1.app`
-instead. Using the twin over HTTPS can teach your browser to force HTTPS for
-that domain, after which venue mode stops working.
+If the venue copy opens with `https://`, the app shows a warning and a way back
+to `ran1.app`. The HTTPS page cannot access the local meeting server.
 
 #### If the twin loads over HTTPS and you see the warning
 
-That means your browser has pinned `3gpplive.net` to HTTPS. Clear the stored
-site data for `3gpplive.net` and reopen via `https://ran1.app`:
+GitHub Pages serves a valid HTTPS version of `3gpplive.net`. Some browsers
+automatically upgrade the requested HTTP link and keep it on HTTPS because that
+connection succeeds. Clearing browser data does not reliably change this.
 
-**iPhone — Safari**
-
-1. Open **Settings → Safari → Clear History and Website Data** → confirm.
-2. Or, for a more targeted wipe: **Settings → Safari → Advanced → Website Data**,
-   search for **3gpplive**, swipe left, then tap **Delete**.
-3. Reopen **https://ran1.app** and let it hop you to the twin.
-
-**Android — Chrome**
-
-1. Disable HTTPS-First: Chrome → **⋮ → Settings → Privacy and security →
-   Security** → turn off **Always use secure connections**. This is the setting
-   that keeps upgrading the twin to HTTPS even after you clear the cache.
-2. Chrome → **⋮ → History → Clear browsing data**.
-3. Tap **Advanced**, select **Cookies and site data** and **Cached images and
-   files**, then **Clear data**.
-4. Reopen **https://ran1.app**.
-
-> Never open `https://3gpplive.net` directly. Always enter through
-> `https://ran1.app` so the hop stays plain HTTP.
+Use **Back to ran1.app**. Schedule and drafts continue through the public
+meeting-sync source; venue-only changes may arrive a few minutes later. You can
+also select **Stop auto-opening venue mode** to avoid returning to the HTTPS twin.
 
 If you never see the banner, the app is probably falling back to the public
 SYNC mirror, which is fine but may be a few minutes behind.
@@ -161,7 +143,6 @@ Notes:
 
 - Deep routes redirect to a trailing slash first; that redirect keeps the
   `http://` scheme, so venue mode is unaffected.
-- Never open `https://3gpplive.net`. A single HTTPS visit can make the browser
-  remember HTTPS for the host and break the plain-HTTP twin on that device.
-  Keep **Enforce HTTPS** unchecked in GitHub Pages settings for this domain.
+- GitHub Pages also provides a valid HTTPS endpoint. A browser that upgrades the
+  HTTP URL will remain on HTTPS even though **Enforce HTTPS** is unchecked.
 - Always enter through `https://ran1.app` and let it hop you to the twin.

@@ -180,27 +180,16 @@ function HelpPage() {
           plain-HTTP twin on <code>3gpplive.net</code> that can.
         </p>
         <p>
-          <strong>Always enter through https://ran1.app.</strong> Never type{" "}
-          <code>https://3gpplive.net</code> directly — if your browser caches HTTPS for that
-          domain, venue mode stops working for this device.
+          <strong>Always enter through https://ran1.app.</strong> The venue copy is currently hosted
+          on GitHub Pages, which also provides a valid HTTPS version. Some browsers automatically
+          upgrade the HTTP link to HTTPS even when the app requested HTTP.
         </p>
         <p>
-          <strong>If you see "Venue mode opened over HTTPS":</strong> your browser has pinned
-          the twin to HTTPS. Clear its stored site data and reopen via ran1.app:
+          <strong>If you see "Venue mode opened over HTTPS":</strong> direct access to 10.10.10.10
+          is unavailable in that browser session. Clearing browser data does not reliably fix this,
+          because the HTTPS version is valid. Return to ran1.app; schedule and drafts will continue
+          through the public meeting sync and may be a few minutes behind the venue server.
         </p>
-        <ul className="list-disc space-y-1 pl-4">
-          <li>
-            <strong>iPhone (Safari):</strong> Settings → Safari → Clear History and Website Data;
-            or Settings → Safari → Advanced → Website Data → search "3gpplive" → swipe left →
-            Delete.
-          </li>
-          <li>
-            <strong>Android (Chrome):</strong> first disable HTTPS-First in Chrome → ⋮ → Settings →
-            Privacy and security → Security → turn off <strong>Always use secure connections</strong>. 
-            Then Chrome → ⋮ → History → Clear browsing data → Advanced → select Cookies and site data
-            + Cached images and files → Clear data.
-          </li>
-        </ul>
       </Section>
 
       <Section title="Good to know">
