@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-27T15:20:38Z",
+  "generatedAt": "2026-08-27T15:28:02Z",
   "meetingId": "ran1-126",
   "sessions": [
     {
@@ -474,32 +474,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_hiroki-s-online-session-_1430_1530_6g-isac",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "6G ISAC",
-      "topicKey": "2163d5fe",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "9.3.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_mon_praetorium_1430_1510_ntn-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
@@ -556,6 +530,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -781,14 +759,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_hiroki-s-online-session-_1530_1630_10.8.2",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8.2",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
       "topic": "10.8.2",
       "topicKey": "734850ac",
       "agendaItems": [
@@ -807,43 +785,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
       "detailAvailable": true
     },
     {
@@ -1127,35 +1068,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_hiroki-s-online-session-_1700_1850_10.5.4.x",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "18:50",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "6G",
-      "topicKey": "9c8335f3",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_mon_praetorium_1700_1800_10.3.2",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
@@ -1193,40 +1105,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1700_1740_10.2.1",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1700_1850_10.5.4.x",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "17:40",
+      "endTime": "18:50",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "6G",
+      "topicKey": "9c8335f3",
       "agendaItems": [
-        "10.2.1"
+        "10.5.4.x"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "10.2.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1379,43 +1283,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1740_1930_10.5.4",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "17:40",
-      "endTime": "19:30",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "10.5.4",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
     {
@@ -1681,14 +1548,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_hiroki-s-online-session-_1850_1920_10.5.4.3",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1850_1920_10.5.4.3",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "18:50",
       "endTime": "19:20",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
       "topic": "(30), (50),",
       "topicKey": "9c8335f3",
       "agendaItems": [
@@ -1820,6 +1687,44 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1920_1930_10.5.4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "19:20",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.5.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10.5",
+      "detailAvailable": false
+    },
+    {
       "sessionId": "ran1-126_tue_expo-foyer_0830_0900_10.5.1.3",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -1857,35 +1762,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_0830_0910_10.5.4.2",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "(40), (40),",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_tue_praetorium_0830_0910_ntn-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -1920,40 +1796,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_0830_1030_10.5.4",
+      "sessionId": "ran1-126_tue_1-1-himalaya_0830_0910_10.5.4.2",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "09:10",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "10.5.4",
-      "topicKey": "f8e05aee",
+      "topic": "(40), (40),",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.5.4"
+        "10.5.4.2"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -2102,6 +1970,44 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.7",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_tue_1-1-himalaya_0910_1030_10.5.4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "09:10",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.5.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10.5",
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_tue_expo-foyer_0930_1030_10.5.1.1",
@@ -2363,32 +2269,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1100_1220_6g-isac",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "12:20",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "6G ISAC",
-      "topicKey": "9c8335f3",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_tue_praetorium_1100_1220_ai-ml",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -2611,12 +2491,12 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1300_10.8",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_10.8",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "11:40",
-      "endTime": "13:00",
+      "endTime": "12:20",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
       "topic": "Sensing",
@@ -2628,6 +2508,7 @@
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
+      "note": "Detailed timing not available",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -2642,10 +2523,37 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
       "parentAgendaItem": "10",
-      "detailAvailable": true
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_6g-isac",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G ISAC",
+      "topicKey": "9c8335f3",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.7,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_tue_0-4-brussels_1145_1215_10.5.2.1",
@@ -2799,35 +2707,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1220_1300_10.8.3",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "(40),",
-      "topicKey": "9c8335f3",
-      "agendaItems": [
-        "10.8.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_tue_praetorium_1220_1300_8.1",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -2862,6 +2741,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_tue_1-1-himalaya_1220_1300_10.8.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "(40),",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -2963,32 +2871,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.6.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1430_1520_maintenance",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "15:20",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "Maintenance",
-      "topicKey": "f244604b",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "11 TEI20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -3277,32 +3159,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1520_1600_r20-a-iot",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "15:20",
-      "endTime": "16:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "R20 A-IoT",
-      "topicKey": "c8a3825d",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "8.2 R19 FR3/ISAC CM, A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_tue_1-1-himalaya_1520_1600_a-iot-phase2",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -3325,6 +3181,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -3471,14 +3331,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1600_1630_9.3.2",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1600_1630_9.3.2",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "16:00",
       "endTime": "16:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
       "topic": "9.3.2",
       "topicKey": "f954f92b",
       "agendaItems": [
@@ -3641,33 +3501,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_hiroki-s-online-session-_1700_1930_r20-a-iot",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "R20 A-IoT",
-      "topicKey": "929f9bed",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.2(20), 9.3.3(70), 9.3.1(60),",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_tue_praetorium_1700_1800_10.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
@@ -3720,6 +3553,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.2(20), 9.3.3(70), 9.3.1(60),",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -3727,6 +3561,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -4304,35 +4142,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_0830_0900_10.5.4.4",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "(30), (60),",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_wed_praetorium_0830_0910_ntn-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -4367,40 +4176,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_1-1-himalaya_0830_1030_10.5.4",
+      "sessionId": "ran1-126_wed_1-1-himalaya_0830_0900_10.5.4.4",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "09:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "10.5.4",
-      "topicKey": "f8e05aee",
+      "topic": "(30), (60),",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.5.4"
+        "10.5.4.4"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -4478,6 +4279,44 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_1-1-himalaya_0900_1030_10.5.4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.5.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10.5",
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_0900_1000_10.8.x",
@@ -4874,35 +4713,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_1100_1140_10.8.2",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "(40),",
-      "topicKey": "c63f99f3",
-      "agendaItems": [
-        "10.8.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G ISAC",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_wed_praetorium_1100_1220_ai-ml",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -4937,40 +4747,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_1-1-himalaya_1100_1220_10.8",
+      "sessionId": "ran1-126_wed_1-1-himalaya_1100_1140_10.8.2",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "12:20",
+      "endTime": "11:40",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "(40),",
+      "topicKey": "c63f99f3",
       "agendaItems": [
-        "10.8"
+        "10.8.2"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -5078,14 +4880,52 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_1140_1220_6g-waveform",
+      "sessionId": "ran1-126_wed_1-1-himalaya_1140_1220_10.8",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "11:40",
       "endTime": "12:20",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10",
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-126_wed_1-1-himalaya_1140_1220_6g-waveform",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
       "topic": "6G waveform",
       "topicKey": "c63f99f3",
       "agendaItems": [],
@@ -5179,35 +5019,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_1220_1300_10.2.1",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "10.2.1",
-      "topicKey": "9c8335f3",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_wed_praetorium_1220_1300_8.1",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -5269,6 +5080,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -5418,33 +5233,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.6.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_1430_1630_11-tei20",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "11 TEI20",
-      "topicKey": "f244604b",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "11 TEI20",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Maintenance (90-120)\n7 x5548/5549, x5668, x5799/5800, x6217-6220, x6348/6349\n8.2 R19 Duplex, R20 LBCA",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -5894,35 +5682,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_hiroki-s-online-session-_1700_1750_9.3.1",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "17:50",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "(50), (50),",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_wed_praetorium_1700_1800_10.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
@@ -5960,37 +5719,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_1-1-himalaya_1700_1930_a-iot-phase2",
+      "sessionId": "ran1-126_wed_1-1-himalaya_1700_1750_9.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "19:30",
+      "endTime": "17:50",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "(50), (50),",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -6181,6 +5935,41 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_1-1-himalaya_1750_1930_a-iot-phase2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "17:50",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "A-IoT Phase2",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1750_1830_10.5.1.1",
@@ -6555,33 +6344,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_hiroki-s-online-session-_0830_0910_6g-waveform",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "6G waveform",
-      "topicKey": "ab448737",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Maintenance",
-      "group": "7 TBD",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_thu_praetorium_0830_0910_mimo",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -6628,6 +6390,7 @@
       "topicKey": "7e6989e7",
       "agendaItems": [],
       "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
       "group": "AI 7/8.2",
       "kind": "session",
       "status": "scheduled",
@@ -6638,6 +6401,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -7097,33 +6864,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_hiroki-s-online-session-_1100_1300_r20-a-iot",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "R20 A-IoT",
-      "topicKey": "929f9bed",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.2, 9.3.3, 9.3.1",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_thu_praetorium_1100_1220_r20",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -7173,6 +6913,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.2, 9.3.3, 9.3.1",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -7180,6 +6921,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -7571,33 +7316,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.6.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_thu_hiroki-s-online-session-_1430_1630_6g-isac",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "6G ISAC",
-      "topicKey": "c63f99f3",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "6G ISAC",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "10.8.1, 10.8.2, 10.8.3",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -8182,32 +7900,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_hiroki-s-online-session-_1700_1800_early-dinner",
-      "meetingId": "ran1-126",
-      "date": "2026-08-27",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "Early dinner",
-      "topicKey": "dc47efaf",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "10.5.4.1, 10.5.4.3, [10.5.4.2, 10.5.4.4]",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_thu_praetorium_1700_1750_10.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -8568,33 +8260,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_fri_hiroki-s-online-session-_0830_1030_r20-a-iot",
-      "meetingId": "ran1-126",
-      "date": "2026-08-28",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "R20 A-IoT",
-      "topicKey": "929f9bed",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "9.3.3, 9.3.1, 9.3.2",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_fri_praetorium_0830_0930_ai-ml",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -8644,6 +8309,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.3, 9.3.1, 9.3.2",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -8651,6 +8317,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -8956,32 +8626,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_fri_hiroki-s-online-session-_1100_1300_tbd",
-      "meetingId": "ran1-126",
-      "date": "2026-08-28",
-      "day": "Friday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-room-a2c1a9d9",
-      "roomName": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)",
-      "topic": "TBD",
-      "topicKey": "1d9c8ac0",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "TBD",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_fri_praetorium_1100_1300_sweep",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -9040,6 +8684,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -9220,7 +8868,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-27T15:20:38Z",
-    "lastAttemptAt": "2026-08-27T15:20:38Z"
+    "lastSuccessfulAt": "2026-08-27T15:28:02Z",
+    "lastAttemptAt": "2026-08-27T15:28:02Z"
   }
 }

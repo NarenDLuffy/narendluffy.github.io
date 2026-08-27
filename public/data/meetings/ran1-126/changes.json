@@ -1,1528 +1,541 @@
 [
   {
-    "changeId": "session_added-ran1-126_mon_0-4-brussels_1140_1220_10.3.2-2026-08-27T15:20:54+00:00",
+    "changeId": "room_changed-ran1-126_mon_1-1-himalaya_1530_1630_10.8.2-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126_mon_0-4-brussels_1140_1220_10.3.2",
-    "to": "0.4 Brussels 11:40-12:20",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_mon_0-4-brussels_1220_1300_10.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1"
-    ],
-    "sessionId": "ran1-126_mon_0-4-brussels_1220_1300_10.3.1",
-    "to": "0.4 Brussels 12:20-13:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1430_1510_10.4.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "room_changed",
-    "title": "10.4.x moved",
+    "title": "10.8.2 moved",
     "detail": "Session changed room",
-    "agendaItems": [
-      "10.4.x"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1430_1510_10.4.x",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_mon_hiroki-s-online-session-_1430_1530_6g-isac-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G ISAC added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_mon_hiroki-s-online-session-_1430_1530_6g-isac",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 14:30-15:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1850_1930_10.5.3.4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.4 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1850_1930_10.5.3.4",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1700_1800_10.5.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1700_1800_10.5.3.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1530_1550_10.6.1.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.2"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1530_1550_10.6.1.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_mon_hiroki-s-online-session-_1530_1630_10.8.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.8.2 added",
-    "detail": "New session in the schedule",
     "agendaItems": [
       "10.8.2"
     ],
-    "sessionId": "ran1-126_mon_hiroki-s-online-session-_1530_1630_10.8.2",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 15:30-16:30",
+    "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8.2",
+    "to": "1.1 Himalaya",
     "sourceIds": [
       "ran1-126-ebdeb935"
-    ]
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
   },
   {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1800_1830_10.5.3.2-2026-08-27T15:20:54+00:00",
+    "changeId": "room_changed-ran1-126_mon_0-4-brussels_1600_1630_10.2.1-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "room_changed",
-    "title": "10.5.3.2 moved",
+    "title": "Waveform moved",
     "detail": "Session changed room",
     "agendaItems": [
-      "10.5.3.2"
+      "10.2.1"
     ],
-    "sessionId": "ran1-126_mon_expo-foyer_1800_1830_10.5.3.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1550_1610_10.6.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.2"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1550_1610_10.6.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1610_1630_10.6.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1610_1630_10.6.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_mon_expo-foyer_1830_1850_10.5.3.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126_mon_expo-foyer_1830_1850_10.5.3.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_mon_hiroki-s-online-session-_1700_1850_10.5.4.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.x"
-    ],
-    "sessionId": "ran1-126_mon_hiroki-s-online-session-_1700_1850_10.5.4.x",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 17:00-18:50",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_mon_hiroki-s-online-session-_1850_1920_10.5.4.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(30), (50), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.3"
-    ],
-    "sessionId": "ran1-126_mon_hiroki-s-online-session-_1850_1920_10.5.4.3",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 18:50-19:20",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_0830_0910_10.5.4.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(40), (40), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.2"
-    ],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_0830_0910_10.5.4.2",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 08:30-09:10",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_0930_1030_10.5.1.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "(60) moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.1"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_0930_1030_10.5.1.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1100_1140_10.5.5-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.5 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1100_1140_10.5.5",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1430_1505_10.6.1.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.1"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1430_1505_10.6.1.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_1100_1220_6g-isac-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G ISAC added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1100_1220_6g-isac",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 11:00-12:20",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1505_1540_10.6.1.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.2"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1505_1540_10.6.1.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1540_1605_10.6.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.2"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1540_1605_10.6.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1605_1630_10.6.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1605_1630_10.6.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_1220_1300_10.8.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(40), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.3"
-    ],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1220_1300_10.8.3",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 12:20-13:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_1430_1520_maintenance-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "Maintenance added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1430_1520_maintenance",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 14:30-15:20",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1700_1800_10.5.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1700_1800_10.5.3.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1545_10.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1"
-    ],
-    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1545_10.3.1",
-    "to": "0.6/0.7 Madrid/Lisbon 15:00-15:45",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1800_1830_10.5.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.2"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1800_1830_10.5.3.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_1700_1930_r20-a-iot-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "R20 A-IoT added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1700_1930_r20-a-iot",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 17:00-19:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1830_1850_10.5.3.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1830_1850_10.5.3.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_0-6-0-7-madrid-lisbon_1545_1630_10.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1545_1630_10.3.2",
-    "to": "0.6/0.7 Madrid/Lisbon 15:45-16:30",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_tue_hiroki-s-online-session-_1600_1630_9.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "9.3.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "9.3.2"
-    ],
-    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1600_1630_9.3.2",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 16:00-16:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_tue_expo-foyer_1850_1930_10.5.3.4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.4 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126_tue_expo-foyer_1850_1930_10.5.3.4",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_0830_0900_10.5.4.4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(30), (60), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.4"
-    ],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_0830_0900_10.5.4.4",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 08:30-09:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.8.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": ", added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.2"
-    ],
-    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.8.2",
-    "to": "0.6/0.7 Madrid/Lisbon 10:00-10:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_1100_1140_10.8.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(40), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.2"
-    ],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1100_1140_10.8.2",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 11:00-11:40",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_0-6-0-7-madrid-lisbon_1100_1130_10.5.4.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.x"
-    ],
-    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1100_1130_10.5.4.x",
-    "to": "0.6/0.7 Madrid/Lisbon 11:00-11:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_0-4-brussels_1100_1230_10.6.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126_wed_0-4-brussels_1100_1230_10.6.x",
+    "sessionId": "ran1-126_mon_0-4-brussels_1600_1630_10.2.1",
     "to": "0.4 Brussels",
     "sourceIds": [
       "ran1-126-manual-7a737727",
       "ran1-126-d70cbaf1",
       "ran1-126-d847dd04"
     ],
-    "from": "Expo Foyer"
+    "from": "1.1 Himalaya"
   },
   {
-    "changeId": "start_time_changed-ran1-126_wed_0-4-brussels_1100_1230_10.6.x-2026-08-27T15:20:54+00:00",
+    "changeId": "start_time_changed-ran1-126_mon_0-4-brussels_1600_1630_10.2.1-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "start_time_changed",
-    "title": "10.6.x start time changed",
+    "title": "Waveform start time changed",
     "detail": "Start time changed",
     "agendaItems": [
-      "10.6.x"
+      "10.2.1"
     ],
-    "sessionId": "ran1-126_wed_0-4-brussels_1100_1230_10.6.x",
-    "to": "11:00",
+    "sessionId": "ran1-126_mon_0-4-brussels_1600_1630_10.2.1",
+    "to": "16:00",
     "sourceIds": [
       "ran1-126-manual-7a737727",
       "ran1-126-d70cbaf1",
       "ran1-126-d847dd04"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_mon_0-4-brussels_1600_1630_10.2.1-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "end_time_changed",
+    "title": "Waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_mon_0-4-brussels_1600_1630_10.2.1",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "17:40"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_1-1-himalaya_1700_1850_10.5.4.x-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "6G moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1700_1850_10.5.4.x",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_1-1-himalaya_1850_1920_10.5.4.3-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(30), (50), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1850_1920_10.5.4.3",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1920_1930_10.5.4-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1920_1930_10.5.4",
+    "to": "19:20",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "17:40"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_1-1-himalaya_0830_0910_10.5.4.2-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(40), (40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.2"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_0830_0910_10.5.4.2",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_0910_1030_10.5.4-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_0910_1030_10.5.4",
+    "to": "09:10",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_1-1-himalaya_1140_1220_10.8-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "end_time_changed",
+    "title": "Sensing end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_10.8",
+    "to": "12:20",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_1-1-himalaya_1140_1220_6g-isac-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "6G ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_6g-isac",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_1140_1220_6g-isac-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "6G ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_6g-isac",
+    "to": "11:40",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_1-1-himalaya_1220_1300_10.8.3-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1220_1300_10.8.3",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_1-1-himalaya_1600_1630_9.3.2-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "9.3.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1600_1630_9.3.2",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_1-1-himalaya_0830_0900_10.5.4.4-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(30), (60), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_0830_0900_10.5.4.4",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_1-1-himalaya_1100_1140_10.8.2-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1100_1140_10.8.2",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1140_1220_10.8-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "Sensing start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1140_1220_10.8",
+    "to": "11:40",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_1-1-himalaya_1140_1220_6g-waveform-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1140_1220_6g-waveform",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_1-1-himalaya_1700_1750_9.3.1-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "(50), (50), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1700_1750_9.3.1",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1750_1930_a-iot-phase2-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT Phase2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1750_1930_a-iot-phase2",
+    "to": "17:50",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_0-4-brussels_1130_1230_6g-isac-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "room_changed",
+    "title": "6G ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1130_1230_6g-isac",
+    "to": "0.4 Brussels",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_thu_0-4-brussels_1130_1230_6g-isac-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "start_time_changed",
+    "title": "6G ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1130_1230_6g-isac",
+    "to": "11:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
     ],
     "from": "14:30"
   },
   {
-    "changeId": "end_time_changed-ran1-126_wed_0-4-brussels_1100_1230_10.6.x-2026-08-27T15:20:54+00:00",
+    "changeId": "end_time_changed-ran1-126_thu_0-4-brussels_1130_1230_6g-isac-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "end_time_changed",
-    "title": "10.6.x end time changed",
+    "title": "6G ISAC end time changed",
     "detail": "End time changed",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126_wed_0-4-brussels_1100_1230_10.6.x",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1130_1230_6g-isac",
     "to": "12:30",
     "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
+      "ran1-126-ebdeb935"
     ],
     "from": "16:30"
   },
   {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_1140_1220_6g-waveform-2026-08-27T15:20:54+00:00",
+    "changeId": "session_removed-ran1-126_mon_hiroki-s-online-session-_1430_1530_6g-isac-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G waveform added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1140_1220_6g-waveform",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 11:40-12:20",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_1220_1300_10.2.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.2.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.2.1"
-    ],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1220_1300_10.2.1",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 12:20-13:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1430_1505_10.6.1.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.1"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1430_1505_10.6.1.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_1430_1630_11-tei20-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "11 TEI20 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1430_1630_11-tei20",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_0-6-0-7-madrid-lisbon_1430_1515_10.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1"
-    ],
-    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1430_1515_10.3.1",
-    "to": "0.6/0.7 Madrid/Lisbon 14:30-15:15",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1505_1540_10.6.1.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.2"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1505_1540_10.6.1.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_0-6-0-7-madrid-lisbon_1515_1600_10.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1515_1600_10.3.2",
-    "to": "0.6/0.7 Madrid/Lisbon 15:15-16:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1540_1605_10.6.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.2"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1540_1605_10.6.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1605_1630_10.6.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1605_1630_10.6.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1700_1740_10.5.3.4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.4 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1700_1740_10.5.3.4",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_wed_hiroki-s-online-session-_1700_1750_9.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "(50), (50), added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "9.3.1"
-    ],
-    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1700_1750_9.3.1",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 17:00-17:50",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1740_1840_10.5.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1740_1840_10.5.3.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1840_1910_10.5.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.2"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1840_1910_10.5.3.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_wed_expo-foyer_1910_1930_10.5.3.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126_wed_expo-foyer_1910_1930_10.5.3.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_0830_0900_10.5.1.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.1.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.3"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_0830_0900_10.5.1.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_hiroki-s-online-session-_0830_0910_6g-waveform-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G waveform added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_thu_hiroki-s-online-session-_0830_0910_6g-waveform",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 08:30-09:10",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1550_1630_10.5.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.1"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1550_1630_10.5.3.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_0-4-brussels_1100_1130_10.6.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1100_1130_10.6.x",
-    "to": "0.4 Brussels",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Expo Foyer"
-  },
-  {
-    "changeId": "start_time_changed-ran1-126_thu_0-4-brussels_1100_1130_10.6.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "start_time_changed",
-    "title": "10.6.x start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1100_1130_10.6.x",
-    "to": "11:00",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "14:30"
-  },
-  {
-    "changeId": "end_time_changed-ran1-126_thu_0-4-brussels_1100_1130_10.6.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "end_time_changed",
-    "title": "10.6.x end time changed",
-    "detail": "End time changed",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1100_1130_10.6.x",
-    "to": "11:30",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "15:50"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1750_1830_10.5.3.4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.4 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.4"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1750_1830_10.5.3.4",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1000_1030_10.5.1.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.1.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.2"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1000_1030_10.5.1.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1100_1140_10.5.5-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.5 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.5"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1100_1140_10.5.5",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_hiroki-s-online-session-_1100_1300_r20-a-iot-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "R20 A-IoT added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_thu_hiroki-s-online-session-_1100_1300_r20-a-iot",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_hiroki-s-online-session-_1430_1630_6g-isac-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G ISAC added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_thu_hiroki-s-online-session-_1430_1630_6g-isac",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 14:30-16:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1140_1220_10.4.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.4.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.4.1"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1140_1220_10.4.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1220_1300_10.4.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.4.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.4.2"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1220_1300_10.4.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_0-4-brussels_1230_1300_10.8.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": ", , added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.1"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1230_1300_10.8.1",
-    "to": "0.4 Brussels 12:30-13:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1430_1450_10.6.1.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.1"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1430_1450_10.6.1.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1700_1730_10.5.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.2"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1700_1730_10.5.3.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_0-6-0-7-madrid-lisbon_1430_1510_10.5.4.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "6G added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.5.4.x"
-    ],
-    "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_1430_1510_10.5.4.x",
-    "to": "0.6/0.7 Madrid/Lisbon 14:30-15:10",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_0-4-brussels_1430_1515_10.3.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.1"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1430_1515_10.3.1",
-    "to": "0.4 Brussels 14:30-15:15",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1450_1510_10.6.1.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.1.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.1.2"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1450_1510_10.6.1.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1510_1530_10.6.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.2 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.2"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1510_1530_10.6.2",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1730_1750_10.5.3.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.3.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.3.3"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1730_1750_10.5.3.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_0-4-brussels_1515_1600_10.3.2-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "10.3.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.3.2"
-    ],
-    "sessionId": "ran1-126_thu_0-4-brussels_1515_1600_10.3.2",
-    "to": "0.4 Brussels 15:15-16:00",
-    "sourceIds": [
-      "ran1-126-d847dd04"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_thu_expo-foyer_1530_1550_10.6.3-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.6.3 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.6.3"
-    ],
-    "sessionId": "ran1-126_thu_expo-foyer_1530_1550_10.6.3",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_thu_0-4-brussels_1830_1930_early-dinner-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "Early dinner added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_thu_0-4-brussels_1830_1930_early-dinner",
-    "to": "0.4 Brussels 18:30-19:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_fri_expo-foyer_0830_0940_10.5.1.1-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.5.1.1 moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.5.1.1"
-    ],
-    "sessionId": "ran1-126_fri_expo-foyer_0830_0940_10.5.1.1",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_fri_hiroki-s-online-session-_0830_1030_r20-a-iot-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "R20 A-IoT added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_fri_hiroki-s-online-session-_0830_1030_r20-a-iot",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 08:30-10:30",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-126_fri_1-1-himalaya_1100_1300_sweep-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "Sweep moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-126_fri_1-1-himalaya_1100_1300_sweep",
-    "to": "1.1 Himalaya",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "room_changed-ran1-126_fri_expo-foyer_0940_1030_10.4.x-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "room_changed",
-    "title": "10.4.x moved",
-    "detail": "Session changed room",
-    "agendaItems": [
-      "10.4.x"
-    ],
-    "sessionId": "ran1-126_fri_expo-foyer_0940_1030_10.4.x",
-    "to": "Expo Foyer",
-    "sourceIds": [
-      "ran1-126-manual-7a737727",
-      "ran1-126-d70cbaf1",
-      "ran1-126-d847dd04"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_added-ran1-126_fri_hiroki-s-online-session-_1100_1300_tbd-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_added",
-    "title": "TBD added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-126_fri_hiroki-s-online-session-_1100_1300_tbd",
-    "to": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya) 11:00-13:00",
-    "sourceIds": [
-      "ran1-126-ebdeb935"
-    ]
-  },
-  {
-    "changeId": "session_removed-ran1-126-05958d81-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "session_removed",
-    "title": "Agenda items 1, 2, 3, 4, 5 removed",
+    "title": "6G ISAC removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [],
-    "sessionId": "ran1-126-05958d81",
+    "sessionId": "ran1-126_mon_hiroki-s-online-session-_1430_1530_6g-isac",
     "sourceIds": [
-      "ran1-126-d70cbaf1"
+      "ran1-126-ebdeb935"
     ],
-    "from": "Detailed Schedule for RAN1 Main"
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
   },
   {
-    "changeId": "session_removed-ran1-126-414a6375-2026-08-27T15:20:54+00:00",
+    "changeId": "session_removed-ran1-126_mon_1-1-himalaya_1530_1630_10.8-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_removed",
-    "title": "10.3.x removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.x"
-    ],
-    "sessionId": "ran1-126-414a6375",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "0.4 Brussels"
-  },
-  {
-    "changeId": "session_removed-ran1-126-147f81a4-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_removed",
-    "title": "10.6.x removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126-147f81a4",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Expo Foyer"
-  },
-  {
-    "changeId": "session_removed-ran1-126-dd44d3e0-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_removed",
-    "title": "10.6.x removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.6.x"
-    ],
-    "sessionId": "ran1-126-dd44d3e0",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "Expo Foyer"
-  },
-  {
-    "changeId": "session_removed-ran1-126-045fcbc8-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_removed",
-    "title": "10.3.x removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.x"
-    ],
-    "sessionId": "ran1-126-045fcbc8",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "0.6/0.7 Madrid/Lisbon"
-  },
-  {
-    "changeId": "session_removed-ran1-126-93514538-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
-    "type": "session_removed",
-    "title": "10.3.x removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.3.x"
-    ],
-    "sessionId": "ran1-126-93514538",
-    "sourceIds": [
-      "ran1-126-d70cbaf1"
-    ],
-    "from": "0.6/0.7 Madrid/Lisbon"
-  },
-  {
-    "changeId": "session_removed-ran1-126-d3f16913-2026-08-27T15:20:54+00:00",
-    "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "session_removed",
     "title": "Sensing removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [
-      "10.8.x"
+      "10.8"
     ],
-    "sessionId": "ran1-126-d3f16913",
+    "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8",
     "sourceIds": [
-      "ran1-126-d70cbaf1"
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
     ],
-    "from": "0.4 Brussels"
+    "from": "1.1 Himalaya"
   },
   {
-    "changeId": "session_removed-ran1-126-db4549d4-2026-08-27T15:20:54+00:00",
+    "changeId": "session_removed-ran1-126_tue_hiroki-s-online-session-_1430_1520_maintenance-2026-08-27T15:28:13+00:00",
     "meetingId": "ran1-126",
-    "detectedAt": "2026-08-27T15:20:54+00:00",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
     "type": "session_removed",
-    "title": "10.3.x removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1430_1520_maintenance",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_hiroki-s-online-session-_1700_1930_r20-a-iot-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "R20 A-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_hiroki-s-online-session-_1700_1930_r20-a-iot",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_hiroki-s-online-session-_1220_1300_10.2.1-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "10.2.1 removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [
-      "10.3.x"
+      "10.2.1"
     ],
-    "sessionId": "ran1-126-db4549d4",
+    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1220_1300_10.2.1",
     "sourceIds": [
-      "ran1-126-d70cbaf1"
+      "ran1-126-ebdeb935"
     ],
-    "from": "0.4 Brussels"
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_hiroki-s-online-session-_1430_1630_11-tei20-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "11 TEI20 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_hiroki-s-online-session-_1430_1630_11-tei20",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_hiroki-s-online-session-_0830_0910_6g-waveform-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "6G waveform removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_hiroki-s-online-session-_0830_0910_6g-waveform",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_hiroki-s-online-session-_1100_1300_r20-a-iot-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "R20 A-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_hiroki-s-online-session-_1100_1300_r20-a-iot",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_fri_hiroki-s-online-session-_0830_1030_r20-a-iot-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "R20 A-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_hiroki-s-online-session-_0830_1030_r20-a-iot",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
+  },
+  {
+    "changeId": "session_removed-ran1-126_fri_hiroki-s-online-session-_1100_1300_tbd-2026-08-27T15:28:13+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-27T15:28:13+00:00",
+    "type": "session_removed",
+    "title": "TBD removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_hiroki-s-online-session-_1100_1300_tbd",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "Hiroki\u2019s Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)"
   }
 ]

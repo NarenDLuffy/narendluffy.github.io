@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-27T15:19:45Z",
+  "generatedAt": "2026-08-27T15:27:26Z",
   "meetingId": "ran1-124-bis",
   "sessions": [
     {
@@ -30,12 +30,42 @@
           "contributed": []
         },
         {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        },
+        {
           "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_level-1_0900_1000_ran1-124-commences-at-09",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "RAN1#124 commences at 09:00 on Monday",
+      "topicKey": "e7940670",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "RAN1#124 commences at 09:00 on Monday",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -694,6 +724,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_mon_level-1_1430_1450_8.4",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "14:50",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 A-IoT",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.4"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_mon_cdc3_1430_1510_6g-waveform",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -807,6 +867,10 @@
           "contributed": []
         },
         {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        },
+        {
           "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
@@ -888,6 +952,33 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_mon_level-1_1450_1530_7-r16-17-mimo-r18-ltm-r1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "14:50",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "7 R16/17 MIMO, R18 LTM, R17 Coverage, R18 NR/TEI18, R17/18 NR-NTN",
+      "topicKey": "449fffe0",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "7 R16/17 MIMO, R18 LTM, R17 Coverage, R18 NR/TEI18, R17/18 NR-NTN",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_mon_j1_1510_1600_10.5.2.3",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -919,6 +1010,36 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_level-1_1530_1600_8.6",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 LP-WUS",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.6"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -1000,6 +1121,35 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_b-online-session-3_1530_1630_10.8.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "10.8.1",
+      "topicKey": "de0e77be",
+      "agendaItems": [
+        "10.8.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.8.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
       "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
@@ -1104,6 +1254,36 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_level-1_1600_1630_8.8",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 LBCA, R19 Mobility",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.8"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -1282,6 +1462,32 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_level-1_1700_1830_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "b4c673bb",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "9.5.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -1609,35 +1815,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_b-online-session-3_1730_1820_10.2.1",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "17:30",
-      "endTime": "18:20",
-      "roomId": "ran1-124-bis-room-a1c2de73",
-      "roomName": "b Online Session 3",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_mon_j1_1740_1830_10.5.1.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -1669,6 +1846,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_b-online-session-3_1750_1910_10.5.4.x",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "17:50",
+      "endTime": "19:10",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "6G",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1814,32 +2020,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_b-online-session-3_1820_1930_10.5.4.x",
+      "sessionId": "ran1-124-bis_mon_level-1_1830_1930_9.3.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
-      "startTime": "18:20",
+      "startTime": "18:30",
       "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-a1c2de73",
-      "roomName": "b Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": ",",
+      "topicKey": "c51ff134",
       "agendaItems": [
-        "10.5.4.x"
+        "9.3.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "9.3.1, 9.3.2.2",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-bd9f978a",
+          "sourceId": "ran1-124-bis-ddc1d03d",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -2002,6 +2208,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_mon_b-online-session-3_1910_1930_10.5.4.3",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "19:10",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "(50),",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_b-online-session_0830_0920_10.5.0",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -2032,6 +2267,33 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_level-1_0830_1030_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2.1, 9.3.2.3",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -2123,33 +2385,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_b-online-session-3_0830_0915_r20",
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_0830_0845_8.7",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:15",
+      "endTime": "08:45",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "R20",
-      "topicKey": "9998e570",
-      "agendaItems": [],
+      "topic": "R19 FR3/ISAC CM",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.7"
+      ],
       "agendaBreakdown": [],
-      "group": "AI 8",
+      "sessionLead": "Maintenance",
+      "group": "8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -2226,6 +2488,36 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_0845_0925_8.7",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "08:45",
+      "endTime": "09:25",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "R19 Mobility",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.7"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -2322,36 +2614,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_b-online-session-3_0915_1000_coverage",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "09:15",
-      "endTime": "10:00",
-      "roomId": "ran1-124-bis-room-a1c2de73",
-      "roomName": "b Online Session 3",
-      "topic": "Coverage",
-      "topicKey": "9998e570",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_tue_b-online-session_0920_1000_10.5.1.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -2418,6 +2680,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_0925_0945_8.8",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "09:25",
+      "endTime": "09:45",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "R19 UE features",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.8"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_j1_0930_1000_10.4",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -2454,6 +2746,37 @@
       "confidence": 0.75,
       "parentAgendaItem": "10",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_0945_1000_coverage",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "09:45",
+      "endTime": "10:00",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "Coverage",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-124-bis_tue_palm-suite_0950_1030_10.7.1",
@@ -2676,6 +2999,32 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.6",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_level-1_1100_1200_6g-waveform",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "6G waveform",
+      "topicKey": "b4c673bb",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "9.5.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -2949,6 +3298,35 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_level-1_1200_1300_10.2.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "10.2.1",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -3358,6 +3736,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_level-1_1430_1445_8.8",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "14:45",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 FR3/ISAC CM",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.8"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_cdc3_1430_1510_10.5.4.3",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -3464,6 +3872,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.2, 9.3.3",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -3471,6 +3880,10 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         },
         {
@@ -3552,6 +3965,36 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_level-1_1445_1530_8.9",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "14:45",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 UE features",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.9"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -3658,6 +4101,33 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_tue_level-1_1530_1630_r20-coverage",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 Coverage",
+      "topicKey": "59a9b684",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "R20 Coverage",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -3901,6 +4371,33 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_level-1_1700_1930_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.1, 9.3.2.2, 9.3.2.3",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_cdc3_1700_1820_r20-a-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -3989,37 +4486,29 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_b-online-session-3_1700_1800_a-iot-phase2",
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_1700_1730_r20-coverage",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:00",
+      "endTime": "17:30",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "R20 Coverage",
+      "topicKey": "2163d5fe",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "9.3.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -4158,6 +4647,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_1730_1830_10.5.4.x",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "6G",
+      "topicKey": "9b62204a",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
+      "agendaBreakdown": [],
+      "group": "9.4.1 PUSCH repetition, pi/2 BPSK extension",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_palm-suite_1740_1840_10.3.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -4234,40 +4752,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_tue_b-online-session-3_1800_1830_coverage",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-124-bis-room-a1c2de73",
-      "roomName": "b Online Session 3",
-      "topic": "Coverage",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4406,39 +4890,31 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_b-online-session-3_1830_1930_10.5.4.x",
+      "sessionId": "ran1-124-bis_tue_b-online-session-3_1830_1910_10.5.4.3",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "18:30",
-      "endTime": "19:30",
+      "endTime": "19:10",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
+      "topic": "(20),",
+      "topicKey": "9b62204a",
       "agendaItems": [
-        "10.5.4.x"
+        "10.5.4.3"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "9.4.1 PUSCH repetition, pi/2 BPSK extension",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -4617,6 +5093,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_wed_level-1_0830_0930_6g-waveform",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "6G waveform",
+      "topicKey": "b4c673bb",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "9.5.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_wed_cdc3_0830_0910_6g-waveform",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -4705,29 +5207,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_b-online-session-3_0830_0900_r20-tei",
+      "sessionId": "ran1-124-bis_wed_b-online-session-3_0830_0910_8.3",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:00",
+      "endTime": "09:10",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "R20 TEI",
-      "topicKey": "9998e570",
-      "agendaItems": [],
+      "topic": "R19 Duplex",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.3"
+      ],
       "agendaBreakdown": [],
-      "group": "AI 8",
+      "sessionLead": "Maintenance",
+      "group": "8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-bd9f978a",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -4895,6 +5401,37 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_wed_b-online-session-3_0910_0915_6gr",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "09:10",
+      "endTime": "09:15",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "6GR",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
+    },
+    {
       "sessionId": "ran1-124-bis_wed_j2_0910_1000_10.8.x",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -5035,6 +5572,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_wed_level-1_0930_1030_10.2.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "10.2.1",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -5372,6 +5938,33 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_wed_level-1_1100_1300_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2.1, 9.3.2.3",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -6007,6 +6600,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_wed_level-1_1430_1500_8.3",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 Duplex",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.3"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_wed_cdc3_1430_1510_r20-coverage",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -6139,6 +6762,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.2, 9.3.3, 9.3.1",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -6146,6 +6770,10 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         },
         {
@@ -6267,6 +6895,33 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_wed_level-1_1500_1515_7-1t-1t-switching-ul-tx-",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "15:00",
+      "endTime": "15:15",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "7 1T-1T switching, UL Tx switching",
+      "topicKey": "4e974901",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "7 1T-1T switching, UL Tx switching",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_wed_ran1-main_1500_1545_10.5.2.2",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -6335,6 +6990,63 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_wed_level-1_1515_1530_8.8",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "15:15",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 Mobility",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.8"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_wed_level-1_1530_1630_r20-coverage",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 Coverage",
+      "topicKey": "59a9b684",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "R20 Coverage",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -6577,6 +7289,33 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_wed_level-1_1700_1830_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3/9.3.1, 9.3.2.2",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -7115,6 +7854,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_level-1_0830_0930_maintenance",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "09:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "Maintenance",
+      "topicKey": "b4c673bb",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "9.5.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_cdc3_0830_1030_r20-a-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -7313,12 +8078,12 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_b-online-session-3_0900_0950_10.8",
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_0900_0920_10.8",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "09:00",
-      "endTime": "09:50",
+      "endTime": "09:20",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
       "topic": "Sensing",
@@ -7330,6 +8095,7 @@
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
+      "note": "Detailed timing not available",
       "sources": [
         {
           "sourceId": "ran1-124-bis-ddab9127",
@@ -7340,10 +8106,10 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
       "parentAgendaItem": "10",
-      "detailAvailable": true
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-124-bis_thu_palm-suite_0910_0950_9.5",
@@ -7441,6 +8207,65 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_0920_0950_10.8.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "09:20",
+      "endTime": "09:50",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "10.8.1",
+      "topicKey": "de0e77be",
+      "agendaItems": [
+        "10.8.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.8.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_level-1_0930_1030_8.9",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R19 UE features",
+      "topicKey": "310a9236",
+      "agendaItems": [
+        "8.9"
+      ],
+      "agendaBreakdown": [],
+      "group": "8.9 R19 UE features",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "8.8 R19 FR3/ISAC CM\n8.6 R19 LP-WUS\n7 R18 NR/TEI18, 1T-1T switching",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_palm-suite_0950_1030_10.7.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -7499,33 +8324,30 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_b-online-session-3_0950_1030_ai-8",
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_0950_1000_r19-fr3-cm",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "09:50",
-      "endTime": "10:30",
+      "endTime": "10:00",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "AI 8",
-      "topicKey": "f8e05aee",
+      "topic": "R19 FR3 CM",
+      "topicKey": "6468bad1",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "sessionLead": "Maintenance",
+      "group": "R19 FR3 CM",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -7633,6 +8455,60 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_1000_1010_r19-lp-wus",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "10:00",
+      "endTime": "10:10",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "R19 LP-WUS",
+      "topicKey": "2cd99f17",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "R19 LP-WUS",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_1010_1030_r19-mobility",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "10:10",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "R19 Mobility",
+      "topicKey": "21559ed6",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "R19 Mobility",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -7704,6 +8580,33 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_level-1_1100_1300_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2.3, 9.3, 9.3.1, 9.3.2.1, 9.3.2.2",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -7836,6 +8739,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.1, 9.3.2, 9.3.3",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -7843,6 +8747,10 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         },
         {
@@ -8301,6 +9209,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_level-1_1430_1530_r20-isac",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 ISAC",
+      "topicKey": "9c8335f3",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_ran1-main_1430_1550_10.5.3.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -8537,6 +9471,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_level-1_1530_1630_9.5.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "9.5.1",
+      "topicKey": "b4c673bb",
+      "agendaItems": [
+        "9.5.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "9.5.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.5",
       "detailAvailable": true
     },
     {
@@ -8852,6 +9815,33 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_level-1_1700_1930_r20-a-iot",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "9.3.2.3, 9.3.1, 9.3.2.1, 9.3.2.2, 9.3",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_cdc3_1700_1800_r20-a-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -8969,37 +9959,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_b-online-session-3_1700_1830_a-iot-phase2",
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_1700_1800_10.5.4.x",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "18:30",
+      "endTime": "18:00",
       "roomId": "ran1-124-bis-room-a1c2de73",
       "roomName": "b Online Session 3",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "6G",
+      "topicKey": "f9f71943",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "9.3.2, 9.3.3, 9.3.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -9170,6 +10155,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_1800_1815_10.5.4.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "18:15",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "(45),",
+      "topicKey": "f9f71943",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "9.3.2, 9.3.3, 9.3.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_thu_j1_1800_1815_10.5.4.x",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -9295,6 +10309,41 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_b-online-session-3_1815_1830_a-iot-phase2",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "18:15",
+      "endTime": "18:30",
+      "roomId": "ran1-124-bis-room-a1c2de73",
+      "roomName": "b Online Session 3",
+      "topic": "A-IoT Phase2",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-124-bis_thu_b-online-session-3_1830_1900_10.5.4.x",
@@ -9642,6 +10691,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_fri_level-1_0830_0930_6g-waveform",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "09:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "6G waveform",
+      "topicKey": "0876bbc6",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "9.4.1 PRACH enh, PUSCH repetition, pi/2 BPSK extention",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_fri_ran1-main_0830_0930_10.5.0",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
@@ -9719,6 +10794,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.3, 9.3.1, 9.3.2",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -9726,6 +10802,10 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
         },
         {
@@ -9922,6 +11002,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_fri_level-1_0930_1030_10.2.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran1-124-bis-room-f0d71d05",
+      "roomName": "Level 1",
+      "topic": "10.2.1",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddc1d03d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -10502,6 +11611,23 @@
       "resolved": false
     },
     {
+      "conflictId": "conf-ran1-124-bis-room-a1c2de-2026-04-13-15:30",
+      "meetingId": "ran1-124-bis",
+      "sessionId": "ran1-124-bis_mon_b-online-session-3_1530_1630_10.8.x",
+      "field": "agendaItem",
+      "values": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a,ran1-124-bis-ddab9127,ran1-124-bis-71bc694d",
+          "value": "10.8.x"
+        },
+        {
+          "sourceId": "ran1-124-bis-865cd34e",
+          "value": "10.8.1"
+        }
+      ],
+      "resolved": false
+    },
+    {
       "conflictId": "conf-ran1-124-bis-room-f4a959-2026-04-16-09:50",
       "meetingId": "ran1-124-bis",
       "sessionId": "ran1-124-bis_thu_palm-suite_0950_1030_10.7.1",
@@ -10538,7 +11664,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-27T15:19:45Z",
-    "lastAttemptAt": "2026-08-27T15:19:45Z"
+    "lastSuccessfulAt": "2026-08-27T15:27:26Z",
+    "lastAttemptAt": "2026-08-27T15:27:26Z"
   }
 }

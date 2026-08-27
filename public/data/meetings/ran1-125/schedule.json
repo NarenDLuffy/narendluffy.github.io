@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-27T15:20:06Z",
+  "generatedAt": "2026-08-27T15:27:40Z",
   "meetingId": "ran1-125",
   "sessions": [
     {
@@ -36,6 +36,32 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_mon_ballroom-c-3f_0900_1000_ran1-125-commences-at-09",
+      "meetingId": "ran1-125",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "RAN1#125 commences at 09:00 on Monday",
+      "topicKey": "f7d5b35e",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "RAN1#125 commences at 09:00 on Monday",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -608,6 +634,10 @@
           "contributed": []
         },
         {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        },
+        {
           "sourceId": "ran1-125-7f670c75",
           "contributed": []
         }
@@ -785,6 +815,35 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_mon_ballroom-c-3f_1530_1630_10.8.2",
+      "meetingId": "ran1-125",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "10.8.2",
+      "topicKey": "734850ac",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.8.2",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
       "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
@@ -1049,40 +1108,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_mon_ballroom-c-3f_1700_1800_10.2.1",
+      "sessionId": "ran1-125_mon_ballroom-c-3f_1700_1830_10.5.4.x",
       "meetingId": "ran1-125",
       "date": "2026-05-18",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:00",
+      "endTime": "18:30",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "6G",
+      "topicKey": "9c8335f3",
       "agendaItems": [
-        "10.2.1"
+        "10.5.4.x"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "10.2.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1263,43 +1314,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_mon_ballroom-c-3f_1800_1930_10.5.4.x",
-      "meetingId": "ran1-125",
-      "date": "2026-05-18",
-      "day": "Monday",
-      "startTime": "18:00",
-      "endTime": "19:30",
-      "roomId": "ran1-125-room-8ec4aafa",
-      "roomName": "Ballroom C (3F)",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-125_mon_shanghai-function-room-3_1820_1900_mimo",
       "meetingId": "ran1-125",
       "date": "2026-05-18",
@@ -1369,6 +1383,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_mon_ballroom-c-3f_1830_1915_10.5.4.3",
+      "meetingId": "ran1-125",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "18:30",
+      "endTime": "19:15",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "(45),",
+      "topicKey": "9c8335f3",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1582,37 +1625,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_tue_ballroom-c-3f_0830_0930_6gr",
+      "sessionId": "ran1-125_tue_ballroom-c-3f_0830_0845_8.2",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:30",
+      "endTime": "08:45",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "6GR",
-      "topicKey": "9998e570",
-      "agendaItems": [],
+      "topic": "R19 FR3/ISAC CM",
+      "topicKey": "4b7a9a26",
+      "agendaItems": [
+        "8.2"
+      ],
       "agendaBreakdown": [],
-      "group": "AI 8",
+      "group": "Maintenance/TEI20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -1692,6 +1730,61 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_0845_0900_8.2",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:45",
+      "endTime": "09:00",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "R19 Mobility",
+      "topicKey": "4b7a9a26",
+      "agendaItems": [
+        "8.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "Maintenance/TEI20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_0900_0915_11-tei20",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "09:15",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "11 TEI20",
+      "topicKey": "4b7a9a26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Maintenance/TEI20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-125_tue_dalian-ballroom-2-3f_0910_1030_6g-isac",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
@@ -1756,6 +1849,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_0915_0930_5-r20-lbca",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "09:15",
+      "endTime": "09:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "5 R20 LBCA",
+      "topicKey": "4b7a9a26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Maintenance/TEI20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-125_tue_ballroom-c-3f_0930_0935_10.2.1",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
@@ -1791,6 +1910,33 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_0935_1030_6g-waveform",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "09:35",
+      "endTime": "10:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "6G waveform",
+      "topicKey": "4b7a9a26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Maintenance/TEI20",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.7,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-125_tue_ran1-main_0945_1030_10.5.1.1",
@@ -1968,40 +2114,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_tue_ballroom-c-3f_1100_1230_10.8",
+      "sessionId": "ran1-125_tue_ballroom-c-3f_1100_1200_10.8.1",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "12:30",
+      "endTime": "12:00",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "(30),",
+      "topicKey": "c63f99f3",
       "agendaItems": [
-        "10.8"
+        "10.8.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -2145,6 +2283,70 @@
       "detailAvailable": false
     },
     {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_1200_1230_10.8",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "12:00",
+      "endTime": "12:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-125-b2890d63",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-7f670c75",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10",
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_1200_1230_r20-coverage",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "12:00",
+      "endTime": "12:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "R20 Coverage",
+      "topicKey": "c63f99f3",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-125_tue_dalian-ballroom-1-3f_1200_1225_10.5.2.1",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
@@ -2256,7 +2458,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_tue_ballroom-c-3f_1230_1300_coverage",
+      "sessionId": "ran1-125_tue_ballroom-c-3f_1230_1300_9.4.1",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
       "day": "Tuesday",
@@ -2264,29 +2466,24 @@
       "endTime": "13:00",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "Coverage",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "9.4.1",
+      "topicKey": "2ab2f5b3",
+      "agendaItems": [
+        "9.4.1"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "9.4.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.4",
       "detailAvailable": true
     },
     {
@@ -2408,6 +2605,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.1, 9.3.2",
       "sources": [
         {
           "sourceId": "ran1-125-b2890d63",
@@ -2415,6 +2613,10 @@
         },
         {
           "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         },
         {
@@ -3067,40 +3269,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_tue_ballroom-c-3f_1815_1925_a-iot-phase2",
-      "meetingId": "ran1-125",
-      "date": "2026-05-19",
-      "day": "Tuesday",
-      "startTime": "18:15",
-      "endTime": "19:25",
-      "roomId": "ran1-125-room-8ec4aafa",
-      "roomName": "Ballroom C (3F)",
-      "topic": "A-IoT Phase2",
-      "topicKey": "f8e05aee",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-125_tue_ran1-main_1830_1900_10.5.1.3",
       "meetingId": "ran1-125",
       "date": "2026-05-19",
@@ -3135,6 +3303,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_tue_ballroom-c-3f_1850_1930_9.3.3",
+      "meetingId": "ran1-125",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:50",
+      "endTime": "19:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "9.3.3",
+      "topicKey": "3fe0b3c9",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "9.3.3",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -3313,37 +3510,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_wed_ballroom-c-3f_0830_0930_6gr",
+      "sessionId": "ran1-125_wed_ballroom-c-3f_0830_0910_8.2",
       "meetingId": "ran1-125",
       "date": "2026-05-20",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:30",
+      "endTime": "09:10",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "6GR",
-      "topicKey": "9998e570",
-      "agendaItems": [],
+      "topic": "R19 Duplex",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.2"
+      ],
       "agendaBreakdown": [],
-      "group": "AI 8",
+      "sessionLead": "Maintenance",
+      "group": "8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -3450,6 +3643,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-125_wed_ballroom-c-3f_0910_0930_8.2",
+      "meetingId": "ran1-125",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "09:10",
+      "endTime": "09:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "R19 LP-WUS",
+      "topicKey": "fe5dbbce",
+      "agendaItems": [
+        "8.2"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-125_wed_shanghai-function-room-3_0910_1030_10.8.x",
       "meetingId": "ran1-125",
       "date": "2026-05-20",
@@ -3523,6 +3746,34 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_wed_ballroom-c-3f_0935_1030_6g-waveform",
+      "meetingId": "ran1-125",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "09:35",
+      "endTime": "10:30",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "6G waveform",
+      "topicKey": "5ef55a59",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
+      "group": "6G waveform",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.7,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-125_wed_ran1-main_0940_1010_10.5.3.2",
@@ -3756,6 +4007,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.3, 9.3.2, 9.3.1",
       "sources": [
         {
           "sourceId": "ran1-125-b2890d63",
@@ -3763,6 +4015,10 @@
         },
         {
           "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         },
         {
@@ -4067,40 +4323,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_wed_ballroom-c-3f_1430_1600_10.8",
+      "sessionId": "ran1-125_wed_ballroom-c-3f_1430_1510_10.8.1",
       "meetingId": "ran1-125",
       "date": "2026-05-20",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "16:00",
+      "endTime": "15:10",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "(50),",
+      "topicKey": "c63f99f3",
       "agendaItems": [
-        "10.8"
+        "10.8.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -4207,6 +4455,44 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_wed_ballroom-c-3f_1510_1600_10.8",
+      "meetingId": "ran1-125",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "15:10",
+      "endTime": "16:00",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-125-b2890d63",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-7f670c75",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10",
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-125_wed_shanghai-function-room-3_1510_1550_10.5.1.1",
@@ -4535,39 +4821,31 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_wed_ballroom-c-3f_1700_1830_10.5.4.x",
+      "sessionId": "ran1-125_wed_ballroom-c-3f_1700_1745_10.5.4.3",
       "meetingId": "ran1-125",
       "date": "2026-05-20",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "18:30",
+      "endTime": "17:45",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
+      "topic": "(45),",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.5.4.x"
+        "10.5.4.3"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -4677,6 +4955,32 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_wed_ballroom-c-3f_1745_1845_early-dinner",
+      "meetingId": "ran1-125",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "17:45",
+      "endTime": "18:45",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "Early dinner",
+      "topicKey": "779f8719",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "6G 10.5.4.x",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -5311,6 +5615,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.2, 9.3.3, 9.3.1",
       "sources": [
         {
           "sourceId": "ran1-125-b2890d63",
@@ -5318,6 +5623,10 @@
         },
         {
           "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         },
         {
@@ -5627,40 +5936,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_thu_ballroom-c-3f_1430_1530_10.2.1",
+      "sessionId": "ran1-125_thu_ballroom-c-3f_1430_1510_10.8.2",
       "meetingId": "ran1-125",
       "date": "2026-05-21",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "15:30",
+      "endTime": "15:10",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "(20),",
+      "topicKey": "89fb8153",
       "agendaItems": [
-        "10.2.1"
+        "10.8.2"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "[6G ISAC (60)]",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -6023,37 +6324,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-125_thu_ballroom-c-3f_1700_1800_a-iot-phase2",
+      "sessionId": "ran1-125_thu_ballroom-c-3f_1700_1745_10.5.4.1",
       "meetingId": "ran1-125",
       "date": "2026-05-21",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "18:00",
+      "endTime": "17:45",
       "roomId": "ran1-125-room-8ec4aafa",
       "roomName": "Ballroom C (3F)",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "(45),",
+      "topicKey": "09c18dfe",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "[6G 10.5.4.x (90)]",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-125-b2890d63",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-4bcb84e1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-125-7f670c75",
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -6165,6 +6461,41 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-125_thu_ballroom-c-3f_1745_1800_a-iot-phase2",
+      "meetingId": "ran1-125",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "17:45",
+      "endTime": "18:00",
+      "roomId": "ran1-125-room-8ec4aafa",
+      "roomName": "Ballroom C (3F)",
+      "topic": "A-IoT Phase2",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-125-b2890d63",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-7f670c75",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-125_thu_dalian-ballroom-1-3f_1750_1850_10.5.0",
@@ -6476,6 +6807,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "9.3.3, 9.3.2, 9.3.1",
       "sources": [
         {
           "sourceId": "ran1-125-b2890d63",
@@ -6483,6 +6815,10 @@
         },
         {
           "sourceId": "ran1-125-4bcb84e1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-125-8e657d72",
           "contributed": []
         },
         {
@@ -6790,6 +7126,23 @@
   ],
   "conflicts": [
     {
+      "conflictId": "conf-ran1-125-room-8ec4aafa-2026-05-18-15:30",
+      "meetingId": "ran1-125",
+      "sessionId": "ran1-125_mon_ballroom-c-3f_1530_1630_10.8.x",
+      "field": "agendaItem",
+      "values": [
+        {
+          "sourceId": "ran1-125-b2890d63,ran1-125-4bcb84e1,ran1-125-7f670c75",
+          "value": "10.8.x"
+        },
+        {
+          "sourceId": "ran1-125-8e657d72",
+          "value": "10.8.2"
+        }
+      ],
+      "resolved": false
+    },
+    {
       "conflictId": "conf-ran1-125-room-ee6e4a06-2026-05-18-17:00",
       "meetingId": "ran1-125",
       "sessionId": "ran1-125_mon_ran1-main_1700_1800_10.5.3.1",
@@ -6894,7 +7247,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-27T15:20:06Z",
-    "lastAttemptAt": "2026-08-27T15:20:06Z"
+    "lastSuccessfulAt": "2026-08-27T15:27:40Z",
+    "lastAttemptAt": "2026-08-27T15:27:40Z"
   }
 }
