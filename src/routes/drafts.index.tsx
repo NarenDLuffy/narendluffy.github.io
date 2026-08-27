@@ -65,6 +65,10 @@ function DraftsPage() {
     <div className="space-y-5">
       <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
 
+      <ClientOnly fallback={null}>
+        <VenueModeBanner meetingActive={isCurrent} />
+      </ClientOnly>
+
       <header className="flex items-start justify-between gap-3">
         <div className="space-y-1">
           <h1 className="text-lg font-semibold">Draft activity</h1>
@@ -79,17 +83,17 @@ function DraftsPage() {
             {ORIGIN_LABEL[drafts.liveOrigin ?? "published"]}
             {drafts.liveCheckedAt ? ` · checked ${relativeTime(drafts.liveCheckedAt)}` : ""}
           </p>
-          {drafts.venueStatus === "unavailable" ? (
-            <p className="text-[11px] text-muted-foreground" role="status">
-              Venue server unavailable to this browser. On iPhone, Safari may block the venue’s
-              HTTP server before showing a local-network prompt; the public sync or last published
-              index is used automatically.
-            </p>
-          ) : drafts.venueStatus === "available" ? (
-            <p className="text-[11px] text-muted-foreground" role="status">
-              Venue server connected.
-            </p>
-          ) : null}
+          <p className="text-[11px] text-muted-foreground" role="status">
+            {drafts.venueStatus === "available"
+              ? `Venue server — live (${index?.artifacts.length ?? 0} files).`
+              : drafts.venueStatus === "blocked-mixed-content"
+                ? "Venue server not read: this page is HTTPS, so the browser blocks the meeting-room server. Use venue mode above when you're in the room."
+                : drafts.venueStatus === "unavailable"
+                  ? "Not on the meeting network — using the 3GPP sync mirror."
+                  : drafts.liveOrigin === "sync-proxy"
+                    ? "3GPP sync mirror — live."
+                    : "Using the last published index."}
+          </p>
           {drafts.lastRefresh ? (
             <p className="text-[11px] text-muted-foreground" role="status" aria-live="polite">
               {drafts.lastRefresh.failed
@@ -98,6 +102,7 @@ function DraftsPage() {
             </p>
           ) : null}
         </div>
+
         <div className="flex shrink-0 gap-1.5">
           <button
             type="button"
