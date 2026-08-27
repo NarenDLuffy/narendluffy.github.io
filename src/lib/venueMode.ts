@@ -144,7 +144,7 @@ export function consumeTransferredState(): boolean {
   const state = decodeState(encoded);
   if (state) {
     for (const [key, value] of Object.entries(state)) {
-      if (!key.startsWith(TRANSFER_PREFIX)) continue;
+      if (!TRANSFER_KEYS.has(key)) continue;
       try {
         if (window.localStorage.getItem(key) == null) window.localStorage.setItem(key, value);
       } catch {
