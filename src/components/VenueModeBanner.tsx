@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AlertTriangle, Radio, RotateCcw, ShieldCheck, Smartphone, X } from "lucide-react";
+import { AlertTriangle, Radio, ShieldCheck, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   alwaysSwitch,
@@ -7,7 +7,6 @@ import {
   disableAlwaysSwitch,
   dismissVenueBanner,
   inVenueMode,
-  retryVenueOverHttp,
   secureModeUrl,
   setAlwaysSwitch,
   switchToVenueMode,
@@ -105,59 +104,16 @@ export function VenueModeBanner({
           <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
             <p>
               <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span>{" "}
-              HTTPS cannot read the meeting-room server at 10.10.10.10. Your browser has cached
-              HTTPS for {VENUE_HOST}; you need to clear that cache before the twin can load over
-              plain HTTP again.
+              This browser upgraded {VENUE_HOST} to HTTPS. GitHub Pages supports that secure
+              connection, so this page cannot read the meeting-room server at 10.10.10.10.
+            </p>
+            <p>
+              Schedule and drafts remain available from the public meeting sync. Venue-only
+              updates may arrive a few minutes later.
             </p>
 
-            <details className="group rounded-md border border-destructive/20 bg-background/60">
-              <summary className="flex cursor-pointer items-center gap-2 p-2 font-medium text-foreground">
-                <Smartphone className="size-3.5" />
-                How to clear the cache on your phone
-              </summary>
-              <div className="space-y-2 p-2 pt-0 text-muted-foreground">
-                <p className="font-medium text-foreground">iPhone (Safari)</p>
-                <ol className="list-decimal space-y-1 pl-4">
-                  <li>Open Settings → Safari → Clear History and Website Data, then confirm.</li>
-                  <li>
-                    Or, for a targeted wipe: Settings → Safari → Advanced → Website Data → search
-                    “{VENUE_HOST}” → swipe left → Delete.
-                  </li>
-                </ol>
-                <p className="font-medium text-foreground">Android (Chrome)</p>
-                <ol className="list-decimal space-y-1 pl-4">
-                  <li>
-                    Disable HTTPS-First: Chrome → ⋮ → Settings → Privacy and security → Security
-                    → turn off <strong>Always use secure connections</strong>.
-                  </li>
-                  <li>Chrome → ⋮ → History → Clear browsing data.</li>
-                  <li>
-                    Tap Advanced, select Cookies and site data + Cached images and files, then Clear
-                    data.
-                  </li>
-                </ol>
-                <p>
-                  After clearing, close this tab and reopen via{" "}
-                  <a
-                    href={secureModeUrl(secureHost)}
-                    className="font-medium text-primary underline"
-                  >
-                    https://{secureHost}
-                  </a>{" "}
-                  so it can hop you to HTTP.
-                </p>
-              </div>
-            </details>
-
             <div className="flex flex-wrap items-center gap-2">
-              <Button
-                size="sm"
-                variant="outline"
-                onClick={() => retryVenueOverHttp()}
-              >
-                <RotateCcw /> Cache cleared — retry over HTTP
-              </Button>
-              <Button asChild size="sm" variant="ghost">
+              <Button asChild size="sm" variant="outline">
                 <a href={secureModeUrl(secureHost)}>Back to {secureHost}</a>
               </Button>
               <Button
@@ -184,7 +140,7 @@ export function VenueModeBanner({
         <p className="min-w-0 flex-1 text-muted-foreground">
           <span className="font-medium text-foreground">Venue mode unavailable.</span>{" "}
           {VENUE_HOST
-            ? "Your browser forced the venue copy of this app to HTTPS, which cannot read the meeting-room server. This happens when the venue host sits under a domain with strict HTTPS (HSTS) — the venue twin must run on its own separate domain."
+            ? "Your browser upgraded the venue copy to HTTPS, which cannot read the meeting-room server. Schedule and drafts will continue through the public meeting sync."
             : "The plain-HTTP venue copy of this app is not configured for this deployment yet. Drafts will fall back to the public 3GPP SYNC mirror, which may be a few minutes behind."}
         </p>
         <button
