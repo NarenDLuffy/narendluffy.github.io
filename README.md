@@ -118,8 +118,11 @@ The workflow resolves the base path automatically:
 - `<username>.github.io` repo or a `CNAME` file present → `/`
 - override with a `BASE_PATH` repository variable if needed
 
-Because of this, dropping a custom domain later needs no code change: delete the
-`CNAME` and the next deploy serves correctly from the `github.io` sub-path.
+The venue custom domain is written into the compiled artifact by the deployment
+workflow. Do not add a `CNAME` to the repository root: when Pages is configured
+to deploy from a branch, that can cause GitHub's Jekyll builder to publish this
+README instead of the application. The workflow validates that its artifact is
+the compiled app before deployment.
 
 ## Privacy & data classification
 

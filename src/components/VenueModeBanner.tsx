@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { AlertTriangle, Radio, ShieldCheck, X } from "lucide-react";
+import { AlertTriangle, Radio, RotateCcw, ShieldCheck, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   alwaysSwitch,
   autoHopToVenue,
@@ -97,15 +98,23 @@ export function VenueModeBanner({
     return (
       <div className="flex items-start gap-2 rounded-lg border border-destructive/40 bg-destructive/5 p-3 text-xs">
         <AlertTriangle className="mt-0.5 size-4 shrink-0 text-destructive" />
-        <p className="min-w-0 flex-1 text-muted-foreground">
-          <span className="font-medium text-foreground">Wrong address.</span> You opened the venue
-          copy over HTTPS. If you keep using this address your browser may force HTTPS in the
-          future and break venue mode. Please go back to{" "}
-          <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
-            {secureHost}
-          </a>{" "}
-          and let it send you here automatically.
-        </p>
+        <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
+          <p>
+            <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span>{" "}
+            HTTPS cannot read the meeting-room server. Try HTTP below; if your browser changes it
+            back to HTTPS, clear the stored website data for {VENUE_HOST} and reopen {secureHost}.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Button asChild size="sm" variant="outline">
+              <a href={venueModeUrl()}>
+                <RotateCcw /> Retry over HTTP
+              </a>
+            </Button>
+            <Button asChild size="sm" variant="ghost">
+              <a href={secureModeUrl(secureHost)}>Back to {secureHost}</a>
+            </Button>
+          </div>
+        </div>
       </div>
     );
   }
