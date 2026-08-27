@@ -56,6 +56,14 @@ directly and therefore gets the freshest drafts and any meeting-local schedule
 updates. Tap **Open venue mode**, and your bookmarks, follows and read state are
 carried over. When you leave the venue, use the link back to the secure site.
 
+Tick **Always open venue mode** once (either on the banner or from inside venue
+mode) and you never have to think about it again: open `https://ran1.app` as
+usual, and whenever the venue twin is reachable the app redirects itself there
+silently. If the twin cannot be reached — you are not on the meeting Wi-Fi, or
+your browser forced the hop to HTTPS — the app just stays on the secure site and
+shows the normal banner instead of looping.
+
+
 If you never see the banner, the app is probably falling back to the public
 SYNC mirror, which is fine but may be a few minutes behind.
 
