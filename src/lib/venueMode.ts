@@ -120,6 +120,13 @@ export function consumeTransferredState(): boolean {
   const url = new URL(window.location.href);
   const encoded = url.searchParams.get(IMPORT_PARAM);
   if (!encoded) return false;
+  // The import blob is only ever attached by the secure host when sending the
+  // user to the HTTP twin. If it shows up on an https:// page (localhost dev
+  // aside), the browser silently upgraded the hop — HSTS pinned the twin host.
+  // Record that so the banner can explain instead of retrying in a loop.
+  if (window.location.protocol === "https:" && venueBlockedByScheme()) {
+    markVenueHopFailed();
+  }
   const state = decodeState(encoded);
   if (state) {
     for (const [key, value] of Object.entries(state)) {
@@ -174,7 +181,40 @@ export function dismissVenueBanner(): void {
 
 /** Navigate to the HTTP twin, remembering the choice when asked. */
 export function switchToVenueMode(remember = false): void {
-  if (!isBrowser()) return;
+  if (!isBrowser() || !VENUE_HOST) return;
   if (remember) setAlwaysSwitch(true);
   window.location.assign(venueModeUrl());
+}
+
+/**
+ * True when a previous hop to the twin was silently upgraded to HTTPS by the
+ * browser (HSTS). Used to stop auto-switching forever once it is known the
+ * twin host cannot be reached over plain HTTP from this device.
+ */
+export function venueHopFailed(): boolean {
+  if (!isBrowser()) return false;
+  try {
+    return window.localStorage.getItem(FAILED_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+export function markVenueHopFailed(): void {
+  if (!isBrowser()) return;
+  try {
+    window.localStorage.setItem(FAILED_KEY, "1");
+  } catch {
+    /* storage unavailable */
+  }
+}
+
+/** Clear the failed-hop marker, e.g. after moving the twin to a new domain. */
+export function clearVenueHopFailed(): void {
+  if (!isBrowser()) return;
+  try {
+    window.localStorage.removeItem(FAILED_KEY);
+  } catch {
+    /* storage unavailable */
+  }
 }
