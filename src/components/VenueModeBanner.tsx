@@ -67,14 +67,16 @@ export function VenueModeBanner({
     return (
       <div className="flex items-start gap-2 rounded-lg border border-primary/40 bg-primary/5 p-3 text-xs">
         <Radio className="mt-0.5 size-4 shrink-0 text-primary" />
-        <p className="min-w-0 flex-1 text-muted-foreground">
-          <span className="font-medium text-foreground">Venue mode.</span> This copy is served over
-          plain HTTP so it can read the meeting-room server directly. Check-ins and anything
-          account-based live on the secure site.{" "}
-          <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
-            Back to {secureHost}
-          </a>
-          <label className="mt-2 flex items-center gap-2 text-foreground">
+        <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
+          <p>
+            <span className="font-medium text-foreground">Venue mode.</span> This copy is served
+            over plain HTTP so it can read the meeting-room server directly. Check-ins and anything
+            account-based live on the secure site.{" "}
+            <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
+              Back to {secureHost}
+            </a>
+          </p>
+          <label className="flex items-center gap-2 text-foreground">
             <input
               type="checkbox"
               checked={always}
@@ -86,7 +88,7 @@ export function VenueModeBanner({
             />
             Always open venue mode at meetings
           </label>
-        </p>
+        </div>
       </div>
     );
   }
