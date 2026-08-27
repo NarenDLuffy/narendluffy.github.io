@@ -323,16 +323,18 @@ function candidateBases(): Candidate[] {
       via: "browser",
     });
   }
-  // Direct sync read: usually blocked by CORS, but free to try and instant
-  // when a mirror does send the headers.
-  candidates.push({ origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public", via: "browser" });
-  // Server-side crawl of the same mirror — the reliable fallback.
+  // Server-side crawl of the sync mirror — the reliable path, since the
+  // browser is refused by CORS on www.3gpp.org.
   candidates.push({
     origin: "sync-proxy",
     url: SYNC_DRAFTS_BASE,
     sourceType: "public",
     via: "proxy",
   });
+  // Direct read, last resort: only ever succeeds on a static export where no
+  // server function exists and the mirror happens to send CORS headers.
+  candidates.push({ origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public", via: "browser" });
+
   return candidates;
 }
 
