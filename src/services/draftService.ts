@@ -1,6 +1,6 @@
 import { queryOptions } from "@tanstack/react-query";
 import { dataUrl } from "@/lib/dataUrl";
-import { probeLiveDrafts, type LiveDraftOrigin } from "./draftLiveSource";
+import { probeLiveDrafts, type LiveDraftOrigin, type VenueStatus } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
   AgendaActivity,
