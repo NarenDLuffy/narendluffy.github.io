@@ -136,6 +136,12 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  // Venue mode hands device-local follows/bookmarks over in the URL when the
+  // user hops between the secure host and the plain-HTTP venue twin.
+  useEffect(() => {
+    void import("@/lib/venueMode").then((m) => m.consumeTransferredState());
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
@@ -145,3 +151,4 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
