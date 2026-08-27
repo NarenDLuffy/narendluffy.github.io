@@ -54,15 +54,20 @@ If the app detects it is blocked, it shows a banner offering to open **venue
 mode** on a plain-HTTP copy of the same app. Venue mode can read `10.10.10.10`
 directly and therefore gets the freshest drafts and any meeting-local schedule
 updates. Tap **Open venue mode**, and your bookmarks, follows and read state are
-carried over. When you leave the venue, use the link back to the secure site.
+carried over. The transfer URL is cleaned from the address bar as soon as the
+twin loads.
 
-Tick **Always open venue mode** once (either on the banner or from inside venue
-mode) and you never have to think about it again: open `https://ran1.app` as
-usual, and whenever the venue twin is reachable the app redirects itself there
-silently. If the twin cannot be reached — you are not on the meeting Wi-Fi, or
-your browser forced the hop to HTTPS — the app just stays on the secure site and
-shows the normal banner instead of looping.
+Tick **Always open venue mode** on the banner (or from inside venue mode) and you
+never have to think about it again: open `https://ran1.app` as usual, and during
+an active meeting the app redirects itself to the HTTP twin silently. If the twin
+cannot be reached — you are not on the meeting Wi-Fi, or your browser forced the
+hop to HTTPS — the app stays on the secure site and shows the normal banner
+instead of looping.
 
+If you ever open the venue copy directly with `https://` (for example by typing
+the twin address), the app shows a warning reminding you to use `ran1.app`
+instead. Using the twin over HTTPS can teach your browser to force HTTPS for
+that domain, after which venue mode stops working.
 
 If you never see the banner, the app is probably falling back to the public
 SYNC mirror, which is fine but may be a few minutes behind.
