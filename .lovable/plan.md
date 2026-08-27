@@ -2,19 +2,20 @@
 
 Goal: give the app a plain-HTTP copy hosted on GitHub Pages so that, when a delegate is on meeting Wi-Fi, the browser can read `http://10.10.10.10/` for live drafts without mixed-content blocking. The secure main app stays on `https://ran1.app` (Lovable) and offers a one-tap switch to the HTTP twin.
 
+## Why GitHub Pages is needed even though the app is on Lovable
+
+Lovable only serves HTTPS. That is normally good, but the meeting-room server at `10.10.10.10` only speaks HTTP. Browsers block an HTTPS page from fetching an HTTP URL — this is called mixed-content blocking. It happens before any local-network permission prompt, so the app can never reach `10.10.10.10` from `https://ran1.app`.
+
+The only way to read `10.10.10.10` from a browser is to serve the app itself over plain HTTP. Lovable cannot do that, but GitHub Pages can when you attach a custom domain and disable HTTPS enforcement.
+
+So the split is:
+
+- `https://ran1.app` (Lovable) — main secure app, works everywhere, uses the server-side Sync proxy for drafts.
+- `http://venue.ran1.app` (GitHub Pages) — HTTP venue twin, only used on meeting Wi-Fi, can directly read `10.10.10.10`.
+
 ## Good news: `ran1.app` is managed in Lovable
 
-The domain status shows `ran1.app` as a Lovable-managed (`mode: buy`) connected domain. That means you can add DNS records for `venue.ran1.app` directly inside Lovable's domain manager. You do not need to buy another domain or use an external DNS provider.
-
-## Critical constraint: GitHub-provided domains are HTTPS-only
-
-GitHub forces HTTPS on every `*.github.io` domain. You cannot turn it off. That means:
-
-- `https://narendluffy.github.io/` — works, but is HTTPS.
-- `http://narendluffy.github.io/` — GitHub redirects to HTTPS.
-- An HTTPS page cannot read `http://10.10.10.10/` because of browser mixed-content blocking.
-
-So the venue twin **must** use the custom domain `venue.ran1.app` with HTTPS enforcement disabled.
+The domain status shows `ran1.app` as a Lovable-managed (`mode: buy`) connected domain. You can add the `venue.ran1.app` DNS record directly inside Lovable's domain manager.
 
 ## Plan
 
@@ -30,8 +31,6 @@ So the venue twin **must** use the custom domain `venue.ran1.app` with HTTPS enf
 - Wait for the deploy workflow to finish. `https://narendluffy.github.io/` will show RAN1 Live.
 
 ### 3. Add the `venue.ran1.app` DNS record in Lovable
-
-Because `ran1.app` is managed in Lovable:
 
 1. Open your project in Lovable.
 2. Go to **Project Settings → Project section → Domains**.
