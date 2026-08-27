@@ -14,12 +14,14 @@ Keep `https://ran1.app` as the main secure app (Lovable-hosted, with shared comp
 
 Add these DNS records. They point the apex domain at GitHub Pages' four load-balancer IPs:
 
-| Type | Name | Value |
-| --- | --- | --- |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
+
+| Type | Name | Value           |
+| ---- | ---- | --------------- |
+| A    | @    | 185.199.108.153 |
+| A    | @    | 185.199.109.153 |
+| A    | @    | 185.199.110.153 |
+| A    | @    | 185.199.111.153 |
+
 
 If your registrar supports an "Apex flattening" / ALIAS option, you can use that instead, but the four A records above work everywhere. TTL can be left at the default.
 
