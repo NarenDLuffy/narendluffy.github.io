@@ -75,10 +75,10 @@ AGENDA_CODE_RE = re.compile(r"\b\d{1,2}(?:\.\d{1,2}){1,3}\b")
 BREAK_RE = re.compile(r"\b(coffee|lunch|dinner)\b", re.I)
 ROOM_RE = re.compile(r"\b(room|brk|breakout|plenary|hall|main session)\b", re.I)
 SCHEDULE_WORD_RE = re.compile(
-    r"\b(schedule|session plan|online session|offline session|detailed schedule|agenda)\b", re.I
+    r"\b(schedules?|session plans?|online sessions?|offline sessions?|agenda)\b", re.I
 )
-NAME_HINT_RE = re.compile(r"\b(schedule|session|agenda|plan|notes)\b", re.I)
-STRONG_NAME_RE = re.compile(r"\b(schedule|session plan|timetable)\b", re.I)
+NAME_HINT_RE = re.compile(r"\b(schedules?|sessions?|agenda|plans?|notes)\b", re.I)
+STRONG_NAME_RE = re.compile(r"\b(schedules?|session plans?|timetables?)\b", re.I)
 CHAIR_NAME_RE = re.compile(r"\b(chair|notes|agenda)\b", re.I)
 # Discussion documents: never a schedule, and there are hundreds of them.
 DISCUSSION_NAME_RE = re.compile(
