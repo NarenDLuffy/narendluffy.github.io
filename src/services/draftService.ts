@@ -1,6 +1,6 @@
 import { queryOptions } from "@tanstack/react-query";
 import { dataUrl } from "@/lib/dataUrl";
-import { probeLiveDrafts, type LiveDraftOrigin } from "./draftLiveSource";
+import { probeLiveDrafts, type LiveDraftOrigin, type VenueStatus } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
   AgendaActivity,
@@ -54,7 +54,7 @@ export interface DraftResult {
   liveCheckedAt?: string;
   /** Files the live probe found that the published index did not have. */
   freshCount?: number;
-  venueStatus?: "not-checked" | "available" | "unavailable";
+  venueStatus?: VenueStatus;
 }
 
 function readCache(slug: string): DraftIndex | null {

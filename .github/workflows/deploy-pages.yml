@@ -49,7 +49,21 @@ jobs:
         env:
           BASE_PATH: ${{ steps.base.outputs.base }}
           STATIC_EXPORT: 1
+          # Hostname of the plain-HTTP venue twin (see below). The app links to
+          # it when it detects it cannot read the meeting-room server.
+          VITE_VENUE_HOST: ${{ vars.VENUE_HOST }}
         run: bun run build
+
+      # Venue mode: this Pages site is the plain-HTTP twin of the app, served
+      # from a hostname whose "Enforce HTTPS" box is left unchecked so the
+      # browser is allowed to read http://10.10.10.10 from it. Set the
+      # VENUE_HOST repository variable (e.g. venue.ran1.app) to enable.
+      - name: Custom domain for venue mode
+        if: vars.VENUE_HOST != ''
+        run: |
+          OUT=dist
+          [ -d "$OUT/client" ] && OUT="$OUT/client"
+          echo "${{ vars.VENUE_HOST }}" > "$OUT/CNAME"
 
       - name: SPA fallback for client-side routes
         run: |
