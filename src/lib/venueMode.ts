@@ -33,7 +33,7 @@ const IMPORT_PARAM = "ran1import";
  * the banner explains that drafts fall back to the SYNC mirror.
  */
 export const VENUE_HOST: string | null =
-  (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? "3gpplive.net";
+  (import.meta.env["VITE_VENUE_HOST"] as string | undefined) ?? "3gpplive.net";
 
 /** Keys worth carrying over when switching hosts (all device-local, no PII). */
 const TRANSFER_KEYS = new Set([

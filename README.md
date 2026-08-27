@@ -115,7 +115,7 @@ The site is a static build — no server required, free forever on `github.io`.
 The workflow resolves the base path automatically:
 
 - project site → `/<repo>/`
-- `<username>.github.io` repo or a `CNAME` file present → `/`
+- `<username>.github.io` repo or configured venue custom domain → `/`
 - override with a `BASE_PATH` repository variable if needed
 
 The venue custom domain is written into the compiled artifact by the deployment
