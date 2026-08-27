@@ -47,20 +47,28 @@ in the meeting Inbox as it happens.
                                                              ▼
                                      React + TanStack Start static build
                                                              │
-                                    ┌────────────────────────┴────────────────────────┐
-                                    ▼                                                   ▼
-                           https://ran1.app (Lovable)                         http://venue.ran1.app (GitHub Pages)
-                                    │                                                   │
-                  server function proxy for SYNC mirror              direct read of 10.10.10.10 on meeting LAN
-                                    │
-                  browser also probes 10.10.10.10 when possible
+                                     ┌────────────────────────┴────────────────────────┐
+                                     ▼                                                   ▼
+                            https://ran1.app (Lovable)                    http://<venue-host> (GitHub Pages)
+                                     │                                                   │
+                   server function proxy for SYNC mirror              direct read of 10.10.10.10 on meeting LAN
+                                     │
+                   browser also probes 10.10.10.10 when possible
 ```
 
 The main app is served by Lovable over HTTPS and uses a server function to crawl
 the public 3GPP SYNC mirror. Because browsers block HTTPS pages from fetching
-HTTP URLs, a separate plain-HTTP copy is hosted on GitHub Pages under a custom
-subdomain (`venue.ran1.app`) for use on the meeting Wi-Fi; that copy can read
-the venue server `10.10.10.10` directly.
+HTTP URLs, a separate plain-HTTP copy is hosted on GitHub Pages for use on the
+meeting Wi-Fi; that copy can read the venue server `10.10.10.10` directly.
+
+The twin's hostname is supplied at build time via the `VENUE_HOST` repository
+variable (`VITE_VENUE_HOST`). It **must be its own separate domain, not a
+subdomain of the main site**: `ran1.app` sends HSTS with `includeSubDomains`,
+so any browser that has visited the main site silently upgrades every
+`*.ran1.app` request to HTTPS before it leaves the device — a twin under
+`ran1.app` can never be reached over plain HTTP. Also avoid opening the twin's
+`https://` version: GitHub Pages sends its own HSTS header there, which would
+pin the twin host for that browser.
 
 - `ingestion/` — portal discovery, FTP crawling, DOCX block-schedule parsing,
   merging, validation, change detection.
