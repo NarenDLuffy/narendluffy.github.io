@@ -266,10 +266,38 @@ def _resolve_room_day(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
         # children, and only whatever time they do not account for.
         kept.extend(_remaining_of(block, detail))
 
+    kept = _drop_overlaps(kept)
     kept.extend(_merge_duplicates(non_sessions)[0])
     kept.sort(key=lambda b: (b.start, b.end, b.order))
     return kept, conflicts
 
+
+
+def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
+    """Keep one non-overlapping timeline per room/day, finest evidence first.
+
+    Two documents can tile the same afternoon differently (one 60-minute block
+    against a 40/40 split). Nesting is handled by the container split above;
+    what is left here are partial overlaps, where the more detailed and better
+    corroborated block wins and the coarser one is dropped.
+    """
+    ranked = sorted(
+        blocks,
+        key=lambda b: (
+            -b.specificity,
+            b.end - b.start,
+            -b.confidence,
+            -len(b.sourceIds),
+            b.start,
+        ),
+    )
+    kept: list[CandidateBlock] = []
+    for block in ranked:
+        if any(block.start < other.end and other.start < block.end for other in kept):
+            continue
+        kept.append(block)
+    kept.sort(key=lambda b: (b.start, b.end, b.order))
+    return kept
 
 
 def _covering(container: CandidateBlock, detailed: list[CandidateBlock]) -> list[CandidateBlock]:
