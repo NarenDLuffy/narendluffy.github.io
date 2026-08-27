@@ -30,13 +30,19 @@ export function VenueModeBanner({
   meetingActive: boolean;
   secureHost?: string;
 }) {
-  const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked">("hidden");
+  const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked" | "https-twin">(
+    "hidden",
+  );
   const [always, setAlways] = useState(false);
 
   useEffect(() => {
     setAlways(alwaysSwitch());
     if (inVenueMode()) {
       setState("in-venue");
+      return undefined;
+    }
+    if (venueTwinLoadedOverHttps()) {
+      setState("https-twin");
       return undefined;
     }
     if (!venueBlockedByScheme() || !meetingActive) return undefined;
@@ -47,16 +53,9 @@ export function VenueModeBanner({
       return undefined;
     }
     if (alwaysSwitch()) {
-      // Silent hop: probe the twin, then replace this page with it. If the twin
-      // is not reachable (not on meeting Wi-Fi, host down) fall back to the
-      // normal offer banner instead of stranding the user.
-      let cancelled = false;
-      void autoHopToVenue().then((hopped) => {
-        if (!hopped && !cancelled && !venueBannerDismissed()) setState("offer");
-      });
-      return () => {
-        cancelled = true;
-      };
+      // Redirect immediately; the component unmounts before it can paint.
+      autoHopToVenue();
+      return undefined;
     }
     if (!venueBannerDismissed()) setState("offer");
     return undefined;
