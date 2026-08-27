@@ -107,7 +107,7 @@ export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
       ),
       fold(
         `LOCATION:${esc(
-          [s.roomName, bundle.meeting.venue, bundle.meeting.location].filter(Boolean).join(", "),
+          [s.roomName, bundle.meeting.venue, bundle.meeting.city].filter(Boolean).join(", "),
         )}`,
       ),
       fold(
