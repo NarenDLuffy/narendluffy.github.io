@@ -18,11 +18,21 @@
 
 const ALWAYS_KEY = "ran1live.venueMode.always.v1";
 const DISMISS_KEY = "ran1live.venueMode.dismissed.v1";
+const FAILED_KEY = "ran1live.venueMode.hopFailed.v1";
 const IMPORT_PARAM = "ran1import";
 
-/** Hostname serving the plain-HTTP twin. Override per deployment if needed. */
-export const VENUE_HOST: string =
-  (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? "venue.ran1.app";
+/**
+ * Hostname serving the plain-HTTP twin. Set per deployment via VITE_VENUE_HOST.
+ *
+ * There is deliberately no built-in default: the twin MUST live on its own
+ * domain, never under a host that sends HSTS with includeSubDomains (the main
+ * site does exactly that, so any *.ran1.app twin is force-upgraded to HTTPS by
+ * the browser before the request even leaves the device). When unset, venue
+ * mode is "not configured" and the banner explains that instead of linking to
+ * a host that cannot work.
+ */
+export const VENUE_HOST: string | null =
+  (import.meta.env['VITE_VENUE_HOST'] as string | undefined) ?? null;
 
 /** Keys worth carrying over when switching hosts (all device-local, no PII). */
 const TRANSFER_PREFIX = "ran1live.";
