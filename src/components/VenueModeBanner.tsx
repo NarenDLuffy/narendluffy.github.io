@@ -11,6 +11,7 @@ import {
   venueBannerDismissed,
   venueBlockedByScheme,
   venueHopFailed,
+  venueTwinLoadedOverHttps,
   VENUE_HOST,
 } from "@/lib/venueMode";
 
@@ -29,13 +30,19 @@ export function VenueModeBanner({
   meetingActive: boolean;
   secureHost?: string;
 }) {
-  const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked">("hidden");
+  const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked" | "https-twin">(
+    "hidden",
+  );
   const [always, setAlways] = useState(false);
 
   useEffect(() => {
     setAlways(alwaysSwitch());
     if (inVenueMode()) {
       setState("in-venue");
+      return undefined;
+    }
+    if (venueTwinLoadedOverHttps()) {
+      setState("https-twin");
       return undefined;
     }
     if (!venueBlockedByScheme() || !meetingActive) return undefined;
@@ -46,16 +53,9 @@ export function VenueModeBanner({
       return undefined;
     }
     if (alwaysSwitch()) {
-      // Silent hop: probe the twin, then replace this page with it. If the twin
-      // is not reachable (not on meeting Wi-Fi, host down) fall back to the
-      // normal offer banner instead of stranding the user.
-      let cancelled = false;
-      void autoHopToVenue().then((hopped) => {
-        if (!hopped && !cancelled && !venueBannerDismissed()) setState("offer");
-      });
-      return () => {
-        cancelled = true;
-      };
+      // Redirect immediately; the component unmounts before it can paint.
+      autoHopToVenue();
+      return undefined;
     }
     if (!venueBannerDismissed()) setState("offer");
     return undefined;
@@ -67,14 +67,16 @@ export function VenueModeBanner({
     return (
       <div className="flex items-start gap-2 rounded-lg border border-primary/40 bg-primary/5 p-3 text-xs">
         <Radio className="mt-0.5 size-4 shrink-0 text-primary" />
-        <p className="min-w-0 flex-1 text-muted-foreground">
-          <span className="font-medium text-foreground">Venue mode.</span> This copy is served over
-          plain HTTP so it can read the meeting-room server directly. Check-ins and anything
-          account-based live on the secure site.{" "}
-          <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
-            Back to {secureHost}
-          </a>
-          <label className="mt-2 flex items-center gap-2 text-foreground">
+        <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
+          <p>
+            <span className="font-medium text-foreground">Venue mode.</span> This copy is served
+            over plain HTTP so it can read the meeting-room server directly. Check-ins and anything
+            account-based live on the secure site.{" "}
+            <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
+              Back to {secureHost}
+            </a>
+          </p>
+          <label className="flex items-center gap-2 text-foreground">
             <input
               type="checkbox"
               checked={always}
@@ -86,6 +88,23 @@ export function VenueModeBanner({
             />
             Always open venue mode at meetings
           </label>
+        </div>
+      </div>
+    );
+  }
+
+  if (state === "https-twin") {
+    return (
+      <div className="flex items-start gap-2 rounded-lg border border-destructive/40 bg-destructive/5 p-3 text-xs">
+        <AlertTriangle className="mt-0.5 size-4 shrink-0 text-destructive" />
+        <p className="min-w-0 flex-1 text-muted-foreground">
+          <span className="font-medium text-foreground">Wrong address.</span> You opened the venue
+          copy over HTTPS. If you keep using this address your browser may force HTTPS in the
+          future and break venue mode. Please go back to{" "}
+          <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
+            {secureHost}
+          </a>{" "}
+          and let it send you here automatically.
         </p>
       </div>
     );
@@ -125,7 +144,7 @@ export function VenueModeBanner({
           cannot read the venue server at 10.10.10.10 — browsers block HTTP content on an HTTPS
           page. Venue mode opens the same app on {VENUE_HOST} over plain HTTP, which can.
         </p>
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             type="button"
             onClick={() => switchToVenueMode(false)}
@@ -133,16 +152,20 @@ export function VenueModeBanner({
           >
             Open venue mode
           </button>
-          <button
-            type="button"
-            onClick={() => {
-              setAlwaysSwitch(true);
-              switchToVenueMode(true);
-            }}
-            className="inline-flex min-h-9 items-center rounded-md border border-border px-2.5 text-xs font-medium text-muted-foreground"
-          >
+          <label className="inline-flex items-center gap-2 text-foreground">
+            <input
+              type="checkbox"
+              checked={always}
+              onChange={(e) => {
+                const checked = e.target.checked;
+                setAlways(checked);
+                setAlwaysSwitch(checked);
+                if (checked) switchToVenueMode(true);
+              }}
+              className="size-3.5 accent-[hsl(var(--primary))]"
+            />
             Always open venue mode
-          </button>
+          </label>
         </div>
       </div>
       <button
