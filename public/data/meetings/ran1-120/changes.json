@@ -1,406 +1,487 @@
 [
   {
-    "changeId": "session_added-ran1-120-f459c43c-2026-08-24T17:28:38+00:00",
+    "changeId": "session_added-ran1-120_tue_ran1-main_0830_1030_9.3.1-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_added",
-    "title": "Agenda item added",
+    "title": "R19 Duplex (120) added",
     "detail": "New session in the schedule",
     "agendaItems": [
-      "8.1"
+      "9.3.1"
     ],
-    "sessionId": "ran1-120-f459c43c",
-    "to": "Detailed Schedule for RAN1 Main 11:00-12:00",
+    "sessionId": "ran1-120_tue_ran1-main_0830_1030_9.3.1",
+    "to": "RAN1 Main 08:30-10:30",
     "sourceIds": [
-      "ran1-120-7a4e9a37"
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
     ]
   },
   {
-    "changeId": "session_added-ran1-120-bec2284d-2026-08-24T17:28:38+00:00",
+    "changeId": "session_added-ran1-120_tue_ran1-main_1100_1300_9.5.1-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_added",
-    "title": "R19 added",
+    "title": "R19 NES (120) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1100_1300_9.5.1",
+    "to": "RAN1 Main 11:00-13:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_athenaeum-conf-ground-le_1430_1450_xr-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "XR added",
     "detail": "New session in the schedule",
     "agendaItems": [],
-    "sessionId": "ran1-120-bec2284d",
-    "to": "Detailed Schedule for RAN1 Main 17:00-19:30",
+    "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1430_1450_xr",
+    "to": "Athenaeum Conf. (Ground level) 14:30-14:50",
     "sourceIds": [
-      "ran1-120-7a4e9a37"
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
     ]
   },
   {
-    "changeId": "session_added-ran1-120-237de536-2026-08-24T17:28:38+00:00",
+    "changeId": "session_added-ran1-120_tue_ran1-main_1430_1630_9.2.1-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_added",
-    "title": "NTN added",
+    "title": "R19 MIMO (90). . TBD added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1430_1630_9.2.1",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_athenaeum-conf-ground-le_1450_1520_nes-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "NES added",
     "detail": "New session in the schedule",
     "agendaItems": [],
-    "sessionId": "ran1-120-237de536",
-    "to": "Offline2: Delta+Sigma 08:30-10:30",
+    "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1450_1520_nes",
+    "to": "Athenaeum Conf. (Ground level) 14:50-15:20",
     "sourceIds": [
-      "ran1-120-7a4e9a37"
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
     ]
   },
   {
-    "changeId": "session_added-ran1-120-3e69c758-2026-08-24T17:28:38+00:00",
+    "changeId": "start_time_changed-ran1-120_tue_athenaeum-conf-ground-le_1520_1550_r19-mce-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "start_time_changed",
+    "title": "R19 MCE start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1520_1550_r19-mce",
+    "to": "15:20",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_athenaeum-conf-ground-le_1520_1550_r19-mce-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "end_time_changed",
+    "title": "R19 MCE end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1520_1550_r19-mce",
+    "to": "15:50",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "15:00"
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_ballroom-i-level-2_1750_1840_mimo-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_added",
-    "title": "R19 MIMO (90) added",
+    "title": "MIMO added",
     "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ballroom-i-level-2_1750_1840_mimo",
+    "to": "Ballroom I (Level-2) 17:50-18:40",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_athenaeum-conf-ground-le_0830_0900_nes-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "NES added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0830_0900_nes",
+    "to": "Athenaeum Conf. (Ground level) 08:30-09:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_wed_ballroom-i-level-2_0830_1030_r19-a-iot-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "start_time_changed",
+    "title": "R19 A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ballroom-i-level-2_0830_1030_r19-a-iot",
+    "to": "08:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_wed_ballroom-i-level-2_0830_1030_r19-a-iot-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "end_time_changed",
+    "title": "R19 A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ballroom-i-level-2_0830_1030_r19-a-iot",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "16:10"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_athenaeum-conf-ground-le_0900_0920_xr-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "XR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0900_0920_xr",
+    "to": "Athenaeum Conf. (Ground level) 09:00-09:20",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_athenaeum-conf-ground-le_0920_1000_duplex-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0920_1000_duplex",
+    "to": "Athenaeum Conf. (Ground level) 09:20-10:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_athenaeum-conf-ground-le_1000_1030_mimo-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1000_1030_mimo",
+    "to": "Athenaeum Conf. (Ground level) 10:00-10:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1100_1300_9.6.1-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "R19 LP-WUS (120) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.6.1"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1100_1300_9.6.1",
+    "to": "RAN1 Main 11:00-13:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_wed_ballroom-i-level-2_1130_1300_r19-isac-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "start_time_changed",
+    "title": "R19 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ballroom-i-level-2_1130_1300_r19-isac",
+    "to": "11:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ballroom-i-level-2_1430_1530_r19-broadcast-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "R19 Broadcast added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ballroom-i-level-2_1430_1530_r19-broadcast",
+    "to": "Ballroom I (Level-2) 14:30-15:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1430_1630_9.3.1-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "R19 Duplex (120) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1430_1630_9.3.1",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1700_1930_9.5.3-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "R19 NES (150) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1700_1930_9.5.3",
+    "to": "RAN1 Main 17:00-19:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ballroom-i-level-2_1750_1840_lp-wus-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "LP-WUS added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ballroom-i-level-2_1750_1840_lp-wus",
+    "to": "Ballroom I (Level-2) 17:50-18:40",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_1430_1630_9.5.1-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_added",
+    "title": "R19 NES (120) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_1430_1630_9.5.1",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-120-fe3fd673-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_removed",
+    "title": "R19 Duplex (120) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120-fe3fd673",
+    "sourceIds": [
+      "ran1-120-7a4e9a37"
+    ],
+    "from": "Detailed Schedule for RAN1 Main"
+  },
+  {
+    "changeId": "session_removed-ran1-120-4c3164cc-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_removed",
+    "title": "R19 NES (120) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.1",
+      "9.5.2",
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120-4c3164cc",
+    "sourceIds": [
+      "ran1-120-7a4e9a37"
+    ],
+    "from": "Detailed Schedule for RAN1 Main"
+  },
+  {
+    "changeId": "session_removed-ran1-120-3e69c758-2026-08-27T15:20:53+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
+    "type": "session_removed",
+    "title": "R19 MIMO (90) removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.2.1",
       "9.2.4"
     ],
     "sessionId": "ran1-120-3e69c758",
-    "to": "Detailed Schedule for RAN1 Main 14:30-16:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-120-ef4ca33a-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_added",
-    "title": "AI 6, 7 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-ef4ca33a",
-    "to": "Detailed Schedule for RAN1 Main 17:00-17:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-120-300b647a-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_added",
-    "title": "NTN added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-300b647a",
-    "to": "Offline2: Delta+Sigma 11:00-13:00",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-120-71f7d257-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "room_changed",
-    "title": "R19 AI/ML moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-120-71f7d257",
-    "to": "Offline2: Delta+Sigma",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Athenaeum Conf. (Ground level)"
-  },
-  {
-    "changeId": "start_time_changed-ran1-120-71f7d257-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "start_time_changed",
-    "title": "R19 AI/ML start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-120-71f7d257",
-    "to": "17:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "14:30"
-  },
-  {
-    "changeId": "end_time_changed-ran1-120-71f7d257-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "end_time_changed",
-    "title": "R19 AI/ML end time changed",
-    "detail": "End time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-120-71f7d257",
-    "to": "19:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "16:30"
-  },
-  {
-    "changeId": "session_added-ran1-120-31a9bf20-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_added",
-    "title": "AI 7 (20). Any remaining issues added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-31a9bf20",
-    "to": "Detailed Schedule for RAN1 Main 08:30-10:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "start_time_changed-ran1-120-44cd1906-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "start_time_changed",
-    "title": "MIMO start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-120-44cd1906",
-    "to": "09:45",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "09:15"
-  },
-  {
-    "changeId": "session_added-ran1-120-51f202f2-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_added",
-    "title": "AI , 7 (30). Any remaining issues added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "8.1"
-    ],
-    "sessionId": "ran1-120-51f202f2",
-    "to": "Detailed Schedule for RAN1 Main 17:00-19:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-120-da78485c-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "room_changed",
-    "title": "TBD moved",
-    "detail": "Session changed room",
-    "agendaItems": [],
-    "sessionId": "ran1-120-da78485c",
-    "to": "Ballroom II (Level-2)",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Offline2: Delta+Sigma"
-  },
-  {
-    "changeId": "end_time_changed-ran1-120-da78485c-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "end_time_changed",
-    "title": "TBD end time changed",
-    "detail": "End time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-120-da78485c",
-    "to": "18:00",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "19:30"
-  },
-  {
-    "changeId": "session_added-ran1-120-157e4a07-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_added",
-    "title": "To be assigned by Xiaodong added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-157e4a07",
-    "to": "Offline1: VIP+Lamda 14:30-16:30",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ]
-  },
-  {
-    "changeId": "session_removed-ran1-120-27a43e83-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "Agenda items 1, 2, 3, 4, 5 Agenda items 6, 7, removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.1"
-    ],
-    "sessionId": "ran1-120-27a43e83",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Ballroom II (Level-2)"
-  },
-  {
-    "changeId": "session_removed-ran1-120-086a173d-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "Agenda item  R19 MIMO (60) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.1",
-      "9.2.1",
-      "9.2.3"
-    ],
-    "sessionId": "ran1-120-086a173d",
     "sourceIds": [
       "ran1-120-7a4e9a37"
     ],
     "from": "Detailed Schedule for RAN1 Main"
   },
   {
-    "changeId": "session_removed-ran1-120-8d5ed560-2026-08-24T17:28:38+00:00",
+    "changeId": "session_removed-ran1-120-6dfde653-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_removed",
-    "title": "R19 LP-WUS (150) removed",
+    "title": "R19 LP-WUS (120) removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [
       "9.6.1",
       "9.6.2",
       "9.6.3"
     ],
-    "sessionId": "ran1-120-8d5ed560",
+    "sessionId": "ran1-120-6dfde653",
     "sourceIds": [
       "ran1-120-7a4e9a37"
     ],
     "from": "Detailed Schedule for RAN1 Main"
   },
   {
-    "changeId": "session_removed-ran1-120-21d2ea2f-2026-08-24T17:28:38+00:00",
+    "changeId": "session_removed-ran1-120-d53d8d6f-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_removed",
-    "title": "NTN TDD, NR/IoT UL removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-21d2ea2f",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Offline2: Delta+Sigma"
-  },
-  {
-    "changeId": "session_removed-ran1-120-edcb0eeb-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "R19 MIMO (90). .  AI  (30). Any open issues on R18 MIMO, NES removed",
+    "title": "R19 Duplex (120) removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [
-      "9.2.1",
-      "9.2.4",
-      "8.1"
-    ],
-    "sessionId": "ran1-120-edcb0eeb",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_removed-ran1-120-d90ce96a-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "AI 6, 7 R19 LP-WUS (120) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "9.6.1",
-      "9.6.2",
-      "9.6.3"
-    ],
-    "sessionId": "ran1-120-d90ce96a",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_removed-ran1-120-ef42cfa4-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "NTN DL, (e)RedCap removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-ef42cfa4",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Offline2: Delta+Sigma"
-  },
-  {
-    "changeId": "session_removed-ran1-120-93adaf2e-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "AI 7 (20). Any remaining issues R19 LP-WUS (100) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "9.6.1",
-      "9.6.2",
-      "9.6.3"
-    ],
-    "sessionId": "ran1-120-93adaf2e",
-    "sourceIds": [
-      "ran1-120-7a4e9a37"
-    ],
-    "from": "Detailed Schedule for RAN1 Main"
-  },
-  {
-    "changeId": "session_removed-ran1-120-59af34f3-2026-08-24T17:28:38+00:00",
-    "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
-    "type": "session_removed",
-    "title": "AI , 7 (30). Any remaining issues R19 Duplex (120) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.1",
       "9.3.1",
       "9.3.2",
       "9.3.3"
     ],
-    "sessionId": "ran1-120-59af34f3",
+    "sessionId": "ran1-120-d53d8d6f",
     "sourceIds": [
       "ran1-120-7a4e9a37"
     ],
     "from": "Detailed Schedule for RAN1 Main"
   },
   {
-    "changeId": "session_removed-ran1-120-ffca236a-2026-08-24T17:28:38+00:00",
+    "changeId": "session_removed-ran1-120-34fdda3e-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_removed",
-    "title": "R19 Mobility Any other issues Session reports removed",
+    "title": "R19 NES (150) removed",
     "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-ffca236a",
+    "agendaItems": [
+      "9.5.3",
+      "9.5.2",
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120-34fdda3e",
     "sourceIds": [
       "ran1-120-7a4e9a37"
     ],
-    "from": "Ballroom II (Level-2)"
+    "from": "Detailed Schedule for RAN1 Main"
   },
   {
-    "changeId": "session_removed-ran1-120-f7a86566-2026-08-24T17:28:38+00:00",
+    "changeId": "session_removed-ran1-120-09543bc4-2026-08-27T15:20:53+00:00",
     "meetingId": "ran1-120",
-    "detectedAt": "2026-08-24T17:28:38+00:00",
+    "detectedAt": "2026-08-27T15:20:53+00:00",
     "type": "session_removed",
-    "title": "To be assigned by Xiaodong To be assigned by David removed",
+    "title": "R19 NES (120) removed",
     "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-120-f7a86566",
+    "agendaItems": [
+      "9.5.1",
+      "9.5.2",
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120-09543bc4",
     "sourceIds": [
       "ran1-120-7a4e9a37"
     ],
-    "from": "Offline1: VIP+Lamda"
+    "from": "Detailed Schedule for RAN1 Main"
   }
 ]

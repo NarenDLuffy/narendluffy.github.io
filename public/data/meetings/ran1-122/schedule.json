@@ -1,65 +1,21 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-24T17:28:10Z",
+  "generatedAt": "2026-08-27T15:18:08Z",
   "meetingId": "ran1-122",
   "sessions": [
     {
-      "sessionId": "ran1-122-22cdcb02",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "07ab94f0",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Agenda items 1, 2, 3, 4, 5",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
-      "group": "Agenda items 1, 2, 3, 4, 5",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed discussion on SA4 LS for R20 IoT-NTN and AI 8.14",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-3da1fe54",
+      "sessionId": "ran1-122_mon_ran1-main_0900_1000_ran1-122-commences-at-09",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
       "startTime": "09:00",
       "endTime": "10:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "RAN1#122 commences at 09:00 on Monday",
       "topicKey": "04921ab0",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "RAN1#122 commences at 09:00 on Monday",
-          "minutes": 60,
-          "startTime": "09:00",
-          "endTime": "10:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "RAN1#122 commences at 09:00 on Monday",
       "kind": "plenary",
       "status": "scheduled",
@@ -67,16 +23,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-86ce33e2",
+      "sessionId": "ran1-122_mon_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -93,33 +52,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0cf25b11",
+      "sessionId": "ran1-122_mon_ran1-main_1100_1300_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -127,52 +83,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-55e92dae",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6G",
-      "topicKey": "287d8e87",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6G",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6G",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI/ML",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-d441aee8",
+      "sessionId": "ran1-122_mon_x_1300_1430_lunch-break",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -189,33 +112,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0f6a95e1",
+      "sessionId": "ran1-122_mon_ran1-main_1430_1630_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -223,16 +143,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-201e6db7",
+      "sessionId": "ran1-122_mon_pre-function-area_1430_1530_r19",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -243,31 +166,26 @@
       "topic": "R19",
       "topicKey": "22a4047a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-d69710a8",
+      "sessionId": "ran1-122_mon_zinnia_1430_1530_r20-isac",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -278,31 +196,26 @@
       "topic": "R20 ISAC",
       "topicKey": "929f9bed",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 ISAC",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-f13a157a",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1430_1500_david",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -313,15 +226,7 @@
       "topic": "David",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "David",
-          "minutes": 30,
-          "startTime": "14:30",
-          "endTime": "15:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
@@ -329,16 +234,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0cc9f048",
+      "sessionId": "ran1-122_mon_heliconia-1-2_1430_1530_sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -349,15 +257,7 @@
       "topic": "Sorour",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Sorour",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -365,52 +265,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4cff74f8",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Overall",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-93809b6b",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1500_1530_nr-iot-ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -421,31 +288,26 @@
       "topic": "NR/IoT-NTN",
       "topicKey": "c90dc120",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NR/IoT-NTN",
-          "minutes": 30,
-          "startTime": "15:00",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-8fb78683",
+      "sessionId": "ran1-122_mon_pre-function-area_1530_1630_mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -456,31 +318,26 @@
       "topic": "MIMO",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "MIMO",
-          "minutes": 60,
-          "startTime": "15:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-7d37a68f",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1530_1630_a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -491,31 +348,26 @@
       "topic": "A-IoT",
       "topicKey": "adf968bf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "A-IoT",
-          "minutes": 60,
-          "startTime": "15:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-a7d2900b",
+      "sessionId": "ran1-122_mon_heliconia-1-2_1530_1630_nes",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -526,31 +378,26 @@
       "topic": "NES",
       "topicKey": "9296eb35",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NES",
-          "minutes": 60,
-          "startTime": "15:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-a52bb7de",
+      "sessionId": "ran1-122_mon_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -567,33 +414,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-eed33152",
+      "sessionId": "ran1-122_mon_ran1-main_1700_1930_6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "6GR",
       "topicKey": "f8e05aee",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "6GR",
-          "minutes": 150,
-          "startTime": "17:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
@@ -601,16 +445,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-83ed98e3",
+      "sessionId": "ran1-122_mon_pre-function-area_1700_1830_ai-ml",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -621,31 +468,26 @@
       "topic": "AI/ML",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "AI/ML",
-          "minutes": 90,
-          "startTime": "17:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0c204b83",
+      "sessionId": "ran1-122_mon_zinnia_1700_1730_isac",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -656,31 +498,26 @@
       "topic": "ISAC",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "ISAC",
-          "minutes": 30,
-          "startTime": "17:00",
-          "endTime": "17:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-e5b7d0b7",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1700_1800_8.3",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -693,31 +530,27 @@
       "agendaItems": [
         "8.3"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.3",
-          "label": "8.3",
-          "minutes": 60,
-          "startTime": "17:00",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0c0f083f",
+      "sessionId": "ran1-122_mon_heliconia-1-2_1700_1830_r20-mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -728,67 +561,26 @@
       "topic": "R20 MIMO",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 MIMO",
-          "minutes": 90,
-          "startTime": "17:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-438e1b2e",
-      "meetingId": "ran1-122",
-      "date": "2025-08-25",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "6GR",
-      "topicKey": "f8e05aee",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "6GR",
-          "minutes": 150,
-          "startTime": "17:00",
-          "endTime": "19:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform\nFrame structure",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-7c62687f",
+      "sessionId": "ran1-122_mon_zinnia_1730_1800_a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -799,31 +591,26 @@
       "topic": "A-IoT",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "A-IoT",
-          "minutes": 30,
-          "startTime": "17:30",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0db3ca98",
+      "sessionId": "ran1-122_mon_zinnia_1800_1830_5g-broadcast",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -834,31 +621,26 @@
       "topic": "5G Broadcast",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "5G Broadcast",
-          "minutes": 30,
-          "startTime": "18:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0d8092d6",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1800_1900_8.6",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -871,31 +653,27 @@
       "agendaItems": [
         "8.6"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.6",
-          "label": "8.6",
-          "minutes": 60,
-          "startTime": "18:00",
-          "endTime": "19:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-02facc5a",
+      "sessionId": "ran1-122_mon_pre-function-area_1830_1930_r20-ai-ml",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -906,31 +684,26 @@
       "topic": "R20 AI/ML",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 AI/ML",
-          "minutes": 60,
-          "startTime": "18:30",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-ac2a56ac",
+      "sessionId": "ran1-122_mon_zinnia_1830_1930_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -941,31 +714,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 60,
-          "startTime": "18:30",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-5b88c8df",
+      "sessionId": "ran1-122_mon_heliconia-1-2_1830_1930_r19-crs",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -976,31 +744,26 @@
       "topic": "R19 CRs",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 CRs",
-          "minutes": 60,
-          "startTime": "18:30",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6f5ccd4f",
+      "sessionId": "ran1-122_mon_poinsettia-1-2_1900_1930_8.12",
       "meetingId": "ran1-122",
       "date": "2025-08-25",
       "day": "Monday",
@@ -1013,50 +776,38 @@
       "agendaItems": [
         "8.12"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.12",
-          "label": "8.12",
-          "minutes": 30,
-          "startTime": "19:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-3aaf6dc4",
+      "sessionId": "ran1-122_tue_ran1-main_0830_1030_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -1064,16 +815,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-830302fa",
+      "sessionId": "ran1-122_tue_pre-function-area_0830_0900_xr",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1084,31 +838,26 @@
       "topic": "XR",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "XR",
-          "minutes": 30,
-          "startTime": "08:30",
-          "endTime": "09:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-16997682",
+      "sessionId": "ran1-122_tue_zinnia_0830_0930_duplex",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1119,31 +868,26 @@
       "topic": "Duplex",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Duplex",
-          "minutes": 60,
-          "startTime": "08:30",
-          "endTime": "09:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-06f2087b",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_0830_1030_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1154,31 +898,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-03d7e5af",
+      "sessionId": "ran1-122_tue_heliconia-1-2_0830_1030_sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1189,15 +928,7 @@
       "topic": "Sorour",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Sorour",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1205,52 +936,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-536c5a38",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Channel coding",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-4820f6c1",
+      "sessionId": "ran1-122_tue_pre-function-area_0900_0930_mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1261,31 +959,26 @@
       "topic": "MIMO",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "MIMO",
-          "minutes": 30,
-          "startTime": "09:00",
-          "endTime": "09:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-2bd7412d",
+      "sessionId": "ran1-122_tue_pre-function-area_0930_1030_nes",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1296,31 +989,26 @@
       "topic": "NES",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NES",
-          "minutes": 60,
-          "startTime": "09:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-3035f01f",
+      "sessionId": "ran1-122_tue_zinnia_0930_1030_lp-wus",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1331,31 +1019,26 @@
       "topic": "LP-WUS",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "LP-WUS",
-          "minutes": 60,
-          "startTime": "09:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-24631e6a",
+      "sessionId": "ran1-122_tue_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1372,33 +1055,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-42ac14d8",
+      "sessionId": "ran1-122_tue_ran1-main_1100_1300_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -1406,16 +1086,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6758574f",
+      "sessionId": "ran1-122_tue_pre-function-area_1100_1140_aiml",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1426,31 +1109,26 @@
       "topic": "AIML",
       "topicKey": "53699daf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "AIML",
-          "minutes": 40,
-          "startTime": "11:00",
-          "endTime": "11:40"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-1b414112",
+      "sessionId": "ran1-122_tue_zinnia_1100_1200_a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1461,31 +1139,26 @@
       "topic": "A-IoT",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "A-IoT",
-          "minutes": 60,
-          "startTime": "11:00",
-          "endTime": "12:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-788c0d4e",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_1100_1140_r20-isac",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1496,31 +1169,26 @@
       "topic": "R20 ISAC",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 ISAC",
-          "minutes": 40,
-          "startTime": "11:00",
-          "endTime": "11:40"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-a3a55983",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1100_1200_8.9",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1533,67 +1201,27 @@
       "agendaItems": [
         "8.9"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.9",
-          "label": "8.9",
-          "minutes": 60,
-          "startTime": "11:00",
-          "endTime": "12:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-c31f404e",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Modulation",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-4b19e657",
+      "sessionId": "ran1-122_tue_pre-function-area_1140_1225_mce-lbca",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1604,31 +1232,26 @@
       "topic": "MCE/LBCA",
       "topicKey": "53699daf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "MCE/LBCA",
-          "minutes": 45,
-          "startTime": "11:40",
-          "endTime": "12:25"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-5ff5780c",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_1140_1300_r20-ai-ml",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1639,31 +1262,26 @@
       "topic": "R20 AI/ML",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 AI/ML",
-          "minutes": 80,
-          "startTime": "11:40",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-9d44eac3",
+      "sessionId": "ran1-122_tue_zinnia_1200_1300_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1674,31 +1292,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 60,
-          "startTime": "12:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-fada9ed6",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1200_1300_8.6",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1711,31 +1324,27 @@
       "agendaItems": [
         "8.6"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.6",
-          "label": "8.6",
-          "minutes": 60,
-          "startTime": "12:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-7df66e9c",
+      "sessionId": "ran1-122_tue_pre-function-area_1225_1240_xr",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1746,31 +1355,26 @@
       "topic": "XR",
       "topicKey": "53699daf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "XR",
-          "minutes": 15,
-          "startTime": "12:25",
-          "endTime": "12:40"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-2ef2c90b",
+      "sessionId": "ran1-122_tue_pre-function-area_1240_1300_mobility",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1781,31 +1385,26 @@
       "topic": "Mobility",
       "topicKey": "53699daf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Mobility",
-          "minutes": 20,
-          "startTime": "12:40",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-b57b5f22",
+      "sessionId": "ran1-122_tue_x_1300_1430_lunch-break",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1822,52 +1421,52 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6dde4312",
+      "sessionId": "ran1-122_tue_ran1-main_1430_1530_8.3",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "(60)",
       "topicKey": "954bc241",
       "agendaItems": [
-        "8.3",
-        "8.6"
+        "8.3"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.3",
-          "label": "(60)",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-44470648",
+      "sessionId": "ran1-122_tue_pre-function-area_1430_1630_r20",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1878,31 +1477,26 @@
       "topic": "R20",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-4b0b6bb8",
+      "sessionId": "ran1-122_tue_zinnia_1430_1530_nr-iot-ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1913,31 +1507,26 @@
       "topic": "NR/IoT-NTN",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NR/IoT-NTN",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-d4faaa4a",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_1430_1630_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1948,31 +1537,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0d0f87d3",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1430_1530_sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -1983,15 +1567,7 @@
       "topic": "Sorour",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Sorour",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -1999,86 +1575,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-b6e31219",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI 5",
-      "topicKey": "a9e564fb",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "AI 5",
-          "minutes": 30,
-          "startTime": "14:30",
-          "endTime": "15:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "AI 8.6",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-5ce1c058",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "15:00",
-      "endTime": "16:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "LS for IoT-NTN (ULBC)",
-      "topicKey": "a9e564fb",
-      "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "LS for IoT-NTN (ULBC)",
-          "minutes": 60,
-          "startTime": "15:00",
-          "endTime": "16:00"
-        }
-      ],
-      "group": "AI 8.6",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-d3e1bbdf",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1530_1630_r20-mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2089,68 +1598,59 @@
       "topic": "R20 MIMO",
       "topicKey": "102b7943",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 MIMO",
-          "minutes": 60,
-          "startTime": "15:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "MIMO",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-9b8a2ac9",
+      "sessionId": "ran1-122_tue_ran1-main_1600_1630_8.14",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "16:00",
       "endTime": "16:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
+      "roomId": "ran1-122-room-d3f0883f",
+      "roomName": "RAN1 Main",
       "topic": "AI",
       "topicKey": "a9e564fb",
       "agendaItems": [
         "8.14"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.14",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "16:00",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "AI 8.6",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-29f1dfb2",
+      "sessionId": "ran1-122_tue_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2167,51 +1667,52 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-330301c4",
+      "sessionId": "ran1-122_tue_ran1-main_1700_1710_8.8",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "17:10",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.8",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.8"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.8",
-          "label": "8.8",
-          "minutes": 10,
-          "startTime": "17:00",
-          "endTime": "17:10"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-75141a86",
+      "sessionId": "ran1-122_tue_pre-function-area_1700_1930_r20-ai-ml",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2222,31 +1723,26 @@
       "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 AI/ML",
-          "minutes": 150,
-          "startTime": "17:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-a2f48a4d",
+      "sessionId": "ran1-122_tue_zinnia_1700_1930_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2257,31 +1753,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 150,
-          "startTime": "17:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-60fbfb1c",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_1700_1800_xiaodong",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2292,31 +1783,26 @@
       "topic": "Xiaodong",
       "topicKey": "3457128d",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Xiaodong",
-          "minutes": 60,
-          "startTime": "17:00",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-e57ed535",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1700_1800_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2327,179 +1813,126 @@
       "topic": "R20 6GR",
       "topicKey": "3457128d",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 60,
-          "startTime": "17:00",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-f015df36",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "17:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.3"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.3",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "17:00",
-          "endTime": "17:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-91935c5c",
+      "sessionId": "ran1-122_tue_ran1-main_1710_1750_8.9",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "17:10",
       "endTime": "17:50",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.9",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.9"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.9",
-          "label": "8.9",
-          "minutes": 40,
-          "startTime": "17:10",
-          "endTime": "17:50"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-77473000",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.9"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.9",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "17:30",
-          "endTime": "18:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-d2075e08",
+      "sessionId": "ran1-122_tue_ran1-main_1750_1800_8.12",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "17:50",
-      "endTime": "18:30",
+      "endTime": "18:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.12",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.12"
       ],
-      "agendaBreakdown": [
+      "agendaBreakdown": [],
+      "group": "R19 CRs",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
         {
-          "code": "8.12",
-          "label": "8.12",
-          "minutes": 40,
-          "startTime": "17:50",
-          "endTime": "18:30"
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "8",
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-122_tue_ran1-main_1800_1830_8.12",
+      "meetingId": "ran1-122",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-122-room-d3f0883f",
+      "roomName": "RAN1 Main",
+      "topic": "AI",
+      "topicKey": "954bc241",
+      "agendaItems": [
+        "8.12"
+      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-95e27a5c",
+      "sessionId": "ran1-122_tue_poinsettia-1-2_1800_1900_frame-structure",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2510,15 +1943,7 @@
       "topic": "Frame structure",
       "topicKey": "30bc9c41",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Frame structure",
-          "minutes": 60,
-          "startTime": "18:00",
-          "endTime": "19:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "sessionLead": "Waveform",
       "group": "Frame structure",
       "kind": "session",
@@ -2526,16 +1951,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-46649fd6",
+      "sessionId": "ran1-122_tue_heliconia-1-2_1800_1930_r20-nr-ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
@@ -2546,161 +1974,70 @@
       "topic": "R20 NR-NTN",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 NR-NTN",
-          "minutes": 90,
-          "startTime": "18:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-3ae62365",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.12"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.12",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "18:00",
-          "endTime": "18:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-565bd60c",
+      "sessionId": "ran1-122_tue_ran1-main_1830_1930_8.6",
       "meetingId": "ran1-122",
       "date": "2025-08-26",
       "day": "Tuesday",
       "startTime": "18:30",
       "endTime": "19:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.6",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.6"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.6",
-          "label": "8.6",
-          "minutes": 60,
-          "startTime": "18:30",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4127abba",
-      "meetingId": "ran1-122",
-      "date": "2025-08-26",
-      "day": "Tuesday",
-      "startTime": "18:30",
-      "endTime": "19:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.6"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.6",
-          "label": "AI",
-          "minutes": 60,
-          "startTime": "18:30",
-          "endTime": "19:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6e17bb0a",
+      "sessionId": "ran1-122_wed_ran1-main_0830_1030_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -2708,16 +2045,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-641b9d26",
+      "sessionId": "ran1-122_wed_pre-function-area_0830_0930_r19-crs",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2728,31 +2068,26 @@
       "topic": "R19 CRs",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 CRs",
-          "minutes": 60,
-          "startTime": "08:30",
-          "endTime": "09:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-8b044898",
+      "sessionId": "ran1-122_wed_zinnia_0830_0930_aiml",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2763,31 +2098,26 @@
       "topic": "AIML",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "AIML",
-          "minutes": 60,
-          "startTime": "08:30",
-          "endTime": "09:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-12d92c3f",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_0830_0930_r20-ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2798,31 +2128,26 @@
       "topic": "R20 NTN",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 NTN",
-          "minutes": 60,
-          "startTime": "08:30",
-          "endTime": "09:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-50433522",
+      "sessionId": "ran1-122_wed_heliconia-1-2_0830_0910_r20-isac",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2833,67 +2158,26 @@
       "topic": "R20 ISAC",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 ISAC",
-          "minutes": 40,
-          "startTime": "08:30",
-          "endTime": "09:10"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-5db525ee",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Energy",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-4d2f838d",
+      "sessionId": "ran1-122_wed_heliconia-1-2_0910_1030_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2904,31 +2188,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 80,
-          "startTime": "09:10",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-8b30c551",
+      "sessionId": "ran1-122_wed_pre-function-area_0930_1030_mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2939,31 +2218,26 @@
       "topic": "MIMO",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "MIMO",
-          "minutes": 60,
-          "startTime": "09:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-c8386456",
+      "sessionId": "ran1-122_wed_zinnia_0930_1030_ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -2974,31 +2248,26 @@
       "topic": "NTN",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NTN",
-          "minutes": 60,
-          "startTime": "09:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-f56a9861",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_0930_1030_r19-crs",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3009,31 +2278,26 @@
       "topic": "R19 CRs",
       "topicKey": "954bc241",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 CRs",
-          "minutes": 60,
-          "startTime": "09:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-ccd9a095",
+      "sessionId": "ran1-122_wed_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3050,33 +2314,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-e41094ad",
+      "sessionId": "ran1-122_wed_ran1-main_1100_1300_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -3084,16 +2345,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-2650ce33",
+      "sessionId": "ran1-122_wed_pre-function-area_1100_1200_mimo",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3104,31 +2368,26 @@
       "topic": "MIMO",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "MIMO",
-          "minutes": 60,
-          "startTime": "11:00",
-          "endTime": "12:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-7963fed2",
+      "sessionId": "ran1-122_wed_zinnia_1100_1200_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3139,31 +2398,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "e336561c",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 60,
-          "startTime": "11:00",
-          "endTime": "12:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-b4c1b3a0",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_1100_1300_sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3174,15 +2428,7 @@
       "topic": "Sorour",
       "topicKey": "333f46b5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Sorour",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -3190,16 +2436,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-9e0c1584",
+      "sessionId": "ran1-122_wed_heliconia-1-2_1100_1300_r19-crs",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3210,67 +2459,26 @@
       "topic": "R19 CRs",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 CRs",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-7813c78c",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "11:00",
-          "endTime": "13:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Evaluations",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-68176b25",
+      "sessionId": "ran1-122_wed_pre-function-area_1200_1230_nes",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3281,31 +2489,26 @@
       "topic": "NES",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NES",
-          "minutes": 30,
-          "startTime": "12:00",
-          "endTime": "12:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-f2becd07",
+      "sessionId": "ran1-122_wed_pre-function-area_1230_1245_tei",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3316,31 +2519,26 @@
       "topic": "TEI",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "TEI",
-          "minutes": 15,
-          "startTime": "12:30",
-          "endTime": "12:45"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-f2ed6e71",
+      "sessionId": "ran1-122_wed_pre-function-area_1245_1300_broadcast",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3351,31 +2549,26 @@
       "topic": "Broadcast",
       "topicKey": "db21d7dd",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Broadcast",
-          "minutes": 15,
-          "startTime": "12:45",
-          "endTime": "13:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-f9cfecf8",
+      "sessionId": "ran1-122_wed_x_1300_1430_lunch-break",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3392,33 +2585,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-b8548a69",
+      "sessionId": "ran1-122_wed_ran1-main_1430_1630_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -3426,16 +2616,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-438d5bfe",
+      "sessionId": "ran1-122_wed_pre-function-area_1430_1530_nr-ntn",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3446,31 +2639,26 @@
       "topic": "NR-NTN",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "NR-NTN",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-77f0ba72",
+      "sessionId": "ran1-122_wed_zinnia_1430_1530_r19-crs",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3481,31 +2669,26 @@
       "topic": "R19 CRs",
       "topicKey": "d7502761",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R19 CRs",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "5G broadcast",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-5cc9e63d",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_1430_1510_8.3",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3518,31 +2701,27 @@
       "agendaItems": [
         "8.3"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.3",
-          "label": "8.3",
-          "minutes": 40,
-          "startTime": "14:30",
-          "endTime": "15:10"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6e8f406f",
+      "sessionId": "ran1-122_wed_heliconia-1-2_1430_1530_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3553,67 +2732,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "aa743a0a",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 60,
-          "startTime": "14:30",
-          "endTime": "15:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-e02b9327",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "R20 6GR",
-      "topicKey": "9d4189e3",
-      "agendaItems": [],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R20 6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Waveform\nFrame structure",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-b7074685",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_1510_1550_8.9",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3626,31 +2764,27 @@
       "agendaItems": [
         "8.9"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.9",
-          "label": "8.9",
-          "minutes": 40,
-          "startTime": "15:10",
-          "endTime": "15:50"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-44bfdc1b",
+      "sessionId": "ran1-122_wed_zinnia_1530_1600_isac",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3661,31 +2795,26 @@
       "topic": "ISAC",
       "topicKey": "adf968bf",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "ISAC",
-          "minutes": 30,
-          "startTime": "15:30",
-          "endTime": "16:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-a94c7655",
+      "sessionId": "ran1-122_wed_heliconia-1-2_1530_1630_modulation",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3696,15 +2825,7 @@
       "topic": "Modulation",
       "topicKey": "c8e8d5a5",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Modulation",
-          "minutes": 60,
-          "startTime": "15:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "sessionLead": "Modulation",
       "group": "Modulation",
       "kind": "session",
@@ -3712,16 +2833,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-5ed250cd",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_1550_1630_8.12",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3734,31 +2858,27 @@
       "agendaItems": [
         "8.12"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.12",
-          "label": "8.12",
-          "minutes": 40,
-          "startTime": "15:50",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-cc8c47f8",
+      "sessionId": "ran1-122_wed_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3775,51 +2895,52 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-092c06b3",
+      "sessionId": "ran1-122_wed_ran1-main_1700_1730_8.3",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "17:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.3",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.3"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.3",
-          "label": "8.3",
-          "minutes": 30,
-          "startTime": "17:00",
-          "endTime": "17:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-626cd433",
+      "sessionId": "ran1-122_wed_pre-function-area_1700_1830_r20-ai-ml",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3830,31 +2951,26 @@
       "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 AI/ML",
-          "minutes": 90,
-          "startTime": "17:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-cf25ebf1",
+      "sessionId": "ran1-122_wed_zinnia_1700_1830_r20-a-iot",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3865,31 +2981,26 @@
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 A-IoT",
-          "minutes": 90,
-          "startTime": "17:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-7cc9f58d",
+      "sessionId": "ran1-122_wed_poinsettia-1-2_1700_1830_channel-coding",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3900,31 +3011,26 @@
       "topic": "Channel coding",
       "topicKey": "3457128d",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Channel coding",
-          "minutes": 90,
-          "startTime": "17:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0a00e74e",
+      "sessionId": "ran1-122_wed_heliconia-1-2_1700_1800_xiaodong",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -3935,179 +3041,92 @@
       "topic": "Xiaodong",
       "topicKey": "3457128d",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Xiaodong",
-          "minutes": 60,
-          "startTime": "17:00",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-158b396e",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "17:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.3"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.3",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "17:00",
-          "endTime": "17:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6ff773bd",
+      "sessionId": "ran1-122_wed_ran1-main_1730_1800_8.9",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "17:30",
       "endTime": "18:00",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.9",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.9"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.9",
-          "label": "8.9",
-          "minutes": 30,
-          "startTime": "17:30",
-          "endTime": "18:00"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-61edbca8",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.9"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.9",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "17:30",
-          "endTime": "18:00"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-6cae7c7a",
+      "sessionId": "ran1-122_wed_ran1-main_1800_1830_8.12",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "8.12",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.12"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "8.12",
-          "label": "8.12",
-          "minutes": 30,
-          "startTime": "18:00",
-          "endTime": "18:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "8",
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-cfbd34c1",
+      "sessionId": "ran1-122_wed_heliconia-1-2_1800_1930_waveform",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
@@ -4118,15 +3137,7 @@
       "topic": "Waveform",
       "topicKey": "0080bdd2",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "Waveform",
-          "minutes": 90,
-          "startTime": "18:00",
-          "endTime": "19:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "sessionLead": "Waveform",
       "group": "Waveform",
       "kind": "session",
@@ -4134,72 +3145,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
-    },
-    {
-      "sessionId": "ran1-122-4f02a66a",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-122-room-0bfb14d8",
-      "roomName": "Detailed Schedule for RAN1 Main",
-      "topic": "AI",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.12"
-      ],
-      "agendaBreakdown": [
+          "contributed": []
+        },
         {
-          "code": "8.12",
-          "label": "AI",
-          "minutes": 30,
-          "startTime": "18:00",
-          "endTime": "18:30"
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
       ],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
-        }
-      ]
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-d5f467c4",
+      "sessionId": "ran1-122_thu_ran1-main_0830_1030_r20-6gr-channel-coding",
       "meetingId": "ran1-122",
       "date": "2025-08-28",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR Channel coding",
       "topicKey": "615b83ed",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR Channel coding",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR Channel coding",
       "kind": "session",
       "status": "scheduled",
@@ -4207,16 +3176,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-c0179646",
+      "sessionId": "ran1-122_thu_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-28",
       "day": "Thursday",
@@ -4233,14 +3205,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-769a7104",
+      "sessionId": "ran1-122_thu_x_1300_1430_lunch-break",
       "meetingId": "ran1-122",
       "date": "2025-08-28",
       "day": "Thursday",
@@ -4257,14 +3234,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-4e4bf2f0",
+      "sessionId": "ran1-122_thu_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-28",
       "day": "Thursday",
@@ -4281,33 +3263,30 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-972d550b",
+      "sessionId": "ran1-122_fri_ran1-main_0830_1030_r20-6gr",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:30",
       "roomId": "ran1-122-room-d3f0883f",
-      "roomName": "Convention Hall",
+      "roomName": "RAN1 Main",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "R20 6GR",
-          "minutes": 120,
-          "startTime": "08:30",
-          "endTime": "10:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
@@ -4315,16 +3294,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-f3bf6b98",
+      "sessionId": "ran1-122_fri_x_1030_1100_morning-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
@@ -4341,14 +3323,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-194c87c7",
+      "sessionId": "ran1-122_fri_x_1300_1430_lunch-break",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
@@ -4365,14 +3352,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-0e3c495f",
+      "sessionId": "ran1-122_fri_poinsettia-1-2_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
@@ -4383,15 +3375,7 @@
       "topic": "To be assigned by Sorour",
       "topicKey": "5d7db03e",
       "agendaItems": [],
-      "agendaBreakdown": [
-        {
-          "code": null,
-          "label": "To be assigned by Sorour",
-          "minutes": 120,
-          "startTime": "14:30",
-          "endTime": "16:30"
-        }
-      ],
+      "agendaBreakdown": [],
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
@@ -4399,16 +3383,19 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "time",
-            "topic",
-            "room"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-break-206fa6fa",
+      "sessionId": "ran1-122_fri_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
@@ -4425,17 +3412,22 @@
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
-          "contributed": [
-            "break"
-          ]
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
         }
-      ]
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
     }
   ],
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-24T17:28:10Z",
-    "lastAttemptAt": "2026-08-24T17:28:10Z"
+    "lastSuccessfulAt": "2026-08-27T15:18:08Z",
+    "lastAttemptAt": "2026-08-27T15:18:08Z"
   }
 }
