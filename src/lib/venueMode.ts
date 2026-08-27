@@ -145,6 +145,9 @@ export function consumeTransferredState(): boolean {
 
 export function alwaysSwitch(): boolean {
   if (!isBrowser()) return false;
+  // Never auto-switch once a hop has failed on this device — that is how a
+  // browser pinned to HTTPS would be bounced between the two hosts forever.
+  if (venueHopFailed()) return false;
   try {
     return window.localStorage.getItem(ALWAYS_KEY) === "1";
   } catch {
