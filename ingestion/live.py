@@ -359,30 +359,32 @@ def _merge_alias_rooms(
 
     A chair grid may call the plenary room "B1+B2" while a detailed schedule
     calls it "RAN1 Main". They are recognised as the same room when their
-    blocks occupy essentially the same minutes across the week; the shorter,
+    blocks discuss the same topics at the same times across the week; the shorter,
     code-like name is kept and the canonicaliser then reconciles the detail.
     """
-    spans: dict[str, set[tuple[str, int]]] = {}
+    def signature(session: Session) -> tuple[str, str, str]:
+        topic = re.sub(r"[^a-z0-9]+", "", (session.topicKey or session.topic or "").lower())
+        return (session.date, session.startTime, topic)
+
+    topics: dict[str, set[tuple[str, str, str]]] = {}
     for session in sessions:
         room_id = remap.get(session.roomId, session.roomId)
-        start, end = _minutes(session.startTime), _minutes(session.endTime)
-        if end <= start:
+        sig = signature(session)
+        if not sig[2]:
             continue
-        spans.setdefault(room_id, set()).update(
-            (session.date, minute) for minute in range(start, end, 5)
-        )
+        topics.setdefault(room_id, set()).add(sig)
 
     merged: dict[str, str] = {}
     keepers: list[Room] = []
     for room in rooms:
-        mine = spans.get(room.roomId, set())
+        mine = topics.get(room.roomId, set())
         match = None
         for keeper in keepers:
-            theirs = spans.get(keeper.roomId, set())
+            theirs = topics.get(keeper.roomId, set())
             if not mine or not theirs:
                 continue
             overlap = len(mine & theirs) / min(len(mine), len(theirs))
-            if overlap >= 0.7:
+            if overlap >= 0.6:
                 match = keeper
                 break
         if match is None:
