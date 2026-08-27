@@ -126,6 +126,10 @@ export function VenueModeBanner({
                 </ol>
                 <p className="font-medium text-foreground">Android (Chrome)</p>
                 <ol className="list-decimal space-y-1 pl-4">
+                  <li>
+                    Disable HTTPS-First: Chrome → ⋮ → Settings → Privacy and security → Security
+                    → turn off <strong>Always use secure connections</strong>.
+                  </li>
                   <li>Chrome → ⋮ → History → Clear browsing data.</li>
                   <li>
                     Tap Advanced, select Cookies and site data + Cached images and files, then Clear
