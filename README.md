@@ -96,11 +96,11 @@ python -m draft_tracker.crawl       # refresh the draft index
 
 ## Scheduled updates
 
-| Workflow | What it does | When |
-| --- | --- | --- |
+| Workflow                                | What it does                                  | When                                                 |
+| --------------------------------------- | --------------------------------------------- | ---------------------------------------------------- |
 | `.github/workflows/update-schedule.yml` | Re-discovers meetings and re-parses schedules | frequently during a meeting week, sparsely otherwise |
-| `.github/workflows/update-drafts.yml` | Re-crawls the Inbox tree and diffs snapshots | every 10 min during meetings |
-| `.github/workflows/deploy-pages.yml` | Builds and deploys the site | on every push to `main` |
+| `.github/workflows/update-drafts.yml`   | Re-crawls the Inbox tree and diffs snapshots  | every 10 min during meetings                         |
+| `.github/workflows/deploy-pages.yml`    | Builds and deploys the site                   | on every push to `main`                              |
 
 ## Deploying to GitHub Pages
 

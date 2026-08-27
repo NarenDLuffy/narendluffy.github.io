@@ -101,9 +101,9 @@ export function VenueModeBanner({
         <AlertTriangle className="mt-0.5 size-4 shrink-0 text-destructive" />
         <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
           <p>
-            <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span>{" "}
-            HTTPS cannot read the meeting-room server. Try HTTP below; if your browser changes it
-            back to HTTPS, clear the stored website data for {VENUE_HOST} and reopen {secureHost}.
+            <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span> HTTPS
+            cannot read the meeting-room server. Try HTTP below; if your browser changes it back to
+            HTTPS, clear the stored website data for {VENUE_HOST} and reopen {secureHost}.
           </p>
           <div className="flex flex-wrap gap-2">
             <Button asChild size="sm" variant="outline">
