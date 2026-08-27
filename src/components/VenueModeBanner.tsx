@@ -11,6 +11,7 @@ import {
   venueBannerDismissed,
   venueBlockedByScheme,
   venueHopFailed,
+  venueTwinLoadedOverHttps,
   VENUE_HOST,
 } from "@/lib/venueMode";
 
