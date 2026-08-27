@@ -125,11 +125,12 @@ function checkBuildDir(dir) {
     }
     if (!TEXT_EXT.test(file)) return;
     const text = readFileSync(file, "utf8");
-    for (const needle of FORBIDDEN_BUILD_STRINGS) {
-      if (text.includes(needle)) {
-        errors.push(`${rel}: build output contains forbidden string "${needle}".`);
+    for (const { label, re } of FORBIDDEN_BUILD_PATTERNS) {
+      if (re.test(text)) {
+        errors.push(`${rel}: build output contains secret material (${label}).`);
       }
     }
+
   });
 }
 
