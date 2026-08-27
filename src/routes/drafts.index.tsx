@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from "@tanstack/react-router";
+import { VenueModeBanner } from "@/components/VenueModeBanner";
 import { useMemo, useState } from "react";
 import { CheckCheck, Inbox, RefreshCw, Settings2 } from "lucide-react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
