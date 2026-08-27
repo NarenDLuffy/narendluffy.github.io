@@ -45,6 +45,20 @@ Live tracking of the meeting's working documents.
 - It re-checks about every 60 seconds; **Refresh now** forces an immediate
   re-scan and tells you exactly how many files were new or updated.
 
+### Venue mode (on meeting Wi-Fi)
+When you are in the meeting venue and connected to the meeting Wi-Fi, the
+fastest source is the local server at `10.10.10.10`. Browsers refuse to let an
+HTTPS page read an HTTP server, so the secure main site cannot do this directly.
+
+If the app detects it is blocked, it shows a banner offering to open **venue
+mode** on a plain-HTTP copy of the same app. Venue mode can read `10.10.10.10`
+directly and therefore gets the freshest drafts and any meeting-local schedule
+updates. Tap **Open venue mode**, and your bookmarks, follows and read state are
+carried over. When you leave the venue, use the link back to the secure site.
+
+If you never see the banner, the app is probably falling back to the public
+SYNC mirror, which is fine but may be a few minutes behind.
+
 ### Rooms
 Every physical room used this week and what is scheduled in it. Open a room to
 see its whole day. If your colleagues use the Company tab, you can also see who
@@ -75,6 +89,9 @@ appears automatically — the current one is selected for you by default.
 - **Your data**: bookmarks, follows, read state, display name and presence live
   only in your browser's storage on your device. Clearing site data resets them.
 - **Times** are always shown in the meeting's local time zone, not your phone's.
+- **Venue mode**: the plain-HTTP venue twin is only for use on the meeting LAN.
+  It does not support account-based features; switch back to the secure site for
+  those.
 - **Limitations**: the schedule is parsed from chair/sub-chair DOCX files, so a
   last-minute change made verbally in the room will not appear until an updated
   document is uploaded.
