@@ -1,33 +1,32 @@
-# Make venue mode actually automatic
+# Make venue mode automatic and fix the URI-too-long hop
 
-## The problem in plain language
+## What you just hit
 
-You open `https://ran1.app` during a meeting and still see the **Open venue mode** banner instead of being sent to the venue twin automatically.
+The hop URL you saw (`3gpplive.net/?ran1import=...`) is so long that GitHub Pages returns **Error: URI Too Long**. The blob currently carries your entire cached meetings index (`ran1live.meetings.v1`), which is tens of kilobytes when base64-encoded. Browsers and servers commonly reject URLs above ~8 KB.
 
-There are two reasons:
+## Why the URL exists at all
 
-1. **The "always" switch is probably off.** The banner has two buttons but no checkbox in the offer state, so it's not obvious whether auto-hop is enabled. If you only ever tapped **Open venue mode**, the app never stored the "always" preference, so it asks again every time.
-2. **Even with the switch on, the current auto-hop can't work.** Before hopping, the app tries to fetch `http://3gpplive.net/favicon.png` from the HTTPS page. Browsers block any HTTP subresource request from an HTTPS page (mixed-content). The probe always fails, so the app falls back to showing the banner.
-
-The fix is to stop probing and just hop. A top-level navigation from an HTTPS page to an HTTP URL is allowed — that's exactly what the **Open venue mode** button already does successfully.
+`ran1.app` (HTTPS) and `3gpplive.net` (HTTP) are different origins, so the app cannot use `localStorage`, `postMessage`, or cookies to move your preferences across. The only portable way to pass state without a server is the URL. It is cleaned from the address bar the instant the twin loads, but it has to be small enough to travel.
 
 ## What will change
 
-- **Auto-hop becomes instant.** When a meeting is active, the toggle is on, and the hop isn't marked failed, the HTTPS page calls `window.location.replace(venueModeUrl())` immediately. No banner flash, no probe.
-- **The offer banner gets a visible checkbox.** Next to **Open venue mode** you'll see **Always open venue mode at meetings**, checked or unchecked, so you can tell and change the preference from either side.
-- **Safety net stays in place.** If the browser upgrades the hop to HTTPS (HSTS), the twin marks the device as failed and stops auto-hopping. If you land on the twin but the meeting-room server isn't reachable, the twin offers a one-tap **Back to ran1.app** and turns the toggle off so you don't get stuck.
-- **The long `?ran1import=...` URL is cleaned immediately.** The twin reads the blob once, writes the transferred settings into its own localStorage, and removes the parameter from the address bar with `history.replaceState`. Users only see it for the split second of the hop.
-
-## About the `https://3gpplive.net` worry
-
-Because GitHub Pages has **Enforce HTTPS unchecked** for the twin, visiting `https://3gpplive.net` by accident will load over HTTPS but should not pin HSTS. The app itself only ever navigates to `http://3gpplive.net`. To be extra safe, the twin page can detect when it loaded over HTTPS and show a warning instead of functioning normally, reminding the user to go through `ran1.app`.
+1. **Transfer only preferences, not cached data.** The blob will carry only:
+   - company name / group / userId
+   - bookmarks and followed drafts
+   - the "always switch" preference
+   - current meeting/room selection
+   It will **not** carry the full meetings list, draft index, or any other cache that the twin can re-fetch on its own.
+2. **Auto-hop without a probe.** The mixed-content fetch probe to `http://3gpplive.net` always fails from an HTTPS page, so auto-hop never worked. When the toggle is on and a meeting is active, `ran1.app` will redirect immediately with `window.location.replace`.
+3. **Visible "Always open venue mode" checkbox on the offer banner.** Right now the banner has two buttons and no state indicator. The checkbox will show whether auto-hop is enabled and let you turn it off from either side.
+4. **HTTPS-on-twin warning.** If someone lands on `https://3gpplive.net` directly, the twin will show a warning reminding them to use `ran1.app` instead. With GitHub Pages "Enforce HTTPS" unchecked this should not pin HSTS, but the warning makes the mistake obvious.
+5. **Recover-from-dead-twin button.** Once on the HTTP twin, if the meeting-room server at `10.10.10.10` is not reachable, the banner will offer **Back to ran1.app** and clear the auto-hop toggle so you are not stuck on the twin.
 
 ## Files to touch
 
-- `src/lib/venueMode.ts` — remove the probe gate from `autoHopToVenue()`.
-- `src/components/VenueModeBanner.tsx` — instant auto-hop in the effect; checkbox in the offer state; HTTPS-on-twin warning.
-- `docs/HOW-TO-USE.md` — update the venue-mode description.
+- `src/lib/venueMode.ts` — shrink `collectLocalState()` to a fixed allow-list of preference keys; remove the probe from `autoHopToVenue()`; add HTTPS-twin detection.
+- `src/components/VenueModeBanner.tsx` — instant auto-hop in effect; checkbox in offer state; dead-twin return action.
+- `docs/HOW-TO-USE.md` — update the venue-mode section.
 
-## Note on `ran1.net`
+## About `ran1.net`
 
-A separate alias domain would need its own GitHub Pages custom-domain slot and would still have to be served plain-HTTP. It doesn't remove the mixed-content restriction or the need for the import blob. Keeping `3gpplive.net` as the twin and making the hop silent is the simplest path; the user never needs to type or bookmark the twin address.
+A separate alias domain would still need to be a plain-HTTP-capable domain of its own (not a subdomain of `ran1.app`, because `ran1.app` sends HSTS with `includeSubDomains`). It would not remove the need for the import blob, but the blob will be small after this fix. Keeping `3gpplive.net` and making the hop silent is the simplest path; users never need to type or bookmark the twin address.
