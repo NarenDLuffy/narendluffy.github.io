@@ -1,69 +1,82 @@
-# Hosting decision: ran1.app vs GitHub Pages
+# Finish Option A with 3gpplive.net as the HTTP venue twin
 
-## Why ran1.app exists at all
+## Goal
 
-`ran1.app` is the Lovable-hosted deployment. It is not just a domain — it is the only place where the **server-side parts** of the app can run.
+Keep `https://ran1.app` as the main secure app (Lovable-hosted, with shared company presence), and make `http://3gpplive.net` the plain-HTTP venue twin on GitHub Pages so browsers on meeting Wi-Fi can read `http://10.10.10.10/` for live drafts.
 
-The app currently has three layers:
+## Why a separate domain is required
+
+`ran1.app` sends `Strict-Transport-Security: max-age=31536000; includeSubDomains`. Any browser that has visited it will force every `*.ran1.app` address to HTTPS for a year, including `venue.ran1.app`. That is why `http://venue.ran1.app` keeps becoming `https://venue.ran1.app`. A completely separate domain (`3gpplive.net`) avoids this.
+
+## Steps for you (manual, one time)
+
+### 1. DNS at your 3gpplive.net registrar
+
+Add these DNS records. They point the apex domain at GitHub Pages' four load-balancer IPs:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+
+If your registrar supports an "Apex flattening" / ALIAS option, you can use that instead, but the four A records above work everywhere. TTL can be left at the default.
+
+Wait a few minutes, then verify with:
 
 ```text
-Browser (React/Vite static build)
-  ├─ reads public schedule/drafts from 3GPP / GitHub
-  ├─ talks to local meeting server http://10.10.10.10 (only in venue mode)
-  └─ reads/writes shared company presence
-
-Server functions (createServerFn)
-  └─ validate company codes and write presence to Supabase
-
-Database (Supabase)
-  └─ stores company_presence rows so every colleague sees the same room list
+nslookup 3gpplive.net
 ```
 
-GitHub Pages can only serve the **top layer** — the static browser build. It cannot run server functions or hold secrets, so it cannot write to Supabase with the privileges needed for shared presence.
+You should see the four GitHub IPs above.
 
-## What breaks if you move everything to GitHub Pages
+### 2. GitHub Pages custom domain
 
-| Feature | On ran1.app | On GitHub Pages only |
-| --- | --- | --- |
-| Public schedule | Works | Works |
-| Drafts tracker | Works | Works |
-| My agenda / ICS export | Works | Works |
-| Venue-mode draft probing from 10.10.10.10 | Works via separate HTTP twin | Needs a separate non-HTTPS domain; GitHub Pages custom domains usually force HTTPS |
-| **Shared company presence** (who checked in) | Works via Supabase | Falls back to **local-only** — each device only sees itself |
-| Automatic meeting rollover / backend cron | Works | Must rely only on client-side or GitHub Actions polling |
-| Managed previews / instant rollbacks | Lovable provides them | Not available |
+1. Go to your repo: `https://github.com/narendluffy/narendluffy.github.io`.
+2. Open **Settings → Pages → Custom domain**.
+3. Enter `3gpplive.net` and click Save.
+4. **Uncheck "Enforce HTTPS"**. This is required; without it the twin serves HTTPS and cannot fetch `http://10.10.10.10/`.
+5. Wait for GitHub to verify DNS (usually a few minutes, can take up to an hour).
 
-## The real purpose of ran1.app today
+### 3. Set the VENUE_HOST repository variable
 
-1. **Shared presence backend** — the only feature that genuinely needs a server.
-2. **Convenience** — automatic deploys, preview URLs, SSL, and the custom domain you already configured.
-3. **Venue twin anchor** — the secure "main" site that links to the plain-HTTP venue copy.
+1. In the same repo: **Settings → Secrets and variables → Actions → Variables**.
+2. Click **New repository variable**.
+3. Name: `VENUE_HOST`
+4. Value: `3gpplive.net`
+5. Save.
 
-## Options
+This tells the deploy workflow to write `3gpplive.net` into `dist/CNAME` and tells the app where to link for venue mode.
 
-### Option A — Keep both (recommended, current setup)
+### 4. Re-run the deploy workflow
 
-- `ran1.app` = main secure app with shared presence.
-- GitHub Pages = plain-HTTP venue twin for meeting-room Wi-Fi.
-- Cost after the first year: only the `ran1.app` domain renewal. The GitHub Pages site is free.
+1. Go to **Actions → Deploy to GitHub Pages**.
+2. Click **Run workflow**.
+3. Wait for it to finish.
 
-### Option B — GitHub Pages as primary, drop ran1.app
+### 5. Clean up the broken venue.ran1.app records
 
-- Move the main app to `narendluffy.github.io` (or a custom domain on GitHub Pages).
-- Shared presence becomes local-only. Everyone sees only their own check-in.
-- Venue mode still needs a **second, non-HTTPS domain** (not a subdomain of the main site, because HSTS would pin it to HTTPS). You would host the same GitHub Pages build there with "Enforce HTTPS" unchecked.
-- You lose Lovable-managed previews and instant rollbacks, but hosting is free.
+1. In the repo's **Pages settings**, remove `venue.ran1.app` from the custom domain field if it is still there.
+2. In Lovable: **Project Settings → Project section → Domains → ran1.app → ⋯ → Configure → Manage DNS records**.
+3. Delete the `venue` CNAME record that pointed to `narendluffy.github.io`.
 
-### Option C — GitHub Pages only, no venue mode
+`ran1.app` and `www.ran1.app` should stay exactly as they are — they are the main secure app.
 
-- Same as B, but you accept that venue draft probing from 10.10.10.10 does not work.
-- Users must manually fetch drafts from the public 3GPP mirror instead of the meeting-room server.
-- Simplest and cheapest, but weakens the in-room experience.
+## Verification
 
-## What I recommend
+1. Open `http://3gpplive.net/` in a browser (type it explicitly, do not rely on search suggestions). It should load over plain HTTP with no redirect to HTTPS.
+2. On a device connected to meeting Wi-Fi, open `http://3gpplive.net/`.
+3. Go to the **Drafts** tab and tap **Refresh now**. It should be able to read `http://10.10.10.10/` and show the latest venue drafts.
+4. Open `https://ran1.app/` on any network. The venue-mode banner should now link to `http://3gpplive.net/` instead of `venue.ran1.app`.
 
-Keep Option A unless the annual domain cost is the deciding factor. The value of `ran1.app` is not the domain itself — it is the shared presence backend and the managed hosting around it. If you still want to drop it, pick Option B and accept local-only presence.
+## Final architecture
 
-## Decision needed
+```text
+https://ran1.app       → main secure app (Lovable), shared presence, works everywhere
+http://3gpplive.net    → plain-HTTP venue twin (GitHub Pages), meeting-room draft sync
+```
 
-Please confirm which option you want, and I will implement the corresponding changes (or leave the current setup untouched if you choose A).
+## Note about HTTPS on the twin
+
+Never open `https://3gpplive.net/` in a browser. GitHub Pages will serve it and send its own HSTS header, which would pin that browser to HTTPS for a year. Only ever use the explicit `http://` link.
