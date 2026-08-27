@@ -44,16 +44,23 @@ const FORBIDDEN_JSON_KEYS = [
   "companyDomain",
 ];
 
-/** Strings that must never appear in built output (secret material). */
-const FORBIDDEN_BUILD_STRINGS = [
-  "SUPABASE_SERVICE_ROLE",
-  "service_role",
-  "BEGIN RSA PRIVATE KEY",
-  "BEGIN PRIVATE KEY",
-  "sk_live_",
-  "sb_secret_",
-  "LOVABLE_API_KEY=",
+/**
+ * Patterns that must never appear in built output (secret material).
+ *
+ * These match an actual credential *value*, not just its prefix: the generated
+ * backend client files legitimately contain key-format checks such as
+ * `value.startsWith('sb_secret_')`, which are not secrets and must not fail
+ * the build. A real leaked key always has a key body after the prefix.
+ */
+const FORBIDDEN_BUILD_PATTERNS = [
+  { label: "service-role key env name", re: /SUPABASE_SERVICE_ROLE_KEY\s*[:=]\s*["'`][^"'`]+/ },
+  { label: "service_role JWT claim", re: /"role"\s*:\s*"service_role"/ },
+  { label: "private key block", re: /BEGIN (?:RSA )?PRIVATE KEY/ },
+  { label: "Stripe live secret key", re: /sk_live_[A-Za-z0-9]{12,}/ },
+  { label: "Supabase secret key", re: /sb_secret_[A-Za-z0-9_-]{12,}/ },
+  { label: "Lovable API key", re: /LOVABLE_API_KEY\s*[:=]\s*["'`][^"'`]+/ },
 ];
+
 
 const TEXT_EXT = /\.(json|js|mjs|cjs|css|html|txt|map)$/i;
 
