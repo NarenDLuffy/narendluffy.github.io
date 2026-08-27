@@ -236,33 +236,6 @@ export function clearVenueHopFailed(): void {
   }
 }
 
-/**
- * Cheap check that the plain-HTTP twin is reachable from this device.
- *
- * An HTTPS page cannot fetch http://10.10.10.10 at all (mixed content), so we
- * cannot probe the venue server from here. Instead we probe the twin host over
- * plain HTTP: if the browser lets that request through and it answers, hopping
- * is worthwhile. `no-cors` means we only learn "it resolved", which is exactly
- * the signal we need; an HSTS-upgraded or offline host rejects/times out.
- */
-export async function venueTwinReachable(timeoutMs = 1500): Promise<boolean> {
-  if (!isBrowser() || !VENUE_HOST) return false;
-  const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    await fetch(`http://${VENUE_HOST}/favicon.png?probe=${Date.now()}`, {
-      mode: "no-cors",
-      cache: "no-store",
-      signal: controller.signal,
-    });
-    return true;
-  } catch {
-    return false;
-  } finally {
-    window.clearTimeout(timer);
-  }
-}
-
 /** True when this page may silently hop to the twin without asking. */
 export function canAutoHop(): boolean {
   if (!isBrowser() || !VENUE_HOST) return false;
@@ -273,14 +246,19 @@ export function canAutoHop(): boolean {
 }
 
 /**
- * Silent auto-hop: probe the twin, then replace the current page with it so the
- * back button does not bounce the user between the two hosts.
+ * Silent auto-hop. Replaces the current page with the HTTP twin so the back
+ * button does not bounce the user between the two hosts.
  */
-export async function autoHopToVenue(): Promise<boolean> {
+export function autoHopToVenue(): boolean {
   if (!canAutoHop()) return false;
-  if (!(await venueTwinReachable())) return false;
   window.location.replace(venueModeUrl());
   return true;
+}
+
+/** True when the venue twin loaded over HTTPS (usually a manual mistake). */
+export function venueTwinLoadedOverHttps(): boolean {
+  if (!isBrowser() || !VENUE_HOST) return false;
+  return window.location.protocol === "https:" && window.location.hostname === VENUE_HOST;
 }
 
 /** Turn auto-hop off and forget any failed-hop marker (used by the twin's UI). */
