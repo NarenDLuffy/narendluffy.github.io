@@ -144,7 +144,7 @@ export function VenueModeBanner({
           cannot read the venue server at 10.10.10.10 — browsers block HTTP content on an HTTPS
           page. Venue mode opens the same app on {VENUE_HOST} over plain HTTP, which can.
         </p>
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             type="button"
             onClick={() => switchToVenueMode(false)}
@@ -152,16 +152,20 @@ export function VenueModeBanner({
           >
             Open venue mode
           </button>
-          <button
-            type="button"
-            onClick={() => {
-              setAlwaysSwitch(true);
-              switchToVenueMode(true);
-            }}
-            className="inline-flex min-h-9 items-center rounded-md border border-border px-2.5 text-xs font-medium text-muted-foreground"
-          >
+          <label className="inline-flex items-center gap-2 text-foreground">
+            <input
+              type="checkbox"
+              checked={always}
+              onChange={(e) => {
+                const checked = e.target.checked;
+                setAlways(checked);
+                setAlwaysSwitch(checked);
+                if (checked) switchToVenueMode(true);
+              }}
+              className="size-3.5 accent-[hsl(var(--primary))]"
+            />
             Always open venue mode
-          </button>
+          </label>
         </div>
       </div>
       <button
