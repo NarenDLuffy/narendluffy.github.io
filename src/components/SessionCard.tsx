@@ -161,6 +161,12 @@ export function SessionCard({
           <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
             {session.sessionLead ? <span>Lead: {session.sessionLead}</span> : null}
             <span>{session.day}</span>
+            {session.derivation === "split-from-parent" ? (
+              <span>
+                Detailed timing not available
+                {session.parentAgendaItem ? ` (within ${session.parentAgendaItem})` : ""}
+              </span>
+            ) : null}
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <button
@@ -176,6 +182,13 @@ export function SessionCard({
                   <DialogTitle>{session.topic}</DialogTitle>
                   <DialogDescription>
                     Automatically parsed from the meeting documents below.
+                    {session.derivation
+                      ? ` Derivation: ${session.derivation}${
+                          session.confidence
+                            ? ` · confidence ${Math.round(session.confidence * 100)}%`
+                            : ""
+                        }.`
+                      : ""}
                   </DialogDescription>
                 </DialogHeader>
                 <ul className="space-y-3 text-sm">

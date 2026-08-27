@@ -20,6 +20,8 @@ from datetime import datetime, timezone
 from urllib.parse import unquote
 
 from .block_schedule import parse_block_schedule_docx
+from .canonical_schedule import canonicalize
+from .schedule_discovery import inspect_docx, name_priority, walk_documents
 from .docx_schedule import parse_schedule_docx
 from .meeting_discovery import classify_document, compute_status, revision_parts
 from .models import (
@@ -29,6 +31,7 @@ from .models import (
     MeetingSourceFolders,
     ScheduleBundle,
     Room,
+    ScheduleConflict,
     ScheduleSource,
     Session,
 )
@@ -97,6 +100,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
     sources: list[ScheduleSource] = []
     rooms: list[Room] = []
     sessions: list[Session] = []
+    conflicts: list[ScheduleConflict] = []
 
     if with_documents and pm.folder_url:
         for code, title in fetch_agenda_csv(pm.folder_url):
@@ -111,7 +115,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
             )
         sources = discover_sources(meeting, pm.folder_url, _iso(now))
         sources.extend(manual_sources(meeting, _iso(now)))
-        rooms, sessions = parse_schedule_sources(meeting, sources)
+        rooms, sessions, conflicts = parse_schedule_sources(meeting, sources)
         meeting.schedulePublished = bool(sessions)
 
     return ScheduleBundle(
@@ -122,7 +126,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
         agendaItems=agenda_items,
         sources=sources,
         changes=[],
-        conflicts=[],
+        conflicts=conflicts,
         ingest=IngestStatus(
             state="ok",
             lastSuccessfulAt=_iso(now),
@@ -135,25 +139,19 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
 
 
 def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
-    """Every candidate document in the meeting folder, classified generically.
+    """Every candidate document under the meeting folder, found recursively.
 
-    Chairs publish their session plans in personal subfolders of Inbox (one per
-    vice-chair), so folders are walked one level deep instead of assuming any
-    particular folder name.
+    Chairs publish their session plans wherever suits them: directly in Inbox,
+    in Inbox/drafts, in a personal folder, or several levels below inside a
+    topic working folder. The whole tree is therefore walked; no folder, chair
+    or room name is assumed anywhere.
     """
-    found: list[ScheduleSource] = []
-    for sub in DOC_SUBFOLDERS:
-        for url in list_folder(f"{folder_url}{sub}/"):
-            name = unquote(url.rstrip("/").rsplit("/", 1)[-1])
-            if name.lower().endswith(DOC_EXTENSIONS):
-                found.append(_to_source(meeting, url, name, retrieved_at))
-                continue
-            # A subfolder (personal chair folder, drafts, ...): look inside once.
-            for inner in list_folder(url + "/"):
-                inner_name = unquote(inner.rstrip("/").rsplit("/", 1)[-1])
-                if inner_name.lower().endswith(DOC_EXTENSIONS):
-                    found.append(_to_source(meeting, inner, inner_name, retrieved_at))
+    found: list[ScheduleSource] = [
+        _to_source(meeting, item.url, item.name, retrieved_at)
+        for item in walk_documents(folder_url)
+    ]
     return _latest_revisions(found)
+
 
 
 MANUAL_DOCS_DIR = os.path.join(os.path.dirname(__file__), "manual_docs")
@@ -243,26 +241,52 @@ def _owner_hint(url: str) -> str | None:
     return m.group(1).capitalize() if m else None
 
 
+MAX_SCHEDULE_DOWNLOADS = 80
+
+
+def _inspection_queue(sources: list[ScheduleSource]) -> list[ScheduleSource]:
+    """Documents to download, most schedule-like name first.
+
+    A meeting folder holds well over a thousand DOCX files, almost all of them
+    FL summaries. The name only orders the queue and drops obvious discussion
+    documents; whether a downloaded file really is a schedule is decided by its
+    content (see schedule_discovery.classify_content).
+    """
+    queue = [
+        source
+        for source in sources
+        if source.fileName.lower().endswith(".docx") and name_priority(source.fileName) >= 0
+    ]
+    queue.sort(key=lambda s: (-name_priority(s.fileName), s.fileName.lower()))
+    return queue[:MAX_SCHEDULE_DOWNLOADS]
+
+
 def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
-) -> tuple[list[Room], list[Session]]:
-    """Download every schedule-looking DOCX and merge what it contains."""
+) -> tuple[list[Room], list[Session], list[ScheduleConflict]]:
+    """Parse EVERY schedule document found, then build one canonical timeline.
+
+    No document is treated as "the" schedule any more: the week grid, the
+    chair notes and each sub-chair's detailed plan all contribute candidate
+    blocks, and canonicalize() merges them into the most detailed
+    evidence-supported timeline (see canonical_schedule.py).
+    """
     rooms: list[Room] = []
     sessions: list[Session] = []
-    grids: list[tuple[list[Room], list[Session]]] = []
-    for source in sources:
-        if not source.fileName.lower().endswith(".docx"):
-            continue
-        if "schedule" not in source.fileName.lower() and source.type == "unknown_schedule":
-            continue
+    for source in _inspection_queue(sources):
         path = _local_path(source) or (download_to_temp(source.url) if source.url else None)
         if not path:
             continue
-        # The week grid ("online and offline schedules") is the authoritative
-        # layout: real rooms, real blocks. Chair notes are only used when no
-        # grid document exists for this meeting.
+        verdict = inspect_docx(path, source.fileName)
+        if not verdict.is_schedule:
+            continue
+        source.confidence = round(min(1.0, verdict.score / 30), 2)
+        # Both parsers are tried: the week grid layout first, the free-form
+        # chair-notes layout as a fallback for the same file.
+        parsed_rooms: list[Room] = []
+        parsed_sessions: list[Session] = []
         try:
-            block_rooms, block_sessions = parse_block_schedule_docx(
+            parsed_rooms, parsed_sessions = parse_block_schedule_docx(
                 path,
                 meeting_id=meeting.id,
                 start_date=meeting.startDate,
@@ -271,31 +295,118 @@ def parse_schedule_sources(
             )
         except Exception as exc:
             print(f"  grid parse failed for {source.fileName}: {exc}")
-            block_rooms, block_sessions = [], []
-        if block_sessions:
-            grids.append((block_rooms, block_sessions))
+        if not parsed_sessions:
+            try:
+                parsed_rooms, parsed_sessions = parse_schedule_docx(
+                    path,
+                    meeting_id=meeting.id,
+                    start_date=meeting.startDate,
+                    end_date=meeting.endDate,
+                    source=source,
+                    room_order_offset=len(rooms),
+                    owner_hint=_owner_hint(source.url or ""),
+                )
+            except Exception as exc:  # a malformed document must not break the run
+                print(f"  could not parse {source.fileName}: {exc}")
+                continue
+        rooms.extend(parsed_rooms)
+        sessions.extend(parsed_sessions)
+
+    rooms, sessions = _name_tracks(rooms, sessions)
+    result = canonicalize(sessions)
+    order = {room.roomId: room.order for room in rooms}
+    result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
+    return rooms, result.sessions, result.conflicts
+
+
+
+DOC_TITLE_RE = re.compile(
+    r"^\W*(?:[a-z]\s+)?(?:detailed\s+|draft\s+)*(?:schedules?|timetables?|agenda)\s+(?:for|of)\s+",
+    re.I,
+)
+
+
+def _clean_room_names(
+    rooms: list[Room], sessions: list[Session]
+) -> tuple[list[Room], list[Session]]:
+    """Strip document-title wording from track names and drop prose tracks.
+
+    A heading like "b Detailed Schedule for RAN1 Main" names the room
+    "RAN1 Main"; a full sentence picked up from a note is not a room at all and
+    its blocks are parse noise, so they are removed.
+    """
+    dropped: set[str] = set()
+    for room in rooms:
+        name = DOC_TITLE_RE.sub("", room.roomName).strip(" -–—:·")
+        if not name or name.endswith(".") or len(name.split()) > 8:
+            dropped.add(room.roomId)
             continue
-        try:
-            doc_rooms, doc_sessions = parse_schedule_docx(
-                path,
-                meeting_id=meeting.id,
-                start_date=meeting.startDate,
-                end_date=meeting.endDate,
-                source=source,
-                room_order_offset=len(rooms),
-                owner_hint=_owner_hint(source.url or ""),
-            )
-        except Exception as exc:  # a malformed document must not break the run
-            print(f"  could not parse {source.fileName}: {exc}")
+        room.roomName = name
+        room.shortName = name[:24]
+    if dropped:
+        rooms = [room for room in rooms if room.roomId not in dropped]
+        sessions = [s for s in sessions if s.roomId not in dropped]
+    return rooms, sessions
+
+
+ROOM_CODE_RE = re.compile(r"^[A-Za-z0-9+#._/ -]{1,14}$")
+
+
+def _merge_alias_rooms(
+    rooms: list[Room], sessions: list[Session], remap: dict[str, str]
+) -> tuple[list[Room], dict[str, str]]:
+    """Two documents naming the same physical room differently become one track.
+
+    A chair grid may call the plenary room "B1+B2" while a detailed schedule
+    calls it "RAN1 Main". They are recognised as the same room when their
+    blocks discuss the same topics at the same times across the week; the shorter,
+    code-like name is kept and the canonicaliser then reconciles the detail.
+    """
+    def signature(session: Session) -> tuple[str, str, str]:
+        topic = re.sub(r"[^a-z0-9]+", "", (session.topicKey or session.topic or "").lower())
+        return (session.date, session.startTime, topic)
+
+    topics: dict[str, set[tuple[str, str, str]]] = {}
+    for session in sessions:
+        room_id = remap.get(session.roomId, session.roomId)
+        sig = signature(session)
+        if not sig[2]:
             continue
-        rooms.extend(doc_rooms)
-        sessions.extend(doc_sessions)
-    if grids:
-        # Chairs circulate personal copies of the same week grid. The most
-        # complete document wins outright, so the timetable shows one coherent
-        # week instead of the same session repeated per copy.
-        rooms, sessions = max(grids, key=lambda pair: (len(pair[1]), len(pair[0])))
-    return _name_tracks(rooms, sessions)
+        topics.setdefault(room_id, set()).add(sig)
+
+    merged: dict[str, str] = {}
+    keepers: list[Room] = []
+    for room in rooms:
+        mine = topics.get(room.roomId, set())
+        match = None
+        for keeper in keepers:
+            theirs = topics.get(keeper.roomId, set())
+            if not mine or not theirs:
+                continue
+            overlap = len(mine & theirs) / min(len(mine), len(theirs))
+            if overlap >= 0.6:
+                match = keeper
+                break
+        if match is None:
+            keepers.append(room)
+            continue
+        merged[room.roomId] = match.roomId
+        if ROOM_CODE_RE.match(room.roomName) and not ROOM_CODE_RE.match(match.roomName):
+            match.roomName = room.roomName
+            match.shortName = room.roomName[:24]
+
+    if merged:
+        for source_id, target_id in list(remap.items()):
+            remap[source_id] = merged.get(target_id, target_id)
+    return keepers, remap
+
+
+def _minutes(value: str) -> int:
+    try:
+        hours, minutes = value.split(":")
+        return int(hours) * 60 + int(minutes)
+    except Exception:
+        return 0
 
 
 def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:
@@ -306,6 +417,8 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
     tables that end up with exactly the same name are the same track published
     twice, so they are merged instead of numbered.
     """
+    rooms, sessions = _clean_room_names(rooms, sessions)
+
     def canonical(name: str) -> str:
         # "RAN1_Brk#2 · 1.1 Himalaya" and "1.1 Himalaya" are the same room.
         tail = name.split("·")[-1].strip().lower()
@@ -326,6 +439,7 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
                 keeper.shortName = room.roomName[:24]
 
     merged_rooms = list(by_name.values())
+    merged_rooms, remap = _merge_alias_rooms(merged_rooms, sessions, remap)
 
 
     # Rooms keep the order the schedule document lays them out in.

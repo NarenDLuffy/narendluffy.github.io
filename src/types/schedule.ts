@@ -107,6 +107,15 @@ export interface Session {
   status: SessionStatus;
   note?: string;
   sources: SessionSourceRef[];
+
+  /** How the canonical block was derived from the schedule documents */
+  derivation?: "direct" | "split-from-parent" | "inferred-duration";
+  /** 0..1 confidence in this block's timing */
+  confidence?: number;
+  /** Broader agenda item this block was split out of, e.g. 10.8 for 10.8.3 */
+  parentAgendaItem?: string;
+  /** False when no document gave a finer breakdown for this time */
+  detailAvailable?: boolean;
 }
 
 /** One agenda item's share of a session block, e.g. 10.5.1.3 for 30 minutes */
