@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AlertTriangle, Radio, ShieldCheck, X } from "lucide-react";
 import {
   alwaysSwitch,
+  autoHopToVenue,
   dismissVenueBanner,
   inVenueMode,
   secureModeUrl,
@@ -29,8 +30,10 @@ export function VenueModeBanner({
   secureHost?: string;
 }) {
   const [state, setState] = useState<"hidden" | "offer" | "in-venue" | "blocked">("hidden");
+  const [always, setAlways] = useState(false);
 
   useEffect(() => {
+    setAlways(alwaysSwitch());
     if (inVenueMode()) {
       setState("in-venue");
       return;
@@ -43,8 +46,16 @@ export function VenueModeBanner({
       return;
     }
     if (alwaysSwitch()) {
-      switchToVenueMode();
-      return;
+      // Silent hop: probe the twin, then replace this page with it. If the twin
+      // is not reachable (not on meeting Wi-Fi, host down) fall back to the
+      // normal offer banner instead of stranding the user.
+      let cancelled = false;
+      void autoHopToVenue().then((hopped) => {
+        if (!hopped && !cancelled && !venueBannerDismissed()) setState("offer");
+      });
+      return () => {
+        cancelled = true;
+      };
     }
     if (!venueBannerDismissed()) setState("offer");
   }, [meetingActive]);
@@ -62,6 +73,18 @@ export function VenueModeBanner({
           <a className="font-medium text-primary underline" href={secureModeUrl(secureHost)}>
             Back to {secureHost}
           </a>
+          <label className="mt-2 flex items-center gap-2 text-foreground">
+            <input
+              type="checkbox"
+              checked={always}
+              onChange={(e) => {
+                setAlways(e.target.checked);
+                setAlwaysSwitch(e.target.checked);
+              }}
+              className="size-3.5 accent-[hsl(var(--primary))]"
+            />
+            Always open venue mode at meetings
+          </label>
         </p>
       </div>
     );
@@ -117,7 +140,7 @@ export function VenueModeBanner({
             }}
             className="inline-flex min-h-9 items-center rounded-md border border-border px-2.5 text-xs font-medium text-muted-foreground"
           >
-            Always at venues
+            Always open venue mode
           </button>
         </div>
       </div>
