@@ -326,6 +326,28 @@ DOC_TITLE_RE = re.compile(
 )
 
 
+ROOM_PAREN_RE = re.compile(r"\(\s*rooms?\s*[:=]?\s*([^)]+)\)", re.I)
+
+
+def _room_from_heading(name: str) -> str:
+    """Recover the physical room from a document heading.
+
+    "Hiroki's Online Session Schedule (room: RAN1_Brk#2, 1.1 Himalaya)" is the
+    detailed plan for the physical room "1.1 Himalaya", not a room of its own.
+    Whenever a heading names a room parenthetically, that name wins so the
+    detailed blocks land on the same track as the week grid.
+    """
+    match = ROOM_PAREN_RE.search(name)
+    if not match:
+        return name
+    parts = [part.strip(" -–—:·") for part in re.split(r"[,;/]| and ", match.group(1)) if part.strip()]
+    if not parts:
+        return name
+    # Prefer the venue-style name (e.g. "1.1 Himalaya") over a booking code.
+    physical = [p for p in parts if not re.match(r"^[A-Za-z0-9_#]+$", p)]
+    return (physical or parts)[-1]
+
+
 def _clean_room_names(
     rooms: list[Room], sessions: list[Session]
 ) -> tuple[list[Room], list[Session]]:
@@ -337,7 +359,8 @@ def _clean_room_names(
     """
     dropped: set[str] = set()
     for room in rooms:
-        name = DOC_TITLE_RE.sub("", room.roomName).strip(" -–—:·")
+        name = _room_from_heading(room.roomName)
+        name = DOC_TITLE_RE.sub("", name).strip(" -–—:·")
         if not name or name.endswith(".") or len(name.split()) > 8:
             dropped.add(room.roomId)
             continue
@@ -347,6 +370,7 @@ def _clean_room_names(
         rooms = [room for room in rooms if room.roomId not in dropped]
         sessions = [s for s in sessions if s.roomId not in dropped]
     return rooms, sessions
+
 
 
 ROOM_CODE_RE = re.compile(r"^[A-Za-z0-9+#._/ -]{1,14}$")

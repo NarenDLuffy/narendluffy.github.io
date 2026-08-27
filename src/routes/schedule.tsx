@@ -1,7 +1,9 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import { Crosshair, Search, X } from "lucide-react";
+import { CalendarPlus, Crosshair, Search, X } from "lucide-react";
+import { buildIcs, downloadIcs } from "@/lib/ics";
+
 import { meetingDates, sessionMatchesAgenda, searchSession } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { DayTabs } from "@/components/DayTabs";
@@ -103,6 +105,24 @@ function SchedulePage() {
         </div>
         <button
           type="button"
+          onClick={() =>
+            downloadIcs(
+              buildIcs(
+                bundle,
+                sessions.filter((s) => s.kind !== "break" && s.kind !== "lunch"),
+              ),
+              `${meeting.slug}-${day}.ics`,
+            )
+          }
+          disabled={sessions.length === 0}
+          className="inline-flex min-h-11 items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm font-semibold disabled:opacity-50"
+          title="Export the sessions currently shown to your calendar"
+        >
+          <CalendarPlus className="size-4" />
+          Export
+        </button>
+        <button
+          type="button"
           onClick={() => {
             setSearch({ day: undefined });
             setNowKey((k) => k + 1);
@@ -113,6 +133,7 @@ function SchedulePage() {
           Now
         </button>
       </div>
+
 
       <DayTabs days={days} value={day} onChange={(d) => setSearch({ day: d })} />
 
