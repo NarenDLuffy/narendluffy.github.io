@@ -57,7 +57,7 @@ jobs:
       # Venue mode: this Pages site is the plain-HTTP twin of the app, served
       # from a hostname whose "Enforce HTTPS" box is left unchecked so the
       # browser is allowed to read http://10.10.10.10 from it. Set the
-      # VENUE_HOST repository variable (e.g. venue.ran1.app) to enable.
+      # VENUE_HOST repository variable (e.g. 3gpplive.net) to enable.
       - name: Custom domain for venue mode
         if: vars.VENUE_HOST != ''
         run: |
