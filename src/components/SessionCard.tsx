@@ -182,6 +182,13 @@ export function SessionCard({
                   <DialogTitle>{session.topic}</DialogTitle>
                   <DialogDescription>
                     Automatically parsed from the meeting documents below.
+                    {session.derivation
+                      ? ` Derivation: ${session.derivation}${
+                          session.confidence
+                            ? ` · confidence ${Math.round(session.confidence * 100)}%`
+                            : ""
+                        }.`
+                      : ""}
                   </DialogDescription>
                 </DialogHeader>
                 <ul className="space-y-3 text-sm">
