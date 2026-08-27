@@ -8,18 +8,28 @@ import type {
   DraftSourceType,
 } from "@/types/drafts";
 import { getLocalSourceSettings } from "./localSource";
+import {
+  normalizeSegment as norm,
+  parseListing,
+  walkListing,
+  type CrawlResult,
+} from "@/lib/listingParser";
+import { venueBlockedByScheme } from "@/lib/venueMode";
 
 /**
  * Live draft probe, browser-side.
  *
  * The published drafts.json is produced by GitHub Actions, which can only ever
  * see the public 3GPP tree and only every few minutes. During a meeting week
- * two fresher trees exist:
+ * fresher trees exist:
  *
  *   1. the venue server (conventionally http://10.10.10.10/...), fastest but
- *      only reachable from the meeting network, and
+ *      only reachable from a device on the meeting network AND only readable
+ *      when this page itself is served over plain HTTP (mixed content), and
  *   2. the 3GPP sync mirror /ftp/Meetings_3GPP_SYNC/RAN1/Inbox/, which the
  *      venue replicates into well before the archived meeting folder updates.
+ *      The browser cannot read it directly (no CORS headers), so it is crawled
+ *      through a server function instead.
  *
  * The same upload therefore appears on up to three servers at three different
  * times. Everything discovered here is merged into the published index by
@@ -37,7 +47,18 @@ const REQUEST_TIMEOUT_MS = 3500;
 const MAX_DEPTH = 20;
 const MAX_REQUESTS = 1_000;
 
-export type LiveDraftOrigin = "venue" | "sync" | "published";
+export type LiveDraftOrigin = "venue" | "sync" | "sync-proxy" | "published";
+
+/**
+ * Why the venue server is or is not being used. `blocked-mixed-content` is the
+ * common case away from venue mode: the browser refuses the request because
+ * this page is HTTPS, so it is never even attempted.
+ */
+export type VenueStatus =
+  | "not-checked"
+  | "available"
+  | "unavailable"
+  | "blocked-mixed-content";
 
 export interface LiveDraftReport {
   index: DraftIndex | null;
@@ -47,15 +68,7 @@ export interface LiveDraftReport {
   freshCount: number;
   baseUrl?: string;
   /** Whether the browser could read the venue directory before fallback. */
-  venueStatus: "not-checked" | "available" | "unavailable";
-}
-
-interface Entry {
-  name: string;
-  href: string;
-  isDir: boolean;
-  size?: number;
-  modifiedAt?: string;
+  venueStatus: VenueStatus;
 }
 
 /* ---------- transport ---------- */
@@ -74,133 +87,14 @@ async function fetchText(url: string): Promise<string | null> {
   }
 }
 
-/** Parse an IIS / Apache style directory listing into entries. */
-export function parseListing(html: string, baseUrl: string): Entry[] {
-  const out: Entry[] = [];
-  const seen = new Set<string>();
-
-  const decode = (value: string) =>
-    value
-      .replace(/&amp;/gi, "&")
-      .replace(/&quot;/gi, '"')
-      .replace(/&#39;|&apos;/gi, "'")
-      .replace(/&lt;/gi, "<")
-      .replace(/&gt;/gi, ">");
-
-  const add = (
-    hrefValue: string,
-    labelValue: string,
-    isDir: boolean,
-    stamp?: string,
-    sizeValue?: string,
-  ) => {
-    const href = decode(hrefValue.trim());
-    const name = decode(labelValue.replace(/<[^>]*>/g, "").trim()).replace(/\/$/, "");
-    if (!href || !name || name === ".." || /parent directory/i.test(name)) return;
-    if (href.startsWith("?") || href.startsWith("#") || seen.has(href)) return;
-    let resolved: string;
-    try {
-      resolved = new URL(href, baseUrl).toString();
-    } catch {
-      return;
-    }
-    // Ignore breadcrumb/navigation links outside the directory being crawled.
-    const root = baseUrl.replace(/\/?$/, "/");
-    if (!resolved.startsWith(root)) return;
-    seen.add(href);
-
-    const entry: Entry = { name, href: resolved, isDir };
-    const sizeText = sizeValue?.replace(/[^\d]/g, "") ?? "";
-    if (sizeText) entry.size = Number(sizeText);
-    const normalizedStamp = stamp?.trim().replace(
-      /^(\d{4})\/(\d{2})\/(\d{2})\s+(\d{2}:\d{2}(?::\d{2})?)$/,
-      "$1-$2-$3T$4Z",
-    );
-    const parsed = normalizedStamp ? new Date(normalizedStamp) : null;
-    if (parsed && !Number.isNaN(parsed.getTime())) entry.modifiedAt = parsed.toISOString();
-    out.push(entry);
-  };
-
-  // Current 3GPP listings are HTML tables. Folder rows have a plain anchor;
-  // files have class="file". The old line parser below matched only a small
-  // fraction of these rows because their date and size are in later cells.
-  const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
-  let rowMatch: RegExpExecArray | null;
-  while ((rowMatch = rowRe.exec(html))) {
-    const row = rowMatch[1] ?? "";
-    const anchor = /<a\b([^>]*)href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i.exec(row);
-    if (!anchor) continue;
-    const attrs = anchor[1] ?? "";
-    const cells = [...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((match) =>
-      decode((match[1] ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()),
-    );
-    const isFile = /\bclass\s*=\s*["'][^"']*\bfile\b/i.test(attrs);
-    const stamp = cells.find((cell) => /\d{4}\/\d{2}\/\d{2}\s+\d{2}:\d{2}/.test(cell));
-    const size = cells.find((cell) => /^\s*[\d,.]+\s*(?:bytes?|kb|mb|gb)?\s*$/i.test(cell));
-    add(anchor[2] ?? "", anchor[3] ?? "", !isFile, stamp, size);
-  }
-
-  if (out.length > 0) return out;
-
-  // IIS listings: "<date> <time>  <dir|size> <a href="...">name</a>"
-  const lineRe =
-    /(\d{1,2}\/\d{1,2}\/\d{2,4}\s+\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM)?)?[^<]*?(&lt;dir&gt;|<dir>|[\d,]+)?\s*<a\s+href="([^"]+)"[^>]*>([^<]+)<\/a>/gi;
-
-  let m: RegExpExecArray | null;
-  while ((m = lineRe.exec(html))) {
-    const stamp = m[1];
-    const marker = m[2];
-    const href = m[3] ?? "";
-    const name = (m[4] ?? "").trim();
-    const isDir = Boolean(marker && /dir/i.test(marker)) || href.endsWith("/") || !name.includes(".");
-    add(href, name, isDir, stamp, marker && !/dir/i.test(marker) ? marker : undefined);
-  }
-  return out;
-}
+export { parseListing };
 
 /* ---------- crawl ---------- */
 
-interface CrawlResult {
-  folders: { path: string; name: string; parent: string; depth: number; url: string }[];
-  files: { path: string; folderPath: string; name: string; url: string; size?: number; modifiedAt?: string }[];
-}
-
-const norm = (s: string) => s.replace(/\s+/g, " ").trim().toLowerCase();
-
 async function crawl(rootUrl: string): Promise<CrawlResult | null> {
-  const root = await fetchText(rootUrl);
-  if (root === null) return null;
-
-  const result: CrawlResult = { folders: [], files: [] };
-  let requests = 1;
-
-  const walk = async (html: string, url: string, path: string, depth: number) => {
-    const entries = parseListing(html, url);
-    for (const entry of entries) {
-      const childPath = path ? `${path}/${norm(entry.name)}` : norm(entry.name);
-      if (entry.isDir) {
-        result.folders.push({ path: childPath, name: entry.name, parent: path, depth: depth + 1, url: entry.href });
-        if (depth + 1 >= MAX_DEPTH || requests >= MAX_REQUESTS) continue;
-        requests += 1;
-        const childHtml = await fetchText(entry.href);
-        if (childHtml) await walk(childHtml, entry.href, childPath, depth + 1);
-      } else {
-        const file: CrawlResult["files"][number] = {
-          path: childPath,
-          folderPath: path,
-          name: entry.name,
-          url: entry.href,
-        };
-        if (entry.size !== undefined) file.size = entry.size;
-        if (entry.modifiedAt) file.modifiedAt = entry.modifiedAt;
-        result.files.push(file);
-      }
-    }
-  };
-
-  await walk(root, rootUrl, "", 0);
-  return result;
+  return walkListing(rootUrl, fetchText, { maxDepth: MAX_DEPTH, maxRequests: MAX_REQUESTS });
 }
+
 
 /* ---------- semantics (kept deliberately thin) ---------- */
 
