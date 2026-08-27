@@ -173,6 +173,34 @@ function HelpPage() {
         </Section>
       </div>
 
+      <Section title="Venue mode (at the meeting)">
+        <p>
+          When you are on the meeting Wi-Fi, the local drafts/schedule server lives at
+          10.10.10.10. Browsers block an HTTPS page from reading it, so the app can open a
+          plain-HTTP twin on <code>3gpplive.net</code> that can.
+        </p>
+        <p>
+          <strong>Always enter through https://ran1.app.</strong> Never type{" "}
+          <code>https://3gpplive.net</code> directly — if your browser caches HTTPS for that
+          domain, venue mode stops working for this device.
+        </p>
+        <p>
+          <strong>If you see "Venue mode opened over HTTPS":</strong> your browser has pinned
+          the twin to HTTPS. Clear its stored site data and reopen via ran1.app:
+        </p>
+        <ul className="list-disc space-y-1 pl-4">
+          <li>
+            <strong>iPhone (Safari):</strong> Settings → Safari → Clear History and Website Data;
+            or Settings → Safari → Advanced → Website Data → search "3gpplive" → swipe left →
+            Delete.
+          </li>
+          <li>
+            <strong>Android (Chrome):</strong> Chrome → ⋮ → History → Clear browsing data →
+            Advanced → select Cookies and site data + Cached images and files → Clear data.
+          </li>
+        </ul>
+      </Section>
+
       <Section title="Good to know">
         <ul className="list-disc space-y-1 pl-4">
           <li>

@@ -69,6 +69,28 @@ the twin address), the app shows a warning reminding you to use `ran1.app`
 instead. Using the twin over HTTPS can teach your browser to force HTTPS for
 that domain, after which venue mode stops working.
 
+#### If the twin loads over HTTPS and you see the warning
+
+That means your browser has pinned `3gpplive.net` to HTTPS. Clear the stored
+site data for `3gpplive.net` and reopen via `https://ran1.app`:
+
+**iPhone — Safari**
+
+1. Open **Settings → Safari → Clear History and Website Data** → confirm.
+2. Or, for a more targeted wipe: **Settings → Safari → Advanced → Website Data**,
+   search for **3gpplive**, swipe left, then tap **Delete**.
+3. Reopen **https://ran1.app** and let it hop you to the twin.
+
+**Android — Chrome**
+
+1. Chrome → **⋮ → History → Clear browsing data**.
+2. Tap **Advanced**, select **Cookies and site data** and **Cached images and
+   files**, then **Clear data**.
+3. Reopen **https://ran1.app**.
+
+> Never open `https://3gpplive.net` directly. Always enter through
+> `https://ran1.app` so the hop stays plain HTTP.
+
 If you never see the banner, the app is probably falling back to the public
 SYNC mirror, which is fine but may be a few minutes behind.
 
