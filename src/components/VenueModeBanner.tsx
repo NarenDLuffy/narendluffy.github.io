@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { AlertTriangle, Radio, RotateCcw, ShieldCheck, X } from "lucide-react";
+import { AlertTriangle, Radio, RotateCcw, ShieldCheck, Smartphone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   alwaysSwitch,
   autoHopToVenue,
+  disableAlwaysSwitch,
   dismissVenueBanner,
   inVenueMode,
+  retryVenueOverHttp,
   secureModeUrl,
   setAlwaysSwitch,
   switchToVenueMode,
