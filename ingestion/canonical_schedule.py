@@ -293,7 +293,12 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     )
     kept: list[CandidateBlock] = []
     for block in ranked:
-        if any(block.start < other.end and other.start < block.end for other in kept):
+        clash = [o for o in kept if block.start < o.end and o.start < block.end]
+        # Identical slots with different agenda items are a reported conflict,
+        # not two tilings of the same time - both stay visible.
+        if clash and not all(
+            o.start == block.start and o.end == block.end for o in clash
+        ):
             continue
         kept.append(block)
     kept.sort(key=lambda b: (b.start, b.end, b.order))
