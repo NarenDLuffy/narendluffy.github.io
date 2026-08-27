@@ -20,6 +20,8 @@ from datetime import datetime, timezone
 from urllib.parse import unquote
 
 from .block_schedule import parse_block_schedule_docx
+from .canonical_schedule import canonicalize
+from .schedule_discovery import inspect_docx, name_priority, walk_documents
 from .docx_schedule import parse_schedule_docx
 from .meeting_discovery import classify_document, compute_status, revision_parts
 from .models import (
@@ -29,6 +31,7 @@ from .models import (
     MeetingSourceFolders,
     ScheduleBundle,
     Room,
+    ScheduleConflict,
     ScheduleSource,
     Session,
 )
@@ -97,6 +100,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
     sources: list[ScheduleSource] = []
     rooms: list[Room] = []
     sessions: list[Session] = []
+    conflicts: list[ScheduleConflict] = []
 
     if with_documents and pm.folder_url:
         for code, title in fetch_agenda_csv(pm.folder_url):
@@ -111,7 +115,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
             )
         sources = discover_sources(meeting, pm.folder_url, _iso(now))
         sources.extend(manual_sources(meeting, _iso(now)))
-        rooms, sessions = parse_schedule_sources(meeting, sources)
+        rooms, sessions, conflicts = parse_schedule_sources(meeting, sources)
         meeting.schedulePublished = bool(sessions)
 
     return ScheduleBundle(
@@ -122,7 +126,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
         agendaItems=agenda_items,
         sources=sources,
         changes=[],
-        conflicts=[],
+        conflicts=conflicts,
         ingest=IngestStatus(
             state="ok",
             lastSuccessfulAt=_iso(now),
@@ -135,25 +139,19 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
 
 
 def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
-    """Every candidate document in the meeting folder, classified generically.
+    """Every candidate document under the meeting folder, found recursively.
 
-    Chairs publish their session plans in personal subfolders of Inbox (one per
-    vice-chair), so folders are walked one level deep instead of assuming any
-    particular folder name.
+    Chairs publish their session plans wherever suits them: directly in Inbox,
+    in Inbox/drafts, in a personal folder, or several levels below inside a
+    topic working folder. The whole tree is therefore walked; no folder, chair
+    or room name is assumed anywhere.
     """
-    found: list[ScheduleSource] = []
-    for sub in DOC_SUBFOLDERS:
-        for url in list_folder(f"{folder_url}{sub}/"):
-            name = unquote(url.rstrip("/").rsplit("/", 1)[-1])
-            if name.lower().endswith(DOC_EXTENSIONS):
-                found.append(_to_source(meeting, url, name, retrieved_at))
-                continue
-            # A subfolder (personal chair folder, drafts, ...): look inside once.
-            for inner in list_folder(url + "/"):
-                inner_name = unquote(inner.rstrip("/").rsplit("/", 1)[-1])
-                if inner_name.lower().endswith(DOC_EXTENSIONS):
-                    found.append(_to_source(meeting, inner, inner_name, retrieved_at))
+    found: list[ScheduleSource] = [
+        _to_source(meeting, item.url, item.name, retrieved_at)
+        for item in walk_documents(folder_url)
+    ]
     return _latest_revisions(found)
+
 
 
 MANUAL_DOCS_DIR = os.path.join(os.path.dirname(__file__), "manual_docs")
@@ -243,26 +241,52 @@ def _owner_hint(url: str) -> str | None:
     return m.group(1).capitalize() if m else None
 
 
+MAX_SCHEDULE_DOWNLOADS = 80
+
+
+def _inspection_queue(sources: list[ScheduleSource]) -> list[ScheduleSource]:
+    """Documents to download, most schedule-like name first.
+
+    A meeting folder holds well over a thousand DOCX files, almost all of them
+    FL summaries. The name only orders the queue and drops obvious discussion
+    documents; whether a downloaded file really is a schedule is decided by its
+    content (see schedule_discovery.classify_content).
+    """
+    queue = [
+        source
+        for source in sources
+        if source.fileName.lower().endswith(".docx") and name_priority(source.fileName) >= 0
+    ]
+    queue.sort(key=lambda s: (-name_priority(s.fileName), s.fileName.lower()))
+    return queue[:MAX_SCHEDULE_DOWNLOADS]
+
+
 def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
-) -> tuple[list[Room], list[Session]]:
-    """Download every schedule-looking DOCX and merge what it contains."""
+) -> tuple[list[Room], list[Session], list[ScheduleConflict]]:
+    """Parse EVERY schedule document found, then build one canonical timeline.
+
+    No document is treated as "the" schedule any more: the week grid, the
+    chair notes and each sub-chair's detailed plan all contribute candidate
+    blocks, and canonicalize() merges them into the most detailed
+    evidence-supported timeline (see canonical_schedule.py).
+    """
     rooms: list[Room] = []
     sessions: list[Session] = []
-    grids: list[tuple[list[Room], list[Session]]] = []
-    for source in sources:
-        if not source.fileName.lower().endswith(".docx"):
-            continue
-        if "schedule" not in source.fileName.lower() and source.type == "unknown_schedule":
-            continue
+    for source in _inspection_queue(sources):
         path = _local_path(source) or (download_to_temp(source.url) if source.url else None)
         if not path:
             continue
-        # The week grid ("online and offline schedules") is the authoritative
-        # layout: real rooms, real blocks. Chair notes are only used when no
-        # grid document exists for this meeting.
+        verdict = inspect_docx(path, source.fileName)
+        if not verdict.is_schedule:
+            continue
+        source.confidence = round(min(1.0, verdict.score / 30), 2)
+        # Both parsers are tried: the week grid layout first, the free-form
+        # chair-notes layout as a fallback for the same file.
+        parsed_rooms: list[Room] = []
+        parsed_sessions: list[Session] = []
         try:
-            block_rooms, block_sessions = parse_block_schedule_docx(
+            parsed_rooms, parsed_sessions = parse_block_schedule_docx(
                 path,
                 meeting_id=meeting.id,
                 start_date=meeting.startDate,
@@ -271,31 +295,29 @@ def parse_schedule_sources(
             )
         except Exception as exc:
             print(f"  grid parse failed for {source.fileName}: {exc}")
-            block_rooms, block_sessions = [], []
-        if block_sessions:
-            grids.append((block_rooms, block_sessions))
-            continue
-        try:
-            doc_rooms, doc_sessions = parse_schedule_docx(
-                path,
-                meeting_id=meeting.id,
-                start_date=meeting.startDate,
-                end_date=meeting.endDate,
-                source=source,
-                room_order_offset=len(rooms),
-                owner_hint=_owner_hint(source.url or ""),
-            )
-        except Exception as exc:  # a malformed document must not break the run
-            print(f"  could not parse {source.fileName}: {exc}")
-            continue
-        rooms.extend(doc_rooms)
-        sessions.extend(doc_sessions)
-    if grids:
-        # Chairs circulate personal copies of the same week grid. The most
-        # complete document wins outright, so the timetable shows one coherent
-        # week instead of the same session repeated per copy.
-        rooms, sessions = max(grids, key=lambda pair: (len(pair[1]), len(pair[0])))
-    return _name_tracks(rooms, sessions)
+        if not parsed_sessions:
+            try:
+                parsed_rooms, parsed_sessions = parse_schedule_docx(
+                    path,
+                    meeting_id=meeting.id,
+                    start_date=meeting.startDate,
+                    end_date=meeting.endDate,
+                    source=source,
+                    room_order_offset=len(rooms),
+                    owner_hint=_owner_hint(source.url or ""),
+                )
+            except Exception as exc:  # a malformed document must not break the run
+                print(f"  could not parse {source.fileName}: {exc}")
+                continue
+        rooms.extend(parsed_rooms)
+        sessions.extend(parsed_sessions)
+
+    rooms, sessions = _name_tracks(rooms, sessions)
+    result = canonicalize(sessions)
+    order = {room.roomId: room.order for room in rooms}
+    result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
+    return rooms, result.sessions, result.conflicts
+
 
 
 def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room], list[Session]]:

@@ -146,6 +146,12 @@ class Session:
     status: SessionStatus = "scheduled"
     note: str | None = None
     sources: list[SessionSourceRef] = field(default_factory=list)
+    # --- canonicalization metadata (see canonical_schedule.py) ---------------
+    derivation: str | None = None
+    confidence: float | None = None
+    parentAgendaItem: str | None = None
+    detailAvailable: bool | None = None
+
 
     @property
     def slot_key(self) -> str:
