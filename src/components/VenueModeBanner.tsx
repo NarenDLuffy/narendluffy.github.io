@@ -36,14 +36,14 @@ export function VenueModeBanner({
     setAlways(alwaysSwitch());
     if (inVenueMode()) {
       setState("in-venue");
-      return;
+      return undefined;
     }
-    if (!venueBlockedByScheme() || !meetingActive) return;
+    if (!venueBlockedByScheme() || !meetingActive) return undefined;
     // A twin that the browser already force-upgraded to HTTPS (HSTS), or no
     // twin configured at all: explain instead of offering a broken switch.
     if (venueHopFailed() || !VENUE_HOST) {
       if (!venueBannerDismissed()) setState("blocked");
-      return;
+      return undefined;
     }
     if (alwaysSwitch()) {
       // Silent hop: probe the twin, then replace this page with it. If the twin
@@ -58,6 +58,7 @@ export function VenueModeBanner({
       };
     }
     if (!venueBannerDismissed()) setState("offer");
+    return undefined;
   }, [meetingActive]);
 
   if (state === "hidden") return null;
