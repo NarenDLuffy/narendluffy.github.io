@@ -114,3 +114,29 @@ appears automatically — the current one is selected for you by default.
 
 Questions, wrong sessions, missing rooms? Send a screenshot — parser fixes are
 usually quick.
+
+---
+
+## Verified venue-twin URLs (checked 2026-08-27)
+
+All checks made over plain HTTP; none was upgraded to HTTPS by the server.
+
+| URL | Result |
+| --- | --- |
+| `http://3gpplive.net/` | 200, serves the compiled RAN1 Live app |
+| `http://www.3gpplive.net/` | 301 → `http://3gpplive.net/` (stays HTTP), then 200 |
+| `http://3gpplive.net/schedule` | 301 → `/schedule/`, then 200 (app) |
+| `http://3gpplive.net/drafts` | 301 → `/drafts/`, then 200 (app) |
+| `http://3gpplive.net/agenda` | 301 → `/agenda/`, then 200 (app) |
+| `http://3gpplive.net/rooms` | 301 → `/rooms/`, then 200 (app) |
+| `http://3gpplive.net/help` | 301 → `/help/`, then 200 (app) |
+| `http://3gpplive.net/data/meetings.json` | 200, meeting index JSON |
+
+Notes:
+
+- Deep routes redirect to a trailing slash first; that redirect keeps the
+  `http://` scheme, so venue mode is unaffected.
+- Never open `https://3gpplive.net`. A single HTTPS visit can make the browser
+  remember HTTPS for the host and break the plain-HTTP twin on that device.
+  Keep **Enforce HTTPS** unchecked in GitHub Pages settings for this domain.
+- Always enter through `https://ran1.app` and let it hop you to the twin.
