@@ -99,23 +99,74 @@ export function VenueModeBanner({
 
   if (state === "https-twin") {
     return (
-      <div className="flex items-start gap-2 rounded-lg border border-destructive/40 bg-destructive/5 p-3 text-xs">
-        <AlertTriangle className="mt-0.5 size-4 shrink-0 text-destructive" />
-        <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
-          <p>
-            <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span> HTTPS
-            cannot read the meeting-room server. Try HTTP below; if your browser changes it back to
-            HTTPS, clear the stored website data for {VENUE_HOST} and reopen {secureHost}.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <Button asChild size="sm" variant="outline">
-              <a href={venueModeUrl()}>
-                <RotateCcw /> Retry over HTTP
-              </a>
-            </Button>
-            <Button asChild size="sm" variant="ghost">
-              <a href={secureModeUrl(secureHost)}>Back to {secureHost}</a>
-            </Button>
+      <div className="rounded-lg border border-destructive/40 bg-destructive/5 p-3 text-xs">
+        <div className="flex items-start gap-2">
+          <AlertTriangle className="mt-0.5 size-4 shrink-0 text-destructive" />
+          <div className="min-w-0 flex-1 space-y-2 text-muted-foreground">
+            <p>
+              <span className="font-medium text-foreground">Venue mode opened over HTTPS.</span>{" "}
+              HTTPS cannot read the meeting-room server at 10.10.10.10. Your browser has cached
+              HTTPS for {VENUE_HOST}; you need to clear that cache before the twin can load over
+              plain HTTP again.
+            </p>
+
+            <details className="group rounded-md border border-destructive/20 bg-background/60">
+              <summary className="flex cursor-pointer items-center gap-2 p-2 font-medium text-foreground">
+                <Smartphone className="size-3.5" />
+                How to clear the cache on your phone
+              </summary>
+              <div className="space-y-2 p-2 pt-0 text-muted-foreground">
+                <p className="font-medium text-foreground">iPhone (Safari)</p>
+                <ol className="list-decimal space-y-1 pl-4">
+                  <li>Open Settings → Safari → Clear History and Website Data, then confirm.</li>
+                  <li>
+                    Or, for a targeted wipe: Settings → Safari → Advanced → Website Data → search
+                    “{VENUE_HOST}” → swipe left → Delete.
+                  </li>
+                </ol>
+                <p className="font-medium text-foreground">Android (Chrome)</p>
+                <ol className="list-decimal space-y-1 pl-4">
+                  <li>Chrome → ⋮ → History → Clear browsing data.</li>
+                  <li>
+                    Tap Advanced, select Cookies and site data + Cached images and files, then Clear
+                    data.
+                  </li>
+                </ol>
+                <p>
+                  After clearing, close this tab and reopen via{" "}
+                  <a
+                    href={secureModeUrl(secureHost)}
+                    className="font-medium text-primary underline"
+                  >
+                    https://{secureHost}
+                  </a>{" "}
+                  so it can hop you to HTTP.
+                </p>
+              </div>
+            </details>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => retryVenueOverHttp()}
+              >
+                <RotateCcw /> Cache cleared — retry over HTTP
+              </Button>
+              <Button asChild size="sm" variant="ghost">
+                <a href={secureModeUrl(secureHost)}>Back to {secureHost}</a>
+              </Button>
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={() => {
+                  disableAlwaysSwitch();
+                  setAlways(false);
+                }}
+              >
+                Stop auto-opening venue mode
+              </Button>
+            </div>
           </div>
         </div>
       </div>
