@@ -78,11 +78,10 @@ function collectLocalState(): Record<string, string> {
   try {
     for (let i = 0; i < window.localStorage.length; i += 1) {
       const key = window.localStorage.key(i);
-      if (!key || !key.startsWith(TRANSFER_PREFIX)) continue;
-      // Cached indexes are large and re-fetched anyway; only carry preferences.
-      if (key.includes(".drafts.v1.")) continue;
+      if (!key || !TRANSFER_KEYS.has(key)) continue;
       const value = window.localStorage.getItem(key);
-      if (value != null && value.length < 20_000) out[key] = value;
+      // Per-key cap keeps the URL blob small even if presence state grows.
+      if (value != null && value.length < 10_000) out[key] = value;
     }
   } catch {
     /* storage unavailable */
