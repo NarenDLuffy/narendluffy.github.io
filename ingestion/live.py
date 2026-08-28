@@ -247,14 +247,20 @@ def _revision_family(source: ScheduleSource) -> str:
 
 
 def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
-    """Keep only the newest revision of each document family (…_v06 < …_v07)."""
+    """Keep only the newest revision of each document family (…_v06 < …_v07 < …_v07_1).
+
+    The family key deliberately ignores which folder a copy came from, so the
+    same document mirrored in both the meeting folder and the meeting-sync
+    tree collapses to whichever copy carries the higher revision.
+    """
     best: dict[str, ScheduleSource] = {}
     for source in sources:
-        key = f"{source.url.rsplit('/', 1)[0] if source.url else ''}|{_revision_family(source)}"
+        key = _revision_family(source)
         current = best.get(key)
         if current is None or (source.revisionParts or []) > (current.revisionParts or []):
             best[key] = source
     return sorted(best.values(), key=lambda s: s.fileName.lower())
+
 
 
 OWNER_FOLDER_RE = re.compile(r"([A-Za-z][A-Za-z\-]+)[_\s-]*notes$", re.I)
