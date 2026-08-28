@@ -255,7 +255,9 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     """
     best: dict[str, ScheduleSource] = {}
     for source in sources:
-        key = _revision_family(source)
+        folder = unquote(source.url or "").rstrip("/").rsplit("/", 2)[-2] if source.url else ""
+        key = f"{folder.lower()}|{_revision_family(source)}"
+
         current = best.get(key)
         if current is None or (source.revisionParts or []) > (current.revisionParts or []):
             best[key] = source
