@@ -168,7 +168,7 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
         _to_source(meeting, item.url, item.name, retrieved_at)
         for item in walk_documents(folder_url)
     ]
-    if meeting.status in ("in_progress", "upcoming"):
+    if meeting.status in ("active", "upcoming"):
         try:
             found.extend(
                 _to_source(meeting, item.url, item.name, retrieved_at)
