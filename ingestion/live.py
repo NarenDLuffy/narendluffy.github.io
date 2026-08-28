@@ -138,19 +138,47 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
     )
 
 
-def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
-    """Every candidate document under the meeting folder, found recursively.
+SYNC_ROOT = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/"
+MEETING_NUMBER_RE = re.compile(r"RAN1\s*#\s*(\d+)", re.I)
 
-    Chairs publish their session plans wherever suits them: directly in Inbox,
-    in Inbox/drafts, in a personal folder, or several levels below inside a
-    topic working folder. The whole tree is therefore walked; no folder, chair
-    or room name is assumed anywhere.
+
+def _belongs_to_meeting(meeting: Meeting, name: str) -> bool:
+    """A sync-mirror file belongs to the meeting unless it names another one."""
+    match = MEETING_NUMBER_RE.search(name)
+    return match is None or int(match.group(1)) == (meeting.meetingNumber or -1)
+
+
+def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
+    """Every candidate document for this meeting, found recursively.
+
+    Two trees are walked:
+
+      * the meeting's own 3GPP folder (…/TSGR1_<n>/), and
+      * the live meeting-sync mirror (…/Meetings_3GPP_SYNC/RAN1/), which is
+        what the venue server replicates during the week. The mirror carries
+        the newest revisions (chair notes v03, a sub-chair plan v08_1) hours
+        before the meeting folder is updated.
+
+    Both trees are merged by revision family, so whichever copy is newest wins
+    and each refresh automatically picks up any freshly uploaded revision.
+    Chairs publish their session plans wherever suits them, so the whole tree
+    is walked; no folder, chair or room name is assumed anywhere.
     """
     found: list[ScheduleSource] = [
         _to_source(meeting, item.url, item.name, retrieved_at)
         for item in walk_documents(folder_url)
     ]
+    if meeting.status in ("active", "upcoming"):
+        try:
+            found.extend(
+                _to_source(meeting, item.url, item.name, retrieved_at)
+                for item in walk_documents(SYNC_ROOT, subfolders=("Inbox",))
+                if _belongs_to_meeting(meeting, item.name)
+            )
+        except Exception as exc:  # the mirror is optional
+            print(f"  meeting-sync mirror unavailable: {exc}")
     return _latest_revisions(found)
+
 
 
 
@@ -219,14 +247,22 @@ def _revision_family(source: ScheduleSource) -> str:
 
 
 def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
-    """Keep only the newest revision of each document family (…_v06 < …_v07)."""
+    """Keep only the newest revision of each document family (…_v06 < …_v07 < …_v07_1).
+
+    The family key deliberately ignores which folder a copy came from, so the
+    same document mirrored in both the meeting folder and the meeting-sync
+    tree collapses to whichever copy carries the higher revision.
+    """
     best: dict[str, ScheduleSource] = {}
     for source in sources:
-        key = f"{source.url.rsplit('/', 1)[0] if source.url else ''}|{_revision_family(source)}"
+        folder = unquote(source.url or "").rstrip("/").rsplit("/", 2)[-2] if source.url else ""
+        key = f"{folder.lower()}|{_revision_family(source)}"
+
         current = best.get(key)
         if current is None or (source.revisionParts or []) > (current.revisionParts or []):
             best[key] = source
     return sorted(best.values(), key=lambda s: s.fileName.lower())
+
 
 
 OWNER_FOLDER_RE = re.compile(r"([A-Za-z][A-Za-z\-]+)[_\s-]*notes$", re.I)
