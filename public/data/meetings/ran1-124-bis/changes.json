@@ -1,1 +1,2125 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-124-bis_mon_j2_1200_1300_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_j2_1200_1300_10.7.1",
+    "to": "J2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_j2_1200_1300_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "NTN start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_j2_1200_1300_10.7.1",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_j2_1200_1300_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_j2_1200_1300_10.7.1",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_b-online-session-3_1430_1530_6g-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "6G ISAC added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1430_1530_6g-isac",
+    "to": "b Online Session 3 14:30-15:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-865cd34e",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_palm-suite_1530_1630_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1530_1630_10.7.1",
+    "to": "Palm Suite 15:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_b-online-session-3_1530_1535_10.8.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.8.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1530_1535_10.8.1",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "Waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "15:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "Waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1730_1750_10.2.1",
+    "to": "17:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_level-1_1700_1705_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_level-1_1700_1705_9.5.1",
+    "to": "Level 1 17:00-17:05",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_palm-suite_1700_1800_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1700_1800_10.3.1",
+    "to": "Palm Suite 17:00-18:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_level-1_1705_1835_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_level-1_1705_1835_r20-a-iot",
+    "to": "17:05",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_level-1_1705_1835_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_level-1_1705_1835_r20-a-iot",
+    "to": "18:35",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_b-online-session-3_1750_1755_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1750_1755_10.2.1",
+    "to": "b Online Session 3 17:50-17:55",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_b-online-session-3_1755_1915_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1755_1915_10.5.4.x",
+    "to": "17:55",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_b-online-session-3_1755_1915_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1755_1915_10.5.4.x",
+    "to": "19:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "19:10"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_palm-suite_1800_1850_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1800_1850_10.3.2",
+    "to": "Palm Suite 18:00-18:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_level-1_1835_1840_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_level-1_1835_1840_9.3.1",
+    "to": "Level 1 18:35-18:40",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_level-1_1840_1845_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_level-1_1840_1845_9.3.2.2",
+    "to": "Level 1 18:40-18:45",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_b-online-session-3_1915_1930_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "(50), start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1915_1930_10.5.4.3",
+    "to": "19:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "19:10"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_level-1_0830_0930_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_0830_0930_9.3.2.1",
+    "to": "Level 1 08:30-09:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform",
+    "to": "11:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1110_1200_6g-waveform",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "11:40"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_level-1_1840_1930_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_1840_1930_9.3.2.3",
+    "to": "Level 1 18:40-19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_0950_1030_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_0950_1030_10.7.1",
+    "to": "Palm Suite 09:50-10:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_level-1_1100_1105_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_1100_1105_9.5.1",
+    "to": "Level 1 11:00-11:05",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_b-online-session-3_1100_1110_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1100_1110_10.8.2",
+    "to": "b Online Session 3 11:00-11:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_b-online-session-3_1705_1735_r20-coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 Coverage start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1705_1735_r20-coverage",
+    "to": "17:05",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_tue_b-online-session-3_1705_1735_r20-coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 Coverage end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1705_1735_r20-coverage",
+    "to": "17:35",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:30"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_level-1_1205_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.2.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_1205_1210_10.2.1",
+    "to": "12:05",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_tue_level-1_1205_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_1205_1210_10.2.1",
+    "to": "12:10",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_b-online-session-3_1430_1530_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1430_1530_9.3.2",
+    "to": "b Online Session 3 14:30-15:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_b-online-session-3_1530_1630_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1530_1630_9.3.3",
+    "to": "b Online Session 3 15:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_b-online-session-3_1700_1705_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1700_1705_9.3.1",
+    "to": "b Online Session 3 17:00-17:05",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_b-online-session-3_1735_1835_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1735_1835_10.5.4.x",
+    "to": "17:35",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_tue_b-online-session-3_1735_1835_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1735_1835_10.5.4.x",
+    "to": "18:35",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1740_1840_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1740_1840_10.3.1",
+    "to": "Palm Suite 17:40-18:40",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_level-1_1750_1840_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_level-1_1750_1840_9.3.2.2",
+    "to": "Level 1 17:50-18:40",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_b-online-session-3_1835_1915_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "(20), start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1835_1915_10.5.4.3",
+    "to": "18:35",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_tue_b-online-session-3_1835_1915_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "(20), end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1835_1915_10.5.4.3",
+    "to": "19:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "19:10"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1840_1930_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1840_1930_10.3.2",
+    "to": "Palm Suite 18:40-19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_0830_0835_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_0830_0835_9.5.1",
+    "to": "Level 1 08:30-08:35",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "CDC3"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform",
+    "to": "11:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1110_1200_6g-waveform",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "09:10"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_b-online-session-3_1730_1830_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4.x start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1730_1830_10.5.4.x",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_b-online-session-3_1730_1830_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.4.x end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1730_1830_10.5.4.x",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.2.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "09:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1200_1210_10.2.1",
+    "to": "12:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_0950_1030_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_0950_1030_10.7.1",
+    "to": "Palm Suite 09:50-10:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot",
+    "to": "CDC3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_cdc3_1100_1200_r20-a-iot",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_1100_1200_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_1100_1200_9.3.2.1",
+    "to": "Level 1 11:00-12:00",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_b-online-session-3_1100_1110_10.8.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1100_1110_10.8.3",
+    "to": "b Online Session 3 11:00-11:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_1200_1300_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_1200_1300_9.3.2.3",
+    "to": "Level 1 12:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_b-online-session-3_1430_1510_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1430_1510_9.3.2",
+    "to": "b Online Session 3 14:30-15:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_b-online-session-3_1510_1550_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1510_1550_9.3.3",
+    "to": "b Online Session 3 15:10-15:50",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_1730_1800_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_1730_1800_9.3.1",
+    "to": "Level 1 17:30-18:00",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_b-online-session-3_1705_1730_coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Coverage start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1705_1730_coverage",
+    "to": "17:05",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_b-online-session-3_1705_1730_coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "Coverage end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1705_1730_coverage",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_1700_1730_9.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_1700_1730_9.3",
+    "to": "Level 1 17:00-17:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_1700_1750_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1700_1750_10.3.1",
+    "to": "Palm Suite 17:00-17:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_b-online-session-3_1700_1705_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1700_1705_10.5.4.1",
+    "to": "b Online Session 3 17:00-17:05",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_1750_1830_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1750_1830_10.3.2",
+    "to": "Palm Suite 17:50-18:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_level-1_1800_1830_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_level-1_1800_1830_9.3.2.2",
+    "to": "Level 1 18:00-18:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_level-1_1535_1540_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "9.5.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1535_1540_9.5.1",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_level-1_1535_1540_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "9.5.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1535_1540_9.5.1",
+    "to": "15:40",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_0830_0910_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_0830_0910_10.7.1",
+    "to": "Palm Suite 08:30-09:10",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_b-online-session-3_0925_0950_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Sensing start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0925_0950_10.8",
+    "to": "09:25",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_b-online-session-3_0925_0950_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "Sensing end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0925_0950_10.8",
+    "to": "09:50",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "15:40"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_b-online-session-3_0920_0925_10.8.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.8.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0920_0925_10.8.1",
+    "to": "09:25",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "09:50"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_0950_1030_ai-8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI 8 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0950_1030_ai-8",
+    "to": "b Online Session 3 09:50-10:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_level-1_1700_1730_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1700_1730_9.3.2.3",
+    "to": "Level 1 17:00-17:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "CDC1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform",
+    "to": "14:42",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1442_1532_6g-waveform",
+    "to": "15:32",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "11:40"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_level-1_1730_1800_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1730_1800_9.3.1",
+    "to": "Level 1 17:30-18:00",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1120_1200_ai-7-8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI 7/8 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-7-8",
+    "to": "Palm Suite 11:20-12:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_level-1_1900_1930_9.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1900_1930_9.3",
+    "to": "Level 1 19:00-19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_1700_1705_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1700_1705_9.3.2",
+    "to": "b Online Session 3 17:00-17:05",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_level-1_1800_1830_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1800_1830_9.3.2.1",
+    "to": "Level 1 18:00-18:30",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_1705_1710_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1705_1710_9.3.3",
+    "to": "b Online Session 3 17:05-17:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_level-1_1830_1900_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_level-1_1830_1900_9.3.2.2",
+    "to": "Level 1 18:30-19:00",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_1532_1538_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1532_1538_10.2.1",
+    "to": "b Online Session 3 15:32-15:38",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_1430_1436_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1430_1436_10.8.2",
+    "to": "b Online Session 3 14:30-14:36",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_level-1_1435_1535_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_level-1_1435_1535_r20-isac",
+    "to": "14:35",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_level-1_1435_1535_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_level-1_1435_1535_r20-isac",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_b-online-session-3_1436_1442_10.8.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1436_1442_10.8.3",
+    "to": "b Online Session 3 14:36-14:42",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_b-online-session-3_1715_1815_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1715_1815_10.5.4.x",
+    "to": "17:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_b-online-session-3_1715_1815_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1715_1815_10.5.4.x",
+    "to": "18:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1740_1840_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1740_1840_10.3.1",
+    "to": "Palm Suite 17:40-18:40",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_b-online-session-3_1815_1830_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "(45), start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1815_1830_10.5.4.1",
+    "to": "18:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_b-online-session-3_1815_1830_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "(45), end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1815_1830_10.5.4.1",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "18:15"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1840_1930_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1840_1930_10.3.2",
+    "to": "Palm Suite 18:40-19:30",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_b-online-session-3_0830_0910_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_0830_0910_9.3.3",
+    "to": "b Online Session 3 08:30-09:10",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_b-online-session-3_0910_0950_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_0910_0950_9.3.1",
+    "to": "b Online Session 3 09:10-09:50",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1",
+    "to": "b Online Session 3",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.2.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "09:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_1100_1115_10.2.1",
+    "to": "11:15",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_b-online-session-3_0950_1030_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_0950_1030_9.3.2",
+    "to": "b Online Session 3 09:50-10:30",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_palm-suite_1000_1030_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "AI  NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_1000_1030_10.7.1",
+    "to": "Palm Suite 10:00-10:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_fri_b-online-session-3_1115_1130_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_1115_1130_10.2.1",
+    "to": "11:15",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_b-online-session-3_1430_1530_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1430_1530_a-iot-phase2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-865cd34e",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_b-online-session-3_1530_1630_10.8.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Sensing 60) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8.x"
+    ],
+    "sessionId": "ran1-124-bis_mon_b-online-session-3_1530_1630_10.8.x",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1700_1800_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1700_1800_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1800_1850_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1800_1850_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_level-1_1830_1930_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": ", removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_level-1_1830_1930_9.3.1",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_b-online-session-3_1100_1210_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Sensing removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1100_1210_10.8",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_b-online-session-3_1430_1630_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_b-online-session-3_1430_1630_a-iot-phase2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-865cd34e",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1740_1840_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1740_1840_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1840_1930_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1840_1930_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_b-online-session-3_1100_1210_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Sensing removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1100_1210_10.8",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_b-online-session-3_1430_1630_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_b-online-session-3_1430_1630_a-iot-phase2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-865cd34e",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1700_1750_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1700_1750_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1750_1830_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1750_1830_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_level-1_0830_0930_maintenance-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_level-1_0830_0930_maintenance",
+    "sourceIds": [
+      "ran1-124-bis-ddc1d03d"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_b-online-session-3_0830_0900_r20-tei-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R20 TEI removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0830_0900_r20-tei",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_b-online-session-3_0950_1000_r19-fr3-cm-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R19 FR3 CM removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_0950_1000_r19-fr3-cm",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_b-online-session-3_1000_1010_r19-lp-wus-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R19 LP-WUS removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1000_1010_r19-lp-wus",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_b-online-session-3_1010_1030_r19-mobility-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R19 Mobility removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1010_1030_r19-mobility",
+    "sourceIds": [
+      "ran1-124-bis-865cd34e"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_b-online-session-3_1815_1830_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_b-online-session-3_1815_1830_a-iot-phase2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1120_1200_ai-6-7-8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "AI 6/7/8 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-6-7-8",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1740_1840_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1740_1840_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1840_1930_10.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1840_1930_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_fri_b-online-session-3_0830_1030_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_fri_b-online-session-3_0830_1030_a-iot-phase2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-865cd34e",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "b Online Session 3"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_fri_palm-suite_1000_1030_10.7.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_1000_1030_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  }
+]

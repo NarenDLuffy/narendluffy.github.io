@@ -312,6 +312,7 @@ def parse_schedule_sources(
         rooms.extend(parsed_rooms)
         sessions.extend(parsed_sessions)
 
+
     rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
     order = {room.roomId: room.order for room in rooms}

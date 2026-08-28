@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-28T02:19:04Z",
+  "generatedAt": "2026-08-28T08:36:03Z",
   "meetingId": "ran1-126",
   "sessions": [
     {
@@ -295,41 +295,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1200_1300_10.8.x",
+      "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1200_1205_9.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "12:00",
-      "endTime": "13:00",
+      "endTime": "12:05",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "9.3.1",
+      "topicKey": "91eef9ac",
       "agendaItems": [
-        "10.8.x"
+        "9.3.1"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Hiroki",
-      "group": "6GR",
+      "group": "11:00 - 12:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.8",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -508,41 +499,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1430_1530_a-iot-phase2",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1430_1435_9.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "14:30",
-      "endTime": "15:30",
+      "endTime": "14:35",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -592,7 +574,7 @@
       "endTime": "16:00",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "10.5.4.x",
+      "topic": "6G",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.4.x"
@@ -624,6 +606,41 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1435_1530_a-iot-phase2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "14:35",
+      "endTime": "15:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "A-IoT Phase2",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1500_1545_10.5.3.1",
@@ -759,21 +776,59 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8.2",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1530_1535_10.8",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "15:30",
-      "endTime": "16:30",
+      "endTime": "15:35",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10",
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1535_1540_10.8.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "15:35",
+      "endTime": "15:40",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
       "topic": "10.8.2",
-      "topicKey": "734850ac",
+      "topicKey": "929f9bed",
       "agendaItems": [
         "10.8.2"
       ],
       "agendaBreakdown": [],
-      "group": "10.8.2",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -786,6 +841,44 @@
       "confidence": 0.7,
       "parentAgendaItem": "10.8",
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1540_1630_10.8",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "15:40",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "Sensing",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.8"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10",
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1545_1610_10.5.3.2",
@@ -855,7 +948,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_praetorium_1550_1630_mimo",
+      "sessionId": "ran1-126_mon_praetorium_1550_1630_r20-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
@@ -863,7 +956,7 @@
       "endTime": "16:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "MIMO",
+      "topic": "R20 NR",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -889,41 +982,61 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_0-4-brussels_1600_1630_10.2.1",
+      "sessionId": "ran1-126_mon_0-4-brussels_1600_1605_10.5.4.1",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "16:00",
-      "endTime": "16:30",
+      "endTime": "16:05",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "10.5.4.1",
+      "topicKey": "747d9109",
       "agendaItems": [
-        "10.2.1"
+        "10.5.4.1"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Hiroki",
-      "group": "6GR",
+      "group": "14:30 - 16:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_mon_0-4-brussels_1605_1610_10.5.4.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "16:05",
+      "endTime": "16:10",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.3",
+      "topicKey": "747d9109",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "14:30 - 16:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1105,21 +1218,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1700_1850_10.5.4.x",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1700_1705_10.2.1",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:50",
+      "endTime": "17:05",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "6G",
-      "topicKey": "9c8335f3",
+      "topic": "10.2.1",
+      "topicKey": "5ef55a59",
       "agendaItems": [
-        "10.5.4.x"
+        "10.2.1"
       ],
       "agendaBreakdown": [],
-      "group": "10.2.1",
+      "group": "6G waveform",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1130,7 +1243,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -1207,6 +1320,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.6.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1705_1855_10.5.4.x",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "17:05",
+      "endTime": "18:55",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "6G",
+      "topicKey": "5ef55a59",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G waveform",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1548,35 +1690,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1850_1920_10.5.4.3",
-      "meetingId": "ran1-126",
-      "date": "2026-08-24",
-      "day": "Monday",
-      "startTime": "18:50",
-      "endTime": "19:20",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "(30), (50),",
-      "topicKey": "9c8335f3",
-      "agendaItems": [
-        "10.5.4.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126_mon_0-4-brussels_1850_1930_ntn-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
@@ -1609,6 +1722,35 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_mon_1-1-himalaya_1855_1925_10.5.4.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-24",
+      "day": "Monday",
+      "startTime": "18:55",
+      "endTime": "19:25",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "(30), (50),",
+      "topicKey": "5ef55a59",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G waveform",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1687,11 +1829,11 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_1-1-himalaya_1920_1930_10.5.4",
+      "sessionId": "ran1-126_mon_1-1-himalaya_1925_1930_10.5.4",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
-      "startTime": "19:20",
+      "startTime": "19:25",
       "endTime": "19:30",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
@@ -2085,7 +2227,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_praetorium_0950_1030_mimo",
+      "sessionId": "ran1-126_tue_praetorium_0950_1030_r20-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
@@ -2093,7 +2235,7 @@
       "endTime": "10:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "MIMO",
+      "topic": "R20 NR",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -2157,41 +2299,61 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_0-4-brussels_1000_1030_10.2.1",
+      "sessionId": "ran1-126_tue_0-4-brussels_1000_1005_10.8.3",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "10:00",
-      "endTime": "10:30",
+      "endTime": "10:05",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "10.8.3",
+      "topicKey": "f093ed10",
       "agendaItems": [
-        "10.2.1"
+        "10.8.3"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Hiroki",
-      "group": "6GR",
+      "group": "8:30 - 10:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_tue_0-4-brussels_1005_1010_10.8.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "10:05",
+      "endTime": "10:10",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.8.1",
+      "topicKey": "f093ed10",
+      "agendaItems": [
+        "10.8.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "8:30 - 10:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -2303,39 +2465,31 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1100_1140_10.2.1",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1100_1105_10.2.1",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:40",
+      "endTime": "11:05",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
+      "topic": "10.2.1",
+      "topicKey": "5ef55a59",
       "agendaItems": [
         "10.2.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G waveform",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -2416,24 +2570,24 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1130_1200_10.6.2",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1105_1140_10.2.1",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
-      "startTime": "11:30",
-      "endTime": "12:00",
-      "roomId": "ran1-126-room-eed01f30",
-      "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.6.2",
+      "startTime": "11:05",
+      "endTime": "11:40",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "Waveform",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.6.2"
+        "10.2.1"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
+      "note": "Detailed timing not available",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -2448,9 +2602,38 @@
           "contributed": []
         }
       ],
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
+      "parentAgendaItem": "10.2",
+      "detailAvailable": false
+    },
+    {
+      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1130_1135_9.3.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "11:30",
+      "endTime": "11:35",
+      "roomId": "ran1-126-room-eed01f30",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "9.3.2",
+      "topicKey": "53239799",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "12:30 - 13:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.6",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -2491,12 +2674,12 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_10.8",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1225_10.8",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "11:40",
-      "endTime": "12:20",
+      "endTime": "12:25",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
       "topic": "Sensing",
@@ -2526,33 +2709,6 @@
       "derivation": "split-from-parent",
       "confidence": 0.85,
       "parentAgendaItem": "10",
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_6g-isac",
-      "meetingId": "ran1-126",
-      "date": "2026-08-25",
-      "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-126-room-8f500d5b",
-      "roomName": "1.1 Himalaya",
-      "topic": "6G ISAC",
-      "topicKey": "9c8335f3",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "10.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.7,
       "detailAvailable": false
     },
     {
@@ -2744,21 +2900,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1220_1300_10.8.3",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1225_1300_10.8.3",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
-      "startTime": "12:20",
+      "startTime": "12:25",
       "endTime": "13:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
       "topic": "(40),",
-      "topicKey": "9c8335f3",
+      "topicKey": "5ef55a59",
       "agendaItems": [
         "10.8.3"
       ],
       "agendaBreakdown": [],
-      "group": "10.2.1",
+      "group": "6G waveform",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3062,33 +3218,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1545_10.3.1",
+      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1505_9.3.3",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "15:00",
-      "endTime": "15:45",
+      "endTime": "15:05",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.3.1",
-      "topicKey": "f8e05aee",
+      "topic": "9.3.3",
+      "topicKey": "f604a95b",
       "agendaItems": [
-        "10.3.1"
+        "9.3.3"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Sorour",
-      "group": "6GR",
+      "group": "14:30 - 15:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.3",
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -3159,7 +3314,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1520_1600_a-iot-phase2",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1520_1600_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
@@ -3167,7 +3322,7 @@
       "endTime": "16:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -3331,21 +3486,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1600_1630_9.3.2",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1600_1605_9.3.2",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "16:00",
-      "endTime": "16:30",
+      "endTime": "16:05",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
       "topic": "9.3.2",
-      "topicKey": "f954f92b",
+      "topicKey": "c8a3825d",
       "agendaItems": [
         "9.3.2"
       ],
       "agendaBreakdown": [],
-      "group": "9.3.2",
+      "group": "8.2 R19 FR3/ISAC CM, A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3538,7 +3693,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_1-1-himalaya_1700_1930_a-iot-phase2",
+      "sessionId": "ran1-126_tue_1-1-himalaya_1700_1930_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
@@ -3546,7 +3701,7 @@
       "endTime": "19:30",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -3623,7 +3778,7 @@
       "endTime": "18:00",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "10.5.4.x",
+      "topic": "6G",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.5.4.x"
@@ -3807,41 +3962,90 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_0-4-brussels_1800_1830_10.5.2.2",
+      "sessionId": "ran1-126_tue_0-4-brussels_1800_1805_10.5.4.2",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
       "startTime": "18:00",
-      "endTime": "18:30",
+      "endTime": "18:05",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "10.5.2.2",
-      "topicKey": "f8e05aee",
+      "topic": "10.5.4.2",
+      "topicKey": "f106b8df",
       "agendaItems": [
-        "10.5.2.2"
+        "10.5.4.2"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Sorouri",
-      "group": "6GR",
+      "group": "17:00 - 18:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5.2",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_tue_0-4-brussels_1805_1810_10.5.4.4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "18:05",
+      "endTime": "18:10",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.4",
+      "topicKey": "f106b8df",
+      "agendaItems": [
+        "10.5.4.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "17:00 - 18:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_tue_0-4-brussels_1810_1815_10.5.4.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-25",
+      "day": "Tuesday",
+      "startTime": "18:10",
+      "endTime": "18:15",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.1",
+      "topicKey": "f106b8df",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "17:00 - 18:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -4501,7 +4705,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_praetorium_0950_1030_mimo",
+      "sessionId": "ran1-126_wed_praetorium_0950_1030_r20-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
@@ -4509,7 +4713,7 @@
       "endTime": "10:30",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "MIMO",
+      "topic": "R20 NR",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -4607,35 +4811,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.8.2",
-      "meetingId": "ran1-126",
-      "date": "2026-08-26",
-      "day": "Wednesday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-126-room-eed01f30",
-      "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": ",",
-      "topicKey": "37479250",
-      "agendaItems": [
-        "10.8.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.8.2, 10.8.3",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -4840,6 +5015,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.6",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1130_1135_10.5.4.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "11:30",
+      "endTime": "11:35",
+      "roomId": "ran1-126-room-eed01f30",
+      "roomName": "0.6/0.7 Madrid/Lisbon",
+      "topic": "10.5.4.1",
+      "topicKey": "53239799",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "12:30 - 13:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -5056,11 +5260,40 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_1-1-himalaya_1220_1300_10.2.1",
+      "sessionId": "ran1-126_wed_1-1-himalaya_1220_1225_10.2.1",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "12:20",
+      "endTime": "12:25",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.2.1",
+      "topicKey": "c63f99f3",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_1-1-himalaya_1225_1300_10.2.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "12:25",
       "endTime": "13:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
@@ -5073,6 +5306,7 @@
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
+      "note": "Detailed timing not available",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -5083,18 +5317,14 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-d847dd04",
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "derivation": "split-from-parent",
+      "confidence": 0.85,
       "parentAgendaItem": "10.2",
-      "detailAvailable": true
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1230_1300_10.5.4",
@@ -5340,7 +5570,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_0-4-brussels_1430_1630_a-iot",
+      "sessionId": "ran1-126_wed_0-4-brussels_1430_1630_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
@@ -5348,7 +5578,7 @@
       "endTime": "16:30",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "A-IoT",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -6047,11 +6277,98 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_wed_0-4-brussels_1800_1830_ntn-nr",
+      "sessionId": "ran1-126_wed_0-4-brussels_1800_1805_10.5.4.3",
       "meetingId": "ran1-126",
       "date": "2026-08-26",
       "day": "Wednesday",
       "startTime": "18:00",
+      "endTime": "18:05",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.3",
+      "topicKey": "c3ccde9c",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "18:30 - 19:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_0-4-brussels_1805_1810_10.5.4.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "18:05",
+      "endTime": "18:10",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.2",
+      "topicKey": "c3ccde9c",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "18:30 - 19:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_0-4-brussels_1810_1815_10.5.4.4",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "18:10",
+      "endTime": "18:15",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.5.4.4",
+      "topicKey": "c3ccde9c",
+      "agendaItems": [
+        "10.5.4.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "18:30 - 19:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_wed_0-4-brussels_1815_1830_ntn-nr",
+      "meetingId": "ran1-126",
+      "date": "2026-08-26",
+      "day": "Wednesday",
+      "startTime": "18:15",
       "endTime": "18:30",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
@@ -6063,6 +6380,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "Detailed timing not available",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -6077,9 +6395,9 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
+      "derivation": "split-from-parent",
+      "confidence": 0.75,
+      "detailAvailable": false
     },
     {
       "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1830_1900_10.4.2",
@@ -6378,7 +6696,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_1-1-himalaya_0830_0910_6gr",
+      "sessionId": "ran1-126_thu_1-1-himalaya_0830_0910_6g-waveform",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
@@ -6386,7 +6704,7 @@
       "endTime": "09:10",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "6GR",
+      "topic": "6G waveform",
       "topicKey": "7e6989e7",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -6494,41 +6812,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_0850_0950_10.5.3.1",
+      "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_0850_0855_10.5.4.1",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "08:50",
-      "endTime": "09:50",
+      "endTime": "08:55",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "10.5.3.1",
-      "topicKey": "f8e05aee",
+      "topic": "10.5.4.1",
+      "topicKey": "dcee124b",
       "agendaItems": [
-        "10.5.3.1"
+        "10.5.4.1"
       ],
       "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "6GR",
+      "group": "8:30 - 8:50",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5.3",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -6611,12 +6920,13 @@
       "endTime": "09:50",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Waveform",
+      "topic": "10.2.1",
       "topicKey": "7e6989e7",
       "agendaItems": [
         "10.2.1"
       ],
       "agendaBreakdown": [],
+      "sessionLead": "Maintenance",
       "group": "AI 7/8.2",
       "kind": "session",
       "status": "scheduled",
@@ -6627,6 +6937,10 @@
         },
         {
           "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         },
         {
@@ -6864,7 +7178,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_praetorium_1100_1220_r20",
+      "sessionId": "ran1-126_thu_praetorium_1100_1220_r20-nr",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
@@ -6872,7 +7186,7 @@
       "endTime": "12:20",
       "roomId": "ran1-126-room-733c1e66",
       "roomName": "Praetorium",
-      "topic": "R20",
+      "topic": "R20 NR",
       "topicKey": "2784a7d6",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -6898,42 +7212,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_1-1-himalaya_1100_1300_a-iot-phase2",
+      "sessionId": "ran1-126_thu_1-1-himalaya_1100_1140_9.3.2",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "11:00",
-      "endTime": "13:00",
+      "endTime": "11:40",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "9.3.2",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.2"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
-      "note": "9.3.2, 9.3.3, 9.3.1",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -7115,6 +7419,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126_thu_1-1-himalaya_1140_1220_9.3.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "9.3.3",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_1215_1300_10.5.2.3",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -7224,21 +7557,108 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_0-4-brussels_1230_1300_10.8.1",
+      "sessionId": "ran1-126_thu_1-1-himalaya_1220_1300_9.3.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "12:20",
+      "endTime": "13:00",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1230_1235_10.8.1",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "12:30",
-      "endTime": "13:00",
+      "endTime": "12:35",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": ", ,",
-      "topicKey": "218e92c5",
+      "topic": "10.8.1",
+      "topicKey": "d112992c",
       "agendaItems": [
         "10.8.1"
       ],
       "agendaBreakdown": [],
-      "group": "10.8.1, 10.8.2, 10.8.3",
+      "group": "11:30 - 13:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1235_1240_10.8.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "12:35",
+      "endTime": "12:40",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.8.2",
+      "topicKey": "d112992c",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "11:30 - 13:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1240_1245_10.8.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "12:40",
+      "endTime": "12:45",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "10.8.3",
+      "topicKey": "d112992c",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "11:30 - 13:00",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -7356,40 +7776,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_1-1-himalaya_1430_1630_10.8",
+      "sessionId": "ran1-126_thu_1-1-himalaya_1430_1510_10.8.1",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "16:30",
+      "endTime": "15:10",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "10.8.1",
+      "topicKey": "c63f99f3",
       "agendaItems": [
-        "10.8"
+        "10.8.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -7460,33 +7872,29 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_0-4-brussels_1430_1515_10.3.1",
+      "sessionId": "ran1-126_thu_0-4-brussels_1430_1500_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "15:15",
+      "endTime": "15:00",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "10.3.1",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1"
-      ],
+      "topic": "R20 A-IoT",
+      "topicKey": "ad4cd861",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Sorour",
-      "group": "6GR",
+      "group": "16:00 - 16:30",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-d847dd04",
+          "sourceId": "ran1-126-ebdeb935",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -7519,6 +7927,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126_thu_0-4-brussels_1500_1505_9.3.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:00",
+      "endTime": "15:05",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "9.3.1",
+      "topicKey": "ad4cd861",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "16:00 - 16:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126_thu_expo-foyer_1510_1530_10.6.2",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
@@ -7545,6 +7982,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.6",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_1-1-himalaya_1510_1550_10.8.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:10",
+      "endTime": "15:50",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.8.2",
+      "topicKey": "c63f99f3",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -7716,6 +8182,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_1-1-himalaya_1550_1630_10.8.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "10.8.3",
+      "topicKey": "c63f99f3",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -8009,7 +8504,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_0-4-brussels_1700_1830_a-iot",
+      "sessionId": "ran1-126_thu_0-4-brussels_1700_1830_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
@@ -8017,7 +8512,7 @@
       "endTime": "18:30",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
-      "topic": "A-IoT",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -8197,19 +8692,106 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_thu_0-4-brussels_1830_1930_early-dinner",
+      "sessionId": "ran1-126_thu_0-4-brussels_1830_1835_9.3.1",
       "meetingId": "ran1-126",
       "date": "2026-08-27",
       "day": "Thursday",
       "startTime": "18:30",
+      "endTime": "18:35",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "9.3.1",
+      "topicKey": "0e7df7c5",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "17:00 - 18:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1835_1840_9.3.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "18:35",
+      "endTime": "18:40",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "9.3.2",
+      "topicKey": "0e7df7c5",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "17:00 - 18:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1840_1845_9.3.3",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "18:40",
+      "endTime": "18:45",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "9.3.3",
+      "topicKey": "0e7df7c5",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "17:00 - 18:30",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_thu_0-4-brussels_1845_1930_early-dinner",
+      "meetingId": "ran1-126",
+      "date": "2026-08-27",
+      "day": "Thursday",
+      "startTime": "18:45",
       "endTime": "19:30",
       "roomId": "ran1-126-room-5f8318c0",
       "roomName": "0.4 Brussels",
       "topic": "Early dinner",
-      "topicKey": "1e8a2af3",
+      "topicKey": "0e7df7c5",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "9.3.1, 9.3.2, 9.3.3",
+      "group": "17:00 - 18:30",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -8294,42 +8876,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_fri_1-1-himalaya_0830_1030_a-iot-phase2",
+      "sessionId": "ran1-126_fri_1-1-himalaya_0830_0910_9.3.3",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "09:10",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "9.3.3",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.3"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
-      "note": "9.3.3, 9.3.1, 9.3.2",
       "sources": [
         {
-          "sourceId": "ran1-126-manual-7a737727",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d70cbaf1",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-ebdeb935",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-d847dd04",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -8447,6 +9019,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126_fri_1-1-himalaya_0910_0950_9.3.1",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "09:10",
+      "endTime": "09:50",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126_fri_praetorium_0930_1030_sweep",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -8551,6 +9152,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_fri_1-1-himalaya_0950_1030_9.3.2",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "09:50",
+      "endTime": "10:30",
+      "roomId": "ran1-126-room-8f500d5b",
+      "roomName": "1.1 Himalaya",
+      "topic": "9.3.2",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -8661,7 +9291,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_fri_1-1-himalaya_1100_1300_sweep",
+      "sessionId": "ran1-126_fri_1-1-himalaya_1100_1300_tbd",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -8669,7 +9299,7 @@
       "endTime": "13:00",
       "roomId": "ran1-126-room-8f500d5b",
       "roomName": "1.1 Himalaya",
-      "topic": "Sweep",
+      "topic": "TBD",
       "topicKey": "ef4d07e4",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -8815,40 +9445,6 @@
   ],
   "conflicts": [
     {
-      "conflictId": "conf-ran1-126-room-eed01f30-2026-08-25-15:00",
-      "meetingId": "ran1-126",
-      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1630_10.3.x",
-      "field": "agendaItem",
-      "values": [
-        {
-          "sourceId": "ran1-126-manual-7a737727,ran1-126-d70cbaf1",
-          "value": "10.3.x"
-        },
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "value": "9.3.3"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "conflictId": "conf-ran1-126-room-eed01f30-2026-08-26-10:00",
-      "meetingId": "ran1-126",
-      "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.5.2.1",
-      "field": "agendaItem",
-      "values": [
-        {
-          "sourceId": "ran1-126-manual-7a737727,ran1-126-d70cbaf1,ran1-126-d847dd04",
-          "value": "10.5.2.1"
-        },
-        {
-          "sourceId": "ran1-126-ebdeb935",
-          "value": "10.8.2"
-        }
-      ],
-      "resolved": false
-    },
-    {
       "conflictId": "conf-ran1-126-room-eed01f30-2026-08-27-14:30",
       "meetingId": "ran1-126",
       "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_1430_1510_10.5.3.2",
@@ -8868,7 +9464,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-28T02:19:04Z",
-    "lastAttemptAt": "2026-08-28T02:19:04Z"
+    "lastSuccessfulAt": "2026-08-28T08:36:03Z",
+    "lastAttemptAt": "2026-08-28T08:36:03Z"
   }
 }

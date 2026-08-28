@@ -183,6 +183,24 @@ def _is_group_token(label: str) -> bool:
     return token in GROUP_TOKENS
 
 
+BARE_CODE_RE = re.compile(r"^\.?\d{1,2}(?:\.(?:\d{1,2}|x))+$", re.I)
+
+
+def _code_list(line: str) -> list[str]:
+    """["9.3.3", "9.3.1"] for a line that is only a list of agenda items.
+
+    Sub-chairs often write the item order under a headed block without giving
+    each item its own duration ("R20 A-IoT (120)" / "9.3.3, 9.3.1, 9.3.2").
+    Those codes are the detail of that block and must not be mistaken for a
+    work-area tag, otherwise the block stays undetailed.
+    """
+    parts = [p.strip(" .·-") for p in re.split(r"[,;/]", line) if p.strip(" .·-")]
+    if len(parts) < 1 or not all(BARE_CODE_RE.match(p) for p in parts):
+        return []
+    return parts
+
+
+
 def _parse_cell(text: str) -> list[_Segment]:
     """Split a cell into consecutive sub-blocks.
 
@@ -239,6 +257,17 @@ def _parse_cell(text: str) -> list[_Segment]:
         return allocated >= current.minutes
 
     for line in lines:
+        codes = _code_list(line)
+        if codes and current is not None:
+            # "9.3.3, 9.3.1, 9.3.2" under a head is the ordered list of agenda
+            # items sharing that head's time, not a work-area tag.
+            for code in codes:
+                current.raw += "\n" + code
+                current.slots.append(
+                    _Slot(label=code, minutes=None, group=current_group or current.group)
+                )
+            continue
+
         label, minutes = _split_head(line)
         if not label:
             continue
@@ -255,6 +284,7 @@ def _parse_cell(text: str) -> list[_Segment]:
                 current_group = label
                 current.raw += "\n" + line
             continue
+
 
         if current is None or (heads_new and finished()):
             lead = label if _looks_like_person(label) else None

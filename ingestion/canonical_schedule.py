@@ -95,6 +95,7 @@ class CandidateBlock:
     parentAgendaItem: str | None = None
     derivation: str = "direct"
     order: int = 0
+    affinity: float = 0.0
     origin: Session | None = None
 
     @property
@@ -213,6 +214,32 @@ def _container_code(items: Iterable[str], code: str | None) -> str | None:
     return code.rsplit(".", 1)[0] if "." in code else None
 
 
+def _score_room_affinity(blocks: list[CandidateBlock]) -> None:
+    """How much of each document is about each room.
+
+    A sub-chair's plan spends nearly all of itself on the one room they run, so
+    for that room it outranks the week grid, which spreads over every room.
+    The same document is *not* promoted for a room it only mentions in passing,
+    which keeps one chair's placeholder from overwriting another chair's room.
+    """
+    per_doc: dict[str, int] = {}
+    per_doc_room: dict[tuple[str, str], int] = {}
+    for block in blocks:
+        for source_id in block.sourceIds:
+            per_doc[source_id] = per_doc.get(source_id, 0) + 1
+            key = (source_id, block.roomId)
+            per_doc_room[key] = per_doc_room.get(key, 0) + 1
+    for block in blocks:
+        block.affinity = max(
+            (
+                per_doc_room[(source_id, block.roomId)] / per_doc[source_id]
+                for source_id in block.sourceIds
+                if per_doc.get(source_id)
+            ),
+            default=0.0,
+        )
+
+
 # --- canonicalization --------------------------------------------------------
 
 
@@ -227,6 +254,7 @@ def canonicalize(sessions: list[Session]) -> CanonicalResult:
     candidates: list[CandidateBlock] = []
     for session in sessions:
         candidates.extend(candidates_from_session(session))
+    _score_room_affinity(candidates)
 
     conflicts: list[ScheduleConflict] = []
     out: list[Session] = []
@@ -389,8 +417,18 @@ def _merge_duplicates(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
             merged[key] = block
             continue
         current.sourceIds = list(dict.fromkeys([*current.sourceIds, *block.sourceIds]))
-        if len(block.label or "") > len(current.label or ""):
+        # A document that covers only this room (a sub-chair's own plan) knows
+        # the slot better than the week grid, so its wording wins even when the
+        # grid's placeholder is longer.
+        closer = block.affinity > current.affinity + 0.05
+        if closer or (
+            abs(block.affinity - current.affinity) <= 0.05
+            and len(block.label or "") > len(current.label or "")
+        ):
             current.label = block.label
+            current.topic = block.topic
+            current.origin = block.origin or current.origin
+            current.affinity = max(current.affinity, block.affinity)
         current.note = _join_note(current.note, block.note)
         current.sessionLead = current.sessionLead or block.sessionLead
         current.group = current.group or block.group
