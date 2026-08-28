@@ -1,1 +1,1291 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-126_mon_0-4-brussels_1100_1140_mimo-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_0-4-brussels_1100_1140_mimo",
+    "to": "0.4 Brussels",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Praetorium"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_0-4-brussels_1100_1140_mimo-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_0-4-brussels_1100_1140_mimo",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "15:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_mon_0-4-brussels_1100_1140_mimo-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_0-4-brussels_1100_1140_mimo",
+    "to": "11:40",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_1-1-himalaya_1430_1435_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1430_1435_9.3.1",
+    "to": "1.1 Himalaya 14:30-14:35",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1705_1855_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1705_1855_10.5.4.x",
+    "to": "17:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_mon_1-1-himalaya_1705_1855_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1705_1855_10.5.4.x",
+    "to": "18:55",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "18:50"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1435_1530_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT Phase2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1435_1530_a-iot-phase2",
+    "to": "14:35",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_1-1-himalaya_1540_1630_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "Sensing added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1540_1630_10.8",
+    "to": "1.1 Himalaya 15:40-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1535_1540_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.8.2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1535_1540_10.8.2",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_mon_1-1-himalaya_1535_1540_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.8.2 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1535_1540_10.8.2",
+    "to": "15:40",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_praetorium_1550_1630_r20-nr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 NR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_praetorium_1550_1630_r20-nr",
+    "to": "Praetorium 15:50-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_0-4-brussels_1600_1605_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126_mon_0-4-brussels_1600_1605_10.5.4.1",
+    "to": "0.4 Brussels 16:00-16:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_0-4-brussels_1605_1610_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_mon_0-4-brussels_1605_1610_10.5.4.3",
+    "to": "0.4 Brussels 16:05-16:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_1-1-himalaya_1700_1705_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1700_1705_10.2.1",
+    "to": "1.1 Himalaya 17:00-17:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1855_1925_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "(30), (50), start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1855_1925_10.5.4.3",
+    "to": "18:55",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "18:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_mon_1-1-himalaya_1855_1925_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "(30), (50), end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1855_1925_10.5.4.3",
+    "to": "19:25",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "19:20"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1925_1930_10.5.4-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1925_1930_10.5.4",
+    "to": "19:25",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "19:20"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_praetorium_0950_1030_r20-nr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 NR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_praetorium_0950_1030_r20-nr",
+    "to": "Praetorium 09:50-10:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1000_1005_10.8.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1000_1005_10.8.3",
+    "to": "0.4 Brussels 10:00-10:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1005_1010_10.8.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1005_1010_10.8.1",
+    "to": "0.4 Brussels 10:05-10:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_1-1-himalaya_1100_1105_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1100_1105_10.2.1",
+    "to": "1.1 Himalaya 11:00-11:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_1105_1140_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1105_1140_10.2.1",
+    "to": "11:05",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_1-1-himalaya_1600_1605_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "9.3.2 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1600_1605_9.3.2",
+    "to": "16:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_1-1-himalaya_1140_1225_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "Sensing end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1225_10.8",
+    "to": "12:25",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "12:20"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_1225_1300_10.8.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "(40), start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1225_1300_10.8.3",
+    "to": "12:25",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "12:20"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1505_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1505_9.3.3",
+    "to": "0.6/0.7 Madrid/Lisbon 15:00-15:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_1-1-himalaya_1700_1930_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1700_1930_r20-a-iot",
+    "to": "1.1 Himalaya 17:00-19:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1700_1800_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "6G added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1700_1800_10.5.4.x",
+    "to": "0.4 Brussels 17:00-18:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1800_1805_10.5.4.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.2"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1800_1805_10.5.4.2",
+    "to": "0.4 Brussels 18:00-18:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1805_1810_10.5.4.4-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.4 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1805_1810_10.5.4.4",
+    "to": "0.4 Brussels 18:05-18:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_0-4-brussels_1810_1815_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1810_1815_10.5.4.1",
+    "to": "0.4 Brussels 18:10-18:15",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_0-4-brussels_1815_1830_ntn-nr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "NTN-NR start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_0-4-brussels_1815_1830_ntn-nr",
+    "to": "18:15",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1225_1300_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1225_1300_10.2.1",
+    "to": "12:25",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "12:20"
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_praetorium_0950_1030_r20-nr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 NR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_praetorium_0950_1030_r20-nr",
+    "to": "Praetorium 09:50-10:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_0-6-0-7-madrid-lisbon_1130_1135_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1130_1135_10.5.4.1",
+    "to": "0.6/0.7 Madrid/Lisbon 11:30-11:35",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_1-1-himalaya_1220_1225_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1220_1225_10.2.1",
+    "to": "1.1 Himalaya 12:20-12:25",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_0-4-brussels_1430_1630_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_0-4-brussels_1430_1630_r20-a-iot",
+    "to": "0.4 Brussels 14:30-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_0-4-brussels_1800_1805_10.5.4.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_wed_0-4-brussels_1800_1805_10.5.4.3",
+    "to": "0.4 Brussels 18:00-18:05",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_0-4-brussels_1805_1810_10.5.4.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.2"
+    ],
+    "sessionId": "ran1-126_wed_0-4-brussels_1805_1810_10.5.4.2",
+    "to": "0.4 Brussels 18:05-18:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_0-4-brussels_1810_1815_10.5.4.4-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.4 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126_wed_0-4-brussels_1810_1815_10.5.4.4",
+    "to": "0.4 Brussels 18:10-18:15",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_0830_0910_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "6G waveform added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0830_0910_6g-waveform",
+    "to": "1.1 Himalaya 08:30-09:10",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_0-6-0-7-madrid-lisbon_0850_0855_10.5.4.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.5.4.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.1"
+    ],
+    "sessionId": "ran1-126_thu_0-6-0-7-madrid-lisbon_0850_0855_10.5.4.1",
+    "to": "0.6/0.7 Madrid/Lisbon 08:50-08:55",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_0910_0950_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0910_0950_10.2.1",
+    "to": "1.1 Himalaya 09:10-09:50",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_praetorium_1100_1220_r20-nr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 NR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_praetorium_1100_1220_r20-nr",
+    "to": "Praetorium 11:00-12:20",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_0-4-brussels_1835_1840_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_thu_0-4-brussels_1835_1840_9.3.2",
+    "to": "0.4 Brussels 18:35-18:40",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_0-4-brussels_1840_1845_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126_thu_0-4-brussels_1840_1845_9.3.3",
+    "to": "0.4 Brussels 18:40-18:45",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_0-4-brussels_1830_1835_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_thu_0-4-brussels_1830_1835_9.3.1",
+    "to": "0.4 Brussels 18:30-18:35",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_1430_1510_10.8.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1430_1510_10.8.1",
+    "to": "1.1 Himalaya 14:30-15:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_1510_1550_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1510_1550_10.8.2",
+    "to": "1.1 Himalaya 15:10-15:50",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_1550_1630_10.8.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.8.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1550_1630_10.8.3",
+    "to": "1.1 Himalaya 15:50-16:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_0-4-brussels_1700_1830_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1700_1830_r20-a-iot",
+    "to": "0.4 Brussels 17:00-18:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_thu_0-4-brussels_1600_1630_a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1600_1630_a-iot",
+    "to": "16:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_thu_0-4-brussels_1600_1630_a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1600_1630_a-iot",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_thu_0-4-brussels_1845_1930_early-dinner-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "Early dinner start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_0-4-brussels_1845_1930_early-dinner",
+    "to": "18:45",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_1-1-himalaya_0830_0910_9.3.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126_fri_1-1-himalaya_0830_0910_9.3.3",
+    "to": "1.1 Himalaya 08:30-09:10",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_1-1-himalaya_0910_0950_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_fri_1-1-himalaya_0910_0950_9.3.1",
+    "to": "1.1 Himalaya 09:10-09:50",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_praetorium_1100_1300_sweep-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "Sweep moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_praetorium_1100_1300_sweep",
+    "to": "Praetorium",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_1-1-himalaya_0950_1030_9.3.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_fri_1-1-himalaya_0950_1030_9.3.2",
+    "to": "1.1 Himalaya 09:50-10:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_1-1-himalaya_1100_1300_tbd-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "TBD added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_1-1-himalaya_1100_1300_tbd",
+    "to": "1.1 Himalaya 11:00-13:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_0-6-0-7-madrid-lisbon_1200_1300_10.8.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Sensing removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8.x"
+    ],
+    "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1200_1300_10.8.x",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.6/0.7 Madrid/Lisbon"
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_0-4-brussels_1430_1600_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "10.5.4.x removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_mon_0-4-brussels_1430_1600_10.5.4.x",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_0-4-brussels_1600_1630_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Waveform removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_mon_0-4-brussels_1600_1630_10.2.1",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_praetorium_0950_1030_mimo-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_praetorium_0950_1030_mimo",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Praetorium"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_1-1-himalaya_1140_1220_6g-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "6G ISAC removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1220_6g-isac",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1545_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "10.3.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1500_1545_10.3.1",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.6/0.7 Madrid/Lisbon"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_1-1-himalaya_1700_1930_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1700_1930_a-iot-phase2",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_0-4-brussels_1700_1800_10.5.4.x-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "10.5.4.x removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_tue_0-4-brussels_1700_1800_10.5.4.x",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.8.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": ", removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_wed_0-6-0-7-madrid-lisbon_1000_1030_10.8.2",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "0.6/0.7 Madrid/Lisbon"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_0-4-brussels_1430_1630_a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_0-4-brussels_1430_1630_a-iot",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_1-1-himalaya_0830_0910_6gr-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "6GR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0830_0910_6gr",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_1-1-himalaya_0910_0950_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Waveform removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0910_0950_10.2.1",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_praetorium_1100_1220_r20-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R20 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_praetorium_1100_1220_r20",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Praetorium"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_1-1-himalaya_1100_1300_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1100_1300_a-iot-phase2",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_0-4-brussels_1230_1300_10.8.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": ", , removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-126_thu_0-4-brussels_1230_1300_10.8.1",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_1-1-himalaya_1430_1630_10.8-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Sensing removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1430_1630_10.8",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_0-4-brussels_1430_1515_10.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "10.3.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-126_thu_0-4-brussels_1430_1515_10.3.1",
+    "sourceIds": [
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "session_removed-ran1-126_fri_1-1-himalaya_0830_1030_a-iot-phase2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "A-IoT Phase2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_1-1-himalaya_0830_1030_a-iot-phase2",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "1.1 Himalaya"
+  }
+]

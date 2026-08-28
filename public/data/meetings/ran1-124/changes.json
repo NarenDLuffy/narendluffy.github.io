@@ -1,1 +1,841 @@
-[]
+[
+  {
+    "changeId": "start_time_changed-ran1-124_mon_level-1_1705_1835_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_level-1_1705_1835_r20-a-iot",
+    "to": "17:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_mon_level-1_1705_1835_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_level-1_1705_1835_r20-a-iot",
+    "to": "18:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "session_added-ran1-124_mon_level-1_1700_1705_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124_mon_level-1_1700_1705_9.5.1",
+    "to": "Level 1 17:00-17:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_mon_level-1_1835_1840_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124_mon_level-1_1835_1840_9.3.1",
+    "to": "Level 1 18:35-18:40",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_mon_level-1_1840_1845_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124_mon_level-1_1840_1845_9.3.2.2",
+    "to": "Level 1 18:40-18:45",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_tue_level-1_0830_0930_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124_tue_level-1_0830_0930_9.3.2.1",
+    "to": "Level 1 08:30-09:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_tue_level-1_1840_1930_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1840_1930_9.3.2.3",
+    "to": "Level 1 18:40-19:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_tue_level-1_1100_1105_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1100_1105_9.5.1",
+    "to": "Level 1 11:00-11:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124_tue_a3_1100_1200_isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_a3_1100_1200_isac",
+    "to": "A3",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_tue_a3_1100_1200_isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_a3_1100_1200_isac",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
+    ],
+    "from": "12:20"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_tue_a3_1100_1200_isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_a3_1100_1200_isac",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "room_changed-ran1-124_tue_j2_1220_1300_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "R20 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_j2_1220_1300_r20-isac",
+    "to": "J2",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "City View 8"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_tue_j2_1220_1300_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_j2_1220_1300_r20-isac",
+    "to": "12:20",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_tue_j2_1220_1300_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_j2_1220_1300_r20-isac",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "11:40"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_tue_level-1_1105_1205_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_level-1_1105_1205_6g-waveform",
+    "to": "11:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_tue_level-1_1105_1205_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_level-1_1105_1205_6g-waveform",
+    "to": "12:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_tue_level-1_1205_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.2.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1205_1210_10.2.1",
+    "to": "12:05",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_tue_level-1_1205_1210_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1205_1210_10.2.1",
+    "to": "12:10",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124_tue_level-1_1700_1750_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1700_1750_9.3.1",
+    "to": "Level 1 17:00-17:50",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_tue_level-1_1750_1840_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124_tue_level-1_1750_1840_9.3.2.2",
+    "to": "Level 1 17:50-18:40",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_0830_0835_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.5.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124_wed_level-1_0830_0835_9.5.1",
+    "to": "Level 1 08:30-08:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_wed_level-1_0835_0935_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "6G waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_wed_level-1_0835_0935_6g-waveform",
+    "to": "08:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_wed_level-1_0835_0935_6g-waveform-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "6G waveform end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_wed_level-1_0835_0935_6g-waveform",
+    "to": "09:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "09:30"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_wed_level-1_0935_0940_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "10.2.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_wed_level-1_0935_0940_10.2.1",
+    "to": "09:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "09:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_wed_level-1_0935_0940_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_wed_level-1_0935_0940_10.2.1",
+    "to": "09:40",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_1100_1200_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124_wed_level-1_1100_1200_9.3.2.1",
+    "to": "Level 1 11:00-12:00",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_1200_1300_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124_wed_level-1_1200_1300_9.3.2.3",
+    "to": "Level 1 12:00-13:00",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_1700_1730_9.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3"
+    ],
+    "sessionId": "ran1-124_wed_level-1_1700_1730_9.3",
+    "to": "Level 1 17:00-17:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_1730_1800_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124_wed_level-1_1730_1800_9.3.1",
+    "to": "Level 1 17:30-18:00",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_wed_level-1_1800_1830_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124_wed_level-1_1800_1830_9.3.2.2",
+    "to": "Level 1 18:00-18:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_thu_level-1_1535_1540_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "9.5.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1535_1540_9.5.1",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_thu_level-1_1535_1540_9.5.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "9.5.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1535_1540_9.5.1",
+    "to": "15:40",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "room_changed-ran1-124_thu_j2_1530_1630_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_1530_1630_r20-a-iot",
+    "to": "J2",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_thu_j2_1530_1630_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 A-IoT start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_1530_1630_r20-a-iot",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_thu_j2_1530_1630_r20-a-iot-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 A-IoT end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_1530_1630_r20-a-iot",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "19:30"
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1700_1730_9.3.2.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.3"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1700_1730_9.3.2.3",
+    "to": "Level 1 17:00-17:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1900_1930_9.3-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1900_1930_9.3",
+    "to": "Level 1 19:00-19:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1730_1800_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1730_1800_9.3.1",
+    "to": "Level 1 17:30-18:00",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1800_1830_9.3.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.1"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1800_1830_9.3.2.1",
+    "to": "Level 1 18:00-18:30",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1830_1900_9.3.2.2-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "9.3.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.2.2"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1830_1900_9.3.2.2",
+    "to": "Level 1 18:30-19:00",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_level-1_1430_1435_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "10.2.1 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_thu_level-1_1430_1435_10.2.1",
+    "to": "Level 1 14:30-14:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_thu_level-1_1435_1535_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "start_time_changed",
+    "title": "R20 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_level-1_1435_1535_r20-isac",
+    "to": "14:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_thu_level-1_1435_1535_r20-isac-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "R20 ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_level-1_1435_1535_r20-isac",
+    "to": "15:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "15:30"
+  },
+  {
+    "changeId": "session_added-ran1-124_thu_j2_1700_1740_r20-coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_added",
+    "title": "R20 Coverage added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_1700_1740_r20-coverage",
+    "to": "J2 17:00-17:40",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ]
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_fri_level-1_0930_0935_10.2.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "end_time_changed",
+    "title": "10.2.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-124_fri_level-1_0930_0935_10.2.1",
+    "to": "09:35",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "session_removed-ran1-124_mon_level-1_1830_1930_9.3.1-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": ", removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-124_mon_level-1_1830_1930_9.3.1",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124_thu_level-1_0830_0930_maintenance-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Maintenance removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_level-1_0830_0930_maintenance",
+    "sourceIds": [
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "Level 1"
+  },
+  {
+    "changeId": "session_removed-ran1-124_thu_j2_0830_0930_r20-mimo-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "R20 MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_0830_0930_r20-mimo",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "session_removed-ran1-124_thu_j2_1700_1740_coverage-2026-08-28T08:36:15+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-08-28T08:36:15+00:00",
+    "type": "session_removed",
+    "title": "Coverage removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_thu_j2_1700_1740_coverage",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c",
+      "ran1-124-f68f89f5",
+      "ran1-124-2da12645"
+    ],
+    "from": "J2"
+  }
+]
