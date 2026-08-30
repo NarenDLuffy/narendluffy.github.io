@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-29T22:50:47Z",
+  "generatedAt": "2026-08-30T06:45:10Z",
   "meetingId": "ran1-124-bis",
   "sessions": [
     {
@@ -31,10 +31,6 @@
         },
         {
           "sourceId": "ran1-124-bis-865cd34e",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -94,10 +90,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -136,10 +128,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -171,10 +159,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -239,10 +223,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -275,10 +255,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -310,10 +286,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -376,10 +348,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -409,14 +377,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -446,10 +410,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -483,10 +443,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -547,48 +503,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_mon_b-online-session_1235_1300_10.5.1.3",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "12:35",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-58952dbd",
-      "roomName": "b Online Session",
-      "topic": "10.5.1.3",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.1.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
     {
@@ -612,6 +531,35 @@
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_b-online-session_1235_1300_10.5.1.3",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "12:35",
+      "endTime": "13:00",
+      "roomId": "ran1-124-bis-room-58952dbd",
+      "roomName": "b Online Session",
+      "topic": "10.5.1.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.1.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
@@ -680,10 +628,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -712,14 +656,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -813,7 +753,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_9.5",
+      "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
@@ -821,24 +761,25 @@
       "endTime": "15:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-NR",
+      "topic": "NTN-NR",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.5"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -869,10 +810,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -902,14 +839,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -939,10 +872,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1001,14 +930,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -1051,7 +976,7 @@
       "endTime": "16:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN",
+      "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
@@ -1067,10 +992,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1130,14 +1051,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -1199,10 +1116,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1268,10 +1181,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -1301,14 +1210,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -1376,10 +1281,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -1408,14 +1309,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -1515,7 +1412,7 @@
       "endTime": "18:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  Channel coding",
+      "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.3.1"
@@ -1531,10 +1428,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1564,14 +1457,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "detailAvailable": false
     },
     {
@@ -1627,10 +1516,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -1664,10 +1549,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1750,14 +1631,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -1843,14 +1720,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -1921,7 +1794,7 @@
       "endTime": "18:50",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  Modulation",
+      "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.3.2"
@@ -1937,10 +1810,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -1974,10 +1843,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -2006,14 +1871,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -2069,14 +1930,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -2162,10 +2019,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -2194,19 +2047,15 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_9.2",
+      "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_mimo",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
@@ -2214,24 +2063,25 @@
       "endTime": "19:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
+      "topic": "MIMO",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.2"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -2314,14 +2164,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -2414,7 +2260,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_0830_0910_9.5",
+      "sessionId": "ran1-124-bis_tue_palm-suite_0830_0910_ntn-nr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
@@ -2422,24 +2268,25 @@
       "endTime": "09:10",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-NR",
+      "topic": "NTN-NR",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.5"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -2499,10 +2346,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -2536,10 +2379,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -2605,7 +2444,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_0910_0950_9.6",
+      "sessionId": "ran1-124-bis_tue_palm-suite_0910_0950_ntn-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
@@ -2613,24 +2452,25 @@
       "endTime": "09:50",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-IoT",
+      "topic": "NTN-IoT",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.6"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -2659,10 +2499,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -2693,14 +2529,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -2823,10 +2655,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -2855,14 +2683,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "detailAvailable": false
     },
     {
@@ -2874,7 +2698,7 @@
       "endTime": "10:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN",
+      "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
@@ -2890,10 +2714,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -2924,14 +2744,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -2995,10 +2811,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -3037,10 +2849,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -3069,14 +2877,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.6",
       "detailAvailable": true
     },
@@ -3198,32 +3002,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1100_1140_8.1",
+      "sessionId": "ran1-124-bis_tue_palm-suite_1100_1300_ai-6-7-8",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:40",
+      "endTime": "13:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  AI/ML",
+      "topic": "AI 6/7/8",
       "topicKey": "82d4d406",
-      "agendaItems": [
-        "8.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "AI 6/7/8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -3281,10 +3086,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -3372,35 +3173,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1140_1220_8.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
-      "topicKey": "82d4d406",
-      "agendaItems": [
-        "8.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_tue_j2_1140_1220_r20-coverage",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -3482,10 +3254,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -3544,14 +3312,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10",
       "detailAvailable": true
     },
@@ -3614,76 +3378,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1220_1300_ai-6-7-8",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI 6/7/8",
-      "topicKey": "82d4d406",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1220_1300_ai-6-7",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI 6/7",
-      "topicKey": "82d4d406",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -3739,10 +3438,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -3772,14 +3467,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -3847,10 +3538,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -3879,14 +3566,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -3983,7 +3666,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1430_1630_9.1",
+      "sessionId": "ran1-124-bis_tue_palm-suite_1430_1630_ai-ml",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
@@ -3991,24 +3674,25 @@
       "endTime": "16:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  AI/ML",
+      "topic": "AI/ML",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4063,14 +3747,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4100,10 +3780,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -4165,14 +3841,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4202,10 +3874,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -4237,14 +3905,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4326,14 +3990,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -4393,14 +4053,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4426,14 +4082,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -4501,10 +4153,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -4533,14 +4181,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4633,32 +4277,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1700_1740_9.2",
+      "sessionId": "ran1-124-bis_tue_palm-suite_1700_1800_10.3.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "17:40",
+      "endTime": "18:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
-      "topicKey": "2bfc3eac",
+      "topic": "Channel coding",
+      "topicKey": "f8e05aee",
       "agendaItems": [
-        "9.2"
+        "10.3.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
     {
@@ -4713,14 +4357,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -4748,10 +4388,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -4807,14 +4443,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -4881,39 +4513,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1740_1840_10.3.1",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "17:40",
-      "endTime": "18:40",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  Channel coding",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_tue_j2_1740_1810_10.7.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -4939,10 +4538,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -4981,6 +4576,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_palm-suite_1800_1850_10.3.2",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "18:50",
+      "roomId": "ran1-124-bis-room-f4a959bb",
+      "roomName": "Palm Suite",
+      "topic": "Modulation",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_j1_1800_1850_10.5.0",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -5003,14 +4627,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -5072,10 +4692,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -5104,14 +4720,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -5174,39 +4786,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_tue_palm-suite_1840_1930_10.3.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-14",
-      "day": "Tuesday",
-      "startTime": "18:40",
-      "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_tue_b-online-session_1850_1930_10.5.2.4",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -5228,14 +4807,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -5273,6 +4848,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_tue_palm-suite_1850_1930_mimo",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-14",
+      "day": "Tuesday",
+      "startTime": "18:50",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-f4a959bb",
+      "roomName": "Palm Suite",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_tue_j1_1850_1930_10.5.1.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-14",
@@ -5295,14 +4896,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -5328,14 +4925,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -5428,7 +5021,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_palm-suite_0830_0910_9.5",
+      "sessionId": "ran1-124-bis_wed_palm-suite_0830_0910_ntn-nr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
@@ -5436,24 +5029,25 @@
       "endTime": "09:10",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-NR",
+      "topic": "NTN-NR",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.5"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -5513,10 +5107,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -5550,10 +5140,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -5610,14 +5196,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -5648,7 +5230,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_palm-suite_0910_0950_9.6",
+      "sessionId": "ran1-124-bis_wed_palm-suite_0910_0950_ntn-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
@@ -5656,24 +5238,25 @@
       "endTime": "09:50",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-IoT",
+      "topic": "NTN-IoT",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.6"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -5697,14 +5280,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "detailAvailable": false
     },
     {
@@ -5733,10 +5312,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -5768,14 +5343,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.85,
+      "confidence": 0.8,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": false
     },
@@ -5838,10 +5409,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -5930,14 +5497,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -5950,7 +5513,7 @@
       "endTime": "10:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN",
+      "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
@@ -5966,10 +5529,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -6002,10 +5561,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -6124,10 +5679,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -6165,10 +5716,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -6197,14 +5744,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -6297,32 +5840,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_palm-suite_1100_1140_8.4",
+      "sessionId": "ran1-124-bis_wed_palm-suite_1100_1300_ai-6-7-8",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:40",
+      "endTime": "13:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NES",
+      "topic": "AI 6/7/8",
       "topicKey": "82d4d406",
-      "agendaItems": [
-        "8.4"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "AI 6/7/8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -6377,14 +5921,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -6412,10 +5952,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -6472,44 +6008,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_wed_palm-suite_1140_1220_8.6.1",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  NR-NTN",
-      "topicKey": "82d4d406",
-      "agendaItems": [
-        "8.6.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "8.6",
+      "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
     {
@@ -6593,14 +6096,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -6628,10 +6127,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -6661,14 +6156,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -6731,44 +6222,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_wed_palm-suite_1220_1300_8.6.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  IoT-NTN",
-      "topicKey": "82d4d406",
-      "agendaItems": [
-        "8.6.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8.6",
       "detailAvailable": true
     },
     {
@@ -6794,14 +6252,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -6827,14 +6281,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -6902,10 +6352,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -6934,14 +6380,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -7064,7 +6506,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_9.1",
+      "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_ai-ml",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
@@ -7072,24 +6514,25 @@
       "endTime": "15:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  AI/ML",
+      "topic": "AI/ML",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -7148,10 +6591,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -7186,10 +6625,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -7219,14 +6654,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -7316,10 +6747,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -7415,7 +6842,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_9.2",
+      "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_mimo",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
@@ -7423,24 +6850,25 @@
       "endTime": "16:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
-      "topicKey": "9b329b0b",
-      "agendaItems": [
-        "9.2"
-      ],
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI 9.1.1 CSI",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -7469,10 +6897,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -7503,14 +6927,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -7601,10 +7021,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -7642,10 +7058,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -7674,14 +7086,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -7756,7 +7164,7 @@
       "endTime": "17:50",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  Channel coding",
+      "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.3.1"
@@ -7772,10 +7180,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -7840,10 +7244,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -7875,10 +7275,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -7993,14 +7389,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -8062,10 +7454,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -8081,7 +7469,7 @@
       "endTime": "18:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  Modulation",
+      "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.3.2"
@@ -8097,10 +7485,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -8135,10 +7519,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -8203,10 +7583,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -8236,14 +7612,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10",
       "detailAvailable": true
     },
@@ -8302,14 +7674,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -8410,7 +7778,7 @@
       "endTime": "09:10",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN",
+      "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
@@ -8423,14 +7791,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.7",
       "detailAvailable": true
     },
@@ -8457,10 +7821,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -8494,10 +7854,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -8555,14 +7911,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.85,
+      "confidence": 0.8,
       "parentAgendaItem": "10",
       "detailAvailable": false
     },
@@ -8594,7 +7946,7 @@
       "detailAvailable": false
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_0910_0950_9.5",
+      "sessionId": "ran1-124-bis_thu_palm-suite_0910_0950_ntn-iot",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
@@ -8602,24 +7954,25 @@
       "endTime": "09:50",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-IoT",
+      "topic": "NTN-IoT",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.5"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -8644,14 +7997,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -8740,14 +8089,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.85,
+      "confidence": 0.8,
       "parentAgendaItem": "10",
       "detailAvailable": false
     },
@@ -8811,35 +8156,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_0950_1030_9.6",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  NTN-NR",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.6"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_thu_b-online-session-3_0950_1030_ai-8",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -8859,14 +8175,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -8895,10 +8207,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -8929,14 +8237,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -9004,10 +8308,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -9036,14 +8336,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -9162,32 +8458,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1100_1120_8.4",
+      "sessionId": "ran1-124-bis_thu_palm-suite_1100_1300_ai-6-7-8",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "11:00",
-      "endTime": "11:20",
+      "endTime": "13:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NES",
-      "topicKey": "80942804",
-      "agendaItems": [
-        "8.4"
-      ],
+      "topic": "AI 6/7/8",
+      "topicKey": "82d4d406",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI 7/8",
+      "group": "AI 6/7/8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -9246,10 +8543,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -9284,76 +8577,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-7-8",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "11:20",
-      "endTime": "12:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI 7/8",
-      "topicKey": "82d4d406",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 6/7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-7",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "11:20",
-      "endTime": "12:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI 7",
-      "topicKey": "80942804",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -9407,14 +8635,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.6",
       "detailAvailable": true
     },
@@ -9536,44 +8760,11 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1200_1240_8.6",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "12:00",
-      "endTime": "12:40",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  NTN",
-      "topicKey": "80942804",
-      "agendaItems": [
-        "8.6"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -9600,10 +8791,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -9696,10 +8883,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -9737,35 +8920,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1240_1300_8.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "12:40",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
-      "topicKey": "80942804",
-      "agendaItems": [
-        "8.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 7/8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_thu_x_1300_1430_lunch-break",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -9796,10 +8950,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -9828,14 +8978,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -9902,7 +9048,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_9.1",
+      "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_ai-ml",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
@@ -9910,24 +9056,25 @@
       "endTime": "16:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  AI/ML",
+      "topic": "AI/ML",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -9982,14 +9129,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10019,10 +9162,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -10135,14 +9274,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10169,14 +9304,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10264,10 +9395,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -10297,14 +9424,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -10364,14 +9487,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10399,10 +9518,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -10432,14 +9547,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -10507,10 +9618,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -10539,14 +9646,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10668,32 +9771,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1700_1740_9.2",
+      "sessionId": "ran1-124-bis_thu_palm-suite_1700_1800_10.3.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "17:40",
+      "endTime": "18:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  MIMO",
-      "topicKey": "2bfc3eac",
+      "topic": "Channel coding",
+      "topicKey": "f8e05aee",
       "agendaItems": [
-        "9.2"
+        "10.3.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
     {
@@ -10748,14 +9851,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -10894,14 +9993,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10968,39 +10063,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1740_1840_10.3.1",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "17:40",
-      "endTime": "18:40",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  Channel coding",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_thu_level-1_1800_1830_9.3.2.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -11027,6 +10089,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "9.3.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_palm-suite_1800_1850_10.3.2",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "18:50",
+      "roomId": "ran1-124-bis-room-f4a959bb",
+      "roomName": "Palm Suite",
+      "topic": "Modulation",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
     {
@@ -11080,14 +10171,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -11112,14 +10199,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -11237,14 +10320,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "split-from-parent",
-      "confidence": 0.85,
+      "confidence": 0.8,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": false
     },
@@ -11305,39 +10384,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_palm-suite_1840_1930_10.3.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "18:40",
-      "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-f4a959bb",
-      "roomName": "Palm Suite",
-      "topic": "AI  Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_thu_b-online-session_1850_1930_10.5.2.4",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
@@ -11359,14 +10405,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -11401,6 +10443,32 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_thu_palm-suite_1850_1930_mimo",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-16",
+      "day": "Thursday",
+      "startTime": "18:50",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-f4a959bb",
+      "roomName": "Palm Suite",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -11569,14 +10637,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -11640,7 +10704,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_fri_palm-suite_0830_0930_9.1",
+      "sessionId": "ran1-124-bis_fri_palm-suite_0830_0930_ai-ml",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
       "day": "Friday",
@@ -11648,24 +10712,25 @@
       "endTime": "09:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  AI/ML",
+      "topic": "AI/ML",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -11725,36 +10790,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_fri_j1_0830_0910_10.5.5",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-17",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-124-bis-room-67921242",
-      "roomName": "J1",
-      "topic": "10.5.5",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.5"
-      ],
-      "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
     {
@@ -11839,14 +10874,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10",
       "detailAvailable": true
     },
@@ -11902,14 +10933,10 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -11976,7 +11003,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_fri_palm-suite_0930_1000_9.5",
+      "sessionId": "ran1-124-bis_fri_palm-suite_0930_1000_ntn-nr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
       "day": "Friday",
@@ -11984,24 +11011,25 @@
       "endTime": "10:00",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN-NR",
+      "topic": "NTN-NR",
       "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.5"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-bis-71bc694d",
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -12072,7 +11100,7 @@
       "endTime": "10:30",
       "roomId": "ran1-124-bis-room-f4a959bb",
       "roomName": "Palm Suite",
-      "topic": "AI  NTN",
+      "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.7.1"
@@ -12088,10 +11116,6 @@
         },
         {
           "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -12160,10 +11184,6 @@
         },
         {
           "sourceId": "ran1-124-bis-865cd34e",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
           "contributed": []
         }
       ],
@@ -12435,10 +11455,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -12500,10 +11516,6 @@
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -12541,10 +11553,6 @@
         {
           "sourceId": "ran1-124-bis-865cd34e",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
         }
       ],
       "derivation": "direct",
@@ -12564,42 +11572,8 @@
           "value": "10.5.1.2"
         },
         {
-          "sourceId": "ran1-124-bis-ddab9127,ran1-124-bis-71bc694d",
-          "value": "10.5.1.3"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "conflictId": "conf-ran1-124-bis-room-f4a959-2026-04-16-09:50",
-      "meetingId": "ran1-124-bis",
-      "sessionId": "ran1-124-bis_thu_palm-suite_0950_1030_10.7.1",
-      "field": "agendaItem",
-      "values": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "value": "10.7.1"
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "value": "9.6"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "conflictId": "conf-ran1-124-bis-room-679212-2026-04-17-08:30",
-      "meetingId": "ran1-124-bis",
-      "sessionId": "ran1-124-bis_fri_j1_0830_0910_10.6.1",
-      "field": "agendaItem",
-      "values": [
-        {
           "sourceId": "ran1-124-bis-ddab9127",
-          "value": "10.6.1"
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "value": "10.5.5"
+          "value": "10.5.1.3"
         }
       ],
       "resolved": false
@@ -12607,7 +11581,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-08-29T22:50:47Z",
-    "lastAttemptAt": "2026-08-29T22:50:47Z"
+    "lastSuccessfulAt": "2026-08-30T06:45:10Z",
+    "lastAttemptAt": "2026-08-30T06:45:10Z"
   }
 }

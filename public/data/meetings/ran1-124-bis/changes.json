@@ -1,1 +1,1251 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "NTN-NR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "NTN-NR start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "NTN-NR end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_ntn-nr",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "11:40"
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_mon_palm-suite_1530_1630_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1530_1630_10.7.1",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_palm-suite_1530_1630_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "NTN start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1530_1630_10.7.1",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_palm-suite_1530_1630_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1530_1630_10.7.1",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_palm-suite_1700_1800_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1700_1800_10.3.1",
+    "to": "Palm Suite 17:00-18:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_mon_palm-suite_1800_1850_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1800_1850_10.3.2",
+    "to": "Palm Suite 18:00-18:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_mon_palm-suite_1850_1930_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_mimo",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_mon_palm-suite_1850_1930_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_mimo",
+    "to": "18:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_mon_palm-suite_1850_1930_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_mimo",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "18:40"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_0910_0950_ntn-iot-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "NTN-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_palm-suite_0910_0950_ntn-iot",
+    "to": "Palm Suite 09:10-09:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_tue_palm-suite_1100_1300_ai-6-7-8-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "AI 6/7/8 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1100_1300_ai-6-7-8",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "12:20"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1430_1630_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "AI/ML added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1430_1630_ai-ml",
+    "to": "Palm Suite 14:30-16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1700_1800_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1700_1800_10.3.1",
+    "to": "Palm Suite 17:00-18:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1800_1850_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1800_1850_10.3.2",
+    "to": "Palm Suite 18:00-18:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_tue_palm-suite_1850_1930_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1850_1930_mimo",
+    "to": "Palm Suite 18:50-19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_wed_palm-suite_1530_1630_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_mimo",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J1"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_palm-suite_1530_1630_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_mimo",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "09:50"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_palm-suite_1530_1630_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_mimo",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_1100_1300_ai-6-7-8-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "AI 6/7/8 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1100_1300_ai-6-7-8",
+    "to": "Palm Suite 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_wed_palm-suite_1430_1530_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_ai-ml",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_wed_palm-suite_1430_1530_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "AI/ML start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_ai-ml",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_wed_palm-suite_1430_1530_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "AI/ML end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_ai-ml",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_1700_1750_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1700_1750_10.3.1",
+    "to": "Palm Suite 17:00-17:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_wed_palm-suite_1750_1830_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1750_1830_10.3.2",
+    "to": "Palm Suite 17:50-18:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_0910_0950_ntn-iot-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "NTN-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_0910_0950_ntn-iot",
+    "to": "Palm Suite 09:10-09:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1100_1300_ai-6-7-8-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "AI 6/7/8 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1100_1300_ai-6-7-8",
+    "to": "Palm Suite 11:00-13:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124-bis_thu_palm-suite_1430_1630_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "room_changed",
+    "title": "AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_ai-ml",
+    "to": "Palm Suite",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124-bis_thu_palm-suite_1430_1630_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "start_time_changed",
+    "title": "AI/ML start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_ai-ml",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124-bis_thu_palm-suite_1430_1630_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "end_time_changed",
+    "title": "AI/ML end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_ai-ml",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ],
+    "from": "13:00"
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1700_1800_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Channel coding added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1700_1800_10.3.1",
+    "to": "Palm Suite 17:00-18:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1800_1850_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "Modulation added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1800_1850_10.3.2",
+    "to": "Palm Suite 18:00-18:50",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_thu_palm-suite_1850_1930_mimo-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1850_1930_mimo",
+    "to": "Palm Suite 18:50-19:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_palm-suite_0830_0930_ai-ml-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "AI/ML added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_fri_palm-suite_0830_0930_ai-ml",
+    "to": "Palm Suite 08:30-09:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_palm-suite_0930_1000_ntn-nr-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "NTN-NR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_fri_palm-suite_0930_1000_ntn-nr",
+    "to": "Palm Suite 09:30-10:00",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124-bis_fri_palm-suite_1000_1030_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_added",
+    "title": "NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_1000_1030_10.7.1",
+    "to": "Palm Suite 10:00-10:30",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1430_1530_9.5-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-NR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1430_1530_9.5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1530_1630_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1530_1630_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1700_1800_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1700_1800_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1800_1850_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1800_1850_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_mon_palm-suite_1850_1930_9.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis_mon_palm-suite_1850_1930_9.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_0830_0910_9.5-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-NR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_0830_0910_9.5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_0910_0950_9.6-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_0910_0950_9.6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_0950_1030_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_0950_1030_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1100_1140_8.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1100_1140_8.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1140_1220_8.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1140_1220_8.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1220_1300_ai-6-7-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI 6/7 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1220_1300_ai-6-7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1430_1630_9.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1430_1630_9.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1700_1740_9.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1700_1740_9.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1740_1840_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1740_1840_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_tue_palm-suite_1840_1930_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_tue_palm-suite_1840_1930_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_0830_0910_9.5-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-NR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_0830_0910_9.5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_0910_0950_9.6-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_0910_0950_9.6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_0950_1030_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_0950_1030_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1100_1140_8.4-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NES removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.4"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1100_1140_8.4",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1140_1220_8.6.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NR-NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.6.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1140_1220_8.6.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1220_1300_8.6.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  IoT-NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.6.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1220_1300_8.6.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1430_1530_9.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1430_1530_9.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1530_1630_9.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1530_1630_9.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1700_1750_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1700_1750_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_wed_palm-suite_1750_1830_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_wed_palm-suite_1750_1830_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_0830_0910_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_0830_0910_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_0910_0950_9.5-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-IoT removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_0910_0950_9.5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_0950_1030_9.6-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-NR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_0950_1030_9.6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1100_1120_8.4-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NES removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.4"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1100_1120_8.4",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1120_1200_ai-7-8-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI 7/8 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-7-8",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1120_1200_ai-7-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI 7 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1120_1200_ai-7",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1200_1240_8.6-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.6"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1200_1240_8.6",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1240_1300_8.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1240_1300_8.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1430_1630_9.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1430_1630_9.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1700_1740_9.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1700_1740_9.2",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1740_1840_10.3.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1740_1840_10.3.1",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_thu_palm-suite_1840_1930_10.3.2-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124-bis_thu_palm-suite_1840_1930_10.3.2",
+    "sourceIds": [
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_fri_palm-suite_0830_0930_9.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_0830_0930_9.1",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_fri_palm-suite_0930_1000_9.5-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN-NR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_0930_1000_9.5",
+    "sourceIds": [
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  },
+  {
+    "changeId": "session_removed-ran1-124-bis_fri_palm-suite_1000_1030_10.7.1-2026-08-30T06:45:46+00:00",
+    "meetingId": "ran1-124-bis",
+    "detectedAt": "2026-08-30T06:45:46+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.7.1"
+    ],
+    "sessionId": "ran1-124-bis_fri_palm-suite_1000_1030_10.7.1",
+    "sourceIds": [
+      "ran1-124-bis-bd9f978a",
+      "ran1-124-bis-ddab9127",
+      "ran1-124-bis-71bc694d"
+    ],
+    "from": "Palm Suite"
+  }
+]
