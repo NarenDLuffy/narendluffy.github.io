@@ -1,8 +1,8 @@
 [
   {
-    "changeId": "room_changed-ran1-124_mon_j1_1800_1850_10.5.0-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_j1_1800_1850_10.5.0-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.0 moved",
     "detail": "Session changed room",
@@ -13,14 +13,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_mon_j1_1430_1530_10.3.1-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_j1_1430_1530_10.3.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.3.1 moved",
     "detail": "Session changed room",
@@ -31,28 +32,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "session_added-ran1-124_mon_lone-star-ballroom-a4_1430_1530_waveform-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_j1_1700_1800_10.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Waveform added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1430_1530_waveform",
-    "to": "Lone Star Ballroom A4 14:30-15:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_mon_j1_1700_1800_10.1-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.1 moved",
     "detail": "Session changed room",
@@ -63,14 +51,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_mon_j1_1850_1930_10.5.1.1-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_j1_1850_1930_10.5.1.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.1.1 moved",
     "detail": "Session changed room",
@@ -81,14 +70,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_mon_j1_1530_1630_10.3.2-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_j1_1530_1630_10.3.2-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.3.2 moved",
     "detail": "Session changed room",
@@ -99,86 +89,49 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "session_added-ran1-124_mon_lone-star-ballroom-a4_1530_1630_modulation-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_mon_a3_1700_1800_isac-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Modulation added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1530_1630_modulation",
-    "to": "Lone Star Ballroom A4 15:30-16:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_mon_lone-star-ballroom-a4_1700_1740_isac-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "ISAC moved",
     "detail": "Session changed room",
     "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1700_1740_isac",
-    "to": "Lone Star Ballroom A4",
+    "sessionId": "ran1-124_mon_a3_1700_1800_isac",
+    "to": "A3",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "A3"
+    "from": "Lone Star Ballroom A4"
   },
   {
-    "changeId": "end_time_changed-ran1-124_mon_lone-star-ballroom-a4_1700_1740_isac-2026-09-02T09:38:29+00:00",
+    "changeId": "end_time_changed-ran1-124_mon_a3_1700_1800_isac-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "end_time_changed",
     "title": "ISAC end time changed",
     "detail": "End time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1700_1740_isac",
-    "to": "17:40",
+    "sessionId": "ran1-124_mon_a3_1700_1800_isac",
+    "to": "18:00",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "18:00"
+    "from": "17:40"
   },
   {
-    "changeId": "session_added-ran1-124_mon_lone-star-ballroom-a4_1740_1840_evaluation-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1200_1240_10.5.4.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Evaluation added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1740_1840_evaluation",
-    "to": "Lone Star Ballroom A4 17:40-18:40",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-124_mon_lone-star-ballroom-a4_1840_1930_channel-coding-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Channel coding added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1840_1930_channel-coding",
-    "to": "Lone Star Ballroom A4 18:40-19:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_tue_j1_1200_1240_10.5.4.1-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.4.1 moved",
     "detail": "Session changed room",
@@ -189,28 +142,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "session_added-ran1-124_tue_lone-star-ballroom-a4_1750_1840_overall-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1240_1300_10.5.4.3-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Overall added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1750_1840_overall",
-    "to": "Lone Star Ballroom A4 17:50-18:40",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_tue_j1_1240_1300_10.5.4.3-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.4.3 moved",
     "detail": "Session changed room",
@@ -221,101 +161,66 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_a1_1430_1630_ai-ml-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "AI/ML moved",
     "detail": "Session changed room",
     "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml",
-    "to": "Lone Star Ballroom A4",
+    "sessionId": "ran1-124_tue_a1_1430_1630_ai-ml",
+    "to": "A1",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "A1"
+    "from": "Lone Star Ballroom A4"
   },
   {
-    "changeId": "start_time_changed-ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml-2026-09-02T09:38:29+00:00",
+    "changeId": "start_time_changed-ran1-124_tue_a1_1430_1630_ai-ml-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "start_time_changed",
     "title": "AI/ML start time changed",
     "detail": "Start time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml",
-    "to": "17:00",
+    "sessionId": "ran1-124_tue_a1_1430_1630_ai-ml",
+    "to": "14:30",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "14:30"
+    "from": "17:00"
   },
   {
-    "changeId": "end_time_changed-ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml-2026-09-02T09:38:29+00:00",
+    "changeId": "end_time_changed-ran1-124_tue_a1_1430_1630_ai-ml-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "end_time_changed",
     "title": "AI/ML end time changed",
     "detail": "End time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1700_1750_ai-ml",
-    "to": "17:50",
+    "sessionId": "ran1-124_tue_a1_1430_1630_ai-ml",
+    "to": "16:30",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "16:30"
+    "from": "17:50"
   },
   {
-    "changeId": "session_added-ran1-124_tue_lone-star-ballroom-a4_1840_1930_waveform-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1700_1730_10.5.2.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Waveform added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1840_1930_waveform",
-    "to": "Lone Star Ballroom A4 18:40-19:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-124_tue_lone-star-ballroom-a4_1200_1300_energy-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Energy added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1200_1300_energy",
-    "to": "Lone Star Ballroom A4 12:00-13:00",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-124_tue_lone-star-ballroom-a4_1510_1630_channele-coding-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Channele coding added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1510_1630_channele-coding",
-    "to": "Lone Star Ballroom A4 15:10-16:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_tue_j1_1700_1730_10.5.2.1-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.2.1 moved",
     "detail": "Session changed room",
@@ -326,14 +231,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_tue_j1_1730_1810_10.5.2.2-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1730_1810_10.5.2.2-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.2.2 moved",
     "detail": "Session changed room",
@@ -344,14 +250,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_tue_j1_1810_1850_10.5.2.3-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1810_1850_10.5.2.3-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.2.3 moved",
     "detail": "Session changed room",
@@ -362,14 +269,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_tue_j1_1850_1930_10.5.2.4-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_tue_j1_1850_1930_10.5.2.4-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.2.4 moved",
     "detail": "Session changed room",
@@ -380,123 +288,111 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "session_added-ran1-124_wed_lone-star-ballroom-a4_0830_0930_modulation-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_wed_level-1_0835_0935_6g-waveform-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Modulation added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_0830_0930_modulation",
-    "to": "Lone Star Ballroom A4 08:30-09:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_wed_j1_1430_1510_6g-waveform-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "6G waveform moved",
     "detail": "Session changed room",
     "agendaItems": [],
-    "sessionId": "ran1-124_wed_j1_1430_1510_6g-waveform",
-    "to": "J1",
+    "sessionId": "ran1-124_wed_level-1_0835_0935_6g-waveform",
+    "to": "Level 1",
     "sourceIds": [
       "ran1-124-f68f89f5",
       "ran1-124-2da12645"
     ],
-    "from": "Level 1"
+    "from": "J1"
   },
   {
-    "changeId": "start_time_changed-ran1-124_wed_j1_1430_1510_6g-waveform-2026-09-02T09:38:29+00:00",
+    "changeId": "start_time_changed-ran1-124_wed_level-1_0835_0935_6g-waveform-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "start_time_changed",
     "title": "6G waveform start time changed",
     "detail": "Start time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_wed_j1_1430_1510_6g-waveform",
-    "to": "14:30",
+    "sessionId": "ran1-124_wed_level-1_0835_0935_6g-waveform",
+    "to": "08:35",
     "sourceIds": [
       "ran1-124-f68f89f5",
       "ran1-124-2da12645"
     ],
-    "from": "08:35"
+    "from": "14:30"
   },
   {
-    "changeId": "end_time_changed-ran1-124_wed_j1_1430_1510_6g-waveform-2026-09-02T09:38:29+00:00",
+    "changeId": "end_time_changed-ran1-124_wed_level-1_0835_0935_6g-waveform-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "end_time_changed",
     "title": "6G waveform end time changed",
     "detail": "End time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_wed_j1_1430_1510_6g-waveform",
-    "to": "15:10",
+    "sessionId": "ran1-124_wed_level-1_0835_0935_6g-waveform",
+    "to": "09:35",
     "sourceIds": [
       "ran1-124-f68f89f5",
       "ran1-124-2da12645"
     ],
-    "from": "09:35"
+    "from": "15:10"
   },
   {
-    "changeId": "start_time_changed-ran1-124_wed_a1_1730_1830_10.3.2-2026-09-02T09:38:29+00:00",
+    "changeId": "start_time_changed-ran1-124_wed_a1_1750_1830_10.3.2-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "start_time_changed",
     "title": "Modulation start time changed",
     "detail": "Start time changed",
     "agendaItems": [
       "10.3.2"
     ],
-    "sessionId": "ran1-124_wed_a1_1730_1830_10.3.2",
-    "to": "17:30",
+    "sessionId": "ran1-124_wed_a1_1750_1830_10.3.2",
+    "to": "17:50",
     "sourceIds": [
-      "ran1-124-211244ae",
-      "ran1-124-3873961c"
+      "ran1-124-5f1586e4"
     ],
-    "from": "17:50"
+    "from": "17:30"
   },
   {
-    "changeId": "session_added-ran1-124_wed_lone-star-ballroom-a4_1140_1300_energy-2026-09-02T09:38:29+00:00",
+    "changeId": "session_added-ran1-124_wed_ran1-main_1800_1830_10.9-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "session_added",
-    "title": "Energy added",
+    "title": "10.9 added",
     "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_1140_1300_energy",
-    "to": "Lone Star Ballroom A4 11:40-13:00",
+    "agendaItems": [
+      "10.9"
+    ],
+    "sessionId": "ran1-124_wed_ran1-main_1800_1830_10.9",
+    "to": "RAN1 Main 18:00-18:30",
     "sourceIds": [
-      "ran1-124-d049ba1a"
+      "ran1-124-5f1586e4"
     ]
   },
   {
-    "changeId": "end_time_changed-ran1-124_wed_lone-star-ballroom-a4_1510_1630_evaluation-2026-09-02T09:38:29+00:00",
+    "changeId": "end_time_changed-ran1-124_wed_j1_1510_1550_evaluation-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "end_time_changed",
     "title": "Evaluation end time changed",
     "detail": "End time changed",
     "agendaItems": [],
-    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_1510_1630_evaluation",
-    "to": "16:30",
+    "sessionId": "ran1-124_wed_j1_1510_1550_evaluation",
+    "to": "15:50",
     "sourceIds": [
       "ran1-124-d049ba1a"
     ],
-    "from": "15:50"
+    "from": "16:30"
   },
   {
-    "changeId": "room_changed-ran1-124_wed_j1_1550_1630_10.5.4.x-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_wed_j1_1550_1630_10.5.4.x-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.4.x moved",
     "detail": "Session changed room",
@@ -507,50 +403,49 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "start_time_changed-ran1-124_wed_a1_1700_1730_10.3.1-2026-09-02T09:38:29+00:00",
+    "changeId": "start_time_changed-ran1-124_wed_a1_1730_1750_10.3.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "start_time_changed",
     "title": "Channel coding start time changed",
     "detail": "Start time changed",
     "agendaItems": [
       "10.3.1"
     ],
-    "sessionId": "ran1-124_wed_a1_1700_1730_10.3.1",
-    "to": "17:00",
+    "sessionId": "ran1-124_wed_a1_1730_1750_10.3.1",
+    "to": "17:30",
     "sourceIds": [
-      "ran1-124-211244ae",
-      "ran1-124-3873961c"
+      "ran1-124-5f1586e4"
     ],
-    "from": "17:30"
+    "from": "17:00"
   },
   {
-    "changeId": "end_time_changed-ran1-124_wed_a1_1700_1730_10.3.1-2026-09-02T09:38:29+00:00",
+    "changeId": "end_time_changed-ran1-124_wed_a1_1730_1750_10.3.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "end_time_changed",
     "title": "Channel coding end time changed",
     "detail": "End time changed",
     "agendaItems": [
       "10.3.1"
     ],
-    "sessionId": "ran1-124_wed_a1_1700_1730_10.3.1",
-    "to": "17:30",
+    "sessionId": "ran1-124_wed_a1_1730_1750_10.3.1",
+    "to": "17:50",
     "sourceIds": [
-      "ran1-124-211244ae",
-      "ran1-124-3873961c"
+      "ran1-124-5f1586e4"
     ],
-    "from": "17:50"
+    "from": "17:30"
   },
   {
-    "changeId": "room_changed-ran1-124_wed_j1_1700_1830_10.6.x-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_wed_j1_1700_1830_10.6.x-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.6.x moved",
     "detail": "Session changed room",
@@ -561,28 +456,15 @@
     "to": "J1",
     "sourceIds": [
       "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
       "ran1-124-3873961c"
     ],
     "from": "J1"
   },
   {
-    "changeId": "session_added-ran1-124_wed_lone-star-ballroom-a4_1700_1830_waveform-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_thu_j1_1700_1750_10.5.0-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
-    "type": "session_added",
-    "title": "Waveform added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_1700_1830_waveform",
-    "to": "Lone Star Ballroom A4 17:00-18:30",
-    "sourceIds": [
-      "ran1-124-d049ba1a"
-    ]
-  },
-  {
-    "changeId": "room_changed-ran1-124_thu_j1_1700_1750_10.5.0-2026-09-02T09:38:29+00:00",
-    "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.0 moved",
     "detail": "Session changed room",
@@ -598,9 +480,9 @@
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_thu_j1_1750_1830_10.5.1.1-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_thu_j1_1750_1830_10.5.1.1-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.1.1 moved",
     "detail": "Session changed room",
@@ -616,9 +498,9 @@
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_thu_j1_1830_1900_10.5.1.2-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_thu_j1_1830_1900_10.5.1.2-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.1.2 moved",
     "detail": "Session changed room",
@@ -634,9 +516,9 @@
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_thu_j1_1900_1930_10.5.1.3-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_thu_j1_1900_1930_10.5.1.3-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.1.3 moved",
     "detail": "Session changed room",
@@ -652,9 +534,9 @@
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_fri_j1_0830_0910_10.5.4.3-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_fri_j1_0830_0910_10.5.4.3-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.5.4.3 moved",
     "detail": "Session changed room",
@@ -669,9 +551,9 @@
     "from": "J1"
   },
   {
-    "changeId": "room_changed-ran1-124_fri_j1_0910_0950_10.4-2026-09-02T09:38:29+00:00",
+    "changeId": "room_changed-ran1-124_fri_j1_0910_0950_10.4-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "room_changed",
     "title": "10.4 moved",
     "detail": "Session changed room",
@@ -687,19 +569,157 @@
     "from": "J1"
   },
   {
-    "changeId": "session_removed-ran1-124_wed_ran1-main_1800_1830_10.9-2026-09-02T09:38:29+00:00",
+    "changeId": "session_removed-ran1-124_mon_lone-star-ballroom-a4_1430_1530_waveform-2026-09-02T13:48:40+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-09-02T09:38:29+00:00",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
     "type": "session_removed",
-    "title": "10.9 removed",
+    "title": "Waveform removed",
     "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "10.9"
-    ],
-    "sessionId": "ran1-124_wed_ran1-main_1800_1830_10.9",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1430_1530_waveform",
     "sourceIds": [
-      "ran1-124-5f1586e4"
+      "ran1-124-d049ba1a"
     ],
-    "from": "RAN1 Main"
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_mon_lone-star-ballroom-a4_1530_1630_modulation-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1530_1630_modulation",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_mon_lone-star-ballroom-a4_1740_1840_evaluation-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Evaluation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1740_1840_evaluation",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_mon_lone-star-ballroom-a4_1840_1930_channel-coding-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Channel coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_mon_lone-star-ballroom-a4_1840_1930_channel-coding",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_tue_lone-star-ballroom-a4_1750_1840_overall-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Overall removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1750_1840_overall",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_tue_lone-star-ballroom-a4_1840_1930_waveform-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Waveform removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1840_1930_waveform",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_tue_lone-star-ballroom-a4_1200_1300_energy-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Energy removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1200_1300_energy",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_tue_lone-star-ballroom-a4_1510_1630_channele-coding-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Channele coding removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_tue_lone-star-ballroom-a4_1510_1630_channele-coding",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_wed_lone-star-ballroom-a4_0830_0930_modulation-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Modulation removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_0830_0930_modulation",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_wed_lone-star-ballroom-a4_1140_1300_energy-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Energy removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_1140_1300_energy",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
+  },
+  {
+    "changeId": "session_removed-ran1-124_wed_lone-star-ballroom-a4_1700_1830_waveform-2026-09-02T13:48:40+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-09-02T13:48:40+00:00",
+    "type": "session_removed",
+    "title": "Waveform removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_wed_lone-star-ballroom-a4_1700_1830_waveform",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "Lone Star Ballroom A4"
   }
 ]
