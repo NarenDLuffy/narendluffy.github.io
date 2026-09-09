@@ -1,1 +1,498 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-126_mon_expo-foyer_1510_1630_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_added",
+    "title": "10.6.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_mon_expo-foyer_1510_1630_10.6.x",
+    "to": "Expo Foyer 15:10-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "room_changed",
+    "title": "10.6.1.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.1.1"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1",
+    "to": "0.6/0.7 Madrid/Lisbon",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "start_time_changed",
+    "title": "10.6.1.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.6.1.1"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1",
+    "to": "10:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "end_time_changed",
+    "title": "10.6.1.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.6.1.1"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1000_1030_10.6.1.1",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "15:05"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "room_changed",
+    "title": "10.6.1.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2",
+    "to": "0.6/0.7 Madrid/Lisbon",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "start_time_changed",
+    "title": "10.6.1.2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "15:05"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "end_time_changed",
+    "title": "10.6.1.2 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1100_1130_10.6.1.2",
+    "to": "11:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "15:40"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "room_changed",
+    "title": "10.6.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3",
+    "to": "0.6/0.7 Madrid/Lisbon",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "start_time_changed",
+    "title": "10.6.3 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3",
+    "to": "12:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "16:05"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "end_time_changed",
+    "title": "10.6.3 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1200_1230_10.6.3",
+    "to": "12:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_expo-foyer_1430_1630_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_added",
+    "title": "10.6.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_tue_expo-foyer_1430_1630_10.6.x",
+    "to": "Expo Foyer 14:30-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_expo-foyer_1430_1630_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "room_changed",
+    "title": "10.6.x moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1430_1630_10.6.x",
+    "to": "Expo Foyer",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_expo-foyer_1430_1630_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "start_time_changed",
+    "title": "10.6.x start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1430_1630_10.6.x",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_wed_expo-foyer_1430_1630_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "end_time_changed",
+    "title": "10.6.x end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1430_1630_10.6.x",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "12:30"
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_expo-foyer_1430_1550_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "room_changed",
+    "title": "10.6.x moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1430_1550_10.6.x",
+    "to": "Expo Foyer",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "0.4 Brussels"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_thu_expo-foyer_1430_1550_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "start_time_changed",
+    "title": "10.6.x start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1430_1550_10.6.x",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_thu_expo-foyer_1430_1550_10.6.x-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "end_time_changed",
+    "title": "10.6.x end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.6.x"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1430_1550_10.6.x",
+    "to": "15:50",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:30"
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_expo-foyer_1530_1550_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.1.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_mon_expo-foyer_1530_1550_10.6.1.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_expo-foyer_1550_1610_10.6.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.2"
+    ],
+    "sessionId": "ran1-126_mon_expo-foyer_1550_1610_10.6.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_mon_expo-foyer_1610_1630_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_mon_expo-foyer_1610_1630_10.6.3",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_tue_expo-foyer_1540_1605_10.6.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.2"
+    ],
+    "sessionId": "ran1-126_tue_expo-foyer_1540_1605_10.6.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_expo-foyer_1430_1505_10.6.1.1-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.1.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1.1"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1430_1505_10.6.1.1",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_expo-foyer_1505_1540_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.1.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1505_1540_10.6.1.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_expo-foyer_1540_1605_10.6.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.2"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1540_1605_10.6.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_wed_expo-foyer_1605_1630_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_wed_expo-foyer_1605_1630_10.6.3",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_expo-foyer_1430_1450_10.6.1.1-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.1.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1.1"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1430_1450_10.6.1.1",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_expo-foyer_1450_1510_10.6.1.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.1.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.1.2"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1450_1510_10.6.1.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_expo-foyer_1510_1530_10.6.2-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.2"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1510_1530_10.6.2",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  },
+  {
+    "changeId": "session_removed-ran1-126_thu_expo-foyer_1530_1550_10.6.3-2026-09-09T20:31:58+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-09-09T20:31:58+00:00",
+    "type": "session_removed",
+    "title": "10.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.6.3"
+    ],
+    "sessionId": "ran1-126_thu_expo-foyer_1530_1550_10.6.3",
+    "sourceIds": [
+      "ran1-126-d70cbaf1"
+    ],
+    "from": "Expo Foyer"
+  }
+]
