@@ -1,5 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
-import { dataUrl } from "@/lib/dataUrl";
+import { dataUrl, fetchData } from "@/lib/dataUrl";
 import type {
   AgendaItem,
   IngestStatus,
@@ -60,7 +60,7 @@ function writeCache(slug: string, bundle: ScheduleBundle) {
 }
 
 async function getJson<T>(path: string, fallback: T): Promise<T> {
-  const res = await fetch(dataUrl(path), { cache: "no-store" });
+  const res = await fetchData(path);
   if (res.status === 404) return fallback;
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${path}`);
   return (await res.json()) as T;

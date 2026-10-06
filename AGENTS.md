@@ -13,3 +13,4 @@
 - ICS export uses meetingTimeZone() which maps fixed Etc/ offsets to real DST zones by city — calendars stay correct in summer.
 - Venue mode UI is gated by VENUE_MODE_ENABLED in venueMode.ts (currently off) — plumbing kept for a future HTTPS venue server.
 - Schedule and drafts workflows share the "data-refresh" concurrency group and rebase-retry on push — they commit to the same branch.
+- Generated schedule/drafts data is read live from the GitHub repo copy (bundled copy as fallback) — updates appear without re-publishing.

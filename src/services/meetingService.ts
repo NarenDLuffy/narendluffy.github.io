@@ -1,5 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
-import { dataUrl } from "@/lib/dataUrl";
+import { dataUrl, fetchData } from "@/lib/dataUrl";
 import type { Meeting, MeetingIndex, MeetingStatus } from "@/types/meeting";
 
 /**
@@ -92,7 +92,7 @@ function readCache(): MeetingIndex | null {
 export async function loadMeetingIndex(): Promise<MeetingIndex> {
   if (typeof window === "undefined") return EMPTY_INDEX;
   try {
-    const res = await fetch(dataUrl("meetings.json"), { cache: "no-store" });
+    const res = await fetchData("meetings.json");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const index = (await res.json()) as MeetingIndex;
     if (!Array.isArray(index?.meetings)) throw new Error("malformed meeting registry");

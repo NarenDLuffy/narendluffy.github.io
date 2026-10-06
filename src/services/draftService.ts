@@ -1,5 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
-import { dataUrl } from "@/lib/dataUrl";
+import { dataUrl, fetchData } from "@/lib/dataUrl";
 import { probeLiveDrafts, type LiveDraftOrigin, type VenueStatus } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
@@ -70,7 +70,7 @@ function readCache(slug: string): DraftIndex | null {
 export async function loadDrafts(meeting: Meeting): Promise<DraftResult> {
   const slug = meeting.slug;
   try {
-    const res = await fetch(dataUrl(`meetings/${slug}/drafts.json`), { cache: "no-store" });
+    const res = await fetchData(`meetings/${slug}/drafts.json`);
     if (res.status === 404) return { index: null, stale: false };
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const index = (await res.json()) as DraftIndex;
