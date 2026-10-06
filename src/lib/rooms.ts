@@ -3,10 +3,12 @@ import type { AgendaItem, Room, ScheduleBundle } from "@/types/schedule";
 const ROOM_PALETTE = 8;
 
 /** Stable colour per room, by its column order in the meeting. */
-export function roomColor(room: Pick<Room, "order"> | undefined): string {
+export function roomColor(
+  room: Pick<Room, "order" | "sourceColor" | "chairRole"> | undefined,
+): string {
   if (!room) return "var(--muted-foreground)";
-  if ("chairRole" in room && room.chairRole === "main") return "var(--room-main)";
-  if ("sourceColor" in room && room.sourceColor) {
+  if (room.chairRole === "main") return "var(--room-main)";
+  if (room.sourceColor) {
     const sourceColors: Record<string, string> = {
       D9D9D9: "var(--room-source-grey)",
       FFD966: "var(--room-source-orange)",
