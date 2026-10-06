@@ -77,6 +77,7 @@ class _Cell:
     col_start: int
     col_end: int
     fill: str | None = None
+    continued: bool = False
 
 
 def _cell_text(tc) -> str:
@@ -102,7 +103,9 @@ def _row_cells(tr) -> list[_Cell]:
         shading = pr.find(f"{W}shd") if pr is not None else None
         fill = shading.get(f"{W}fill") if shading is not None else None
         normalized_fill = fill.upper() if fill and fill.lower() not in {"auto", "none"} else None
-        cells.append(_Cell(_cell_text(tc), cursor, cursor + span, normalized_fill))
+        vm = pr.find(f"{W}vMerge") if pr is not None else None
+        continued = vm is not None and vm.get(f"{W}val") != "restart"
+        cells.append(_Cell(_cell_text(tc), cursor, cursor + span, normalized_fill, continued))
         cursor += span
     return cells
 
@@ -505,7 +508,9 @@ def parse_block_schedule_docx(
             # their name-based identity; otherwise key the canonical lane by
             # source document + colour.
             has_named_room = bool(labels) or bool(width == 1 and _heading_room(heading, known_labels))
-            source_color = preferred_fills.get(lane, cell.fill)
+            # Offline sessions are plain positional columns: colours there do
+            # not identify chairs.
+            source_color = None if mode == "offline" else preferred_fills.get(lane, cell.fill)
             color_key = source_color or f"position-{index}"
             chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
             main = is_main_evidence(cell.text, heading)
@@ -540,10 +545,18 @@ def parse_block_schedule_docx(
                 room.chairRole = "main"
             return room
 
+        merged_text: dict[int, str] = {}
         for row in rows[1:]:
             cells = _row_cells(row)
             if not cells:
                 continue
+            for cell in cells:
+                # Vertically merged cells carry their text only in the first
+                # row; repeat it for every time block they cover.
+                if cell.continued and not cell.text.strip():
+                    cell.text = merged_text.get(cell.col_start, "")
+                else:
+                    merged_text[cell.col_start] = cell.text
             label_text = cells[0].text.replace("\n", " ")
 
             # Full-width break band (checked first: it also carries a time range).
