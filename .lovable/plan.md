@@ -46,4 +46,4 @@ Today the RAN1#126bis room list still contains last meeting's rooms (Praetorium,
 ## 8. Fix the failing GitHub "Update schedule" job
 - Cause: the schedule job and the drafts job both save refreshed data to the same repo every few minutes. When the drafts job saves first, the schedule job's save is rejected ("fetch first"). It is not a 3gpplive.net problem, and the job is needed — it keeps the timetable fresh.
 - Fix: the schedule job pulls the latest changes and retries the save (up to 3 times), same as the drafts job already does; both jobs share one queue so they never save at the same moment.
-- The 3gpplive.net deploy stays (venue twin backend kept per item 4) but only runs when the app code changes, not on every data refresh.
+- Retire 3gpplive.net: stop deploying the venue copy there (it never reached 10.10.10.10 because phones force HTTPS). Venue code stays in the app, switched off, so it can be revived if the server gets HTTPS. You can then let the domain lapse or point it elsewhere.
