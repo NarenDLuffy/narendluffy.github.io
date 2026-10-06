@@ -121,9 +121,23 @@ for _zone in sorted(available_timezones()):
 OFFSET_RE = re.compile(r"GMT([+-])(\d{1,2})[:.](\d{2})", re.I)
 
 
+# Windows zone labels whose cities are not IANA names but which observe DST.
+_WINDOWS_ZONES = {
+    "central time": "America/Chicago",
+    "eastern time": "America/New_York",
+    "mountain time": "America/Edmonton",
+    "pacific time": "America/Los_Angeles",
+    "atlantic time": "America/Halifax",
+}
+
+
 def resolve_timezone(label: str | None, fallback: str = "UTC") -> str:
     if not label:
         return fallback
+    lowered = label.lower()
+    for key, zone in _WINDOWS_ZONES.items():
+        if key in lowered:
+            return zone
     cities = label.split(")", 1)[-1]
     for city in [c.strip().lower() for c in cities.split(",") if c.strip()]:
         zone = _ZONES_BY_CITY.get(city)
