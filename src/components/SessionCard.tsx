@@ -8,6 +8,7 @@ import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { DraftBadge } from "@/components/DraftActivity";
 import { topicStyle } from "@/lib/topics";
+import { agendaTitle, roomLabelById } from "@/lib/rooms";
 import { cn } from "@/lib/utils";
 import {
   Dialog,
@@ -93,7 +94,7 @@ export function SessionCard({
               params={{ roomId: session.roomId }}
               className="text-sm text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
             >
-              {session.roomName}
+              {roomLabelById(bundle, session.roomId, session.roomName)}
             </Link>
           </div>
           <div className="mono-code shrink-0 text-right text-sm font-semibold tabular">
@@ -134,7 +135,8 @@ export function SessionCard({
                       <DraftBadge count={draftCount(slot.code)} important={draftFl(slot.code)} />
                     </Link>
                   ) : null}
-                  {slot.label !== slot.code ? slot.label.replace(slot.code ?? "", "").trim() : null}
+                  {(slot.code && agendaTitle(bundle.agendaItems, slot.code)) ||
+                    (slot.label !== slot.code ? slot.label.replace(slot.code ?? "", "").trim() : null)}
                 </span>
                 {slot.minutes ? (
                   <span className="mono-code shrink-0 text-muted-foreground">{slot.minutes}m</span>

@@ -4,6 +4,8 @@ import { minutesOf } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { MeetingBanner } from "@/components/MeetingBanner";
 import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
+import { RefreshButton } from "@/components/RefreshButton";
+import { activeRooms, roomLabel, roomStyle } from "@/lib/rooms";
 
 export const Route = createFileRoute("/rooms/")({
   head: () => ({
@@ -35,7 +37,7 @@ function RoomsPage() {
     <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
   );
 
-  if (!bundle || bundle.rooms.length === 0) {
+  if (!bundle || activeRooms(bundle).length === 0) {
     return (
       <div className="space-y-4">
         {banner}
@@ -48,9 +50,10 @@ function RoomsPage() {
     <div className="space-y-3">
       {banner}
       <h1 className="text-lg font-semibold">Rooms</h1>
+      <RefreshButton meeting={meeting} bundle={bundle} />
       <p className="text-xs text-muted-foreground">{meeting.venue ?? meeting.city ?? ""}</p>
       <ul className="space-y-2">
-        {bundle.rooms.map((room) => {
+        {activeRooms(bundle).map((room) => {
           const todays = bundle.sessions.filter(
             (s) => s.roomId === room.roomId && s.date === clock.localDate,
           );
@@ -64,10 +67,11 @@ function RoomsPage() {
               <Link
                 to="/rooms/$roomId"
                 params={{ roomId: room.roomId }}
-                className="flex items-center gap-3 rounded-lg border border-border bg-card p-3"
+                style={roomStyle(room)}
+                className="flex items-center gap-3 rounded-lg border border-l-4 border-border border-l-[var(--room-color)] bg-card p-3"
               >
                 <span className="min-w-0 flex-1">
-                  <span className="block truncate font-medium">{room.roomName}</span>
+                  <span className="block truncate font-medium">{roomLabel(room)}</span>
                   <span className="block truncate text-xs text-muted-foreground">
                     {live
                       ? `Now: ${live.topic}${live.agendaItems.length ? ` · ${live.agendaItems.join(", ")}` : ""}`
