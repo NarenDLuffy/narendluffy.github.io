@@ -399,11 +399,39 @@ def parse_block_schedule_docx(
         if not days:
             continue
 
+        # A few placeholder/TBD cells lose their lane fill in Word. Derive the
+        # stable colour for each horizontal lane from the populated cells in
+        # the whole table so one formatting omission cannot move a session to
+        # another chair's canonical column.
+        lane_fills: dict[int, dict[str, int]] = {}
+        for row in rows[1:]:
+            row_cells = _row_cells(row)
+            for day_start, day_end in days.values():
+                width = max(1, day_end - day_start)
+                in_day = [
+                    cell
+                    for cell in row_cells[1:]
+                    if cell.col_start < day_end and cell.col_end > day_start and cell.text.strip()
+                ]
+                for cell in in_day:
+                    if not cell.fill or re.fullmatch(r"TBD|N/?A", cell.text.strip(), re.I):
+                        continue
+                    offset = max(0, cell.col_start - day_start)
+                    lane = min(width - 1, offset)
+                    counts = lane_fills.setdefault(lane, {})
+                    counts[cell.fill] = counts.get(cell.fill, 0) + 1
+        preferred_fills = {
+            lane: max(counts, key=counts.get)
+            for lane, counts in lane_fills.items()
+            if counts
+        }
+
         mode = schedule_mode(heading)
 
         def room_for(cell: _Cell, day_start: int, day_end: int, rank: int, count: int) -> Room:
             width = max(1, day_end - day_start)
             offset = max(0, cell.col_start - day_start)
+            lane = min(width - 1, offset)
             if labels and count == len(labels):
                 # Cells split the day evenly across the named rooms.
                 index = rank
@@ -429,7 +457,8 @@ def parse_block_schedule_docx(
             # their name-based identity; otherwise key the canonical lane by
             # source document + colour.
             has_named_room = bool(labels) or bool(width == 1 and _heading_room(heading, known_labels))
-            color_key = cell.fill or f"position-{index}"
+            source_color = preferred_fills.get(lane, cell.fill)
+            color_key = source_color or f"position-{index}"
             chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
             main = is_main_evidence(cell.text, heading)
             if chair_lane_id:
@@ -451,7 +480,7 @@ def parse_block_schedule_docx(
                     meetingId=meeting_id,
                     roomName=name,
                     order=room_order_offset + len(rooms),
-                    sourceColor=cell.fill,
+                    sourceColor=source_color,
                     chairLaneId=chair_lane_id,
                     chairRole="main" if main else ("vice" if chair_lane_id else None),
                 )
