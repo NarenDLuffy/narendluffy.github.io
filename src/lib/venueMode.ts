@@ -1,4 +1,11 @@
 /**
+ * Venue mode (plain-HTTP twin that can read 10.10.10.10) is switched off in the
+ * UI: phones force HTTPS, so it never reached the venue server. The plumbing is
+ * kept so it can be turned back on if the venue server ever supports HTTPS.
+ */
+export const VENUE_MODE_ENABLED = false;
+
+/**
  * Venue mode.
  *
  * The meeting-room server lives at http://10.10.10.10/. Two independent facts

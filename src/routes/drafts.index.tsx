@@ -1,5 +1,6 @@
 import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 import { VenueModeBanner } from "@/components/VenueModeBanner";
+import { VENUE_MODE_ENABLED } from "@/lib/venueMode";
 import { useMemo, useState } from "react";
 import { CheckCheck, Inbox, RefreshCw, Settings2 } from "lucide-react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
@@ -67,7 +68,7 @@ function DraftsPage() {
       <MeetingBanner meeting={meeting} bundle={bundle} stale={stale} isCurrent={isCurrent} />
 
       <ClientOnly fallback={null}>
-        <VenueModeBanner meetingActive={isCurrent} />
+        {VENUE_MODE_ENABLED ? <VenueModeBanner meetingActive={isCurrent} /> : null}
       </ClientOnly>
 
       <header className="flex items-start justify-between gap-3">
