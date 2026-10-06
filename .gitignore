@@ -40,3 +40,8 @@ public/**/checkins*.json
 **/company-users*.json
 .env
 .env.*
+
+# Python bytecode and local ingestion cache
+__pycache__/
+*.py[cod]
+.ingestion-state/

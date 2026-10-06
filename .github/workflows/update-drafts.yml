@@ -29,6 +29,9 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -60,10 +63,15 @@ jobs:
             git commit -m "chore(drafts): refresh draft and FL summary index"
             # Scans overlap with other bots; rebase and retry instead of failing
             # and silently leaving the index stale.
-            for attempt in 1 2 3; do
+            # Drop any stray non-data edits so rebase can always run.
+            git reset --hard HEAD
+            git clean -fd -e .ingestion-state
+            for attempt in 1 2 3 4 5; do
               if git push; then exit 0; fi
-              git pull --rebase --autostash || true
-              sleep 5
+              if ! git pull --rebase -X theirs; then
+                [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort
+              fi
+              sleep $((attempt * 5))
             done
             echo "Could not push the refreshed index" >&2
             exit 1
