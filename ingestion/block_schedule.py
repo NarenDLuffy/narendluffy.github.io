@@ -429,6 +429,53 @@ def parse_block_schedule_docx(
 
         mode = schedule_mode(heading)
 
+        if mode == "main":
+            # A separate detailed Main table enriches the canonical Main lane
+            # already established by the combined online table. It must reuse
+            # that chair identity rather than create another white lane.
+            existing_main = next((room for room in rooms.values() if room.chairRole == "main"), None)
+            if existing_main is not None:
+                explicit_fill = next(iter(preferred_fills.values()), existing_main.sourceColor)
+                existing_main.sourceColor = existing_main.sourceColor or explicit_fill
+                for row in rows[1:]:
+                    cells = _row_cells(row)
+                    if not cells:
+                        continue
+                    label_text = cells[0].text.replace("\n", " ")
+                    block = BLOCK_RE.search(label_text)
+                    if not block or BREAK_RE.search(label_text):
+                        continue
+                    block_start = _minutes(f"{block.group(1)}:{block.group(2)}")
+                    block_end = _minutes(f"{block.group(3)}:{block.group(4)}")
+                    for day, (day_start, day_end) in days.items():
+                        if day not in day_dates:
+                            continue
+                        cell = next(
+                            (
+                                item
+                                for item in cells[1:]
+                                if item.col_start < day_end
+                                and item.col_end > day_start
+                                and item.text.strip()
+                            ),
+                            None,
+                        )
+                        if cell is None:
+                            continue
+                        sessions.extend(
+                            _sessions_for_cell(
+                                cell.text,
+                                meeting_id=meeting_id,
+                                day=day,
+                                day_date=day_dates[day],
+                                room=existing_main,
+                                block_start=block_start,
+                                block_end=block_end,
+                                source=source,
+                            )
+                        )
+                continue
+
         def room_for(cell: _Cell, day_start: int, day_end: int, rank: int, count: int) -> Room:
             width = max(1, day_end - day_start)
             offset = max(0, cell.col_start - day_start)
