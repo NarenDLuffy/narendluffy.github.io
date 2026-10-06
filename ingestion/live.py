@@ -632,15 +632,44 @@ def _apply_chair_note_titles(
         return items
 
     titles: dict[str, str] = {}
+    counters = [0] * 6
+    numbered: dict[str, str] = {}
     for paragraph in document.paragraphs:
         style = (paragraph.style.name if paragraph.style is not None else "").lower()
-        text = paragraph.text.strip()
-        match = AGENDA_HEADING_RE.match(text)
-        if not match or not (style.startswith("heading") or len(text) < 90):
+        text = re.sub(r"\s+", " ", paragraph.text).strip()
+        if not text:
             continue
-        code, title = match.group(1), match.group(2).strip(" \t-–:")
-        if code not in titles and not re.match(r"^[\d:.\s-]+$", title):
-            titles[code] = title
+        explicit = AGENDA_HEADING_RE.match(text)
+        if explicit and len(text) < 120:
+            code, title = explicit.group(1), explicit.group(2).strip(" \t-–:")
+            if not re.match(r"^[\d:.\s-]+$", title):
+                titles.setdefault(code, title)
+            continue
+        level_match = re.match(r"heading (\d)", style)
+        if not level_match:
+            continue
+        # Word auto-numbering: the number is not in the text, so rebuild it
+        # from the heading levels.
+        level = int(level_match.group(1))
+        if not 1 <= level <= 6:
+            continue
+        counters[level - 1] += 1
+        for i in range(level, 6):
+            counters[i] = 0
+        parts = counters[:level]
+        if 0 in parts:
+            continue
+        title = re.sub(r"\s*\((?:day|monday|tuesday|wednesday|thursday|friday)[^)]*\)\s*$", "", text, flags=re.I)
+        numbered.setdefault(".".join(map(str, parts)), title)
+    # Only trust rebuilt numbering when it lines up with the official agenda.
+    known = {item.code: item.title.strip().lower() for item in items}
+    checks = [code for code in numbered if code in known and "." not in code]
+    agree = sum(1 for code in checks if numbered[code].strip().lower() == known[code])
+    if checks and agree / len(checks) >= 0.6:
+        for code, title in numbered.items():
+            titles.setdefault(code, title)
+    else:
+        print(f"  chair-notes numbering did not match agenda ({agree}/{len(checks)})")
     by_code = {item.code: item for item in items}
     for code, title in titles.items():
         if code in by_code:
