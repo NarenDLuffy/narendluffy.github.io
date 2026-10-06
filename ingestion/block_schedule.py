@@ -356,6 +356,7 @@ def parse_block_schedule_docx(
     pending_heading = ""
     table_index = 0
     lane_names: dict[tuple[str, str], str] = {}
+    lane_numbers: dict[str, dict[str, int]] = {}
 
     def schedule_mode(heading: str) -> str:
         lowered = heading.lower()
@@ -468,8 +469,8 @@ def parse_block_schedule_docx(
                 elif lane_key in lane_names:
                     name = lane_names[lane_key]
                 else:
-                    same_mode = [key for key in lane_names if key[0] == mode]
-                    number = len(same_mode) + 1
+                    mode_numbers = lane_numbers.setdefault(mode, {})
+                    number = mode_numbers.setdefault(color_key, len(mode_numbers) + 1)
                     name = f"{mode.capitalize()} Session {number}"
                     lane_names[lane_key] = name
             room_id = f"{meeting_id}-room-{_slug(chair_lane_id or name.lower())}"
@@ -488,7 +489,7 @@ def parse_block_schedule_docx(
             elif main:
                 room.roomName = "RAN1 Main"
                 room.shortName = "RAN1 Main"
-                room.sessionLabel = "RAN1 Main"
+                room.sessionLabel = None
                 room.chairRole = "main"
             return room
 
