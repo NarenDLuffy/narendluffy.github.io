@@ -26,6 +26,8 @@ export interface Room {
   shortName?: string;
   floor?: string;
   description?: string;
+  /** Session label the chairs use for this room, e.g. "RAN1 Main", "RAN1 Brk2" */
+  sessionLabel?: string;
   /** Order used for timetable columns */
   order: number;
 }

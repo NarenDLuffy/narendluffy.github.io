@@ -2,6 +2,11 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
 import { CalendarPlus, Crosshair, Search, X } from "lucide-react";
+import type { Session } from "@/types/schedule";
+import { SessionDetailSheet } from "@/components/SessionDetailSheet";
+import { RefreshButton } from "@/components/RefreshButton";
+import { useDeadlines } from "@/hooks/useDeadlines";
+import { activeRooms } from "@/lib/rooms";
 import { buildIcs, downloadIcs } from "@/lib/ics";
 
 import { meetingDates, sessionMatchesAgenda, searchSession } from "@/services/scheduleService";
@@ -15,10 +20,11 @@ import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/Sche
 import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
-  day: z.string().optional(),
-  ai: z.string().optional(),
-  q: z.string().optional(),
+  day: z.coerce.string().optional(),
+  ai: z.coerce.string().optional(),
+  q: z.coerce.string().optional(),
   room: z.string().optional(),
+  hide: z.coerce.boolean().optional(),
 });
 
 export const Route = createFileRoute("/schedule")({
@@ -49,6 +55,8 @@ function SchedulePage() {
   const navigate = useNavigate({ from: "/schedule" });
   const [nowKey, setNowKey] = useState(0);
   const { bookmarks } = useBookmarks();
+  const [selected, setSelected] = useState<Session | null>(null);
+  const { deadlines } = useDeadlines(meeting?.id);
 
   if (isLoading) return <LoadingState label="Loading timetable…" />;
   if (!meeting) return <NoMeetingState />;
@@ -82,10 +90,14 @@ function SchedulePage() {
     setSearch({ ai: next.length ? next.join(",") : undefined });
   };
 
-  const sessions = bundle.sessions
-    .filter((s) => s.date === day)
-    .filter((s) => s.kind === "break" || s.kind === "lunch" || sessionMatchesAgenda(s, filters))
-    .filter((s) => searchSession(s, q));
+  const isBreak = (s: Session) => s.kind === "break" || s.kind === "lunch";
+  const matches = (s: Session) => isBreak(s) || (sessionMatchesAgenda(s, filters) && searchSession(s, q));
+  const filtering = filters.length > 0 || Boolean(q.trim());
+  const dayAll = bundle.sessions.filter((s) => s.date === day);
+  const sessions = dayAll.filter(matches);
+  // Filtered view keeps every block in place and greys out the rest, unless
+  // "Hide others" is on.
+  const shown = filtering && !search.hide ? dayAll : sessions;
 
   const topLevel = [...new Set(bundle.agendaItems.filter((a) => !a.parent).map((a) => a.code))];
 
@@ -109,7 +121,8 @@ function SchedulePage() {
             downloadIcs(
               buildIcs(
                 bundle,
-                sessions.filter((s) => s.kind !== "break" && s.kind !== "lunch"),
+                sessions.filter((s) => !isBreak(s)),
+                deadlines,
               ),
               `${meeting.slug}-${day}.ics`,
             )
@@ -134,6 +147,8 @@ function SchedulePage() {
         </button>
       </div>
 
+
+      <RefreshButton meeting={meeting} bundle={bundle} />
 
       <DayTabs days={days} value={day} onChange={(d) => setSearch({ day: d })} />
 
@@ -171,14 +186,32 @@ function SchedulePage() {
             <X className="size-3.5" /> Clear
           </button>
         ) : null}
+        {filtering ? (
+          <label className="ml-auto inline-flex min-h-9 items-center gap-1.5 text-xs text-muted-foreground">
+            <input
+              type="checkbox"
+              checked={Boolean(search.hide)}
+              onChange={(e) => setSearch({ hide: e.target.checked || undefined })}
+            />
+            Hide others
+          </label>
+        ) : null}
       </div>
 
       <Timetable
-        rooms={bundle.rooms}
-        sessions={sessions}
+        rooms={activeRooms(bundle)}
+        sessions={shown}
+        isMatch={filtering && !search.hide ? matches : undefined}
+        onSelect={setSelected}
         nowMinutes={clock.nowMinutes}
         showNowMarker={day === clock.localDate}
         scrollToNowKey={nowKey}
+      />
+
+      <SessionDetailSheet
+        bundle={bundle}
+        session={selected}
+        onOpenChange={(open) => !open && setSelected(null)}
       />
 
       <SourcePanel bundle={bundle} meeting={meeting} origin={origin} />

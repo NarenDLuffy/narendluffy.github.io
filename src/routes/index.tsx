@@ -8,6 +8,8 @@ import { SessionCard } from "@/components/SessionCard";
 import { ChangesLink } from "@/components/AppShell";
 import { MeetingBanner } from "@/components/MeetingBanner";
 import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
+import { RefreshButton } from "@/components/RefreshButton";
+import { useDeadlines } from "@/hooks/useDeadlines";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,6 +36,7 @@ export const Route = createFileRoute("/")({
 function NowPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
   const drafts = useDrafts(meeting);
+  const { deadlines } = useDeadlines(meeting?.id);
 
   if (isLoading) return <LoadingState />;
   if (!meeting) return <NoMeetingState />;
@@ -73,9 +76,31 @@ function NowPage() {
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .slice(0, 2);
 
+  const nowKey = `${clock.localDate} ${clock.localTime}`;
+  const upcomingDeadlines = deadlines
+    .filter((d) => `${d.date} ${d.time}` >= nowKey)
+    .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`))
+    .slice(0, 3);
+
   return (
     <div className="space-y-6">
       {banner}
+      <RefreshButton meeting={meeting} bundle={bundle} />
+
+      {upcomingDeadlines.length > 0 ? (
+        <section className="rounded-lg border border-warn/40 bg-warn/10 p-3 text-sm">
+          <h2 className="mb-1 flex items-center gap-1.5 font-semibold">
+            <AlertTriangle className="size-4 text-warn" /> Upcoming deadlines
+          </h2>
+          <ul className="space-y-0.5">
+            {upcomingDeadlines.map((d) => (
+              <li key={d.id}>
+                <span className="mono-code">{d.code}</span> {d.label} · {d.date === clock.localDate ? "today" : d.date} {d.time}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section>
         <div className="mb-2 flex items-baseline justify-between">

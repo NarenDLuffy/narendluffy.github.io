@@ -80,6 +80,8 @@ class Room:
     shortName: str | None = None
     floor: str | None = None
     description: str | None = None
+    #: Session label the chairs use for this room, e.g. "RAN1 Main", "RAN1 Brk2"
+    sessionLabel: str | None = None
 
     def to_json(self) -> dict[str, Any]:
         return _clean(asdict(self))

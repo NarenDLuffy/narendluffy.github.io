@@ -4,6 +4,7 @@ import { meetingIndexQueryOptions, selectCurrentMeeting } from "@/services/meeti
 import { getSelectedMeetingId, subscribeSelection } from "@/services/meetingSelection";
 import { scheduleQueryOptions } from "@/services/scheduleService";
 import { useMeetingClock } from "./useMeetingClock";
+import { meetingTimeZone } from "@/lib/ics";
 
 /**
  * The one place the app decides which meeting it is showing.
@@ -29,7 +30,7 @@ export function useActiveMeeting(slug?: string) {
   const meeting = explicit ?? current;
 
   const scheduleQuery = useQuery(scheduleQueryOptions(meeting));
-  const clock = useMeetingClock(meeting?.timezone ?? "UTC");
+  const clock = useMeetingClock(meeting ? meetingTimeZone(meeting) : "UTC");
 
   return {
     meetings,

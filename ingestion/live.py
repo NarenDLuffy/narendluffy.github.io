@@ -115,6 +115,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
             )
         sources = discover_sources(meeting, pm.folder_url, _iso(now))
         sources.extend(manual_sources(meeting, _iso(now)))
+        agenda_items = _apply_chair_note_titles(meeting, agenda_items, sources)
         rooms, sessions, conflicts = parse_schedule_sources(meeting, sources)
         meeting.schedulePublished = bool(sessions)
 
@@ -139,13 +140,23 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
 
 
 SYNC_ROOT = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/"
-MEETING_NUMBER_RE = re.compile(r"RAN1\s*#\s*(\d+)", re.I)
+MEETING_NUMBER_RE = re.compile(r"RAN1\s*#\s*(\d+)\s*(bis|-?b(?![a-z]))?", re.I)
 
 
 def _belongs_to_meeting(meeting: Meeting, name: str) -> bool:
-    """A sync-mirror file belongs to the meeting unless it names another one."""
+    """A sync-mirror file belongs to the meeting only if it names this meeting.
+
+    "RAN1#126" and "RAN1#126bis"/"RAN1#126b" are different meetings, so the bis
+    suffix must match too. Unlabelled files are accepted only while the meeting
+    is actually running: before that, the mirror still holds the previous
+    meeting's documents and their rooms must not leak into the new meeting.
+    """
     match = MEETING_NUMBER_RE.search(name)
-    return match is None or int(match.group(1)) == (meeting.meetingNumber or -1)
+    if match is None:
+        return meeting.status == "active"
+    is_bis = bool(match.group(2))
+    meeting_is_bis = "bis" in (meeting.slug or "")
+    return int(match.group(1)) == (meeting.meetingNumber or -1) and is_bis == meeting_is_bis
 
 
 def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
@@ -366,6 +377,22 @@ DOC_TITLE_RE = re.compile(
 ROOM_PAREN_RE = re.compile(r"\(\s*rooms?\s*[:=]?\s*([^)]+)\)", re.I)
 
 
+SESSION_LABEL_RE = re.compile(r"RAN1[\s_]*(main|brk|break(?:out)?|adhoc|ad-hoc)\s*#?\s*(\d*)", re.I)
+
+
+def _session_label(text: str) -> str | None:
+    """"RAN1_Brk#2" -> "RAN1 Brk2", "RAN1 Main" -> "RAN1 Main"."""
+    match = SESSION_LABEL_RE.search(text or "")
+    if not match:
+        return None
+    kind = match.group(1).lower()
+    if kind == "main":
+        return "RAN1 Main"
+    if kind.startswith("ad"):
+        return f"RAN1 Adhoc{match.group(2)}"
+    return f"RAN1 Brk{match.group(2)}"
+
+
 def _room_from_heading(name: str) -> str:
     """Recover the physical room from a document heading.
 
@@ -396,8 +423,13 @@ def _clean_room_names(
     """
     dropped: set[str] = set()
     for room in rooms:
+        room.sessionLabel = room.sessionLabel or _session_label(room.roomName)
         name = _room_from_heading(room.roomName)
         name = DOC_TITLE_RE.sub("", name).strip(" -–—:·")
+        # Stray list letters from Word numbering ("b Online Session 1").
+        name = re.sub(r"^[a-z]\s+(?=[A-Z0-9])", "", name)
+        if name.lower().replace("_", " ").startswith("ran1 brk"):
+            room.sessionLabel = room.sessionLabel or _session_label(name)
         if not name or name.endswith(".") or len(name.split()) > 8:
             dropped.add(room.roomId)
             continue
@@ -452,6 +484,9 @@ def _merge_alias_rooms(
             keepers.append(room)
             continue
         merged[room.roomId] = match.roomId
+        match.sessionLabel = match.sessionLabel or room.sessionLabel
+        if not match.sessionLabel and _session_label(room.roomName):
+            match.sessionLabel = _session_label(room.roomName)
         if ROOM_CODE_RE.match(room.roomName) and not ROOM_CODE_RE.match(match.roomName):
             match.roomName = room.roomName
             match.shortName = room.roomName[:24]
@@ -495,12 +530,18 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
             remap[room.roomId] = room.roomId
         else:
             remap[room.roomId] = keeper.roomId
+            keeper.sessionLabel = keeper.sessionLabel or room.sessionLabel
             if len(room.roomName) > len(keeper.roomName):
                 keeper.roomName = room.roomName
                 keeper.shortName = room.roomName[:24]
 
     merged_rooms = list(by_name.values())
     merged_rooms, remap = _merge_alias_rooms(merged_rooms, sessions, remap)
+    for room in merged_rooms:
+        if room.roomName.strip().lower() == "ran1 main":
+            room.sessionLabel = None  # the name already says it
+    used = {remap.get(s.roomId, s.roomId) for s in sessions}
+    merged_rooms = [room for room in merged_rooms if room.roomId in used]
 
 
     # Rooms keep the order the schedule document lays them out in.
@@ -557,3 +598,90 @@ def build_live_bundles(
     *, start: str = "2025-01-01", end: str = "2028-12-31", with_documents: bool = True
 ) -> list[ScheduleBundle]:
     return [build_bundle(pm, with_documents=with_documents) for pm in fetch_meetings(start, end)]
+
+
+AGENDA_HEADING_RE = re.compile(r"^\s*(\d{1,2}(?:\.\d{1,2}){0,4})\s+(\S.{2,120})$")
+
+
+def _apply_chair_note_titles(
+    meeting: Meeting, items: list[AgendaItem], sources: list[ScheduleSource]
+) -> list[AgendaItem]:
+    """Agenda titles as written in the newest (Draft) Chair Notes revision.
+
+    The chair notes list every agenda item as a heading ("10.5.5 Other physical
+    channels and signals"). Those titles override the agenda.csv wording and add
+    any item the csv lacks. If no chair notes can be read, agenda.csv stays.
+    """
+    notes = [
+        s for s in sources
+        if re.search(r"chair\s*notes", s.fileName, re.I) and s.fileName.lower().endswith(".docx") and s.url
+    ]
+    if not notes:
+        return items
+    newest = max(notes, key=lambda s: (s.revisionParts or [], s.fileName))
+    try:
+        import io
+        import docx  # type: ignore
+        from .portal import _session  # type: ignore
+
+        response = _session.get(newest.url, timeout=60)
+        response.raise_for_status()
+        document = docx.Document(io.BytesIO(response.content))
+    except Exception as exc:  # optional enrichment
+        print(f"  chair-notes agenda titles unavailable: {exc}")
+        return items
+
+    titles: dict[str, str] = {}
+    counters = [0] * 6
+    numbered: dict[str, str] = {}
+    for paragraph in document.paragraphs:
+        style = (paragraph.style.name if paragraph.style is not None else "").lower()
+        text = re.sub(r"\s+", " ", paragraph.text).strip()
+        if not text:
+            continue
+        explicit = AGENDA_HEADING_RE.match(text)
+        if explicit and len(text) < 120:
+            code, title = explicit.group(1), explicit.group(2).strip(" \t-–:")
+            if not re.match(r"^[\d:.\s-]+$", title):
+                titles.setdefault(code, title)
+            continue
+        level_match = re.match(r"heading (\d)", style)
+        if not level_match:
+            continue
+        # Word auto-numbering: the number is not in the text, so rebuild it
+        # from the heading levels.
+        level = int(level_match.group(1))
+        if not 1 <= level <= 6:
+            continue
+        counters[level - 1] += 1
+        for i in range(level, 6):
+            counters[i] = 0
+        parts = counters[:level]
+        if 0 in parts:
+            continue
+        title = re.sub(r"\s*\((?:day|monday|tuesday|wednesday|thursday|friday)[^)]*\)\s*$", "", text, flags=re.I)
+        numbered.setdefault(".".join(map(str, parts)), title)
+    # Only trust rebuilt numbering when it lines up with the official agenda.
+    known = {item.code: item.title.strip().lower() for item in items}
+    checks = [code for code in numbered if code in known and "." not in code]
+    agree = sum(1 for code in checks if numbered[code].strip().lower() == known[code])
+    if checks and agree / len(checks) >= 0.6:
+        # A section whose top-level heading disagrees with agenda.csv uses
+        # different heading levels; skip it rather than mislabel items.
+        good_tops = {code for code in checks if numbered[code].strip().lower() == known[code]}
+        for code, title in numbered.items():
+            if code.split(".")[0] in good_tops:
+                titles.setdefault(code, title)
+    else:
+        print(f"  chair-notes numbering did not match agenda ({agree}/{len(checks)})")
+    by_code = {item.code: item for item in items}
+    for code, title in titles.items():
+        if code in by_code:
+            by_code[code].title = title
+        elif "." in code:
+            by_code[code] = AgendaItem(
+                code=code, meetingId=meeting.id, title=title,
+                parent=_parent_code(code), topicKey=_topic_key(title),
+            )
+    print(f"  agenda titles from {newest.fileName}: {len(titles)}")
+    return sorted(by_code.values(), key=lambda a: [int(x) for x in a.code.split(".") if x.isdigit()])

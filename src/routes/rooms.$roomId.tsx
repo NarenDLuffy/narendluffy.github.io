@@ -1,3 +1,4 @@
+import { roomLabel, roomStyle } from "@/lib/rooms";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, MapPin, Users } from "lucide-react";
 import { minutesOf } from "@/services/scheduleService";
@@ -70,7 +71,7 @@ function RoomPage() {
       </Link>
 
       <header>
-        <h1 className="text-xl font-semibold">{room.roomName}</h1>
+        <h1 style={roomStyle(room)} className="flex items-center gap-2 text-xl font-semibold"><span className="size-3 rounded-full bg-[var(--room-color)]" aria-hidden />{roomLabel(room)}</h1>
         <p className="flex items-center gap-1 text-xs text-muted-foreground">
           <MapPin className="size-3.5" />
           {room.floor ? `${room.floor} · ` : ""}

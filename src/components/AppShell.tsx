@@ -13,6 +13,7 @@ import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { DraftBadge } from "@/components/DraftActivity";
 import { VenueModeBanner } from "@/components/VenueModeBanner";
+import { VENUE_MODE_ENABLED } from "@/lib/venueMode";
 import { formatDateRange } from "@/services/meetingService";
 import { cn } from "@/lib/utils";
 
@@ -129,7 +130,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
 
       <div className="mx-auto max-w-6xl px-4 pt-2 md:pt-3">
-        <VenueModeBanner meetingActive={isCurrent} />
+        {VENUE_MODE_ENABLED ? <VenueModeBanner meetingActive={isCurrent} /> : null}
       </div>
 
       <main className="mx-auto max-w-6xl px-4 pb-28 pt-3 md:pb-12">{children}</main>

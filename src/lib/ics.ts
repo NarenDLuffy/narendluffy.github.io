@@ -1,4 +1,37 @@
-import type { ScheduleBundle, Session } from "@/types/schedule";
+import type { Meeting, ScheduleBundle, Session } from "@/types/schedule";
+import type { Deadline } from "@/hooks/useDeadlines";
+import { agendaTitle, roomLabelById } from "@/lib/rooms";
+
+/**
+ * The 3GPP portal sometimes reports a fixed offset ("Etc/GMT+6") for host
+ * cities that observe daylight saving. Those are mapped to the real zone so a
+ * Dallas or Calgary meeting is not an hour off in summer.
+ */
+const CITY_ZONES: Record<string, string> = {
+  dallas: "America/Chicago",
+  chicago: "America/Chicago",
+  calgary: "America/Edmonton",
+  toronto: "America/Toronto",
+  vancouver: "America/Vancouver",
+  "san diego": "America/Los_Angeles",
+  "san francisco": "America/Los_Angeles",
+  "new york": "America/New_York",
+  atlanta: "America/New_York",
+  orlando: "America/New_York",
+  honolulu: "Pacific/Honolulu",
+};
+
+export function meetingTimeZone(meeting: Pick<Meeting, "timezone" | "city">): string {
+  const tz = meeting.timezone || "UTC";
+  const city = (meeting.city ?? "").toLowerCase().trim();
+  if ((tz.startsWith("Etc/") || tz === "UTC") && CITY_ZONES[city]) return CITY_ZONES[city];
+  try {
+    new Intl.DateTimeFormat("en-US", { timeZone: tz });
+    return tz;
+  } catch {
+    return CITY_ZONES[city] ?? "UTC";
+  }
+}
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
@@ -10,7 +43,7 @@ function pad(n: number) {
  * Outlook — which handles floating times and unknown TZIDs poorly — imports it
  * without shifting the event.
  */
-function toUtcStamp(date: string, time: string, timeZone: string): string {
+export function toUtcStamp(date: string, time: string, timeZone: string): string {
   const [y = 1970, m = 1, d = 1] = date.split("-").map(Number);
   const [hh = 0, mm = 0] = time.split(":").map(Number);
   // Start from the naive UTC instant, then correct by the zone offset at that
@@ -58,23 +91,41 @@ function esc(text: string) {
   return text.replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n");
 }
 
-/** RFC 5545 requires content lines to be folded at 75 octets. */
+/** RFC 5545: fold content lines at 75 octets (UTF-8 bytes, not characters). */
 function fold(line: string): string {
-  if (line.length <= 73) return line;
-  const chunks: string[] = [];
-  let rest = line;
-  chunks.push(rest.slice(0, 73));
-  rest = rest.slice(73);
-  while (rest.length) {
-    chunks.push(` ${rest.slice(0, 72)}`);
-    rest = rest.slice(72);
+  const enc = new TextEncoder();
+  const out: string[] = [];
+  let current = "";
+  let bytes = 0;
+  for (const ch of line) {
+    const size = enc.encode(ch).length;
+    const limit = out.length === 0 ? 75 : 74;
+    if (bytes + size > limit) {
+      out.push(current);
+      current = "";
+      bytes = 0;
+    }
+    current += ch;
+    bytes += size;
   }
-  return chunks.join("\r\n");
+  out.push(current);
+  return out.join("\r\n ");
 }
 
-export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
-  const tz = bundle.meeting.timezone || "UTC";
-  const stamp = toUtcStamp(bundle.meeting.startDate, "00:00", tz);
+export function buildIcs(
+  bundle: ScheduleBundle,
+  sessions: Session[],
+  deadlines: Deadline[] = [],
+): string {
+  const tz = meetingTimeZone(bundle.meeting);
+  const now = new Date();
+  const stamp =
+    `${now.getUTCFullYear()}${pad(now.getUTCMonth() + 1)}${pad(now.getUTCDate())}` +
+    `T${pad(now.getUTCHours())}${pad(now.getUTCMinutes())}00Z`;
+  const named = (code: string) => {
+    const title = agendaTitle(bundle.agendaItems, code);
+    return title ? `${code} ${title}` : code;
+  };
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -107,13 +158,13 @@ export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
       ),
       fold(
         `LOCATION:${esc(
-          [s.roomName, bundle.meeting.venue, bundle.meeting.city].filter(Boolean).join(", "),
+          [roomLabelById(bundle, s.roomId, s.roomName), bundle.meeting.venue, bundle.meeting.city].filter(Boolean).join(", "),
         )}`,
       ),
       fold(
         `DESCRIPTION:${esc(
           [
-            s.agendaItems.length ? `Agenda items: ${s.agendaItems.join(", ")}` : "",
+            s.agendaItems.length ? `Agenda items:\n${s.agendaItems.map(named).join("\n")}` : "",
             breakdown.length ? `Breakdown: ${breakdown.join(" | ")}` : "",
             s.sessionLead ? `Lead: ${s.sessionLead}` : "",
             s.note ?? "",
@@ -130,6 +181,25 @@ export function buildIcs(bundle: ScheduleBundle, sessions: Session[]): string {
     );
   });
 
+  deadlines.forEach((d) => {
+    const start = toUtcStamp(d.date, d.time, tz);
+    lines.push(
+      "BEGIN:VEVENT",
+      `UID:deadline-${d.id}@ran1live`,
+      `DTSTAMP:${stamp}`,
+      `DTSTART:${start}`,
+      `DTEND:${start}`,
+      fold(`SUMMARY:${esc(`${d.label} due: ${named(d.code)}`)}`),
+      fold(`DESCRIPTION:${esc(`Meeting time (${tz}): ${d.date} ${d.time}`)}`),
+      "BEGIN:VALARM",
+      "ACTION:DISPLAY",
+      "TRIGGER:-PT30M",
+      fold(`DESCRIPTION:${esc(`${d.label} due in 30 min (${d.code})`)}`),
+      "END:VALARM",
+      "END:VEVENT",
+    );
+  });
+
   lines.push("END:VCALENDAR");
   return lines.join("\r\n");
 }
@@ -140,6 +210,10 @@ export function downloadIcs(content: string, fileName: string) {
   const a = document.createElement("a");
   a.href = url;
   a.download = fileName;
+  a.rel = "noopener";
+  document.body.appendChild(a);
   a.click();
-  URL.revokeObjectURL(url);
+  a.remove();
+  // iOS Safari reads the blob asynchronously; revoking at once breaks the download.
+  window.setTimeout(() => URL.revokeObjectURL(url), 60_000);
 }

@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import type { Room, Session } from "@/types/schedule";
 import { minutesOf } from "@/services/scheduleService";
-import { topicStyle } from "@/lib/topics";
+import { roomLabel, roomStyle } from "@/lib/rooms";
 import { cn } from "@/lib/utils";
 
 const PX_PER_MIN = 1.6;
@@ -13,12 +13,17 @@ export function Timetable({
   nowMinutes,
   showNowMarker,
   scrollToNowKey,
+  isMatch,
+  onSelect,
 }: {
   rooms: Room[];
   sessions: Session[];
   nowMinutes: number;
   showNowMarker: boolean;
   scrollToNowKey?: number;
+  /** When set, non-matching blocks are greyed out (agenda filter). */
+  isMatch?: ((s: Session) => boolean) | undefined;
+  onSelect?: ((s: Session) => void) | undefined;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
 
@@ -76,10 +81,10 @@ export function Timetable({
               key={room.roomId}
               to="/rooms/$roomId"
               params={{ roomId: room.roomId }}
-              style={{ width: widthOf(room.roomId) }}
-              className="shrink-0 border-r border-border px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
+              style={{ width: widthOf(room.roomId), ...roomStyle(room) }}
+              className="shrink-0 border-r border-b-[3px] border-r-border border-b-[var(--room-color)] px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
             >
-              {room.roomName}
+              {roomLabel(room)}
               {room.floor ? (
                 <div className="text-[10px] font-normal text-muted-foreground">{room.floor}</div>
               ) : null}
@@ -144,25 +149,37 @@ export function Timetable({
                   const h = (minutesOf(s.endTime) - minutesOf(s.startTime)) * PX_PER_MIN;
                   const isBreak = s.kind === "break" || s.kind === "lunch";
                   const lane = laneOf.get(s.sessionId) ?? 0;
+                  const dimmed = !isBreak && isMatch ? !isMatch(s) : false;
                   return (
-                    <div
+                    <button
+                      type="button"
+                      onClick={() => onSelect?.(s)}
+                      aria-label={`${s.topic} ${s.startTime}-${s.endTime}`}
                       key={s.sessionId}
                       style={{
                         top,
                         height: h - 2,
                         left: `${(lane / laneCount) * 100}%`,
                         width: `${(1 / laneCount) * 100}%`,
-                        ...topicStyle(s.topicKey),
+                        ...roomStyle(room),
                       }}
                       className={cn(
-                        "absolute overflow-hidden rounded-md border px-1.5 py-1",
+                        "absolute overflow-hidden rounded-md border px-1.5 py-1 text-left transition-opacity",
                         isBreak
                           ? "border-dashed border-border bg-secondary/60"
-                          : "border-border bg-card",
+                          : "border-border bg-[color-mix(in_oklab,var(--room-color)_10%,var(--card))] hover:ring-2 hover:ring-ring",
+                        dimmed && "bg-card opacity-35 grayscale",
+                        !dimmed && isMatch && !isBreak && "ring-2 ring-[var(--room-color)]",
                       )}
                     >
                       {!isBreak ? (
-                        <span className="topic-bar absolute inset-y-0 left-0 w-1" aria-hidden />
+                        <span
+                          className={cn(
+                            "absolute inset-y-0 left-0 w-1",
+                            dimmed ? "bg-border" : "bg-[var(--room-color)]",
+                          )}
+                          aria-hidden
+                        />
                       ) : null}
                       <div
                         className={cn(
@@ -187,7 +204,7 @@ export function Timetable({
                         {s.sessionLead && h > 60 ? ` · ${s.sessionLead}` : ""}
                       </div>
 
-                    </div>
+                    </button>
                   );
                 })}
               </div>

@@ -22,7 +22,8 @@ on:
         required: false
 
 concurrency:
-  group: update-drafts
+  # Schedule and drafts jobs commit to the same branch: one queue, never in parallel.
+  group: data-refresh
   cancel-in-progress: false
 
 permissions:
