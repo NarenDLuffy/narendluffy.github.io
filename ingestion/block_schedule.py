@@ -507,11 +507,17 @@ def parse_block_schedule_docx(
             # between the online/offline tables. Keep named physical rooms on
             # their name-based identity; otherwise key the canonical lane by
             # source document + colour.
+            if mode == "offline" and not labels:
+                # Offline is always two plain sessions; pick by order in the day.
+                index = min(1, rank) if count >= 2 else (0 if offset * 2 < width else 1)
+                name = f"Offline Session {index + 1}"
             has_named_room = bool(labels) or bool(width == 1 and _heading_room(heading, known_labels))
             # Offline sessions are plain positional columns: colours there do
             # not identify chairs.
             source_color = None if mode == "offline" else preferred_fills.get(lane, cell.fill)
             color_key = source_color or f"position-{index}"
+            if mode == "offline":
+                color_key = f"offline-{index}"
             chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
             main = is_main_evidence(cell.text, heading)
             if chair_lane_id:
@@ -600,6 +606,17 @@ def parse_block_schedule_docx(
                     if cell.col_start < day_end and cell.col_end > day_start
                 ]
                 in_day.sort(key=lambda cell: cell.col_start)
+                if mode == "offline" and len(in_day) == 1:
+                    # One merged cell listing a placeholder per offline session
+                    # ("To be assigned by A / To be assigned by B") is two cells.
+                    only = in_day[0]
+                    parts = [ln for ln in only.text.split("\n") if ln.strip()]
+                    if len(parts) == 2 and all(re.match(r"to be (assigned|decided)", ln.strip(), re.I) for ln in parts):
+                        mid = only.col_start + max(1, (only.col_end - only.col_start) // 2)
+                        in_day = [
+                            _Cell(parts[0], only.col_start, mid, only.fill),
+                            _Cell(parts[1], mid, only.col_end, only.fill),
+                        ]
                 for rank, cell in enumerate(in_day):
                     if not cell.text.strip():
                         continue
