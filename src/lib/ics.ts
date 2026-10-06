@@ -91,18 +91,25 @@ function esc(text: string) {
   return text.replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n");
 }
 
-/** RFC 5545 requires content lines to be folded at 75 octets. */
+/** RFC 5545: fold content lines at 75 octets (UTF-8 bytes, not characters). */
 function fold(line: string): string {
-  if (line.length <= 73) return line;
-  const chunks: string[] = [];
-  let rest = line;
-  chunks.push(rest.slice(0, 73));
-  rest = rest.slice(73);
-  while (rest.length) {
-    chunks.push(` ${rest.slice(0, 72)}`);
-    rest = rest.slice(72);
+  const enc = new TextEncoder();
+  const out: string[] = [];
+  let current = "";
+  let bytes = 0;
+  for (const ch of line) {
+    const size = enc.encode(ch).length;
+    const limit = out.length === 0 ? 75 : 74;
+    if (bytes + size > limit) {
+      out.push(current);
+      current = "";
+      bytes = 0;
+    }
+    current += ch;
+    bytes += size;
   }
-  return chunks.join("\r\n");
+  out.push(current);
+  return out.join("\r\n ");
 }
 
 export function buildIcs(
