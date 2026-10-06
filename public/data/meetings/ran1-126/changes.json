@@ -1,1 +1,826 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-126_mon_ran1-main_1430_1435_9.3.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "9.3.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_mon_ran1-main_1430_1435_9.3.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1430_1530_a-iot-phase2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT Phase2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1430_1530_a-iot-phase2",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "14:35"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_ran1-main_1705_1855_10.5.4.x-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "6G moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126_mon_ran1-main_1705_1855_10.5.4.x",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_ran1-main_1435_1535_6g-isac-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "6G ISAC added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_mon_ran1-main_1435_1535_6g-isac",
+    "to": "RAN1 Main 14:35-15:35",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1530_1630_10.8-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "Sensing start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1530_1630_10.8",
+    "to": "15:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "15:40"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_ran1-main_1535_1540_10.8.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.8.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_mon_ran1-main_1535_1540_10.8.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_ran1-main_1700_1705_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_mon_ran1-main_1700_1705_10.2.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_mon_1-1-himalaya_1700_1740_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "Waveform added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1700_1740_10.2.1",
+    "to": "1.1 Himalaya 17:00-17:40",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_mon_1-1-himalaya_1740_1930_10.5.4-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-126_mon_1-1-himalaya_1740_1930_10.5.4",
+    "to": "17:40",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "19:25"
+  },
+  {
+    "changeId": "room_changed-ran1-126_mon_ran1-main_1855_1925_10.5.4.3-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(30), (50), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.3"
+    ],
+    "sessionId": "ran1-126_mon_ran1-main_1855_1925_10.5.4.3",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_ran1-main_0830_0910_10.5.4.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(40), (40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.2"
+    ],
+    "sessionId": "ran1-126_tue_ran1-main_0830_0910_10.5.4.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_0830_1030_10.5.4-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.4 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.4"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_0830_1030_10.5.4",
+    "to": "08:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "09:10"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_ran1-main_1100_1105_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_tue_ran1-main_1100_1105_10.2.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_tue_1-1-himalaya_1100_1140_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1100_1140_10.2.1",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:05"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_ran1-main_1105_1225_6g-isac-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "6G ISAC added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_ran1-main_1105_1225_6g-isac",
+    "to": "RAN1 Main 11:05-12:25",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_ran1-main_1600_1605_9.3.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "9.3.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_tue_ran1-main_1600_1605_9.3.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_tue_1-1-himalaya_1140_1300_10.8-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "end_time_changed",
+    "title": "Sensing end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1140_1300_10.8",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "12:25"
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_ran1-main_1225_1300_10.8.3-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_tue_ran1-main_1225_1300_10.8.3",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_ran1-main_1430_1520_maintenance-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "Maintenance added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_ran1-main_1430_1520_maintenance",
+    "to": "RAN1 Main 14:30-15:20",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_tue_ran1-main_1700_1930_r20-a-iot-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "R20 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_ran1-main_1700_1930_r20-a-iot",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_tue_1-1-himalaya_1700_1930_a-iot-phase2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "A-IoT Phase2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_tue_1-1-himalaya_1700_1930_a-iot-phase2",
+    "to": "1.1 Himalaya 17:00-19:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_ran1-main_0830_0900_10.5.4.4-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(30), (60), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.4.4"
+    ],
+    "sessionId": "ran1-126_wed_ran1-main_0830_0900_10.5.4.4",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1220_1300_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "Waveform start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1220_1300_10.2.1",
+    "to": "12:20",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "12:25"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_ran1-main_1100_1140_10.8.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(40), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_wed_ran1-main_1100_1140_10.8.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1100_1220_10.8-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "Sensing start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1100_1220_10.8",
+    "to": "11:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "11:40"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_ran1-main_1140_1220_6g-waveform-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_ran1-main_1140_1220_6g-waveform",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_ran1-main_1220_1225_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_wed_ran1-main_1220_1225_10.2.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_wed_ran1-main_1430_1630_11-tei20-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "11 TEI20 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_ran1-main_1430_1630_11-tei20",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_wed_ran1-main_1700_1750_9.3.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "(50), (50), moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_wed_ran1-main_1700_1750_9.3.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_wed_1-1-himalaya_1700_1930_a-iot-phase2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "A-IoT Phase2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_wed_1-1-himalaya_1700_1930_a-iot-phase2",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "17:50"
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_ran1-main_0830_0910_6g-waveform-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "6G waveform moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_ran1-main_0830_0910_6g-waveform",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_0830_0910_6gr-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "6GR added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0830_0910_6gr",
+    "to": "1.1 Himalaya 08:30-09:10",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_ran1-main_0910_0950_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.2.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_thu_ran1-main_0910_0950_10.2.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_0910_0950_10.2.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "Waveform added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_0910_0950_10.2.1",
+    "to": "1.1 Himalaya 09:10-09:50",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_1100_1300_a-iot-phase2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "A-IoT Phase2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1100_1300_a-iot-phase2",
+    "to": "1.1 Himalaya 11:00-13:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_ran1-main_1430_1510_10.8.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.8.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.1"
+    ],
+    "sessionId": "ran1-126_thu_ran1-main_1430_1510_10.8.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_ran1-main_1510_1550_10.8.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.8.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.2"
+    ],
+    "sessionId": "ran1-126_thu_ran1-main_1510_1550_10.8.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_thu_ran1-main_1550_1630_10.8.3-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "10.8.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.8.3"
+    ],
+    "sessionId": "ran1-126_thu_ran1-main_1550_1630_10.8.3",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_thu_1-1-himalaya_1430_1630_10.8-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "Sensing added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126_thu_1-1-himalaya_1430_1630_10.8",
+    "to": "1.1 Himalaya 14:30-16:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_ran1-main_0830_0910_9.3.3-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "9.3.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126_fri_ran1-main_0830_0910_9.3.3",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_1-1-himalaya_0830_1030_a-iot-phase2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "A-IoT Phase2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_1-1-himalaya_0830_1030_a-iot-phase2",
+    "to": "1.1 Himalaya 08:30-10:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_ran1-main_0910_0950_9.3.1-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "9.3.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126_fri_ran1-main_0910_0950_9.3.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_1-1-himalaya_1100_1300_sweep-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "Sweep moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_1-1-himalaya_1100_1300_sweep",
+    "to": "1.1 Himalaya",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ],
+    "from": "Praetorium"
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_ran1-main_0950_1030_9.3.2-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "9.3.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-126_fri_ran1-main_0950_1030_9.3.2",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "room_changed-ran1-126_fri_ran1-main_1100_1300_tbd-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "room_changed",
+    "title": "TBD moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_ran1-main_1100_1300_tbd",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ],
+    "from": "1.1 Himalaya"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126_fri_0-6-0-7-madrid-lisbon_1700_1930_to-be-assigned-by-sorour-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "start_time_changed",
+    "title": "To be assigned by Sorour start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_0-6-0-7-madrid-lisbon_1700_1930_to-be-assigned-by-sorour",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126_fri_0-6-0-7-madrid-lisbon_1700_1930_to-be-assigned-by-sorour-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "end_time_changed",
+    "title": "To be assigned by Sorour end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_0-6-0-7-madrid-lisbon_1700_1930_to-be-assigned-by-sorour",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-ebdeb935",
+      "ran1-126-d847dd04"
+    ],
+    "from": "16:30"
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_expo-foyer_1700_1800_any-other-open-issues-se-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "Any other open issues. Session reports added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_expo-foyer_1700_1800_any-other-open-issues-se",
+    "to": "Expo Foyer 17:00-18:00",
+    "sourceIds": [
+      "ran1-126-manual-7a737727",
+      "ran1-126-d70cbaf1",
+      "ran1-126-d847dd04"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126_fri_ran1-main_1700_1800_ran1-126-expected-to-clo-2026-10-06T22:12:01+00:00",
+    "meetingId": "ran1-126",
+    "detectedAt": "2026-10-06T22:12:01+00:00",
+    "type": "session_added",
+    "title": "RAN1#126 expected to close at 17:00 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126_fri_ran1-main_1700_1800_ran1-126-expected-to-clo",
+    "to": "RAN1 Main 17:00-18:00",
+    "sourceIds": [
+      "ran1-126-ebdeb935"
+    ]
+  }
+]

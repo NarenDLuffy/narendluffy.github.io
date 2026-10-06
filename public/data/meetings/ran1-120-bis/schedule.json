@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-06T11:36:45Z",
+  "generatedAt": "2026-10-06T21:48:47Z",
   "meetingId": "ran1-120-bis",
   "sessions": [
     {
@@ -87,30 +87,7 @@
         {
           "sourceId": "ran1-120-bis-f20c90ad",
           "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_mon_ran1-main-session-ballro_1000_1030_mobility",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-07",
-      "day": "Monday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Mobility",
-      "topicKey": "1e03a399",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Mobility",
-      "group": "Mobility",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
+        },
         {
           "sourceId": "ran1-120-bis-a92ad485",
           "contributed": []
@@ -232,40 +209,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_mon_ran1-main-session-ballro_1100_1300_mimo",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-07",
-      "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "MIMO",
-      "topicKey": "102b7943",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_mon_x_1300_1430_lunch-break",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-07",
@@ -365,41 +308,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_mon_ran1-main-session-ballro_1430_1630_lp-wus",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-07",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "LP-WUS",
-      "topicKey": "260c1d30",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "LP-WUS",
-      "group": "LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -764,41 +672,6 @@
           "sourceId": "ran1-120-bis-f20c90ad",
           "contributed": []
         },
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_mon_ran1-main-session-ballro_1700_1900_ue-features",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-07",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "19:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "UE features",
-      "topicKey": "44100a02",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "LP-WUS",
-      "group": "UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
         {
           "sourceId": "ran1-120-bis-a92ad485",
           "contributed": []
@@ -1234,40 +1107,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_tue_ran1-main-session-ballro_0830_0930_nes",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-08",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "09:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "NES",
-      "topicKey": "102b7943",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -1877,41 +1716,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_tue_ran1-main-session-ballro_1100_1200_ue-features",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-08",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "UE features",
-      "topicKey": "44100a02",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "NES",
-      "group": "UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_tue_ran1-adhoc-1_1100_1140_9.1.3",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
@@ -2310,41 +2114,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_tue_ran1-main-session-ballro_1430_1630_duplex",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-08",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Duplex",
-      "topicKey": "1096a0b0",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Duplex",
-      "group": "Duplex",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -2805,42 +2574,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_tue_ran1-main-session-ballro_1700_1915_lp-wus",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-08",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "19:15",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "LP-WUS",
-      "topicKey": "260c1d30",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "LP-WUS",
-      "group": "LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Close by 7:15 pm",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_tue_ran1-adhoc-1_1700_1755_9.1.1",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
@@ -3209,41 +2942,6 @@
           "sourceId": "ran1-120-bis-f20c90ad",
           "contributed": []
         },
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_wed_ran1-main-session-ballro_0830_1030_nes",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-09",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "NES",
-      "topicKey": "a6a18eef",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "NES",
-      "group": "NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
         {
           "sourceId": "ran1-120-bis-a92ad485",
           "contributed": []
@@ -3683,41 +3381,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_wed_ran1-main-session-ballro_1100_1300_duplex",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-09",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Duplex",
-      "topicKey": "1096a0b0",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Duplex",
-      "group": "Duplex",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_wed_ran1-adhoc-1_1100_1200_9.1.4.1",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-09",
@@ -4124,40 +3787,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120-bis_wed_ran1-main-session-ballro_1430_1500_mobility",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-09",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "Mobility",
-      "topicKey": "102b7943",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4657,40 +4286,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_wed_ran1-main-session-ballro_1700_1930_ue-features",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-09",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "19:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
-      "topic": "UE features",
-      "topicKey": "44100a02",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-a92ad485",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b44c54f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b6bf0629",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_wed_ran1-adhoc-1_1700_1845_ai-ml",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-09",
@@ -5100,14 +4695,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_0830_1030_lp-wus",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_0830_1030_lp-wus",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "LP-WUS",
       "topicKey": "260c1d30",
       "agendaItems": [],
@@ -5456,14 +5051,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_1100_1300_nes",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_1100_1300_nes",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "NES",
       "topicKey": "a6a18eef",
       "agendaItems": [],
@@ -5728,14 +5323,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_1430_1615_lp-wus",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_1430_1615_lp-wus",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "16:15",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "LP-WUS",
       "topicKey": "260c1d30",
       "agendaItems": [],
@@ -5966,14 +5561,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_1700_1730_mobility",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_1700_1730_mobility",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "Mobility",
       "topicKey": "102b7943",
       "agendaItems": [],
@@ -6170,14 +5765,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_1730_1830_ue-features",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_1730_1830_ue-features",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "17:30",
       "endTime": "18:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "UE features",
       "topicKey": "102b7943",
       "agendaItems": [],
@@ -6238,14 +5833,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_thu_ran1-main-session-ballro_1830_1930_ai-ml",
+      "sessionId": "ran1-120-bis_thu_ran1-main-session_1830_1930_ai-ml",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-10",
       "day": "Thursday",
       "startTime": "18:30",
       "endTime": "19:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "AI/ML",
       "topicKey": "9296eb35",
       "agendaItems": [],
@@ -6307,14 +5902,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_fri_ran1-main-session-ballro_0830_1030_lp-wus",
+      "sessionId": "ran1-120-bis_fri_ran1-main-session_0830_1030_lp-wus",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-11",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "LP-WUS",
       "topicKey": "260c1d30",
       "agendaItems": [],
@@ -6663,14 +6258,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_fri_ran1-main-session-ballro_1100_1300_nes",
+      "sessionId": "ran1-120-bis_fri_ran1-main-session_1100_1300_nes",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-11",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-bis-room-1649b589",
-      "roomName": "RAN1 Main Session Ballroom C",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
       "topic": "NES",
       "topicKey": "a6a18eef",
       "agendaItems": [],
@@ -6866,6 +6461,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-120-bis_fri_offline-2-wuhan_1430_1630_to-be-assigned-by-david",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-11",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-120-bis-room-ddbd0a4a",
+      "roomName": "Offline#2: Wuhan",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-b877a58f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-f20c90ad",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-120-bis_fri_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-11",
@@ -6913,12 +6538,140 @@
       "derivation": "direct",
       "confidence": 0.85,
       "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120-bis_fri_ran1-main-session_1700_1800_any-other-issues",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-11",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-120-bis-room-53e88fd5",
+      "roomName": "RAN1 Main Session",
+      "topic": "Any other issues",
+      "topicKey": "82d3703d",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other issues",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Session reports\nRAN1#120bis expectedto close at 17:00",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-d4624f73",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-b877a58f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-1b0a55b1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-a92ad485",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-1b44c54f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-b6bf0629",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120-bis_fri_offline-1-beijing_1700_1930_to-be-assigned-by-xiaodo",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-11",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-120-bis-room-daa856ef",
+      "roomName": "Offline#1: Beijing",
+      "topic": "To be assigned by Xiaodong",
+      "topicKey": "f55439d9",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "To be assigned by David",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-d4624f73",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-b877a58f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-1b0a55b1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-f20c90ad",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-a92ad485",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-1b44c54f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-b6bf0629",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120-bis_fri_offline-2-wuhan_1700_1930_to-be-assigned-by-david",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-11",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-120-bis-room-ddbd0a4a",
+      "roomName": "Offline#2: Wuhan",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-b877a58f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-f20c90ad",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     }
   ],
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-06T11:36:45Z",
-    "lastAttemptAt": "2026-10-06T11:36:45Z"
+    "lastSuccessfulAt": "2026-10-06T21:48:47Z",
+    "lastAttemptAt": "2026-10-06T21:48:47Z"
   }
 }
