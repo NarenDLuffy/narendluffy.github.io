@@ -20,9 +20,9 @@ import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/Sche
 import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
-  day: z.string().optional(),
-  ai: z.string().optional(),
-  q: z.string().optional(),
+  day: z.coerce.string().optional(),
+  ai: z.coerce.string().optional(),
+  q: z.coerce.string().optional(),
   room: z.string().optional(),
   hide: z.coerce.boolean().optional(),
 });
