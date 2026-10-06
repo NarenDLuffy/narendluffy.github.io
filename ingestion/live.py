@@ -666,8 +666,12 @@ def _apply_chair_note_titles(
     checks = [code for code in numbered if code in known and "." not in code]
     agree = sum(1 for code in checks if numbered[code].strip().lower() == known[code])
     if checks and agree / len(checks) >= 0.6:
+        # A section whose top-level heading disagrees with agenda.csv uses
+        # different heading levels; skip it rather than mislabel items.
+        good_tops = {code for code in checks if numbered[code].strip().lower() == known[code]}
         for code, title in numbered.items():
-            titles.setdefault(code, title)
+            if code.split(".")[0] in good_tops:
+                titles.setdefault(code, title)
     else:
         print(f"  chair-notes numbering did not match agenda ({agree}/{len(checks)})")
     by_code = {item.code: item for item in items}
