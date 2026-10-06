@@ -518,6 +518,7 @@ def parse_block_schedule_docx(
             color_key = source_color or f"position-{index}"
             if mode == "offline":
                 color_key = f"offline-{index}"
+                lane_names[(mode, color_key)] = f"Offline Session {index + 1}"
             chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
             main = is_main_evidence(cell.text, heading)
             if chair_lane_id:
