@@ -5,7 +5,7 @@
  * the schedule and drafts current without re-publishing.
  */
 const LIVE_DATA_BASE =
-  (import.meta.env.VITE_LIVE_DATA_BASE as string | undefined) ??
+  (import.meta.env['VITE_LIVE_DATA_BASE'] as string | undefined) ??
   "https://raw.githubusercontent.com/NarenDLuffy/narendluffy.github.io/main/public/data/";
 
 export function dataUrl(path: string): string {
