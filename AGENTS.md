@@ -10,6 +10,7 @@
 <!-- LOVABLE:END -->
 - Sync-mirror schedule files belong to a meeting only when their name matches its number and bis suffix (unlabelled files only while the meeting is active) — prevents the previous meeting's rooms leaking into the next.
 - Room colours, labels ("Name (RAN1 BrkN)") and active-room filtering go through src/lib/rooms.ts — one place for room presentation.
+- Canonical chair columns use the schedule cell colour as chair identity; explicit “Main session” or “RAN1 #number commences” text marks Main — avoids position and white-colour assumptions.
 - ICS export uses meetingTimeZone() which maps fixed Etc/ offsets to real DST zones by city — calendars stay correct in summer.
 - Venue mode UI is gated by VENUE_MODE_ENABLED in venueMode.ts (currently off) — plumbing kept for a future HTTPS venue server.
 - Schedule and drafts workflows share the "data-refresh" concurrency group and rebase-retry on push — they commit to the same branch.

@@ -76,6 +76,11 @@
   --color-room-5: var(--room-5);
   --color-room-6: var(--room-6);
   --color-room-7: var(--room-7);
+  --color-room-main: var(--room-main);
+  --color-room-source-grey: var(--room-source-grey);
+  --color-room-source-orange: var(--room-source-orange);
+  --color-room-source-peach: var(--room-source-peach);
+  --color-room-source-blue: var(--room-source-blue);
   --color-live: var(--live);
   --color-warn: var(--warn);
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
@@ -121,6 +126,11 @@
   --room-5: oklch(0.62 0.15 80);
   --room-6: oklch(0.55 0.18 0);
   --room-7: oklch(0.5 0.1 275);
+  --room-main: oklch(0.62 0.025 250);
+  --room-source-grey: oklch(0.58 0.025 250);
+  --room-source-orange: oklch(0.68 0.16 70);
+  --room-source-peach: oklch(0.67 0.12 35);
+  --room-source-blue: oklch(0.6 0.12 235);
   --topic-default: oklch(0.55 0.03 255);
   --sidebar: oklch(0.97 0.006 250);
   --sidebar-foreground: oklch(0.21 0.02 255);
@@ -170,6 +180,11 @@
   --room-5: oklch(0.78 0.15 80);
   --room-6: oklch(0.72 0.18 0);
   --room-7: oklch(0.7 0.1 275);
+  --room-main: oklch(0.86 0.015 250);
+  --room-source-grey: oklch(0.72 0.025 250);
+  --room-source-orange: oklch(0.78 0.14 75);
+  --room-source-peach: oklch(0.76 0.11 40);
+  --room-source-blue: oklch(0.74 0.11 235);
   --topic-default: oklch(0.62 0.02 255);
   --sidebar: oklch(0.2 0.017 255);
   --sidebar-foreground: oklch(0.95 0.005 250);
@@ -254,6 +269,11 @@
   --room-5: oklch(0.78 0.15 80);
   --room-6: oklch(0.72 0.18 0);
   --room-7: oklch(0.7 0.1 275);
+  --room-main: oklch(0.86 0.015 250);
+  --room-source-grey: oklch(0.72 0.025 250);
+  --room-source-orange: oklch(0.78 0.14 75);
+  --room-source-peach: oklch(0.76 0.11 40);
+  --room-source-blue: oklch(0.74 0.11 235);
   --topic-default: oklch(0.62 0.02 255);
   --sidebar: oklch(0.2 0.017 255);
   --sidebar-foreground: oklch(0.95 0.005 250);

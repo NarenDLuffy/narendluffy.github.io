@@ -82,6 +82,12 @@ class Room:
     description: str | None = None
     #: Session label the chairs use for this room, e.g. "RAN1 Main", "RAN1 Brk2"
     sessionLabel: str | None = None
+    #: Cell fill from the source schedule, used as the chair-lane identity.
+    sourceColor: str | None = None
+    #: Stable identity for one chair lane across online/offline schedule tables.
+    chairLaneId: str | None = None
+    #: Main is evidenced by commencement text, never inferred from a fixed colour.
+    chairRole: Literal["main", "vice"] | None = None
 
     def to_json(self) -> dict[str, Any]:
         return _clean(asdict(self))
