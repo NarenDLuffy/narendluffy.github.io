@@ -521,8 +521,24 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
         return re.sub(r"[^a-z0-9]+", "", tail)
 
     by_name: dict[str, Room] = {}
+    by_chair_lane: dict[str, Room] = {}
     remap: dict[str, str] = {}
     for room in rooms:
+        if room.chairLaneId:
+            keeper = by_chair_lane.get(room.chairLaneId)
+            if keeper is None:
+                by_chair_lane[room.chairLaneId] = room
+                by_name[canonical(room.roomName)] = room
+                remap[room.roomId] = room.roomId
+            else:
+                remap[room.roomId] = keeper.roomId
+                if room.chairRole == "main":
+                    keeper.roomName = "RAN1 Main"
+                    keeper.shortName = "RAN1 Main"
+                    keeper.sessionLabel = None
+                    keeper.chairRole = "main"
+                keeper.sourceColor = keeper.sourceColor or room.sourceColor
+            continue
         key = canonical(room.roomName)
         keeper = by_name.get(key)
         if keeper is None:
@@ -531,6 +547,9 @@ def _name_tracks(rooms: list[Room], sessions: list[Session]) -> tuple[list[Room]
         else:
             remap[room.roomId] = keeper.roomId
             keeper.sessionLabel = keeper.sessionLabel or room.sessionLabel
+            keeper.sourceColor = keeper.sourceColor or room.sourceColor
+            keeper.chairLaneId = keeper.chairLaneId or room.chairLaneId
+            keeper.chairRole = keeper.chairRole or room.chairRole
             if len(room.roomName) > len(keeper.roomName):
                 keeper.roomName = room.roomName
                 keeper.shortName = room.roomName[:24]

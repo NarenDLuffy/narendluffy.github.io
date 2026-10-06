@@ -76,6 +76,7 @@ class _Cell:
     text: str
     col_start: int
     col_end: int
+    fill: str | None = None
 
 
 def _cell_text(tc) -> str:
@@ -98,7 +99,10 @@ def _row_cells(tr) -> list[_Cell]:
             gs = pr.find(f"{W}gridSpan")
             if gs is not None:
                 span = int(gs.get(f"{W}val"))
-        cells.append(_Cell(_cell_text(tc), cursor, cursor + span))
+        shading = pr.find(f"{W}shd") if pr is not None else None
+        fill = shading.get(f"{W}fill") if shading is not None else None
+        normalized_fill = fill.upper() if fill and fill.lower() not in {"auto", "none"} else None
+        cells.append(_Cell(_cell_text(tc), cursor, cursor + span, normalized_fill))
         cursor += span
     return cells
 
@@ -351,6 +355,22 @@ def parse_block_schedule_docx(
     pending_labels: list[str] = []
     pending_heading = ""
     table_index = 0
+    lane_names: dict[tuple[str, str], str] = {}
+    lane_numbers: dict[str, dict[str, int]] = {}
+
+    def schedule_mode(heading: str) -> str:
+        lowered = heading.lower()
+        if "offline" in lowered:
+            return "offline"
+        if "online" in lowered:
+            return "online"
+        return "main" if "main" in lowered else "session"
+
+    def is_main_evidence(text: str, heading: str) -> bool:
+        return bool(
+            re.search(r"\bmain\s+session\b", heading, re.I)
+            or re.search(r"\b(?:main\s+session|RAN1\s*#?\s*\d+[a-z-]*)\s+commences\b", text, re.I)
+        )
 
     for child in body:
         tag = child.tag.split("}")[1]
@@ -380,9 +400,86 @@ def parse_block_schedule_docx(
         if not days:
             continue
 
-        def room_for(day_start: int, day_end: int, col_start: int, rank: int, count: int) -> Room:
+        # A few placeholder/TBD cells lose their lane fill in Word. Derive the
+        # stable colour for each horizontal lane from the populated cells in
+        # the whole table so one formatting omission cannot move a session to
+        # another chair's canonical column.
+        lane_fills: dict[int, dict[str, int]] = {}
+        for row in rows[1:]:
+            row_cells = _row_cells(row)
+            for day_start, day_end in days.values():
+                width = max(1, day_end - day_start)
+                in_day = [
+                    cell
+                    for cell in row_cells[1:]
+                    if cell.col_start < day_end and cell.col_end > day_start and cell.text.strip()
+                ]
+                for cell in in_day:
+                    if not cell.fill or re.fullmatch(r"TBD|N/?A", cell.text.strip(), re.I):
+                        continue
+                    offset = max(0, cell.col_start - day_start)
+                    lane = min(width - 1, offset)
+                    counts = lane_fills.setdefault(lane, {})
+                    counts[cell.fill] = counts.get(cell.fill, 0) + 1
+        preferred_fills = {
+            lane: max(counts, key=counts.get)
+            for lane, counts in lane_fills.items()
+            if counts
+        }
+
+        mode = schedule_mode(heading)
+
+        if mode == "main":
+            # A separate detailed Main table enriches the canonical Main lane
+            # already established by the combined online table. It must reuse
+            # that chair identity rather than create another white lane.
+            existing_main = next((room for room in rooms.values() if room.chairRole == "main"), None)
+            if existing_main is not None:
+                explicit_fill = next(iter(preferred_fills.values()), existing_main.sourceColor)
+                existing_main.sourceColor = existing_main.sourceColor or explicit_fill
+                for row in rows[1:]:
+                    cells = _row_cells(row)
+                    if not cells:
+                        continue
+                    label_text = cells[0].text.replace("\n", " ")
+                    block = BLOCK_RE.search(label_text)
+                    if not block or BREAK_RE.search(label_text):
+                        continue
+                    block_start = _minutes(f"{block.group(1)}:{block.group(2)}")
+                    block_end = _minutes(f"{block.group(3)}:{block.group(4)}")
+                    for day, (day_start, day_end) in days.items():
+                        if day not in day_dates:
+                            continue
+                        cell = next(
+                            (
+                                item
+                                for item in cells[1:]
+                                if item.col_start < day_end
+                                and item.col_end > day_start
+                                and item.text.strip()
+                            ),
+                            None,
+                        )
+                        if cell is None:
+                            continue
+                        sessions.extend(
+                            _sessions_for_cell(
+                                cell.text,
+                                meeting_id=meeting_id,
+                                day=day,
+                                day_date=day_dates[day],
+                                room=existing_main,
+                                block_start=block_start,
+                                block_end=block_end,
+                                source=source,
+                            )
+                        )
+                continue
+
+        def room_for(cell: _Cell, day_start: int, day_end: int, rank: int, count: int) -> Room:
             width = max(1, day_end - day_start)
-            offset = max(0, col_start - day_start)
+            offset = max(0, cell.col_start - day_start)
+            lane = min(width - 1, offset)
             if labels and count == len(labels):
                 # Cells split the day evenly across the named rooms.
                 index = rank
@@ -402,7 +499,28 @@ def parse_block_schedule_docx(
                 base = re.sub(r"\s*(schedule|sessions?|for)\s*$", "", base, flags=re.I).strip() or base
                 name = base if count <= 1 else f"{base} {index + 1}"
 
-            room_id = f"{meeting_id}-room-{_slug(name.lower())}"
+            # In the chair's combined grid a fill colour is the stable identity
+            # of one chair, while its horizontal position changes by day and
+            # between the online/offline tables. Keep named physical rooms on
+            # their name-based identity; otherwise key the canonical lane by
+            # source document + colour.
+            has_named_room = bool(labels) or bool(width == 1 and _heading_room(heading, known_labels))
+            source_color = preferred_fills.get(lane, cell.fill)
+            color_key = source_color or f"position-{index}"
+            chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
+            main = is_main_evidence(cell.text, heading)
+            if chair_lane_id:
+                lane_key = (mode, color_key)
+                if main:
+                    name = "RAN1 Main"
+                elif lane_key in lane_names:
+                    name = lane_names[lane_key]
+                else:
+                    mode_numbers = lane_numbers.setdefault(mode, {})
+                    number = mode_numbers.setdefault(color_key, len(mode_numbers) + 1)
+                    name = f"{mode.capitalize()} Session {number}"
+                    lane_names[lane_key] = name
+            room_id = f"{meeting_id}-room-{_slug(chair_lane_id or name.lower())}"
             room = rooms.get(room_id)
             if room is None:
                 room = Room(
@@ -410,8 +528,16 @@ def parse_block_schedule_docx(
                     meetingId=meeting_id,
                     roomName=name,
                     order=room_order_offset + len(rooms),
+                    sourceColor=source_color,
+                    chairLaneId=chair_lane_id,
+                    chairRole="main" if main else ("vice" if chair_lane_id else None),
                 )
                 rooms[room_id] = room
+            elif main:
+                room.roomName = "RAN1 Main"
+                room.shortName = "RAN1 Main"
+                room.sessionLabel = None
+                room.chairRole = "main"
             return room
 
         for row in rows[1:]:
@@ -464,7 +590,7 @@ def parse_block_schedule_docx(
                 for rank, cell in enumerate(in_day):
                     if not cell.text.strip():
                         continue
-                    room = room_for(day_start, day_end, cell.col_start, rank, len(in_day))
+                    room = room_for(cell, day_start, day_end, rank, len(in_day))
                     sessions.extend(
                         _sessions_for_cell(
                             cell.text,

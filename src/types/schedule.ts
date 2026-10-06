@@ -28,6 +28,12 @@ export interface Room {
   description?: string;
   /** Session label the chairs use for this room, e.g. "RAN1 Main", "RAN1 Brk2" */
   sessionLabel?: string;
+  /** Cell fill in the chair schedule; one colour consistently identifies one chair lane. */
+  sourceColor?: string;
+  /** Stable identity for a chair lane across online and offline schedule tables. */
+  chairLaneId?: string;
+  /** Main is identified by explicit commencement text, not a fixed colour. */
+  chairRole?: "main" | "vice";
   /** Order used for timetable columns */
   order: number;
 }

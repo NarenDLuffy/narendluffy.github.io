@@ -3,8 +3,21 @@ import type { AgendaItem, Room, ScheduleBundle } from "@/types/schedule";
 const ROOM_PALETTE = 8;
 
 /** Stable colour per room, by its column order in the meeting. */
-export function roomColor(room: Pick<Room, "order"> | undefined): string {
+export function roomColor(
+  room: Pick<Room, "order" | "sourceColor" | "chairRole"> | undefined,
+): string {
   if (!room) return "var(--muted-foreground)";
+  if (room.chairRole === "main") return "var(--room-main)";
+  if (room.sourceColor) {
+    const sourceColors: Record<string, string> = {
+      D9D9D9: "var(--room-source-grey)",
+      FFD966: "var(--room-source-orange)",
+      F7CAAC: "var(--room-source-peach)",
+      "9CC2E5": "var(--room-source-blue)",
+    };
+    const color = sourceColors[room.sourceColor.toUpperCase()];
+    if (color) return color;
+  }
   return `var(--room-${((room.order % ROOM_PALETTE) + ROOM_PALETTE) % ROOM_PALETTE})`;
 }
 
