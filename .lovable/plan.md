@@ -47,3 +47,11 @@ Today the RAN1#126bis room list still contains last meeting's rooms (Praetorium,
 - Cause: the schedule job and the drafts job both save refreshed data to the same repo every few minutes. When the drafts job saves first, the schedule job's save is rejected ("fetch first"). It is not a 3gpplive.net problem, and the job is needed — it keeps the timetable fresh.
 - Fix: the schedule job pulls the latest changes and retries the save (up to 3 times), same as the drafts job already does; both jobs share one queue so they never save at the same moment.
 - Retire 3gpplive.net: stop deploying the venue copy there (it never reached 10.10.10.10 because phones force HTTPS). Venue code stays in the app, switched off, so it can be revived if the server gets HTTPS. You can then let the domain lapse or point it elsewhere.
+
+## 9. Manual "Refresh" for the schedule
+- Drafts already has "Refresh now" (checks the drafts folders live, so new FL summaries appear immediately).
+- Add a "Refresh" button on Timetable, NOW and Rooms:
+  - Step 1 (instant): reload the latest published schedule, bypassing the phone's saved copy.
+  - Step 2: ask GitHub to rebuild the schedule from the newest 3GPP documents right away (instead of waiting for the next 5-minute run), then show "Rebuilding… updated hh:mm" when the new data lands (usually 1–3 minutes).
+- Step 2 needs a GitHub connection with permission to start the update job; the button is limited to one trigger per few minutes so it cannot be spammed.
+- Technical: server function calls GitHub `workflow_dispatch` for update-schedule.yml via the GitHub connector; the app polls `generatedAt` until it changes.
