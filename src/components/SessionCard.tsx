@@ -26,7 +26,7 @@ export function AgendaChip({
   title,
 }: {
   code: string;
-  title?: string;
+  title?: string | undefined;
   onToggle?: (code: string) => void;
   starred?: boolean;
 }) {
