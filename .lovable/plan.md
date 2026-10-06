@@ -9,7 +9,7 @@ For RAN1#126bis, **Online Session (RAN1 Main)** and **Online Session 1** are gen
 1. **Treat colour as chair-lane identity**
    - Read the source document’s lane/cell background colour.
    - Build one canonical column for each colour/chair across both online and offline rows.
-   - Do not hard-code white as Main. Identify the Main chair’s lane from explicit schedule evidence such as the lane containing “Main session commences”, then use colour to associate that chair’s other sessions.
+   - Do not hard-code white as Main. Identify the Main chair’s lane from explicit schedule evidence such as the lane containing “Main session or RAN1 #number commences”, then use colour to associate that chair’s other sessions.
    - Keep every other colour as a separate vice-chair lane, even when two chairs discuss the same agenda item at the same time.
 
 2. **Merge duplicate Main aliases automatically**
