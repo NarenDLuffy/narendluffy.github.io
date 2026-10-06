@@ -78,7 +78,6 @@ jobs:
               if git push; then exit 0; fi
               if ! git pull --rebase -X theirs; then
                 [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort
-                git fetch origin && git reset --soft origin/main 2>/dev/null || true
               fi
               sleep $((attempt * 5))
             done
