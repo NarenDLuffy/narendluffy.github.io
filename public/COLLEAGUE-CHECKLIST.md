@@ -138,7 +138,7 @@ For anything that feels off, please include:
 ## 11. Help & admin
 
 - [ ] Open `/help` and read "How to use RAN1 Live".
-- [ ] Confirm the new **Share this checklist** link opens this document.
+
 - [ ] Open `/admin` and confirm the ingestion status is readable.
 
 **Feedback:** Is anything in the help page still confusing?

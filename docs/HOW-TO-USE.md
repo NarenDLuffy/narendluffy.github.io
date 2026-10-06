@@ -16,19 +16,47 @@ What is running right this minute, in meeting-local time. Each card shows the
 session, the room, the agenda items being covered and how far through it is.
 Use this when you walk out of a session and need to know where to go next.
 
+- **Refresh** reloads the latest published schedule right away and shows when
+  the schedule was last rebuilt.
+- **FL deadline badges** appear here when a deadline you set is due soon.
+
 ### Schedule
 The full week as a timetable grid, one column per parallel track, every day
 drawn from 08:30 to 19:30 so the days line up.
 
-- Tap any block to see the agenda-item breakdown with per-item minutes.
+- Each room has its own colour, used on the timetable, the Rooms tab and the
+  room pages.
+- Room names show the session label in brackets where the chairs' documents
+  give one, e.g. "1.1 Himalaya (RAN1 Brk2)".
+- The agenda filter highlights matching blocks and dims the rest; tick
+  **Hide others** to hide them completely. Breaks and lunch always stay
+  visible.
+- Tap any block to see the full agenda titles (e.g. "10.5.5 — Other physical
+  channels and signals") with the per-item minute breakdown.
 - Coffee and lunch bands are shown across the full width.
 - Search and agenda filters narrow the grid to the topics you care about.
 - The star on a block adds that session to **My agenda**.
+- **Refresh** pulls the newest schedule immediately and shows when it was last
+  rebuilt.
 
 ### My agenda
 Everything you starred, in chronological order, plus a calendar export.
 Tap **Export .ics** to drop your personal selection into Outlook/Google/Apple
 Calendar for the week.
+
+- Exported times use the meeting city's time zone (daylight-saving handled),
+  so 09:00 in Prague shows as 09:00 in Prague in your calendar.
+- Events include the room with its session label, full agenda names, and
+  30-minute alarms for any FL deadlines you set.
+
+### FL deadlines
+Add a deadline yourself per agenda item — tap **Deadline** in the block
+details sheet (e.g. "FL summary #1 due Tue 18:00").
+
+- Reminders show as a badge on **Now** and as calendar alarms in the .ics
+  export.
+- The RAN1 email reflector is members-only behind an ETSI login, so deadlines
+  cannot be read automatically — they are manual and stay on your own device.
 
 ### Drafts
 Live tracking of the meeting's working documents.
@@ -45,44 +73,10 @@ Live tracking of the meeting's working documents.
 - It re-checks about every 60 seconds; **Refresh now** forces an immediate
   re-scan and tells you exactly how many files were new or updated.
 
-### Venue mode (on meeting Wi-Fi)
-When you are in the meeting venue and connected to the meeting Wi-Fi, the
-fastest source is the local server at `10.10.10.10`. Browsers refuse to let an
-HTTPS page read an HTTP server, so the secure main site cannot do this directly.
-
-If the app detects it is blocked, it shows a banner offering to open **venue
-mode** on a plain-HTTP copy of the same app. Venue mode can read `10.10.10.10`
-directly and therefore gets the freshest drafts and any meeting-local schedule
-updates. Tap **Open venue mode**, and your bookmarks, follows and read state are
-carried over. The transfer URL is cleaned from the address bar as soon as the
-twin loads.
-
-Tick **Always open venue mode** on the banner (or from inside venue mode) and you
-never have to think about it again: open `https://ran1.app` as usual, and during
-an active meeting the app redirects itself to the HTTP twin silently. If the twin
-cannot be reached, or your browser upgrades the hop to HTTPS, use the secure site
-and its public meeting-sync source instead.
-
-If the venue copy opens with `https://`, the app shows a warning and a way back
-to `ran1.app`. The HTTPS page cannot access the local meeting server.
-
-#### If the twin loads over HTTPS and you see the warning
-
-GitHub Pages serves a valid HTTPS version of `3gpplive.net`. Some browsers
-automatically upgrade the requested HTTP link and keep it on HTTPS because that
-connection succeeds. Clearing browser data does not reliably change this.
-
-Use **Back to ran1.app**. Schedule and drafts continue through the public
-meeting-sync source; venue-only changes may arrive a few minutes later. You can
-also select **Stop auto-opening venue mode** to avoid returning to the HTTPS twin.
-
-If you never see the banner, the app is probably falling back to the public
-SYNC mirror, which is fine but may be a few minutes behind.
-
 ### Rooms
-Every physical room used this week and what is scheduled in it. Open a room to
-see its whole day. If your colleagues use the Company tab, you can also see who
-is currently in which room.
+Only the rooms in use at the current meeting, each with its own colour and
+session label. Open a room to see its whole day. If your colleagues use the
+Company tab, you can also see who is currently in which room.
 
 ### Company (optional)
 Voluntary, account-free presence sharing with your colleagues: pick a shared
@@ -104,45 +98,23 @@ appears automatically — the current one is selected for you by default.
 
 ## Good to know
 
+- **Keeping up to date**: the schedule and drafts are rebuilt from the newest
+  3GPP documents every 5 minutes during meeting hours, so new room names,
+  session labels and document revisions appear on their own — no reinstall, no
+  republish. Tap **Refresh** to pull the latest immediately.
 - **Offline**: the last loaded schedule is cached, so the app still opens in a
   basement meeting room with no signal. A banner tells you the data is stale.
-- **Your data**: bookmarks, follows, read state, display name and presence live
-  only in your browser's storage on your device. Clearing site data resets them.
+- **Your data**: bookmarks, follows, read state, deadlines, display name and
+  presence live only in your browser's storage on your device. Clearing site
+  data resets them.
 - **Times** are always shown in the meeting's local time zone, not your phone's.
-- **Venue mode**: the plain-HTTP venue twin is only for use on the meeting LAN.
-  It does not support account-based features; switch back to the secure site for
-  those. The twin must live on its own separate domain — the main site uses
-  strict HTTPS (HSTS) for all its subdomains, so a twin hosted under the same
-  domain would be force-upgraded to HTTPS by the browser and could not read the
-  venue server.
+- **Venue mode**: direct reading of the 10.10.10.10 meeting-local server is
+  currently switched off; drafts and the schedule come from the public 3GPP
+  meeting-sync source. The code is kept for the future if the venue server
+  supports HTTPS.
 - **Limitations**: the schedule is parsed from chair/sub-chair DOCX files, so a
   last-minute change made verbally in the room will not appear until an updated
   document is uploaded.
 
 Questions, wrong sessions, missing rooms? Send a screenshot — parser fixes are
 usually quick.
-
----
-
-## Verified venue-twin URLs (checked 2026-08-27)
-
-All checks made over plain HTTP; none was upgraded to HTTPS by the server.
-
-| URL | Result |
-| --- | --- |
-| `http://3gpplive.net/` | 200, serves the compiled RAN1 Live app |
-| `http://www.3gpplive.net/` | 301 → `http://3gpplive.net/` (stays HTTP), then 200 |
-| `http://3gpplive.net/schedule` | 301 → `/schedule/`, then 200 (app) |
-| `http://3gpplive.net/drafts` | 301 → `/drafts/`, then 200 (app) |
-| `http://3gpplive.net/agenda` | 301 → `/agenda/`, then 200 (app) |
-| `http://3gpplive.net/rooms` | 301 → `/rooms/`, then 200 (app) |
-| `http://3gpplive.net/help` | 301 → `/help/`, then 200 (app) |
-| `http://3gpplive.net/data/meetings.json` | 200, meeting index JSON |
-
-Notes:
-
-- Deep routes redirect to a trailing slash first; that redirect keeps the
-  `http://` scheme, so venue mode is unaffected.
-- GitHub Pages also provides a valid HTTPS endpoint. A browser that upgrades the
-  HTTP URL will remain on HTTPS even though **Enforce HTTPS** is unchecked.
-- Always enter through `https://ran1.app` and let it hop you to the twin.
