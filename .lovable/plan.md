@@ -55,3 +55,10 @@ Today the RAN1#126bis room list still contains last meeting's rooms (Praetorium,
   - Step 2: ask GitHub to rebuild the schedule from the newest 3GPP documents right away (instead of waiting for the next 5-minute run), then show "Rebuilding… updated hh:mm" when the new data lands (usually 1–3 minutes).
 - Step 2 needs a GitHub connection with permission to start the update job; the button is limited to one trigger per few minutes so it cannot be spammed.
 - Technical: server function calls GitHub `workflow_dispatch` for update-schedule.yml via the GitHub connector; the app polls `generatedAt` until it changes.
+
+## 10. Calendar export (ICS) correctness
+- Every exported event uses the meeting's local time zone (from the meeting city, e.g. Prague, Bengaluru, Dalian) and converts it correctly, so Outlook, Google and iPhone calendars show 09:00 Prague time as 09:00 in Prague and the matching time at home.
+- Handles daylight-saving changes during the meeting week, and meetings with no time zone set fall back to the city's zone instead of the phone's.
+- Each event includes room (with RAN1 Main/Brk label), agenda items with full names, and the time breakdown. FL deadline alarms included when set.
+- Verification: automated tests export sample sessions for meetings in several time zones and check the exact times; the downloaded file is also opened on desktop and phone in the preview.
+- Technical: check `timezone` in every `meeting.json` (fill in from city where missing), test `src/lib/ics.ts` UTC conversion, add a `VTIMEZONE`-free UTC export plus `X-WR-TIMEZONE` hint, and confirm the download works on iOS Safari (data-URL fallback).
