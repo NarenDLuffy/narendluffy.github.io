@@ -52,9 +52,8 @@ Today the RAN1#126bis room list still contains last meeting's rooms (Praetorium,
 - Drafts already has "Refresh now" (checks the drafts folders live, so new FL summaries appear immediately).
 - Add a "Refresh" button on Timetable, NOW and Rooms:
   - Step 1 (instant): reload the latest published schedule, bypassing the phone's saved copy.
-  - Step 2: ask GitHub to rebuild the schedule from the newest 3GPP documents right away (instead of waiting for the next 5-minute run), then show "Rebuilding… updated hh:mm" when the new data lands (usually 1–3 minutes).
-- Step 2 needs a GitHub connection with permission to start the update job; the button is limited to one trigger per few minutes so it cannot be spammed.
-- Technical: server function calls GitHub `workflow_dispatch` for update-schedule.yml via the GitHub connector; the app polls `generatedAt` until it changes.
+  - Shows when the schedule was last rebuilt ("updated 3 min ago"). The automatic job rebuilds from the newest 3GPP documents every 5 minutes during meeting hours, so a new upload appears within about 5 minutes.
+- No GitHub connection needed. (Optional later: an "update now" trigger that starts the rebuild immediately, which would need one.)
 
 ## 10. Calendar export (ICS) correctness
 - Every exported event uses the meeting's local time zone (from the meeting city, e.g. Prague, Bengaluru, Dalian) and converts it correctly, so Outlook, Google and iPhone calendars show 09:00 Prague time as 09:00 in Prague and the matching time at home.
