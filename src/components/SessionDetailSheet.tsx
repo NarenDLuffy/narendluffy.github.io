@@ -30,7 +30,7 @@ export function SessionDetailSheet({
 
   const breakdown = session?.agendaBreakdown ?? [];
   const codes = session
-    ? [...new Set([...session.agendaItems, ...breakdown.map((b) => b.code).filter(Boolean)])]
+    ? [...new Set([...session.agendaItems, ...breakdown.flatMap((b) => (b.code ? [b.code] : []))])]
     : [];
 
   return (
@@ -143,26 +143,26 @@ export function SessionDetailSheet({
                               className="mt-2 flex flex-wrap items-center gap-1.5 pl-6"
                               onSubmit={(e) => {
                                 e.preventDefault();
-                                add(form);
+                                if (form) add(form);
                                 setForm(undefined);
                               }}
                             >
                               <input
-                                value={form.label}
-                                onChange={(e) => setForm({ ...form, label: e.target.value })}
+                                value={form?.label ?? ""}
+                                onChange={(e) => { const v = e.target.value; setForm((cur) => cur && { ...cur, label: v }); }}
                                 className="min-h-9 w-32 rounded border border-input bg-card px-2 text-xs"
                                 aria-label="Deadline name"
                               />
                               <input
                                 type="date"
-                                value={form.date}
-                                onChange={(e) => setForm({ ...form, date: e.target.value })}
+                                value={form?.date ?? ""}
+                                onChange={(e) => { const v = e.target.value; setForm((cur) => cur && { ...cur, date: v }); }}
                                 className="min-h-9 rounded border border-input bg-card px-2 text-xs"
                               />
                               <input
                                 type="time"
-                                value={form.time}
-                                onChange={(e) => setForm({ ...form, time: e.target.value })}
+                                value={form?.time ?? ""}
+                                onChange={(e) => { const v = e.target.value; setForm((cur) => cur && { ...cur, time: v }); }}
                                 className="min-h-9 rounded border border-input bg-card px-2 text-xs"
                               />
                               <button

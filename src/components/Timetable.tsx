@@ -22,8 +22,8 @@ export function Timetable({
   showNowMarker: boolean;
   scrollToNowKey?: number;
   /** When set, non-matching blocks are greyed out (agenda filter). */
-  isMatch?: (s: Session) => boolean;
-  onSelect?: (s: Session) => void;
+  isMatch?: ((s: Session) => boolean) | undefined;
+  onSelect?: ((s: Session) => void) | undefined;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
 
