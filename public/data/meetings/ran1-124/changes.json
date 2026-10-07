@@ -1,16 +1,87 @@
 [
   {
-    "changeId": "session_added-ran1-124_fri_j2_1700_1930_to-be-assigned-by-hiroki-2026-10-07T07:47:23+00:00",
+    "changeId": "start_time_changed-ran1-124_wed_a1_1730_1830_10.3.2-2026-10-07T12:02:59+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-10-07T07:47:23+00:00",
-    "type": "session_added",
-    "title": "To be assigned by Hiroki added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-124_fri_j2_1700_1930_to-be-assigned-by-hiroki",
-    "to": "J2 17:00-19:30",
+    "detectedAt": "2026-10-07T12:02:59+00:00",
+    "type": "start_time_changed",
+    "title": "Modulation start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.3.2"
+    ],
+    "sessionId": "ran1-124_wed_a1_1730_1830_10.3.2",
+    "to": "17:30",
     "sourceIds": [
-      "ran1-124-211244ae"
-    ]
+      "ran1-124-211244ae",
+      "ran1-124-3873961c"
+    ],
+    "from": "17:50"
+  },
+  {
+    "changeId": "start_time_changed-ran1-124_wed_a1_1700_1730_10.3.1-2026-10-07T12:02:59+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-07T12:02:59+00:00",
+    "type": "start_time_changed",
+    "title": "Channel coding start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124_wed_a1_1700_1730_10.3.1",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c"
+    ],
+    "from": "17:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-124_wed_a1_1700_1730_10.3.1-2026-10-07T12:02:59+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-07T12:02:59+00:00",
+    "type": "end_time_changed",
+    "title": "Channel coding end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.3.1"
+    ],
+    "sessionId": "ran1-124_wed_a1_1700_1730_10.3.1",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-3873961c"
+    ],
+    "from": "17:50"
+  },
+  {
+    "changeId": "room_changed-ran1-124_fri_city-view-8_1700_1930_to-be-assigned-by-hiroki-2026-10-07T12:02:59+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-07T12:02:59+00:00",
+    "type": "room_changed",
+    "title": "To be assigned by Hiroki moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-124_fri_city-view-8_1700_1930_to-be-assigned-by-hiroki",
+    "to": "City View 8",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ],
+    "from": "J2"
+  },
+  {
+    "changeId": "session_removed-ran1-124_wed_f1-f2-f3_1800_1830_10.9-2026-10-07T12:02:59+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-07T12:02:59+00:00",
+    "type": "session_removed",
+    "title": "10.9 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.9"
+    ],
+    "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.9",
+    "sourceIds": [
+      "ran1-124-5f1586e4"
+    ],
+    "from": "F1+F2+F3"
   }
 ]
