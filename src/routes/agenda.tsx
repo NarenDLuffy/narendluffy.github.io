@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarPlus, Star, Trash2 } from "lucide-react";
-import { sessionMatchesAgenda } from "@/services/scheduleService";
+import { formatDuration, minutesOf, sessionMatchesAgenda } from "@/services/scheduleService";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
@@ -74,6 +74,101 @@ function AgendaPage() {
         </p>
       </header>
 
+      {mine.length > 0 ? (
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={() => downloadIcs(buildIcs(bundle, mine), `${meeting.slug}-my-agenda.ics`)}
+            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-md bg-primary px-3 text-sm font-semibold text-primary-foreground"
+          >
+            <CalendarPlus className="size-4" /> Export .ics
+          </button>
+          <button
+            type="button"
+            onClick={clear}
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-border px-3 text-sm font-medium text-muted-foreground"
+          >
+            <Trash2 className="size-4" /> Clear
+          </button>
+        </div>
+      ) : null}
+
+      {mine.length === 0 ? (
+        <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
+          Star agenda items below (or on any session) to build your personal timeline.
+        </p>
+      ) : (
+        Object.entries(byDay).map(([date, sessions]) => (
+          <section key={date}>
+            <h2 className="mb-2 text-sm font-semibold">
+              {sessions[0]?.day}
+              <span className="mono-code ml-2 text-xs text-muted-foreground">{date}</span>
+              {date === clock.localDate ? (
+                <span className="ml-2 rounded bg-live/15 px-1.5 py-0.5 text-[10px] font-bold uppercase text-live">
+                  today
+                </span>
+              ) : null}
+            </h2>
+            <ol className="space-y-1.5">
+              {sessions.map((s) => (
+                <li key={s.sessionId}>
+                  <Link
+                    to="/rooms/$roomId"
+                    params={{ roomId: s.roomId }}
+                    className="flex items-center gap-3 rounded-md border border-border bg-card p-2.5"
+                  >
+                    <span className="mono-code w-16 shrink-0 tabular">
+                      <span className="block text-sm font-semibold">{s.startTime}</span>
+                      <span className="block text-[11px] text-muted-foreground">
+                        –{s.endTime} · {formatDuration(minutesOf(s.endTime) - minutesOf(s.startTime))}
+                      </span>
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-sm font-medium">
+                        {s.topic}
+                        {s.agendaItems.length ? (
+                          <span className="mono-code ml-1.5 text-xs text-muted-foreground">
+                            {s.agendaItems.join(" · ")}
+                          </span>
+                        ) : null}
+                      </span>
+                      <span className="block truncate text-xs text-muted-foreground">
+                        {s.roomName}
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))
+      )}
+      {bookmarks.length > 0 ? (
+        <section>
+          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Draft activity for my items
+          </h2>
+          {bookmarks.filter((c) => drafts.activity.has(c)).length === 0 ? (
+            <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
+              No drafts or FL summaries uploaded yet for the items you follow.
+            </p>
+          ) : (
+            <ol className="space-y-1.5">
+              {bookmarks
+                .filter((c) => drafts.activity.has(c))
+                .map((c) => (
+                  <li key={c}>
+                    <AgendaActivityCard
+                      activity={drafts.activity.get(c)!}
+                      title={bundle.agendaItems.find((a) => a.code === c)?.title}
+                    />
+                  </li>
+                ))}
+            </ol>
+          )}
+        </section>
+      ) : null}
+
       <section>
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Follow agenda items
@@ -109,98 +204,6 @@ function AgendaPage() {
         )}
       </section>
 
-      {bookmarks.length > 0 ? (
-        <section>
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Draft activity for my items
-          </h2>
-          {bookmarks.filter((c) => drafts.activity.has(c)).length === 0 ? (
-            <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
-              No drafts or FL summaries uploaded yet for the items you follow.
-            </p>
-          ) : (
-            <ol className="space-y-1.5">
-              {bookmarks
-                .filter((c) => drafts.activity.has(c))
-                .map((c) => (
-                  <li key={c}>
-                    <AgendaActivityCard
-                      activity={drafts.activity.get(c)!}
-                      title={bundle.agendaItems.find((a) => a.code === c)?.title}
-                    />
-                  </li>
-                ))}
-            </ol>
-          )}
-        </section>
-      ) : null}
-
-      {mine.length > 0 ? (
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={() => downloadIcs(buildIcs(bundle, mine), `${meeting.slug}-my-agenda.ics`)}
-            className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-md bg-primary px-3 text-sm font-semibold text-primary-foreground"
-          >
-            <CalendarPlus className="size-4" /> Export .ics
-          </button>
-          <button
-            type="button"
-            onClick={clear}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-border px-3 text-sm font-medium text-muted-foreground"
-          >
-            <Trash2 className="size-4" /> Clear
-          </button>
-        </div>
-      ) : null}
-
-      {mine.length === 0 ? (
-        <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
-          Star agenda items above (or on any session) to build your personal timeline.
-        </p>
-      ) : (
-        Object.entries(byDay).map(([date, sessions]) => (
-          <section key={date}>
-            <h2 className="mb-2 text-sm font-semibold">
-              {sessions[0]?.day}
-              <span className="mono-code ml-2 text-xs text-muted-foreground">{date}</span>
-              {date === clock.localDate ? (
-                <span className="ml-2 rounded bg-live/15 px-1.5 py-0.5 text-[10px] font-bold uppercase text-live">
-                  today
-                </span>
-              ) : null}
-            </h2>
-            <ol className="space-y-1.5">
-              {sessions.map((s) => (
-                <li key={s.sessionId}>
-                  <Link
-                    to="/rooms/$roomId"
-                    params={{ roomId: s.roomId }}
-                    className="flex items-center gap-3 rounded-md border border-border bg-card p-2.5"
-                  >
-                    <span className="mono-code w-12 shrink-0 text-sm font-semibold tabular">
-                      {s.startTime}
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block truncate text-sm font-medium">
-                        {s.topic}
-                        {s.agendaItems.length ? (
-                          <span className="mono-code ml-1.5 text-xs text-muted-foreground">
-                            {s.agendaItems.join(" · ")}
-                          </span>
-                        ) : null}
-                      </span>
-                      <span className="block truncate text-xs text-muted-foreground">
-                        {s.roomName}
-                      </span>
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </section>
-        ))
-      )}
     </div>
   );
 }

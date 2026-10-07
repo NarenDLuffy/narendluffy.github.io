@@ -142,6 +142,14 @@ export function minutesOf(hhmm: string): number {
   return h * 60 + m;
 }
 
+export function formatDuration(minutes: number): string {
+  if (!Number.isFinite(minutes) || minutes <= 0) return "";
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  if (h === 0) return `${m} min`;
+  return m === 0 ? `${h}h` : `${h}h ${m}m`;
+}
+
 export function sessionsForDate(bundle: ScheduleBundle, date: string): Session[] {
   return bundle.sessions.filter((s) => s.date === date);
 }

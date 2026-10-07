@@ -117,6 +117,16 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
         sources.extend(manual_sources(meeting, _iso(now)))
         agenda_items = _apply_chair_note_titles(meeting, agenda_items, sources)
         rooms, sessions, conflicts = parse_schedule_sources(meeting, sources)
+        # Blocks that only name a topic ("R20 AI/ML") get their agenda code
+        # from the chair-notes agenda titles.
+        from .topic_agenda_mapper import map_topic
+
+        pairs = [(a.code, a.title) for a in agenda_items]
+        for s in sessions:
+            if not s.agendaItems and s.kind not in ("break", "lunch"):
+                code = map_topic(s.topic, pairs)
+                if code:
+                    s.agendaItems = [code]
         meeting.schedulePublished = bool(sessions)
 
     return ScheduleBundle(
