@@ -12,11 +12,12 @@ import re
 from typing import Iterable
 
 IGNORE = {"nr", "for", "and", "the", "of", "in", "on", "phase", "r20", "6gr", "rel", "release",
-          "session", "discussion", "e", "utra", "with", "to", "a"}
+          "session", "discussion", "e", "utra", "with", "to", "a", "r", "gr", "g"}
 
 
 def _tokens(text: str) -> set[str]:
     text = text.lower().replace("-", "")
+    text = re.sub(r"(?<=[a-z])(?=\d)|(?<=\d)(?=[a-z])", " ", text)
     return {t for t in re.split(r"[^a-z0-9]+", text) if t}
 
 
@@ -42,7 +43,7 @@ def map_topic(topic: str, agenda: Iterable[tuple[str, str]]) -> str | None:
     top_titles = {c: t for c, t in items if "." not in c}
     scope = _scope(topic, top_titles)
     wanted = _tokens(topic) - IGNORE
-    wanted = {w for w in wanted if not w.isdigit()} | {w for w in _tokens(topic) if w.isdigit() and len(wanted) > 0 and False}
+    wanted = {w for w in wanted if not w.isdigit()}
     if not wanted or not scope:
         return None
     best: list[str] = []
