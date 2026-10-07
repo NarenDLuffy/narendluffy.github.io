@@ -1,63 +1,16 @@
 [
   {
-    "changeId": "start_time_changed-ran1-122_fri_poinsettia-1-2_1700_1930_to-be-assigned-by-sorour-2026-10-06T22:12:01+00:00",
+    "changeId": "session_removed-ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david-2026-10-07T00:51:39+00:00",
     "meetingId": "ran1-122",
-    "detectedAt": "2026-10-06T22:12:01+00:00",
-    "type": "start_time_changed",
-    "title": "To be assigned by Sorour start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-122_fri_poinsettia-1-2_1700_1930_to-be-assigned-by-sorour",
-    "to": "17:00",
-    "sourceIds": [
-      "ran1-122-fcf9365d",
-      "ran1-122-d3c63d8c"
-    ],
-    "from": "14:30"
-  },
-  {
-    "changeId": "end_time_changed-ran1-122_fri_poinsettia-1-2_1700_1930_to-be-assigned-by-sorour-2026-10-06T22:12:01+00:00",
-    "meetingId": "ran1-122",
-    "detectedAt": "2026-10-06T22:12:01+00:00",
-    "type": "end_time_changed",
-    "title": "To be assigned by Sorour end time changed",
-    "detail": "End time changed",
-    "agendaItems": [],
-    "sessionId": "ran1-122_fri_poinsettia-1-2_1700_1930_to-be-assigned-by-sorour",
-    "to": "19:30",
-    "sourceIds": [
-      "ran1-122-fcf9365d",
-      "ran1-122-d3c63d8c"
-    ],
-    "from": "16:30"
-  },
-  {
-    "changeId": "session_added-ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david-2026-10-06T22:12:01+00:00",
-    "meetingId": "ran1-122",
-    "detectedAt": "2026-10-06T22:12:01+00:00",
-    "type": "session_added",
-    "title": "To be assigned by David added",
-    "detail": "New session in the schedule",
+    "detectedAt": "2026-10-07T00:51:39+00:00",
+    "type": "session_removed",
+    "title": "To be assigned by David removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [],
     "sessionId": "ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david",
-    "to": "Heliconia 1 & 2 17:00-19:30",
     "sourceIds": [
       "ran1-122-d3c63d8c"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-122_fri_convention-hall_1700_1800_any-other-open-issues-se-2026-10-06T22:12:01+00:00",
-    "meetingId": "ran1-122",
-    "detectedAt": "2026-10-06T22:12:01+00:00",
-    "type": "session_added",
-    "title": "Any other open issues. Session reports. etc added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-122_fri_convention-hall_1700_1800_any-other-open-issues-se",
-    "to": "Convention Hall 17:00-18:00",
-    "sourceIds": [
-      "ran1-122-fcf9365d",
-      "ran1-122-d3c63d8c"
-    ]
+    ],
+    "from": "Heliconia 1 & 2"
   }
 ]
