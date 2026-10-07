@@ -15,3 +15,4 @@
 - Venue mode UI is gated by VENUE_MODE_ENABLED in venueMode.ts (currently off) — plumbing kept for a future HTTPS venue server.
 - Schedule and drafts workflows share the "data-refresh" concurrency group and rebase-retry on push — they commit to the same branch.
 - Generated schedule/drafts data is read live from the GitHub repo copy (bundled copy as fallback) — updates appear without re-publishing.
+- Schedule blocks with only a topic name get their agenda code from chair-notes agenda titles via ingestion/topic_agenda_mapper.py, linked only on a unique match — so agenda filters catch them without guessing.
