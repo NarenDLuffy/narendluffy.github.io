@@ -21,6 +21,7 @@ from urllib.parse import unquote
 
 from docx import Document
 
+from .docx_active_text import active_run_text
 from .portal import list_folder
 
 DOC_EXTENSIONS = (".doc", ".docx", ".xls", ".xlsx", ".pdf", ".zip", ".csv")
@@ -123,8 +124,10 @@ def docx_text(path: str, limit: int = 60000) -> str:
     document = Document(path)
     chunks: list[str] = []
     for element in document.element.body.iter():
-        if element.tag.endswith("}t") and element.text:
-            chunks.append(element.text)
+        if element.tag.endswith("}r"):
+            text = active_run_text(element)
+            if text:
+                chunks.append(text)
             if sum(len(c) for c in chunks) > limit:
                 break
     return "\n".join(chunks)
