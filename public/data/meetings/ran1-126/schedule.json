@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:30:54Z",
+  "generatedAt": "2026-10-08T11:52:29Z",
   "meetingId": "ran1-126",
   "sessions": [
     {
@@ -154,7 +154,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1100_1200_a-iot",
+      "sessionId": "ran1-126_mon_0-6-0-7-madrid-lisbon_1100_1200_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-24",
       "day": "Monday",
@@ -162,7 +162,7 @@
       "endTime": "12:00",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "A-IoT",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [
         "9.3"
@@ -3191,7 +3191,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1430_1500_a-iot",
+      "sessionId": "ran1-126_tue_0-6-0-7-madrid-lisbon_1430_1500_r20-a-iot",
       "meetingId": "ran1-126",
       "date": "2026-08-25",
       "day": "Tuesday",
@@ -3199,7 +3199,7 @@
       "endTime": "15:00",
       "roomId": "ran1-126-room-eed01f30",
       "roomName": "0.6/0.7 Madrid/Lisbon",
-      "topic": "A-IoT",
+      "topic": "R20 A-IoT",
       "topicKey": "2bfc3eac",
       "agendaItems": [
         "9.3"
@@ -9769,6 +9769,40 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126_fri_expo-foyer_1430_1530_session-reports",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran1-126-room-f53f7e7b",
+      "roomName": "Expo Foyer",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126_fri_0-6-0-7-madrid-lisbon_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
@@ -9784,7 +9818,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -9796,6 +9829,40 @@
         },
         {
           "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_fri_0-4-brussels_1430_1630_to-be-assigned-by-hiroki",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "To be assigned by Hiroki",
+      "topicKey": "b59aa1a2",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": []
         },
         {
@@ -9845,7 +9912,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126_fri_expo-foyer_1700_1800_any-other-open-issues-se",
+      "sessionId": "ran1-126_fri_expo-foyer_1700_1800_ran1-126-expected-to-clo",
       "meetingId": "ran1-126",
       "date": "2026-08-28",
       "day": "Friday",
@@ -9853,14 +9920,13 @@
       "endTime": "18:00",
       "roomId": "ran1-126-room-f53f7e7b",
       "roomName": "Expo Foyer",
-      "topic": "Any other open issues. Session reports",
-      "topicKey": "ef8187c0",
+      "topic": "RAN1#126 expected to close at 17:00",
+      "topicKey": "52e7f20c",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports",
-      "kind": "plenary",
+      "group": "RAN1#126 expected to close at 17:00",
+      "kind": "session",
       "status": "scheduled",
-      "note": "RAN1#126 expected to close at 17:00",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -9921,7 +9987,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-126-manual-7a737727",
@@ -9933,6 +9998,40 @@
         },
         {
           "sourceId": "ran1-126-ebdeb935",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d847dd04",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126_fri_0-4-brussels_1700_1930_to-be-assigned-by-hiroki",
+      "meetingId": "ran1-126",
+      "date": "2026-08-28",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-126-room-5f8318c0",
+      "roomName": "0.4 Brussels",
+      "topic": "To be assigned by Hiroki",
+      "topicKey": "b59aa1a2",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-manual-7a737727",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-d70cbaf1",
           "contributed": []
         },
         {
@@ -9966,7 +10065,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:30:54Z",
-    "lastAttemptAt": "2026-10-08T07:30:54Z"
+    "lastSuccessfulAt": "2026-10-08T11:52:29Z",
+    "lastAttemptAt": "2026-10-08T11:52:29Z"
   }
 }

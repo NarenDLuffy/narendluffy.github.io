@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:26:35Z",
+  "generatedAt": "2026-10-08T11:44:57Z",
   "meetingId": "ran1-122-bis",
   "sessions": [
     {
@@ -5529,6 +5529,48 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-122-bis_fri_b1-b2_1430_1500_session-reports",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-17",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomName": "B1+B2",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-122-bis_fri_e2_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
@@ -5544,7 +5586,48 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by David",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_fri_b1-b2_1500_1530_etc",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-17",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomName": "B1+B2",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -5613,22 +5696,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_1700_1800_any-other-open-issues-se",
+      "sessionId": "ran1-122-bis_fri_b1-b2_1700_1737_session-reports",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
       "startTime": "17:00",
-      "endTime": "18:00",
+      "endTime": "17:37",
       "roomId": "ran1-122-bis-room-d245f7a2",
       "roomName": "B1+B2",
-      "topic": "Any other open issues. Session reports. etc",
-      "topicKey": "3ca1d41d",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports. etc",
+      "group": "Any other open issues",
       "kind": "plenary",
       "status": "scheduled",
-      "note": "RAN1#122b expected to close at 17:00",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -5671,7 +5753,48 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by David",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_fri_b1-b2_1737_1814_etc",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-17",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomName": "B1+B2",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -5702,7 +5825,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:26:35Z",
-    "lastAttemptAt": "2026-10-08T07:26:35Z"
+    "lastSuccessfulAt": "2026-10-08T11:44:57Z",
+    "lastAttemptAt": "2026-10-08T11:44:57Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:29:06Z",
+  "generatedAt": "2026-10-08T11:49:24Z",
   "meetingId": "ran1-124-bis",
   "sessions": [
     {
@@ -1601,23 +1601,26 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_online-session-3_1700_1730_6gr",
+      "sessionId": "ran1-124-bis_mon_online-session-3_1700_1900_6gr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "17:30",
+      "endTime": "19:00",
       "roomId": "ran1-124-bis-room-c5607fa8",
       "roomName": "Online Session 3",
       "topic": "6GR",
-      "topicKey": "19ddc03c",
+      "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R20 TEI",
+      "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
-      "note": "Detailed timing not available",
       "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
@@ -1627,34 +1630,8 @@
           "contributed": []
         }
       ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-124-bis_mon_online-session-3_1700_1730_ai-8",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "17:30",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "AI 8",
-      "topicKey": "19ddc03c",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20 TEI",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -1845,35 +1822,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_mon_online-session-3_1730_1820_10.2.1",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "17:30",
-      "endTime": "18:20",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "Waveform",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -2103,35 +2051,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_mon_online-session-3_1820_1930_10.5.4.x",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-13",
-      "day": "Monday",
-      "startTime": "18:20",
-      "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_mon_j1_1830_1930_10.5.1.2",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-13",
@@ -2342,6 +2261,43 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_mon_online-session-3_1900_1930_10.2.1",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-13",
+      "day": "Monday",
+      "startTime": "19:00",
+      "endTime": "19:30",
+      "roomId": "ran1-124-bis-room-c5607fa8",
+      "roomName": "Online Session 3",
+      "topic": "Waveform",
+      "topicKey": "9998e570",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -5804,7 +5760,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_online-session-3_0830_0900_r20-tei",
+      "sessionId": "ran1-124-bis_wed_online-session-3_0830_0900_6gr",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
       "day": "Wednesday",
@@ -5812,7 +5768,7 @@
       "endTime": "09:00",
       "roomId": "ran1-124-bis-room-c5607fa8",
       "roomName": "Online Session 3",
-      "topic": "R20 TEI",
+      "topic": "6GR",
       "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5965,6 +5921,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_wed_online-session-3_0900_0930_10.5.4.x",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-15",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "roomId": "ran1-124-bis-room-c5607fa8",
+      "roomName": "Online Session 3",
+      "topic": "10.5.4.x",
+      "topicKey": "9998e570",
+      "agendaItems": [
+        "10.5.4.x"
+      ],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_wed_ran1-main_0910_0945_8.5",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -6088,40 +6073,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_wed_online-session-3_0915_0930_10.5.4.x",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "09:15",
-      "endTime": "09:30",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "9998e570",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-bis-71bc694d",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.85,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": false
-    },
-    {
       "sessionId": "ran1-124-bis_wed_ran1-main_0920_1000_10.5.1.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-15",
@@ -6186,35 +6137,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_wed_online-session-3_0930_1000_10.5.4.x",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-15",
-      "day": "Wednesday",
-      "startTime": "09:30",
-      "endTime": "10:00",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "9998e570",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -11801,12 +11723,12 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_thu_online-session-3_1830_1900_10.5.4.x",
+      "sessionId": "ran1-124-bis_thu_online-session-3_1830_1930_10.5.4.x",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-16",
       "day": "Thursday",
       "startTime": "18:30",
-      "endTime": "19:00",
+      "endTime": "19:30",
       "roomId": "ran1-124-bis-room-c5607fa8",
       "roomName": "Online Session 3",
       "topic": "10.5.4.x",
@@ -11818,8 +11740,11 @@
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
-      "note": "Detailed timing not available",
       "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
@@ -11829,35 +11754,9 @@
           "contributed": []
         }
       ],
-      "derivation": "split-from-parent",
-      "confidence": 0.85,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-124-bis_thu_online-session-3_1830_1900_coverage",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "18:30",
-      "endTime": "19:00",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "Coverage",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.75,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -12012,35 +11911,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_thu_online-session-3_1900_1930_10.5.4.x",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-16",
-      "day": "Thursday",
-      "startTime": "19:00",
-      "endTime": "19:30",
-      "roomId": "ran1-124-bis-room-c5607fa8",
-      "roomName": "Online Session 3",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -12865,35 +12735,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_fri_palm-suite_1100_1300_10.3.2",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-17",
-      "day": "Friday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-124-bis-room-f3b95f36",
-      "roomName": "Palm Suite",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-ddab9127",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124-bis_fri_online-session-3_1100_1130_10.2.1",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
@@ -13051,6 +12892,40 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124-bis_fri_ran1-main_1430_1500_session-reports",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-124-bis-room-8157a805",
+      "roomName": "RAN1 Main",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124-bis_fri_cdc1_1430_1630_to-be-assigned-by-hiroki",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
@@ -13092,7 +12967,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -13129,6 +13003,70 @@
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_fri_mdc-maurice-de-cesare_1500_1530_etc",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-3ee08b7d",
+      "roomName": "MDC Maurice de Cesare",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_fri_ran1-main_1500_1530_etc",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-124-bis-room-8157a805",
+      "roomName": "RAN1 Main",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -13209,23 +13147,26 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124-bis_fri_mdc-maurice-de-cesare_1700_1800_14-00-15-00",
+      "sessionId": "ran1-124-bis_fri_ran1-main_1700_1737_session-reports",
       "meetingId": "ran1-124-bis",
       "date": "2026-04-17",
       "day": "Friday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-124-bis-room-3ee08b7d",
-      "roomName": "MDC Maurice de Cesare",
-      "topic": "14:00 ~ 15:00",
-      "topicKey": "0e16e832",
+      "endTime": "17:37",
+      "roomId": "ran1-124-bis-room-8157a805",
+      "roomName": "RAN1 Main",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "14:00 ~ 15:00",
-      "kind": "session",
+      "group": "Any other open issues",
+      "kind": "plenary",
       "status": "scheduled",
-      "note": "Any other open issues. Session reports. etc\n15:00 ~ 17:00\nRAN1&RAN4 joint session\nRAN1#124b expected to close at 17:00",
       "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-124-bis-ddab9127",
           "contributed": []
@@ -13237,33 +13178,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124-bis_fri_ran1-main_1700_1800_any-other-open-issues-se",
-      "meetingId": "ran1-124-bis",
-      "date": "2026-04-17",
-      "day": "Friday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-124-bis-room-8157a805",
-      "roomName": "RAN1 Main",
-      "topic": "Any other open issues. Session reports. etc",
-      "topicKey": "3ca1d41d",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports. etc",
-      "kind": "plenary",
-      "status": "scheduled",
-      "note": "RAN1#124b expected to close at 17:00",
-      "sources": [
-        {
-          "sourceId": "ran1-124-bis-bd9f978a",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -13334,7 +13248,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-124-bis-bd9f978a",
@@ -13371,6 +13284,70 @@
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-bd9f978a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_fri_mdc-maurice-de-cesare_1737_1814_etc",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-124-bis-room-3ee08b7d",
+      "roomName": "MDC Maurice de Cesare",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-bis-ddab9127",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-bis-71bc694d",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124-bis_fri_ran1-main_1737_1814_etc",
+      "meetingId": "ran1-124-bis",
+      "date": "2026-04-17",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-124-bis-room-8157a805",
+      "roomName": "RAN1 Main",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -13439,7 +13416,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:29:06Z",
-    "lastAttemptAt": "2026-10-08T07:29:06Z"
+    "lastSuccessfulAt": "2026-10-08T11:49:24Z",
+    "lastAttemptAt": "2026-10-08T11:49:24Z"
   }
 }

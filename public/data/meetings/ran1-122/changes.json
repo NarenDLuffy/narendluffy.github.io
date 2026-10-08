@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-122_tue_convention-hall_1430_1530_8.3-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "8.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.3"
+    ],
+    "sessionId": "ran1-122_tue_convention-hall_1430_1530_8.3",
+    "to": "Convention Hall 14:30-15:30",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-122_fri_convention-hall_1700_1737_session-reports-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "Session reports added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122_fri_convention-hall_1700_1737_session-reports",
+    "to": "Convention Hall 17:00-17:37",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "To be assigned by David added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david",
+    "to": "Heliconia 1 & 2 17:00-19:30",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-122_fri_convention-hall_1737_1814_etc-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "etc added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122_fri_convention-hall_1737_1814_etc",
+    "to": "Convention Hall 17:37-18:14",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-122_tue_convention-hall_1430_1530_8.3-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_removed",
+    "title": "(60) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.3"
+    ],
+    "sessionId": "ran1-122_tue_convention-hall_1430_1530_8.3",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ],
+    "from": "Convention Hall"
+  },
+  {
+    "changeId": "session_removed-ran1-122_fri_convention-hall_1700_1800_any-other-open-issues-se-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-122",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_removed",
+    "title": "Any other open issues. Session reports. etc removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122_fri_convention-hall_1700_1800_any-other-open-issues-se",
+    "sourceIds": [
+      "ran1-122-fcf9365d",
+      "ran1-122-d3c63d8c"
+    ],
+    "from": "Convention Hall"
+  }
+]

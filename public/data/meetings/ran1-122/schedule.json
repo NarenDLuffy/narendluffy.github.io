@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:25:42Z",
+  "generatedAt": "2026-10-08T11:43:55Z",
   "meetingId": "ran1-122",
   "sessions": [
     {
@@ -1441,7 +1441,7 @@
       "endTime": "15:30",
       "roomId": "ran1-122-room-d3f0883f",
       "roomName": "Convention Hall",
-      "topic": "(60)",
+      "topic": "8.3",
       "topicKey": "954bc241",
       "agendaItems": [
         "8.3"
@@ -3364,6 +3364,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-122_fri_convention-hall_1430_1500_session-reports",
+      "meetingId": "ran1-122",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-122-room-d3f0883f",
+      "roomName": "Convention Hall",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-122_fri_poinsettia-1-2_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
@@ -3379,7 +3409,66 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by David",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122_fri_heliconia-1-2_1430_1630_to-be-assigned-by-david",
+      "meetingId": "ran1-122",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-room-dc13c868",
+      "roomName": "Heliconia 1 & 2",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122_fri_convention-hall_1500_1530_etc",
+      "meetingId": "ran1-122",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-122-room-d3f0883f",
+      "roomName": "Convention Hall",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
@@ -3424,22 +3513,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122_fri_convention-hall_1700_1800_any-other-open-issues-se",
+      "sessionId": "ran1-122_fri_convention-hall_1700_1737_session-reports",
       "meetingId": "ran1-122",
       "date": "2025-08-29",
       "day": "Friday",
       "startTime": "17:00",
-      "endTime": "18:00",
+      "endTime": "17:37",
       "roomId": "ran1-122-room-d3f0883f",
       "roomName": "Convention Hall",
-      "topic": "Any other open issues. Session reports. etc",
-      "topicKey": "3ca1d41d",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports. etc",
+      "group": "Any other open issues",
       "kind": "plenary",
       "status": "scheduled",
-      "note": "RAN1#116 expected to close at 17:00",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
@@ -3470,7 +3558,66 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by David",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122_fri_heliconia-1-2_1700_1930_to-be-assigned-by-david",
+      "meetingId": "ran1-122",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-room-dc13c868",
+      "roomName": "Heliconia 1 & 2",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-fcf9365d",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-d3c63d8c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122_fri_convention-hall_1737_1814_etc",
+      "meetingId": "ran1-122",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-122-room-d3f0883f",
+      "roomName": "Convention Hall",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
@@ -3489,7 +3636,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:25:42Z",
-    "lastAttemptAt": "2026-10-08T07:25:42Z"
+    "lastSuccessfulAt": "2026-10-08T11:43:55Z",
+    "lastAttemptAt": "2026-10-08T11:43:55Z"
   }
 }

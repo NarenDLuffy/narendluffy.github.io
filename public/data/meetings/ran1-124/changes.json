@@ -1,17 +1,81 @@
 [
   {
-    "changeId": "room_changed-ran1-124_fri_city-view-8_1700_1930_to-be-assigned-by-hiroki-2026-10-08T07:32:23+00:00",
+    "changeId": "session_added-ran1-124_fri_lone-star-ballroom-b_1700_1737_session-reports-2026-10-08T11:54:13+00:00",
     "meetingId": "ran1-124",
-    "detectedAt": "2026-10-08T07:32:23+00:00",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "Session reports added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_fri_lone-star-ballroom-b_1700_1737_session-reports",
+    "to": "Lone Star Ballroom B 17:00-17:37",
+    "sourceIds": [
+      "ran1-124-d049ba1a",
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-124_fri_j2_1700_1930_to-be-assigned-by-hiroki-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
     "type": "room_changed",
     "title": "To be assigned by Hiroki moved",
     "detail": "Session changed room",
     "agendaItems": [],
-    "sessionId": "ran1-124_fri_city-view-8_1700_1930_to-be-assigned-by-hiroki",
-    "to": "City View 8",
+    "sessionId": "ran1-124_fri_j2_1700_1930_to-be-assigned-by-hiroki",
+    "to": "J2",
+    "sourceIds": [
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
+    ],
+    "from": "City View 8"
+  },
+  {
+    "changeId": "session_added-ran1-124_fri_lone-star-ballroom-b_1737_1814_etc-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "etc added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_fri_lone-star-ballroom-b_1737_1814_etc",
+    "to": "Lone Star Ballroom B 17:37-18:14",
     "sourceIds": [
       "ran1-124-d049ba1a"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-124_fri_lone-star-ballroom-b_1600_1630_ran1-123-expected-to-clo-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_added",
+    "title": "RAN1#123 expected to close at 16:00 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_fri_lone-star-ballroom-b_1600_1630_ran1-123-expected-to-clo",
+    "to": "Lone Star Ballroom B 16:00-16:30",
+    "sourceIds": [
+      "ran1-124-d049ba1a"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-124_fri_lone-star-ballroom-b_1600_1630_any-other-open-issues-se-2026-10-08T11:54:13+00:00",
+    "meetingId": "ran1-124",
+    "detectedAt": "2026-10-08T11:54:13+00:00",
+    "type": "session_removed",
+    "title": "Any other open issues. Session reports. etc removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-124_fri_lone-star-ballroom-b_1600_1630_any-other-open-issues-se",
+    "sourceIds": [
+      "ran1-124-d049ba1a",
+      "ran1-124-211244ae",
+      "ran1-124-5f1586e4",
+      "ran1-124-3873961c"
     ],
-    "from": "J2"
+    "from": "Lone Star Ballroom B"
   }
 ]

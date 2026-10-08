@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:27:53Z",
+  "generatedAt": "2026-10-08T11:48:02Z",
   "meetingId": "ran1-124",
   "sessions": [
     {
@@ -12987,6 +12987,44 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1430_1500_session-reports",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-124-room-c571e606",
+      "roomName": "Lone Star Ballroom B",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-d049ba1a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124_fri_j1_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
@@ -13002,7 +13040,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
@@ -13060,6 +13097,134 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124_fri_j2_1430_1630_to-be-assigned-by-hiroki",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-124-room-bf263578",
+      "roomName": "J2",
+      "topic": "To be assigned by Hiroki",
+      "topicKey": "b59aa1a2",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_f1-f2-f3_1500_1530_etc",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-124-room-ee3be21e",
+      "roomName": "F1+F2+F3",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1500_1530_etc",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "roomId": "ran1-124-room-c571e606",
+      "roomName": "Lone Star Ballroom B",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-d049ba1a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_f1-f2-f3_1600_1630_ran1-124-expected-to-clo",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "roomId": "ran1-124-room-ee3be21e",
+      "roomName": "F1+F2+F3",
+      "topic": "RAN1#124 expected to close at 16:00",
+      "topicKey": "5d70bb6d",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "RAN1#124 expected to close at 16:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124_fri_ran1-main_1600_1630_ran1-124-expected-to-clo",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
@@ -13086,7 +13251,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1600_1630_any-other-open-issues-se",
+      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1600_1630_ran1-123-expected-to-clo",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
       "day": "Friday",
@@ -13094,34 +13259,21 @@
       "endTime": "16:30",
       "roomId": "ran1-124-room-c571e606",
       "roomName": "Lone Star Ballroom B",
-      "topic": "Any other open issues. Session reports. etc",
-      "topicKey": "3ca1d41d",
+      "topic": "RAN1#123 expected to close at 16:00",
+      "topicKey": "8c23640c",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports. etc",
-      "kind": "plenary",
+      "group": "RAN1#123 expected to close at 16:00",
+      "kind": "session",
       "status": "scheduled",
-      "note": "RAN1#123 expected to close at 16:00",
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-5f1586e4",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -13222,6 +13374,44 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1700_1737_session-reports",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "17:37",
+      "roomId": "ran1-124-room-c571e606",
+      "roomName": "Lone Star Ballroom B",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-d049ba1a",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124_fri_j1_1700_1930_to-be-assigned-by-sorour",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
@@ -13237,7 +13427,6 @@
       "group": "To be assigned by Sorour",
       "kind": "session",
       "status": "scheduled",
-      "note": "To be assigned by Hiroki",
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
@@ -13282,6 +13471,100 @@
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-d049ba1a",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_j2_1700_1930_to-be-assigned-by-hiroki",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-124-room-bf263578",
+      "roomName": "J2",
+      "topic": "To be assigned by Hiroki",
+      "topicKey": "b59aa1a2",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "To be assigned by Hiroki",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_f1-f2-f3_1737_1814_etc",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-124-room-ee3be21e",
+      "roomName": "F1+F2+F3",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-211244ae",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_fri_lone-star-ballroom-b_1737_1814_etc",
+      "meetingId": "ran1-124",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "startTime": "17:37",
+      "endTime": "18:14",
+      "roomId": "ran1-124-room-c571e606",
+      "roomName": "Lone Star Ballroom B",
+      "topic": "etc",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -13384,7 +13667,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:27:53Z",
-    "lastAttemptAt": "2026-10-08T07:27:53Z"
+    "lastSuccessfulAt": "2026-10-08T11:48:02Z",
+    "lastAttemptAt": "2026-10-08T11:48:02Z"
   }
 }
