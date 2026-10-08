@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T07:31:51Z",
+  "generatedAt": "2026-10-08T08:53:25Z",
   "meetingId": "ran1-126-bis",
   "sessions": [
     {
@@ -1363,18 +1363,18 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_online-session-3_0830_1030_10.5.4",
+      "sessionId": "ran1-126-bis_tue_online-session-3_0830_0920_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "09:20",
       "roomId": "ran1-126-bis-room-b026e2a9",
       "roomName": "Online Session 3",
-      "topic": "10.5.4",
+      "topic": "10.5.4.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.5.4"
+        "10.5.4.1"
       ],
       "agendaBreakdown": [],
       "group": "6GR",
@@ -1388,11 +1388,11 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.5",
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_offline-session-1_0830_0910_10.4.1",
+      "sessionId": "ran1-126-bis_tue_offline-session-1_0830_0910_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -1400,10 +1400,10 @@
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.4.1",
+      "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.1"
+        "10.4.2"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
@@ -1481,7 +1481,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_offline-session-1_0910_0950_10.4.2",
+      "sessionId": "ran1-126-bis_tue_offline-session-1_0910_0950_10.6.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -1489,10 +1489,10 @@
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.4.2",
+      "topic": "10.6.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.2"
+        "10.6.1.1"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
@@ -1507,7 +1507,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.4",
+      "parentAgendaItem": "10.6.1",
       "detailAvailable": true
     },
     {
@@ -1540,6 +1540,64 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126-bis_tue_online-session-3_0920_0945_10.5.4.2",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-13",
+      "day": "Tuesday",
+      "startTime": "09:20",
+      "endTime": "09:45",
+      "roomId": "ran1-126-bis-room-b026e2a9",
+      "roomName": "Online Session 3",
+      "topic": "10.5.4.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_tue_online-session-3_0945_1025_10.5.4.3",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-13",
+      "day": "Tuesday",
+      "startTime": "09:45",
+      "endTime": "10:25",
+      "roomId": "ran1-126-bis-room-b026e2a9",
+      "roomName": "Online Session 3",
+      "topic": "10.5.4.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126-bis_tue_online-session-2_0950_1030_ntn-nr",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
@@ -1566,7 +1624,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_offline-session-1_0950_1030_10.6.1.1",
+      "sessionId": "ran1-126-bis_tue_offline-session-1_0950_1030_sorour",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -1574,11 +1632,9 @@
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.6.1.1",
+      "topic": "Sorour",
       "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.6.1.1"
-      ],
+      "agendaItems": [],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
       "group": "6GR",
@@ -1591,8 +1647,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.6.1",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -1652,6 +1707,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_tue_online-session-3_1025_1030_10.5.4.4",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-13",
+      "day": "Tuesday",
+      "startTime": "10:25",
+      "endTime": "10:30",
+      "roomId": "ran1-126-bis-room-b026e2a9",
+      "roomName": "Online Session 3",
+      "topic": "10.5.4.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -3931,7 +4015,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_ran1-main_1700_1740_10.5.5",
+      "sessionId": "ran1-126-bis_wed_ran1-main_1700_1740_10.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -3939,10 +4023,10 @@
       "endTime": "17:40",
       "roomId": "ran1-126-bis-room-7390e17f",
       "roomName": "RAN1 Main",
-      "topic": "10.5.5",
+      "topic": "10.4.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.5.5"
+        "10.4.1"
       ],
       "agendaBreakdown": [],
       "group": "6GR",
@@ -3956,7 +4040,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.5",
+      "parentAgendaItem": "10.4",
       "detailAvailable": true
     },
     {
@@ -4137,7 +4221,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_ran1-main_1740_1820_10.4.1",
+      "sessionId": "ran1-126-bis_wed_ran1-main_1740_1820_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -4145,10 +4229,10 @@
       "endTime": "18:20",
       "roomId": "ran1-126-bis-room-7390e17f",
       "roomName": "RAN1 Main",
-      "topic": "10.4.1",
+      "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.1"
+        "10.4.2"
       ],
       "agendaBreakdown": [],
       "group": "6GR",
@@ -4255,7 +4339,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_ran1-main_1820_1900_10.4.2",
+      "sessionId": "ran1-126-bis_wed_ran1-main_1820_1900_10.5.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -4263,10 +4347,10 @@
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-7390e17f",
       "roomName": "RAN1 Main",
-      "topic": "10.4.2",
+      "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.2"
+        "10.5.5"
       ],
       "agendaBreakdown": [],
       "group": "6GR",
@@ -4280,7 +4364,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.4",
+      "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
     {
@@ -4603,7 +4687,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_offline-session-1_0830_0900_10.4.1",
+      "sessionId": "ran1-126-bis_thu_offline-session-1_0830_0900_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -4611,10 +4695,10 @@
       "endTime": "09:00",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.4.1",
+      "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.1"
+        "10.4.2"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
@@ -4662,7 +4746,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_offline-session-1_0900_0930_10.4.2",
+      "sessionId": "ran1-126-bis_thu_offline-session-1_0900_0930_10.5.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -4670,10 +4754,10 @@
       "endTime": "09:30",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.4.2",
+      "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.4.2"
+        "10.5.5"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
@@ -4688,7 +4772,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.4",
+      "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
     {
@@ -4809,18 +4893,18 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_offline-session-1_0930_1000_10.5.5",
+      "sessionId": "ran1-126-bis_thu_offline-session-1_0930_1030_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "09:30",
-      "endTime": "10:00",
+      "endTime": "10:30",
       "roomId": "ran1-126-bis-room-f5a3aa4f",
       "roomName": "Offline Session 1",
-      "topic": "10.5.5",
+      "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.5.5"
+        "10.5.3.1"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
@@ -4835,7 +4919,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.5",
+      "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
     {
@@ -4891,36 +4975,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_offline-session-1_1000_1030_10.5.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-f5a3aa4f",
-      "roomName": "Offline Session 1",
-      "topic": "10.5.3.1",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.3.1"
-      ],
-      "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
     {
@@ -6352,6 +6406,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126-bis_fri_ran1-main_1430_1530_session-reports",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-16",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran1-126-bis-room-7390e17f",
+      "roomName": "RAN1 Main",
+      "topic": "Session reports",
+      "topicKey": "40db1e26",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Any other open issues",
+      "kind": "plenary",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126-bis_fri_offline-session-1_1430_1630_to-be-assigned-by-sorour",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
@@ -6429,7 +6509,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_ran1-main_1700_1800_any-other-open-issues-se",
+      "sessionId": "ran1-126-bis_fri_ran1-main_1700_1800_ran1-126b-expected-to-cl",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
@@ -6437,14 +6517,13 @@
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-7390e17f",
       "roomName": "RAN1 Main",
-      "topic": "Any other open issues. Session reports",
-      "topicKey": "ef8187c0",
+      "topic": "RAN1#126b expected to close at 17:00",
+      "topicKey": "c201cf29",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues. Session reports",
-      "kind": "plenary",
+      "group": "RAN1#126b expected to close at 17:00",
+      "kind": "session",
       "status": "scheduled",
-      "note": "RAN1#126b expected to close at 17:00",
       "sources": [
         {
           "sourceId": "ran1-126-bis-628036f5",
@@ -6511,7 +6590,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-08T07:31:51Z",
-    "lastAttemptAt": "2026-10-08T07:31:51Z"
+    "lastSuccessfulAt": "2026-10-08T08:53:25Z",
+    "lastAttemptAt": "2026-10-08T08:53:25Z"
   }
 }
