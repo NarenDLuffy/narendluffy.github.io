@@ -33,9 +33,17 @@ Make the Schedule page clearly state which schedule documents actually produced 
    - Retain strict meeting-number and bis matching so the previous meeting’s personal schedules cannot leak into the current meeting.
    - If a valid current-meeting Hiroki or Sorour document appears, the next automated refresh should select it and show its exact filename without an app republish.
 
+5. **Canonical union across all schedule owners**
+   - Parse the latest valid schedule family from Chair notes, Hiroki notes, Sorour notes, and any other chair folder independently; no person is hard-coded or required.
+   - Form a union of their evidenced blocks: the main week grid supplies broad times/lanes, while detailed chair schedules replace matching broad blocks with their agenda-level order and durations.
+   - Merge exact duplicates and retain every contributing source as provenance.
+   - Use agreement as corroboration, not as a strict intersection: a legitimate block supplied by only one chair schedule must remain visible.
+   - Keep contradictory same-slot agenda claims visible and flagged instead of silently choosing one.
+
 ## Verification
 - Add parser tests covering a parent `10.5.4` container with four highlighted children and verify four canonical blocks in document order.
 - Add DOCX-format tests proving struck-through/deleted text is absent while highlighted/inserted text remains.
+- Add a canonical multi-source test covering broad Chair-notes blocks, a Hiroki detail split, a Sorour-only block, duplicate agreement, and a conflicting same-slot claim.
 - Rebuild RAN1#126bis and verify Tuesday Online Session 3 shows `10.5.4.1`, `.2`, `.3`, and `.4` with their durations.
 - Verify the affected Wednesday 17:00 block contains only active v03 content.
 - Verify “Schedule based on” shows v03 and only documents that contributed to the displayed canonical schedule.
