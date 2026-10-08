@@ -20,6 +20,7 @@ from docx.document import Document as DocxDocument
 from docx.table import Table
 from docx.text.paragraph import Paragraph
 
+from .docx_active_text import active_element_text, active_paragraph_text
 from .models import AgendaSlot, Room, ScheduleSource, Session, SessionSourceRef
 
 WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
@@ -48,7 +49,7 @@ def _iter_blocks(document: DocxDocument):
 
 
 def _cell_text(cell) -> str:
-    lines = [p.text.strip() for p in cell.paragraphs]
+    lines = [active_paragraph_text(p._p).strip() for p in cell.paragraphs]
     return "\n".join(line for line in lines if line).strip()
 
 
@@ -180,7 +181,7 @@ def _floating_labels(paragraph: Paragraph) -> list[tuple[int, str]]:
     """
     labels: list[tuple[int, str]] = []
     for anchor in paragraph._p.iter(f"{_MC_NS}AlternateContent"):
-        raw = "".join(t.text or "" for t in anchor.iter(f"{_W_NS}t")).strip()
+        raw = active_element_text(anchor, separator=" ").strip()
         if not raw:
             continue
         # The same text appears in both mc:Choice and mc:Fallback.

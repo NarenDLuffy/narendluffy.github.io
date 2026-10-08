@@ -35,6 +35,7 @@ from datetime import date, timedelta
 
 from docx import Document
 
+from .docx_active_text import active_paragraph_text
 from .models import AgendaSlot, Room, ScheduleSource, Session, SessionSourceRef
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
@@ -84,7 +85,7 @@ def _cell_text(tc) -> str:
     """Paragraph text of a cell, blank paragraphs preserved as separators."""
     lines: list[str] = []
     for p in tc.findall(f"{W}p"):
-        lines.append("".join(t.text or "" for t in p.iter(f"{W}t")).strip())
+        lines.append(active_paragraph_text(p).strip())
     while lines and not lines[-1]:
         lines.pop()
     return "\n".join(lines)
@@ -120,7 +121,7 @@ def _room_labels_before(paragraph) -> list[str]:
         for box in anchor.iter():
             if box.tag.endswith("}txbxContent"):
                 text = " ".join(
-                    "".join(t.text or "" for t in p.iter(f"{W}t")).strip()
+                    active_paragraph_text(p).strip()
                     for p in box.iter(f"{W}p")
                 ).strip()
                 if text:
@@ -139,8 +140,12 @@ def _room_labels_before(paragraph) -> list[str]:
 
 def _paragraph_text(paragraph) -> str:
     """Plain paragraph text, excluding anything inside floating text boxes."""
-    boxed = {id(t) for box in paragraph.iter() if box.tag.endswith("}txbxContent") for t in box.iter(f"{W}t")}
-    return "".join(t.text or "" for t in paragraph.iter(f"{W}t") if id(t) not in boxed).strip()
+    parts: list[str] = []
+    for run in paragraph.iter(f"{W}r"):
+        if any(parent.tag.endswith("}txbxContent") for parent in run.iterancestors()):
+            continue
+        parts.append(active_paragraph_text(run))
+    return "".join(parts).strip()
 
 
 def _heading_room(heading: str, known: list[str]) -> str | None:
@@ -312,6 +317,28 @@ def _parse_cell(text: str) -> list[_Segment]:
 
         if minutes:
             allocated += minutes
+
+    # A parent item can be followed by its timed descendants in the same cell:
+    #   10.5.4 (120), 10.5.4.1 (50), 10.5.4.2 (25), ...
+    # The parent is a container, not the first 120-minute child. Remove that
+    # slot only when the following timed children are explicitly evidenced.
+    for segment in segments:
+        if len(segment.slots) < 2:
+            continue
+        first = segment.slots[0]
+        parent_codes = AGENDA_CODE_RE.findall(first.label)
+        if not parent_codes or first.minutes is None:
+            continue
+        parent = parent_codes[0]
+        children = segment.slots[1:]
+        if children and all(
+            (codes := AGENDA_CODE_RE.findall(child.label))
+            and codes[0].startswith(parent + ".")
+            for child in children
+        ):
+            segment.slots = children
+            if segment.minutes is None or segment.minutes == first.minutes:
+                segment.minutes = first.minutes
 
     return segments
 

@@ -13,6 +13,32 @@ import {
 } from "@/services/localSource";
 import { cn } from "@/lib/utils";
 
+function usedSources(bundle: ScheduleBundle) {
+  const ids = new Set(bundle.sessions.flatMap((session) => session.sources.map((ref) => ref.sourceId)));
+  return bundle.sources.filter((source) => ids.has(source.sourceId));
+}
+
+export function ScheduleSourcesSummary({ bundle }: { bundle: ScheduleBundle }) {
+  const sources = usedSources(bundle);
+
+  return (
+    <section className="rounded-md border border-border bg-card px-3 py-2.5">
+      <h2 className="text-xs font-semibold text-muted-foreground">Schedule based on</h2>
+      {sources.length ? (
+        <ul className="mt-1 space-y-1">
+          {sources.map((source) => (
+            <li key={source.sourceId} className="mono-code text-[11px] leading-snug text-foreground">
+              {source.fileName}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="mt-1 text-xs text-muted-foreground">No contributing schedule document recorded.</p>
+      )}
+    </section>
+  );
+}
+
 const TYPE_LABEL: Record<SourceType, string> = {
   main_schedule: "Main schedule",
   chair_schedule: "Chair schedule",
@@ -95,6 +121,7 @@ export function SourcePanel({
         </span>
       </div>
 
+      <h3 className="text-xs font-semibold text-muted-foreground">All discovered documents</h3>
       <ul className="space-y-1">
         {bundle.sources.length === 0 ? (
           <li className="text-xs text-muted-foreground">No documents discovered yet.</li>
@@ -106,6 +133,9 @@ export function SourcePanel({
             >
               <span className="font-semibold text-foreground">{s.label}</span> ·{" "}
               {TYPE_LABEL[s.type]} · {s.fileName}
+              {usedSources(bundle).some((source) => source.sourceId === s.sourceId)
+                ? " · used in schedule"
+                : " · discovered only"}
               {s.origin === "meeting-local" ? " · meeting-local" : ""}
             </li>
           ))

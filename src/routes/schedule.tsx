@@ -14,7 +14,7 @@ import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { DayTabs } from "@/components/DayTabs";
 import { Timetable } from "@/components/Timetable";
 import { useBookmarks } from "@/hooks/useBookmarks";
-import { SourcePanel } from "@/components/SourcePanel";
+import { ScheduleSourcesSummary, SourcePanel } from "@/components/SourcePanel";
 import { MeetingBanner } from "@/components/MeetingBanner";
 import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 import { cn } from "@/lib/utils";
@@ -149,6 +149,8 @@ function SchedulePage() {
 
 
       <RefreshButton meeting={meeting} bundle={bundle} />
+
+      <ScheduleSourcesSummary bundle={bundle} />
 
       <DayTabs days={days} value={day} onChange={(d) => setSearch({ day: d })} />
 

@@ -120,3 +120,24 @@ def test_unrelated_agenda_item_is_a_conflict_not_a_split():
     result = canonicalize([a, b])
     assert len(result.conflicts) == 1
     assert len(result.sessions) == 2
+
+
+def test_canonical_union_keeps_detail_unique_blocks_and_conflicts():
+    broad = make("09:00", "11:00", items=["10.8"], source="chair")
+    hiroki = make(
+        "09:00",
+        "11:00",
+        items=["10.8"],
+        breakdown=[("10.8.1", "09:00", "10:00"), ("10.8.2", "10:00", "11:00")],
+        source="hiroki",
+    )
+    sorour_only = make("11:00", "12:00", items=["9.1"], source="sorour")
+    sorour_duplicate = make("09:00", "10:00", items=["10.8.1"], source="sorour")
+    contradiction = make("11:00", "12:00", items=["9.2"], source="other")
+
+    result = canonicalize([broad, hiroki, sorour_only, sorour_duplicate, contradiction])
+    by_items = {tuple(session.agendaItems): session for session in result.sessions}
+    assert ("10.8.1",) in by_items and ("10.8.2",) in by_items
+    assert sorted(ref.sourceId for ref in by_items[("10.8.1",)].sources) == ["hiroki", "sorour"]
+    assert ("9.1",) in by_items and ("9.2",) in by_items
+    assert len(result.conflicts) == 1
