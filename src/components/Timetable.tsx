@@ -158,7 +158,7 @@ export function Timetable({
                       key={s.sessionId}
                       style={{
                         top,
-                        height: h - 2,
+                        height: Math.max(h - 2, 14),
                         left: `${(lane / laneCount) * 100}%`,
                         width: `${(1 / laneCount) * 100}%`,
                         ...roomStyle(room),
@@ -194,11 +194,29 @@ export function Timetable({
                         ) : null}
                         <span className="truncate">{s.topic}</span>
                       </div>
-                      {s.agendaItems.length > 0 ? (
-                        <div className="mono-code pl-1 text-[10px] text-muted-foreground">
-                          {s.agendaItems.join(" · ")}
-                        </div>
-                      ) : null}
+                      {(() => {
+                        // An untimed block lists its items, with the chair's stated minutes.
+                        const untimed = (s.agendaBreakdown ?? []).filter((b) => !b.startTime);
+                        if (untimed.length > 1) {
+                          return (
+                            <div className="mono-code pl-1 text-[10px] text-muted-foreground">
+                              {untimed
+                                .map((b) => `${b.code ?? b.label}${b.minutes ? ` (${b.minutes})` : ""}`)
+                                .join(" · ")}
+                              {s.note?.includes("don't add up") ? (
+                                <span className="ml-1 font-semibold text-destructive" title={s.note}>
+                                  ⚠
+                                </span>
+                              ) : null}
+                            </div>
+                          );
+                        }
+                        return s.agendaItems.length > 0 ? (
+                          <div className="mono-code pl-1 text-[10px] text-muted-foreground">
+                            {s.agendaItems.join(" · ")}
+                          </div>
+                        ) : null;
+                      })()}
                       <div className="mono-code pl-1 text-[10px] text-muted-foreground">
                         {s.startTime}-{s.endTime}
                         {s.sessionLead && h > 60 ? ` · ${s.sessionLead}` : ""}
