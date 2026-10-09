@@ -30,6 +30,12 @@ Offline - Offline Session 2           (same room across all 3 files)
 5. **Fix overfull splits** (Tuesday 10.5.4): if stated minutes exceed the slot and no detailed file gives exact times, scale them to fit the slot (none dropped) and show the stated minutes on the card. If a detailed file gives exact times, use those.
 6. **Readable short blocks**: minimum card height so every split block shows code and time.
 
+## Make it stick for every meeting
+- Save these rules as permanent project rules, so future changes always follow them without you repeating them: scan all Inbox subfolders (meeting folder + sync folder), latest version per chair file, main grid colours = online lanes, room names from any file, chair "Detailed Schedule" overrides broad blocks, offline = 2 shared rooms.
+- Nothing is tied to Hiroki, Sorour or 126bis: chair files are recognised by content (colours, "Detailed Schedule for", "Room:"), so new chairs and meetings work automatically.
+- Add an automatic health check on every rebuild that flags the meeting as "needs review" (visible in the app) when: a chair-named schedule file exists in the Inbox but wasn't used, an online colour lane has no room name while a file provides one, or extra rooms appear beyond the main grid's lanes + 2 offline.
+- Tests run against saved copies of this meeting's three files so the same mistakes can't come back.
+
 ## Verify
 - Rebuild RAN1#126bis: exactly 5 rooms; sources list shows v03, Sorour v00, Hiroki v01.
 - Orange column shows Hiroki's room name; grey shows Sorour's.
