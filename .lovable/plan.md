@@ -1,7 +1,7 @@
 # Don't offer "call colleague" for people already in your room
 
 ## What's wrong
-On the Company page, under "Colleagues by room", every named colleague gets a tappable "call" button as long as you're checked into a room — including colleagues who are already checked into that same room. So Test1, sitting in TamnaBC (5F) with you, can be "called to TamnaBC (5F)", which is meaningless.
+On the Company page, under "Colleagues by room", every named colleague gets a tappable "call" button as long as you're checked into a room — including colleagues already checked into that same room. Example seen live: Test1 and Test2 are both in TamnaBC (5F), yet Test2 can tap Test1 and send the alert "Test1 needed in TamnaBC (5F)" — calling someone to the room they're already sitting in.
 
 The room page (`RoomColleagues`) already does this correctly: its call list only shows colleagues checked into *other* rooms. The Company page is the only place with the bug.
 
