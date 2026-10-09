@@ -75,6 +75,24 @@ export const sendCompanyAlert = createServerFn({ method: "POST" })
       expires_at: new Date(now + 10 * 60_000).toISOString(),
     });
     if (error) throw new Error(error.message);
+    // Fan out a system notification to subscribed devices; failures never
+    // block the alert itself.
+    try {
+      const { notifyGroupPush } = await import("./push.functions");
+      const time = new Date(now).toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: "UTC",
+      });
+      await notifyGroupPush(await groupKeyOf(data.groupCode), {
+        title: `${data.targetName} needed`,
+        body: `${data.targetName} is needed in ${data.roomLabel ?? data.roomId} · ${time}`,
+        url: `/rooms/${encodeURIComponent(data.roomId)}`,
+        tag: `ran1live-alert-${now}`,
+      });
+    } catch (e) {
+      console.warn("push fanout failed", e);
+    }
     return { ok: true };
   });
 
