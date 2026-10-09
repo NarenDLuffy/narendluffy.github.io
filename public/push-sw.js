@@ -1,11 +1,11 @@
-/* RAN1 Live push messaging worker. Messaging only — no offline caching. */
+/* RAN1 Live! push messaging worker. Messaging only — no offline caching. */
 
 self.addEventListener("push", (event) => {
   let data = {};
   try {
     data = event.data ? event.data.json() : {};
   } catch {
-    data = { title: "RAN1 Live", body: event.data ? event.data.text() : "" };
+    data = { title: "RAN1 Live!", body: event.data ? event.data.text() : "" };
   }
   const title = data.title || "Colleague needed";
   const options = {

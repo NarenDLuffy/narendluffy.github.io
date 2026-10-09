@@ -4,17 +4,17 @@ import type { ReactNode } from "react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "How to use RAN1 Live — guide for delegates" },
+      { title: "How to use RAN1 Live! — guide for delegates" },
       {
         name: "description",
         content:
-          "A short tour of RAN1 Live: live schedule, drafts tracker, my agenda, FL deadlines, rooms and room presence — no account needed.",
+          "A short tour of RAN1 Live!: live schedule, drafts tracker, my agenda, FL deadlines, rooms and room presence — no account needed.",
       },
-      { property: "og:title", content: "How to use RAN1 Live" },
+      { property: "og:title", content: "How to use RAN1 Live!" },
       {
         property: "og:description",
         content:
-          "Everything RAN1 Live can do during meeting week, explained for delegates in two minutes.",
+          "Everything RAN1 Live! can do during meeting week, explained for delegates in two minutes.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
@@ -36,7 +36,7 @@ function HelpPage() {
   return (
     <article className="space-y-4">
       <header className="space-y-2">
-        <h1 className="text-xl font-semibold tracking-tight">How to use RAN1 Live</h1>
+        <h1 className="text-xl font-semibold tracking-tight">How to use RAN1 Live!</h1>
         <p className="text-sm text-muted-foreground">
           No account, no install. Open it on your phone and add it to your home screen for a
           full-screen app (Safari: Share → Add to Home Screen; Chrome: ⋮ → Install).

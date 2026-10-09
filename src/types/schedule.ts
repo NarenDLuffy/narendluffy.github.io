@@ -1,5 +1,5 @@
 /**
- * Normalized RAN1 Live schedule data model.
+ * Normalized RAN1 Live! schedule data model.
  *
  * This model is intentionally decoupled from the DOCX layout of the 3GPP
  * chair / sub-chair schedules and from any single meeting. The Python

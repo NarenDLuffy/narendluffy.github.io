@@ -15,12 +15,12 @@ import {
 export const Route = createFileRoute("/drafts/$code")({
   head: ({ params }) => ({
     meta: [
-      { title: `Drafts for agenda item ${params.code} — RAN1 Live` },
+      { title: `Drafts for agenda item ${params.code} — RAN1 Live!` },
       {
         name: "description",
         content: `Drafts, feature lead summaries and upload history for RAN1 agenda item ${params.code}.`,
       },
-      { property: "og:title", content: `Drafts for agenda item ${params.code} — RAN1 Live` },
+      { property: "og:title", content: `Drafts for agenda item ${params.code} — RAN1 Live!` },
       {
         property: "og:description",
         content: `Every draft and FL summary uploaded for RAN1 agenda item ${params.code}.`,

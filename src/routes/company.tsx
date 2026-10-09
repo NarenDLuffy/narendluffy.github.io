@@ -14,13 +14,13 @@ import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 export const Route = createFileRoute("/company")({
   head: () => ({
     meta: [
-      { title: "My company — RAN1 Live" },
+      { title: "My company — RAN1 Live!" },
       {
         name: "description",
         content:
           "Coordinate RAN1 session coverage with colleagues using a shared company code. Voluntary room check-in, no accounts, never GPS.",
       },
-      { property: "og:title", content: "My company — RAN1 Live" },
+      { property: "og:title", content: "My company — RAN1 Live!" },
       {
         property: "og:description",
         content: "See which rooms colleagues are covering during the RAN1 meeting week.",

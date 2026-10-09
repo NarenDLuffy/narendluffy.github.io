@@ -8,13 +8,13 @@ import { LoadingState } from "@/components/ScheduleStates";
 export const Route = createFileRoute("/meetings/$meetingSlug")({
   head: () => ({
     meta: [
-      { title: "Meeting details — RAN1 Live" },
+      { title: "Meeting details — RAN1 Live!" },
       {
         name: "description",
         content:
           "Dates, venue, discovered documents and schedule coverage for a single 3GPP RAN1 meeting week.",
       },
-      { property: "og:title", content: "RAN1 meeting details — RAN1 Live" },
+      { property: "og:title", content: "RAN1 meeting details — RAN1 Live!" },
       {
         property: "og:description",
         content: "Dates, venue and discovered schedule documents for one RAN1 meeting.",

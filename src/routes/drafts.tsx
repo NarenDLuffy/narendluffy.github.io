@@ -3,13 +3,13 @@ import { createFileRoute, Link, Outlet, useRouterState } from "@tanstack/react-r
 export const Route = createFileRoute("/drafts")({
   head: () => ({
     meta: [
-      { title: "Draft activity — RAN1 Live" },
+      { title: "Draft activity — RAN1 Live!" },
       {
         name: "description",
         content:
           "Live view of RAN1 drafts and feature lead summaries as they are uploaded, mapped to the agenda items you follow.",
       },
-      { property: "og:title", content: "Draft activity — RAN1 Live" },
+      { property: "og:title", content: "Draft activity — RAN1 Live!" },
       {
         property: "og:description",
         content: "RAN1 drafts and FL summaries, tracked per agenda item as they appear.",

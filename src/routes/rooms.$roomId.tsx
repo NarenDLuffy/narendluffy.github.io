@@ -10,12 +10,12 @@ import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/Sche
 export const Route = createFileRoute("/rooms/$roomId")({
   head: () => ({
     meta: [
-      { title: "Room — RAN1 Live" },
+      { title: "Room — RAN1 Live!" },
       {
         name: "description",
         content: "What is running now and next in this RAN1 meeting room, plus the full day plan.",
       },
-      { property: "og:title", content: "Room schedule — RAN1 Live" },
+      { property: "og:title", content: "Room schedule — RAN1 Live!" },
       {
         property: "og:description",
         content: "Now, next and the full day plan for a single RAN1 meeting room.",

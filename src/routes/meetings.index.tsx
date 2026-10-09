@@ -16,13 +16,13 @@ const STATUS: Record<MeetingStatus, { label: string; icon: typeof CircleDot; cla
 export const Route = createFileRoute("/meetings/")({
   head: () => ({
     meta: [
-      { title: "Meetings & archive — RAN1 Live" },
+      { title: "Meetings & archive — RAN1 Live!" },
       {
         name: "description",
         content:
           "Every discovered 3GPP RAN1 meeting: the one in progress, the next one, and the archive of past meeting weeks.",
       },
-      { property: "og:title", content: "RAN1 meetings & archive — RAN1 Live" },
+      { property: "og:title", content: "RAN1 meetings & archive — RAN1 Live!" },
       {
         property: "og:description",
         content: "Switch between RAN1 meeting weeks; new meetings appear automatically.",

@@ -10,12 +10,12 @@ import { activeRooms, roomLabel, roomStyle } from "@/lib/rooms";
 export const Route = createFileRoute("/rooms/")({
   head: () => ({
     meta: [
-      { title: "Rooms — RAN1 Live" },
+      { title: "Rooms — RAN1 Live!" },
       {
         name: "description",
         content: "Every RAN1 meeting room with what is running now and what comes next.",
       },
-      { property: "og:title", content: "RAN1 meeting rooms — RAN1 Live" },
+      { property: "og:title", content: "RAN1 meeting rooms — RAN1 Live!" },
       {
         property: "og:description",
         content: "Room-by-room view of the RAN1 meeting week: now, next and session leads.",
