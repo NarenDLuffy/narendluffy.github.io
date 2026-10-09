@@ -49,6 +49,7 @@ BREAK_RE = re.compile(r"\b(break|lunch|coffee)\b", re.I)
 DURATION_RE = re.compile(r"\(\s*~?\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)\s*$", re.I)
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
 AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
+GENERIC_GRID_RE = re.compile(r"^\s*RAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\s*$", re.I)
 STARTS_AT_RE = re.compile(r"\bat\s+(\d{1,2})[:.](\d{2})", re.I)
 
 # Short work-area labels chairs use as a group tag rather than a person.
@@ -206,6 +207,7 @@ def _looks_like_person(label: str) -> bool:
 
 def _split_head(line: str) -> tuple[str, int | None]:
     """"6GR (120)" → ("6GR", 120); "TEI (TBD)" → ("TEI", None)."""
+    line = line.strip().rstrip(".").strip()
     match = DURATION_RE.search(line)
     if match:
         return line[: match.start()].strip(" .·-"), int(match.group(1))
@@ -361,6 +363,12 @@ def _parse_cell(text: str) -> list[_Segment]:
             allocated = 0
             continue
 
+        if is_item and minutes and current.minutes and allocated >= current.minutes:
+            # A timed item after the head's minutes are used up is the next
+            # block of the same work area ("6GR (60) / .10.6.x (60) / .10.5.1.1 (60)").
+            current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw=line)
+            segments.append(current)
+            allocated = 0
         current.raw += "\n" + line
         current.slots.append(_Slot(label=label, minutes=minutes, group=current_group or current.group))
 
@@ -502,6 +510,9 @@ def parse_block_schedule_docx(
             continue
 
         mode = "offline" if "offline" in heading.lower() else "online"
+        # A chair's own table (detailed plan, personal schedule) rather than a
+        # copy of the shared week grid.
+        own_table = not GENERIC_GRID_RE.match(heading or "")
         single_lane = all(end - start <= 1 for start, end in days.values())
 
         # A few placeholder/TBD cells lose their lane fill in Word. Derive the
@@ -628,8 +639,7 @@ def parse_block_schedule_docx(
                     if not cell.text.strip():
                         continue
                     room = room_for(cell, day_start, day_end)
-                    sessions.extend(
-                        _sessions_for_cell(
+                    produced = _sessions_for_cell(
                             cell.text,
                             meeting_id=meeting_id,
                             day=day,
@@ -639,7 +649,11 @@ def parse_block_schedule_docx(
                             block_end=block_end,
                             source=source,
                         )
-                    )
+                    if own_table:
+                        for item in produced:
+                            for ref in item.sources:
+                                ref.contributed = [*ref.contributed, "own-table"]
+                    sessions.extend(produced)
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
     # The same slot written twice (a chair repeating the plenary or their own
@@ -853,6 +867,8 @@ def _make_session(
     clean = re.sub(r"\s+", " ", title).strip(" .·-") or group or "Session"
     codes = AGENDA_CODE_RE.findall(clean)
     label = AGENDA_CODE_RE.sub("", clean).strip(" .·-") if codes else clean
+    if codes:
+        label = re.sub(r"^AI\s+", "", label).strip()
     kind = "plenary" if re.search(r"commences|plenary|closing|session reports", clean, re.I) else "session"
     group_label = re.sub(r"\s+", " ", group).strip() or (codes[0].split(".")[0] if codes else clean)
     return Session(
