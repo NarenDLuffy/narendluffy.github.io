@@ -38,7 +38,7 @@ from .models import (
     SessionSourceRef,
 )
 
-MIN_FRAGMENT_MINUTES = 5
+MIN_FRAGMENT_MINUTES = 15
 
 
 def _mins(hhmm: str) -> int:
@@ -529,6 +529,15 @@ def _to_session(block: CandidateBlock) -> Session:
                 endTime=block.endTime,
             )
         ]
+    # An untimed block keeps the items (and any stated minutes) it lists.
+    if (
+        origin
+        and origin.agendaBreakdown
+        and not any(slot.startTime for slot in origin.agendaBreakdown)
+        and block.startTime == origin.startTime
+        and block.endTime == origin.endTime
+    ):
+        session.agendaBreakdown = list(origin.agendaBreakdown)
     session.derivation = block.derivation  # type: ignore[arg-type]
     session.confidence = block.confidence
     session.parentAgendaItem = block.parentAgendaItem
