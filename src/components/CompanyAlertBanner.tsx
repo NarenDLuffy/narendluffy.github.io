@@ -26,10 +26,10 @@ export function CompanyAlertBanner({
     <div className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center p-3">
       <div
         role="alert"
-        className="pointer-events-auto w-full max-w-2xl rounded-xl border-2 border-warning bg-card p-4 shadow-2xl"
+        className="pointer-events-auto w-full max-w-2xl rounded-xl border-2 border-warn bg-card p-4 shadow-2xl"
       >
         <div className="mb-2 flex items-center gap-2">
-          <BellRing className="size-6 animate-pulse text-warning" />
+          <BellRing className="size-6 animate-pulse text-warn" />
           <h2 className="flex-1 text-lg font-bold">
             {alerts.length === 1 ? "Colleague needed" : `Colleagues needed (${alerts.length})`}
           </h2>

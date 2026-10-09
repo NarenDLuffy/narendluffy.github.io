@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Users } from "lucide-react";
+import { BellRing, Users } from "lucide-react";
+import { summonColleague } from "@/hooks/useCompanyAlerts";
 import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 
 /** Colleagues checked into one room, with check-in / check-out. */
@@ -7,15 +8,27 @@ export function RoomColleagues({
   meetingId,
   roomId,
   sessionId,
+  roomLabel,
 }: {
   meetingId: string;
   roomId: string;
   sessionId?: string | undefined;
+  roomLabel?: string | undefined;
 }) {
   const { joined, presence, myRoomId, enter, exit, shared, lastError } =
     useCompanyPresence(meetingId);
   const here = presence.filter((p) => p.roomId === roomId);
   const iAmHere = myRoomId === roomId;
+  const elsewhere = presence.filter((p) => p.roomId !== roomId && p.displayName);
+  const call = async (name: string) => {
+    const where = roomLabel || roomId;
+    if (!window.confirm(`Alert your company: "${name} needed in ${where}"? Shows for 10 minutes.`)) return;
+    try {
+      await summonColleague({ meetingId, targetName: name, roomId, ...(roomLabel ? { roomLabel } : {}) });
+    } catch (e) {
+      window.alert(e instanceof Error ? e.message : "Could not send the alert.");
+    }
+  };
 
   return (
     <section className="space-y-2 rounded-lg border border-border bg-card p-3">
@@ -56,6 +69,25 @@ export function RoomColleagues({
           >
             {iAmHere ? "Check out" : "I'm in this room"}
           </button>
+          {elsewhere.length > 0 ? (
+            <div className="space-y-1">
+              <p className="text-xs text-muted-foreground">Need someone here? Tap a colleague:</p>
+              <ul className="flex flex-wrap gap-1.5">
+                {elsewhere.map((p) => (
+                  <li key={p.userId}>
+                    <button
+                      type="button"
+                      onClick={() => void call(p.displayName!)}
+                      className="inline-flex min-h-9 items-center gap-1 rounded-md border border-warn px-2 text-xs font-medium"
+                    >
+                      <BellRing className="size-3.5 text-warn" />
+                      {p.displayName}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           <PresenceStatus shared={shared} lastError={lastError} />
         </>
       )}
