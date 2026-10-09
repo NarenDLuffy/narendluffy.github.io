@@ -29,6 +29,7 @@ Offline - Offline Session 2           (same room across all 3 files)
    - Offline blocks: combine all 3 files into one canonical set per offline room; duplicates merged, disagreements flagged.
 5. **No made-up times, anywhere.** A block is split only when the files give usable times/minutes that fit inside the block.
    - Otherwise it stays one big block listing all its agenda items without times (e.g. Monday "10.5.4.x" 14:30–16:00 lists 10.5.4.1, .3, .4; Tuesday 10.5.4 08:30–10:30 lists .1–.4 with the chair's stated minutes shown as text, since 150 min doesn't fit 120).
+   - When minutes don't add up, the block lists each item with its stated minutes (e.g. "10.5.4.1 · 50 min"), and tapping it shows: "Minutes don't add up: items total 150 min, block is 120 min."
    - Removes today's 5-minute placeholders (Monday 10.5.4.1 16:00–16:05 etc., 9.3.1, 10.8.2) and anything placed after a parent ends or inside a coffee/lunch break.
    - If you follow any of those agenda items, the whole block appears in My agenda, filters, NOW and calendar export.
    - When a newer schedule version provides a real split, the split replaces the big block automatically.
