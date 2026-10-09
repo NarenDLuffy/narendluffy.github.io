@@ -181,6 +181,20 @@ function HelpPage() {
             display name, check in to a room. It expires after two hours, is scoped to one meeting
             and never uses your location.
           </p>
+          <ul className="list-disc space-y-1 pl-4">
+            <li>
+              <strong>Call a colleague:</strong> tap a colleague's name to alert the whole company
+              that they're needed in your room. A banner appears on everyone's screen for 10
+              minutes — one line per person needed — and anyone can close it for themselves. The
+              sender can withdraw it early.
+            </li>
+            <li>
+              <strong>Notifications:</strong> tap <strong>Enable</strong> under Notifications on the
+              Company page to get a system alert even when the app is closed. On iPhone this
+              requires the app on your home screen first (Share → Add to Home Screen), then enable
+              it inside the installed app. Each device opts in separately.
+            </li>
+          </ul>
           <Link to="/company" className="inline-block underline underline-offset-2">
             Open Company
           </Link>
