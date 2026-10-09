@@ -14,7 +14,7 @@ On the user's phone nothing asked them to install the app or enable notification
    - Android Chrome no longer shows an automatic install prompt either; the card and help page give the manual steps: ⋮ menu → "Add to Home screen" / "Install app". (Installing is optional on Android — push works in plain Chrome too.)
    - After enabling, confirm with a short "You're all set" state.
 
-2. **Help page** (`src/routes/help.tsx`): expand the notifications bullet with the exact iPhone steps (Share → Add to Home Screen → open the installed app → Company → Enable), noting that deleting a previous install doesn't matter — just add it again.
+2. **Help page** (`src/routes/help.tsx`): expand the notifications bullet with the exact per-device steps — iPhone: Share → Add to Home Screen → open the installed app → Company → Enable (a previously deleted install doesn't matter, just add it again); Android: optionally install via ⋮ → "Add to Home screen" / "Install app", then Company → Enable (works in plain Chrome too).
 
 3. **Publish** so the phone actually receives the new version (frontend changes only go live on publish).
 
