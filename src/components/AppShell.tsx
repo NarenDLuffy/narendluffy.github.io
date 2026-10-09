@@ -12,6 +12,7 @@ import type { ReactNode } from "react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { DraftBadge } from "@/components/DraftActivity";
+import { CompanyAlertBanner } from "@/components/CompanyAlertBanner";
 import { VenueModeBanner } from "@/components/VenueModeBanner";
 import { VENUE_MODE_ENABLED } from "@/lib/venueMode";
 import { formatDateRange } from "@/services/meetingService";
@@ -49,6 +50,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <CompanyAlertBanner meetingId={meeting?.id} timeZone={meeting?.timezone} />
       <header className="sticky top-0 z-30 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-2.5">
           <Link to="/meetings" className="min-w-0 flex-1" aria-label="Switch meeting">

@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Users } from "lucide-react";
+import { BellRing, Users } from "lucide-react";
+import { summonColleague } from "@/hooks/useCompanyAlerts";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 import { useBookmarks } from "@/hooks/useBookmarks";
@@ -32,7 +33,7 @@ export const Route = createFileRoute("/company")({
 
 function CompanyPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
-  const { identity, joined, presence, join, leave, shared, lastError } = useCompanyPresence(meeting?.id);
+  const { identity, joined, presence, join, leave, shared, lastError, myRoomId } = useCompanyPresence(meeting?.id);
   const { bookmarks } = useBookmarks();
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
@@ -52,6 +53,16 @@ function CompanyPage() {
   });
   const roomName = (roomId: string) =>
     bundle?.rooms.find((r) => r.roomId === roomId)?.roomName ?? roomId;
+  const callToMyRoom = async (name: string) => {
+    if (!meeting || !myRoomId) return;
+    const where = roomName(myRoomId);
+    if (!window.confirm(`Alert your company: "${name} needed in ${where}"? Shows for 10 minutes.`)) return;
+    try {
+      await summonColleague({ meetingId: meeting.id, targetName: name, roomId: myRoomId, roomLabel: where });
+    } catch (e) {
+      window.alert(e instanceof Error ? e.message : "Could not send the alert.");
+    }
+  };
 
   return (
     <div className="space-y-5">
@@ -127,6 +138,11 @@ function CompanyPage() {
             <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
               Colleagues by room
             </h2>
+            <p className="text-xs text-muted-foreground">
+              {myRoomId
+                ? "Tap a colleague to alert everyone that they're needed in your room."
+                : "Check into a room to be able to call colleagues to it."}
+            </p>
             {byRoom.size === 0 ? (
               <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
                 Nobody is checked in. Open a{" "}
@@ -146,9 +162,25 @@ function CompanyPage() {
                     >
                       {roomName(roomId)}
                     </Link>
-                    <p className="text-xs text-muted-foreground">
-                      {people.map((p) => p.displayName || "Colleague").join(", ")}
-                    </p>
+                    <div className="mt-1 flex flex-wrap gap-1.5">
+                      {people.map((p) =>
+                        p.displayName && p.userId !== identity.userId && myRoomId ? (
+                          <button
+                            key={p.userId}
+                            type="button"
+                            onClick={() => void callToMyRoom(p.displayName!)}
+                            className="inline-flex min-h-9 items-center gap-1 rounded-md border border-warn px-2 text-xs font-medium"
+                          >
+                            <BellRing className="size-3.5 text-warn" />
+                            {p.displayName}
+                          </button>
+                        ) : (
+                          <span key={p.userId} className="rounded-md border border-border px-2 py-1 text-xs">
+                            {p.displayName || "Colleague"}
+                          </span>
+                        ),
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>

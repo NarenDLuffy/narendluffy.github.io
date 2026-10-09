@@ -14,6 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
+      company_alerts: {
+        Row: {
+          created_at: string
+          expires_at: string
+          group_key: string
+          id: string
+          meeting_id: string
+          room_id: string
+          room_label: string | null
+          sender_id: string
+          sender_name: string | null
+          target_name: string
+        }
+        Insert: {
+          created_at?: string
+          expires_at?: string
+          group_key: string
+          id?: string
+          meeting_id: string
+          room_id: string
+          room_label?: string | null
+          sender_id: string
+          sender_name?: string | null
+          target_name: string
+        }
+        Update: {
+          created_at?: string
+          expires_at?: string
+          group_key?: string
+          id?: string
+          meeting_id?: string
+          room_id?: string
+          room_label?: string | null
+          sender_id?: string
+          sender_name?: string | null
+          target_name?: string
+        }
+        Relationships: []
+      }
       company_presence: {
         Row: {
           display_name: string | null

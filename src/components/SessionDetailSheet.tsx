@@ -67,6 +67,7 @@ export function SessionDetailSheet({
                   meetingId={bundle.meeting.id}
                   roomId={session.roomId}
                   sessionId={session.sessionId}
+                  roomLabel={roomLabelById(bundle, session.roomId, session.roomName)}
                 />
               ) : null}
               {breakdown.length > 0 ? (
