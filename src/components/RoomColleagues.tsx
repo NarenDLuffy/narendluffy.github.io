@@ -10,7 +10,7 @@ export function RoomColleagues({
 }: {
   meetingId: string;
   roomId: string;
-  sessionId?: string;
+  sessionId?: string | undefined;
 }) {
   const { joined, presence, myRoomId, enter, exit, shared, lastError } =
     useCompanyPresence(meetingId);
