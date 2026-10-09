@@ -328,6 +328,11 @@ def _parse_cell(text: str) -> list[_Segment]:
             and current.minutes
             and allocated >= current.minutes
             and all(m for _, m in codes)
+            and not (
+                current.slots
+                and (first_codes := AGENDA_CODE_RE.findall(current.slots[0].label))
+                and all(code.startswith(first_codes[0] + ".") for code, _ in codes)
+            )
         ):
             # Timed items after the head's minutes are used up: next block.
             current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw="")
