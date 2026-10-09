@@ -23,7 +23,20 @@ let remoteAvailable = true;
 let lastError: string | null = null;
 const listeners = new Set<() => void>();
 
+/** After an app update an open tab can call an outdated server address; reload once to pick up the new version. */
+function reloadIfStale(err: unknown) {
+  if (typeof window === "undefined") return;
+  const msg = err instanceof Error ? err.message : String(err ?? "");
+  if (!/server function|serverFn|Invalid server function ID/i.test(msg)) return;
+  const k = "ran1live.staleReload";
+  const last = Number(window.sessionStorage.getItem(k) ?? 0);
+  if (Date.now() - last < 60_000) return;
+  window.sessionStorage.setItem(k, String(Date.now()));
+  window.location.reload();
+}
+
 function setStatus(ok: boolean, err?: unknown) {
+  if (!ok) reloadIfStale(err);
   const nextErr = ok ? null : err instanceof Error ? err.message : String(err ?? "error");
   if (ok === remoteAvailable && nextErr === lastError) return;
   remoteAvailable = ok;
