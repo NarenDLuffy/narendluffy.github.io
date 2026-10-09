@@ -8,7 +8,7 @@
 - Every cell colour in the schedule tables is one room (one column in the app).
 - Whether a room is online or offline comes from the table it appears in: tables with "offline" in the heading are offline, the others online.
 - The number of rooms is simply the number of distinct colours found — this meeting 5 (3 online, 2 offline); it can be different next meeting.
-- The room's name comes from any file that names it ("Room:" lines, headings), e.g. "Yeongju B, 1F (RAN1 Brk2)". The online room whose column says "Main session / RAN1 #N commences" is RAN1 Main.
+- The room's name comes from any file that names it — mainly the colour-coded room legend in the top-right corner of each table (the name is written in the same colour as its column), plus "Room:" lines and headings — e.g. "Yeongju B, 1F (RAN1 Brk2)". The online room whose column says "Main session / RAN1 #N commences" is RAN1 Main.
 
 ```text
 This meeting (example, not hard-coded):
