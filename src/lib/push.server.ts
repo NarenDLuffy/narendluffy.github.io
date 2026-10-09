@@ -59,7 +59,9 @@ async function vapidJwt(endpoint: string, subject: string, privPkcs8: string, pu
   const sigDer = new Uint8Array(
     await crypto.subtle.sign({ name: "ECDSA", hash: "SHA-256" }, key, te.encode(unsigned) as BufferSource),
   );
-  return `${unsigned}.${bytesToB64url(derToRawEcdsa(sigDer))}`;
+  // Web Crypto already returns raw r||s (64 bytes); only convert real DER.
+  const sig = sigDer.length === 64 ? sigDer : derToRawEcdsa(sigDer);
+  return `${unsigned}.${bytesToB64url(sig)}`;
 }
 
 /** Convert a DER-encoded ECDSA signature to the raw r||s form JWS expects. */

@@ -14,6 +14,9 @@ self.addEventListener("push", (event) => {
     badge: "/icon-64.png",
     tag: data.tag || "ran1live-alert",
     renotify: true,
+    requireInteraction: true,
+    silent: false,
+    vibrate: [300, 150, 300, 150, 300],
     data: { url: data.url || "/" },
   };
   event.waitUntil(self.registration.showNotification(title, options));
