@@ -14,21 +14,31 @@ import {
  * Shared presence store: check-ins go to the backend so every device using the
  * same company code sees the same room occupancy.
  *
- * If the backend is unreachable (for example the fully static GitHub Pages
- * export, or offline at the venue), every call falls back to the device-only
- * store so the feature degrades instead of breaking.
+ * On failure a call falls back to the device-only store, but the next call
+ * always tries the backend again, and the status is exposed to the UI so a
+ * silent "this device only" state can't happen.
  */
 
 let remoteAvailable = true;
+let lastError: string | null = null;
+const listeners = new Set<() => void>();
+
+function setStatus(ok: boolean, err?: unknown) {
+  const nextErr = ok ? null : err instanceof Error ? err.message : String(err ?? "error");
+  if (ok === remoteAvailable && nextErr === lastError) return;
+  remoteAvailable = ok;
+  lastError = nextErr;
+  listeners.forEach((l) => l());
+}
 
 export const remotePresenceStore: PresenceStore = {
   async list(groupId, meetingId) {
-    if (!remoteAvailable) return localPresenceStore.list(groupId, meetingId);
     try {
       const rows = await listRemotePresence({ data: { groupCode: groupId, meetingId } });
+      setStatus(true);
       return rows.map((r) => ({ ...r, organizationId: groupId })) as CurrentPresence[];
-    } catch {
-      remoteAvailable = false;
+    } catch (e) {
+      setStatus(false, e);
       return localPresenceStore.list(groupId, meetingId);
     }
   },
@@ -47,9 +57,9 @@ export const remotePresenceStore: PresenceStore = {
           expiresAt: presence.expiresAt,
         },
       });
-      remoteAvailable = true;
-    } catch {
-      remoteAvailable = false;
+      setStatus(true);
+    } catch (e) {
+      setStatus(false, e);
     }
   },
 
@@ -57,15 +67,22 @@ export const remotePresenceStore: PresenceStore = {
     await localPresenceStore.clear(userId, groupId, meetingId);
     try {
       await clearRemotePresence({ data: { groupCode: groupId, userId, meetingId } });
-      remoteAvailable = true;
-    } catch {
-      remoteAvailable = false;
+      setStatus(true);
+    } catch (e) {
+      setStatus(false, e);
     }
   },
 };
 
-export function isRemotePresenceAvailable() {
-  return remoteAvailable;
+export function getRemotePresenceStatus() {
+  return { shared: remoteAvailable, lastError };
+}
+
+export function subscribeRemotePresenceStatus(fn: () => void) {
+  listeners.add(fn);
+  return () => {
+    listeners.delete(fn);
+  };
 }
 
 /** Activate shared presence. Safe to call more than once. */

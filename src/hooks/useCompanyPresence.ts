@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import type { CurrentPresence } from "@/types/presence";
 import {
   checkIn,
@@ -8,11 +8,23 @@ import {
   saveIdentity,
   type CompanyIdentity,
 } from "@/services/presenceService";
-import { useSharedPresence } from "@/services/remotePresenceStore";
+import {
+  getRemotePresenceStatus,
+  subscribeRemotePresenceStatus,
+  useSharedPresence,
+} from "@/services/remotePresenceStore";
 
 // Shared, backend-backed presence: check-ins are visible on every device that
 // uses the same company code, not just the device that checked in.
 useSharedPresence();
+
+const serverStatus = { shared: true, lastError: null as string | null };
+let cachedStatus = getRemotePresenceStatus();
+function readStatus() {
+  const s = getRemotePresenceStatus();
+  if (s.shared !== cachedStatus.shared || s.lastError !== cachedStatus.lastError) cachedStatus = s;
+  return cachedStatus;
+}
 
 /**
  * Account-free company presence for one meeting: a shared group code plus a
@@ -26,6 +38,7 @@ export function useCompanyPresence(meetingId: string | undefined) {
     displayName: "",
   });
   const [presence, setPresence] = useState<CurrentPresence[]>([]);
+  const status = useSyncExternalStore(subscribeRemotePresenceStatus, readStatus, () => serverStatus);
 
   useEffect(() => {
     setIdentity(getIdentity());
@@ -39,7 +52,16 @@ export function useCompanyPresence(meetingId: string | undefined) {
   useEffect(() => {
     void refresh();
     const id = setInterval(() => void refresh(), 20_000);
-    return () => clearInterval(id);
+    const onVisible = () => {
+      if (document.visibilityState === "visible") void refresh();
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    window.addEventListener("focus", onVisible);
+    return () => {
+      clearInterval(id);
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener("focus", onVisible);
+    };
   }, [refresh, identity.groupId]);
 
   const join = useCallback((groupId: string, displayName: string) => {
@@ -76,6 +98,8 @@ export function useCompanyPresence(meetingId: string | undefined) {
     joined: Boolean(identity.groupId),
     presence,
     myRoomId: mine?.roomId ?? null,
+    shared: status.shared,
+    lastError: status.lastError,
     join,
     leave,
     enter,

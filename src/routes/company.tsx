@@ -6,6 +6,7 @@ import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { buildCoverage } from "@/services/presenceService";
 import { MeetingBanner } from "@/components/MeetingBanner";
+import { PresenceStatus } from "@/components/RoomColleagues";
 import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/company")({
@@ -31,7 +32,7 @@ export const Route = createFileRoute("/company")({
 
 function CompanyPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
-  const { identity, joined, presence, join, leave } = useCompanyPresence(meeting?.id);
+  const { identity, joined, presence, join, leave, shared, lastError } = useCompanyPresence(meeting?.id);
   const { bookmarks } = useBookmarks();
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
@@ -80,6 +81,9 @@ function CompanyPage() {
               placeholder="e.g. acme-ran1"
               className="mono-code mt-1 min-h-11 w-full rounded-md border border-input bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
             />
+            <span className="mt-1 block text-[11px] font-normal text-muted-foreground">
+              Capitals and spaces are ignored, so "Acme RAN1" and "acme-ran1" join the same group.
+            </span>
           </label>
           <label className="block text-xs font-medium">
             Your name (shown to colleagues)
@@ -105,6 +109,7 @@ function CompanyPage() {
             <div className="truncate text-xs text-muted-foreground">
               {identity.displayName || "anonymous"} · {presence.length} checked in
             </div>
+            <PresenceStatus shared={shared} lastError={lastError} />
           </div>
           <button
             type="button"

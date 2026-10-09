@@ -33,7 +33,7 @@ export const listRemotePresence = createServerFn({ method: "POST" })
     const { data: rows, error } = await supabaseAdmin
       .from("company_presence")
       .select("user_id, meeting_id, room_id, session_id, display_name, updated_at, expires_at")
-      .eq("group_key", groupKeyOf(data.groupCode))
+      .eq("group_key", await groupKeyOf(data.groupCode))
       .eq("meeting_id", data.meetingId)
       .gt("expires_at", new Date().toISOString());
     if (error) throw new Error(error.message);
@@ -67,7 +67,7 @@ export const setRemotePresence = createServerFn({ method: "POST" })
     const { groupKeyOf } = await import("./presence.server");
     const { error } = await supabaseAdmin.from("company_presence").upsert(
       {
-        group_key: groupKeyOf(data.groupCode),
+        group_key: await groupKeyOf(data.groupCode),
         user_id: data.userId,
         meeting_id: data.meetingId,
         room_id: data.roomId,
@@ -98,7 +98,7 @@ export const clearRemotePresence = createServerFn({ method: "POST" })
     const { error } = await supabaseAdmin
       .from("company_presence")
       .delete()
-      .eq("group_key", groupKeyOf(data.groupCode))
+      .eq("group_key", await groupKeyOf(data.groupCode))
       .eq("user_id", data.userId)
       .eq("meeting_id", data.meetingId);
     if (error) throw new Error(error.message);
