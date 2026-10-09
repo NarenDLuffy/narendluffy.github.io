@@ -189,10 +189,23 @@ function HelpPage() {
               sender can withdraw it early.
             </li>
             <li>
-              <strong>Notifications:</strong> tap <strong>Enable</strong> under Notifications on the
-              Company page to get a system alert even when the app is closed. On iPhone this
-              requires the app on your home screen first (Share → Add to Home Screen), then enable
-              it inside the installed app. Each device opts in separately.
+              <strong>Notifications:</strong> get a system alert even when the app is closed — each
+              device opts in separately from the Company page.
+              <ul className="mt-1 list-circle space-y-1 pl-4">
+                <li>
+                  <strong>iPhone:</strong> in Safari tap Share → Add to Home Screen, open RAN1 Live!
+                  from your home screen, then Company → Notifications → Enable. (Deleted the app
+                  before? Just add it again — nothing auto-prompts.)
+                </li>
+                <li>
+                  <strong>Android:</strong> Company → Notifications → Enable works right away in
+                  Chrome. Optional: install via ⋮ → "Add to Home screen" / "Install app".
+                </li>
+                <li>
+                  <strong>Laptop:</strong> Company → Notifications → Enable, and allow the browser's
+                  permission prompt.
+                </li>
+              </ul>
             </li>
           </ul>
           <Link to="/company" className="inline-block underline underline-offset-2">
