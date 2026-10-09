@@ -148,6 +148,46 @@ def _paragraph_text(paragraph) -> str:
     return "".join(parts).strip()
 
 
+def norm_room(name: str) -> str:
+    """Comparable room identity: "Room 201 (2F)" == "201", "Yeongju B, 1F" == "Yeongju B (1F)"."""
+    text = re.sub(r"\([^)]*\)", " ", name or "")
+    text = re.sub(r"\b(room|rm)\b", " ", text, flags=re.I)
+    text = re.sub(r"\b\d{1,2}\s*F\b", " ", text, flags=re.I)
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+_SESSION_LABEL_RE = re.compile(r"RAN1[\s_]*(main|brk|break(?:out)?|adhoc|ad-hoc)\s*#?\s*(\d*)", re.I)
+
+
+def _session_label(text: str) -> str | None:
+    match = _SESSION_LABEL_RE.search(text or "")
+    if not match:
+        return None
+    kind = match.group(1).lower()
+    if kind == "main":
+        return "RAN1 Main"
+    if kind.startswith("ad"):
+        return f"RAN1 Adhoc{match.group(2)}"
+    return f"RAN1 Brk{match.group(2)}"
+
+
+def _heading_room_name(heading: str) -> str | None:
+    """The physical room a one-room table's heading names, if any."""
+    at = re.search(r"@\s*(.+)$", heading or "")
+    if at:
+        return at.group(1).strip(" -–—:·")
+    paren = re.search(r"\(\s*rooms?\s*[:=]?\s*([^)]+)\)", heading or "", re.I)
+    if paren:
+        parts = [p.strip(" -–—:·") for p in re.split(r"[,;/]", paren.group(1)) if p.strip()]
+        physical = [
+            p for p in parts
+            if not re.fullmatch(r"\d{1,2}\s*F", p, re.I) and not _SESSION_LABEL_RE.search(p)
+        ]
+        if physical:
+            return physical[0]
+    return None
+
+
 def _heading_room(heading: str, known: list[str]) -> str | None:
     """A room the heading refers to, when it names one already seen."""
     lowered = heading.lower()
