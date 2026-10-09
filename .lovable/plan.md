@@ -13,6 +13,8 @@
 4. Show the status on the Company page and room page: "Shared with your company" or "Not connected - only visible on this device", plus the error if a check-in failed to save.
 5. Make sure both devices are truly in the same group: show the active company code (lightly masked) so you can confirm laptop and phone use the same one (codes ignore capitals and extra spaces).
 6. Refresh the room list right after check-in and every 20 seconds (already the case), and when the page comes back into view.
+7. Company code capitals: keep ignoring capitals and extra spaces (so "Ericsson" and "ericsson" join the same group), since a capital-letter typo on a phone would silently split colleagues. Say so under the code box.
+8. Tapping a schedule block: the detail sheet shows "Colleagues in this room" with everyone from your company checked into that block's room, plus an "I'm in this room" / "Check out" button. Shows a prompt to join on the Company page if you have no code.
 
 ## Verification
 - Two independent browser sessions, same code, same room: each sees both names within 20 seconds.
