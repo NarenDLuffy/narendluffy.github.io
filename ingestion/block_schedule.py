@@ -195,21 +195,24 @@ def _is_group_token(label: str) -> bool:
     return token in GROUP_TOKENS
 
 
-BARE_CODE_RE = re.compile(r"^\.?\d{1,2}(?:\.(?:\d{1,2}|x))+$", re.I)
+BARE_CODE_RE = re.compile(r"^\.?(\d{1,2}(?:\.(?:\d{1,2}|x))+)\.?\s*(?:\(\s*(\d{1,3})\s*\))?$", re.I)
 
 
-def _code_list(line: str) -> list[str]:
-    """["9.3.3", "9.3.1"] for a line that is only a list of agenda items.
+def _code_list(line: str) -> list[tuple[str, int | None]]:
+    """[("9.3.3", None), ...] for a line that is only a list of agenda items.
 
-    Sub-chairs often write the item order under a headed block without giving
-    each item its own duration ("R20 A-IoT (120)" / "9.3.3, 9.3.1, 9.3.2").
-    Those codes are the detail of that block and must not be mistaken for a
-    work-area tag, otherwise the block stays undetailed.
+    Sub-chairs often write the item order under a headed block, with or without
+    per-item minutes ("9.3.3, 9.3.1" or "10.8.2(40), 10.8.3(40)"). Those codes
+    are the detail of that block and must not be mistaken for a work-area tag.
     """
-    parts = [p.strip(" .·-") for p in re.split(r"[,;/]", line) if p.strip(" .·-")]
-    if len(parts) < 1 or not all(BARE_CODE_RE.match(p) for p in parts):
-        return []
-    return parts
+    parts = [p.strip(" ·-") for p in re.split(r"[,;/]", line) if p.strip(" .·-")]
+    out: list[tuple[str, int | None]] = []
+    for part in parts:
+        match = BARE_CODE_RE.match(part)
+        if not match:
+            return []
+        out.append((match.group(1), int(match.group(2)) if match.group(2) else None))
+    return out
 
 
 
@@ -273,18 +276,24 @@ def _parse_cell(text: str) -> list[_Segment]:
         if codes and current is not None:
             # "9.3.3, 9.3.1, 9.3.2" under a head is the ordered list of agenda
             # items sharing that head's time, not a work-area tag.
-            for code in codes:
+            for code, code_minutes in codes:
                 current.raw += "\n" + code
                 current.slots.append(
-                    _Slot(label=code, minutes=None, group=current_group or current.group)
+                    _Slot(label=code, minutes=code_minutes, group=current_group or current.group)
                 )
+                if code_minutes:
+                    allocated += code_minutes
             continue
 
         label, minutes = _split_head(line)
         if not label:
             continue
         is_item = line.startswith(".")
-        heads_new = not is_item and (_looks_like_person(label) or _is_group_token(label))
+        # Any timed, non-item line ("R20 A-IoT (40)", "Maintenance (80)") opens
+        # a new block once the previous one has used up its minutes.
+        heads_new = not is_item and (
+            _looks_like_person(label) or _is_group_token(label) or minutes is not None
+        )
 
         if not is_item and minutes is None:
             # Bare work-area tag: labels the items that follow.
