@@ -29,6 +29,10 @@ When someone taps a colleague to summon them, every company member gets a real s
 
 5. **Keep the existing banner** as the in-app fallback; push is additive.
 
+6. **Update the "How to Use" page** (`src/routes/help.tsx`):
+   - New section for the colleague summon feature: tap a colleague's name to alert the company, banner shows for 10 minutes, anyone can close it for themselves, sender can withdraw.
+   - New section for push notifications: how to enable them per device, and the iPhone requirement to add the app to the home screen first.
+
 ## Technical notes
 - No Firebase; plain VAPID web push avoids extra accounts and works with the existing backend.
 - Service worker is a dedicated messaging worker (allowed), not an app-shell cache, so no offline/PWA caching behavior changes.
