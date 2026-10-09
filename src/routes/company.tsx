@@ -38,6 +38,7 @@ function CompanyPage() {
   const { bookmarks } = useBookmarks();
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
+  const push = usePushNotifications();
 
   if (isLoading) return <LoadingState label="Loading company view…" />;
   if (!meeting) return <NoMeetingState />;
