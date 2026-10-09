@@ -11,6 +11,7 @@ On the user's phone nothing asked them to install the app or enable notification
    - Detect iOS (`navigator.userAgent` / `navigator.standalone`) and whether the app runs installed (standalone display-mode).
    - iPhone in Safari (not installed): card shows "To get notifications: tap Share → Add to Home Screen, then open RAN1 Live from your home screen and come back here." No Enable button (it would fail silently on iOS Safari).
    - iPhone installed app / Android / desktop: show the Enable button as now.
+   - Android Chrome no longer shows an automatic install prompt either; the card and help page give the manual steps: ⋮ menu → "Add to Home screen" / "Install app". (Installing is optional on Android — push works in plain Chrome too.)
    - After enabling, confirm with a short "You're all set" state.
 
 2. **Help page** (`src/routes/help.tsx`): expand the notifications bullet with the exact iPhone steps (Share → Add to Home Screen → open the installed app → Company → Enable), noting that deleting a previous install doesn't matter — just add it again.
