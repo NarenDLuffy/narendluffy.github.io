@@ -6,6 +6,7 @@ import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { buildCoverage } from "@/services/presenceService";
 import { MeetingBanner } from "@/components/MeetingBanner";
+import { PresenceStatus } from "@/components/RoomColleagues";
 import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/company")({
@@ -31,7 +32,7 @@ export const Route = createFileRoute("/company")({
 
 function CompanyPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
-  const { identity, joined, presence, join, leave } = useCompanyPresence(meeting?.id);
+  const { identity, joined, presence, join, leave, shared, lastError } = useCompanyPresence(meeting?.id);
   const { bookmarks } = useBookmarks();
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
