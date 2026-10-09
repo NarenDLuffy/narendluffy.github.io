@@ -55,6 +55,7 @@ All changes below follow this rule.
 - Tests use saved copies of this meeting's three files.
 
 ## Verify
+- Overlay check: for every day and slot, compare all three files' tables side by side against the app's result, and confirm the app shows the most detailed timed version, nothing from any file is missing, no duplicates, and conflicts are flagged. Report any slot that differs.
 - Rebuild RAN1#126bis: as many rooms as the files define (no fixed number; 5 this meeting); sources list shows v03, Sorour v00, Hiroki v01.
 - Orange column shows Hiroki's room name; grey shows Sorour's.
 - Tuesday Online Session 3 shows all four 10.5.4.x blocks with times.
