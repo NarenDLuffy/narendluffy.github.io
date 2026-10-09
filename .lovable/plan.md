@@ -27,11 +27,12 @@ Offline - Offline Session 2           (same room across all 3 files)
 4. **Detailed schedule from the chair files**
    - Find the "Detailed Schedule for ..." sections in Hiroki's and Sorour's files and replace the broad main-grid blocks in their column with the detailed agenda-level blocks and times.
    - Offline blocks: combine all 3 files into one canonical set per offline room; duplicates merged, disagreements flagged.
-5. **Fix overfull splits** (Tuesday 10.5.4): if stated minutes exceed the slot and no detailed file gives exact times, scale them to fit the slot (none dropped) and show the stated minutes on the card. If a detailed file gives exact times, use those.
-6. **Readable short blocks**: minimum card height so every split block shows code and time.
-7. **No made-up 5-minute slots** (Monday room "203": 10.5.4.1 16:00–16:05, .3 16:05–16:10, .4 16:10–16:15, while the parent 10.5.4.x runs 14:30–16:00; similar 5-min 9.3.1 and 10.8.2 in RAN1 Main):
-   - Sub-items without stated minutes are currently given a 5-minute placeholder and placed after the parent ends. Instead, keep them inside the parent block: listed as the block's agenda items (one block, no invented times), or split evenly only if the file states order but no minutes — never past the parent's end or into a break.
-   - Nothing is ever scheduled inside a coffee/lunch break.
+5. **No made-up times, anywhere.** A block is split only when the files give usable times/minutes that fit inside the block.
+   - Otherwise it stays one big block listing all its agenda items without times (e.g. Monday "10.5.4.x" 14:30–16:00 lists 10.5.4.1, .3, .4; Tuesday 10.5.4 08:30–10:30 lists .1–.4 with the chair's stated minutes shown as text, since 150 min doesn't fit 120).
+   - Removes today's 5-minute placeholders (Monday 10.5.4.1 16:00–16:05 etc., 9.3.1, 10.8.2) and anything placed after a parent ends or inside a coffee/lunch break.
+   - If you follow any of those agenda items, the whole block appears in My agenda, filters, NOW and calendar export.
+   - When a newer schedule version provides a real split, the split replaces the big block automatically.
+6. **Readable short blocks**: minimum card height so every block shows code and time.
 8. **No duplicate blocks**: the same block currently appears twice (e.g. Offline Session 1 14:55–15:40, RAN1 Main 15:30–16:30). Identical blocks from different files are merged into one.
 9. **No stray rooms**: "203" and "Yeongju B (1F)" currently appear as extra columns next to "Online Session 3". Room names must attach to their existing column (by colour/content), not create a new one.
 
