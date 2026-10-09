@@ -75,7 +75,7 @@ function derToRawEcdsa(der: Uint8Array): Uint8Array {
     return der.subarray(start, end);
   };
   const r = readInt(off);
-  const s = readInt(off + 2 + der[off + 1]);
+  const s = readInt(off + 2 + der[off + 1]!);
   const raw = new Uint8Array(64);
   raw.set(r, 32 - r.length);
   raw.set(s, 64 - s.length);
