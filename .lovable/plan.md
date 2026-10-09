@@ -14,7 +14,7 @@ Offline - Offline Session 2           (same room across all 3 files)
 ```
 
 ## Core principle: overlay every table
-Every online and offline table from every schedule file is laid on top of the others, matched by day, time and column (colour for online, position for offline). For each slot the result keeps:
+Every online and offline table from every schedule file is laid on top of the others, matched by day, time and column (by cell colour for both online and offline; offline tables are recognised by "offline" in their heading, and their colours are independent of the online colours). For each slot the result keeps:
 - the most granular version that has real times (a detailed split beats a broad block);
 - items that appear in only one file (union — nothing dropped);
 - one copy of identical blocks, with every file that contained it noted;
