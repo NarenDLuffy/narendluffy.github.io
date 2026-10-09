@@ -1,0 +1,1 @@
+ALTER TABLE public.company_alerts ADD COLUMN room_label text;

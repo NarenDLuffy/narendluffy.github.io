@@ -22,6 +22,7 @@ export type Database = {
           id: string
           meeting_id: string
           room_id: string
+          room_label: string | null
           sender_id: string
           sender_name: string | null
           target_name: string
@@ -33,6 +34,7 @@ export type Database = {
           id?: string
           meeting_id: string
           room_id: string
+          room_label?: string | null
           sender_id: string
           sender_name?: string | null
           target_name: string
@@ -44,6 +46,7 @@ export type Database = {
           id?: string
           meeting_id?: string
           room_id?: string
+          room_label?: string | null
           sender_id?: string
           sender_name?: string | null
           target_name?: string
