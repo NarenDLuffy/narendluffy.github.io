@@ -146,14 +146,16 @@ function CompanyPage() {
               <div className="text-sm font-medium">Notifications</div>
               <div className="text-xs text-muted-foreground">
                 {push.state === "on"
-                  ? "This device gets a system notification when a colleague is needed."
-                  : push.state === "blocked"
-                    ? "Notifications are blocked — allow them in your browser settings for this site."
-                    : push.state === "unsupported"
-                      ? "This browser does not support push notifications. On iPhone, add the app to your home screen first."
-                      : push.state === "preview"
-                        ? "Notifications work in the published app, not in this preview."
-                        : "Get a system notification when a colleague is needed, even with the app closed."}
+                  ? "You're all set — this device gets a system notification when a colleague is needed."
+                  : push.state === "needsInstall"
+                    ? "On iPhone: tap Share → Add to Home Screen, then open RAN1 Live! from your home screen and enable notifications here."
+                    : push.state === "blocked"
+                      ? "Notifications are blocked — allow them in your browser settings for this site."
+                      : push.state === "unsupported"
+                        ? "This browser does not support push notifications."
+                        : push.state === "preview"
+                          ? "Notifications work in the published app, not in this preview."
+                          : "Get a system notification when a colleague is needed, even with the app closed."}
               </div>
             </div>
             {push.state === "on" ? (
