@@ -129,10 +129,10 @@ export function buildIcs(
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//RAN1 Live//Unofficial RAN1 companion//EN",
+    "PRODID:-//RAN1 Live!//Unofficial RAN1 companion//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
-    `X-WR-CALNAME:${esc(`${bundle.meeting.name} — RAN1 Live`)}`,
+    `X-WR-CALNAME:${esc(`${bundle.meeting.name} — RAN1 Live!`)}`,
     `X-WR-TIMEZONE:${tz}`,
   ];
 

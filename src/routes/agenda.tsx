@@ -14,13 +14,13 @@ import type { Session } from "@/types/schedule";
 export const Route = createFileRoute("/agenda")({
   head: () => ({
     meta: [
-      { title: "My agenda — RAN1 Live" },
+      { title: "My agenda — RAN1 Live!" },
       {
         name: "description",
         content:
           "Follow RAN1 agenda items and get a personal meeting-week timeline you can export to your calendar.",
       },
-      { property: "og:title", content: "My agenda — RAN1 Live" },
+      { property: "og:title", content: "My agenda — RAN1 Live!" },
       {
         property: "og:description",
         content: "Your followed RAN1 agenda items as a personal timeline with ICS export.",

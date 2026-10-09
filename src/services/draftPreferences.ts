@@ -2,7 +2,7 @@
  * Personal draft-tracking state: follows, "since I last looked" markers and
  * notification preferences.
  *
- * RAN1 Live has no accounts, so this lives on the device. All of it is keyed
+ * RAN1 Live! has no accounts, so this lives on the device. All of it is keyed
  * by meeting so a rollover to the next RAN1 meeting starts clean while old
  * meetings keep their state.
  */

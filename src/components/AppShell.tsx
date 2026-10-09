@@ -56,7 +56,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <Link to="/meetings" className="min-w-0 flex-1" aria-label="Switch meeting">
             <div className="flex items-baseline gap-2">
               <span className="mono-code text-base font-semibold tracking-tight">
-                {meeting?.name ?? "RAN1 Live"}
+                {meeting?.name ?? "RAN1 Live!"}
               </span>
               <span className="truncate text-xs text-muted-foreground">
                 {meeting

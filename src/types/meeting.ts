@@ -1,5 +1,5 @@
 /**
- * Meeting model for RAN1 Live.
+ * Meeting model for RAN1 Live!.
  *
  * Nothing in the application may assume a specific RAN1 meeting. A meeting is
  * discovered by the ingestion pipeline (see /ingestion/meeting_discovery.py),

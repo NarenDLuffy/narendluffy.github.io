@@ -24,13 +24,13 @@ const LABEL: Record<ChangeType, string> = {
 export const Route = createFileRoute("/changes")({
   head: () => ({
     meta: [
-      { title: "Schedule changes — RAN1 Live" },
+      { title: "Schedule changes — RAN1 Live!" },
       {
         name: "description",
         content:
           "Every detected RAN1 schedule change: rooms moved, times shifted, sessions added or cancelled.",
       },
-      { property: "og:title", content: "RAN1 schedule changes — RAN1 Live" },
+      { property: "og:title", content: "RAN1 schedule changes — RAN1 Live!" },
       {
         property: "og:description",
         content: "Track what moved in the RAN1 schedule since the last document update.",

@@ -3,7 +3,25 @@ import { PUSH_SW_PATH, VAPID_PUBLIC_KEY } from "@/lib/pushConfig";
 import { subscribePush, unsubscribePush } from "@/lib/push.functions";
 import { getIdentity } from "@/services/presenceService";
 
-export type PushState = "unsupported" | "preview" | "blocked" | "off" | "on" | "busy";
+export type PushState =
+  | "unsupported"
+  | "preview"
+  | "blocked"
+  | "needsInstall"
+  | "off"
+  | "on"
+  | "busy";
+
+/** iOS only supports web push from an installed home-screen app. */
+function isIosNotInstalled(): boolean {
+  const ua = window.navigator.userAgent;
+  const isIos = /iPad|iPhone|iPod/.test(ua) || (navigator.maxTouchPoints > 1 && /Mac/.test(ua));
+  if (!isIos) return false;
+  const standalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    (window.navigator as { standalone?: boolean }).standalone === true;
+  return !standalone;
+}
 
 function b64urlToBytes(s: string): Uint8Array {
   const pad = "=".repeat((4 - (s.length % 4)) % 4);
@@ -38,6 +56,7 @@ export function usePushNotifications() {
     if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window))
       return "unsupported";
     if (!import.meta.env.PROD || isPreviewHost()) return "preview";
+    if (isIosNotInstalled()) return "needsInstall";
     if (Notification.permission === "denied") return "blocked";
     const reg = await navigator.serviceWorker.getRegistration(PUSH_SW_PATH);
     const sub = reg ? await reg.pushManager.getSubscription() : null;

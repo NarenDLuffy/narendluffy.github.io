@@ -31,13 +31,13 @@ export const Route = createFileRoute("/schedule")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Timetable — RAN1 Live" },
+      { title: "Timetable — RAN1 Live!" },
       {
         name: "description",
         content:
           "Full RAN1 week timetable by room and time, with agenda-item filtering and a live current-time marker.",
       },
-      { property: "og:title", content: "RAN1 timetable — RAN1 Live" },
+      { property: "og:title", content: "RAN1 timetable — RAN1 Live!" },
       {
         property: "og:description",
         content: "Room-by-room RAN1 timetable with agenda-item filters you can share by URL.",
