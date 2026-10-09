@@ -1,43 +1,62 @@
 [
   {
-    "roomId": "ran1-122-bis-room-d245f7a2",
+    "roomId": "ran1-122-bis-room-f4d86cda",
     "meetingId": "ran1-122-bis",
     "roomName": "B1+B2",
     "order": 0,
     "shortName": "B1+B2",
+    "sessionLabel": "RAN1 Main",
     "sourceColor": "FFFFFF",
+    "chairLaneId": "ran1-122-bis:online:FFFFFF",
     "chairRole": "main"
   },
   {
-    "roomId": "ran1-122-bis-room-ae8ae27f",
+    "roomId": "ran1-122-bis-room-34f3a2f8",
     "meetingId": "ran1-122-bis",
     "roomName": "D11+D12",
     "order": 1,
     "shortName": "D11+D12",
-    "sourceColor": "D9D9D9"
+    "sourceColor": "D9D9D9",
+    "chairLaneId": "ran1-122-bis:online:D9D9D9",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-122-bis-room-84896d3e",
+    "roomId": "ran1-122-bis-room-a05131b8",
     "meetingId": "ran1-122-bis",
     "roomName": "E1",
     "order": 2,
     "shortName": "E1",
-    "sourceColor": "FFD966"
+    "sourceColor": "FFD966",
+    "chairLaneId": "ran1-122-bis:online:FFD966",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-122-bis-room-dc188591",
+    "roomId": "ran1-122-bis-room-f3074486",
+    "meetingId": "ran1-122-bis",
+    "roomName": "Online room 3",
+    "order": 3,
+    "shortName": "Online room 3",
+    "chairLaneId": "ran1-122-bis:online:lane0",
+    "chairRole": "vice"
+  },
+  {
+    "roomId": "ran1-122-bis-room-e349f530",
     "meetingId": "ran1-122-bis",
     "roomName": "E2",
-    "order": 3,
-    "shortName": "E2"
+    "order": 4,
+    "shortName": "E2",
+    "sourceColor": "F7CAAC",
+    "chairLaneId": "ran1-122-bis:offline:F7CAAC",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-122-bis-room-75d5ba7b",
+    "roomId": "ran1-122-bis-room-86d21299",
     "meetingId": "ran1-122-bis",
-    "roomName": "Session Session 1",
-    "order": 4,
-    "shortName": "Session Session 1",
-    "chairLaneId": "ran1-122-bis-4402ccb4:position-0",
+    "roomName": "B3",
+    "order": 5,
+    "shortName": "B3",
+    "sourceColor": "9CC2E5",
+    "chairLaneId": "ran1-122-bis:offline:9CC2E5",
     "chairRole": "vice"
   }
 ]

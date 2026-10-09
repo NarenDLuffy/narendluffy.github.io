@@ -1,24 +1,25 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T17:40:54Z",
+  "generatedAt": "2026-10-09T21:00:50Z",
   "meetingId": "ran1-122-bis",
   "sessions": [
     {
-      "sessionId": "ran1-122-bis_mon_b1-b2_0830_0900_r20-iot-ntn",
+      "sessionId": "ran1-122-bis_mon_b1-b2_0900_1000_ran1-122b-commences-at-0",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
-      "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "R20 IoT-NTN",
-      "topicKey": "07ab94f0",
+      "topic": "RAN1#122b commences at 09:00 on Monday",
+      "topicKey": "6afe978b",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Agenda items 1, 2, 3, 4, 5",
-      "kind": "session",
+      "group": "RAN1#122b commences at 09:00 on Monday",
+      "kind": "plenary",
       "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -46,66 +47,37 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_b1-b2_0900_0905_8.8",
+      "sessionId": "ran1-122-bis_mon_b1-b2_1000_1030_8.8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
-      "startTime": "09:00",
-      "endTime": "09:05",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "other (7-24GHz, TEI leftover)",
-      "topicKey": "5b30e2c5",
+      "topic": "R20 IoT-NTN",
+      "topicKey": "62125ca4",
       "agendaItems": [
-        "8.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "Maintenance",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_b1-b2_0905_0910_8.3",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "09:05",
-      "endTime": "09:10",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "SBFD",
-      "topicKey": "5b30e2c5",
-      "agendaItems": [
+        "8.8",
         "8.3"
       ],
-      "agendaBreakdown": [],
-      "group": "Maintenance",
+      "agendaBreakdown": [
+        {
+          "code": "8.8",
+          "label": "other (7-24GHz, TEI leftover)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3",
+          "label": "SBFD",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "group": "R20 IoT-NTN",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -130,9 +102,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
@@ -177,20 +148,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_b1-b2_1100_1130_8.8",
+      "sessionId": "ran1-122-bis_mon_b1-b2_1100_1145_8.3",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "11:00",
-      "endTime": "11:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "11:45",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Maintenance AI  Others",
+      "topic": "Maintenance AI  (45),",
       "topicKey": "d74e8edd",
       "agendaItems": [
+        "8.3",
+        "8.6",
         "8.8"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "8.8",
+          "label": "Maintenance AI  Others",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "LTM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "MC&LB-CA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "Maintenance AI 8.3 (45), 8.6",
       "kind": "session",
       "status": "scheduled",
@@ -216,141 +211,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_b1-b2_1130_1137_ltm",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "11:30",
-      "endTime": "11:37",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "LTM",
-      "topicKey": "d74e8edd",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Maintenance AI 8.3 (45), 8.6",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_b1-b2_1140_1220_8.6",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "LP-WUS",
-      "topicKey": "9998e570",
-      "agendaItems": [
-        "8.6"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_b1-b2_1220_1300_8.8",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "other (LTM, MC&LB-CA)",
-      "topicKey": "9998e570",
-      "agendaItems": [
-        "8.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
@@ -401,7 +263,7 @@
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -443,7 +305,7 @@
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "AI 8",
       "topicKey": "9998e570",
@@ -479,15 +341,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e1_1430_1530_ai-8",
+      "sessionId": "ran1-122-bis_mon_e1_1430_1530_r20-coverage",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "AI 8",
+      "topic": "R20 Coverage",
       "topicKey": "59a9b684",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -527,7 +389,7 @@
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:10",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
@@ -564,13 +426,55 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-122-bis_mon_b3_1430_1530_sorour",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Sorour",
+      "topicKey": "333f46b5",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-122-bis_mon_e2_1510_1550_modulation",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "15:10",
       "endTime": "15:50",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Modulation",
       "topicKey": "c8e8d5a5",
@@ -613,7 +517,7 @@
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Evaluations",
       "topicKey": "b1ab14e7",
@@ -650,13 +554,97 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-122-bis_mon_e1_1530_1630_ai-8",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_mon_b3_1530_1630_r20-a-iot",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 A-IoT",
+      "topicKey": "aa743a0a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-122-bis_mon_e2_1550_1630_ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "15:50",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "AI/ML",
       "topicKey": "9296eb35",
@@ -739,7 +727,7 @@
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "18:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Modulation",
       "topicKey": "9d4189e3",
@@ -775,22 +763,26 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_d11-d12_1700_1745_ai-6-7",
+      "sessionId": "ran1-122-bis_mon_d11-d12_1700_1745_r20-ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "17:45",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "AI 6, 7",
-      "topicKey": "8ccd6d80",
+      "topic": "R20 AI/ML",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R20 AI/ML",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-fa437323",
           "contributed": []
@@ -813,15 +805,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e1_1700_1830_r20-a-iot",
+      "sessionId": "ran1-122-bis_mon_e1_1700_1800_r20-isac",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "endTime": "18:00",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "R20 A-IoT",
+      "topic": "R20 ISAC",
       "topicKey": "e336561c",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -855,19 +847,89 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e2_1700_1740_frame-structure",
+      "sessionId": "ran1-122-bis_mon_e2_1700_1750_xiaodong",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "17:40",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "17:50",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "Frame structure",
-      "topicKey": "9d4189e3",
+      "topic": "Xiaodong",
+      "topicKey": "3457128d",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R20 6GR",
+      "group": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_mon_b3_1700_1750_r20-mimo",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "17:50",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 MIMO",
+      "topicKey": "d3af10fe",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Sorour",
+      "group": "R20 MIMO",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_mon_d11-d12_1745_1830_r20-ai-ml",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "17:45",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
+      "roomName": "D11+D12",
+      "topic": "R20 AI/ML",
+      "topicKey": "8ccd6d80",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -897,29 +959,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e2_1740_1810_evaluatoin",
+      "sessionId": "ran1-122-bis_mon_e2_1750_1830_overall",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
-      "startTime": "17:40",
-      "endTime": "18:10",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "startTime": "17:50",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "Evaluatoin",
-      "topicKey": "f7d6c507",
+      "topic": "Overall",
+      "topicKey": "30bc9c41",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Overall",
-      "group": "Evaluatoin",
+      "group": "Frame structure",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-f8876e46",
+          "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
         },
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
           "contributed": []
         }
       ],
@@ -928,36 +993,33 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_d11-d12_1745_1830_r20",
+      "sessionId": "ran1-122-bis_mon_b3_1750_1850_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
-      "startTime": "17:45",
-      "endTime": "18:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
-      "roomName": "D11+D12",
-      "topic": "R20",
-      "topicKey": "2bfc3eac",
+      "startTime": "17:50",
+      "endTime": "18:50",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R20",
+      "sessionLead": "Sorour",
+      "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-fa437323",
           "contributed": []
         },
         {
           "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
@@ -972,13 +1034,47 @@
       "day": "Monday",
       "startTime": "18:00",
       "endTime": "18:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Frame structure",
       "topicKey": "9d4189e3",
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20 6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_mon_e1_1800_1930_r20-a-iot",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1008,82 +1104,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e2_1810_1850_ai-ml",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "18:10",
-      "endTime": "18:50",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "AI/ML",
-      "topicKey": "9296eb35",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Overall",
-      "group": "AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_d11-d12_1830_1930_mimo",
+      "sessionId": "ran1-122-bis_mon_b1-b2_1830_1930_waveform",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "18:30",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
-      "roomName": "D11+D12",
-      "topic": "MIMO",
-      "topicKey": "102b7943",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_b1-b2_1840_1930_waveform",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "18:40",
-      "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Waveform",
       "topicKey": "9d4189e3",
@@ -1094,11 +1121,15 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-f8876e46",
+          "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
         },
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
           "contributed": []
         }
       ],
@@ -1107,60 +1138,67 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_mon_e2_1850_1920_r19-mimio",
+      "sessionId": "ran1-122-bis_mon_e2_1830_1930_ai-ml",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-13",
+      "day": "Monday",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "AI/ML",
+      "topicKey": "9296eb35",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_mon_b3_1850_1930_r20-isac",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-13",
       "day": "Monday",
       "startTime": "18:50",
-      "endTime": "19:20",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "R19 MIMIO",
-      "topicKey": "37ac03d0",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Sorour",
-      "group": "R19 MIMIO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_mon_e2_1920_1930_r19-ai-ml",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-13",
-      "day": "Monday",
-      "startTime": "19:20",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "R19 AI/ML",
-      "topicKey": "0073b8e3",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 ISAC",
+      "topicKey": "e336561c",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Sorour",
-      "group": "R19 AI/ML",
+      "sessionLead": "David",
+      "group": "R20 ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-f8876e46",
+          "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
         },
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
           "contributed": []
         }
       ],
@@ -1169,15 +1207,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_0830_0900_frame-structure",
+      "sessionId": "ran1-122-bis_tue_b1-b2_0830_0910_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "09:10",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Frame structure",
+      "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -1211,121 +1249,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_session-session-1_0830_1030_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-38c57551",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "First round of voting from 08:00 until 10:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_0830_1030_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-c5d56d8b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "First round of voting from 08:00 until 10:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_0830_1030_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-d2dde0ab",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "First round of voting from 08:00 until 10:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_0830_1030_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-f52d847e",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "First round of voting from 08:00 until 10:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-122-bis_tue_d11-d12_0830_1030_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "AI 8",
       "topicKey": "9998e570",
@@ -1334,6 +1264,7 @@
       "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 180 min, block is 120 min.",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -1367,7 +1298,7 @@
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "MCE",
       "topicKey": "db21d7dd",
@@ -1391,13 +1322,56 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_0830_0910_xiaodong",
+      "sessionId": "ran1-122-bis_tue_online-room-3_0830_1030_election-for-a-second-vi",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-f3074486",
+      "roomName": "Online room 3",
+      "topic": "Election for a second Vice Chair position",
+      "topicKey": "887a9f0f",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Election for a second Vice Chair position",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "First round of voting from 08:00 until 10:30",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_e2_0830_0950_xiaodong",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "09:50",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
@@ -1434,47 +1408,61 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_session-session-1_0830_1030_election-for-a-second-vi",
+      "sessionId": "ran1-122-bis_tue_b3_0830_0930_david",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-75d5ba7b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
+      "endTime": "09:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "David",
+      "topicKey": "aa743a0a",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
+      "group": "David",
       "kind": "session",
       "status": "scheduled",
-      "note": "First round of voting from 08:00 until 10:30",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_0900_0950_modulation",
+      "sessionId": "ran1-122-bis_tue_b1-b2_0910_0940_waveform",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
-      "startTime": "09:00",
-      "endTime": "09:50",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "startTime": "09:10",
+      "endTime": "09:40",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Modulation",
-      "topicKey": "c8e8d5a5",
+      "topic": "Waveform",
+      "topicKey": "30bc9c41",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Waveform",
-      "group": "Modulation",
+      "group": "Frame structure",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1510,7 +1498,7 @@
       "day": "Tuesday",
       "startTime": "09:20",
       "endTime": "09:50",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "MCE",
       "topicKey": "db21d7dd",
@@ -1534,19 +1522,62 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_0930_1030_ai-8",
+      "sessionId": "ran1-122-bis_tue_b3_0930_1030_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "09:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "AI 8",
-      "topicKey": "aa743a0a",
+      "topicKey": "929f9bed",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "David",
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_b1-b2_0940_1030_modulation",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "09:40",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
+      "roomName": "B1+B2",
+      "topic": "Modulation",
+      "topicKey": "c8e8d5a5",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Modulation",
+      "group": "Modulation",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1582,7 +1613,7 @@
       "day": "Tuesday",
       "startTime": "09:50",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "AI/ML",
       "topicKey": "db21d7dd",
@@ -1592,6 +1623,49 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_e2_0950_1030_channele-coding",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "09:50",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "Channele coding",
+      "topicKey": "c240e872",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Modulation",
+      "group": "Channele coding",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-fa437323",
           "contributed": []
@@ -1655,13 +1729,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1100_1140_r20-6gr",
+      "sessionId": "ran1-122-bis_tue_b1-b2_1100_1300_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -1692,116 +1766,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1100_1300_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-38c57551",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Candidates consider whether or not to have second round of voting",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1100_1300_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-c5d56d8b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Candidates consider whether or not to have second round of voting",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1100_1300_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-d2dde0ab",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Candidates consider whether or not to have second round of voting",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1100_1300_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-f52d847e",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Candidates consider whether or not to have second round of voting",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -1811,7 +1777,7 @@
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "11:45",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "Mobility/TEI19/NES",
       "topicKey": "53699daf",
@@ -1843,15 +1809,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e1_1100_1200_ai-8",
+      "sessionId": "ran1-122-bis_tue_e1_1100_1200_r20-a-iot",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "AI 8",
+      "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -1885,23 +1851,22 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1100_1200_sorour",
+      "sessionId": "ran1-122-bis_tue_online-room-3_1100_1300_election-for-a-second-vi",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "Sorour",
-      "topicKey": "9998e570",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-f3074486",
+      "roomName": "Online room 3",
+      "topic": "Election for a second Vice Chair position",
+      "topicKey": "887a9f0f",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "AI 8",
+      "group": "Election for a second Vice Chair position",
       "kind": "session",
       "status": "scheduled",
-      "note": "R20",
+      "note": "Candidates consider whether or not to have second round of voting",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -1929,48 +1894,61 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1100_1300_election-for-a-second-vi",
+      "sessionId": "ran1-122-bis_tue_e2_1100_1200_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-75d5ba7b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
+      "endTime": "12:00",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
+      "sessionLead": "Xiaodong",
+      "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
-      "note": "Candidates consider whether or not to have second round of voting",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1140_1300_channel-coding",
+      "sessionId": "ran1-122-bis_tue_b3_1100_1200_sorour",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Channel coding",
-      "topicKey": "9296eb35",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Sorour",
+      "topicKey": "333f46b5",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI/ML",
+      "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
+      "note": "R20",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -2004,7 +1982,7 @@
       "day": "Tuesday",
       "startTime": "11:45",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "AI/ML",
       "topicKey": "53699daf",
@@ -2036,84 +2014,126 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1200_1215_r20-iot-ntn",
+      "sessionId": "ran1-122-bis_tue_e1_1200_1300_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "12:00",
-      "endTime": "12:15",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "R20 IoT-NTN",
-      "topicKey": "62125ca4",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "R20 IoT-NTN",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_e2_1215_1235_ltm",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "12:15",
-      "endTime": "12:35",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "LTM",
-      "topicKey": "c2501dad",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "SBFD",
-      "group": "LTM",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_e2_1235_1300_david",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "12:35",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "David",
-      "topicKey": "aa743a0a",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "SBFD",
-      "group": "David",
+      "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_e2_1200_1300_r20-a-iot",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "David",
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_b3_1200_1300_ai-8",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "AI 8",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -2158,13 +2178,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1430_1530_r20-6gr",
+      "sessionId": "ran1-122-bis_tue_b1-b2_1430_1630_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -2195,116 +2215,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1430_1630_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-38c57551",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Second round of voting from 14:00 until 16:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1430_1630_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-c5d56d8b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Second round of voting from 14:00 until 16:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1430_1630_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-d2dde0ab",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Second round of voting from 14:00 until 16:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1430_1630_election-for-a-second-vi",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-14",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-f52d847e",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Second round of voting from 14:00 until 16:30",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -2314,7 +2226,7 @@
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "R20",
       "topicKey": "2bfc3eac",
@@ -2356,7 +2268,7 @@
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "A-IoT",
       "topicKey": "2bfc3eac",
@@ -2392,21 +2304,22 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1430_1530_sorour",
+      "sessionId": "ran1-122-bis_tue_online-room-3_1430_1630_election-for-a-second-vi",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "Sorour",
-      "topicKey": "333f46b5",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-f3074486",
+      "roomName": "Online room 3",
+      "topic": "Election for a second Vice Chair position",
+      "topicKey": "887a9f0f",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Sorour",
+      "group": "Election for a second Vice Chair position",
       "kind": "session",
       "status": "scheduled",
+      "note": "Second round of voting from 14:00 until 16:30",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -2434,46 +2347,61 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_session-session-1_1430_1630_election-for-a-second-vi",
+      "sessionId": "ran1-122-bis_tue_e2_1430_1630_xiaodong",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-75d5ba7b",
-      "roomName": "Session Session 1",
-      "topic": "Election for a second Vice Chair position",
-      "topicKey": "887a9f0f",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "Xiaodong",
+      "topicKey": "3457128d",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Election for a second Vice Chair position",
+      "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
-      "note": "Second round of voting from 14:00 until 16:30",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1530_1630_overall",
+      "sessionId": "ran1-122-bis_tue_b3_1430_1530_sorour",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Overall",
-      "topicKey": "9296eb35",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Sorour",
+      "topicKey": "333f46b5",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI/ML",
+      "group": "Sorour",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2509,7 +2437,7 @@
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "NR-NTN",
       "topicKey": "2bfc3eac",
@@ -2551,7 +2479,7 @@
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "A-IoT",
       "topicKey": "2bfc3eac",
@@ -2579,14 +2507,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1530_1630_r20-ai-ml",
+      "sessionId": "ran1-122-bis_tue_b3_1530_1630_r20-ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
       "agendaItems": [],
@@ -2663,13 +2591,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1700_1750_r20-6gr",
+      "sessionId": "ran1-122-bis_tue_b1-b2_1700_1930_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "17:50",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -2700,20 +2628,20 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_d11-d12_1700_1840_r20-ai-ml",
+      "sessionId": "ran1-122-bis_tue_d11-d12_1700_1750_ai-6-7",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:40",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "endTime": "17:50",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "R20 AI/ML",
+      "topic": "AI 6, 7",
       "topicKey": "e79a7312",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -2747,15 +2675,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e1_1700_1800_ai-8",
+      "sessionId": "ran1-122-bis_tue_e1_1700_1830_r20-a-iot",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "AI 8",
+      "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -2789,13 +2717,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1700_1750_xiaodong",
+      "sessionId": "ran1-122-bis_tue_e2_1700_1840_xiaodong",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "17:50",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "18:40",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
@@ -2832,20 +2760,20 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_b1-b2_1750_1840_evaluations",
+      "sessionId": "ran1-122-bis_tue_b3_1700_1800_waveform",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
-      "startTime": "17:50",
-      "endTime": "18:40",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Evaluations",
-      "topicKey": "b1ab14e7",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Waveform",
+      "topicKey": "0080bdd2",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Energy",
-      "group": "Evaluations",
+      "sessionLead": "Xiaodong",
+      "group": "Waveform",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2875,14 +2803,56 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1800_1850_r20-coverage",
+      "sessionId": "ran1-122-bis_tue_d11-d12_1750_1930_r20-ai-ml",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "17:50",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
+      "roomName": "D11+D12",
+      "topic": "R20 AI/ML",
+      "topicKey": "8ccd6d80",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_b3_1800_1850_r20-coverage",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "18:00",
       "endTime": "18:50",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "R20 Coverage",
       "topicKey": "59a9b684",
       "agendaItems": [],
@@ -2918,14 +2888,98 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_tue_e2_1850_1930_isac",
+      "sessionId": "ran1-122-bis_tue_e1_1830_1930_ai-8",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_e2_1840_1930_channele-coding",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-14",
+      "day": "Tuesday",
+      "startTime": "18:40",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "Channele coding",
+      "topicKey": "9296eb35",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_tue_b3_1850_1930_isac",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-14",
       "day": "Tuesday",
       "startTime": "18:50",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "ISAC",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
@@ -2961,13 +3015,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_0830_0910_r20-6gr",
+      "sessionId": "ran1-122-bis_wed_b1-b2_0830_1030_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -2998,18 +3052,18 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_d11-d12_0830_0930_r20",
+      "sessionId": "ran1-122-bis_wed_d11-d12_0830_1030_r20",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "R20",
       "topicKey": "2bfc3eac",
@@ -3040,8 +3094,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -3051,7 +3105,7 @@
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:10",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "MCE",
       "topicKey": "db21d7dd",
@@ -3083,13 +3137,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_0830_0915_xiaodong",
+      "sessionId": "ran1-122-bis_wed_e2_0830_0945_xiaodong",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:15",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "09:45",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
@@ -3126,19 +3180,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_0910_1030_channel-coding",
+      "sessionId": "ran1-122-bis_wed_b3_0830_0910_david",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "09:10",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Channel Coding",
-      "topicKey": "9296eb35",
+      "startTime": "08:30",
+      "endTime": "09:10",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "David",
+      "topicKey": "aa743a0a",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI/ML",
+      "group": "David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3174,7 +3228,7 @@
       "day": "Wednesday",
       "startTime": "09:10",
       "endTime": "09:50",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "MIMO",
       "topicKey": "db21d7dd",
@@ -3206,20 +3260,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_0915_0955_ai-ml",
+      "sessionId": "ran1-122-bis_wed_b3_0910_1030_r20-isac",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "09:15",
-      "endTime": "09:55",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "AI/ML",
-      "topicKey": "9296eb35",
+      "startTime": "09:10",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 ISAC",
+      "topicKey": "929f9bed",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Evaluation",
-      "group": "AI/ML",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3249,22 +3302,38 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_d11-d12_0930_1030_ai-8",
+      "sessionId": "ran1-122-bis_wed_e2_0945_1030_evaluation",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "09:30",
+      "startTime": "09:45",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
-      "roomName": "D11+D12",
-      "topic": "AI 8",
-      "topicKey": "9998e570",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "Evaluation",
+      "topicKey": "90f0f88b",
       "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "NR-NTN",
-      "group": "AI 8",
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI/ML",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "Modulation",
+          "minutes": 35,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "sessionLead": "Evaluation",
+      "group": "Evaluation",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 75 min, block is 45 min.",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -3287,8 +3356,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -3298,7 +3367,7 @@
       "day": "Wednesday",
       "startTime": "09:50",
       "endTime": "10:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "LTE Broadcast",
       "topicKey": "db21d7dd",
@@ -3330,56 +3399,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_0955_1030_modulation",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "09:55",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "Modulation",
-      "topicKey": "c8e8d5a5",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Evaluation",
-      "group": "Modulation",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-122-bis_wed_e1_1000_1030_ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "10:00",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "AI/ML",
       "topicKey": "db21d7dd",
@@ -3444,13 +3470,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1100_1150_r20-6gr",
+      "sessionId": "ran1-122-bis_wed_b1-b2_1100_1210_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:50",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "12:10",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -3486,22 +3512,26 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_d11-d12_1100_1140_ntn",
+      "sessionId": "ran1-122-bis_wed_d11-d12_1100_1300_r19ue-features",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "NTN",
-      "topicKey": "f223a395",
+      "topic": "R19UE features",
+      "topicKey": "db21d7dd",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "LP-WUS\uff0830\uff09",
+      "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-f8876e46",
           "contributed": []
@@ -3522,7 +3552,7 @@
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
@@ -3564,13 +3594,12 @@
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "11:40",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Sorour",
       "group": "Xiaodong",
       "kind": "session",
       "status": "scheduled",
@@ -3602,13 +3631,56 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1140_1220_overall",
+      "sessionId": "ran1-122-bis_wed_b3_1100_1140_nr-ntn",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "NR-NTN",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Sorour",
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_e2_1140_1300_overall",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Overall",
       "topicKey": "63a711c7",
@@ -3645,19 +3717,20 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1150_1230_waveform",
+      "sessionId": "ran1-122-bis_wed_b3_1140_1220_nr-ntn",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "11:50",
-      "endTime": "12:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Waveform",
-      "topicKey": "9296eb35",
+      "startTime": "11:40",
+      "endTime": "12:20",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "NR-NTN",
+      "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI/ML",
+      "sessionLead": "Sorour",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -3687,14 +3760,106 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1220_1300_r20-coverage",
+      "sessionId": "ran1-122-bis_wed_e1_1200_1300_ai-8",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 8",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_b1-b2_1210_1300_ai-ml",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "12:10",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-f4d86cda",
+      "roomName": "B1+B2",
+      "topic": "AI/ML",
+      "topicKey": "9296eb35",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Waveform",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "Frame structure",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "group": "AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Minutes don't add up: items total 70 min, block is 50 min.",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "direct",
+      "confidence": 0.85,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_b3_1220_1300_r20-coverage",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "12:20",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "R20 Coverage",
       "topicKey": "59a9b684",
       "agendaItems": [],
@@ -3722,78 +3887,6 @@
         },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1230_1300_frame-structure",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "12:30",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Frame structure",
-      "topicKey": "9296eb35",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-b337fb9f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_d11-d12_1230_1300_lp-wus",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "12:30",
-      "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
-      "roomName": "D11+D12",
-      "topic": "LP-WUS",
-      "topicKey": "db21d7dd",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
           "contributed": []
         }
       ],
@@ -3843,13 +3936,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1430_1510_r20-6gr",
+      "sessionId": "ran1-122-bis_wed_b1-b2_1430_1630_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -3858,15 +3951,30 @@
       "group": "R20 6GR",
       "kind": "session",
       "status": "scheduled",
-      "note": "Modulation\nR20 6GR",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -3876,7 +3984,7 @@
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "R20",
       "topicKey": "2bfc3eac",
@@ -3912,15 +4020,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e1_1430_1530_r20-isac",
+      "sessionId": "ran1-122-bis_wed_e1_1430_1530_r20-coverage",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "R20 ISAC",
+      "topic": "R20 Coverage",
       "topicKey": "59a9b684",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -3954,15 +4062,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1430_1530_r20-ai-ml",
+      "sessionId": "ran1-122-bis_wed_e2_1430_1530_sorour",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "R20 AI/ML",
+      "topic": "Sorour",
       "topicKey": "333f46b5",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -3996,30 +4104,46 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1510_1630_energy",
+      "sessionId": "ran1-122-bis_wed_b3_1430_1550_r20-a-iot",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "15:10",
-      "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Energy",
-      "topicKey": "173d9168",
+      "startTime": "14:30",
+      "endTime": "15:50",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 A-IoT",
+      "topicKey": "929f9bed",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Energy",
-      "group": "Energy",
+      "sessionLead": "David",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4029,7 +4153,7 @@
       "day": "Wednesday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "NR-NTN",
       "topicKey": "2bfc3eac",
@@ -4065,14 +4189,94 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1550_1630_ai-8",
+      "sessionId": "ran1-122-bis_wed_e1_1530_1630_r20-isac",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "R20 ISAC",
+      "topicKey": "e336561c",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_e2_1530_1630_ai-8",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "AI 8",
+      "topicKey": "8ccd6d80",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_b3_1550_1630_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "15:50",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "AI 8",
       "topicKey": "9998e570",
       "agendaItems": [],
@@ -4149,13 +4353,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1700_1840_r20-6gr",
+      "sessionId": "ran1-122-bis_wed_b1-b2_1700_1800_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "18:40",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "18:00",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -4197,7 +4401,7 @@
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
@@ -4239,7 +4443,7 @@
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "18:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
@@ -4275,94 +4479,165 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1700_1740_ai-8",
+      "sessionId": "ran1-122-bis_wed_e2_1700_1830_channel-coding",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "17:40",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "AI 8",
-      "topicKey": "9998e570",
+      "topic": "Channel coding",
+      "topicKey": "cc44518e",
       "agendaItems": [],
       "agendaBreakdown": [],
+      "sessionLead": "Xiaodong",
+      "group": "Channel coding",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_wed_b3_1700_1830_xiaodong",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-15",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Xiaodong",
+      "topicKey": "9998e570",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "AI 8",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "LP-WUS",
+          "minutes": 40,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "Energy",
+          "minutes": 50,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "Xiaodong",
       "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 130 min, block is 90 min.",
       "sources": [
+        {
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e2_1740_1820_lp-wus",
+      "sessionId": "ran1-122-bis_wed_b1-b2_1800_1840_evaluations",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "17:40",
-      "endTime": "18:20",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "LP-WUS",
-      "topicKey": "260c1d30",
+      "startTime": "18:00",
+      "endTime": "18:40",
+      "roomId": "ran1-122-bis-room-f4d86cda",
+      "roomName": "B1+B2",
+      "topic": "Evaluations",
+      "topicKey": "b1ab14e7",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "LP-WUS",
+      "sessionLead": "Evaluations",
+      "group": "Evaluations",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_e2_1820_1910_energy",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "18:20",
-      "endTime": "19:10",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "Energy",
-      "topicKey": "173d9168",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "Energy",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_b1-b2_1840_1930_overall",
+      "sessionId": "ran1-122-bis_wed_b1-b2_1850_1930_overall",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
-      "startTime": "18:40",
+      "startTime": "18:50",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Overall",
       "topicKey": "63a711c7",
@@ -4399,15 +4674,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_b1-b2_0830_1030_channel-coding-energy",
+      "sessionId": "ran1-122-bis_thu_b1-b2_0830_1030_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Channel coding & Energy",
+      "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -4420,20 +4695,20 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.8,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_d11-d12_0830_0930_ai-7",
+      "sessionId": "ran1-122-bis_thu_d11-d12_0830_0930_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "09:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "AI 7",
+      "topic": "AI 8",
       "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -4457,7 +4732,7 @@
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "09:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "MCE",
       "topicKey": "db21d7dd",
@@ -4477,20 +4752,114 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e2_0830_0930_r20-a-iot",
+      "sessionId": "ran1-122-bis_thu_e2_0830_0915_xiaodong",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "08:30",
-      "endTime": "09:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "09:15",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "R20 A-IoT",
-      "topicKey": "929f9bed",
+      "topic": "Xiaodong",
+      "topicKey": "3457128d",
       "agendaItems": [],
       "agendaBreakdown": [],
+      "group": "Xiaodong",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20 6GR",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b3_0830_1030_david",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "David",
+      "topicKey": "aa743a0a",
+      "agendaItems": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R20 A-IoT",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "AI 8",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "sessionLead": "David",
-      "group": "R20 A-IoT",
+      "group": "David",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "direct",
+      "confidence": 0.8,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_e2_0915_1030_ai-ml",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "09:15",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "AI/ML",
+      "topicKey": "30bc9c41",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Frame structure",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_d11-d12_0930_1030_ai-7",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
+      "roomName": "D11+D12",
+      "topic": "AI 7",
+      "topicKey": "fc37e658",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "AI 7",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4510,39 +4879,13 @@
       "day": "Thursday",
       "startTime": "09:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 Coverage",
-      "topicKey": "db21d7dd",
+      "topicKey": "59a9b684",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_e2_0945_1030_ai-ml",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "09:45",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "AI/ML",
-      "topicKey": "9296eb35",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI/ML",
+      "group": "R20 Coverage",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4597,15 +4940,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1100_1220_frame-structure",
+      "sessionId": "ran1-122-bis_thu_b1-b2_1100_1140_r20-6gr-ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "11:00",
-      "endTime": "12:20",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "11:40",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Frame structure",
+      "topic": "R20 6GR AI/ML",
       "topicKey": "b100ab4a",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -4629,7 +4972,7 @@
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "NR-NTN",
       "topicKey": "53699daf",
@@ -4655,7 +4998,7 @@
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
@@ -4681,7 +5024,7 @@
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "11:40",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Xiaodong",
       "topicKey": "3457128d",
@@ -4702,13 +5045,66 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e2_1140_1220_waveform",
+      "sessionId": "ran1-122-bis_thu_b3_1100_1200_sorour",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Sorour",
+      "topicKey": "333f46b5",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "R20",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b1-b2_1140_1300_frame-structure",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-f4d86cda",
+      "roomName": "B1+B2",
+      "topic": "Frame structure",
+      "topicKey": "30bc9c41",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Frame structure",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_e2_1140_1300_waveform",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "11:40",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "Waveform",
       "topicKey": "0080bdd2",
@@ -4735,7 +5131,7 @@
       "day": "Thursday",
       "startTime": "12:00",
       "endTime": "12:15",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "Duplex",
       "topicKey": "53699daf",
@@ -4755,13 +5151,39 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-122-bis_thu_b3_1200_1300_nr-ntn",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "NR-NTN",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-122-bis_thu_d11-d12_1215_1300_mimo",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "12:15",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "MIMO",
       "topicKey": "53699daf",
@@ -4822,15 +5244,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1430_1500_ltm-mc-lb-ca",
+      "sessionId": "ran1-122-bis_thu_b1-b2_1430_1630_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "LTM, MC&LB-CA",
+      "topic": "AI 8",
       "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -4839,12 +5261,24 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-4402ccb4",
+          "sourceId": "ran1-122-bis-b337fb9f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-fa437323",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-f8876e46",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4854,7 +5288,7 @@
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "R20",
       "topicKey": "2bfc3eac",
@@ -4874,75 +5308,36 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e1_1430_1435_8.7.1",
+      "sessionId": "ran1-122-bis_thu_e1_1430_1530_8.7.1",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "14:35",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "endTime": "15:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "8.7.1",
+      "topic": "AI 8",
       "topicKey": "9998e570",
       "agendaItems": [
-        "8.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_e2_1430_1510_r20-isac",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "R20 ISAC",
-      "topicKey": "aa743a0a",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_e1_1435_1440_8.7.2",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "14:35",
-      "endTime": "14:40",
-      "roomId": "ran1-122-bis-room-84896d3e",
-      "roomName": "E1",
-      "topic": "8.7.2",
-      "topicKey": "9998e570",
-      "agendaItems": [
+        "8.7.1",
         "8.7.2"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "8.7.1",
+          "label": "8.7.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.7.2",
+          "label": "8.7.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
@@ -4952,103 +5347,50 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8.7",
+      "derivation": "direct",
+      "confidence": 0.9,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e1_1440_1540_r20-isac",
+      "sessionId": "ran1-122-bis_thu_e2_1430_1630_sorour",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
-      "startTime": "14:40",
-      "endTime": "15:40",
-      "roomId": "ran1-122-bis-room-84896d3e",
-      "roomName": "E1",
-      "topic": "R20 ISAC",
-      "topicKey": "9998e570",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 8",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1500_1530_sbfd",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "15:00",
-      "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "SBFD",
-      "topicKey": "3fa3755e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "NTN LS",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_e2_1510_1630_r20-a-iot",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "15:10",
+      "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
-      "topic": "R20 A-IoT",
+      "topic": "Sorour",
+      "topicKey": "333f46b5",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "Sorour",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "direct",
+      "confidence": 0.8,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b3_1430_1550_david",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "15:50",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "David",
       "topicKey": "aa743a0a",
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "David",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1530_1620_lp-wus",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-16",
-      "day": "Thursday",
-      "startTime": "15:30",
-      "endTime": "16:20",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "LP-WUS",
-      "topicKey": "3fa3755e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "NTN LS",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5068,13 +5410,65 @@
       "day": "Thursday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
       "topic": "NR-NTN",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_e1_1530_1630_r20-isac",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-a05131b8",
+      "roomName": "E1",
+      "topic": "R20 ISAC",
+      "topicKey": "e336561c",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b3_1550_1630_r20-a-iot",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "R20 A-IoT",
+      "topicKey": "e336561c",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20 ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5129,13 +5523,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1700_1800_r20-6gr",
+      "sessionId": "ran1-122-bis_thu_b1-b2_1700_1830_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "R20 6GR",
       "topicKey": "9d4189e3",
@@ -5155,15 +5549,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_d11-d12_1700_1800_ai-8",
+      "sessionId": "ran1-122-bis_thu_d11-d12_1700_1830_r20-ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "endTime": "18:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "AI 8",
+      "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5187,7 +5581,7 @@
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
@@ -5207,14 +5601,41 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e2_1700_1800_overall",
+      "sessionId": "ran1-122-bis_thu_e2_1700_1930_evaluation",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-e349f530",
+      "roomName": "E2",
+      "topic": "Evaluation",
+      "topicKey": "90f0f88b",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Xiaodong",
+      "group": "Evaluation",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b3_1700_1800_overall",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "18:00",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "Overall",
       "topicKey": "63a711c7",
       "agendaItems": [],
@@ -5234,13 +5655,40 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_b1-b2_1800_1930_waveform",
+      "sessionId": "ran1-122-bis_thu_b3_1800_1840_frame-structure",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "18:00",
+      "endTime": "18:40",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "Frame structure",
+      "topicKey": "30bc9c41",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "sessionLead": "Xiaodong",
+      "group": "Frame structure",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-122-bis_thu_b1-b2_1830_1930_waveform",
+      "meetingId": "ran1-122-bis",
+      "date": "2025-10-16",
+      "day": "Thursday",
+      "startTime": "18:30",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "Waveform",
       "topicKey": "0080bdd2",
@@ -5261,20 +5709,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e2_1800_1840_frame-structure",
+      "sessionId": "ran1-122-bis_thu_d11-d12_1830_1930_ai-8",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
-      "startTime": "18:00",
-      "endTime": "18:40",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
-      "topic": "Frame structure",
-      "topicKey": "30bc9c41",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
+      "roomName": "D11+D12",
+      "topic": "AI 8",
+      "topicKey": "9998e570",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "Frame structure",
+      "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5288,14 +5735,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_thu_e2_1840_1930_energy",
+      "sessionId": "ran1-122-bis_thu_b3_1840_1930_energy",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-16",
       "day": "Thursday",
       "startTime": "18:40",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-dc188591",
-      "roomName": "E2",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
       "topic": "Energy",
       "topicKey": "173d9168",
       "agendaItems": [],
@@ -5315,15 +5762,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_0830_0910_energy",
+      "sessionId": "ran1-122-bis_fri_b1-b2_0830_1030_r20-6gr",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
       "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "10:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "energy",
+      "topic": "R20 6GR",
       "topicKey": "9d4189e3",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5336,20 +5783,20 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "derivation": "direct",
+      "confidence": 0.8,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_d11-d12_0830_0930_ai-6-7",
+      "sessionId": "ran1-122-bis_fri_d11-d12_0830_0930_r20-ai-ml",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "09:30",
-      "roomId": "ran1-122-bis-room-ae8ae27f",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
       "roomName": "D11+D12",
-      "topic": "AI 6&7",
+      "topic": "R20 AI/ML",
       "topicKey": "8ccd6d80",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5373,7 +5820,7 @@
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-84896d3e",
+      "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
       "topic": "R20 A-IoT",
       "topicKey": "929f9bed",
@@ -5393,20 +5840,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_0910_1030_evaluation",
+      "sessionId": "ran1-122-bis_fri_d11-d12_0930_1030_ai-6-7",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
-      "startTime": "09:10",
+      "startTime": "09:30",
       "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "Evaluation",
-      "topicKey": "90f0f88b",
+      "roomId": "ran1-122-bis-room-34f3a2f8",
+      "roomName": "D11+D12",
+      "topic": "AI 6&7",
+      "topicKey": "7c18dfca",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "sessionLead": "Evaluation",
-      "group": "Evaluation",
+      "group": "AI 6&7",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5467,7 +5913,7 @@
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
       "topic": "NTN LS",
       "topicKey": "3fa3755e",
@@ -5529,20 +5975,35 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_1430_1500_session-reports",
+      "sessionId": "ran1-122-bis_fri_b1-b2_1430_1630_any-other-open-issues",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
       "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Session reports",
+      "topic": "Any other open issues",
       "topicKey": "40db1e26",
       "agendaItems": [],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Session reports",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "etc",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "Any other open issues",
-      "kind": "plenary",
+      "kind": "session",
       "status": "scheduled",
       "sources": [
         {
@@ -5566,8 +6027,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -5577,7 +6038,7 @@
       "day": "Friday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "To be assigned by Sorour",
       "topicKey": "5d7db03e",
@@ -5613,19 +6074,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_1500_1530_etc",
+      "sessionId": "ran1-122-bis_fri_b3_1430_1630_to-be-assigned-by-david",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
-      "startTime": "15:00",
-      "endTime": "15:30",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "etc",
-      "topicKey": "40db1e26",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues",
+      "group": "To be assigned by David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5696,20 +6157,35 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_1700_1737_session-reports",
+      "sessionId": "ran1-122-bis_fri_b1-b2_1700_1930_any-other-open-issues",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
       "startTime": "17:00",
-      "endTime": "17:37",
-      "roomId": "ran1-122-bis-room-d245f7a2",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-f4d86cda",
       "roomName": "B1+B2",
-      "topic": "Session reports",
+      "topic": "Any other open issues",
       "topicKey": "40db1e26",
       "agendaItems": [],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "Session reports",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "etc",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "Any other open issues",
-      "kind": "plenary",
+      "kind": "session",
       "status": "scheduled",
       "sources": [
         {
@@ -5733,8 +6209,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -5744,7 +6220,7 @@
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-122-bis-room-dc188591",
+      "roomId": "ran1-122-bis-room-e349f530",
       "roomName": "E2",
       "topic": "To be assigned by Sorour",
       "topicKey": "5d7db03e",
@@ -5780,19 +6256,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_fri_b1-b2_1737_1814_etc",
+      "sessionId": "ran1-122-bis_fri_b3_1700_1930_to-be-assigned-by-david",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-17",
       "day": "Friday",
-      "startTime": "17:37",
-      "endTime": "18:14",
-      "roomId": "ran1-122-bis-room-d245f7a2",
-      "roomName": "B1+B2",
-      "topic": "etc",
-      "topicKey": "40db1e26",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "roomId": "ran1-122-bis-room-86d21299",
+      "roomName": "B3",
+      "topic": "To be assigned by David",
+      "topicKey": "7e6eaa25",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Any other open issues",
+      "group": "To be assigned by David",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5825,7 +6301,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-09T17:40:54Z",
-    "lastAttemptAt": "2026-10-09T17:40:54Z"
+    "lastSuccessfulAt": "2026-10-09T21:00:50Z",
+    "lastAttemptAt": "2026-10-09T21:00:50Z"
   }
 }

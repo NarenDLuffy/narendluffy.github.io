@@ -1,17 +1,17 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T17:31:35Z",
+  "generatedAt": "2026-10-09T20:52:13Z",
   "meetingId": "ran1-120",
   "sessions": [
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_0900_1000_ran1-120-commences-at-09",
+      "sessionId": "ran1-120_mon_ran1-main_0900_1000_ran1-120-commences-at-09",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "09:00",
       "endTime": "10:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "RAN1#120 commences at 09:00 on Monday",
       "topicKey": "a5a27931",
       "agendaItems": [],
@@ -88,150 +88,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1100_1200_r19-mimo",
+      "sessionId": "ran1-120_mon_ran1-main_1100_1200_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 MIMO",
-      "topicKey": "2e5b8a53",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Agenda item 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1100_1200_r19-mimo",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 MIMO",
-      "topicKey": "2e5b8a53",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Agenda item 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1200_1205_9.2.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "12:00",
-      "endTime": "12:05",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.1",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "Agenda item",
       "topicKey": "2e5b8a53",
       "agendaItems": [
-        "9.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "Agenda item 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1205_1210_9.2.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "12:05",
-      "endTime": "12:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.3",
-      "topicKey": "2e5b8a53",
-      "agendaItems": [
+        "8.1",
+        "9.2.1",
         "9.2.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 MIMO",
+          "minutes": 60,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.2.1",
+          "label": "9.2.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.2.3",
+          "label": "9.2.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "Agenda item 8.1",
       "kind": "session",
       "status": "scheduled",
@@ -257,53 +151,9 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1210_1215_r19-mimo",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "12:10",
-      "endTime": "12:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 MIMO",
-      "topicKey": "2e5b8a53",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Agenda item 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
     },
     {
       "sessionId": "ran1-120_mon_x_1300_1430_lunch-break",
@@ -347,20 +197,36 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1430_1435_9.2.2",
+      "sessionId": "ran1-120_mon_ran1-main_1430_1515_9.2.2",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "14:30",
-      "endTime": "14:35",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.2",
+      "endTime": "15:15",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 MIMO",
       "topicKey": "828b7d7e",
       "agendaItems": [
-        "9.2.2"
+        "9.2.2",
+        "9.2.4"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.2.2",
+          "label": "9.2.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.2.4",
+          "label": "9.2.4",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 MIMO",
       "kind": "session",
       "status": "scheduled",
@@ -386,20 +252,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_athenaeum-conf-ground-le_1430_1520_r19-mce",
+      "sessionId": "ran1-120_mon_online-room-1_1430_1510_r19-mce",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "14:30",
-      "endTime": "15:20",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "endTime": "15:10",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 MCE",
       "topicKey": "1737c410",
       "agendaItems": [],
@@ -434,14 +299,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-i-level-2_1430_1630_r19-a-iot",
+      "sessionId": "ran1-120_mon_online-room-2_1430_1630_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -476,13 +341,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_offline1-vip-lamda_1430_1500_r19-duplex",
+      "sessionId": "ran1-120_mon_offline1-vip-lamda_1430_1600_r19-duplex",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "16:00",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 Duplex",
       "topicKey": "2cd99f17",
@@ -524,7 +389,7 @@
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "14:50",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.1",
       "topicKey": "5f67ba30",
@@ -563,101 +428,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1435_1440_9.2.4",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "14:35",
-      "endTime": "14:40",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.4",
-      "topicKey": "828b7d7e",
-      "agendaItems": [
-        "9.2.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1440_1515_r19-mobility",
-      "meetingId": "ran1-120",
-      "date": "2025-02-17",
-      "day": "Monday",
-      "startTime": "14:40",
-      "endTime": "15:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 Mobility",
-      "topicKey": "828b7d7e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
       "sessionId": "ran1-120_mon_offline2-delta-sigma_1450_1530_9.8.2",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "14:50",
       "endTime": "15:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.2",
       "topicKey": "5f67ba30",
@@ -696,19 +473,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1515_1545_r19-xr",
+      "sessionId": "ran1-120_mon_online-room-1_1510_1540_r18-ue-features",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
-      "startTime": "15:15",
-      "endTime": "15:45",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 XR",
-      "topicKey": "828b7d7e",
+      "startTime": "15:10",
+      "endTime": "15:40",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "R18 UE Features",
+      "topicKey": "be2afbe8",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 MIMO",
+      "group": "R18 UE Features",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -738,19 +515,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_athenaeum-conf-ground-le_1520_1550_r18-ue-features",
+      "sessionId": "ran1-120_mon_ran1-main_1515_1545_r19-xr",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
-      "startTime": "15:20",
-      "endTime": "15:50",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "R18 UE Features",
-      "topicKey": "1737c410",
+      "startTime": "15:15",
+      "endTime": "15:45",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 XR",
+      "topicKey": "1db1a0f3",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI 8.1",
+      "group": "R19 XR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -786,7 +563,7 @@
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.1",
       "topicKey": "0073b8e3",
@@ -866,18 +643,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-ii-level-2_1700_1930_r19",
+      "sessionId": "ran1-120_mon_ran1-main_1700_1930_9.6.1",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "R19",
       "topicKey": "22a4047a",
-      "agendaItems": [],
-      "agendaBreakdown": [],
+      "agendaItems": [
+        "9.6.1",
+        "9.6.2",
+        "9.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "9.6.1",
+          "label": "9.6.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.2",
+          "label": "9.6.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.3",
+          "label": "9.6.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19",
       "kind": "session",
       "status": "scheduled",
@@ -903,19 +706,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_athenaeum-conf-ground-le_1700_1930_r19-ai-ml",
+      "sessionId": "ran1-120_mon_online-room-1_1700_1930_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -950,14 +753,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_ballroom-i-level-2_1700_1850_r19-ntn",
+      "sessionId": "ran1-120_mon_online-room-2_1700_1740_r19-ntn",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:50",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "endTime": "17:40",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 NTN",
       "topicKey": "1737c410",
       "agendaItems": [],
@@ -992,13 +795,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_offline1-vip-lamda_1700_1830_r19-nes",
+      "sessionId": "ran1-120_mon_offline1-vip-lamda_1700_1800_r19-nes",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "18:00",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 NES",
       "topicKey": "6ffc6669",
@@ -1034,13 +837,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_mon_offline2-delta-sigma_1700_1800_isac",
+      "sessionId": "ran1-120_mon_offline2-delta-sigma_1700_1830_isac",
       "meetingId": "ran1-120",
       "date": "2025-02-17",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "endTime": "18:30",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "ISAC",
       "topicKey": "adf968bf",
@@ -1076,20 +879,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_0830_0910_9.3.1",
+      "sessionId": "ran1-120_tue_ran1-main_0830_1030_9.3.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.1",
+      "endTime": "10:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 Duplex",
       "topicKey": "6ffc6669",
       "agendaItems": [
-        "9.3.1"
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.3.1",
+          "label": "9.3.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.2",
+          "label": "9.3.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.3",
+          "label": "9.3.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 Duplex",
       "kind": "session",
       "status": "scheduled",
@@ -1115,21 +942,20 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_0830_1000_7-24ghz",
+      "sessionId": "ran1-120_tue_online-room-1_0830_0900_r19",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "08:30",
-      "endTime": "10:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "7\u201324GHz",
+      "endTime": "09:00",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "R19",
       "topicKey": "22a4047a",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -1163,14 +989,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-i-level-2_0830_1030_r19-a-iot",
+      "sessionId": "ran1-120_tue_online-room-2_0830_1030_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -1211,7 +1037,7 @@
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "9.1.4.1",
       "topicKey": "0073b8e3",
@@ -1256,7 +1082,7 @@
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "NTN",
       "topicKey": "cdd20435",
@@ -1293,21 +1119,21 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_0910_0950_9.3.2",
+      "sessionId": "ran1-120_tue_online-room-1_0900_1030_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
-      "startTime": "09:10",
-      "endTime": "09:50",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.2",
-      "topicKey": "6ffc6669",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "AI",
+      "topicKey": "b7c1055c",
       "agendaItems": [
-        "9.3.2"
+        "8.1"
       ],
       "agendaBreakdown": [],
-      "group": "R19 Duplex",
+      "group": "7\u201324GHz",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -1334,7 +1160,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "9.3",
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -1344,7 +1170,7 @@
       "day": "Tuesday",
       "startTime": "09:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "9.12.1",
       "topicKey": "2532d840",
@@ -1380,96 +1206,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9.12",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_0950_1030_9.3.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.3",
-      "topicKey": "6ffc6669",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 Duplex",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1000_1030_8.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "AI",
-      "topicKey": "22a4047a",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -1514,20 +1250,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1100_1140_9.5.1",
+      "sessionId": "ran1-120_tue_ran1-main_1100_1300_9.5.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.1",
+      "endTime": "13:00",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 NES",
       "topicKey": "c39030e6",
       "agendaItems": [
-        "9.5.1"
+        "9.5.1",
+        "9.5.2",
+        "9.5.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.5.1",
+          "label": "9.5.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.2",
+          "label": "9.5.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.3",
+          "label": "9.5.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 NES",
       "kind": "session",
       "status": "scheduled",
@@ -1553,20 +1313,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1100_1200_r19-ai-ml",
+      "sessionId": "ran1-120_tue_online-room-1_1100_1200_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "fedab08a",
       "agendaItems": [],
@@ -1601,14 +1360,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-i-level-2_1100_1130_8.1",
+      "sessionId": "ran1-120_tue_online-room-2_1100_1230_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "endTime": "12:30",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "AI",
       "topicKey": "c90dc120",
       "agendaItems": [
@@ -1646,13 +1405,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_offline1-vip-lamda_1100_1130_r19-mobility",
+      "sessionId": "ran1-120_tue_offline1-vip-lamda_1100_1230_r19-mobility",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "11:00",
-      "endTime": "11:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "12:30",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 Mobility",
       "topicKey": "828b7d7e",
@@ -1694,7 +1453,7 @@
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "A-IoT",
       "topicKey": "adf968bf",
@@ -1727,96 +1486,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1140_1220_9.5.2",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.2",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1220_1300_9.5.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.3",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
       "detailAvailable": true
     },
     {
@@ -1861,23 +1530,24 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1430_1450_9.2.1",
+      "sessionId": "ran1-120_tue_ran1-main_1430_1600_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "14:50",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.1",
+      "endTime": "16:00",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "AI",
       "topicKey": "828b7d7e",
       "agendaItems": [
-        "9.2.1"
+        "8.1"
       ],
       "agendaBreakdown": [],
       "group": "R19 MIMO",
       "kind": "session",
       "status": "scheduled",
+      "note": "Another schedule file lists 9.2.1 here \u00b7 Another schedule file lists 9.2.1, 9.2.4 here",
       "sources": [
         {
           "sourceId": "ran1-120-b5f52174",
@@ -1902,18 +1572,18 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "9.2",
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1430_1450_xr",
+      "sessionId": "ran1-120_tue_online-room-1_1430_1450_xr",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "14:50",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "XR",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -1940,14 +1610,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-i-level-2_1430_1530_r19-a-iot",
+      "sessionId": "ran1-120_tue_online-room-2_1430_1530_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -1983,13 +1653,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_offline1-vip-lamda_1430_1500_r19-xr",
+      "sessionId": "ran1-120_tue_offline1-vip-lamda_1430_1600_r19-xr",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "16:00",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 XR",
       "topicKey": "2cd99f17",
@@ -2031,7 +1701,7 @@
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "14:50",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.1",
       "topicKey": "5f67ba30",
@@ -2070,47 +1740,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1450_1510_9.2.4",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "14:50",
-      "endTime": "15:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.4",
-      "topicKey": "828b7d7e",
-      "agendaItems": [
-        "9.2.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1450_1520_nes",
+      "sessionId": "ran1-120_tue_online-room-1_1450_1520_nes",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:50",
       "endTime": "15:20",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "NES",
       "topicKey": "6d325414",
       "agendaItems": [],
@@ -2143,7 +1780,7 @@
       "day": "Tuesday",
       "startTime": "14:50",
       "endTime": "15:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.2",
       "topicKey": "5f67ba30",
@@ -2182,59 +1819,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1510_1540_8.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "15:10",
-      "endTime": "15:40",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "AI",
-      "topicKey": "828b7d7e",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1520_1550_r19-mce",
+      "sessionId": "ran1-120_tue_online-room-1_1520_1550_r19-mce",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "15:20",
       "endTime": "15:50",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 MCE",
       "topicKey": "6d325414",
       "agendaItems": [],
@@ -2267,7 +1859,7 @@
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.2",
       "topicKey": "0073b8e3",
@@ -2306,19 +1898,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1540_1600_any-open-issues-on",
+      "sessionId": "ran1-120_tue_ran1-main_1600_1630_any-open-issues-on",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
-      "startTime": "15:40",
-      "endTime": "16:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "Any open issues on",
-      "topicKey": "828b7d7e",
+      "topicKey": "1737c410",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 MIMO",
+      "group": "AI 8.1",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2389,23 +1981,63 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1700_1730_ai-6-7",
+      "sessionId": "ran1-120_tue_ran1-main_1700_1730_9.6.1",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "AI 6, 7",
-      "topicKey": "22a4047a",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19",
+      "topicKey": "e79a7312",
+      "agendaItems": [
+        "9.6.1",
+        "9.6.2",
+        "9.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "R19 LP-WUS",
+          "minutes": 120,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.1",
+          "label": "9.6.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.2",
+          "label": "9.6.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.3",
+          "label": "9.6.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "group": "AI 6, 7",
       "kind": "session",
       "status": "scheduled",
-      "note": "R19",
       "sources": [
+        {
+          "sourceId": "ran1-120-7a4e9a37",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-534bb9df",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-120-b5f52174",
           "contributed": []
@@ -2417,29 +2049,21 @@
         {
           "sourceId": "ran1-120-b8b58fa9",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_1700_1930_r19-ai-ml",
+      "sessionId": "ran1-120_tue_online-room-1_1700_1930_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -2474,14 +2098,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-i-level-2_1700_1750_r19-ue-features",
+      "sessionId": "ran1-120_tue_online-room-2_1700_1750_r19-ue-features",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "17:50",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 UE Features",
       "topicKey": "e84d8435",
       "agendaItems": [],
@@ -2501,14 +2125,6 @@
         {
           "sourceId": "ran1-120-b8b58fa9",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -2516,13 +2132,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_offline1-vip-lamda_1700_1800_r19-nes",
+      "sessionId": "ran1-120_tue_offline1-vip-lamda_1700_1830_r19-nes",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "18:30",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 NES",
       "topicKey": "828b7d7e",
@@ -2558,13 +2174,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_offline2-delta-sigma_1700_1800_isac",
+      "sessionId": "ran1-120_tue_offline2-delta-sigma_1700_1830_isac",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "endTime": "18:30",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "ISAC",
       "topicKey": "adf968bf",
@@ -2600,14 +2216,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1730_1900_lp-wus",
+      "sessionId": "ran1-120_tue_ran1-main_1730_1930_lp-wus",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:30",
-      "endTime": "19:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "endTime": "19:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "LP-WUS",
       "topicKey": "260c1d30",
       "agendaItems": [],
@@ -2616,7 +2232,7 @@
       "group": "LP-WUS",
       "kind": "session",
       "status": "scheduled",
-      "note": "AI 6, 7 \u00b7 Detailed timing not available",
+      "note": "AI 6, 7",
       "sources": [
         {
           "sourceId": "ran1-120-b5f52174",
@@ -2639,19 +2255,19 @@
           "contributed": []
         }
       ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-i-level-2_1750_1840_mimo",
+      "sessionId": "ran1-120_tue_online-room-2_1750_1840_mimo",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "17:50",
       "endTime": "18:40",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "MIMO",
       "topicKey": "e84d8435",
       "agendaItems": [],
@@ -2678,163 +2294,36 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1900_1905_9.6.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "19:00",
-      "endTime": "19:05",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.1",
-      "topicKey": "e79a7312",
-      "agendaItems": [
-        "9.6.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1905_1910_9.6.2",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "19:05",
-      "endTime": "19:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.2",
-      "topicKey": "e79a7312",
-      "agendaItems": [
-        "9.6.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1910_1915_9.6.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "19:10",
-      "endTime": "19:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.3",
-      "topicKey": "e79a7312",
-      "agendaItems": [
-        "9.6.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_ballroom-ii-level-2_1915_1930_lp-wus",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "19:15",
-      "endTime": "19:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "LP-WUS",
-      "topicKey": "260c1d30",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "sessionLead": "LP-WUS",
-      "group": "LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "AI 6, 7 \u00b7 Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_0830_0900_9.2.2",
+      "sessionId": "ran1-120_wed_ran1-main_0830_1000_9.2.2",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.2",
+      "endTime": "10:00",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 MIMO",
       "topicKey": "828b7d7e",
       "agendaItems": [
-        "9.2.2"
+        "9.2.2",
+        "9.2.1"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.2.2",
+          "label": "9.2.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.2.1",
+          "label": "9.2.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 MIMO",
       "kind": "session",
       "status": "scheduled",
@@ -2846,22 +2335,33 @@
         {
           "sourceId": "ran1-120-534bb9df",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b5f52174",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-0e6d44a1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b8b58fa9",
+          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0830_0900_nes",
+      "sessionId": "ran1-120_wed_online-room-1_0830_0900_nes",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "NES",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -2888,14 +2388,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_0830_1030_r19-a-iot",
+      "sessionId": "ran1-120_wed_online-room-2_0830_1030_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -2936,7 +2436,7 @@
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 LP-WUS",
       "topicKey": "2cd99f17",
@@ -2978,7 +2478,7 @@
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.1",
       "topicKey": "0073b8e3",
@@ -3017,47 +2517,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_0900_0930_9.2.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "09:00",
-      "endTime": "09:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.1",
-      "topicKey": "828b7d7e",
-      "agendaItems": [
-        "9.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0900_0920_xr",
+      "sessionId": "ran1-120_wed_online-room-1_0900_0920_xr",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "09:00",
       "endTime": "09:20",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "XR",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -3084,14 +2551,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_0920_1000_duplex",
+      "sessionId": "ran1-120_wed_online-room-1_0920_1000_duplex",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "09:20",
       "endTime": "10:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "Duplex",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -3118,43 +2585,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_0930_1000_r19-xr",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "09:30",
-      "endTime": "10:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 XR",
-      "topicKey": "828b7d7e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120_wed_offline2-delta-sigma_0930_0950_9.8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "09:30",
       "endTime": "09:50",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.1",
       "topicKey": "5f67ba30",
@@ -3199,7 +2636,7 @@
       "day": "Wednesday",
       "startTime": "09:50",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.8.2",
       "topicKey": "5f67ba30",
@@ -3238,14 +2675,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1000_1030_mimo",
+      "sessionId": "ran1-120_wed_ran1-main_1000_1030_r19-xr",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "10:00",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 XR",
+      "topicKey": "1db1a0f3",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R19 XR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-7a4e9a37",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-534bb9df",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120_wed_online-room-1_1000_1030_mimo",
+      "meetingId": "ran1-120",
+      "date": "2025-02-19",
+      "day": "Wednesday",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "MIMO",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -3313,20 +2780,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1100_1140_9.6.1",
+      "sessionId": "ran1-120_wed_ran1-main_1100_1300_9.6.1",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.1",
+      "endTime": "13:00",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 LP-WUS",
       "topicKey": "2cd99f17",
       "agendaItems": [
-        "9.6.1"
+        "9.6.1",
+        "9.6.2",
+        "9.6.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.6.1",
+          "label": "9.6.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.2",
+          "label": "9.6.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.3",
+          "label": "9.6.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 LP-WUS",
       "kind": "session",
       "status": "scheduled",
@@ -3338,22 +2829,33 @@
         {
           "sourceId": "ran1-120-534bb9df",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b5f52174",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-0e6d44a1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b8b58fa9",
+          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1100_1145_r19-tei",
+      "sessionId": "ran1-120_wed_online-room-1_1100_1215_r19-tei",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:45",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "endTime": "12:15",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 TEI",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -3388,14 +2890,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_1100_1130_8.1",
+      "sessionId": "ran1-120_wed_online-room-2_1100_1230_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "11:00",
-      "endTime": "11:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "endTime": "12:30",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "AI",
       "topicKey": "2594b496",
       "agendaItems": [
@@ -3431,7 +2933,7 @@
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 Duplex",
       "topicKey": "6ffc6669",
@@ -3473,7 +2975,7 @@
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "NTN",
       "topicKey": "cdd20435",
@@ -3510,14 +3012,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_1130_1300_r19-isac",
+      "sessionId": "ran1-120_wed_online-room-2_1230_1300_r19-isac",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
-      "startTime": "11:30",
+      "startTime": "12:30",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 ISAC",
       "topicKey": "2594b496",
       "agendaItems": [],
@@ -3539,72 +3041,6 @@
       "derivation": "split-from-parent",
       "confidence": 0.75,
       "detailAvailable": false
-    },
-    {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1140_1220_9.6.2",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.2",
-      "topicKey": "2cd99f17",
-      "agendaItems": [
-        "9.6.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1220_1300_9.6.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.3",
-      "topicKey": "2cd99f17",
-      "agendaItems": [
-        "9.6.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
     },
     {
       "sessionId": "ran1-120_wed_x_1300_1430_lunch-break",
@@ -3648,20 +3084,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1430_1510_9.3.1",
+      "sessionId": "ran1-120_wed_ran1-main_1430_1630_9.3.1",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.1",
+      "endTime": "16:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 Duplex",
       "topicKey": "6ffc6669",
       "agendaItems": [
-        "9.3.1"
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.3.1",
+          "label": "9.3.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.2",
+          "label": "9.3.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.3",
+          "label": "9.3.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 Duplex",
       "kind": "session",
       "status": "scheduled",
@@ -3673,23 +3133,34 @@
         {
           "sourceId": "ran1-120-534bb9df",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b5f52174",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-0e6d44a1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b8b58fa9",
+          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1430_1600_7-24ghz",
+      "sessionId": "ran1-120_wed_online-room-1_1430_1500_r19",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "16:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "7\u201324GHz",
+      "endTime": "15:00",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "R19",
       "topicKey": "22a4047a",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -3723,14 +3194,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_1430_1530_r19-a-iot",
+      "sessionId": "ran1-120_wed_online-room-2_1430_1530_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -3764,7 +3235,7 @@
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 NES",
       "topicKey": "c39030e6",
@@ -3806,7 +3277,7 @@
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.4.1",
       "topicKey": "0073b8e3",
@@ -3845,24 +3316,36 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1510_1550_9.3.2",
+      "sessionId": "ran1-120_wed_online-room-1_1500_1630_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
-      "startTime": "15:10",
-      "endTime": "15:50",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.2",
-      "topicKey": "6ffc6669",
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "AI",
+      "topicKey": "b7c1055c",
       "agendaItems": [
-        "9.3.2"
+        "8.1"
       ],
       "agendaBreakdown": [],
-      "group": "R19 Duplex",
+      "group": "7\u201324GHz",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-120-b5f52174",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-0e6d44a1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b8b58fa9",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-120-7a4e9a37",
           "contributed": []
@@ -3874,7 +3357,7 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "9.3",
+      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -3884,7 +3367,7 @@
       "day": "Wednesday",
       "startTime": "15:30",
       "endTime": "16:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.3",
       "topicKey": "0073b8e3",
@@ -3923,91 +3406,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1550_1630_9.3.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "15:50",
-      "endTime": "16:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.3",
-      "topicKey": "6ffc6669",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 Duplex",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1600_1630_8.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "16:00",
-      "endTime": "16:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "AI",
-      "topicKey": "22a4047a",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120_wed_offline2-delta-sigma_1600_1630_9.1.4.2",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "16:00",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.1.4.2",
       "topicKey": "0073b8e3",
@@ -4087,20 +3492,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1700_1750_9.5.3",
+      "sessionId": "ran1-120_wed_ran1-main_1700_1930_9.5.3",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "17:50",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.3",
+      "endTime": "19:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 NES",
       "topicKey": "c39030e6",
       "agendaItems": [
-        "9.5.3"
+        "9.5.3",
+        "9.5.2",
+        "9.5.1"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.5.3",
+          "label": "9.5.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.2",
+          "label": "9.5.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.1",
+          "label": "9.5.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 NES",
       "kind": "session",
       "status": "scheduled",
@@ -4112,22 +3541,33 @@
         {
           "sourceId": "ran1-120-534bb9df",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b5f52174",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-0e6d44a1",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-b8b58fa9",
+          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1700_1930_r19-ai-ml",
+      "sessionId": "ran1-120_wed_online-room-1_1700_1930_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -4162,14 +3602,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_1700_1750_r19-ue-features",
+      "sessionId": "ran1-120_wed_online-room-2_1700_1750_r19-ue-features",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "17:50",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 UE Features",
       "topicKey": "e84d8435",
       "agendaItems": [],
@@ -4189,14 +3629,6 @@
         {
           "sourceId": "ran1-120-b8b58fa9",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
@@ -4204,13 +3636,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_offline1-vip-lamda_1700_1800_r19-mimo",
+      "sessionId": "ran1-120_wed_offline1-vip-lamda_1700_1830_r19-mimo",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "18:30",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 MIMO",
       "topicKey": "2cd99f17",
@@ -4246,13 +3678,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_offline2-delta-sigma_1700_1800_isac",
+      "sessionId": "ran1-120_wed_offline2-delta-sigma_1700_1830_isac",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "endTime": "18:30",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "ISAC",
       "topicKey": "adf968bf",
@@ -4288,47 +3720,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1750_1840_9.5.2",
+      "sessionId": "ran1-120_wed_online-room-2_1750_1840_lp-wus",
       "meetingId": "ran1-120",
       "date": "2025-02-19",
       "day": "Wednesday",
       "startTime": "17:50",
       "endTime": "18:40",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.2",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_wed_ballroom-i-level-2_1750_1840_lp-wus",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "17:50",
-      "endTime": "18:40",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "LP-WUS",
       "topicKey": "e84d8435",
       "agendaItems": [],
@@ -4355,52 +3754,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_wed_ballroom-ii-level-2_1840_1930_9.5.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-19",
-      "day": "Wednesday",
-      "startTime": "18:40",
-      "endTime": "19:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.1",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_0830_0835_any-remaining-issues",
+      "sessionId": "ran1-120_thu_ran1-main_0830_0850_any-remaining-issues",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "08:30",
-      "endTime": "08:35",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "endTime": "08:50",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "Any remaining issues",
-      "topicKey": "fc37e658",
+      "topicKey": "22a4047a",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI 7",
+      "group": "R19",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4418,14 +3784,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_0830_1030_r19-ai-ml",
+      "sessionId": "ran1-120_thu_online-room-1_0830_1030_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -4448,14 +3814,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_0830_0945_r19-ue-features",
+      "sessionId": "ran1-120_thu_online-room-2_0830_0915_r19-ue-features",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "08:30",
-      "endTime": "09:45",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "endTime": "09:15",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 UE Features",
       "topicKey": "c90dc120",
       "agendaItems": [],
@@ -4478,13 +3844,13 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_offline1-vip-lamda_0830_1000_r19-nes",
+      "sessionId": "ran1-120_thu_offline1-vip-lamda_0830_0900_r19-nes",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "08:30",
-      "endTime": "10:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "endTime": "09:00",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 NES",
       "topicKey": "21559ed6",
@@ -4514,7 +3880,7 @@
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "A-IoT",
       "topicKey": "adf968bf",
@@ -4538,19 +3904,45 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_0835_1015_r19-lp-wus",
+      "sessionId": "ran1-120_thu_ran1-main_0850_1030_9.6.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
-      "startTime": "08:35",
-      "endTime": "10:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "startTime": "08:50",
+      "endTime": "10:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "R19 LP-WUS",
-      "topicKey": "fc37e658",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI 7",
+      "topicKey": "2cd99f17",
+      "agendaItems": [
+        "9.6.1",
+        "9.6.2",
+        "9.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "9.6.1",
+          "label": "9.6.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.2",
+          "label": "9.6.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.6.3",
+          "label": "9.6.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "group": "R19 LP-WUS",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4563,19 +3955,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_0945_1030_mimo",
+      "sessionId": "ran1-120_thu_online-room-2_0915_1030_mimo",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
-      "startTime": "09:45",
+      "startTime": "09:15",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "MIMO",
       "topicKey": "102b7943",
       "agendaItems": [],
@@ -4595,105 +3987,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1015_1020_9.6.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "10:15",
-      "endTime": "10:20",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.1",
-      "topicKey": "fc37e658",
-      "agendaItems": [
-        "9.6.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1020_1025_9.6.2",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "10:20",
-      "endTime": "10:25",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.2",
-      "topicKey": "fc37e658",
-      "agendaItems": [
-        "9.6.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1025_1030_9.6.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "10:25",
-      "endTime": "10:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.6.3",
-      "topicKey": "fc37e658",
-      "agendaItems": [
-        "9.6.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.6",
       "detailAvailable": true
     },
     {
@@ -4738,20 +4031,35 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1100_1115_9.2.1",
+      "sessionId": "ran1-120_thu_ran1-main_1100_1215_9.2.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "11:00",
-      "endTime": "11:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.2.1",
+      "endTime": "12:15",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 MIMO",
       "topicKey": "828b7d7e",
       "agendaItems": [
         "9.2.1"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.2.1",
+          "label": "9.2.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "Any remaining issues",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 MIMO",
       "kind": "session",
       "status": "scheduled",
@@ -4765,20 +4073,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.2",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1100_1110_xr",
+      "sessionId": "ran1-120_thu_online-room-1_1100_1110_xr",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "11:10",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "XR",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -4801,14 +4108,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_1100_1300_r19-a-iot",
+      "sessionId": "ran1-120_thu_online-room-2_1100_1300_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -4837,7 +4144,7 @@
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "9.1.2",
       "topicKey": "0073b8e3",
@@ -4870,7 +4177,7 @@
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "NTN",
       "topicKey": "c90dc120",
@@ -4894,14 +4201,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1110_1200_duplex",
+      "sessionId": "ran1-120_thu_online-room-1_1110_1200_duplex",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "11:10",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "Duplex",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -4924,74 +4231,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1115_1130_any-remaining-issues",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "11:15",
-      "endTime": "11:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "Any remaining issues",
-      "topicKey": "828b7d7e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1130_1215_r19-mobility",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "11:30",
-      "endTime": "12:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 Mobility",
-      "topicKey": "828b7d7e",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 MIMO",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1200_1230_nes",
+      "sessionId": "ran1-120_thu_online-room-1_1200_1230_nes",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "12:00",
       "endTime": "12:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "NES",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -5020,7 +4267,7 @@
       "day": "Thursday",
       "startTime": "12:00",
       "endTime": "12:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "9.1.3",
       "topicKey": "0073b8e3",
@@ -5047,19 +4294,49 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1230_1300_r19-tei",
+      "sessionId": "ran1-120_thu_ran1-main_1215_1300_r19-mobility",
+      "meetingId": "ran1-120",
+      "date": "2025-02-20",
+      "day": "Thursday",
+      "startTime": "12:15",
+      "endTime": "13:00",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 Mobility",
+      "topicKey": "21559ed6",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R19 Mobility",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-7a4e9a37",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-534bb9df",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120_thu_online-room-1_1230_1300_r19-tei",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "12:30",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 TEI",
-      "topicKey": "53699daf",
+      "topicKey": "fedab08a",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 UE Features",
+      "group": "R19 TEI",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5083,7 +4360,7 @@
       "day": "Thursday",
       "startTime": "12:30",
       "endTime": "13:00",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "9.1.4.2",
       "topicKey": "0073b8e3",
@@ -5151,20 +4428,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1430_1510_9.5.1",
+      "sessionId": "ran1-120_thu_ran1-main_1430_1630_9.5.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.1",
+      "endTime": "16:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 NES",
       "topicKey": "c39030e6",
       "agendaItems": [
-        "9.5.1"
+        "9.5.1",
+        "9.5.2",
+        "9.5.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "9.5.1",
+          "label": "9.5.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.2",
+          "label": "9.5.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.5.3",
+          "label": "9.5.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 NES",
       "kind": "session",
       "status": "scheduled",
@@ -5178,20 +4479,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1430_1630_r19-ai-ml",
+      "sessionId": "ran1-120_thu_online-room-1_1430_1630_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -5214,15 +4514,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_1430_1600_r19-isac",
+      "sessionId": "ran1-120_thu_online-room-2_1430_1500_r19-broadcast",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "16:00",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
-      "topic": "R19 ISAC",
+      "endTime": "15:00",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
+      "topic": "R19 Broadcast",
       "topicKey": "ba88eb00",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5250,7 +4550,7 @@
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 Duplex",
       "topicKey": "6ffc6669",
@@ -5280,7 +4580,7 @@
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "NTN",
       "topicKey": "cdd20435",
@@ -5304,54 +4604,19 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1510_1550_9.5.2",
+      "sessionId": "ran1-120_thu_online-room-2_1500_1630_r19-isac",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
-      "startTime": "15:10",
-      "endTime": "15:50",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.2",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 NES",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1550_1630_9.5.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "15:50",
+      "startTime": "15:00",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.5.3",
-      "topicKey": "c39030e6",
-      "agendaItems": [
-        "9.5.3"
-      ],
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
+      "topic": "R19 ISAC",
+      "topicKey": "2594b496",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 NES",
+      "group": "R19 ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5365,8 +4630,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.5",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -5411,15 +4675,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1700_1730_8.1",
+      "sessionId": "ran1-120_thu_ran1-main_1700_1730_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "AI , 7",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": ", 7",
       "topicKey": "6ffc6669",
       "agendaItems": [
         "8.1"
@@ -5444,15 +4708,15 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1700_1845_7-24ghz",
+      "sessionId": "ran1-120_thu_online-room-1_1700_1745_r19",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "18:45",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
-      "topic": "7\u201324GHz",
+      "endTime": "17:45",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
+      "topic": "R19",
       "topicKey": "22a4047a",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5474,23 +4738,39 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_1700_1703_8.1",
+      "sessionId": "ran1-120_thu_online-room-2_1700_1800_8.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "17:00",
-      "endTime": "17:03",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
-      "topic": "AI  NTN",
+      "endTime": "18:00",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
+      "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [
         "8.1"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "8.1",
+          "label": "AI  NTN",
+          "minutes": 3,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "R19 NTN",
+          "minutes": 87,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 A-IoT",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 90 min, block is 60 min.",
       "sources": [
         {
           "sourceId": "ran1-120-7a4e9a37",
@@ -5501,9 +4781,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
@@ -5513,7 +4792,7 @@
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 LP-WUS",
       "topicKey": "2cd99f17",
@@ -5543,7 +4822,7 @@
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "9.12.1",
       "topicKey": "2532d840",
@@ -5570,48 +4849,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-i-level-2_1703_1830_r19-ntn",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "17:03",
-      "endTime": "18:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
-      "topic": "R19 NTN",
-      "topicKey": "1147fd59",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1730_1800_tbd",
+      "sessionId": "ran1-120_thu_ran1-main_1730_1930_9.3.1",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "TBD",
+      "endTime": "19:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 Duplex",
       "topicKey": "6ffc6669",
-      "agendaItems": [],
-      "agendaBreakdown": [],
+      "agendaItems": [
+        "9.3.1",
+        "9.3.2",
+        "9.3.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "9.3.1",
+          "label": "9.3.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.2",
+          "label": "9.3.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.3.3",
+          "label": "9.3.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 Duplex",
       "kind": "session",
       "status": "scheduled",
@@ -5625,24 +4900,24 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_offline2-delta-sigma_1730_1930_r19-ai-ml",
+      "sessionId": "ran1-120_thu_offline2-delta-sigma_1730_1930_tbd",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
       "startTime": "17:30",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
-      "topic": "R19 AI/ML",
-      "topicKey": "2532d840",
+      "topic": "TBD",
+      "topicKey": "0073b8e3",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 MCE",
+      "group": "R19 AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -5660,15 +4935,45 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1845_1930_r19-mce",
+      "sessionId": "ran1-120_thu_online-room-1_1745_1930_r19-mce",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
-      "startTime": "18:45",
+      "startTime": "17:45",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 MCE",
+      "topicKey": "b7c1055c",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "7\u201324GHz",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-7a4e9a37",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-534bb9df",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120_fri_ran1-main_0830_1030_r19-lp-wus",
+      "meetingId": "ran1-120",
+      "date": "2025-02-21",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
+      "topic": "R19 LP-WUS",
       "topicKey": "22a4047a",
       "agendaItems": [],
       "agendaBreakdown": [],
@@ -5685,148 +4990,19 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1905_1910_9.3.1",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "19:05",
-      "endTime": "19:10",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.1",
-      "topicKey": "04c47be4",
-      "agendaItems": [
-        "9.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1910_1915_9.3.2",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "19:10",
-      "endTime": "19:15",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.2",
-      "topicKey": "04c47be4",
-      "agendaItems": [
-        "9.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_thu_ballroom-ii-level-2_1915_1920_9.3.3",
-      "meetingId": "ran1-120",
-      "date": "2025-02-20",
-      "day": "Thursday",
-      "startTime": "19:15",
-      "endTime": "19:20",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "9.3.3",
-      "topicKey": "04c47be4",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1, 7",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_fri_ballroom-ii-level-2_0830_1030_r19-lp-wus",
+      "sessionId": "ran1-120_fri_online-room-1_0830_1030_r19-ai-ml",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
-      "topic": "R19 LP-WUS",
-      "topicKey": "2cd99f17",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19 LP-WUS",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-7a4e9a37",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-534bb9df",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_fri_athenaeum-conf-ground-le_0830_1030_r19-ai-ml",
-      "meetingId": "ran1-120",
-      "date": "2025-02-21",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "R19 AI/ML",
       "topicKey": "0073b8e3",
       "agendaItems": [],
@@ -5849,14 +5025,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_ballroom-i-level-2_0830_0900_r19-a-iot",
+      "sessionId": "ran1-120_fri_online-room-2_0830_1000_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "08:30",
-      "endTime": "09:00",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "endTime": "10:00",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "e84d8435",
       "agendaItems": [],
@@ -5885,7 +5061,7 @@
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "R19 NES",
       "topicKey": "c39030e6",
@@ -5915,7 +5091,7 @@
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "10:00",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "A-IoT",
       "topicKey": "adf968bf",
@@ -5980,14 +5156,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_ballroom-ii-level-2_1100_1105_r19-xr",
+      "sessionId": "ran1-120_fri_ran1-main_1100_1255_r19-xr",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "11:00",
-      "endTime": "11:05",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "endTime": "12:55",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "R19 XR",
       "topicKey": "c39030e6",
       "agendaItems": [],
@@ -6010,14 +5186,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_athenaeum-conf-ground-le_1100_1130_mimo",
+      "sessionId": "ran1-120_fri_online-room-1_1100_1130_mimo",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "11:30",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "MIMO",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -6040,14 +5216,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_ballroom-i-level-2_1100_1230_r19-a-iot",
+      "sessionId": "ran1-120_fri_online-room-2_1100_1230_r19-a-iot",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "12:30",
-      "roomId": "ran1-120-room-4a6350db",
-      "roomName": "Ballroom I (Level-2)",
+      "roomId": "ran1-120-room-4823b063",
+      "roomName": "Online room 2",
       "topic": "R19 A-IoT",
       "topicKey": "1147fd59",
       "agendaItems": [],
@@ -6070,14 +5246,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_athenaeum-conf-ground-le_1130_1200_lp-wus",
+      "sessionId": "ran1-120_fri_online-room-1_1130_1200_lp-wus",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "11:30",
       "endTime": "12:00",
-      "roomId": "ran1-120-room-90de4368",
-      "roomName": "Athenaeum Conf. (Ground level)",
+      "roomId": "ran1-120-room-85e066f2",
+      "roomName": "Online room 1",
       "topic": "LP-WUS",
       "topicKey": "53699daf",
       "agendaItems": [],
@@ -6147,7 +5323,7 @@
       "day": "Friday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "To be assigned by Xiaodong",
       "topicKey": "f55439d9",
@@ -6189,7 +5365,7 @@
       "day": "Friday",
       "startTime": "14:30",
       "endTime": "16:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "To be assigned by David",
       "topicKey": "7e6eaa25",
@@ -6266,14 +5442,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_fri_ballroom-ii-level-2_1700_1730_r19-mobility",
+      "sessionId": "ran1-120_fri_ran1-main_1700_1730_r19-mobility",
       "meetingId": "ran1-120",
       "date": "2025-02-21",
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "17:30",
-      "roomId": "ran1-120-room-2ccfc32f",
-      "roomName": "Ballroom II (Level-2)",
+      "roomId": "ran1-120-room-bb0076fb",
+      "roomName": "RAN1 Main",
       "topic": "R19 Mobility",
       "topicKey": "21559ed6",
       "agendaItems": [],
@@ -6303,7 +5479,7 @@
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-321cdcee",
+      "roomId": "ran1-120-room-203211c7",
       "roomName": "Offline1: VIP+Lamda",
       "topic": "To be assigned by Xiaodong",
       "topicKey": "f55439d9",
@@ -6345,7 +5521,7 @@
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "19:30",
-      "roomId": "ran1-120-room-edd11a69",
+      "roomId": "ran1-120-room-9643aa82",
       "roomName": "Offline2: Delta+Sigma",
       "topic": "To be assigned by David",
       "topicKey": "7e6eaa25",
@@ -6381,10 +5557,32 @@
       "detailAvailable": true
     }
   ],
-  "conflicts": [],
+  "conflicts": [
+    {
+      "conflictId": "conf-ran1-120-room-bb0076fb-2025-02-18-14:30",
+      "meetingId": "ran1-120",
+      "sessionId": "ran1-120_tue_ran1-main_1430_1600_8.1",
+      "field": "agendaItem",
+      "values": [
+        {
+          "sourceId": "ran1-120-b5f52174,ran1-120-0e6d44a1,ran1-120-b8b58fa9,ran1-120-7a4e9a37,ran1-120-534bb9df",
+          "value": "8.1"
+        },
+        {
+          "sourceId": "ran1-120-b5f52174,ran1-120-0e6d44a1,ran1-120-b8b58fa9",
+          "value": "9.2.1"
+        },
+        {
+          "sourceId": "ran1-120-7a4e9a37,ran1-120-534bb9df",
+          "value": "9.2.1, 9.2.4"
+        }
+      ],
+      "resolved": false
+    }
+  ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-09T17:31:35Z",
-    "lastAttemptAt": "2026-10-09T17:31:35Z"
+    "lastSuccessfulAt": "2026-10-09T20:52:13Z",
+    "lastAttemptAt": "2026-10-09T20:52:13Z"
   }
 }

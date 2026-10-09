@@ -1,1 +1,3515 @@
-[]
+[
+  {
+    "changeId": "room_changed-ran1-120_mon_ran1-main_0900_1000_ran1-120-commences-at-09-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "RAN1#120 commences at 09:00 on Monday moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_ran1-main_0900_1000_ran1-120-commences-at-09",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_added-ran1-120_mon_ran1-main_1100_1200_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "Agenda item added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.1",
+      "9.2.1",
+      "9.2.3"
+    ],
+    "sessionId": "ran1-120_mon_ran1-main_1100_1200_8.1",
+    "to": "RAN1 Main 11:00-12:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_mon_ran1-main_1430_1515_9.2.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.2.2",
+      "9.2.4"
+    ],
+    "sessionId": "ran1-120_mon_ran1-main_1430_1515_9.2.2",
+    "to": "RAN1 Main 14:30-15:15",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_online-room-1_1430_1510_r19-mce-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 MCE moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1430_1510_r19-mce",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_online-room-1_1430_1510_r19-mce-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 MCE end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1430_1510_r19-mce",
+    "to": "15:10",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:20"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_online-room-2_1430_1630_r19-a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-2_1430_1630_r19-a-iot",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline1-vip-lamda_1430_1600_r19-duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Duplex moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline1-vip-lamda_1430_1600_r19-duplex",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_offline1-vip-lamda_1430_1600_r19-duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 Duplex end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline1-vip-lamda_1430_1600_r19-duplex",
+    "to": "16:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline2-delta-sigma_1430_1450_9.8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1"
+    ],
+    "sessionId": "ran1-120_mon_offline2-delta-sigma_1430_1450_9.8.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline2-delta-sigma_1450_1530_9.8.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.2"
+    ],
+    "sessionId": "ran1-120_mon_offline2-delta-sigma_1450_1530_9.8.2",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_online-room-1_1510_1540_r18-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R18 UE Features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1510_1540_r18-ue-features",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_mon_online-room-1_1510_1540_r18-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R18 UE Features start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1510_1540_r18-ue-features",
+    "to": "15:10",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:20"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_online-room-1_1510_1540_r18-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R18 UE Features end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1510_1540_r18-ue-features",
+    "to": "15:40",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:50"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_ran1-main_1515_1545_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_ran1-main_1515_1545_r19-xr",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline2-delta-sigma_1530_1630_9.1.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.1"
+    ],
+    "sessionId": "ran1-120_mon_offline2-delta-sigma_1530_1630_9.1.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "session_added-ran1-120_mon_ran1-main_1700_1930_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_mon_ran1-main_1700_1930_9.6.1",
+    "to": "RAN1 Main 17:00-19:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_online-room-1_1700_1930_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-1_1700_1930_r19-ai-ml",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_online-room-2_1700_1740_r19-ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-2_1700_1740_r19-ntn",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_online-room-2_1700_1740_r19-ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 NTN end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_online-room-2_1700_1740_r19-ntn",
+    "to": "17:40",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:50"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline1-vip-lamda_1700_1800_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline1-vip-lamda_1700_1800_r19-nes",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_offline1-vip-lamda_1700_1800_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline1-vip-lamda_1700_1800_r19-nes",
+    "to": "18:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120_mon_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline2-delta-sigma_1700_1830_isac",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_mon_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_offline2-delta-sigma_1700_1830_isac",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_ran1-main_0830_1030_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_0830_1030_9.3.1",
+    "to": "RAN1 Main 08:30-10:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_online-room-1_0830_0900_r19-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-1_0830_0900_r19",
+    "to": "Online room 1 08:30-09:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-2_1430_1530_r19-a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-2_1430_1530_r19-a-iot",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline1-vip-lamda_0830_0930_9.1.4.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.4.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.1"
+    ],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_0830_0930_9.1.4.1",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_0830_1030_ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_0830_1030_ntn",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_ran1-main_1430_1600_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "AI moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1430_1600_8.1",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_tue_ran1-main_1430_1600_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "AI start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1430_1600_8.1",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:10"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_ran1-main_1430_1600_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "AI end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1430_1600_8.1",
+    "to": "16:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:40"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline1-vip-lamda_0930_1030_9.12.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.12.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.12.1"
+    ],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_0930_1030_9.12.1",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_ran1-main_1100_1300_9.5.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 NES added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1",
+      "9.5.2",
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1100_1300_9.5.1",
+    "to": "RAN1 Main 11:00-13:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-1_1700_1930_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-1_1700_1930_r19-ai-ml",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline1-vip-lamda_1100_1230_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Mobility moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1100_1230_r19-mobility",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_offline1-vip-lamda_1100_1230_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 Mobility end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1100_1230_r19-mobility",
+    "to": "12:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_1100_1300_a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1100_1300_a-iot",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-1_1430_1450_xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-1_1430_1450_xr",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline1-vip-lamda_1430_1600_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1430_1600_r19-xr",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_offline1-vip-lamda_1430_1600_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 XR end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1430_1600_r19-xr",
+    "to": "16:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_1430_1450_9.8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1"
+    ],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1430_1450_9.8.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-1_1450_1520_nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-1_1450_1520_nes",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_1450_1530_9.8.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.2"
+    ],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1450_1530_9.8.2",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-1_1520_1550_r19-mce-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 MCE moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-1_1520_1550_r19-mce",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_1530_1630_9.1.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1530_1630_9.1.2",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_ran1-main_1600_1630_any-open-issues-on-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "Any open issues on moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ran1-main_1600_1630_any-open-issues-on",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_tue_ran1-main_1600_1630_any-open-issues-on-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "Any open issues on start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ran1-main_1600_1630_any-open-issues-on",
+    "to": "16:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "15:40"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_ran1-main_1600_1630_any-open-issues-on-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "Any open issues on end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ran1-main_1600_1630_any-open-issues-on",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "16:00"
+  },
+  {
+    "changeId": "session_added-ran1-120_tue_ran1-main_1700_1730_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "AI 6, 7 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_tue_ran1-main_1700_1730_9.6.1",
+    "to": "RAN1 Main 17:00-17:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df",
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-2_1700_1750_r19-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 UE Features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-2_1700_1750_r19-ue-features",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline1-vip-lamda_1700_1830_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1700_1830_r19-nes",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_offline1-vip-lamda_1700_1830_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline1-vip-lamda_1700_1830_r19-nes",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1700_1830_isac",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_tue_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_offline2-delta-sigma_1700_1830_isac",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_ran1-main_1730_1930_lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ran1-main_1730_1930_lp-wus",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_tue_ran1-main_1730_1930_lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "LP-WUS start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ran1-main_1730_1930_lp-wus",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "19:15"
+  },
+  {
+    "changeId": "room_changed-ran1-120_tue_online-room-2_1750_1840_mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_online-room-2_1750_1840_mimo",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_0830_1000_9.2.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.2.2",
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_0830_1000_9.2.2",
+    "to": "RAN1 Main 08:30-10:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df",
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_0830_0900_nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_0830_0900_nes",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-2_1430_1530_r19-a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-2_1430_1530_r19-a-iot",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline1-vip-lamda_0830_1030_r19-lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline1-vip-lamda_0830_1030_r19-lp-wus",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_0830_0930_9.1.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.1"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_0830_0930_9.1.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_0900_0920_xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_0900_0920_xr",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_0920_1000_duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "Duplex moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_0920_1000_duplex",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_0930_0950_9.8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.1"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_0930_0950_9.8.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_0950_1030_9.8.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.8.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.8.2"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_0950_1030_9.8.2",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_ran1-main_1000_1030_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ran1-main_1000_1030_r19-xr",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_wed_ran1-main_1000_1030_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 XR start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ran1-main_1000_1030_r19-xr",
+    "to": "10:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "09:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_wed_ran1-main_1000_1030_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 XR end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_ran1-main_1000_1030_r19-xr",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "10:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_1000_1030_mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_1000_1030_mimo",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1100_1300_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 LP-WUS added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1100_1300_9.6.1",
+    "to": "RAN1 Main 11:00-13:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df",
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_1100_1215_r19-tei-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_1100_1215_r19-tei",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_wed_online-room-1_1100_1215_r19-tei-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 TEI end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_1100_1215_r19-tei",
+    "to": "12:15",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:45"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_1500_1630_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "AI moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_wed_online-room-1_1500_1630_8.1",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_wed_online-room-1_1500_1630_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "AI start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_wed_online-room-1_1500_1630_8.1",
+    "to": "15:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "16:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline1-vip-lamda_1100_1300_r19-duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Duplex moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline1-vip-lamda_1100_1300_r19-duplex",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_1100_1300_ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1100_1300_ntn",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-2_1230_1300_r19-isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-2_1230_1300_r19-isac",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_wed_online-room-2_1230_1300_r19-isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-2_1230_1300_r19-isac",
+    "to": "12:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:30"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1430_1630_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1430_1630_9.3.1",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df",
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_online-room-1_1430_1500_r19-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_1430_1500_r19",
+    "to": "Online room 1 14:30-15:00",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline1-vip-lamda_1430_1630_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline1-vip-lamda_1430_1630_r19-nes",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_1430_1530_9.1.4.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.4.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.1"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1430_1530_9.1.4.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_1530_1600_9.1.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.3"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1530_1600_9.1.3",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_1600_1630_9.1.4.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.4.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.2"
+    ],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1600_1630_9.1.4.2",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "session_added-ran1-120_wed_ran1-main_1700_1930_9.5.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 NES added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.3",
+      "9.5.2",
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_wed_ran1-main_1700_1930_9.5.3",
+    "to": "RAN1 Main 17:00-19:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df",
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-1_1700_1930_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-1_1700_1930_r19-ai-ml",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-2_1700_1750_r19-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 UE Features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-2_1700_1750_r19-ue-features",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline1-vip-lamda_1700_1830_r19-mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline1-vip-lamda_1700_1830_r19-mimo",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_wed_offline1-vip-lamda_1700_1830_r19-mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline1-vip-lamda_1700_1830_r19-mimo",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1700_1830_isac",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_wed_offline2-delta-sigma_1700_1830_isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_offline2-delta-sigma_1700_1830_isac",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_wed_online-room-2_1750_1840_lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_online-room-2_1750_1840_lp-wus",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_ran1-main_0830_0850_any-remaining-issues-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "Any remaining issues moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_0830_0850_any-remaining-issues",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_ran1-main_0830_0850_any-remaining-issues-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "Any remaining issues start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_0830_0850_any-remaining-issues",
+    "to": "08:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:15"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_ran1-main_0830_0850_any-remaining-issues-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "Any remaining issues end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_0830_0850_any-remaining-issues",
+    "to": "08:50",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1430_1630_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1430_1630_r19-ai-ml",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_online-room-1_1430_1630_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 AI/ML start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1430_1630_r19-ai-ml",
+    "to": "14:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "17:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_online-room-1_1430_1630_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 AI/ML end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1430_1630_r19-ai-ml",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "19:30"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-2_0830_0915_r19-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 UE Features moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_0830_0915_r19-ue-features",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_online-room-2_0830_0915_r19-ue-features-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 UE Features end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_0830_0915_r19-ue-features",
+    "to": "09:15",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "09:45"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_0830_0900_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_0830_0900_r19-nes",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_offline1-vip-lamda_0830_0900_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 NES end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_0830_0900_r19-nes",
+    "to": "09:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "10:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline2-delta-sigma_0830_1030_a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline2-delta-sigma_0830_1030_a-iot",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_0850_1030_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 LP-WUS added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.6.1",
+      "9.6.2",
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_0850_1030_9.6.1",
+    "to": "RAN1 Main 08:50-10:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-2_0915_1030_mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_0915_1030_mimo",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_online-room-2_0915_1030_mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_0915_1030_mimo",
+    "to": "09:15",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "09:45"
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_1100_1215_9.2.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_1100_1215_9.2.1",
+    "to": "RAN1 Main 11:00-12:15",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1100_1110_xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1100_1110_xr",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-2_1100_1300_r19-a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_1100_1300_r19-a-iot",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_1100_1200_9.1.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.2"
+    ],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_1100_1200_9.1.2",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline2-delta-sigma_1430_1630_ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NTN moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline2-delta-sigma_1430_1630_ntn",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1110_1200_duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "Duplex moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1110_1200_duplex",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1200_1230_nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1200_1230_nes",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_1200_1230_9.1.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.3 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.3"
+    ],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_1200_1230_9.1.3",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_ran1-main_1215_1300_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Mobility moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_1215_1300_r19-mobility",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_ran1-main_1215_1300_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 Mobility start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_1215_1300_r19-mobility",
+    "to": "12:15",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_ran1-main_1215_1300_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 Mobility end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ran1-main_1215_1300_r19-mobility",
+    "to": "13:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "12:15"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1230_1300_r19-tei-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 TEI moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1230_1300_r19-tei",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_1230_1300_9.1.4.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.1.4.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.1.4.2"
+    ],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_1230_1300_9.1.4.2",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_1430_1630_9.5.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 NES added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5.1",
+      "9.5.2",
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_1430_1630_9.5.1",
+    "to": "RAN1 Main 14:30-16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_online-room-2_1430_1500_r19-broadcast-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 Broadcast added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_1430_1500_r19-broadcast",
+    "to": "Online room 2 14:30-15:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_1430_1630_r19-duplex-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Duplex moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_1430_1630_r19-duplex",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-2_1500_1630_r19-isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 ISAC moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_1500_1630_r19-isac",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_online-room-2_1500_1630_r19-isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 ISAC start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_1500_1630_r19-isac",
+    "to": "15:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "14:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_online-room-2_1500_1630_r19-isac-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 ISAC end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-2_1500_1630_r19-isac",
+    "to": "16:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "16:00"
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_1700_1730_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": ", 7 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_1700_1730_8.1",
+    "to": "RAN1 Main 17:00-17:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_online-room-1_1700_1745_r19-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1700_1745_r19",
+    "to": "Online room 1 17:00-17:45",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_online-room-2_1700_1800_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_thu_online-room-2_1700_1800_8.1",
+    "to": "Online room 2 17:00-18:00",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline1-vip-lamda_1700_1930_r19-lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline1-vip-lamda_1700_1930_r19-lp-wus",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline2-delta-sigma_1700_1730_9.12.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "9.12.1 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.12.1"
+    ],
+    "sessionId": "ran1-120_thu_offline2-delta-sigma_1700_1730_9.12.1",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "session_added-ran1-120_thu_ran1-main_1730_1930_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_added",
+    "title": "R19 Duplex added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.2",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_thu_ran1-main_1730_1930_9.3.1",
+    "to": "RAN1 Main 17:30-19:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_offline2-delta-sigma_1730_1930_tbd-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "TBD moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline2-delta-sigma_1730_1930_tbd",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_thu_offline2-delta-sigma_1730_1930_tbd-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "TBD end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_offline2-delta-sigma_1730_1930_tbd",
+    "to": "19:30",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "room_changed-ran1-120_thu_online-room-1_1745_1930_r19-mce-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 MCE moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1745_1930_r19-mce",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-120_thu_online-room-1_1745_1930_r19-mce-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "start_time_changed",
+    "title": "R19 MCE start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_online-room-1_1745_1930_r19-mce",
+    "to": "17:45",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "18:45"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_ran1-main_0830_1030_r19-lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_ran1-main_0830_1030_r19-lp-wus",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_online-room-1_0830_1030_r19-ai-ml-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 AI/ML moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_online-room-1_0830_1030_r19-ai-ml",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_online-room-2_1100_1230_r19-a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_online-room-2_1100_1230_r19-a-iot",
+    "to": "Online room 2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_offline1-vip-lamda_0830_1030_r19-nes-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 NES moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_offline1-vip-lamda_0830_1030_r19-nes",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_offline2-delta-sigma_0830_1000_a-iot-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "A-IoT moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_offline2-delta-sigma_0830_1000_a-iot",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_ran1-main_1100_1255_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 XR moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_ran1-main_1100_1255_r19-xr",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "end_time_changed-ran1-120_fri_ran1-main_1100_1255_r19-xr-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "end_time_changed",
+    "title": "R19 XR end time changed",
+    "detail": "End time changed",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_ran1-main_1100_1255_r19-xr",
+    "to": "12:55",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "11:05"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_online-room-1_1100_1130_mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_online-room-1_1100_1130_mimo",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_online-room-1_1130_1200_lp-wus-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "LP-WUS moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_online-room-1_1130_1200_lp-wus",
+    "to": "Online room 1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_offline1-vip-lamda_1700_1930_to-be-assigned-by-xiaodo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "To be assigned by Xiaodong moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_offline1-vip-lamda_1700_1930_to-be-assigned-by-xiaodo",
+    "to": "Offline1: VIP+Lamda",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline1: VIP+Lamda"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_offline2-delta-sigma_1700_1930_to-be-assigned-by-david-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "To be assigned by David moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_offline2-delta-sigma_1700_1930_to-be-assigned-by-david",
+    "to": "Offline2: Delta+Sigma",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Offline2: Delta+Sigma"
+  },
+  {
+    "changeId": "room_changed-ran1-120_fri_ran1-main_1700_1730_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "room_changed",
+    "title": "R19 Mobility moved",
+    "detail": "Session changed room",
+    "agendaItems": [],
+    "sessionId": "ran1-120_fri_ran1-main_1700_1730_r19-mobility",
+    "to": "RAN1 Main",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1210_1215_r19-mimo-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "R19 MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1210_1215_r19-mimo",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1200_1205_9.2.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1200_1205_9.2.1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1205_1210_9.2.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.3"
+    ],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1205_1210_9.2.3",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1430_1435_9.2.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.2"
+    ],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1430_1435_9.2.2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1435_1440_9.2.4-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.4 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.4"
+    ],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1435_1440_9.2.4",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1440_1515_r19-mobility-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "R19 Mobility removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1440_1515_r19-mobility",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_mon_ballroom-ii-level-2_1700_1930_r19-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "R19 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_mon_ballroom-ii-level-2_1700_1930_r19",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_0830_0910_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_0830_0910_9.3.1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_athenaeum-conf-ground-le_0830_1000_7-24ghz-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "7\u201324GHz removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_athenaeum-conf-ground-le_0830_1000_7-24ghz",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_0910_0950_9.3.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_0910_0950_9.3.2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_0950_1030_9.3.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_0950_1030_9.3.3",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1100_1140_9.5.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1100_1140_9.5.1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1140_1220_9.5.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.2"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1140_1220_9.5.2",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1220_1300_9.5.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1220_1300_9.5.3",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1430_1450_9.2.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1430_1450_9.2.1",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1450_1510_9.2.4-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.4 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.4"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1450_1510_9.2.4",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1700_1730_ai-6-7-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "AI 6, 7 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1700_1730_ai-6-7",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1900_1905_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.1"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1900_1905_9.6.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1905_1910_9.6.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.2"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1905_1910_9.6.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_tue_ballroom-ii-level-2_1910_1915_9.6.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_tue_ballroom-ii-level-2_1910_1915_9.6.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_0830_0900_9.2.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.2"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_0830_0900_9.2.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_0900_0930_9.2.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_0900_0930_9.2.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1100_1140_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.1"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1100_1140_9.6.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1140_1220_9.6.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.2"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1140_1220_9.6.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1220_1300_9.6.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1220_1300_9.6.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1430_1510_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1430_1510_9.3.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_athenaeum-conf-ground-le_1430_1600_7-24ghz-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "7\u201324GHz removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_wed_athenaeum-conf-ground-le_1430_1600_7-24ghz",
+    "sourceIds": [
+      "ran1-120-b5f52174",
+      "ran1-120-0e6d44a1",
+      "ran1-120-b8b58fa9",
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1510_1550_9.3.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1510_1550_9.3.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1550_1630_9.3.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1550_1630_9.3.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1700_1750_9.5.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1700_1750_9.5.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1750_1840_9.5.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.2"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1750_1840_9.5.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_wed_ballroom-ii-level-2_1840_1930_9.5.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_wed_ballroom-ii-level-2_1840_1930_9.5.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1015_1020_9.6.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1015_1020_9.6.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1020_1025_9.6.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.2"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1020_1025_9.6.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1025_1030_9.6.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.6.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.6.3"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1025_1030_9.6.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1100_1115_9.2.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.2.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.2.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1100_1115_9.2.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1430_1510_9.5.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1430_1510_9.5.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1510_1550_9.5.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.2"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1510_1550_9.5.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1550_1630_9.5.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.5.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.5.3"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1550_1630_9.5.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1700_1730_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "AI , 7 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1700_1730_8.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_athenaeum-conf-ground-le_1700_1845_7-24ghz-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "7\u201324GHz removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_athenaeum-conf-ground-le_1700_1845_7-24ghz",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Athenaeum Conf. (Ground level)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-i-level-2_1700_1703_8.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "AI  NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "8.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-i-level-2_1700_1703_8.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-i-level-2_1703_1830_r19-ntn-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "R19 NTN removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-120_thu_ballroom-i-level-2_1703_1830_r19-ntn",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom I (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1905_1910_9.3.1-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.1 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1905_1910_9.3.1",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1910_1915_9.3.2-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.2 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.2"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1910_1915_9.3.2",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  },
+  {
+    "changeId": "session_removed-ran1-120_thu_ballroom-ii-level-2_1915_1920_9.3.3-2026-10-09T21:06:33+00:00",
+    "meetingId": "ran1-120",
+    "detectedAt": "2026-10-09T21:06:33+00:00",
+    "type": "session_removed",
+    "title": "9.3.3 removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-120_thu_ballroom-ii-level-2_1915_1920_9.3.3",
+    "sourceIds": [
+      "ran1-120-7a4e9a37",
+      "ran1-120-534bb9df"
+    ],
+    "from": "Ballroom II (Level-2)"
+  }
+]

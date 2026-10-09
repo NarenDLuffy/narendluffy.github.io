@@ -1,41 +1,51 @@
 [
   {
-    "roomId": "ran1-120-room-2ccfc32f",
+    "roomId": "ran1-120-room-bb0076fb",
     "meetingId": "ran1-120",
-    "roomName": "Ballroom II (Level-2)",
+    "roomName": "RAN1 Main",
     "order": 0,
-    "shortName": "Ballroom II (Level-2)",
-    "sourceColor": "FFFFFF",
+    "shortName": "RAN1 Main",
+    "chairLaneId": "ran1-120:online:lane0",
     "chairRole": "main"
   },
   {
-    "roomId": "ran1-120-room-90de4368",
+    "roomId": "ran1-120-room-85e066f2",
     "meetingId": "ran1-120",
-    "roomName": "Athenaeum Conf. (Ground level)",
+    "roomName": "Online room 1",
     "order": 1,
-    "shortName": "Athenaeum Conf. (Ground ",
-    "sourceColor": "D9D9D9"
+    "shortName": "Online room 1",
+    "sourceColor": "D9D9D9",
+    "chairLaneId": "ran1-120:online:D9D9D9",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-120-room-4a6350db",
+    "roomId": "ran1-120-room-4823b063",
     "meetingId": "ran1-120",
-    "roomName": "Ballroom I (Level-2)",
+    "roomName": "Online room 2",
     "order": 2,
-    "shortName": "Ballroom I (Level-2)",
-    "sourceColor": "FFD966"
+    "shortName": "Online room 2",
+    "sourceColor": "FFD966",
+    "chairLaneId": "ran1-120:online:FFD966",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-120-room-321cdcee",
+    "roomId": "ran1-120-room-203211c7",
     "meetingId": "ran1-120",
     "roomName": "Offline1: VIP+Lamda",
     "order": 3,
-    "shortName": "Offline1: VIP+Lamda"
+    "shortName": "Offline1: VIP+Lamda",
+    "sourceColor": "F7CAAC",
+    "chairLaneId": "ran1-120:offline:F7CAAC",
+    "chairRole": "vice"
   },
   {
-    "roomId": "ran1-120-room-edd11a69",
+    "roomId": "ran1-120-room-9643aa82",
     "meetingId": "ran1-120",
     "roomName": "Offline2: Delta+Sigma",
     "order": 4,
-    "shortName": "Offline2: Delta+Sigma"
+    "shortName": "Offline2: Delta+Sigma",
+    "sourceColor": "9CC2E5",
+    "chairLaneId": "ran1-120:offline:9CC2E5",
+    "chairRole": "vice"
   }
 ]
