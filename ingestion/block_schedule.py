@@ -49,12 +49,14 @@ BREAK_RE = re.compile(r"\b(break|lunch|coffee)\b", re.I)
 DURATION_RE = re.compile(r"\(\s*~?\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)\s*$", re.I)
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
 AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
+GENERIC_GRID_RE = re.compile(r"^\s*RAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\s*$", re.I)
 STARTS_AT_RE = re.compile(r"\bat\s+(\d{1,2})[:.](\d{2})", re.I)
 
 # Short work-area labels chairs use as a group tag rather than a person.
 GROUP_TOKENS = {
     "6gr", "6g", "r20", "r19", "r18", "nr", "lte", "tei", "ai", "ai/ml", "aiml",
     "ntn", "ntn-nr", "ntn-iot", "a-iot", "isac", "mimo", "sweep", "plenary",
+    "maintenance", "tbd", "dinner",
 }
 
 
@@ -148,6 +150,46 @@ def _paragraph_text(paragraph) -> str:
     return "".join(parts).strip()
 
 
+def norm_room(name: str) -> str:
+    """Comparable room identity: "Room 201 (2F)" == "201", "Yeongju B, 1F" == "Yeongju B (1F)"."""
+    text = re.sub(r"\([^)]*\)", " ", name or "")
+    text = re.sub(r"\b(room|rm)\b", " ", text, flags=re.I)
+    text = re.sub(r"\b\d{1,2}\s*F\b", " ", text, flags=re.I)
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+_SESSION_LABEL_RE = re.compile(r"RAN1[\s_]*(main|brk|break(?:out)?|adhoc|ad-hoc)\s*#?\s*(\d*)", re.I)
+
+
+def _session_label(text: str) -> str | None:
+    match = _SESSION_LABEL_RE.search(text or "")
+    if not match:
+        return None
+    kind = match.group(1).lower()
+    if kind == "main":
+        return "RAN1 Main"
+    if kind.startswith("ad"):
+        return f"RAN1 Adhoc{match.group(2)}"
+    return f"RAN1 Brk{match.group(2)}"
+
+
+def _heading_room_name(heading: str) -> str | None:
+    """The physical room a one-room table's heading names, if any."""
+    at = re.search(r"@\s*(.+)$", heading or "")
+    if at:
+        return at.group(1).strip(" -–—:·")
+    paren = re.search(r"\(\s*rooms?\s*[:=]?\s*([^)]+)\)", heading or "", re.I)
+    if paren:
+        parts = [p.strip(" -–—:·") for p in re.split(r"[,;/]", paren.group(1)) if p.strip()]
+        physical = [
+            p for p in parts
+            if not re.fullmatch(r"\d{1,2}\s*F", p, re.I) and not _SESSION_LABEL_RE.search(p)
+        ]
+        if physical:
+            return physical[0]
+    return None
+
+
 def _heading_room(heading: str, known: list[str]) -> str | None:
     """A room the heading refers to, when it names one already seen."""
     lowered = heading.lower()
@@ -166,6 +208,7 @@ def _looks_like_person(label: str) -> bool:
 
 def _split_head(line: str) -> tuple[str, int | None]:
     """"6GR (120)" → ("6GR", 120); "TEI (TBD)" → ("TEI", None)."""
+    line = line.strip().rstrip(".").strip()
     match = DURATION_RE.search(line)
     if match:
         return line[: match.start()].strip(" .·-"), int(match.group(1))
@@ -195,21 +238,24 @@ def _is_group_token(label: str) -> bool:
     return token in GROUP_TOKENS
 
 
-BARE_CODE_RE = re.compile(r"^\.?\d{1,2}(?:\.(?:\d{1,2}|x))+$", re.I)
+BARE_CODE_RE = re.compile(r"^\.?(\d{1,2}(?:\.(?:\d{1,2}|x))+)\.?\s*(?:\(\s*(\d{1,3})\s*\))?$", re.I)
 
 
-def _code_list(line: str) -> list[str]:
-    """["9.3.3", "9.3.1"] for a line that is only a list of agenda items.
+def _code_list(line: str) -> list[tuple[str, int | None]]:
+    """[("9.3.3", None), ...] for a line that is only a list of agenda items.
 
-    Sub-chairs often write the item order under a headed block without giving
-    each item its own duration ("R20 A-IoT (120)" / "9.3.3, 9.3.1, 9.3.2").
-    Those codes are the detail of that block and must not be mistaken for a
-    work-area tag, otherwise the block stays undetailed.
+    Sub-chairs often write the item order under a headed block, with or without
+    per-item minutes ("9.3.3, 9.3.1" or "10.8.2(40), 10.8.3(40)"). Those codes
+    are the detail of that block and must not be mistaken for a work-area tag.
     """
-    parts = [p.strip(" .·-") for p in re.split(r"[,;/]", line) if p.strip(" .·-")]
-    if len(parts) < 1 or not all(BARE_CODE_RE.match(p) for p in parts):
-        return []
-    return parts
+    parts = [p.strip(" ·-") for p in re.split(r"[,;/]", line) if p.strip(" .·-")]
+    out: list[tuple[str, int | None]] = []
+    for part in parts:
+        match = BARE_CODE_RE.match(part)
+        if not match:
+            return []
+        out.append((match.group(1), int(match.group(2)) if match.group(2) else None))
+    return out
 
 
 
@@ -232,9 +278,12 @@ def _parse_cell(text: str) -> list[_Segment]:
     work areas inside the same session.
     """
     lines: list[str] = []
+    after_blank: set[int] = set()
     for raw_line in text.split("\n"):
         stripped = raw_line.strip()
         if not stripped:
+            if lines:
+                after_blank.add(len(lines))
             continue
         # "R20 (80)AI/ML (80)" is two stacked labels typed on one line.
         if len(re.findall(r"\(\s*~?\s*\d{1,3}[^)]*\)", stripped)) > 1:
@@ -259,6 +308,9 @@ def _parse_cell(text: str) -> list[_Segment]:
             # A head without its own duration (a plenary note, a bare tag) ends
             # as soon as a timed head follows it.
             return True
+        if current.slots and not any(slot.minutes for slot in current.slots):
+            # "R20 A-IoT (60)" / "9.3.1": the untimed item list completes it.
+            return True
         return allocated >= current.minutes
 
     def tag_finished() -> bool:
@@ -268,23 +320,45 @@ def _parse_cell(text: str) -> list[_Segment]:
             return bool(current.slots)
         return allocated >= current.minutes
 
-    for line in lines:
+    for line_index, line in enumerate(lines):
         codes = _code_list(line)
+        if (
+            codes
+            and current is not None
+            and current.minutes
+            and allocated >= current.minutes
+            and all(m for _, m in codes)
+            and not (
+                current.slots
+                and (first_codes := AGENDA_CODE_RE.findall(current.slots[0].label))
+                and all(code.startswith(first_codes[0] + ".") for code, _ in codes)
+            )
+        ):
+            # Timed items after the head's minutes are used up: next block.
+            current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw="")
+            segments.append(current)
+            allocated = 0
         if codes and current is not None:
             # "9.3.3, 9.3.1, 9.3.2" under a head is the ordered list of agenda
             # items sharing that head's time, not a work-area tag.
-            for code in codes:
+            for code, code_minutes in codes:
                 current.raw += "\n" + code
                 current.slots.append(
-                    _Slot(label=code, minutes=None, group=current_group or current.group)
+                    _Slot(label=code, minutes=code_minutes, group=current_group or current.group)
                 )
+                if code_minutes:
+                    allocated += code_minutes
             continue
 
         label, minutes = _split_head(line)
         if not label:
             continue
         is_item = line.startswith(".")
-        heads_new = not is_item and (_looks_like_person(label) or _is_group_token(label))
+        # Any timed, non-item line ("R20 A-IoT (40)", "Maintenance (80)") opens
+        # a new block once the previous one has used up its minutes.
+        heads_new = not is_item and (
+            _looks_like_person(label) or _is_group_token(label) or minutes is not None
+        )
 
         if not is_item and minutes is None:
             # Bare work-area tag: labels the items that follow.
@@ -298,7 +372,17 @@ def _parse_cell(text: str) -> list[_Segment]:
             continue
 
 
-        if current is None or (heads_new and finished()):
+        # "TEI20 (10)", blank line, "Maintenance (70)": a timed head that had no
+        # items of its own is complete; the next timed head starts a new block.
+        head_after_blank = (
+            line_index in after_blank
+            and not is_item
+            and minutes is not None
+            and current is not None
+            and current.minutes is not None
+            and not current.slots
+        )
+        if current is None or (heads_new and finished()) or head_after_blank:
             lead = label if _looks_like_person(label) else None
             current = _Segment(
                 lead=lead,
@@ -312,6 +396,19 @@ def _parse_cell(text: str) -> list[_Segment]:
             allocated = 0
             continue
 
+        parent_codes = AGENDA_CODE_RE.findall(current.slots[0].label) if current and current.slots else []
+        is_child_of_parent = bool(parent_codes) and any(
+            code.startswith(parent_codes[0] + ".") for code in AGENDA_CODE_RE.findall(label)
+        )
+        if (
+            is_item and minutes and current.minutes and allocated >= current.minutes
+            and not is_child_of_parent
+        ):
+            # A timed item after the head's minutes are used up is the next
+            # block of the same work area ("6GR (60) / .10.6.x (60) / .10.5.1.1 (60)").
+            current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw=line)
+            segments.append(current)
+            allocated = 0
         current.raw += "\n" + line
         current.slots.append(_Slot(label=label, minutes=minutes, group=current_group or current.group))
 
@@ -402,6 +499,31 @@ def parse_block_schedule_docx(
             or re.search(r"\b(?:main\s+session|RAN1\s*#?\s*\d+[a-z-]*)\s+commences\b", text, re.I)
         )
 
+    def room_for_key(key: str, *, name: str = "", fill: str | None = None, main: bool = False,
+                     label: str | None = None) -> Room:
+        """One canonical room per meeting-level identity (mode + colour, or name)."""
+        room_id = f"{meeting_id}-room-{_slug(key)}"
+        room = rooms.get(room_id)
+        if room is None:
+            room = Room(
+                roomId=room_id,
+                meetingId=meeting_id,
+                roomName=name,
+                order=room_order_offset + len(rooms),
+                sourceColor=fill,
+                chairLaneId=key,
+                chairRole="main" if main else None,
+            )
+            rooms[room_id] = room
+        if name and (not room.roomName or len(name) > len(room.roomName)):
+            room.roomName = name
+            room.shortName = name[:24]
+        if main:
+            room.chairRole = "main"
+        if label and not room.sessionLabel:
+            room.sessionLabel = label
+        return room
+
     for child in body:
         tag = child.tag.split("}")[1]
         if tag == "p":
@@ -421,163 +543,70 @@ def parse_block_schedule_docx(
         header = _row_cells(rows[0])
         days = _day_columns(header)
         labels = pending_labels
-        for label in labels:
-            if label not in known_labels:
-                known_labels.append(label)
         heading = pending_heading
         pending_labels, pending_heading = [], ""
         table_index += 1
         if not days:
             continue
 
+        mode = "offline" if "offline" in heading.lower() else "online"
+        # A chair's own table (detailed plan, personal schedule) rather than a
+        # copy of the shared week grid.
+        own_table = not GENERIC_GRID_RE.match(heading or "")
+        single_lane = all(end - start <= 1 for start, end in days.values())
+
         # A few placeholder/TBD cells lose their lane fill in Word. Derive the
         # stable colour for each horizontal lane from the populated cells in
         # the whole table so one formatting omission cannot move a session to
-        # another chair's canonical column.
+        # another room.
         lane_fills: dict[int, dict[str, int]] = {}
         for row in rows[1:]:
             row_cells = _row_cells(row)
             for day_start, day_end in days.values():
                 width = max(1, day_end - day_start)
-                in_day = [
-                    cell
-                    for cell in row_cells[1:]
-                    if cell.col_start < day_end and cell.col_end > day_start and cell.text.strip()
-                ]
-                for cell in in_day:
+                for cell in row_cells[1:]:
+                    if not (cell.col_start < day_end and cell.col_end > day_start and cell.text.strip()):
+                        continue
                     if not cell.fill or re.fullmatch(r"TBD|N/?A", cell.text.strip(), re.I):
                         continue
-                    offset = max(0, cell.col_start - day_start)
-                    lane = min(width - 1, offset)
+                    lane = min(width - 1, max(0, cell.col_start - day_start))
                     counts = lane_fills.setdefault(lane, {})
                     counts[cell.fill] = counts.get(cell.fill, 0) + 1
-        preferred_fills = {
-            lane: max(counts, key=counts.get)
-            for lane, counts in lane_fills.items()
-            if counts
-        }
+        preferred_fills = {lane: max(c, key=c.get) for lane, c in lane_fills.items() if c}
+        ordered_fills: list[str] = []
+        for lane in sorted(preferred_fills):
+            if preferred_fills[lane] not in ordered_fills:
+                ordered_fills.append(preferred_fills[lane])
+        # The coloured room legend above the table lists rooms left to right
+        # in the same order as the coloured lanes.
+        fill_names: dict[str, str] = {}
+        if labels and len(labels) == len(ordered_fills) and not single_lane:
+            fill_names = dict(zip(ordered_fills, labels))
 
-        mode = schedule_mode(heading)
-
-        if mode == "main":
-            # A separate detailed Main table enriches the canonical Main lane
-            # already established by the combined online table. It must reuse
-            # that chair identity rather than create another white lane.
-            existing_main = next((room for room in rooms.values() if room.chairRole == "main"), None)
-            if existing_main is not None:
-                explicit_fill = next(iter(preferred_fills.values()), existing_main.sourceColor)
-                existing_main.sourceColor = existing_main.sourceColor or explicit_fill
-                for row in rows[1:]:
-                    cells = _row_cells(row)
-                    if not cells:
-                        continue
-                    label_text = cells[0].text.replace("\n", " ")
-                    block = BLOCK_RE.search(label_text)
-                    if not block or BREAK_RE.search(label_text):
-                        continue
-                    block_start = _minutes(f"{block.group(1)}:{block.group(2)}")
-                    block_end = _minutes(f"{block.group(3)}:{block.group(4)}")
-                    for day, (day_start, day_end) in days.items():
-                        if day not in day_dates:
-                            continue
-                        cell = next(
-                            (
-                                item
-                                for item in cells[1:]
-                                if item.col_start < day_end
-                                and item.col_end > day_start
-                                and item.text.strip()
-                            ),
-                            None,
-                        )
-                        if cell is None:
-                            continue
-                        sessions.extend(
-                            _sessions_for_cell(
-                                cell.text,
-                                meeting_id=meeting_id,
-                                day=day,
-                                day_date=day_dates[day],
-                                room=existing_main,
-                                block_start=block_start,
-                                block_end=block_end,
-                                source=source,
-                            )
-                        )
-                continue
-
-        def room_for(cell: _Cell, day_start: int, day_end: int, rank: int, count: int) -> Room:
-            width = max(1, day_end - day_start)
-            offset = max(0, cell.col_start - day_start)
-            lane = min(width - 1, offset)
-            if labels and count == len(labels):
-                # Cells split the day evenly across the named rooms.
-                index = rank
-            else:
-                # Uneven merges: place the cell by where it sits in the day.
-                index = min(len(labels) - 1, offset * len(labels) // width) if labels else offset
-            if labels and 0 <= index < len(labels):
-                name = labels[index]
-            elif labels:
-                name = f"Breakout {index + 1}"
-            elif width == 1 and _heading_room(heading, known_labels):
-                # "Detailed schedule for … @Praetorium" is that room's column,
-                # not a separate track.
-                name = _heading_room(heading, known_labels) or ""
-            else:
-                base = re.sub(r"^RAN1#?\d+\s*", "", heading).strip() or f"Track {table_index}"
-                base = re.sub(r"\s*(schedule|sessions?|for)\s*$", "", base, flags=re.I).strip() or base
-                name = base if count <= 1 else f"{base} {index + 1}"
-
-            # In the chair's combined grid a fill colour is the stable identity
-            # of one chair, while its horizontal position changes by day and
-            # between the online/offline tables. Keep named physical rooms on
-            # their name-based identity; otherwise key the canonical lane by
-            # source document + colour.
-            if mode == "offline" and not labels:
-                # Offline is always two plain sessions; pick by order in the day.
-                index = min(1, rank) if count >= 2 else (0 if offset * 2 < width else 1)
-                name = f"Offline Session {index + 1}"
-            has_named_room = bool(labels) or bool(width == 1 and _heading_room(heading, known_labels))
-            # Offline sessions are plain positional columns: colours there do
-            # not identify chairs.
-            source_color = None if mode == "offline" else preferred_fills.get(lane, cell.fill)
-            color_key = source_color or f"position-{index}"
-            if mode == "offline":
-                color_key = f"offline-{index}"
-                lane_names[(mode, color_key)] = f"Offline Session {index + 1}"
-            chair_lane_id = None if has_named_room else f"{source.sourceId}:{color_key}"
-            main = is_main_evidence(cell.text, heading)
-            if chair_lane_id:
-                lane_key = (mode, color_key)
-                if main:
-                    name = "RAN1 Main"
-                elif lane_key in lane_names:
-                    name = lane_names[lane_key]
-                else:
-                    mode_numbers = lane_numbers.setdefault(mode, {})
-                    number = mode_numbers.setdefault(color_key, len(mode_numbers) + 1)
-                    name = f"{mode.capitalize()} Session {number}"
-                    lane_names[lane_key] = name
-            room_id = f"{meeting_id}-room-{_slug(chair_lane_id or name.lower())}"
-            room = rooms.get(room_id)
-            if room is None:
-                room = Room(
-                    roomId=room_id,
-                    meetingId=meeting_id,
-                    roomName=name,
-                    order=room_order_offset + len(rooms),
-                    sourceColor=source_color,
-                    chairLaneId=chair_lane_id,
-                    chairRole="main" if main else ("vice" if chair_lane_id else None),
+        # A table with one column per day is one room's own plan; the heading
+        # names that room ("… @Yeongju A (1F)", "(room: RAN1_Brk#2, Yeongju B)",
+        # "Detailed Schedule for RAN1 Main Session").
+        lane_room: Room | None = None
+        if single_lane:
+            heading_name = _heading_room_name(heading)
+            if re.search(r"\bmain\b", heading, re.I) and not heading_name:
+                lane_room = room_for_key(f"{meeting_id}:main", name="RAN1 Main", main=True)
+            elif heading_name:
+                lane_room = room_for_key(
+                    f"{meeting_id}:name:{norm_room(heading_name)}",
+                    name=heading_name,
+                    label=_session_label(heading),
                 )
-                rooms[room_id] = room
-            elif main:
-                room.roomName = "RAN1 Main"
-                room.shortName = "RAN1 Main"
-                room.sessionLabel = None
-                room.chairRole = "main"
-            return room
+
+        def room_for(cell: _Cell, day_start: int, day_end: int) -> Room:
+            if lane_room is not None:
+                return lane_room
+            width = max(1, day_end - day_start)
+            lane = min(width - 1, max(0, cell.col_start - day_start))
+            fill = cell.fill if cell.fill in ordered_fills else preferred_fills.get(lane, cell.fill)
+            main = mode == "online" and is_main_evidence(cell.text, heading)
+            key = f"{meeting_id}:{mode}:{fill or f'lane{lane}'}"
+            return room_for_key(key, name=fill_names.get(fill or "", ""), fill=fill, main=main)
 
         merged_text: dict[int, str] = {}
         for row in rows[1:]:
@@ -634,23 +663,23 @@ def parse_block_schedule_docx(
                     if cell.col_start < day_end and cell.col_end > day_start
                 ]
                 in_day.sort(key=lambda cell: cell.col_start)
-                if mode == "offline" and len(in_day) == 1:
-                    # One merged cell listing a placeholder per offline session
-                    # ("To be assigned by A / To be assigned by B") is two cells.
+                if mode == "offline" and len(in_day) == 1 and len(ordered_fills) >= 2:
+                    # One merged cell listing a placeholder per offline room
+                    # ("To be assigned by A / To be assigned by B") is one per room.
                     only = in_day[0]
                     parts = [ln for ln in only.text.split("\n") if ln.strip()]
-                    if len(parts) == 2 and all(re.match(r"to be (assigned|decided)", ln.strip(), re.I) for ln in parts):
-                        mid = only.col_start + max(1, (only.col_end - only.col_start) // 2)
+                    if len(parts) == len(ordered_fills) and all(
+                        re.match(r"to be (assigned|decided)", ln.strip(), re.I) for ln in parts
+                    ):
                         in_day = [
-                            _Cell(parts[0], only.col_start, mid, only.fill),
-                            _Cell(parts[1], mid, only.col_end, only.fill),
+                            _Cell(part, only.col_start, only.col_end, fill)
+                            for part, fill in zip(parts, ordered_fills)
                         ]
-                for rank, cell in enumerate(in_day):
+                for cell in in_day:
                     if not cell.text.strip():
                         continue
-                    room = room_for(cell, day_start, day_end, rank, len(in_day))
-                    sessions.extend(
-                        _sessions_for_cell(
+                    room = room_for(cell, day_start, day_end)
+                    produced = _sessions_for_cell(
                             cell.text,
                             meeting_id=meeting_id,
                             day=day,
@@ -660,8 +689,11 @@ def parse_block_schedule_docx(
                             block_end=block_end,
                             source=source,
                         )
-                    )
-
+                    if own_table:
+                        for item in produced:
+                            for ref in item.sources:
+                                ref.contributed = [*ref.contributed, "own-table"]
+                    sessions.extend(produced)
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
     # The same slot written twice (a chair repeating the plenary or their own
@@ -687,6 +719,9 @@ def parse_block_schedule_docx(
     return sorted(rooms.values(), key=lambda r: r.order), [*sessions, *breaks.values()]
 
 
+RANGE_LINE_RE = re.compile(r"^\s*(\d{1,2})[:.](\d{2})\s*(?:-|–|~|to)\s*(\d{1,2})[:.](\d{2})\s*$")
+
+
 def _sessions_for_cell(
     text: str,
     *,
@@ -698,6 +733,37 @@ def _sessions_for_cell(
     block_end: int,
     source: ScheduleSource,
 ) -> list[Session]:
+    """Sessions for one cell. Times are never invented.
+
+    A block is split into agenda items only when the document states minutes
+    for every item and they fit inside the block. Otherwise the block stays
+    whole and lists its items (with any stated minutes) without times.
+    """
+    common = dict(meeting_id=meeting_id, day=day, day_date=day_date, room=room, source=source)
+
+    # Explicit sub-ranges inside the cell ("8:30 - 10:00" … "10:00 - 10:30").
+    lines = text.split("\n")
+    if any(RANGE_LINE_RE.match(line) for line in lines):
+        chunks: list[tuple[int, int, list[str]]] = []
+        for line in lines:
+            match = RANGE_LINE_RE.match(line)
+            if match:
+                chunks.append((
+                    _minutes(f"{match.group(1)}:{match.group(2)}"),
+                    _minutes(f"{match.group(3)}:{match.group(4)}"),
+                    [],
+                ))
+            elif chunks:
+                chunks[-1][2].append(line)
+        out: list[Session] = []
+        for start, end, body in chunks:
+            start, end = max(start, block_start), min(end, block_end)
+            if start < end and any(line.strip() for line in body):
+                out.extend(
+                    _sessions_for_cell("\n".join(body), block_start=start, block_end=end, **common)
+                )
+        return out
+
     segments = _parse_cell(text)
     if not segments:
         return []
@@ -705,21 +771,36 @@ def _sessions_for_cell(
     total = block_end - block_start
 
     def seg_length(seg: _Segment) -> int | None:
-        slot_sum = sum(slot.minutes or 0 for slot in seg.slots)
-        if seg.minutes and slot_sum:
-            return max(seg.minutes, slot_sum)
-        return seg.minutes or slot_sum or None
+        if seg.minutes:
+            return seg.minutes
+        minutes = [slot.minutes for slot in seg.slots]
+        if minutes and all(minutes):
+            return sum(m or 0 for m in minutes)
+        return None
 
     lengths = [seg_length(seg) for seg in segments]
+    known = sum(length or 0 for length in lengths)
     unknown = [i for i, length in enumerate(lengths) if not length]
-    remaining_default = max(0, total - sum(length or 0 for length in lengths)) // len(unknown) if unknown else 0
+    if len(segments) == 1:
+        lengths = [min(total, lengths[0]) if lengths[0] and lengths[0] <= total else total]
+        placeable = True
+    else:
+        placeable = known <= total and (not unknown or (len(unknown) == 1 and total - known > 0))
+        if placeable and unknown:
+            lengths[unknown[0]] = total - known
 
-    out: list[Session] = []
+    if not placeable:
+        # Stated minutes don't fit, or several parts have no time: one block.
+        note = None
+        if not unknown:
+            note = f"Minutes don't add up: items total {known} min, block is {total} min."
+        return [_whole_block(segments, block_start, block_end, note=note, **common)]
+
+    out = []
     cursor = block_start
-    for segment, known_length in zip(segments, lengths):
-        length = known_length or remaining_default or max(0, block_end - cursor)
+    for segment, length in zip(segments, lengths):
         seg_start = cursor
-        seg_end = min(block_end, seg_start + length)
+        seg_end = min(block_end, seg_start + (length or 0))
         cursor = seg_end
 
         explicit = STARTS_AT_RE.search(segment.raw)
@@ -727,62 +808,93 @@ def _sessions_for_cell(
             seg_start = _minutes(f"{explicit.group(1)}:{explicit.group(2)}")
             seg_end = min(block_end, seg_start + (segment.minutes or 60))
             cursor = max(cursor, seg_end)
+        if seg_end <= seg_start:
+            continue
 
         if not segment.slots:
-            title = segment.group or segment.lead or segment.raw.split("\n")[0]
+            first_line = segment.raw.split("\n")[0]
+            title = (
+                first_line
+                if re.search(r"commences|closing|close", first_line, re.I)
+                else segment.group or segment.lead or first_line
+            )
             body = [line for line in segment.raw.split("\n")[1:] if line.strip()]
             out.append(
                 _make_session(
-                    meeting_id=meeting_id,
-                    day=day,
-                    day_date=day_date,
-                    room=room,
-                    start=seg_start,
-                    end=seg_end,
-                    title=title,
-                    group=segment.group,
-                    lead=segment.lead,
-                    note="\n".join(body) or None,
-                    source=source,
+                    start=seg_start, end=seg_end, title=title, group=segment.group,
+                    lead=segment.lead, note="\n".join(body) or None, **common,
                 )
             )
             continue
 
-        # Each agenda item gets its own share of the block, back to back.
-        slot_cursor = seg_start
         span = seg_end - seg_start
-        sized = [slot.minutes for slot in segment.slots if slot.minutes]
-        fallback = (
-            max(5, (span - sum(sized)) // max(1, len(segment.slots) - len(sized)))
-            if len(segment.slots) > len(sized)
-            else 0
-        )
-        for slot in segment.slots:
-            length = slot.minutes or fallback or max(5, span // len(segment.slots))
-            slot_start = slot_cursor
-            slot_end = min(block_end, slot_start + length)
-            slot_cursor = slot_end
-            if slot_end <= slot_start:
-                break
+        stated = [slot.minutes for slot in segment.slots]
+        if len(segment.slots) > 1 and all(stated) and sum(m or 0 for m in stated) <= span:
+            # Every item has stated minutes and they fit: back to back.
+            slot_cursor = seg_start
+            for slot in segment.slots:
+                slot_end = slot_cursor + (slot.minutes or 0)
+                out.append(
+                    _make_session(
+                        start=slot_cursor, end=slot_end, title=slot.label,
+                        group=slot.group or segment.group, lead=segment.lead, note=None, **common,
+                    )
+                )
+                slot_cursor = slot_end
+            continue
+        if len(segment.slots) == 1:
+            slot = segment.slots[0]
             out.append(
                 _make_session(
-                    meeting_id=meeting_id,
-                    day=day,
-                    day_date=day_date,
-                    room=room,
-                    start=slot_start,
-                    end=slot_end,
-                    title=slot.label,
-                    group=slot.group or segment.group,
-                    lead=segment.lead,
-                    note=None,
-                    source=source,
+                    start=seg_start, end=seg_end, title=slot.label,
+                    group=slot.group or segment.group, lead=segment.lead, note=None, **common,
                 )
-
             )
+            continue
+        note = None
+        if all(stated):
+            note = f"Minutes don't add up: items total {sum(m or 0 for m in stated)} min, block is {span} min."
+        out.append(_whole_block([segment], seg_start, seg_end, note=note, **common))
     return out
 
 
+def _whole_block(
+    segments: list[_Segment],
+    start: int,
+    end: int,
+    *,
+    note: str | None,
+    meeting_id: str,
+    day: str,
+    day_date: str,
+    room: Room,
+    source: ScheduleSource,
+) -> Session:
+    """One untimed block listing every agenda item it covers, in document order."""
+    codes: list[str] = []
+    breakdown: list[AgendaSlot] = []
+    for segment in segments:
+        for code in AGENDA_CODE_RE.findall(segment.group or ""):
+            if code not in codes:
+                codes.append(code)
+        for slot in segment.slots:
+            slot_codes = AGENDA_CODE_RE.findall(slot.label)
+            for code in slot_codes:
+                if code not in codes:
+                    codes.append(code)
+            label = AGENDA_CODE_RE.sub("", slot.label).strip(" .·-") or slot.label
+            breakdown.append(
+                AgendaSlot(code=slot_codes[0] if slot_codes else None, label=label, minutes=slot.minutes)
+            )
+    first = segments[0]
+    title = first.group or first.lead or (first.slots[0].label if first.slots else "Session")
+    session = _make_session(
+        meeting_id=meeting_id, day=day, day_date=day_date, room=room, start=start, end=end,
+        title=title, group=first.group, lead=first.lead, note=note, source=source,
+    )
+    session.agendaItems = codes or session.agendaItems
+    session.agendaBreakdown = breakdown if len(breakdown) > 1 else []
+    return session
 def _make_session(
     *,
     meeting_id: str,
@@ -800,6 +912,8 @@ def _make_session(
     clean = re.sub(r"\s+", " ", title).strip(" .·-") or group or "Session"
     codes = AGENDA_CODE_RE.findall(clean)
     label = AGENDA_CODE_RE.sub("", clean).strip(" .·-") if codes else clean
+    if codes:
+        label = re.sub(r"^AI\s+", "", label).strip()
     kind = "plenary" if re.search(r"commences|plenary|closing|session reports", clean, re.I) else "session"
     group_label = re.sub(r"\s+", " ", group).strip() or (codes[0].split(".")[0] if codes else clean)
     return Session(

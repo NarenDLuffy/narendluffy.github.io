@@ -38,7 +38,7 @@ from .models import (
     SessionSourceRef,
 )
 
-MIN_FRAGMENT_MINUTES = 5
+MIN_FRAGMENT_MINUTES = 15
 
 
 def _mins(hhmm: str) -> int:
@@ -278,6 +278,7 @@ def _resolve_room_day(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
     non_sessions = [b for b in blocks if b.kind not in {"session", "plenary"}]
 
     session_blocks, conflicts = _merge_duplicates(session_blocks)
+    session_blocks = _resolve_same_slot(session_blocks)
     session_blocks.sort(key=lambda b: (b.start, b.end, b.order))
 
     # Every atomic block that resolves an agenda item is potential detail for
@@ -312,6 +313,9 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     ranked = sorted(
         blocks,
         key=lambda b: (
+            b.derivation == "split-from-parent",
+            -_own(b),
+            -len(b.sourceIds),
             -b.specificity,
             b.end - b.start,
             -b.confidence,
@@ -324,6 +328,9 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         clash = [o for o in kept if block.start < o.end and o.start < block.end]
         # Identical slots with different agenda items are a reported conflict,
         # not two tilings of the same time - both stay visible.
+        if clash and block.derivation == "split-from-parent":
+            # Leftover time of a broad block never sits on top of a real block.
+            continue
         if clash and not all(
             o.start == block.start and o.end == block.end for o in clash
         ):
@@ -331,6 +338,63 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         kept.append(block)
     kept.sort(key=lambda b: (b.start, b.end, b.order))
     return kept
+
+
+def _own(block: CandidateBlock) -> int:
+    """1 when a chair's own table (not a copy of the shared grid) states the block."""
+    origin = block.origin
+    if origin is None:
+        return 0
+    return int(any("own-table" in ref.contributed for ref in origin.sources))
+
+
+def _base_code(code: str) -> str:
+    return re.sub(r"(\.x)+$", "", code, flags=re.I)
+
+
+def _codes_compatible(broad: CandidateBlock, fine: CandidateBlock) -> bool:
+    """Every item of the broader block is the same as, or a parent of, the finer one's."""
+    if not broad.agendaItems:
+        return True
+    fine_codes = [_base_code(c) for c in fine.agendaItems]
+    return all(
+        any(f == _base_code(b) or is_descendant(f, _base_code(b)) for f in fine_codes)
+        for b in broad.agendaItems
+    )
+
+
+def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
+    """Overlay of several files on one exact slot: keep the most detailed.
+
+    "Sensing 10.8.x" in the grid and "6G ISAC 10.8.3, 10.8.1" in the chair's
+    own table describe the same block; the finer one wins and both files stay
+    as provenance. Incompatible claims keep the best-evidenced block visible and
+    note what the other file says, so nothing is silently dropped.
+    """
+    by_slot: dict[tuple[int, int], list[CandidateBlock]] = {}
+    for block in blocks:
+        by_slot.setdefault((block.start, block.end), []).append(block)
+    out: list[CandidateBlock] = []
+    for group in by_slot.values():
+        if len(group) == 1:
+            out.extend(group)
+            continue
+        group.sort(key=lambda b: (-_own(b), -len(b.sourceIds), -b.specificity, -len(b.agendaItems)))
+        keeper = group[0]
+        for other in group[1:]:
+            finer, broader = (other, keeper) if other.specificity > keeper.specificity else (keeper, other)
+            if _codes_compatible(broader, finer):
+                if finer is other:
+                    other.sourceIds = list(dict.fromkeys([*other.sourceIds, *keeper.sourceIds]))
+                    keeper = other
+                else:
+                    keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
+                continue
+            said = ", ".join(other.agendaItems) or other.topic
+            keeper.note = _join_note(keeper.note, f"Another schedule file lists {said} here")
+            keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
+        out.append(keeper)
+    return out
 
 
 def _covering(container: CandidateBlock, detailed: list[CandidateBlock]) -> list[CandidateBlock]:
@@ -529,6 +593,15 @@ def _to_session(block: CandidateBlock) -> Session:
                 endTime=block.endTime,
             )
         ]
+    # An untimed block keeps the items (and any stated minutes) it lists.
+    if (
+        origin
+        and origin.agendaBreakdown
+        and not any(slot.startTime for slot in origin.agendaBreakdown)
+        and block.startTime == origin.startTime
+        and block.endTime == origin.endTime
+    ):
+        session.agendaBreakdown = list(origin.agendaBreakdown)
     session.derivation = block.derivation  # type: ignore[arg-type]
     session.confidence = block.confidence
     session.parentAgendaItem = block.parentAgendaItem
