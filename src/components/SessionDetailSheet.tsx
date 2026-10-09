@@ -6,6 +6,7 @@ import { agendaTitle, roomLabelById, roomStyle } from "@/lib/rooms";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useDeadlines } from "@/hooks/useDeadlines";
 import { cn } from "@/lib/utils";
+import { RoomColleagues } from "@/components/RoomColleagues";
 import {
   Sheet,
   SheetContent,
@@ -61,6 +62,13 @@ export function SessionDetailSheet({
             </SheetHeader>
 
             <div className="mt-4 space-y-4 px-4 pb-6">
+              {session.roomId ? (
+                <RoomColleagues
+                  meetingId={bundle.meeting.id}
+                  roomId={session.roomId}
+                  sessionId={session.sessionId}
+                />
+              ) : null}
               {breakdown.length > 0 ? (
                 <section>
                   <h4 className="mb-1.5 text-xs font-semibold uppercase text-muted-foreground">
