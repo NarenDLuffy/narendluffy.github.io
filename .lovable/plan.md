@@ -21,7 +21,7 @@ Offline - Offline Session 2           (same room across all 3 files)
    - Always take the latest version of each of the three families; show all three filenames in "Schedule based on".
 2. **Main file = the skeleton**: times, days, and the white / grey / orange online columns plus the two offline columns.
 3. **Room names from the chair files**
-   - Read "Room:" lines in Hiroki's and Sorour's files and attach them to the matching coloured online column (Hiroki = orange, Sorour = grey), shown as e.g. "Yeongju B, 1F (RAN1 Brk2)".
+   - Read "Room:" lines in all three files (main, Hiroki, Sorour — any of them may have them) and attach each to the matching coloured online column (Hiroki = orange, Sorour = grey), shown as e.g. "Yeongju B, 1F (RAN1 Brk2)".
    - Offline room names found in any file are applied to Offline Session 1/2.
    - Never create extra columns: everything maps into the 5 rooms above.
 4. **Detailed schedule from the chair files**
