@@ -1,9 +1,9 @@
 import { roomLabel, roomStyle } from "@/lib/rooms";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, MapPin, Users } from "lucide-react";
+import { ArrowLeft, MapPin } from "lucide-react";
 import { minutesOf } from "@/services/scheduleService";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
-import { useCompanyPresence } from "@/hooks/useCompanyPresence";
+import { RoomColleagues } from "@/components/RoomColleagues";
 import { SessionCard } from "@/components/SessionCard";
 import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 
@@ -30,7 +30,6 @@ export const Route = createFileRoute("/rooms/$roomId")({
 function RoomPage() {
   const { roomId } = Route.useParams();
   const { meeting, bundle, isLoading, clock } = useActiveMeeting();
-  const { joined, presence, myRoomId, enter, exit } = useCompanyPresence(meeting?.id);
 
   if (isLoading) return <LoadingState label="Loading room…" />;
   if (!meeting) return <NoMeetingState />;
@@ -61,8 +60,6 @@ function RoomPage() {
       )
     : undefined;
   const next = todays.find((s) => minutesOf(s.startTime) > (isToday ? clock.nowMinutes : -1));
-  const here = presence.filter((p) => p.roomId === roomId);
-  const iAmHere = myRoomId === roomId;
 
   return (
     <div className="space-y-5">
