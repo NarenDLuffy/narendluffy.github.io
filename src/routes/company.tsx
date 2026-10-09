@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Users } from "lucide-react";
+import { BellRing, Users } from "lucide-react";
+import { summonColleague } from "@/hooks/useCompanyAlerts";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useCompanyPresence } from "@/hooks/useCompanyPresence";
 import { useBookmarks } from "@/hooks/useBookmarks";
@@ -146,9 +147,25 @@ function CompanyPage() {
                     >
                       {roomName(roomId)}
                     </Link>
-                    <p className="text-xs text-muted-foreground">
-                      {people.map((p) => p.displayName || "Colleague").join(", ")}
-                    </p>
+                    <div className="mt-1 flex flex-wrap gap-1.5">
+                      {people.map((p) =>
+                        p.displayName && p.userId !== identity.userId && myRoomId ? (
+                          <button
+                            key={p.userId}
+                            type="button"
+                            onClick={() => void callToMyRoom(p.displayName!)}
+                            className="inline-flex min-h-9 items-center gap-1 rounded-md border border-warn px-2 text-xs font-medium"
+                          >
+                            <BellRing className="size-3.5 text-warn" />
+                            {p.displayName}
+                          </button>
+                        ) : (
+                          <span key={p.userId} className="rounded-md border border-border px-2 py-1 text-xs">
+                            {p.displayName || "Colleague"}
+                          </span>
+                        ),
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>

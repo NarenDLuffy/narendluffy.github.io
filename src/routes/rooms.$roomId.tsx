@@ -100,7 +100,7 @@ function RoomPage() {
         )}
       </section>
 
-      <RoomColleagues meetingId={meeting.id} roomId={room.roomId} sessionId={live?.sessionId} />
+      <RoomColleagues meetingId={meeting.id} roomId={room.roomId} sessionId={live?.sessionId} roomLabel={roomLabel(room)} />
 
       <section className="space-y-2">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
