@@ -56,6 +56,7 @@ export function usePushNotifications() {
     if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window))
       return "unsupported";
     if (!import.meta.env.PROD || isPreviewHost()) return "preview";
+    if (isIosNotInstalled()) return "needsInstall";
     if (Notification.permission === "denied") return "blocked";
     const reg = await navigator.serviceWorker.getRegistration(PUSH_SW_PATH);
     const sub = reg ? await reg.pushManager.getSubscription() : null;
