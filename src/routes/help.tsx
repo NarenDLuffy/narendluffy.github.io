@@ -213,6 +213,43 @@ function HelpPage() {
           </Link>
         </Section>
 
+        <Section title="What this app stores">
+          <p>
+            RAN1 Live! has no accounts, no passwords and no tracking. Here is everything it
+            stores, in plain terms:
+          </p>
+          <ul className="list-disc space-y-1 pl-4">
+            <li>
+              <strong>On your own device:</strong> your bookmarks, followed agenda items, read
+              state, deadlines, display name and check-in live in your browser storage. Clearing
+              site data resets them.
+            </li>
+            <li>
+              <strong>Your name and room check-ins</strong> are stored on the server so colleagues
+              can see who is where. A check-in expires automatically after two hours without
+              activity and is scoped to one meeting. Your location is never used.
+            </li>
+            <li>
+              <strong>Your company code is never stored as text.</strong> Only a one-way scrambled
+              (hashed) version is kept, so even someone reading the database cannot tell which
+              company codes are in use.
+            </li>
+            <li>
+              <strong>Notification registrations</strong> are per device: a unique push address
+              your browser creates, plus two encryption keys used to deliver the alert. No device
+              model, browser, operating system or location is stored — and you can turn it off per
+              device at any time from the Company page.
+            </li>
+            <li>
+              <strong>"Colleague needed" alerts</strong> are stored for 10 minutes, then deleted.
+            </li>
+            <li>
+              <strong>Nothing else:</strong> no analytics on individuals, no advertising, no data
+              shared with anyone outside your company group.
+            </li>
+          </ul>
+        </Section>
+
         <Section title="Changes">
           <p>
             A diff feed: sessions that moved, rooms that changed, agenda items added or dropped
