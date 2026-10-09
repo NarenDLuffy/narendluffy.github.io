@@ -370,7 +370,10 @@ def parse_schedule_sources(
         sessions.extend(parsed_sessions)
 
 
-    rooms, sessions = _name_tracks(rooms, sessions)
+    if any((room.chairLaneId or "").startswith(f"{meeting.id}:") for room in rooms):
+        rooms, sessions = _resolve_rooms(meeting.id, rooms, sessions)
+    else:
+        rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
     order = {room.roomId: room.order for room in rooms}
     result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
