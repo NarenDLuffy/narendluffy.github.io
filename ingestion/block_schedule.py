@@ -800,7 +800,12 @@ def _sessions_for_cell(
             continue
 
         if not segment.slots:
-            title = segment.group or segment.lead or segment.raw.split("\n")[0]
+            first_line = segment.raw.split("\n")[0]
+            title = (
+                first_line
+                if re.search(r"commences|closing|close", first_line, re.I)
+                else segment.group or segment.lead or first_line
+            )
             body = [line for line in segment.raw.split("\n")[1:] if line.strip()]
             out.append(
                 _make_session(
