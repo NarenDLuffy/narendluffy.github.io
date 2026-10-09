@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T11:49:35Z",
+  "generatedAt": "2026-10-09T16:19:36Z",
   "meetingId": "ran1-124",
   "sessions": [
     {
@@ -21,10 +21,6 @@
       "status": "scheduled",
       "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -93,10 +89,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -128,10 +120,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -173,10 +161,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -217,32 +201,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_mon_a1_1100_1300_remembrance-gathering",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "Remembrance gathering",
-      "topicKey": "d5c31418",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Remembrance gathering",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -318,10 +276,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -494,10 +448,6 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -537,10 +487,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -659,10 +605,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -722,10 +664,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -789,10 +727,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -853,10 +787,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -986,12 +916,12 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_mon_a1_1510_1550_ai-8",
+      "sessionId": "ran1-124_mon_a1_1510_1630_ai-8",
       "meetingId": "ran1-124",
       "date": "2026-02-09",
       "day": "Monday",
       "startTime": "15:10",
-      "endTime": "15:50",
+      "endTime": "16:30",
       "roomId": "ran1-124-room-f29bc91b",
       "roomName": "A1",
       "topic": "AI 8",
@@ -1003,12 +933,7 @@
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
-      "note": "Detailed timing not available",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1018,9 +943,9 @@
           "contributed": []
         }
       ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
     },
     {
       "sessionId": "ran1-124_mon_j2_1510_1550_10.1",
@@ -1042,10 +967,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1079,10 +1000,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1204,10 +1121,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -1249,35 +1162,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_mon_a1_1550_1630_8.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "15:50",
-      "endTime": "16:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI  AI/ML",
-      "topicKey": "bb05e2aa",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.7 R20 NTN-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_mon_j2_1550_1630_ntn-iot",
       "meetingId": "ran1-124",
       "date": "2026-02-09",
@@ -1295,10 +1179,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1331,10 +1211,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1430,10 +1306,6 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -1473,10 +1345,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1578,31 +1446,35 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_mon_a1_1700_1740_10.3.2",
+      "sessionId": "ran1-124_mon_a1_1700_1800_10.3.1",
       "meetingId": "ran1-124",
       "date": "2026-02-09",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "17:40",
+      "endTime": "18:00",
       "roomId": "ran1-124-room-f29bc91b",
       "roomName": "A1",
-      "topic": "AI  6GR Modulation",
-      "topicKey": "39e95c90",
+      "topic": "Channel coding",
+      "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.3.2"
+        "10.3.1"
       ],
       "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
+      "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -1649,10 +1521,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1712,10 +1580,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1777,10 +1641,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -1866,10 +1726,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -1881,35 +1737,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_mon_a1_1740_1830_9.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "17:40",
-      "endTime": "18:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI  R20 MIMO",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
@@ -1968,6 +1795,39 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124_mon_a1_1800_1840_10.3.2",
+      "meetingId": "ran1-124",
+      "date": "2026-02-09",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "18:40",
+      "roomId": "ran1-124-room-f29bc91b",
+      "roomName": "A1",
+      "topic": "Modulation",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124_mon_a3_1800_1930_a-iot",
       "meetingId": "ran1-124",
       "date": "2026-02-09",
@@ -1984,10 +1844,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2022,10 +1878,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2057,10 +1909,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2094,10 +1942,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2109,35 +1953,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_mon_a1_1830_1850_9.2.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "18:30",
-      "endTime": "18:50",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "9.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.2",
       "detailAvailable": true
     },
     {
@@ -2312,6 +2127,36 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-124_mon_a1_1840_1930_mimo",
+      "meetingId": "ran1-124",
+      "date": "2026-02-09",
+      "day": "Monday",
+      "startTime": "18:40",
+      "endTime": "19:30",
+      "roomId": "ran1-124-room-f29bc91b",
+      "roomName": "A1",
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "R20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-124_mon_j2_1840_1930_10.7.1",
       "meetingId": "ran1-124",
       "date": "2026-02-09",
@@ -2331,10 +2176,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2369,10 +2210,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2384,35 +2221,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_mon_a1_1850_1920_9.2.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "18:50",
-      "endTime": "19:20",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "9.2.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.2",
       "detailAvailable": true
     },
     {
@@ -2436,10 +2244,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2452,41 +2256,6 @@
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_mon_a1_1920_1930_mimo",
-      "meetingId": "ran1-124",
-      "date": "2026-02-09",
-      "day": "Monday",
-      "startTime": "19:20",
-      "endTime": "19:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "MIMO",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-5f1586e4",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.75,
-      "detailAvailable": false
     },
     {
       "sessionId": "ran1-124_tue_f1-f2-f3_0830_0910_10.5.4.1",
@@ -2507,10 +2276,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2631,10 +2396,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2690,10 +2451,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2756,10 +2513,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -2825,10 +2578,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -2840,34 +2589,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_0830_1010_ai-8",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "10:10",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI 8",
-      "topicKey": "14e97363",
-      "agendaItems": [
-        "10.9"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -2943,10 +2664,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3006,10 +2723,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -3103,10 +2816,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3141,10 +2850,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3176,10 +2881,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -3214,10 +2915,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -3282,10 +2979,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3296,35 +2989,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1010_1030_8.5",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "10:10",
-      "endTime": "10:30",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI  NES",
-      "topicKey": "14e97363",
-      "agendaItems": [
-        "8.5"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 6",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
       "parentAgendaItem": "8",
       "detailAvailable": true
     },
@@ -3346,10 +3010,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -3392,10 +3052,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -3512,10 +3168,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3571,10 +3223,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -3638,10 +3286,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3703,10 +3347,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3718,35 +3358,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1100_1140_9.7",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI  R20 NTN-IoT",
-      "topicKey": "65fd462c",
-      "agendaItems": [
-        "9.7"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.6 R20 NTN-NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
@@ -3849,10 +3460,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3937,10 +3544,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -3962,35 +3565,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_tue_session-session-1_1140_1220_10.7.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI  6GR NTN",
-      "topicKey": "65fd462c",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.6 R20 NTN-NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_tue_f1-f2-f3_1150_1230_10.5.3.2",
       "meetingId": "ran1-124",
       "date": "2026-02-10",
@@ -4009,10 +3583,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -4075,10 +3645,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4112,10 +3678,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -4208,10 +3770,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4299,10 +3857,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4343,10 +3897,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4381,10 +3931,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4416,10 +3962,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -4462,10 +4004,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -4586,10 +4124,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4645,10 +4179,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -4709,10 +4239,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4772,10 +4298,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -4794,35 +4316,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1430_1530_9.1.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI",
-      "topicKey": "cee2b274",
-      "agendaItems": [
-        "9.1.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.1. R20 AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.1",
       "detailAvailable": true
     },
     {
@@ -4962,10 +4455,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5078,10 +4567,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5092,35 +4577,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1530_1630_9.1.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI",
-      "topicKey": "cee2b274",
-      "agendaItems": [
-        "9.1.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.1. R20 AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.1",
       "detailAvailable": true
     },
     {
@@ -5142,10 +4598,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -5181,10 +4633,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5219,10 +4667,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5254,10 +4698,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -5300,10 +4740,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -5424,10 +4860,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5487,10 +4919,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5549,10 +4977,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -5615,10 +5039,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5629,35 +5049,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1700_1740_10.3.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "17:40",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI  6GR Modulation",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
     {
@@ -5681,10 +5072,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5696,35 +5083,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1740_1830_9.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "17:40",
-      "endTime": "18:30",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI  R20 MIMO",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
@@ -5746,10 +5104,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -5897,10 +5251,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -5932,10 +5282,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -5970,10 +5316,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6007,10 +5349,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6022,35 +5360,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_tue_session-session-1_1830_1920_9.2.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-10",
-      "day": "Tuesday",
-      "startTime": "18:30",
-      "endTime": "19:20",
-      "roomId": "ran1-124-room-ef772605",
-      "roomName": "Session Session 1",
-      "topic": "AI",
-      "topicKey": "39e95c90",
-      "agendaItems": [
-        "9.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 10.3.1 6GR Channel coding",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.2",
       "detailAvailable": true
     },
     {
@@ -6157,10 +5466,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6194,10 +5499,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6230,10 +5531,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6269,10 +5566,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6305,10 +5598,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6408,7 +5697,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_a1_0830_0950_9.2.2",
+      "sessionId": "ran1-124_wed_a1_0830_0950_mimo",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
       "day": "Wednesday",
@@ -6416,24 +5705,25 @@
       "endTime": "09:50",
       "roomId": "ran1-124-room-f29bc91b",
       "roomName": "A1",
-      "topic": "AI",
-      "topicKey": "92d44bc4",
-      "agendaItems": [
-        "9.2.2"
-      ],
+      "topic": "MIMO",
+      "topicKey": "2bfc3eac",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "AI 9.2 R20 MIMO",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.2",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -6479,10 +5769,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6543,10 +5829,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6605,10 +5887,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6705,10 +5983,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6825,10 +6099,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -6862,10 +6132,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -6958,10 +6224,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7024,10 +6286,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7062,10 +6320,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7097,10 +6351,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -7143,10 +6393,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7263,10 +6509,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7322,10 +6564,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7426,40 +6664,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_j2_1100_1200_10.4",
-      "meetingId": "ran1-124",
-      "date": "2026-02-11",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-124-room-bf263578",
-      "roomName": "J2",
-      "topic": "10.4",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.4"
-      ],
-      "agendaBreakdown": [],
-      "sessionLead": "Xiaodong",
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_wed_j2_1100_1200_10.9",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
@@ -7481,6 +6685,36 @@
       "sources": [
         {
           "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_wed_j2_1100_1200_10.4",
+      "meetingId": "ran1-124",
+      "date": "2026-02-11",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran1-124-room-bf263578",
+      "roomName": "J2",
+      "topic": "10.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Xiaodong",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
@@ -7534,10 +6768,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7598,10 +6828,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7721,10 +6947,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7756,10 +6978,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7793,10 +7011,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -7832,16 +7046,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -7892,10 +7102,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7930,10 +7136,6 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -7952,39 +7154,6 @@
       ],
       "derivation": "direct",
       "confidence": 0.85,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_wed_f1-f2-f3_1430_1510_10.4",
-      "meetingId": "ran1-124",
-      "date": "2026-02-11",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-124-room-ee3be21e",
-      "roomName": "F1+F2+F3",
-      "topic": "10.4",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
       "detailAvailable": true
     },
     {
@@ -8008,6 +7177,35 @@
       "sources": [
         {
           "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_wed_f1-f2-f3_1430_1510_10.4",
+      "meetingId": "ran1-124",
+      "date": "2026-02-11",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "15:10",
+      "roomId": "ran1-124-room-ee3be21e",
+      "roomName": "F1+F2+F3",
+      "topic": "10.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.4"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
@@ -8104,32 +7302,35 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_a1_1430_1530_9.1.1",
+      "sessionId": "ran1-124_wed_a1_1430_1630_ai-ml",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
       "day": "Wednesday",
       "startTime": "14:30",
-      "endTime": "15:30",
+      "endTime": "16:30",
       "roomId": "ran1-124-room-f29bc91b",
       "roomName": "A1",
-      "topic": "AI",
-      "topicKey": "fc818fe4",
+      "topic": "AI/ML",
+      "topicKey": "2bfc3eac",
       "agendaItems": [
-        "9.1.1"
+        "10.9"
       ],
       "agendaBreakdown": [],
-      "group": "AI 9.1 R20 AI/ML",
+      "group": "R20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
+          "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.1",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -8176,10 +7377,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -8304,10 +7501,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -8394,10 +7587,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -8490,10 +7679,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -8622,35 +7807,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_a1_1530_1630_9.1.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-11",
-      "day": "Wednesday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI",
-      "topicKey": "fc818fe4",
-      "agendaItems": [
-        "9.1.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 9.1 R20 AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.1",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_wed_a3_1530_1630_coverage",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
@@ -8668,10 +7824,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -8704,10 +7856,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -8743,10 +7891,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -8779,10 +7923,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -8813,10 +7953,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -8859,10 +7995,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -8981,16 +8113,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -9039,10 +8167,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9102,10 +8226,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9167,10 +8287,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9243,40 +8359,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_a1_1730_1750_10.3.2",
-      "meetingId": "ran1-124",
-      "date": "2026-02-11",
-      "day": "Wednesday",
-      "startTime": "17:30",
-      "endTime": "17:50",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.85,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": false
-    },
-    {
       "sessionId": "ran1-124_wed_a1_1730_1750_10.3.1",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
@@ -9307,6 +8389,36 @@
       "detailAvailable": false
     },
     {
+      "sessionId": "ran1-124_wed_a1_1730_1750_10.3.2",
+      "meetingId": "ran1-124",
+      "date": "2026-02-11",
+      "day": "Wednesday",
+      "startTime": "17:30",
+      "endTime": "17:50",
+      "roomId": "ran1-124-room-f29bc91b",
+      "roomName": "A1",
+      "topic": "Modulation",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Detailed timing not available",
+      "sources": [
+        {
+          "sourceId": "ran1-124-3873961c",
+          "contributed": []
+        }
+      ],
+      "derivation": "split-from-parent",
+      "confidence": 0.8,
+      "parentAgendaItem": "10.3",
+      "detailAvailable": false
+    },
+    {
       "sessionId": "ran1-124_wed_j2_1740_1830_10.7.1",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
@@ -9326,10 +8438,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9401,39 +8509,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-11",
-      "day": "Wednesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-124-room-ee3be21e",
-      "roomName": "F1+F2+F3",
-      "topic": "10.1",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.9",
       "meetingId": "ran1-124",
       "date": "2026-02-11",
@@ -9454,6 +8529,35 @@
       "sources": [
         {
           "sourceId": "ran1-124-5f1586e4",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.1",
+      "meetingId": "ran1-124",
+      "date": "2026-02-11",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-124-room-ee3be21e",
+      "roomName": "F1+F2+F3",
+      "topic": "10.1",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
@@ -9538,10 +8642,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -9572,10 +8672,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -9605,10 +8701,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9641,10 +8733,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -9675,10 +8763,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -9712,16 +8796,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -9803,16 +8883,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -9833,16 +8909,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -9866,16 +8938,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -9897,10 +8965,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
@@ -9936,16 +9000,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -9969,16 +9029,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10002,16 +9058,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -10095,16 +9147,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10126,16 +9174,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10159,16 +9203,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10192,16 +9232,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -10223,10 +9259,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -10270,16 +9302,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -10359,16 +9387,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10389,16 +9413,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10422,16 +9442,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10456,16 +9472,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -10487,16 +9499,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10577,16 +9585,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10611,16 +9615,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -10645,16 +9645,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.6",
       "detailAvailable": true
     },
@@ -10736,16 +9732,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10826,16 +9818,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10916,16 +9904,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -10947,10 +9931,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -10994,16 +9974,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -11085,16 +10061,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -11118,16 +10090,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -11152,16 +10120,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -11183,10 +10147,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
@@ -11276,16 +10236,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
@@ -11310,16 +10266,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -11343,16 +10295,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.6",
       "detailAvailable": true
     },
@@ -11374,16 +10322,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -11404,10 +10348,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
@@ -11503,16 +10443,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -11537,16 +10473,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -11568,10 +10500,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -11615,16 +10543,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -11706,16 +10630,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.7",
       "detailAvailable": true
     },
@@ -11737,16 +10657,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -11770,16 +10686,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -11801,10 +10713,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
@@ -11900,16 +10808,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
@@ -11934,16 +10838,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -11965,16 +10865,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -11998,16 +10894,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -12089,16 +10981,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5",
       "detailAvailable": true
     },
@@ -12181,16 +11069,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -12215,16 +11099,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -12247,16 +11127,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10",
       "detailAvailable": true
     },
@@ -12278,16 +11154,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -12369,16 +11241,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
@@ -12402,16 +11270,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -12472,24 +11336,25 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_fri_a1_0830_0930_nr-ntn",
+      "sessionId": "ran1-124_fri_a1_0830_1030_r20",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
       "day": "Friday",
       "startTime": "08:30",
-      "endTime": "09:30",
+      "endTime": "10:30",
       "roomId": "ran1-124-room-f29bc91b",
       "roomName": "A1",
-      "topic": "NR-NTN",
+      "topic": "R20",
       "topicKey": "2bfc3eac",
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R20",
       "kind": "session",
       "status": "scheduled",
+      "note": "NR-NTN\nAI/ML (9:30-10:30)\nAI/ML(11:00-12:00)",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
+          "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
@@ -12515,45 +11380,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_fri_j1_0830_0910_10.5.1.3",
-      "meetingId": "ran1-124",
-      "date": "2026-02-13",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-124-room-90c9544e",
-      "roomName": "J1",
-      "topic": "10.5.1.3",
-      "topicKey": "508fb997",
-      "agendaItems": [
-        "10.5.1.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.5.2.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.1",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -12583,35 +11415,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.7,
       "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-124_fri_j2_0830_0930_10.5.1.1",
-      "meetingId": "ran1-124",
-      "date": "2026-02-13",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "09:30",
-      "roomId": "ran1-124-room-bf263578",
-      "roomName": "J2",
-      "topic": "10.5.1.1",
-      "topicKey": "18721254",
-      "agendaItems": [
-        "10.5.1.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "10.5.1.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.1",
       "detailAvailable": true
     },
     {
@@ -12663,16 +11466,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10",
       "detailAvailable": true
     },
@@ -12696,16 +11495,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -12768,34 +11563,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_fri_a1_0930_1030_ai-ml",
-      "meetingId": "ran1-124",
-      "date": "2026-02-13",
-      "day": "Friday",
-      "startTime": "09:30",
-      "endTime": "10:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "AI/ML",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "10.9"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_fri_a3_0930_1030_10.2.1",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
@@ -12815,16 +11582,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -12848,16 +11611,12 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-3873961c",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.5.3",
       "detailAvailable": true
     },
@@ -12879,10 +11638,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -12925,10 +11680,6 @@
       "note": "6GR",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -12959,10 +11710,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -13008,10 +11755,6 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -13043,10 +11786,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -13114,10 +11853,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -13147,10 +11882,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -13207,10 +11938,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -13303,32 +12030,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-124_fri_a1_1600_1630_ran1-124-expected-to-clo",
-      "meetingId": "ran1-124",
-      "date": "2026-02-13",
-      "day": "Friday",
-      "startTime": "16:00",
-      "endTime": "16:30",
-      "roomId": "ran1-124-room-f29bc91b",
-      "roomName": "A1",
-      "topic": "RAN1#124 expected to close at 16:00",
-      "topicKey": "5d70bb6d",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "RAN1#124 expected to close at 16:00",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-124_fri_x_1630_1700_afternoon-coffee-break",
       "meetingId": "ran1-124",
       "date": "2026-02-13",
@@ -13346,10 +12047,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -13395,10 +12092,6 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -13430,10 +12123,6 @@
       "sources": [
         {
           "sourceId": "ran1-124-d049ba1a",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-124-211244ae",
           "contributed": []
         },
         {
@@ -13501,10 +12190,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
         },
@@ -13534,10 +12219,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "contributed": []
@@ -13582,16 +12263,16 @@
     {
       "conflictId": "conf-ran1-124-room-bf263578-2026-02-11-11:00",
       "meetingId": "ran1-124",
-      "sessionId": "ran1-124_wed_j2_1100_1200_10.4",
+      "sessionId": "ran1-124_wed_j2_1100_1200_10.9",
       "field": "agendaItem",
       "values": [
         {
-          "sourceId": "ran1-124-211244ae,ran1-124-3873961c",
-          "value": "10.4"
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "value": "10.9"
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "value": "10.4"
         }
       ],
       "resolved": false
@@ -13599,16 +12280,16 @@
     {
       "conflictId": "conf-ran1-124-room-ee3be21e-2026-02-11-14:30",
       "meetingId": "ran1-124",
-      "sessionId": "ran1-124_wed_f1-f2-f3_1430_1510_10.4",
+      "sessionId": "ran1-124_wed_f1-f2-f3_1430_1510_10.1",
       "field": "agendaItem",
       "values": [
         {
-          "sourceId": "ran1-124-211244ae,ran1-124-3873961c",
-          "value": "10.4"
-        },
-        {
           "sourceId": "ran1-124-5f1586e4",
           "value": "10.1"
+        },
+        {
+          "sourceId": "ran1-124-3873961c",
+          "value": "10.4"
         }
       ],
       "resolved": false
@@ -13616,50 +12297,16 @@
     {
       "conflictId": "conf-ran1-124-room-ee3be21e-2026-02-11-18:00",
       "meetingId": "ran1-124",
-      "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.1",
+      "sessionId": "ran1-124_wed_f1-f2-f3_1800_1830_10.9",
       "field": "agendaItem",
       "values": [
-        {
-          "sourceId": "ran1-124-211244ae,ran1-124-3873961c",
-          "value": "10.1"
-        },
         {
           "sourceId": "ran1-124-5f1586e4",
           "value": "10.9"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "conflictId": "conf-ran1-124-room-90c9544e-2026-02-13-08:30",
-      "meetingId": "ran1-124",
-      "sessionId": "ran1-124_fri_j1_0830_0910_10.5.1.3",
-      "field": "agendaItem",
-      "values": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "value": "10.5.1.3"
         },
         {
           "sourceId": "ran1-124-3873961c",
-          "value": "10.5.4.3"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "conflictId": "conf-ran1-124-room-bf263578-2026-02-13-08:30",
-      "meetingId": "ran1-124",
-      "sessionId": "ran1-124_fri_j2_0830_0930_10.5.1.1",
-      "field": "agendaItem",
-      "values": [
-        {
-          "sourceId": "ran1-124-211244ae",
-          "value": "10.5.1.1"
-        },
-        {
-          "sourceId": "ran1-124-3873961c",
-          "value": "10.5.1.3"
+          "value": "10.1"
         }
       ],
       "resolved": false
@@ -13667,7 +12314,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-09T11:49:35Z",
-    "lastAttemptAt": "2026-10-09T11:49:35Z"
+    "lastSuccessfulAt": "2026-10-09T16:19:36Z",
+    "lastAttemptAt": "2026-10-09T16:19:36Z"
   }
 }
