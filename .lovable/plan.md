@@ -13,6 +13,15 @@ Offline - Offline Session 1           (same room across all 3 files)
 Offline - Offline Session 2           (same room across all 3 files)
 ```
 
+## Core principle: overlay every table
+Every online and offline table from every schedule file is laid on top of the others, matched by day, time and column (colour for online, position for offline). For each slot the result keeps:
+- the most granular version that has real times (a detailed split beats a broad block);
+- items that appear in only one file (union — nothing dropped);
+- one copy of identical blocks, with every file that contained it noted;
+- disagreements shown and flagged, never silently picked;
+- the latest revision of each file wins over its older versions.
+All changes below follow this rule.
+
 ## Changes
 1. **Pick up all three files automatically**
    - Make discovery find `RAN1#126b Sorour sessions online and offline schedules - v00.docx` and `RAN1#126bis schedule for Hiroki Adhoc2 sessions_v01.docx` (both "126b" and "126bis" spellings count as this meeting; plain "RAN1#126" still does not).
