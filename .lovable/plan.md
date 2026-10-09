@@ -39,7 +39,7 @@ Offline - Offline Session 2           (same room across all 3 files)
 - Tests use saved copies of this meeting's three files.
 
 ## Verify
-- Rebuild RAN1#126bis: exactly 5 rooms; sources list shows v03, Sorour v00, Hiroki v01.
+- Rebuild RAN1#126bis: as many rooms as the files define (no fixed number; 5 this meeting); sources list shows v03, Sorour v00, Hiroki v01.
 - Orange column shows Hiroki's room name; grey shows Sorour's.
 - Tuesday Online Session 3 shows all four 10.5.4.x blocks with times.
 - Tests for: 126b/126bis name matching, room-name extraction, detailed-section override, 5-room cap, overfull scaling.
