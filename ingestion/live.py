@@ -371,7 +371,9 @@ def parse_schedule_sources(
 
 
     if any((room.chairLaneId or "").startswith(f"{meeting.id}:") for room in rooms):
-        rooms, sessions = _resolve_rooms(meeting.id, rooms, sessions)
+        from .room_resolver import resolve_rooms
+
+        rooms, sessions = resolve_rooms(meeting.id, rooms, sessions)
     else:
         rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
