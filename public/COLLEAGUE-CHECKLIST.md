@@ -1,4 +1,4 @@
-# RAN1 Live — Colleague Testing Checklist
+# RAN1 Live! — Colleague Testing Checklist
 
 Use this checklist to walk through the app before or during RAN1#126 and tell us what works, what breaks, and what is missing. Copy it into an issue, email, or Slack thread and check the boxes as you go.
 
@@ -137,7 +137,7 @@ For anything that feels off, please include:
 
 ## 11. Help & admin
 
-- [ ] Open `/help` and read "How to use RAN1 Live".
+- [ ] Open `/help` and read "How to use RAN1 Live!".
 
 - [ ] Open `/admin` and confirm the ingestion status is readable.
 

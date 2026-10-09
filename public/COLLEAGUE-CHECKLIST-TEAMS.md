@@ -1,4 +1,4 @@
-Hi team — could you spend 2 minutes testing RAN1 Live? https://ran1.app
+Hi team — could you spend 2 minutes testing RAN1 Live!? https://ran1.app
 
 Quick checks:
 1. Open it on your phone and add to home screen — does it feel like an app?
