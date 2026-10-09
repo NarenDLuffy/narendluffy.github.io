@@ -66,11 +66,11 @@ async function vapidJwt(endpoint: string, subject: string, privPkcs8: string, pu
 function derToRawEcdsa(der: Uint8Array): Uint8Array {
   // 0x30 len 0x02 rlen r... 0x02 slen s...
   let off = 2;
-  if (der[1] & 0x80) off = 2 + (der[1] & 0x7f) + 1 - 1; // long-form length
+  if (der[1]! & 0x80) off = 2 + (der[1]! & 0x7f); // long-form length
   const readInt = (at: number): Uint8Array => {
-    const len = der[at + 1];
+    const len = der[at + 1]!;
     let start = at + 2;
-    let end = start + len;
+    const end = start + len;
     while (end - start > 32 && der[start] === 0) start++;
     return der.subarray(start, end);
   };
