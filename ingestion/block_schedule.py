@@ -308,6 +308,9 @@ def _parse_cell(text: str) -> list[_Segment]:
             # A head without its own duration (a plenary note, a bare tag) ends
             # as soon as a timed head follows it.
             return True
+        if current.slots and not any(slot.minutes for slot in current.slots):
+            # "R20 A-IoT (60)" / "9.3.1": the untimed item list completes it.
+            return True
         return allocated >= current.minutes
 
     def tag_finished() -> bool:
