@@ -4,17 +4,23 @@
 - The current schedule is built only from `Draft RAN1#126b online and offline schedules - v03.docx`. Sorour's v00 and Hiroki's v01 files are not in the source list at all, so their room names and detailed splits are missing.
 - Tuesday Online Session 3 (10.5.4.1–.4): the four stated durations (50+25+40+35 = 150 min) are squeezed into the 120-min slot by cutting off the last item, so 10.5.4.4 gets 5 min and 10.5.4.2 shows no time.
 
-## Target: exactly 5 rooms
+## Core model: one colour = one room
+- Every cell colour in the schedule tables is one room (one column in the app).
+- Whether a room is online or offline comes from the table it appears in: tables with "offline" in the heading are offline, the others online.
+- The number of rooms is simply the number of distinct colours found — this meeting 5 (3 online, 2 offline); it can be different next meeting.
+- The room's name comes from any file that names it ("Room:" lines, headings), e.g. "Yeongju B, 1F (RAN1 Brk2)". The online room whose column says "Main session / RAN1 #N commences" is RAN1 Main.
+
 ```text
-Online  - White  = RAN1 Main          (main grid)
-Online  - Grey   = Sorour online room (name from Sorour's file)
-Online  - Orange = Hiroki online room (e.g. "RAN1_Brk#2, Yeongju B, 1F" from Hiroki's file)
-Offline - Offline Session 1           (same room across all 3 files)
-Offline - Offline Session 2           (same room across all 3 files)
+This meeting (example, not hard-coded):
+Online  colour A (white)  = RAN1 Main
+Online  colour B (grey)   = breakout room, name from whichever file gives it
+Online  colour C (orange) = breakout room, e.g. Yeongju B, 1F
+Offline colour D          = offline room 1
+Offline colour E          = offline room 2
 ```
 
 ## Core principle: overlay every table
-Every online and offline table from every schedule file is laid on top of the others, matched by day, time and column (by cell colour for both online and offline; offline tables are recognised by "offline" in their heading, and their colours are independent of the online colours). For each slot the result keeps:
+Every online and offline table from every schedule file is laid on top of the others, matched by day, time and room (= colour). For each slot the result keeps:
 - the most granular version that has real times (a detailed split beats a broad block);
 - items that appear in only one file (union — nothing dropped);
 - one copy of identical blocks, with every file that contained it noted;
@@ -28,14 +34,9 @@ All changes below follow this rule.
    - Search every subfolder (any depth) of the meeting's own `Inbox` (e.g. `/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/`), and during meeting week also `/ftp/Meetings_3GPP_SYNC/RAN1/Inbox`. Works the same for every meeting. The 10.10.10.10 venue server stays as existing plumbing (still off).
    - First check why the existing scan missed these two files (wrong folder depth, name pattern, or the data simply not rebuilt since they were uploaded) and fix that cause.
    - Always take the latest version of each of the three families; show all three filenames in "Schedule based on".
-2. **Main file = the skeleton**: times, days, and the white / grey / orange online columns plus the two offline columns.
-3. **Room names from the chair files**
-   - Read "Room:" lines in all three files (main, Hiroki, Sorour — any of them may have them) and attach each to the matching coloured online column (Hiroki = orange, Sorour = grey), shown as e.g. "Yeongju B, 1F (RAN1 Brk2)".
-   - Offline room names found in any file are applied to Offline Session 1/2.
-   - Never create extra columns: everything maps into the 5 rooms above.
-4. **Detailed schedule from the chair files**
-   - Find the "Detailed Schedule for ..." sections in Hiroki's and Sorour's files and replace the broad main-grid blocks in their column with the detailed agenda-level blocks and times.
-   - Offline blocks: combine all 3 files into one canonical set per offline room; duplicates merged, disagreements flagged.
+2. **Rooms from colours**: build one room per distinct colour across all files' tables, online or offline per the table heading. No fixed "Offline Session 1/2" by position anymore — offline rooms are matched by colour too.
+3. **Room names from any file**: read "Room:" lines and headings in all files and attach each name to the room with the matching colour. Never create a column for a name alone (fixes today's stray "203" and "Yeongju B (1F)" columns).
+4. **Detailed schedules overlay**: "Detailed Schedule for ..." sections in any file replace the broad block in the same colour/room and time with their agenda-level blocks and times — for online and offline alike.
 5. **No made-up times, anywhere.** A block is split only when the files give usable times/minutes that fit inside the block.
    - Otherwise it stays one big block listing all its agenda items without times (e.g. Monday "10.5.4.x" 14:30–16:00 lists 10.5.4.1, .3, .4; Tuesday 10.5.4 08:30–10:30 lists .1–.4 with the chair's stated minutes shown as text, since 150 min doesn't fit 120).
    - When minutes don't add up, the block lists each item with its stated minutes (e.g. "10.5.4.1 · 50 min"), and tapping it shows: "Minutes don't add up: items total 150 min, block is 120 min."
