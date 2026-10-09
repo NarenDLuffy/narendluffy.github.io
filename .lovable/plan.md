@@ -29,6 +29,11 @@ Offline - Offline Session 2           (same room across all 3 files)
    - Offline blocks: combine all 3 files into one canonical set per offline room; duplicates merged, disagreements flagged.
 5. **Fix overfull splits** (Tuesday 10.5.4): if stated minutes exceed the slot and no detailed file gives exact times, scale them to fit the slot (none dropped) and show the stated minutes on the card. If a detailed file gives exact times, use those.
 6. **Readable short blocks**: minimum card height so every split block shows code and time.
+7. **No made-up 5-minute slots** (Monday room "203": 10.5.4.1 16:00–16:05, .3 16:05–16:10, .4 16:10–16:15, while the parent 10.5.4.x runs 14:30–16:00; similar 5-min 9.3.1 and 10.8.2 in RAN1 Main):
+   - Sub-items without stated minutes are currently given a 5-minute placeholder and placed after the parent ends. Instead, keep them inside the parent block: listed as the block's agenda items (one block, no invented times), or split evenly only if the file states order but no minutes — never past the parent's end or into a break.
+   - Nothing is ever scheduled inside a coffee/lunch break.
+8. **No duplicate blocks**: the same block currently appears twice (e.g. Offline Session 1 14:55–15:40, RAN1 Main 15:30–16:30). Identical blocks from different files are merged into one.
+9. **No stray rooms**: "203" and "Yeongju B (1F)" currently appear as extra columns next to "Online Session 3". Room names must attach to their existing column (by colour/content), not create a new one.
 
 ## Works for any chairs, any meeting (no names in the code)
 - Hiroki, Sorour and 126bis above are only this week's example. The code never looks for a person's name.
