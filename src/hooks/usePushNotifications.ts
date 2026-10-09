@@ -77,7 +77,10 @@ export function usePushNotifications() {
         setState(permission === "denied" ? "blocked" : "off");
         return;
       }
-      const reg = await navigator.serviceWorker.register(PUSH_SW_PATH);
+      await navigator.serviceWorker.register(PUSH_SW_PATH);
+      // register() resolves before the worker is active; subscribing right
+      // away fails with "no active service worker" on Android Chrome.
+      const reg = await navigator.serviceWorker.ready;
       const sub = await reg.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: b64urlToBytes(VAPID_PUBLIC_KEY) as BufferSource,
