@@ -16,6 +16,8 @@ Offline - Offline Session 2           (same room across all 3 files)
 ## Changes
 1. **Pick up all three files automatically**
    - Make discovery find `RAN1#126b Sorour sessions online and offline schedules - v00.docx` and `RAN1#126bis schedule for Hiroki Adhoc2 sessions_v01.docx` (both "126b" and "126bis" spellings count as this meeting; plain "RAN1#126" still does not).
+   - Search every subfolder (any depth) of the meeting's own `Inbox` (e.g. `/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/`), and during meeting week also `/ftp/Meetings_3GPP_SYNC/RAN1/Inbox`. Works the same for every meeting. The 10.10.10.10 venue server stays as existing plumbing (still off).
+   - First check why the existing scan missed these two files (wrong folder depth, name pattern, or the data simply not rebuilt since they were uploaded) and fix that cause.
    - Always take the latest version of each of the three families; show all three filenames in "Schedule based on".
 2. **Main file = the skeleton**: times, days, and the white / grey / orange online columns plus the two offline columns.
 3. **Room names from the chair files**
