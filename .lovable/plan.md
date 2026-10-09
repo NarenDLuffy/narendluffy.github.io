@@ -1,17 +1,17 @@
-# Why check-in says "Not connected — Missing Supabase environment variables"
+# Fix "Not connected — Missing Supabase environment variables" on ran1.app
 
-## Cause
-The message comes from the app's sign-in helper, which runs on every page and needs the backend address. That address is only included when the app is built and hosted by Lovable (ran1.app, preview). The copy built by GitHub (narendluffy.github.io / 3gpplive.net) is built without it, and it also has no server at all, so shared check-in can never work there. Company check-in does not use sign-in, so this helper isn't needed.
+## What the message means
+Nothing checks GitHub. On ran1.app, when you check in, the live site's server tries to reach the shared check-in list and finds its backend connection settings missing, so it falls back to "this device only". The preview has these settings, which is why check-in worked there. The exact reason the live site lacks them is not yet confirmed (most likely the live copy was published before the settings were attached, or they need re-attaching).
 
-## Fix
-1. Remove the unused sign-in helper from app startup, so the static copy no longer crashes check-in with this technical error.
-2. On copies without a server (GitHub Pages), replace the orange error with a plain message: "Shared check-in only works on ran1.app. Check-ins here are only on this device." with a link to ran1.app.
-3. On ran1.app, keep the current status line ("Shared with your company" / "Not connected… Retrying").
+"Removing the helper from startup" was a separate tidy-up: a sign-in piece that runs on every page but isn't used by check-in. It is not the main fix.
 
-## Verify
-- Preview: two separate browser sessions with the same code see each other in the same room.
-- Static build: the plain message shows, no technical error.
+## Plan
+1. Re-attach the backend settings for the live site (safe, no keys change).
+2. Make the check-in server code read only what it needs, and remove the unused sign-in helper from startup so it can't raise this error.
+3. Replace the technical text with a plain message ("Can't reach the shared list — retrying") and log the detail for me instead.
+4. You publish once; then I verify on ran1.app with two separate browser sessions using the same code that both names appear in the same room.
 
 ## Technical details
-- `src/start.ts`: drop `attachSupabaseAuth` from `functionMiddleware` (no protected server functions exist).
-- `src/services/remotePresenceStore.ts` / `RoomColleagues.tsx`: detect static hosting (existing GitHub Pages build flag) and show the friendly message instead of calling server functions.
+- Run `supabase--rebind_secrets`; check server-function logs for the live error.
+- `src/start.ts`: drop `attachSupabaseAuth` (no protected server functions).
+- `RoomColleagues.tsx` `PresenceStatus`: friendly copy, raw error to console only.
