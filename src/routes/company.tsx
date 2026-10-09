@@ -33,7 +33,7 @@ export const Route = createFileRoute("/company")({
 
 function CompanyPage() {
   const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
-  const { identity, joined, presence, join, leave, shared, lastError } = useCompanyPresence(meeting?.id);
+  const { identity, joined, presence, join, leave, shared, lastError, myRoomId } = useCompanyPresence(meeting?.id);
   const { bookmarks } = useBookmarks();
   const [code, setCode] = useState("");
   const [name, setName] = useState("");
@@ -53,6 +53,16 @@ function CompanyPage() {
   });
   const roomName = (roomId: string) =>
     bundle?.rooms.find((r) => r.roomId === roomId)?.roomName ?? roomId;
+  const callToMyRoom = async (name: string) => {
+    if (!meeting || !myRoomId) return;
+    const where = roomName(myRoomId);
+    if (!window.confirm(`Alert your company: "${name} needed in ${where}"? Shows for 10 minutes.`)) return;
+    try {
+      await summonColleague({ meetingId: meeting.id, targetName: name, roomId: myRoomId, roomLabel: where });
+    } catch (e) {
+      window.alert(e instanceof Error ? e.message : "Could not send the alert.");
+    }
+  };
 
   return (
     <div className="space-y-5">
@@ -128,6 +138,11 @@ function CompanyPage() {
             <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
               Colleagues by room
             </h2>
+            <p className="text-xs text-muted-foreground">
+              {myRoomId
+                ? "Tap a colleague to alert everyone that they're needed in your room."
+                : "Check into a room to be able to call colleagues to it."}
+            </p>
             {byRoom.size === 0 ? (
               <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
                 Nobody is checked in. Open a{" "}
