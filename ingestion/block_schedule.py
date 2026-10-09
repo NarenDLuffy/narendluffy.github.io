@@ -391,7 +391,14 @@ def _parse_cell(text: str) -> list[_Segment]:
             allocated = 0
             continue
 
-        if is_item and minutes and current.minutes and allocated >= current.minutes:
+        parent_codes = AGENDA_CODE_RE.findall(current.slots[0].label) if current and current.slots else []
+        is_child_of_parent = bool(parent_codes) and any(
+            code.startswith(parent_codes[0] + ".") for code in AGENDA_CODE_RE.findall(label)
+        )
+        if (
+            is_item and minutes and current.minutes and allocated >= current.minutes
+            and not is_child_of_parent
+        ):
             # A timed item after the head's minutes are used up is the next
             # block of the same work area ("6GR (60) / .10.6.x (60) / .10.5.1.1 (60)").
             current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw=line)

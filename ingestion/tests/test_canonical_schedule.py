@@ -119,7 +119,10 @@ def test_unrelated_agenda_item_is_a_conflict_not_a_split():
     b = make("14:30", "15:30", items=["10.9.1"], source="b")
     result = canonicalize([a, b])
     assert len(result.conflicts) == 1
-    assert len(result.sessions) == 2
+    # One card for the slot, and the disagreement is visible on it.
+    assert len(result.sessions) == 1
+    assert "Another schedule file lists" in (result.sessions[0].note or "")
+    assert sorted(ref.sourceId for ref in result.sessions[0].sources) == ["a", "b"]
 
 
 def test_canonical_union_keeps_detail_unique_blocks_and_conflicts():
@@ -139,5 +142,6 @@ def test_canonical_union_keeps_detail_unique_blocks_and_conflicts():
     by_items = {tuple(session.agendaItems): session for session in result.sessions}
     assert ("10.8.1",) in by_items and ("10.8.2",) in by_items
     assert sorted(ref.sourceId for ref in by_items[("10.8.1",)].sources) == ["hiroki", "sorour"]
-    assert ("9.1",) in by_items and ("9.2",) in by_items
+    slot = by_items.get(("9.1",)) or by_items.get(("9.2",))
+    assert slot is not None and "Another schedule file lists" in (slot.note or "")
     assert len(result.conflicts) == 1
