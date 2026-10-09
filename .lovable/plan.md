@@ -1,17 +1,36 @@
-# Don't offer "call colleague" for people already in your room
+# Push notifications for "colleague needed" alerts
 
-## What's wrong
-On the Company page, under "Colleagues by room", every named colleague gets a tappable "call" button as long as you're checked into a room — including colleagues already checked into that same room. Example seen live: Test1 and Test2 are both in TamnaBC (5F), yet Test2 can tap Test1 and send the alert "Test1 needed in TamnaBC (5F)" — calling someone to the room they're already sitting in.
+## Goal
+When someone taps a colleague to summon them, every company member gets a real system notification on their phone/laptop — even if the app is closed — not just the in-app banner.
 
-The room page (`RoomColleagues`) already does this correctly: its call list only shows colleagues checked into *other* rooms. The Company page is the only place with the bug.
+## How it works
+- Standard Web Push (VAPID): works on Android Chrome and desktop browsers directly; on iPhone it requires the app to be added to the home screen first (Apple's rule for web push).
+- The app already has a manifest and icons; we add `display: "standalone"` so it can be installed to the home screen (required for iOS push).
 
-## Fix
-In `src/routes/company.tsx`, in the "Colleagues by room" list:
-- A colleague only gets the tappable "call" button when they are checked into a **different** room than yours (`p.roomId !== myRoomId`).
-- Colleagues already in your room (and you) stay as plain name chips — no bell, no confirm dialog.
-- The confirm dialog text and the alert banner itself need no change.
+## Changes
 
-## Verify
-- Two test users in the same room: neither shows a call button for the other on the Company page.
-- Move one to another room: the call button appears, and tapping it still sends the alert as before.
-- Room page behavior unchanged (already correct).
+1. **Push service worker** (`public/push-sw.js`, messaging-only — no offline caching):
+   - Receives push events, shows a notification: "Alice is needed in Room 1 (Main)" with the time.
+   - Tapping the notification opens the app on that room's page.
+
+2. **Subscription storage** — new `push_subscriptions` table:
+   - group_key (hashed company code), user_id, endpoint, keys, created_at.
+   - RLS on, no direct client access; service-role grant (same pattern as company_alerts).
+
+3. **Server functions** (`src/lib/push.functions.ts`):
+   - `subscribePush` / `unsubscribePush` — save/remove the device's subscription, scoped to the company code.
+   - `sendCompanyAlert` (existing) extended: after inserting the alert, look up all subscriptions for that group and send a web-push message to each; expired/dead endpoints are cleaned up.
+   - VAPID keys: generate a keypair; public key as a `VITE_` env var, private key as a backend secret. Signing uses Web Crypto (worker-safe, no Node-only libraries).
+
+4. **Client wiring** (`src/hooks/usePushNotifications.ts` + Company page):
+   - "Enable notifications" button on the Company page: requests permission, registers the push service worker, subscribes, and stores the subscription under the company code.
+   - Shows current state (enabled / blocked / not supported) so it's clear on each device.
+   - Registration is production-only — never in the Lovable preview — per platform rules.
+
+5. **Keep the existing banner** as the in-app fallback; push is additive.
+
+## Technical notes
+- No Firebase; plain VAPID web push avoids extra accounts and works with the existing backend.
+- Service worker is a dedicated messaging worker (allowed), not an app-shell cache, so no offline/PWA caching behavior changes.
+- iOS caveat: each iPhone user must add the app to their home screen once, then enable notifications inside it. Android/desktop just need the one-time permission prompt.
+- Testing push end-to-end requires the published app (HTTPS + production), so verification happens after publish on your devices.
