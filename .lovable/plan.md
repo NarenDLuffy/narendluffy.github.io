@@ -34,7 +34,7 @@ All changes below follow this rule.
    - Search every subfolder (any depth) of the meeting's own `Inbox` (e.g. `/ftp/tsg_ran/WG1_RL1/TSGR1_126b/Inbox/`), and during meeting week also `/ftp/Meetings_3GPP_SYNC/RAN1/Inbox`. Works the same for every meeting. The 10.10.10.10 venue server stays as existing plumbing (still off).
    - First check why the existing scan missed these two files (wrong folder depth, name pattern, or the data simply not rebuilt since they were uploaded) and fix that cause.
    - Always take the latest version of each of the three families; show all three filenames in "Schedule based on".
-2. **Rooms from colours**: build one room per distinct colour across all files' tables, online or offline per the table heading. No fixed "Offline Session 1/2" by position anymore — offline rooms are matched by colour too.
+2. **Rooms from colours**: build one room per distinct colour across all files' tables, online or offline per the table heading. No fixed "Offline Session 1/2" by position anymore — offline rooms are matched by colour across all files, exactly like online rooms.
 3. **Room names from any file**: read "Room:" lines and headings in all files and attach each name to the room with the matching colour. Never create a column for a name alone (fixes today's stray "203" and "Yeongju B (1F)" columns).
 4. **Detailed schedules overlay**: "Detailed Schedule for ..." sections in any file replace the broad block in the same colour/room and time with their agenda-level blocks and times — for online and offline alike.
 5. **No made-up times, anywhere.** A block is split only when the files give usable times/minutes that fit inside the block.
