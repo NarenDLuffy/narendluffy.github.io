@@ -70,8 +70,18 @@ export function PresenceStatus({ shared, lastError }: { shared: boolean; lastErr
     </p>
   ) : (
     <p className="text-[11px] font-medium text-warn">
-      Not connected — check-ins are only visible on this device right now. Retrying…
-      {lastError ? ` (${lastError})` : ""}
+      Can't reach the shared list — {reasonOf(lastError)} Check-ins are only on this device
+      for now. Retrying…
     </p>
   );
+}
+
+function reasonOf(err: string | null): string {
+  if (typeof console !== "undefined" && err) console.warn("[presence]", err);
+  const e = (err ?? "").toLowerCase();
+  if (typeof navigator !== "undefined" && !navigator.onLine) return "no internet connection.";
+  if (e.includes("environment variable") || e.includes("jwt") || e.includes("api key"))
+    return "the site's server isn't connected to the backend.";
+  if (e.includes("fetch") || e.includes("network")) return "the server didn't answer.";
+  return "the server returned an error.";
 }
