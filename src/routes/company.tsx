@@ -136,6 +136,50 @@ function CompanyPage() {
 
       {joined ? (
         <>
+          <section className="flex items-center gap-3 rounded-lg border border-border bg-card p-3 text-sm">
+            {push.state === "on" ? (
+              <Bell className="size-4 text-live" />
+            ) : (
+              <BellOff className="size-4 text-muted-foreground" />
+            )}
+            <div className="min-w-0 flex-1">
+              <div className="text-sm font-medium">Notifications</div>
+              <div className="text-xs text-muted-foreground">
+                {push.state === "on"
+                  ? "This device gets a system notification when a colleague is needed."
+                  : push.state === "blocked"
+                    ? "Notifications are blocked — allow them in your browser settings for this site."
+                    : push.state === "unsupported"
+                      ? "This browser does not support push notifications. On iPhone, add the app to your home screen first."
+                      : push.state === "preview"
+                        ? "Notifications work in the published app, not in this preview."
+                        : "Get a system notification when a colleague is needed, even with the app closed."}
+              </div>
+            </div>
+            {push.state === "on" ? (
+              <button
+                type="button"
+                onClick={() => void push.disable()}
+                className="min-h-10 rounded-md border border-border px-3 text-xs font-medium"
+              >
+                Turn off
+              </button>
+            ) : push.state === "off" || push.state === "busy" ? (
+              <button
+                type="button"
+                disabled={push.state === "busy"}
+                onClick={() =>
+                  void push.enable().catch((e) =>
+                    window.alert(e instanceof Error ? e.message : "Could not enable notifications."),
+                  )
+                }
+                className="min-h-10 rounded-md bg-primary px-3 text-xs font-semibold text-primary-foreground disabled:opacity-50"
+              >
+                Enable
+              </button>
+            ) : null}
+          </section>
+
           <section className="space-y-2">
             <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
               Colleagues by room
