@@ -8,7 +8,7 @@ Nothing checks GitHub. On ran1.app, when you check in, the live site's server tr
 ## Plan
 1. Re-attach the backend settings for the live site (safe, no keys change).
 2. Make the check-in server code read only what it needs, and remove the unused sign-in helper from startup so it can't raise this error.
-3. Replace the technical text with a plain message ("Can't reach the shared list — retrying") and log the detail for me instead.
+3. Replace the technical text with a plain message that also says why, e.g. "Can't reach the shared list — the site's server isn't connected to the backend. Retrying…", "…no internet connection", or "…the server didn't answer", and log the full detail for me.
 4. You publish once; then I verify on ran1.app with two separate browser sessions using the same code that both names appear in the same room.
 
 ## Technical details
