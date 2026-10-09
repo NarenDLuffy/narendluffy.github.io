@@ -313,6 +313,7 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     ranked = sorted(
         blocks,
         key=lambda b: (
+            b.derivation == "split-from-parent",
             -_own(b),
             -len(b.sourceIds),
             -b.specificity,
@@ -327,6 +328,9 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         clash = [o for o in kept if block.start < o.end and o.start < block.end]
         # Identical slots with different agenda items are a reported conflict,
         # not two tilings of the same time - both stay visible.
+        if clash and block.derivation == "split-from-parent":
+            # Leftover time of a broad block never sits on top of a real block.
+            continue
         if clash and not all(
             o.start == block.start and o.end == block.end for o in clash
         ):
