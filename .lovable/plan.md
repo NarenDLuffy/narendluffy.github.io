@@ -30,11 +30,13 @@ Offline - Offline Session 2           (same room across all 3 files)
 5. **Fix overfull splits** (Tuesday 10.5.4): if stated minutes exceed the slot and no detailed file gives exact times, scale them to fit the slot (none dropped) and show the stated minutes on the card. If a detailed file gives exact times, use those.
 6. **Readable short blocks**: minimum card height so every split block shows code and time.
 
-## Make it stick for every meeting
-- Save these rules as permanent project rules, so future changes always follow them without you repeating them: scan all Inbox subfolders (meeting folder + sync folder), latest version per chair file, main grid colours = online lanes, room names from any file, chair "Detailed Schedule" overrides broad blocks, offline = 2 shared rooms.
-- Nothing is tied to Hiroki, Sorour or 126bis: chair files are recognised by content (colours, "Detailed Schedule for", "Room:"), so new chairs and meetings work automatically.
-- Add an automatic health check on every rebuild that flags the meeting as "needs review" (visible in the app) when: a chair-named schedule file exists in the Inbox but wasn't used, an online colour lane has no room name while a file provides one, or extra rooms appear beyond the main grid's lanes + 2 offline.
-- Tests run against saved copies of this meeting's three files so the same mistakes can't come back.
+## Works for any chairs, any meeting (no names in the code)
+- Hiroki, Sorour and 126bis above are only this week's example. The code never looks for a person's name.
+- Each schedule file is recognised by what's inside: it has online/offline tables, cell colours, "Detailed Schedule for", "Room:" lines. Any number of such files (usually 3) are all used.
+- Which online column a file belongs to is worked out from the tables: the colour of its cells and which agenda items/times it shares with a coloured column in the main grid — not from its filename.
+- Lanes come from the data: one column per online colour, plus the offline sessions. If a future meeting has 4 colours, it gets 4 online columns automatically.
+- A health check on each rebuild flags "needs review" in the app when a schedule-looking file was found but couldn't be matched to a column, so problems show up instead of silently disappearing.
+- Tests use saved copies of this meeting's three files.
 
 ## Verify
 - Rebuild RAN1#126bis: exactly 5 rooms; sources list shows v03, Sorour v00, Hiroki v01.
@@ -48,4 +50,4 @@ Offline - Offline Session 2           (same room across all 3 files)
 - `ingestion/canonical_schedule.py`: map chair-file blocks onto the colour lane / offline lane; no new rooms; offline union.
 - `ingestion/block_schedule.py`: proportional fit for overfull child splits.
 - `src/components/Timetable.tsx`: min card height.
-- Memory/AGENTS: record "5 canonical rooms: main grid defines lanes, chair files supply room names and detail".
+- AGENTS: record "lanes and chair-file ownership are inferred from table colours/content, never from names".
