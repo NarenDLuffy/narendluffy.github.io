@@ -277,9 +277,12 @@ def _parse_cell(text: str) -> list[_Segment]:
     work areas inside the same session.
     """
     lines: list[str] = []
+    after_blank: set[int] = set()
     for raw_line in text.split("\n"):
         stripped = raw_line.strip()
         if not stripped:
+            if lines:
+                after_blank.add(len(lines))
             continue
         # "R20 (80)AI/ML (80)" is two stacked labels typed on one line.
         if len(re.findall(r"\(\s*~?\s*\d{1,3}[^)]*\)", stripped)) > 1:
@@ -313,8 +316,19 @@ def _parse_cell(text: str) -> list[_Segment]:
             return bool(current.slots)
         return allocated >= current.minutes
 
-    for line in lines:
+    for line_index, line in enumerate(lines):
         codes = _code_list(line)
+        if (
+            codes
+            and current is not None
+            and current.minutes
+            and allocated >= current.minutes
+            and all(m for _, m in codes)
+        ):
+            # Timed items after the head's minutes are used up: next block.
+            current = _Segment(lead=None, group=current_group or current.group, minutes=None, slots=[], raw="")
+            segments.append(current)
+            allocated = 0
         if codes and current is not None:
             # "9.3.3, 9.3.1, 9.3.2" under a head is the ordered list of agenda
             # items sharing that head's time, not a work-area tag.
@@ -349,7 +363,17 @@ def _parse_cell(text: str) -> list[_Segment]:
             continue
 
 
-        if current is None or (heads_new and finished()):
+        # "TEI20 (10)", blank line, "Maintenance (70)": a timed head that had no
+        # items of its own is complete; the next timed head starts a new block.
+        head_after_blank = (
+            line_index in after_blank
+            and not is_item
+            and minutes is not None
+            and current is not None
+            and current.minutes is not None
+            and not current.slots
+        )
+        if current is None or (heads_new and finished()) or head_after_blank:
             lead = label if _looks_like_person(label) else None
             current = _Segment(
                 lead=lead,
