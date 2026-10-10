@@ -317,9 +317,20 @@ function candidateBases(): Candidate[] {
   const venue = configuredDraftsUrl ?? VENUE_DRAFTS_BASE;
 
   const candidates: Candidate[] = [];
-  // Skipped entirely on an HTTPS page: the browser would refuse the request
-  // anyway, and attempting it only produces console noise and a wrong
-  // "unavailable" verdict.
+  // HTTPS venue twin first: works from any page (including https://ran1.app),
+  // but only when the venue certificate is valid for the IP 10.10.10.10. A
+  // self-signed cert fails silently in fetch and we simply fall through.
+  if (!configuredDraftsUrl) {
+    candidates.push({
+      origin: "venue",
+      url: VENUE_DRAFTS_BASE_HTTPS,
+      sourceType: "meeting-local",
+      via: "browser",
+    });
+  }
+  // Plain-HTTP venue, skipped entirely on an HTTPS page: the browser would
+  // refuse the request anyway, and attempting it only produces console noise
+  // and a wrong "unavailable" verdict.
   if (!venueBlockedByScheme()) {
     candidates.push({
       origin: "venue",
