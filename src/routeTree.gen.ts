@@ -23,6 +23,7 @@ import { Route as MeetingsIndexRouteImport } from './routes/meetings.index'
 import { Route as MeetingsMeetingSlugRouteImport } from './routes/meetings.$meetingSlug'
 import { Route as RoomsIndexRouteImport } from './routes/rooms.index'
 import { Route as RoomsRoomIdRouteImport } from './routes/rooms.$roomId'
+import { Route as ApiPublicMeetingFtpHostRouteImport } from './routes/api/public/meeting-ftp-host'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -94,6 +95,11 @@ const RoomsRoomIdRoute = RoomsRoomIdRouteImport.update({
   path: '/rooms/$roomId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicMeetingFtpHostRoute = ApiPublicMeetingFtpHostRouteImport.update({
+  id: '/api/public/meeting-ftp-host',
+  path: '/api/public/meeting-ftp-host',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/drafts/': typeof DraftsIndexRoute
   '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
+  '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -125,6 +132,7 @@ export interface FileRoutesByTo {
   '/drafts': typeof DraftsIndexRoute
   '/meetings': typeof MeetingsIndexRoute
   '/rooms': typeof RoomsIndexRoute
+  '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -142,6 +150,7 @@ export interface FileRoutesById {
   '/drafts/': typeof DraftsIndexRoute
   '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
+  '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -160,6 +169,7 @@ export interface FileRouteTypes {
     | '/drafts/'
     | '/meetings/'
     | '/rooms/'
+    | '/api/public/meeting-ftp-host'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -175,6 +185,7 @@ export interface FileRouteTypes {
     | '/drafts'
     | '/meetings'
     | '/rooms'
+    | '/api/public/meeting-ftp-host'
   id:
     | '__root__'
     | '/'
@@ -191,6 +202,7 @@ export interface FileRouteTypes {
     | '/drafts/'
     | '/meetings/'
     | '/rooms/'
+    | '/api/public/meeting-ftp-host'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -206,6 +218,7 @@ export interface RootRouteChildren {
   RoomsRoomIdRoute: typeof RoomsRoomIdRoute
   MeetingsIndexRoute: typeof MeetingsIndexRoute
   RoomsIndexRoute: typeof RoomsIndexRoute
+  ApiPublicMeetingFtpHostRoute: typeof ApiPublicMeetingFtpHostRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -308,6 +321,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RoomsRoomIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/meeting-ftp-host': {
+      id: '/api/public/meeting-ftp-host'
+      path: '/api/public/meeting-ftp-host'
+      fullPath: '/api/public/meeting-ftp-host'
+      preLoaderRoute: typeof ApiPublicMeetingFtpHostRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -337,6 +357,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoomsRoomIdRoute: RoomsRoomIdRoute,
   MeetingsIndexRoute: MeetingsIndexRoute,
   RoomsIndexRoute: RoomsIndexRoute,
+  ApiPublicMeetingFtpHostRoute: ApiPublicMeetingFtpHostRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
