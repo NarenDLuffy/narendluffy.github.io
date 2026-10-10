@@ -22,7 +22,11 @@ import type { Meeting } from "@/types/meeting";
  * non-empty schedule. A newer timestamp alone is never sufficient.
  */
 
-export const DEFAULT_LOCAL_BASE = "http://10.10.10.10/ftp/RAN/RAN1/Inbox/";
+// HTTPS first: it is the only form a secure page (ran1.app) may read, and only
+// when the venue certificate is valid for the IP 10.10.10.10 — a self-signed
+// certificate fails silently and the public source is used instead.
+export const DEFAULT_LOCAL_BASE = "https://10.10.10.10/ftp/RAN/RAN1/Inbox/";
+const LEGACY_LOCAL_BASE = "http://10.10.10.10/ftp/RAN/RAN1/Inbox/";
 const ENABLED_KEY = "ran1live.localSource.enabled";
 const BASE_KEY = "ran1live.localSource.base";
 const TIMEOUT_MS = 2500;
@@ -57,6 +61,16 @@ export interface LocalSourceTransport {
 export const directFetchTransport: LocalSourceTransport = {
   id: "direct-fetch",
   async fetchBundle(baseUrl, meeting) {
+    const first = await fetchOne(baseUrl, meeting);
+    if (first || !baseUrl.startsWith("https://")) return first;
+    // HTTP twin; browsers block it from https pages, so this only helps on http.
+    if (typeof window !== "undefined" && window.location.protocol === "https:") return null;
+    return fetchOne(baseUrl.replace(/^https:/, "http:"), meeting);
+  },
+};
+
+async function fetchOne(baseUrl: string, meeting: Meeting): Promise<ScheduleBundle | null> {
+  {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
     try {
@@ -69,8 +83,8 @@ export const directFetchTransport: LocalSourceTransport = {
     } finally {
       clearTimeout(timer);
     }
-  },
-};
+  }
+}
 
 let transport: LocalSourceTransport = directFetchTransport;
 
@@ -83,7 +97,10 @@ export function getLocalSourceSettings(): LocalSourceSettings {
   if (typeof window === "undefined") return { enabled: false, baseUrl: DEFAULT_LOCAL_BASE };
   return {
     enabled: window.localStorage.getItem(ENABLED_KEY) === "1",
-    baseUrl: window.localStorage.getItem(BASE_KEY) || DEFAULT_LOCAL_BASE,
+    baseUrl: (() => {
+      const saved = window.localStorage.getItem(BASE_KEY);
+      return !saved || saved === LEGACY_LOCAL_BASE ? DEFAULT_LOCAL_BASE : saved;
+    })(),
   };
 }
 

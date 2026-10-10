@@ -156,7 +156,9 @@ export function SourcePanel({
             </span>
             <span className="block text-muted-foreground">
               Only reachable on the 3GPP meeting network, and only used when its documents are a
-              genuinely newer revision. Automated builds always use the public source.
+              genuinely newer revision. Automated builds always use the public source. Tried
+              over HTTPS first: that only works if the venue certificate is valid for
+              10.10.10.10, otherwise it silently falls back.
             </span>
           </span>
         </label>

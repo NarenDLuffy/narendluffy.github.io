@@ -1,6 +1,7 @@
 import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 import { VenueModeBanner } from "@/components/VenueModeBanner";
 import { VENUE_MODE_ENABLED } from "@/lib/venueMode";
+import { RemoteFtpHostCard } from "@/components/RemoteFtpHostCard";
 import { useMemo, useState } from "react";
 import { CheckCheck, Inbox, RefreshCw, Settings2 } from "lucide-react";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
@@ -69,6 +70,7 @@ function DraftsPage() {
 
       <ClientOnly fallback={null}>
         {VENUE_MODE_ENABLED ? <VenueModeBanner meetingActive={isCurrent} /> : null}
+        {meeting.status !== "completed" ? <RemoteFtpHostCard meetingId={meeting.id} /> : null}
       </ClientOnly>
 
       <header className="flex items-start justify-between gap-3">
