@@ -10,7 +10,7 @@ The previous change covered Drafts only. The Schedule page switch still defaults
 ## 2. Remote meeting FTP (e.g. RAN-Maastricht.3gpp.org)
 Browsers and the app cannot speak FTP, and this server is only reachable from outside the 3GPP network — which is exactly where GitHub Actions runs. So it becomes an extra source for the automatic 5-minute refresh, not an in-app probe.
 
-- Each meeting gets a `remoteFtpHost` (e.g. `RAN-Maastricht.3gpp.org`). If it's not filled in, it's guessed as `RAN-<venue city>.3gpp.org`; if that host doesn't answer, it's skipped quietly.
+- Each meeting gets a `remoteFtpHost` (e.g. `RAN-Maastricht.3gpp.org`). No guessing — names vary. While it's empty for the current meeting, the Drafts page shows a small card asking "Remote FTP host for this meeting?" with a text box and a Skip button (skip hides it on that device only). Once any user saves a host, it's stored once in the backend for that meeting and the card disappears for everyone; the GitHub Action reads it from there. Until then, this source is simply skipped.
 - Username/password stored as GitHub repository secrets (`MEETING_FTP_USER`, `MEETING_FTP_PASS`), not in code — you'd add them once in GitHub settings (same across meetings).
 - Used only during the meeting week (start −1 day to end +1 day), in addition to the Sync folder and the meeting folder; same rules as today: meeting-number/bis filename check, 14-day age cutoff, freshest version wins, duplicates merged.
 - Applies to both schedule files and drafts the Action collects. Works day and night; at night it simply keeps things fresh when the venue server isn't reachable from your room.
