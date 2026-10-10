@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T14:03:38Z",
+  "generatedAt": "2026-10-10T15:30:03Z",
   "meetingId": "ran1-126-bis",
   "sessions": [
     {
@@ -578,7 +578,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1430_1510_ntn-nr",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1430_1510_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
@@ -587,13 +587,19 @@
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
       "topic": "NTN-NR",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topicKey": "67daaad6",
+      "agendaItems": [
+        "9.4"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -603,20 +609,17 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.75,
+      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1430_1530_a-iot-phase2",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1430_1530_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
@@ -624,16 +627,20 @@
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
       "agendaItems": [
-        "9.3"
+        "9.3.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -645,14 +652,11 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.75,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -737,64 +741,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1430_1510_9.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN-NR",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1430_1530_9.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "14:30",
-      "endTime": "15:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.1",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -946,35 +892,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1510_1530_9.5",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "15:10",
-      "endTime": "15:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.5"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1530_1630_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
@@ -1057,7 +974,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1530_1630_10.8",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1530_1630_10.8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
@@ -1065,76 +982,6 @@
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1530_1630_10.7.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1530_1630_10.8.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "15:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
       "topic": "10.8.2",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -1148,10 +995,22 @@
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
@@ -1318,7 +1177,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1700_1740_mimo",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1700_1740_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
@@ -1327,25 +1186,25 @@
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
       "topic": "MIMO",
-      "topicKey": "2bfc3eac",
+      "topicKey": "67daaad6",
       "agendaItems": [
         "9.2"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
         },
         {
           "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
         },
         {
@@ -1354,44 +1213,37 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.75,
+      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1700_1900_10.5.4",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1700_1740_10.5.4.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:00",
-      "endTime": "19:00",
+      "endTime": "17:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "10.5.4",
-      "topicKey": "f8e05aee",
+      "topic": "10.5.4.4",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.5.4"
+        "10.5.4.4"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
+          "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.5",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1479,64 +1331,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1700_1740_9.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "17:40",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "MIMO",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1700_1740_10.5.4.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "17:00",
-      "endTime": "17:40",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.4",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1740_1810_10.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
@@ -1575,6 +1369,35 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.3",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1740_1820_10.5.4.1",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-12",
+      "day": "Monday",
+      "startTime": "17:40",
+      "endTime": "18:20",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.5.4.1",
+      "topicKey": "779f8719",
+      "agendaItems": [
+        "10.5.4.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G 10.5.4.x",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1659,64 +1482,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1740_1810_10.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "17:40",
-      "endTime": "18:10",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1740_1820_10.5.4.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "17:40",
-      "endTime": "18:20",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.1",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1844,32 +1609,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1810_1900_10.3.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1820_1900_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
-      "startTime": "18:10",
+      "startTime": "18:20",
       "endTime": "19:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Coding",
-      "topicKey": "f8e05aee",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.5.4.3",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.3.1"
+        "10.5.4.3"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-561748bd",
+          "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
       "confidence": 0.7,
-      "parentAgendaItem": "10.3",
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -1912,35 +1677,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1820_1900_10.5.4.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "18:20",
-      "endTime": "19:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.3",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -2158,7 +1894,7 @@
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "Waveform",
+      "topic": "10.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.2.1"
@@ -2179,68 +1915,14 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1900_1930_10.5.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "19:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDCCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_mon_yeongju-b_1900_1930_10.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-12",
-      "day": "Monday",
-      "startTime": "19:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.2.1",
-      "topicKey": "5ef55a59",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G waveform",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
+        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -2336,12 +2018,12 @@
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
       "topic": "10.5.4.1",
-      "topicKey": "f8e05aee",
+      "topicKey": "779f8719",
       "agendaItems": [
         "10.5.4.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -2476,64 +2158,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0830_0920_10.7.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "09:20",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_0830_0910_10.5.4.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.1",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_tue_tamna-bc-hall_0910_1000_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
@@ -2583,35 +2207,6 @@
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "10.5.4.2",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_0910_0950_10.5.4.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "09:10",
-      "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
       "topic": "10.5.4.2",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -2674,36 +2269,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0920_0950_9.5",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "09:20",
-      "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.5"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_0950_1030_ntn-nr",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_0950_1030_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -2711,73 +2277,6 @@
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "NTN-NR",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_0950_1030_10.5.4.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
-      "topic": "10.5.4.3",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0950_1030_9.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
       "topic": "NR-NTN",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -2791,22 +2290,34 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_0950_1030_10.5.4.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_0950_1030_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:50",
       "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -2989,7 +2500,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1100_1140_ai-ml",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1100_1140_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -2997,66 +2508,26 @@
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "AI/ML",
-      "topicKey": "2bfc3eac",
+      "topic": "AIML",
+      "topicKey": "67daaad6",
       "agendaItems": [
         "9.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
         },
         {
           "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1100_1220_10.8",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
         },
         {
@@ -3066,7 +2537,36 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "parentAgendaItem": "9",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1100_1140_10.8.3",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-13",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.8.3",
+      "topicKey": "c63f99f3",
+      "agendaItems": [
+        "10.8.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -3154,64 +2654,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1100_1140_9.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AIML",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1100_1140_10.8.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.8.3",
-      "topicKey": "c63f99f3",
-      "agendaItems": [
-        "10.8.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G ISAC",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_tue_room-201-2f_1130_1200_10.6.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
@@ -3295,7 +2737,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1140_1220_mimo",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1140_1220_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -3303,46 +2745,6 @@
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "MIMO",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1140_1220_9.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "11:40",
-      "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -3356,22 +2758,34 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1140_1220_10.8.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1140_1220_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:40",
       "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.8.1",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -3559,7 +2973,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1220_1300_a-iot-phase2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1220_1300_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
@@ -3567,16 +2981,20 @@
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "9.3.2",
+      "topicKey": "929f9bed",
       "agendaItems": [
-        "9.3"
+        "9.3.2"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -3588,14 +3006,11 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.75,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -3638,64 +3053,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1220_1300_8.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AI",
-      "topicKey": "1737c410",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1220_1300_9.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.2",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -3818,44 +3175,29 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1430_1550_8.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1430_1440_11-tei20",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "15:50",
+      "endTime": "14:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "TEI, AI 7/",
-      "topicKey": "a51d4952",
-      "agendaItems": [
-        "8.2"
-      ],
+      "topic": "11 TEI20",
+      "topicKey": "f244604b",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "TEI, AI 7/8.2",
+      "group": "11 TEI20",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -3957,69 +3299,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1430_1500_10.5.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDCCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1430_1440_11-tei20",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "14:30",
-      "endTime": "14:40",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "11 TEI20",
-      "topicKey": "f244604b",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "11 TEI20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1440_1505_8.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1440_1505_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:40",
       "endTime": "15:05",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "R19 Duplex, R19 ISAC CM, R19 XR",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -4082,43 +3369,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1500_1545_10.5.2.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "15:00",
-      "endTime": "15:45",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDSCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1505_1530_8.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1505_1530_8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:05",
       "endTime": "15:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "UE features",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -4223,14 +3481,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1530_1550_8.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1530_1550_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "15:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "R19 LP-WUS",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -4335,35 +3593,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1545_1630_10.5.2.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "15:45",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PUxCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1550_1630_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
@@ -4401,35 +3630,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1550_1630_10.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "15:50",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.2.1",
-      "topicKey": "5ef55a59",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G waveform",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -4637,43 +3837,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1700_1830_a-iot-phase2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1700_1800_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "18:30",
+      "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "9.3.3",
+      "topicKey": "929f9bed",
       "agendaItems": [
-        "9.3"
+        "9.3.3"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -4758,64 +3947,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1700_1800_10.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Coding",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1700_1800_9.3.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.3",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5026,6 +4157,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1800_1830_9.3.1",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-13",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126-bis_tue_room-203-2f_1800_1830_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
@@ -5068,72 +4228,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1800_1830_10.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1800_1830_9.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-13",
-      "day": "Tuesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.1",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_tue_yeongju-b_1830_1930_early-dinner",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1830_1930_early-dinner",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "18:30",
       "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "Early dinner",
       "topicKey": "059aafc3",
       "agendaItems": [],
@@ -5234,43 +4336,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0830_1030_a-iot-phase2",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0830_0910_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "10:30",
+      "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "9.3.2",
+      "topicKey": "929f9bed",
       "agendaItems": [
-        "9.3"
+        "9.3.2"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5357,64 +4448,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0830_0910_10.7.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_0830_0910_9.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.2",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_wed_room-201-2f_0900_0930_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
@@ -5457,7 +4490,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0910_0950_ntn-nr",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0910_0950_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -5465,14 +4498,20 @@
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "NTN-NR",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
+      "topic": "NR-NTN",
+      "topicKey": "67daaad6",
+      "agendaItems": [
+        "9.4"
+      ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -5482,16 +4521,42 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-126-bis-561748bd",
+          "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
-        },
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "9",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0910_0950_9.3.3",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-14",
+      "day": "Wednesday",
+      "startTime": "09:10",
+      "endTime": "09:50",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "9.3.3",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.3"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5533,64 +4598,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0910_0950_9.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "09:10",
-      "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NR-NTN",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_0910_0950_9.3.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "09:10",
-      "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.3",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5679,7 +4686,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_mimo",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -5688,15 +4695,19 @@
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
       "topic": "MIMO",
-      "topicKey": "2bfc3eac",
+      "topicKey": "67daaad6",
       "agendaItems": [
         "9.2"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -5706,16 +4717,42 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-126-bis-561748bd",
+          "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
-        },
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "9",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0950_1030_9.3.1",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-14",
+      "day": "Wednesday",
+      "startTime": "09:50",
+      "endTime": "10:30",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "9.3.1",
+      "topicKey": "929f9bed",
+      "agendaItems": [
+        "9.3.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "R20 A-IoT",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5758,64 +4795,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0950_1030_9.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "MIMO",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_0950_1030_9.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.1",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -5938,7 +4917,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1100_1200_ai-ml",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1100_1200_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
@@ -5946,66 +4925,26 @@
       "endTime": "12:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "AI/ML",
-      "topicKey": "2bfc3eac",
+      "topic": "AIML",
+      "topicKey": "67daaad6",
       "agendaItems": [
         "9.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
         },
         {
           "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1100_1300_10.8",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.8"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
         },
         {
@@ -6015,7 +4954,36 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "parentAgendaItem": "9",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1100_1140_10.8.2",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-14",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "11:40",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.8.2",
+      "topicKey": "c63f99f3",
+      "agendaItems": [
+        "10.8.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G ISAC",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -6103,64 +5071,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1100_1200_9.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "12:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AIML",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1100_1140_10.8.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.8.2",
-      "topicKey": "c63f99f3",
-      "agendaItems": [
-        "10.8.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G ISAC",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_wed_room-203-2f_1130_1230_10.5.2.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
@@ -6203,14 +5113,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1140_1220_10.8.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "11:40",
       "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.8.3",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -6314,43 +5224,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1200_1230_8.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "12:00",
-      "endTime": "12:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AI",
-      "topicKey": "1737c410",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1220_1300_10.8.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:20",
       "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.8.1",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -6533,35 +5414,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1230_1300_10.5.2.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "12:30",
-      "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDSCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
     {
@@ -6832,64 +5684,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1430_1510_10.5.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDCCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1430_1630_8.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "14:30",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "Maintenance (90-120)",
-      "topicKey": "86fcb096",
-      "agendaItems": [
-        "8.2",
-        "8.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "Maintenance (90-120)",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "direct",
-      "confidence": 0.9,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1500_1630_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
@@ -7033,35 +5827,6 @@
       ],
       "derivation": "direct",
       "confidence": 0.95,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1510_1630_10.5.2.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "15:10",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PUxCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
       "detailAvailable": true
     },
     {
@@ -7315,7 +6080,7 @@
       "endTime": "17:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "Waveform",
+      "topic": "10.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
         "10.2.1"
@@ -7328,10 +6093,14 @@
         {
           "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -7420,84 +6189,26 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1700_1800_10.3.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1730_1800_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
-      "startTime": "17:00",
+      "startTime": "17:30",
       "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Coding",
-      "topicKey": "f8e05aee",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.5.4.1",
+      "topicKey": "779f8719",
       "agendaItems": [
-        "10.3.1"
+        "10.5.4.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1700_1730_10.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "17:00",
-      "endTime": "17:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.2.1",
-      "topicKey": "5ef55a59",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G waveform",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1730_1930_10.5.4.x",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "17:30",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
-      "topic": "10.5.4.x",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": []
         }
       ],
@@ -7546,35 +6257,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1730_1800_10.5.4.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.1",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -7661,6 +6343,35 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1800_1820_10.5.4.2",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-14",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "18:20",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "10.5.4.2",
+      "topicKey": "779f8719",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "6G 10.5.4.x",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126-bis_wed_room-203-2f_1800_1830_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
@@ -7700,64 +6411,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1800_1830_10.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1800_1820_10.5.4.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "18:00",
-      "endTime": "18:20",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.2",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -7845,14 +6498,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1820_1850_10.5.4.4",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1820_1850_10.5.4.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:20",
       "endTime": "18:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.5.4.4",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -7957,43 +6610,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1830_1930_10.5.2.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-14",
-      "day": "Wednesday",
-      "startTime": "18:30",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDSCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_wed_yeongju-b_1850_1930_10.5.4.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1850_1930_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:50",
       "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -8334,64 +6958,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0830_0920_10.7.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "09:20",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_0830_0910_10.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "08:30",
-      "endTime": "09:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.2.1",
-      "topicKey": "5ef55a59",
-      "agendaItems": [
-        "10.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G waveform",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.2",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_thu_tamna-bc-hall_0900_0950_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
@@ -8546,33 +7112,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_0910_1030_maintenance",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "09:10",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "Maintenance",
-      "topicKey": "5b30e2c5",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Maintenance",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "8.2/8.3 TBD\n7 TBD",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0920_0950_9.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
@@ -8610,35 +7149,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.75,
-      "parentAgendaItem": "9",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0920_0950_9.5",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "09:20",
-      "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.5"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
@@ -8714,7 +7224,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0950_1030_ntn-nr",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0950_1030_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -8722,44 +7232,6 @@
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "NTN-NR",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0950_1030_9.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
       "topic": "NR-NTN",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -8773,10 +7245,22 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
@@ -8900,43 +7384,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1100_1300_a-iot-phase2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1100_1140_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:00",
-      "endTime": "13:00",
+      "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
+      "topic": "9.3.3",
+      "topicKey": "929f9bed",
       "agendaItems": [
-        "9.3"
+        "9.3.3"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 A-IoT",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.3",
       "detailAvailable": true
     },
     {
@@ -9046,65 +7519,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1100_1130_8.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "11:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AI",
-      "topicKey": "1737c410",
-      "agendaItems": [
-        "8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "AI 8.1",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1100_1140_9.3.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "11:00",
-      "endTime": "11:40",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "9.3.3",
-      "topicKey": "929f9bed",
-      "agendaItems": [
-        "9.3.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 A-IoT",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1130_1220_ai-ml",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1130_1220_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -9112,46 +7527,6 @@
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "AI/ML",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1130_1220_9.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "11:30",
-      "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
       "topic": "AIML",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -9165,10 +7540,22 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
@@ -9214,14 +7601,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1140_1220_9.3.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1140_1220_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:40",
       "endTime": "12:20",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -9368,7 +7755,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1220_1300_mimo",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1220_1300_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -9376,46 +7763,6 @@
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "MIMO",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1220_1300_9.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "12:20",
-      "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -9429,22 +7776,34 @@
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-628036f5",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-5dbb7698",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1220_1300_9.3.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1220_1300_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "12:20",
       "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -9627,44 +7986,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1430_1630_10.8",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1430_1510_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "14:30",
-      "endTime": "16:30",
+      "endTime": "15:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "Sensing",
-      "topicKey": "f8e05aee",
+      "topic": "10.8.1",
+      "topicKey": "c63f99f3",
       "agendaItems": [
-        "10.8"
+        "10.8.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G ISAC",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "10",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.8",
       "detailAvailable": true
     },
     {
@@ -9753,64 +8100,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1430_1500_10.5.2.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "15:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDCCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1430_1510_10.8.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "14:30",
-      "endTime": "15:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.8.1",
-      "topicKey": "c63f99f3",
-      "agendaItems": [
-        "10.8.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G ISAC",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.8",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1500_1545_10.5.2.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
@@ -9894,43 +8183,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1500_1545_10.5.2.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "15:00",
-      "endTime": "15:45",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PDSCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1510_1550_10.8.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1510_1550_10.8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:10",
       "endTime": "15:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.8.2",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -10035,43 +8295,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1545_1630_10.5.2.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "15:45",
-      "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "PUxCH",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1550_1630_10.8.3",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1550_1630_10.8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:50",
       "endTime": "16:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "10.8.3",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -10304,12 +8535,12 @@
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
       "topic": "10.5.4.4",
-      "topicKey": "f8e05aee",
+      "topicKey": "779f8719",
       "agendaItems": [
         "10.5.4.4"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -10407,64 +8638,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1700_1800_10.3.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Coding",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1700_1730_10.5.4.4",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "17:00",
-      "endTime": "17:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.4",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.4"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1730_1810_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
@@ -10473,35 +8646,6 @@
       "endTime": "18:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "10.5.4.3",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1730_1810_10.5.4.3",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "17:30",
-      "endTime": "18:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -10711,35 +8855,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1800_1830_10.3.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "Modulation",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.3",
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1810_1900_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
@@ -10748,35 +8863,6 @@
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
-      "topic": "10.5.4.1",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.4.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1810_1900_10.5.4.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "18:10",
-      "endTime": "19:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
       "topic": "10.5.4.1",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -10839,7 +8925,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1830_1930_ai-ml",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1830_1930_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -10847,16 +8933,20 @@
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
       "roomName": "Yeongju A Hall",
-      "topic": "AI/ML",
-      "topicKey": "2bfc3eac",
+      "topic": "AIML",
+      "topicKey": "67daaad6",
       "agendaItems": [
         "9.1"
       ],
       "agendaBreakdown": [],
-      "group": "R20",
+      "group": "R20 NR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-126-bis-628036f5",
           "contributed": []
@@ -10866,16 +8956,13 @@
           "contributed": []
         },
         {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.75,
+      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
@@ -10918,35 +9005,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.5.1",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1830_1930_9.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "18:30",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AIML",
-      "topicKey": "67daaad6",
-      "agendaItems": [
-        "9.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20 NR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "9",
       "detailAvailable": true
     },
     {
@@ -11000,12 +9058,12 @@
       "roomId": "ran1-126-bis-room-3d4808b9",
       "roomName": "Yeongju B Hall",
       "topic": "10.5.4.2",
-      "topicKey": "f8e05aee",
+      "topicKey": "779f8719",
       "agendaItems": [
         "10.5.4.2"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -11059,35 +9117,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_thu_yeongju-b_1900_1930_10.5.4.2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-15",
-      "day": "Thursday",
-      "startTime": "19:00",
-      "endTime": "19:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "10.5.4.2",
-      "topicKey": "779f8719",
-      "agendaItems": [
-        "10.5.4.2"
-      ],
-      "agendaBreakdown": [],
-      "group": "6G 10.5.4.x",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -11173,83 +9202,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0830_1030_a-iot-phase2",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-16",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
-      "topic": "A-IoT Phase2",
-      "topicKey": "2bfc3eac",
-      "agendaItems": [
-        "9.3"
-      ],
-      "agendaBreakdown": [],
-      "group": "R20",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-628036f5",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_0830_0930_10.7.1",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-16",
-      "day": "Friday",
-      "startTime": "08:30",
-      "endTime": "09:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "NTN",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.7.1"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.7",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_fri_yeongju-b_0830_0910_9.3.1",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0830_0910_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "09:10",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -11271,14 +9231,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b_0910_0950_9.3.2",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0910_0950_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:10",
       "endTime": "09:50",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -11382,43 +9342,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_0930_1030_10.5.2.x",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-16",
-      "day": "Friday",
-      "startTime": "09:30",
-      "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
-      "topic": "AI",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.5.2.x"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-561748bd",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.7,
-      "parentAgendaItem": "10.5.2",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_fri_yeongju-b_0950_1030_9.3.3",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0950_1030_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:50",
       "endTime": "10:30",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "9.3.3",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -11557,14 +9488,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_1100_1300_tbd",
+      "sessionId": "ran1-126-bis_fri_yeongju-a-hall_1100_1300_tbd",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-647965c6",
-      "roomName": "Yeongju A (1F)",
+      "roomId": "ran1-126-bis-room-3ae1b827",
+      "roomName": "Yeongju A Hall",
       "topic": "TBD",
       "topicKey": "1d9c8ac0",
       "agendaItems": [],
@@ -11583,14 +9514,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b_1100_1300_tbd",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_1100_1300_tbd",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
       "topic": "TBD",
       "topicKey": "1d9c8ac0",
       "agendaItems": [],
@@ -11873,6 +9804,32 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_1700_1800_ran1-126b-expected-to-cl",
+      "meetingId": "ran1-126-bis",
+      "date": "2026-10-16",
+      "day": "Friday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran1-126-bis-room-3d4808b9",
+      "roomName": "Yeongju B Hall",
+      "topic": "RAN1#126b expected to close at 17:00",
+      "topicKey": "c201cf29",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "group": "RAN1#126b expected to close at 17:00",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-126-bis-a242418b",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.6,
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-126-bis_fri_room-201-2f_1700_1930_to-be-assigned-by-sorour",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
@@ -11946,32 +9903,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-126-bis_fri_yeongju-b_1700_1800_ran1-126b-expected-to-cl",
-      "meetingId": "ran1-126-bis",
-      "date": "2026-10-16",
-      "day": "Friday",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "roomId": "ran1-126-bis-room-366fce9f",
-      "roomName": "Yeongju B",
-      "topic": "RAN1#126b expected to close at 17:00",
-      "topicKey": "c201cf29",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "RAN1#126b expected to close at 17:00",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-126-bis-a242418b",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.6,
       "detailAvailable": true
     }
   ],
@@ -12081,7 +10012,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-10T14:03:38Z",
-    "lastAttemptAt": "2026-10-10T14:03:38Z"
+    "lastSuccessfulAt": "2026-10-10T15:30:03Z",
+    "lastAttemptAt": "2026-10-10T15:30:03Z"
   }
 }
