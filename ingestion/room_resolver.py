@@ -68,6 +68,26 @@ def resolve_rooms(
             if target_id == room.roomId:
                 remap[source_id] = target.roomId
 
+    # Same room, different name: a name-only room whose sessions agree with one
+    # coloured room's sessions (same date, overlapping time, same or parent/child
+    # agenda) in most slots is that room.
+    def current(session: Session) -> str:
+        return remap.get(session.roomId, session.roomId)
+
+    colour_ids = {c.roomId for c in colour_rooms if c in keepers}
+    for room in list(keepers):
+        if is_colour(room):
+            continue
+        target = _schedule_twin(room, [c for c in keepers if c.roomId in colour_ids], sessions, current)
+        if target is None:
+            continue
+        absorb(target, room)
+        keepers.remove(room)
+        for source_id, target_id in list(remap.items()):
+            if target_id == room.roomId:
+                remap[source_id] = target.roomId
+        remap[room.roomId] = target.roomId
+
     used = {remap.get(s.roomId, s.roomId) for s in sessions if s.roomId}
     keepers = [r for r in keepers if r.roomId in used]
 
