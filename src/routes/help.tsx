@@ -294,11 +294,19 @@ function HelpPage() {
           </li>
           <li>
             <strong>Venue server:</strong> during the meeting week the app tries to read drafts
+            (and, if you switch it on in Schedule → sources, the schedule)
             directly from the meeting-local server at 10.10.10.10 — over HTTPS first, then plain
             HTTP. The HTTPS read only succeeds if that server's security certificate is officially
             issued for the address 10.10.10.10; with a self-signed certificate the browser refuses
             it silently and the app simply falls back to the 3GPP sync mirror. Nothing breaks
             either way.
+          </li>
+          <li>
+            <strong>Remote meeting FTP:</strong> during the meeting week the automatic refresh
+            also reads the meeting's remote FTP server (e.g. RAN-Maastricht.3gpp.org), which works
+            from outside the venue wifi — handy at night from your hotel. The host name changes
+            every meeting: the Drafts page asks for it once, and the first person to enter it sets
+            it for everyone. You can skip the question.
           </li>
           <li>
             <strong>Limitation:</strong> changes announced verbally in the room only appear once an
