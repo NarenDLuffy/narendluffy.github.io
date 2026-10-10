@@ -23,9 +23,12 @@ import { venueBlockedByScheme } from "@/lib/venueMode";
  * see the public 3GPP tree and only every few minutes. During a meeting week
  * fresher trees exist:
  *
- *   1. the venue server (conventionally http://10.10.10.10/...), fastest but
- *      only reachable from a device on the meeting network AND only readable
- *      when this page itself is served over plain HTTP (mixed content), and
+ *   1. the venue server (conventionally 10.10.10.10), fastest but only
+ *      reachable from a device on the meeting network. The HTTPS form works
+ *      from any page but ONLY when the venue certificate is valid for the IP
+ *      10.10.10.10 — a self-signed cert fails silently and we fall through.
+ *      The plain-HTTP form is only readable when this page itself is served
+ *      over plain HTTP (mixed content), and
  *   2. the 3GPP sync mirror /ftp/Meetings_3GPP_SYNC/RAN1/Inbox/, which the
  *      venue replicates into well before the archived meeting folder updates.
  *      The browser cannot read it directly (no CORS headers), so it is crawled
@@ -39,6 +42,8 @@ import { venueBlockedByScheme } from "@/lib/venueMode";
  */
 
 export const VENUE_DRAFTS_BASE = "http://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
+/** HTTPS twin of the venue server. Requires a certificate valid for the IP. */
+export const VENUE_DRAFTS_BASE_HTTPS = "https://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
 export const SYNC_DRAFTS_BASE = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
 
 const REQUEST_TIMEOUT_MS = 3500;
