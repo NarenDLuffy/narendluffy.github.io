@@ -151,8 +151,9 @@ function HelpPage() {
             <li>Unread counts appear on the tab and each folder; opening clears them.</li>
             <li>
               Source line shows where data came from: <strong>Venue</strong> (10.10.10.10, on
-              meeting Wi-Fi), <strong>Sync</strong> (3GPP SYNC mirror) or <strong>Published</strong>{" "}
-              (last built snapshot). Duplicates across servers are merged.
+              meeting Wi-Fi — tried over HTTPS first, then plain HTTP), <strong>Sync</strong> (3GPP
+              SYNC mirror) or <strong>Published</strong> (last built snapshot). Duplicates across
+              servers are merged.
             </li>
             <li>
               It re-checks about every 60 s; <strong>Refresh now</strong> forces an immediate scan
@@ -292,9 +293,12 @@ function HelpPage() {
             <strong>Times</strong> are always shown in the meeting's local time zone.
           </li>
           <li>
-            <strong>Venue mode</strong> (direct reading of the 10.10.10.10 meeting-local server) is
-            currently switched off; drafts and the schedule come from the public 3GPP meeting-sync
-            source. The code is kept for the future if the venue server supports HTTPS.
+            <strong>Venue server:</strong> during the meeting week the app tries to read drafts
+            directly from the meeting-local server at 10.10.10.10 — over HTTPS first, then plain
+            HTTP. The HTTPS read only succeeds if that server's security certificate is officially
+            issued for the address 10.10.10.10; with a self-signed certificate the browser refuses
+            it silently and the app simply falls back to the 3GPP sync mirror. Nothing breaks
+            either way.
           </li>
           <li>
             <strong>Limitation:</strong> changes announced verbally in the room only appear once an
