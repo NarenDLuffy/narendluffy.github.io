@@ -350,6 +350,23 @@ async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
   }
 }
 
+const DAY_MS = 86_400_000;
+
+/** Meeting week = status active, or today within start..end ± 1 day. */
+export function inMeetingWeek(meeting: Meeting, now = Date.now()): boolean {
+  if (meeting.status === "active") return true;
+  const start = Date.parse(`${meeting.startDate}T00:00:00Z`);
+  const end = Date.parse(`${meeting.endDate}T23:59:59Z`);
+  if (Number.isNaN(start) || Number.isNaN(end)) return false;
+  return now >= start - DAY_MS && now <= end + DAY_MS;
+}
+
+/** Files older than two weeks before the start are leftovers from the previous meeting. */
+function staleCutoff(meeting: Meeting): string {
+  const start = Date.parse(`${meeting.startDate}T00:00:00Z`);
+  return Number.isNaN(start) ? "" : new Date(start - 14 * DAY_MS).toISOString();
+}
+
 /**
  * Try the venue server first, then the 3GPP sync mirror (direct, then through
  * the server proxy), and merge whatever answers over the published index.
@@ -373,9 +390,20 @@ export async function probeLiveDrafts(
   const codes = new Set(agendaCodes);
   let venueStatus: VenueStatus = venueBlockedByScheme() ? "blocked-mixed-content" : "not-checked";
 
+  // The venue server and Meetings Sync only hold THIS meeting's files during
+  // its week; before that they still hold the previous meeting's uploads,
+  // which carry no meeting number. Outside the week, show only the snapshot.
+  if (!inMeetingWeek(meeting)) {
+    return { index: published, origin: "published", checkedAt, freshCount: 0, venueStatus: "not-checked" };
+  }
+  const cutoff = staleCutoff(meeting);
+
   for (const candidate of candidateBases()) {
-    const result =
+    const raw =
       candidate.via === "proxy" ? await crawlViaProxy(candidate.url) : await crawl(candidate.url);
+    const result = raw
+      ? { ...raw, files: raw.files.filter((f) => !f.modifiedAt || f.modifiedAt >= cutoff) }
+      : null;
     if (candidate.origin === "venue") {
       venueStatus = result && result.files.length > 0 ? "available" : "unavailable";
     }
