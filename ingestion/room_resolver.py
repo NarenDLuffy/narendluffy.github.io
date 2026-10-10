@@ -142,3 +142,51 @@ def resolve_rooms(
     order = {room.roomId: room.order for room in keepers}
     sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return keepers, sessions
+
+
+def _minutes(hhmm: str) -> int:
+    try:
+        h, m = (hhmm or "0:0").split(":")[:2]
+        return int(h) * 60 + int(m)
+    except ValueError:
+        return 0
+
+
+def _codes_related(a: list[str], b: list[str]) -> bool:
+    return any(x == y or x.startswith(f"{y}.") or y.startswith(f"{x}.") for x in a for y in b)
+
+
+def _agrees(s: Session, other: list[Session]) -> bool:
+    start, end = _minutes(s.startTime), _minutes(s.endTime)
+    for o in other:
+        if o.date != s.date:
+            continue
+        if min(end, _minutes(o.endTime)) <= max(start, _minutes(o.startTime)):
+            continue
+        if s.agendaItems and o.agendaItems:
+            if _codes_related(s.agendaItems, o.agendaItems):
+                return True
+        elif s.topicKey and s.topicKey == o.topicKey:
+            return True
+    return False
+
+
+def _names_similar(a: str | None, b: str | None) -> bool:
+    x, y = norm_room(a or ""), norm_room(b or "")
+    return bool(x and y) and (x in y or y in x)
+
+
+def _schedule_twin(room: Room, candidates: list[Room], sessions: list[Session], current) -> Room | None:
+    """Coloured room whose schedule clearly matches this name-only room's schedule."""
+    mine = [s for s in sessions if current(s) == room.roomId and s.kind != "break"]
+    if len(mine) < 3 or not candidates:
+        return None
+    scored = []
+    for cand in candidates:
+        theirs = [s for s in sessions if current(s) == cand.roomId]
+        scored.append((sum(1 for s in mine if _agrees(s, theirs)) / len(mine), cand))
+    scored.sort(key=lambda t: t[0], reverse=True)
+    best, cand = scored[0]
+    second = scored[1][0] if len(scored) > 1 else 0.0
+    needed = 0.5 if _names_similar(room.roomName, cand.roomName) else 0.7
+    return cand if best >= needed and best - second >= 0.25 else None
