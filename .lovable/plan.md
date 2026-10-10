@@ -9,7 +9,7 @@
 ## Fix
 
 1. **Meeting-week gate in the live check** (`src/services/draftLiveSource.ts`): the venue server and Meetings Sync are only probed when the selected meeting is in its meeting week (status `active`, or today within start–end date in the meeting's timezone, with one day of slack either side). Outside that window the app shows only the published snapshot built from the meeting's own folder.
-2. **Extra sanity check by date**: even during the week, ignore any Meetings Sync file whose modified time is older than ~7 days before the meeting start — catches leftovers from the previous meeting if the folder isn't cleared on time.
+2. **Extra sanity check by date**: even during the week, ignore any Meetings Sync file whose modified time is older than ~14 days before the meeting start — catches leftovers from the previous meeting if the folder isn't cleared on time.
 3. **Clean the current view**: files already pulled in come only from the in-page merge (not saved anywhere), so after the fix the duplicate 59-file row disappears on the next load; the "59 new files" notice resets with it.
 4. Record the rule in project notes: live Meetings Sync/venue drafts belong to a meeting only during its week.
 
