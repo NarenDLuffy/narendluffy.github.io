@@ -129,10 +129,25 @@ def main() -> int:
         action="store_true",
         help="publish the demonstration meetings instead of live documents",
     )
+    ap.add_argument(
+        "--meeting",
+        default="",
+        help="rebuild only meetings whose slug contains this text (e.g. 126-bis)",
+    )
     args = ap.parse_args()
 
     if args.fixtures:
         bundles = fixture_meetings()
+    elif args.meeting:
+        from .live import build_bundle
+        from .portal import fetch_meetings
+
+        wanted = args.meeting.lower()
+        bundles = []
+        for pm in fetch_meetings("2025-01-01", "2028-12-31"):
+            label = f"ran1-{pm.number}{'-' + pm.type if getattr(pm, 'type', '') else ''}"
+            if wanted in label.lower() or wanted in (pm.name or "").lower():
+                bundles.append(build_bundle(pm))
     else:
         try:
             bundles = build_bundles(args.force)

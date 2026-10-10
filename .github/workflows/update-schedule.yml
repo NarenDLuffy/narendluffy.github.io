@@ -21,6 +21,10 @@ on:
         description: "Publish the demonstration meetings instead of live documents"
         type: boolean
         default: false
+      meeting:
+        description: "Rebuild only this meeting (e.g. 126-bis); empty = all"
+        type: string
+        default: ""
 
 concurrency:
   # Schedule and drafts jobs commit to the same branch: one queue, never in parallel.
@@ -61,10 +65,12 @@ jobs:
       # The public 3GPP source is always used here; meeting-local documents are
       # only ever read client-side by delegates on the venue network.
       - name: Discover meetings and refresh schedules
+        timeout-minutes: 45
         run: |
           python -m ingestion.generate_schedule \
             ${{ inputs.force && '--force' || '' }} \
-            ${{ inputs.fixtures && '--fixtures' || '' }}
+            ${{ inputs.fixtures && '--fixtures' || '' }} \
+            ${{ inputs.meeting && format('--meeting {0}', inputs.meeting) || '' }}
 
       - name: Commit updated data
         run: |
