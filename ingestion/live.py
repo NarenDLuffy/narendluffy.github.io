@@ -19,6 +19,7 @@ import tempfile
 from datetime import datetime, timezone
 from urllib.parse import unquote
 
+from . import remote_ftp
 from .block_schedule import parse_block_schedule_docx
 from .canonical_schedule import canonicalize
 from .schedule_discovery import inspect_docx, name_priority, walk_documents
@@ -46,15 +47,21 @@ from .portal import (
 
 def download_to_temp(url: str) -> str | None:
     """Fetch a document into a temp file; None when it cannot be retrieved."""
-    try:
-        response = http.get(url, timeout=60)
-        response.raise_for_status()
-    except Exception:
-        return None
+    if url.startswith("ftp://"):
+        content = remote_ftp.fetch_bytes(url, max_bytes=40 * 1024 * 1024)
+        if content is None:
+            return None
+    else:
+        try:
+            response = http.get(url, timeout=60)
+            response.raise_for_status()
+        except Exception:
+            return None
+        content = response.content
     suffix = os.path.splitext(unquote(url))[1][:8] or ".bin"
     fd, path = tempfile.mkstemp(suffix=suffix)
     with os.fdopen(fd, "wb") as handle:
-        handle.write(response.content)
+        handle.write(content)
     return path
 
 DOC_SUBFOLDERS = ("Agenda", "Inbox", "Invitation")
@@ -198,6 +205,17 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
             )
         except Exception as exc:  # the mirror is optional
             print(f"  meeting-sync mirror unavailable: {exc}")
+        # Remote meeting FTP (host entered by a delegate), meeting week only.
+        try:
+            ftp_root = remote_ftp.remote_root(meeting.id, meeting.startDate, meeting.endDate)
+            if ftp_root:
+                found.extend(
+                    _to_source(meeting, url, name, retrieved_at)
+                    for url, name in remote_ftp.walk_files(ftp_root)
+                    if name.lower().endswith(DOC_EXTENSIONS) and _belongs_to_meeting(meeting, name)
+                )
+        except Exception as exc:  # optional
+            print(f"  remote meeting FTP unavailable: {exc}")
     return _latest_revisions(found)
 
 

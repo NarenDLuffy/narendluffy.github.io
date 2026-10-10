@@ -31,6 +31,9 @@ permissions:
 
 env:
   PYTHONDONTWRITEBYTECODE: "1"
+  # Remote meeting FTP (same login every meeting); host comes from the app.
+  MEETING_FTP_USER: ${{ secrets.MEETING_FTP_USER }}
+  MEETING_FTP_PASS: ${{ secrets.MEETING_FTP_PASS }}
 
 jobs:
   scan:

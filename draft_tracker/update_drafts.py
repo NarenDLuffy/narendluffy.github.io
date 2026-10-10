@@ -17,7 +17,10 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .notifier import group_events
+from ingestion import remote_ftp
+
 from .public_source import Public3GPPDraftSource
+from .remote_ftp_source import RemoteFtpDraftSource
 from .state_store import load_previous, save_index
 from .tracker import ScanConfig, scan_meeting
 
@@ -105,6 +108,17 @@ def main() -> int:
         # not accidentally inherit files from the current meeting.
         live_root = SYNC_DRAFTS_ROOT if meeting.get("status") == "active" else None
         source = Public3GPPDraftSource(folder, drafts_root_url=live_root)
+        # The remote meeting FTP mirrors the venue server and is upstream of
+        # the sync folder, so it wins whenever a delegate entered its host and
+        # it answers during the meeting week.
+        ftp_root = remote_ftp.remote_root(
+            meeting.get("id", slug), meeting.get("startDate"), meeting.get("endDate")
+        )
+        if ftp_root:
+            ftp_source = RemoteFtpDraftSource(ftp_root)
+            if ftp_source.discover_drafts_root():
+                print(f"{slug}: using remote meeting FTP {ftp_root}")
+                source = ftp_source
         previous = load_previous(slug)
         index = scan_meeting(
             meeting_id=meeting.get("id", slug),
