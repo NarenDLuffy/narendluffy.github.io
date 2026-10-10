@@ -44,3 +44,12 @@ def test_unrelated_room_kept():
     s += [sess("z", t, c) for t, c in [("09:00", "11.1"), ("10:00", "11.2"), ("11:00", "11.3")]]
     kept, _ = resolve_rooms(M, rooms, s)
     assert "z" in {r.roomId for r in kept}
+
+
+def test_ambiguous_tie_kept():
+    rooms, s = base()
+    rooms.append(room("t", "T", f"{M}:name:t"))
+    s += [sess("a", "14:00", "12.1"), sess("b", "14:00", "12.1")]
+    s += [sess("t", t, c) for t, c in [("14:00", "12.1"), ("15:00", "13.1"), ("16:00", "13.2")]]
+    kept, _ = resolve_rooms(M, rooms, s)
+    assert "t" in {r.roomId for r in kept}
