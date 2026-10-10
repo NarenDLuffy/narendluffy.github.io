@@ -26,4 +26,4 @@ Add one bullet: during the meeting week the app also refreshes from the meeting'
 - Workflows: pass the two secrets as env vars to schedule and drafts jobs.
 
 ## Open question
-Which folder on the remote FTP holds the Inbox (e.g. `/Inbox/` at root)? Default assumption: crawl from root, picking the Inbox path automatically.
+Which folder on the remote FTP holds the Inbox? Resolved: same layout as Meetings Sync — crawl `RAN1/Inbox/` recursively.
