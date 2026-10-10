@@ -18,3 +18,4 @@
 - Generated schedule/drafts data is read live from the GitHub repo copy (bundled copy as fallback) — updates appear without re-publishing.
 - Schedule blocks with only a topic name get their agenda code from chair-notes agenda titles via ingestion/topic_agenda_mapper.py, linked only on a unique match — so agenda filters catch them without guessing.
 - DOCX schedule ingestion reads only active visible Word runs: highlighted and inserted text stays, while deleted, hidden, and struck-through text is excluded — withdrawn agenda items must never enter the canonical schedule.
+- Live drafts from the venue server and Meetings Sync count only during the meeting's week (±1 day), ignoring files older than 14 days before start — the previous meeting's leftovers carry no meeting number.
