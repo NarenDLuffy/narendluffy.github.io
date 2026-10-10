@@ -89,6 +89,24 @@ export type Database = {
         }
         Relationships: []
       }
+      meeting_settings: {
+        Row: {
+          meeting_id: string
+          remote_ftp_host: string | null
+          updated_at: string
+        }
+        Insert: {
+          meeting_id: string
+          remote_ftp_host?: string | null
+          updated_at?: string
+        }
+        Update: {
+          meeting_id?: string
+          remote_ftp_host?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       push_subscriptions: {
         Row: {
           auth: string
