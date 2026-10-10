@@ -19,7 +19,7 @@ import tempfile
 from datetime import datetime, timezone
 from urllib.parse import unquote
 
-from . import remote_ftp
+import ingestion.remote_ftp as remote_ftp
 from .block_schedule import parse_block_schedule_docx
 from .canonical_schedule import canonicalize
 from .schedule_discovery import inspect_docx, name_priority, walk_documents

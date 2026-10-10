@@ -17,7 +17,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .notifier import group_events
-from ingestion import remote_ftp
+import ingestion.remote_ftp as remote_ftp
 
 from .public_source import Public3GPPDraftSource
 from .remote_ftp_source import RemoteFtpDraftSource

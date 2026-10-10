@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from ingestion import remote_ftp
+import ingestion.remote_ftp as remote_ftp
 
 from .directory_parser import NormalizedDirectoryEntry
 
