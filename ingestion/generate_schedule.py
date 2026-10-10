@@ -145,7 +145,7 @@ def main() -> int:
         wanted = args.meeting.lower()
         bundles = []
         for pm in fetch_meetings("2025-01-01", "2028-12-31"):
-            label = f"ran1-{pm.number}{'-' + pm.type if getattr(pm, 'type', '') else ''}"
+            label = pm.slug
             if wanted in label.lower() or wanted in (pm.name or "").lower():
                 bundles.append(build_bundle(pm))
     else:
