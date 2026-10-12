@@ -30,6 +30,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from . import health, remote_ftp
 from .change_detector import detect_changes
 from .fixtures import fixture_meetings
 from .live import build_live_bundles
@@ -160,6 +161,7 @@ def main() -> int:
         return 0
 
     published: list[ScheduleBundle] = []
+    sections: dict[str, dict] = {}
     failed = 0
     for bundle in bundles:
         previous = read_previous(bundle.meeting.slug)
@@ -172,12 +174,30 @@ def main() -> int:
                 sep="\n  ",
                 file=sys.stderr,
             )
+            if previous is not None:
+                # The old schedule is still what people see: say so, don't go quiet.
+                sections[bundle.meeting.slug] = {
+                    **health.schedule_section(previous),
+                    "state": "validation-failed",
+                }
             continue
         bundle.changes = detect_changes(previous, bundle) + bundle.changes
         write_meeting(bundle)
         published.append(bundle)
+        sections[bundle.meeting.slug] = health.schedule_section(bundle)
 
     write_index(bundles)
+
+    # Health record: what this run actually achieved, per meeting. Written last so
+    # it always describes the last real attempt, published or not (see health.py).
+    for bundle in bundles:
+        section = sections.get(bundle.meeting.slug)
+        if section is not None:
+            health.record(
+                bundle.meeting.slug,
+                schedule=section,
+                remote=remote_ftp.snapshot(bundle.meeting.id),
+            )
 
     current = select_current([b.meeting for b in bundles])
     print(

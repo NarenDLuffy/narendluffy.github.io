@@ -18,6 +18,7 @@ from pathlib import Path
 
 from .notifier import group_events
 import ingestion.remote_ftp as remote_ftp
+from ingestion import health
 
 from .public_source import Public3GPPDraftSource
 from .remote_ftp_source import RemoteFtpDraftSource
@@ -137,6 +138,19 @@ def main() -> int:
         print(
             f"{slug}: {index.scanState}, {len(index.artifacts)} artifacts, "
             f"{len(index.folders)} folders, {fresh} new event(s)"
+        )
+        # Health record: what this scan achieved, and what it could not (health.py).
+        health.record(
+            slug,
+            drafts=health.drafts_section(
+                payload,
+                source_label=(
+                    "remote meeting FTP"
+                    if ftp_root and live_root == ftp_root
+                    else "3GPP sync mirror"
+                ),
+            ),
+            remote=remote_ftp.snapshot(meeting.get("id", slug)),
         )
 
     if scanned == 0:

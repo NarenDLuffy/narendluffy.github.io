@@ -16,8 +16,10 @@ Files are addressed as ftp://<host>/<path>; `fetch_bytes` downloads them.
 from __future__ import annotations
 
 import ftplib
+import io
 import json
 import os
+import re
 import urllib.request
 from datetime import date, timedelta
 from urllib.parse import quote, unquote, urlparse
@@ -27,6 +29,26 @@ TIMEOUT = 30
 APP_URL = os.environ.get("RAN1_APP_URL", "https://ran1.app")
 
 _conns: dict[str, ftplib.FTP] = {}
+
+# What the last remote-source decision was, per meeting, for the health record.
+_status: dict[str, dict] = {}
+# Hosts read out of the meeting's own documents and verified by a real login.
+_detected: dict[str, str] = {}
+
+# The venue's remote FTP address, as printed in the meeting's own documents.
+# Never guessed: a candidate only counts when the saved login works there.
+HOST_RE = re.compile(r"\b(RAN-[A-Za-z0-9][A-Za-z0-9-]*\.3gpp\.org)\b", re.I)
+VENUE_HINTS = (
+    "venue",
+    "floorplan",
+    "floor plan",
+    "logistic",
+    "information",
+    "invitation",
+    "arrival",
+)
+MAX_HOST_DOCS = 6
+MAX_HOST_DOC_BYTES = 4 * 1024 * 1024
 
 
 def in_meeting_week(start: str | None, end: str | None, today: date | None = None) -> bool:
@@ -57,13 +79,33 @@ def host_for(meeting_id: str) -> str | None:
         return None
 
 
+def snapshot(meeting_id: str) -> dict:
+    """What the last remote-source decision was, for the health record."""
+    snap = dict(_status.get(meeting_id) or {})
+    snap.setdefault("credentials", bool(credentials()))
+    return snap
+
+
+def _note(meeting_id: str, state: str, host: str | None = None) -> None:
+    _status[meeting_id] = {"state": state, "host": host, "credentials": bool(credentials())}
+
+
 def remote_root(meeting_id: str, start: str | None, end: str | None) -> str | None:
     """ftp://host/RAN1/Inbox/ when the remote FTP should be used now."""
-    if not in_meeting_week(start, end) or not credentials():
+    if not credentials():
+        _note(meeting_id, "skipped-no-credentials")
         return None
-    host = host_for(meeting_id)
-    if not host or _connect(host) is None:
+    if not in_meeting_week(start, end):
+        _note(meeting_id, "outside-meeting-week")
         return None
+    host = host_for(meeting_id) or detected_host(meeting_id)
+    if not host:
+        _note(meeting_id, "skipped-no-host")
+        return None
+    if _connect(host) is None:
+        _note(meeting_id, "unreachable", host)
+        return None
+    _note(meeting_id, "read", host)
     return f"ftp://{host}{INBOX_PATH}"
 
 
@@ -170,3 +212,82 @@ def fetch_bytes(url: str, max_bytes: int = 12 * 1024 * 1024) -> bytes | None:
     except Exception:
         return None
     return b"".join(chunks)
+
+
+def detected_host(meeting_id: str) -> str | None:
+    """A venue address already read from this meeting's documents, if any."""
+    if meeting_id in _detected:
+        return _detected[meeting_id]
+    from . import health  # local import: health reads this module, never the reverse
+
+    cached = health.cached_detected_host(meeting_id)
+    if cached:
+        _detected[meeting_id] = cached
+    return cached
+
+
+def _http_download(url: str, max_bytes: int) -> bytes | None:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "ran1-live/1.0"})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as res:
+            data = res.read(max_bytes + 1)
+        return data if len(data) <= max_bytes else None
+    except Exception:
+        return None
+
+
+def _docx_text(data: bytes) -> str:
+    """Active visible text of a .docx; empty when it cannot be read."""
+    try:
+        from docx import Document
+
+        from .docx_active_text import active_element_text
+
+        return active_element_text(Document(io.BytesIO(data)).element)
+    except Exception:
+        return ""
+
+
+def _venue_candidates(docs: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Documents most likely to print the venue's FTP address, cheapest first."""
+
+    def score(item: tuple[str, str]) -> tuple[int, int]:
+        name = item[0].lower()
+        hint = next((i for i, h in enumerate(VENUE_HINTS) if h in name), len(VENUE_HINTS))
+        return (hint, len(name))
+
+    docs = [d for d in docs if d[1] and d[1].lower().endswith(".docx")]
+    # Only probe documents whose name says it could carry the address — otherwise
+    # every refresh would download six unrelated files looking for one string.
+    hinted = [d for d in docs if any(h in d[0].lower() for h in VENUE_HINTS)]
+    return sorted(hinted, key=score)[:MAX_HOST_DOCS]
+
+
+def ensure_host(meeting_id: str, docs: list[tuple[str, str]]) -> str | None:
+    """Find the venue's remote FTP address in the meeting's own documents.
+
+    Never guessed: an address only counts when it is printed in a document the
+    meeting itself published *and* the saved login actually works there. A
+    verified address is remembered in the meeting's health record, so the
+    delegates' one-time entry is only needed when no document states it.
+    """
+    cached = detected_host(meeting_id)
+    if cached:
+        return cached
+    if not credentials():
+        return None
+    for name, url in _venue_candidates(docs):
+        data = fetch_bytes(url) if url.startswith("ftp://") else _http_download(
+            url, MAX_HOST_DOC_BYTES
+        )
+        if not data:
+            continue
+        for host in dict.fromkeys(HOST_RE.findall(_docx_text(data))):
+            if _connect(host) is not None:
+                _detected[meeting_id] = host
+                from . import health
+
+                health.remember_detected_host(meeting_id, host)
+                print(f"  remote FTP host {host} read from {name} and login verified")
+                return host
+    return None

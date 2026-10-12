@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran1-126-bis",
+  "schedule": {
+    "state": "ok",
+    "lastSuccessAt": "2026-10-12T10:56:43Z",
+    "lastAttemptAt": "2026-10-12T10:56:43Z",
+    "sessionCount": 249,
+    "roomCount": 5,
+    "dates": [
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16"
+    ],
+    "sourceCount": 4,
+    "sources": [
+      {
+        "label": "Chair notes RAN1#126bis_v01",
+        "fileName": "Chair notes RAN1#126bis_v01.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#126b online and offline schedules - v00",
+        "fileName": "RAN1#126b online and offline schedules - v00.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#126b Sorour sessions online and offline schedules - v00",
+        "fileName": "RAN1#126b Sorour sessions online and offline schedules - v00.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v02",
+        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v02.docx",
+        "origin": "public"
+      }
+    ],
+    "draftOnly": false,
+    "conflictCount": 3,
+    "lowConfidenceCount": 0
+  },
+  "remoteFtp": {
+    "state": "skipped-no-credentials",
+    "host": null,
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "3 unresolved source conflict(s)."
+    },
+    {
+      "level": "info",
+      "text": "3 file(s) the meeting server no longer holds are hidden."
+    },
+    {
+      "level": "info",
+      "text": "Only 147 of 148 draft folders were opened this scan."
+    },
+    {
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+    }
+  ],
+  "updatedAt": "2026-10-12T10:59:12Z",
+  "drafts": {
+    "state": "ok",
+    "lastSuccessAt": "2026-10-12T10:59:02Z",
+    "source": "3GPP sync mirror",
+    "artifactCount": 1143,
+    "hiddenCount": 3,
+    "folderCount": 148,
+    "readFolderCount": 147,
+    "eventCount": 500
+  }
+}
