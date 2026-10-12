@@ -35,5 +35,6 @@ export const crawlSyncDrafts = createServerFn({ method: "POST" })
       ok: Boolean(result),
       folders: result?.folders ?? [],
       files: result?.files ?? [],
+      readFolders: result?.readFolders ?? [],
     };
   });

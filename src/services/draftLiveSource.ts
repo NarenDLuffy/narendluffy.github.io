@@ -415,7 +415,7 @@ function candidateBases(): Candidate[] {
   const configuredDraftsUrl = settings.baseUrl?.includes("/Meetings_3GPP_SYNC/RAN1/Inbox/")
     ? settings.baseUrl
     : null;
-  const venue = configuredDraftsUrl ?? VENUE_DRAFTS_BASE;
+  const venue = draftsTreeUrl(configuredDraftsUrl ?? VENUE_DRAFTS_BASE);
 
   const candidates: Candidate[] = [];
   // HTTPS venue twin first: works from any page (including https://ran1.app),
@@ -460,7 +460,11 @@ async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
     const { crawlSyncDrafts } = await import("@/lib/drafts.functions");
     const result = await crawlSyncDrafts({ data: { url } });
     if (!result?.ok) return null;
-    return { folders: result.folders, files: result.files };
+    return {
+      folders: result.folders,
+      files: result.files,
+      readFolders: result.readFolders ?? [],
+    };
   } catch {
     // No server function available (static export) or the crawl failed.
     return null;
@@ -501,6 +505,7 @@ export async function probeLiveDrafts(
       origin: "published",
       checkedAt,
       freshCount: 0,
+      hiddenCount: 0,
       venueStatus: "not-checked",
     };
   }
@@ -511,7 +516,14 @@ export async function probeLiveDrafts(
   // its week; before that they still hold the previous meeting's uploads,
   // which carry no meeting number. Outside the week, show only the snapshot.
   if (!inMeetingWeek(meeting)) {
-    return { index: published, origin: "published", checkedAt, freshCount: 0, venueStatus: "not-checked" };
+    return {
+      index: published,
+      origin: "published",
+      checkedAt,
+      freshCount: 0,
+      hiddenCount: 0,
+      venueStatus: "not-checked",
+    };
   }
   const cutoff = staleCutoff(meeting);
 
@@ -539,6 +551,7 @@ export async function probeLiveDrafts(
       origin: candidate.origin,
       checkedAt,
       freshCount,
+      hiddenCount,
       baseUrl: candidate.url,
       venueStatus,
     };
@@ -549,6 +562,7 @@ export async function probeLiveDrafts(
     origin: "published",
     checkedAt,
     freshCount: 0,
+    hiddenCount: 0,
     venueStatus,
   };
 }
