@@ -7,7 +7,7 @@
 - The exact reason the Yeongju sessions are missing is **not confirmed yet**. The most likely cause is the old draft overlapping the official file, so the official sessions for those rooms get lost. Step 1 checks this before anything is changed.
 
 ## Steps
-1. **Find the cause.** Download the four current files. List the Monday 11:00–12:30 rows for the Yeongju rooms in each file. Then follow those rows through the merge to see where they get dropped.
+1. **Find the cause.** Download the three current main (non-"Draft") files: official v00, Sorour v00 and Hiroki v01. During the meeting week only these files count. List the Monday 11:00–12:30 rows for the Yeongju rooms in each file. Then follow those rows through the merge to see where they get dropped.
 2. **Official schedule priority, for every meeting.** Once a file without "Draft" in its name exists for a schedule series, ignore the "Draft …" files of that series, whatever their version numbers. Within the files that count, keep using only the latest version of each (Sorour v00, Hiroki v01, official v00). Chair notes follow the same rule.
 3. **Fix the cause found in step 1.** For example, the Yeongju lanes might be lost when the online and offline tables are matched up, or they might get lost in the merge. Add a check that fails if Monday 11:00–12:30 has no Yeongju sessions while the source files list them.
 4. **Rebuild only RAN1#126bis and publish it**, using the rebuild option for a single meeting. Then compare Monday with the official v00 file in the preview, room by room.
