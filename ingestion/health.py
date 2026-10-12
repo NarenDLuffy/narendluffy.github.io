@@ -99,7 +99,9 @@ def _warn(level: str, text: str) -> dict[str, str]:
     return {"level": level, "text": text}
 
 
-def _warnings(record: dict[str, Any], meeting: dict[str, Any], now: datetime) -> list[dict]:
+def _warnings(
+    slug: str, record: dict[str, Any], meeting: dict[str, Any], now: datetime
+) -> list[dict]:
     """Plain-language problems, most important first."""
     out: list[dict] = []
     status = meeting.get("status") or "unknown"
@@ -109,8 +111,22 @@ def _warnings(record: dict[str, Any], meeting: dict[str, Any], now: datetime) ->
     remote = record.get("remoteFtp") or {}
     state = remote.get("state")
 
+    # Each section is written only by the job that owns it, so a missing section
+    # does not mean the data is missing. Check what is actually published before
+    # raising anything a delegate would notice.
+    sessions = sched.get("sessionCount") or len(
+        _published(slug, "schedule.json").get("sessions") or []
+    )
+    files = drafts.get("artifactCount") or len(
+        [
+            a
+            for a in _published(slug, "drafts.json").get("artifacts") or []
+            if not a.get("removedAt")
+        ]
+    )
+
     # --- timetable ---
-    if not sched.get("sessionCount"):
+    if not sessions:
         out.append(
             _warn(
                 "warn" if active else "info",
@@ -147,7 +163,7 @@ def _warnings(record: dict[str, Any], meeting: dict[str, Any], now: datetime) ->
             )
 
     # --- drafts ---
-    if not drafts.get("artifactCount"):
+    if not files:
         out.append(
             _warn(
                 "warn" if active else "info",
@@ -232,7 +248,7 @@ def record(
         if payload is not None:
             updated[section] = payload
 
-    updated["warnings"] = _warnings(updated, meeting, stamp)
+    updated["warnings"] = _warnings(slug, updated, meeting, stamp)
 
     if _without_stamp(updated) == _without_stamp(existing):
         return existing  # nothing moved: keep the file (and the commit) untouched
