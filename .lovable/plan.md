@@ -26,5 +26,5 @@
 After this plan is complete, present these separately, one at a time:
 
 1. Drafts: combine venue and MEETINGS_SYNC during meeting week and remove stale archive-only entries.
-2. Schedule ingestion: prefer the official RAN1#126bis v00 schedule over the draft v03 once official files exist.
+2. Schedule ingestion: prefer official schedule DOCX files whose names do not contain “Draft” once they are available, for every meeting and regardless of version number.
 3. My agenda: leaf-only selection plus explicit `10.4.x` matching to selected children such as 10.4.1 and 10.4.2.
