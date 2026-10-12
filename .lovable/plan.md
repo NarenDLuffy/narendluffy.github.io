@@ -18,7 +18,9 @@
 
 - During the meeting week, check both the HTTPS venue server at **10.10.10.10** and **MEETINGS_SYNC** on every live refresh instead of stopping after the first source that answers.
 - Merge files from both successful reads into one Drafts list using the existing document identity, so replication of the same upload stays one file while a newer or source-only upload is retained.
-- Keep the published snapshot as the baseline and fallback. An unavailable venue server remains normal; MEETINGS_SYNC is still checked and the page continues working.
+- Keep the published snapshot as the fallback when neither live source answers. Once venue or MEETINGS_SYNC provides a valid current-meeting listing during meeting week, hide files whose only source is the per-meeting archive folder; that archive can contain earlier material which is no longer part of the live drafts tree.
+- Remove archive-only folders and their old change notices from the displayed meeting-week result as well, so counts and unread badges do not retain entries such as the old 10.8.1 Round 1 files.
+- An unavailable venue server remains normal; MEETINGS_SYNC is still checked and the page continues working.
 - Report the sources honestly in the Drafts refresh status, including when both contributed files.
 
 ## Technical details
@@ -28,4 +30,5 @@
 - Update `Timetable` with a two-level sticky header whose group widths are calculated from the existing room-column widths, including parallel lanes.
 - Preserve topic colouring elsewhere unless that view already uses room colours; do not append mode text to every room name across the app.
 - Refactor `probeLiveDrafts()` so all eligible meeting-week candidates are checked, successful results are merged cumulatively, and the direct MEETINGS_SYNC read remains only a fallback for its server-assisted read rather than a duplicate crawl.
-- Add focused checks for venue-only, sync-only, both available with overlapping files, and neither available.
+- Identify archive-only published entries from their saved source URLs, without relying on filenames or agenda numbers; preserve any document also present on venue or MEETINGS_SYNC.
+- Add focused checks for venue-only, sync-only, both available with overlapping files, neither available, and removal of archive-only files/folders/events once a live source answers.
