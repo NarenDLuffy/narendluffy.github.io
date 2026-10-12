@@ -18,6 +18,7 @@ from pathlib import Path
 
 from .notifier import group_events
 import ingestion.remote_ftp as remote_ftp
+from ingestion import health
 
 from .public_source import Public3GPPDraftSource
 from .remote_ftp_source import RemoteFtpDraftSource
