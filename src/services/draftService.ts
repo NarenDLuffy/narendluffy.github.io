@@ -405,7 +405,7 @@ function latestStamp(
   a: string | undefined,
   b: string | undefined,
   key: "latestFileAt" | "latestAt",
-): AgendaActivity | Record<string, never> {
+): Partial<Pick<AgendaActivity, "latestFileAt" | "latestAt">> {
   const max = a && b ? (a > b ? a : b) : (a ?? b);
   return max ? { [key]: max } : {};
 }
