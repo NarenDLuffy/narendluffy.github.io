@@ -8,7 +8,7 @@ import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
 import { DraftBadge } from "@/components/DraftActivity";
 import { topicStyle } from "@/lib/topics";
-import { agendaTitle, roomLabelById } from "@/lib/rooms";
+import { agendaTitle, roomLabelById, roomMode, roomStyle } from "@/lib/rooms";
 import { cn } from "@/lib/utils";
 import {
   Dialog,
@@ -54,11 +54,13 @@ export function SessionCard({
   bundle,
   live,
   compact,
+  roomPresentation,
 }: {
   session: Session;
   bundle: ScheduleBundle;
   live?: boolean;
   compact?: boolean;
+  roomPresentation?: boolean;
 }) {
   const { isBookmarked, toggle } = useBookmarks();
   const { meeting } = useActiveMeeting();
@@ -67,18 +69,28 @@ export function SessionCard({
   const draftFl = (code: string) => (drafts.activity.get(code)?.flUpdates ?? 0) > 0;
   const [open, setOpen] = useState(false);
   const breakdown = session.agendaBreakdown ?? [];
+  const room = bundle.rooms.find((candidate) => candidate.roomId === session.roomId);
+  const mode = roomPresentation ? roomMode(room) : undefined;
 
   return (
     <article
-      style={topicStyle(session.topicKey)}
+      style={roomPresentation ? roomStyle(room) : topicStyle(session.topicKey)}
       className={cn(
         "relative overflow-hidden rounded-lg border bg-card pl-3",
+        roomPresentation &&
+          "bg-[color-mix(in_oklab,var(--room-color)_8%,var(--card))]",
         live ? "border-live/60 shadow-sm" : "border-border",
       )}
     >
-      <span className="topic-bar absolute inset-y-0 left-0 w-1.5" aria-hidden />
+      <span
+        className={cn(
+          "absolute inset-y-0 left-0 w-1.5",
+          roomPresentation ? "bg-[var(--room-color)]" : "topic-bar",
+        )}
+        aria-hidden
+      />
       <div className="p-3">
-        <div className="flex items-start justify-between gap-3">
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3">
           <div className="min-w-0">
             <div className="flex items-center gap-2">
               <h3 className="truncate text-base font-semibold leading-tight">{session.topic}</h3>
@@ -93,13 +105,20 @@ export function SessionCard({
                 </span>
               ) : null}
             </div>
-            <Link
-              to="/rooms/$roomId"
-              params={{ roomId: session.roomId }}
-              className="text-sm text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
-            >
-              {roomLabelById(bundle, session.roomId, session.roomName)}
-            </Link>
+            <div className="mt-0.5 flex min-w-0 items-center gap-1.5">
+              <Link
+                to="/rooms/$roomId"
+                params={{ roomId: session.roomId }}
+                className="min-w-0 truncate text-sm text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+              >
+                {roomLabelById(bundle, session.roomId, session.roomName)}
+              </Link>
+              {mode ? (
+                <span className="mono-code shrink-0 rounded border border-[var(--room-color)] bg-card/70 px-1.5 py-0.5 text-[9px] font-semibold uppercase text-foreground">
+                  {mode}
+                </span>
+              ) : null}
+            </div>
           </div>
           <div className="mono-code shrink-0 text-right text-sm font-semibold tabular">
             <div>{session.startTime}</div>

@@ -118,7 +118,13 @@ function NowPage() {
         ) : (
           <div className="space-y-2">
             {live.map((s) => (
-              <SessionCard key={s.sessionId} session={s} bundle={bundle} live />
+              <SessionCard
+                key={s.sessionId}
+                session={s}
+                bundle={bundle}
+                live
+                roomPresentation
+              />
             ))}
           </div>
         )}
@@ -132,7 +138,15 @@ function NowPage() {
               Nothing else scheduled.
             </p>
           ) : (
-            next.map((s) => <SessionCard key={s.sessionId} session={s} bundle={bundle} compact />)
+            next.map((s) => (
+              <SessionCard
+                key={s.sessionId}
+                session={s}
+                bundle={bundle}
+                compact
+                roomPresentation
+              />
+            ))
           )}
         </div>
       </section>
