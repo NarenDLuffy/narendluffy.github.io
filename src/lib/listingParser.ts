@@ -108,6 +108,13 @@ export interface CrawlResult {
     size?: number;
     modifiedAt?: string;
   }[];
+  /**
+   * Folder paths whose listing was actually opened ("" for the crawl root).
+   * A crawler stops at a request cap, so "this file is not in the tree" and
+   * "nobody looked in that folder" are different statements. This set is what
+   * lets a caller tell them apart.
+   */
+  readFolders: string[];
 }
 
 export const normalizeSegment = (s: string) => s.replace(/\s+/g, " ").trim().toLowerCase();
@@ -126,10 +133,13 @@ export async function walkListing(
   const rootHtml = await fetchText(rootUrl);
   if (rootHtml === null) return null;
 
-  const result: CrawlResult = { folders: [], files: [] };
+  const result: CrawlResult = { folders: [], files: [], readFolders: [] };
   let requests = 1;
 
   const walk = async (html: string, url: string, path: string, depth: number) => {
+    // Reaching here means this folder's own listing was fetched in full, so a
+    // file missing from it is genuinely absent rather than simply unread.
+    result.readFolders.push(path);
     for (const entry of parseListing(html, url)) {
       const childPath = path
         ? `${path}/${normalizeSegment(entry.name)}`
