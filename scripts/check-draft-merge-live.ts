@@ -88,3 +88,19 @@ merged.artifacts.forEach((a: { folderPath?: string | null; filename: string }) =
 const doubled = [...dupes.entries()].filter(([, n]) => n > 1);
 console.log(`\nduplicate files: ${doubled.length}`);
 doubled.slice(0, 10).forEach(([k]) => console.log(`  ${k}`));
+
+const inRound1 = merged.artifacts
+  .filter(
+    (a: { folderPath?: string | null; removedAt?: string | null }) =>
+      (a.folderPath ?? "").includes("10.8.1") &&
+      (a.folderPath ?? "").includes("round 1") &&
+      !a.removedAt,
+  )
+  .sort(
+    (a: { modifiedAt?: string | null }, b: { modifiedAt?: string | null }) =>
+      (a.modifiedAt ?? "").localeCompare(b.modifiedAt ?? ""),
+  );
+console.log(`\n10.8.1 Round 1 after the merge: ${inRound1.length} file(s)`);
+inRound1.forEach((a: { filename: string; modifiedAt?: string | null; sources: unknown[] }) =>
+  console.log(`  ${a.modifiedAt ?? "no date"}  ${a.filename}  (${a.sources.length} server(s))`),
+);
