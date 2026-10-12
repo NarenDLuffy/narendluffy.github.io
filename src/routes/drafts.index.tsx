@@ -14,7 +14,7 @@ import {
   EventRow,
   FollowButton,
 } from "@/components/DraftActivity";
-import { relativeTime, unmappedArtifacts } from "@/services/draftService";
+import { activeEvents, relativeTime, unmappedArtifacts } from "@/services/draftService";
 import { ORIGIN_LABEL } from "@/services/draftLiveSource";
 import { cn } from "@/lib/utils";
 
@@ -49,7 +49,7 @@ function DraftsPage() {
   // Files the scanner could not attach to an agenda item are never dropped.
   const unmapped = index ? unmappedArtifacts(index) : [];
 
-  const feed = (index?.events ?? [])
+  const feed = (index ? activeEvents(index) : [])
     .slice()
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .slice(0, 40);
