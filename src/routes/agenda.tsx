@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarPlus, Star, Trash2 } from "lucide-react";
 import { formatDuration, minutesOf, sessionMatchesAgenda } from "@/services/scheduleService";
+import { activityWithAncestors } from "@/services/draftService";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
@@ -62,6 +63,29 @@ function AgendaPage() {
     (acc[s.date] ??= []).push(s);
     return acc;
   }, {});
+
+  // Only leaves can be selected: an agenda branch (e.g. 10.4) is not where
+  // Tdocs live. A branch with no children is itself a leaf and stays.
+  const leaves = bundle.agendaItems.filter(
+    (a) => !bundle.agendaItems.some((b) => b.parent === a.code),
+  );
+  const chips = leaves.length > 0 ? leaves : bundle.agendaItems;
+
+  // Drafts filed at a branch code (a folder "10.4 (...)") count for the
+  // followed leaves under it, shown once — not once per followed child.
+  const activityCodes = new Set<string>();
+  for (const c of bookmarks) if (drafts.activity.has(c)) activityCodes.add(c);
+  for (const code of drafts.activity.keys()) {
+    if (code === "unmapped") continue;
+    if (bookmarks.some((b) => b !== code && b.startsWith(`${code}.`))) activityCodes.add(code);
+  }
+  const myActivity = [...activityCodes].sort((a, b) => {
+    const la = drafts.activity.get(a);
+    const lb = drafts.activity.get(b);
+    const stampA = la?.latestAt ?? la?.latestFileAt ?? "";
+    const stampB = lb?.latestAt ?? lb?.latestFileAt ?? "";
+    return stampB.localeCompare(stampA);
+  });
 
   return (
     <div className="space-y-5">
@@ -148,22 +172,20 @@ function AgendaPage() {
           <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             Draft activity for my items
           </h2>
-          {bookmarks.filter((c) => drafts.activity.has(c)).length === 0 ? (
+          {myActivity.length === 0 ? (
             <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
               No drafts or FL summaries uploaded yet for the items you follow.
             </p>
           ) : (
             <ol className="space-y-1.5">
-              {bookmarks
-                .filter((c) => drafts.activity.has(c))
-                .map((c) => (
-                  <li key={c}>
-                    <AgendaActivityCard
-                      activity={drafts.activity.get(c)!}
-                      title={bundle.agendaItems.find((a) => a.code === c)?.title}
-                    />
-                  </li>
-                ))}
+              {myActivity.map((c) => (
+                <li key={c}>
+                  <AgendaActivityCard
+                    activity={drafts.activity.get(c)!}
+                    title={bundle.agendaItems.find((a) => a.code === c)?.title}
+                  />
+                </li>
+              ))}
             </ol>
           )}
         </section>
@@ -173,13 +195,13 @@ function AgendaPage() {
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Follow agenda items
         </h2>
-        {bundle.agendaItems.length === 0 ? (
+        {chips.length === 0 ? (
           <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
             No agenda items discovered for this meeting yet.
           </p>
         ) : (
           <div className="flex flex-wrap gap-1.5">
-            {bundle.agendaItems.map((a) => (
+            {chips.map((a) => (
               <button
                 key={a.code}
                 type="button"
@@ -195,8 +217,10 @@ function AgendaPage() {
                 {isBookmarked(a.code) ? <Star className="size-3 fill-current" /> : null}
                 {a.code}
                 <DraftBadge
-                  count={drafts.activity.get(a.code)?.unreadCount ?? 0}
-                  important={(drafts.activity.get(a.code)?.flUpdates ?? 0) > 0}
+                  count={
+                    activityWithAncestors(drafts.activity, a.code)?.unreadCount ?? 0
+                  }
+                  important={(activityWithAncestors(drafts.activity, a.code)?.flUpdates ?? 0) > 0}
                 />
               </button>
             ))}

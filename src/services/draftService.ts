@@ -340,6 +340,76 @@ export function buildActivity(
   return out;
 }
 
+/**
+ * Drafts are often filed at a branch code (a folder "10.4 (...)"), while My
+ * agenda only lets you follow leaves (10.4.1, 10.4.2). For a followed code,
+ * merge its own activity with entries filed at any ancestor code, so
+ * leaf-only selection still sees branch-level drafts and badges.
+ */
+export function activityWithAncestors(
+  activity: Map<string, AgendaActivity>,
+  code: string,
+): AgendaActivity | undefined {
+  const own = activity.get(code);
+  const ancestors = [...activity.keys()].filter(
+    (c) => c !== code && code.startsWith(`${c}.`),
+  );
+  if (!own && ancestors.length === 0) return undefined;
+  let merged = own;
+  for (const ancestor of ancestors) {
+    const entry = activity.get(ancestor);
+    if (!entry) continue;
+    merged = merged ? mergeActivity(merged, entry) : entry;
+  }
+  return merged;
+}
+
+function mergeActivity(a: AgendaActivity, b: AgendaActivity): AgendaActivity {
+  const events = dedupeEvents([...a.events, ...b.events]);
+  const unread = dedupeEvents([...a.unread, ...b.unread]);
+  const latestFl =
+    a.latestFlSummary && b.latestFlSummary
+      ? (compareRecency(a.latestFlSummary, b.latestFlSummary) < 0
+          ? b.latestFlSummary
+          : a.latestFlSummary)
+      : (a.latestFlSummary ?? b.latestFlSummary);
+  return {
+    agendaItemId: a.agendaItemId,
+    events,
+    unread,
+    unreadCount: unread.length,
+    flUpdates: a.flUpdates + b.flUpdates,
+    newFiles: a.newFiles + b.newFiles,
+    newRounds: a.newRounds + b.newRounds,
+    newFolders: a.newFolders + b.newFolders,
+    fileCount: a.fileCount + b.fileCount,
+    flCount: a.flCount + b.flCount,
+    ...(latestFl ? { latestFlSummary: latestFl } : {}),
+    ...latestStamp(a.latestFileAt, b.latestFileAt, "latestFileAt"),
+    ...latestStamp(a.latestAt, b.latestAt, "latestAt"),
+  };
+}
+
+function dedupeEvents(events: DraftEvent[]): DraftEvent[] {
+  const seen = new Set<string>();
+  const out: DraftEvent[] = [];
+  for (const e of events) {
+    if (seen.has(e.id)) continue;
+    seen.add(e.id);
+    out.push(e);
+  }
+  return out.sort((x, y) => y.detectedAt.localeCompare(x.detectedAt));
+}
+
+function latestStamp(
+  a: string | undefined,
+  b: string | undefined,
+  key: "latestFileAt" | "latestAt",
+): Partial<Pick<AgendaActivity, "latestFileAt" | "latestAt">> {
+  const max = a && b ? (a > b ? a : b) : (a ?? b);
+  return max ? { [key]: max } : {};
+}
+
 export function formatSize(bytes?: number | null): string {
   if (!bytes || bytes <= 0) return "";
   const units = ["B", "KB", "MB", "GB"];

@@ -166,9 +166,17 @@ export function sourceLabel(bundle: ScheduleBundle, sourceId: string): string {
   return bundle.sources.find((s) => s.sourceId === sourceId)?.label ?? sourceId;
 }
 
-/** Matches an agenda code against a filter, including child items of a parent. */
+/**
+ * Matches an agenda code against a filter, including child items of a parent.
+ * A wildcard block code like "10.4.x" (written in the source schedule to cover
+ * every child of 10.4) matches any selected leaf under that parent, so
+ * following 10.4.1 and 10.4.2 lights up the 10.4.x block too.
+ */
 export function agendaMatches(code: string, filter: string): boolean {
-  return code === filter || code.startsWith(`${filter}.`);
+  if (code === filter || code.startsWith(`${filter}.`)) return true;
+  const wildcard = /^(.+?)\.x$/i.exec(code.trim());
+  const prefix = wildcard?.[1];
+  return Boolean(prefix) && filter.startsWith(`${prefix}.`);
 }
 
 export function sessionMatchesAgenda(session: Session, filters: string[]): boolean {
