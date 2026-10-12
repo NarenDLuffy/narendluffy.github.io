@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran1-125",
+  "schedule": {
+    "state": "ok",
+    "lastSuccessAt": "2026-10-12T12:40:09Z",
+    "lastAttemptAt": "2026-10-12T12:40:09Z",
+    "sessionCount": 216,
+    "roomCount": 5,
+    "dates": [
+      "2026-05-18",
+      "2026-05-19",
+      "2026-05-20",
+      "2026-05-21",
+      "2026-05-22"
+    ],
+    "sourceCount": 5,
+    "sources": [
+      {
+        "label": "Chair notes RAN1#125_eom",
+        "fileName": "Chair notes RAN1#125_eom.docx",
+        "origin": "public"
+      },
+      {
+        "label": "Draft Chair notes RAN1#125_v02",
+        "fileName": "Draft Chair notes RAN1#125_v02.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#125 online and offline schedules - v00",
+        "fileName": "RAN1#125 online and offline schedules - v00.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#125 schedule for Hiroki Adhoc2 sessions_v04_2",
+        "fileName": "RAN1#125 schedule for Hiroki Adhoc2 sessions_v04_2.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#125 Sorour online and offline schedules - v00",
+        "fileName": "RAN1#125 Sorour online and offline schedules - v00.docx",
+        "origin": "public"
+      }
+    ],
+    "draftOnly": false,
+    "conflictCount": 8,
+    "lowConfidenceCount": 0
+  },
+  "remoteFtp": {
+    "credentials": true
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "8 unresolved source conflict(s)."
+    },
+    {
+      "level": "info",
+      "text": "No draft index has been published for this meeting yet."
+    }
+  ],
+  "updatedAt": "2026-10-12T12:45:39Z"
+}
