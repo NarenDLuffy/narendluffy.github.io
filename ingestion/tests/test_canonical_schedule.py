@@ -145,3 +145,20 @@ def test_canonical_union_keeps_detail_unique_blocks_and_conflicts():
     slot = by_items.get(("9.1",)) or by_items.get(("9.2",))
     assert slot is not None and "Another schedule file lists" in (slot.note or "")
     assert len(result.conflicts) == 1
+
+
+def test_official_schedule_beats_draft_regardless_of_version():
+    from ingestion.live import _latest_revisions
+    from ingestion.models import ScheduleSource
+
+    def src(name, parts):
+        return ScheduleSource(sourceId=name, meetingId="m", fileName=name, label=name,
+                              type="offline_schedule", origin="public",
+                              url=f"https://x/Inbox/Chair_notes/{name}", revisionParts=parts,
+                              retrievedAt="2026-01-01T00:00:00Z")
+
+    kept = _latest_revisions([
+        src("Draft RAN1#126b online and offline schedules - v03.docx", [3]),
+        src("RAN1#126b online and offline schedules - v00.docx", [0]),
+    ])
+    assert [s.fileName for s in kept] == ["RAN1#126b online and offline schedules - v00.docx"]
