@@ -41,10 +41,25 @@ import { venueBlockedByScheme } from "@/lib/venueMode";
  * mark. Being unreachable is normal and is never an error.
  */
 
-export const VENUE_DRAFTS_BASE = "http://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
+/**
+ * Drafts tree roots. All three are rooted at `Inbox/drafts/`, the same place the
+ * published snapshot is rooted, so a crawled path and a snapshot path describe
+ * the same folder — one upload stays one artifact instead of two rows.
+ */
+export const VENUE_DRAFTS_BASE = "http://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/drafts/";
 /** HTTPS twin of the venue server. Requires a certificate valid for the IP. */
-export const VENUE_DRAFTS_BASE_HTTPS = "https://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
-export const SYNC_DRAFTS_BASE = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
+export const VENUE_DRAFTS_BASE_HTTPS =
+  "https://10.10.10.10/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/drafts/";
+export const SYNC_DRAFTS_BASE = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/drafts/";
+
+/**
+ * A root that stops one level higher still describes the same tree; send the
+ * probe into `drafts/` so every path it reports is comparable with the snapshot.
+ */
+export function draftsTreeUrl(url: string): string {
+  const root = url.replace(/\/?$/, "/");
+  return root.endsWith("/drafts/") ? root : `${root}drafts/`;
+}
 
 const REQUEST_TIMEOUT_MS = 3500;
 // Safety guards only. The Inbox hierarchy is meeting-created and must not be
@@ -71,6 +86,11 @@ export interface LiveDraftReport {
   checkedAt: string;
   /** Artifacts that the published index did not know about yet. */
   freshCount: number;
+  /**
+   * Snapshot files the live server no longer holds, and so are hidden. Only ever
+   * non-zero during a meeting week, when a live tree exists to be authoritative.
+   */
+  hiddenCount: number;
   baseUrl?: string;
   /** Whether the browser could read the venue directory before fallback. */
   venueStatus: VenueStatus;
@@ -137,7 +157,78 @@ function hash(input: string): string {
 
 /* ---------- merge ---------- */
 
-const identity = (folderPath: string, filename: string) => `${folderPath}::${norm(filename)}`;
+/**
+ * The same tree is rooted two ways: the snapshot starts at `Inbox/drafts/`, a
+ * crawl may start one level higher at `Inbox/`. A leading `drafts/` segment
+ * therefore carries no meaning and is dropped on both sides before comparing.
+ */
+const stripDraftsRoot = (path: string) =>
+  path === "drafts" || path.startsWith("drafts/")
+    ? path.slice("drafts".length).replace(/^\//, "")
+    : path;
+
+const identity = (folderPath: string, filename: string) =>
+  `${stripDraftsRoot(folderPath)}::${norm(filename)}`;
+
+/** Re-root a live crawl at the drafts tree so its paths match the snapshot. */
+function alignCrawl(crawl: CrawlResult): CrawlResult {
+  return {
+    folders: crawl.folders.map((f) => ({
+      ...f,
+      path: stripDraftsRoot(f.path),
+      parent: stripDraftsRoot(f.parent),
+    })),
+    files: crawl.files.map((f) => ({
+      ...f,
+      path: stripDraftsRoot(f.path),
+      folderPath: stripDraftsRoot(f.folderPath),
+    })),
+    readFolders: (crawl.readFolders ?? []).map(stripDraftsRoot),
+  };
+}
+
+/**
+ * During the meeting week the live tree is the truth: a snapshot file the
+ * meeting server no longer lists is withdrawn, not merely un-replicated. The
+ * archive folder keeps every old round for ever, so without this the tracker
+ * goes on showing documents the room has already moved past.
+ *
+ * A file is only hidden when this crawl actually opened its containing folder —
+ * a folder the crawler never reached (it stops at a request cap) says nothing
+ * about whether the file is still there. Hidden, never deleted: the record and
+ * its history stay, and the pages already filter on `removedAt`.
+ */
+function hideWithdrawn(
+  base: DraftIndex,
+  live: CrawlResult,
+  now: string,
+  reconcile: boolean,
+): number {
+  if (!reconcile) return 0;
+  const read = new Set(live.readFolders ?? []);
+  const listed = new Set(live.files.map((f) => identity(f.folderPath, f.name)));
+  const listedFolders = new Set(live.folders.map((f) => f.path));
+  let hidden = 0;
+
+  base.artifacts.forEach((a) => {
+    if (a.removedAt) return;
+    if (listed.has(identity(a.folderPath ?? "", a.filename))) return;
+    if (!read.has(stripDraftsRoot(a.folderPath ?? ""))) return;
+    a.removedAt = now;
+    hidden += 1;
+  });
+
+  // A folder the crawl would have seen had it been there is gone too, so the
+  // tree stops offering an empty round.
+  base.folders.forEach((f) => {
+    if (f.removedAt) return;
+    if (listedFolders.has(f.normalizedPath)) return;
+    if (!read.has(stripDraftsRoot(f.parentPath ?? ""))) return;
+    f.removedAt = now;
+  });
+
+  return hidden;
+}
 
 /**
  * Merge a live crawl over the published index.
@@ -155,9 +246,17 @@ const identity = (folderPath: string, filename: string) => `${folderPath}::${nor
 export function mergeLive(
   published: DraftIndex | null,
   crawlResult: CrawlResult,
-  meta: { meetingId: string; sourceType: DraftSourceType; baseUrl: string; agendaCodes: Set<string> },
-): { index: DraftIndex; freshCount: number } {
+  meta: {
+    meetingId: string;
+    sourceType: DraftSourceType;
+    baseUrl: string;
+    agendaCodes: Set<string>;
+    /** True when the live tree is authoritative — i.e. during the meeting week. */
+    reconcile?: boolean;
+  },
+): { index: DraftIndex; freshCount: number; hiddenCount: number } {
   const now = new Date().toISOString();
+  const live = alignCrawl(crawlResult);
   const base: DraftIndex = published
     ? { ...published, folders: [...published.folders], artifacts: [...published.artifacts], events: [...published.events] }
     : {
@@ -176,7 +275,7 @@ export function mergeLive(
   base.artifacts.forEach((a) => artifactByIdentity.set(identity(a.folderPath ?? "", a.filename), a));
   const folderByPath = new Map(base.folders.map((f) => [f.normalizedPath, f]));
 
-  crawlResult.folders.forEach((f) => {
+  live.folders.forEach((f) => {
     if (folderByPath.has(f.path)) {
       const existing = folderByPath.get(f.path)!;
       existing.lastSeenAt = now;
@@ -207,7 +306,7 @@ export function mergeLive(
 
   const freshEvents: DraftEvent[] = [];
 
-  crawlResult.files.forEach((file) => {
+  live.files.forEach((file) => {
     const key = identity(file.folderPath, file.name);
     const appearance: DraftArtifactSource = {
       sourceType: meta.sourceType,
@@ -292,7 +391,9 @@ export function mergeLive(
   base.lastSuccessfulScanAt = now;
   base.newEventIds = dedupedFresh.map((e) => e.id);
 
-  return { index: base, freshCount: dedupedFresh.length };
+  const hiddenCount = hideWithdrawn(base, live, now, Boolean(meta.reconcile));
+
+  return { index: base, freshCount: dedupedFresh.length, hiddenCount };
 }
 
 /* ---------- probe ---------- */
@@ -314,7 +415,7 @@ function candidateBases(): Candidate[] {
   const configuredDraftsUrl = settings.baseUrl?.includes("/Meetings_3GPP_SYNC/RAN1/Inbox/")
     ? settings.baseUrl
     : null;
-  const venue = configuredDraftsUrl ?? VENUE_DRAFTS_BASE;
+  const venue = draftsTreeUrl(configuredDraftsUrl ?? VENUE_DRAFTS_BASE);
 
   const candidates: Candidate[] = [];
   // HTTPS venue twin first: works from any page (including https://ran1.app),
@@ -359,7 +460,11 @@ async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
     const { crawlSyncDrafts } = await import("@/lib/drafts.functions");
     const result = await crawlSyncDrafts({ data: { url } });
     if (!result?.ok) return null;
-    return { folders: result.folders, files: result.files };
+    return {
+      folders: result.folders,
+      files: result.files,
+      readFolders: result.readFolders ?? [],
+    };
   } catch {
     // No server function available (static export) or the crawl failed.
     return null;
@@ -400,6 +505,7 @@ export async function probeLiveDrafts(
       origin: "published",
       checkedAt,
       freshCount: 0,
+      hiddenCount: 0,
       venueStatus: "not-checked",
     };
   }
@@ -410,7 +516,14 @@ export async function probeLiveDrafts(
   // its week; before that they still hold the previous meeting's uploads,
   // which carry no meeting number. Outside the week, show only the snapshot.
   if (!inMeetingWeek(meeting)) {
-    return { index: published, origin: "published", checkedAt, freshCount: 0, venueStatus: "not-checked" };
+    return {
+      index: published,
+      origin: "published",
+      checkedAt,
+      freshCount: 0,
+      hiddenCount: 0,
+      venueStatus: "not-checked",
+    };
   }
   const cutoff = staleCutoff(meeting);
 
@@ -424,17 +537,21 @@ export async function probeLiveDrafts(
       venueStatus = result && result.files.length > 0 ? "available" : "unavailable";
     }
     if (!result || result.files.length === 0) continue;
-    const { index, freshCount } = mergeLive(published, result, {
+    const { index, freshCount, hiddenCount } = mergeLive(published, result, {
       meetingId: meeting.id,
       sourceType: candidate.sourceType,
       baseUrl: candidate.url,
       agendaCodes: codes,
+      // Inside the meeting week the live tree holds this meeting's files, so
+      // what it does not list is withdrawn rather than merely un-replicated.
+      reconcile: true,
     });
     return {
       index,
       origin: candidate.origin,
       checkedAt,
       freshCount,
+      hiddenCount,
       baseUrl: candidate.url,
       venueStatus,
     };
@@ -445,6 +562,7 @@ export async function probeLiveDrafts(
     origin: "published",
     checkedAt,
     freshCount: 0,
+    hiddenCount: 0,
     venueStatus,
   };
 }

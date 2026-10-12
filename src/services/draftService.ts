@@ -54,6 +54,8 @@ export interface DraftResult {
   liveCheckedAt?: string;
   /** Files the live probe found that the published index did not have. */
   freshCount?: number;
+  /** Snapshot files hidden because the live server no longer holds them. */
+  hiddenCount?: number;
   venueStatus?: VenueStatus;
 }
 
@@ -116,6 +118,7 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
       liveOrigin: live.origin,
       liveCheckedAt: live.checkedAt,
       freshCount: live.freshCount,
+      hiddenCount: live.hiddenCount,
       venueStatus: live.venueStatus,
     };
   } catch {
@@ -159,6 +162,15 @@ export function unmappedArtifacts(index: DraftIndex): DraftArtifact[] {
   return index.artifacts
     .filter((a) => !a.agendaItemId && !a.removedAt)
     .sort((a, b) => (b.modifiedAt ?? b.lastSeenAt).localeCompare(a.modifiedAt ?? a.lastSeenAt));
+}
+
+/**
+ * Events about files the live server no longer holds are history, not news:
+ * a withdrawn document must not keep its agenda item looking unread.
+ */
+export function activeEvents(index: DraftIndex): DraftEvent[] {
+  const gone = new Set(index.artifacts.filter((a) => a.removedAt).map((a) => a.id));
+  return index.events.filter((e) => !e.artifactId || !gone.has(e.artifactId));
 }
 
 /**
@@ -310,7 +322,7 @@ export function buildActivity(
     out.set(code, entry);
   });
 
-  index.events.forEach((e) => {
+  activeEvents(index).forEach((e) => {
     const code = e.agendaItemId ?? "unmapped";
     const entry = out.get(code) ?? emptyActivity(code, latestFl.get(code));
 

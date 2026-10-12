@@ -309,6 +309,12 @@ function HelpPage() {
             it for everyone. You can skip the question.
           </li>
           <li>
+            <strong>Meeting week follows the live server:</strong> while the meeting is running,
+            the drafts list tracks what the meeting server actually holds. A file it no longer
+            lists — an evaluation round the room has moved past, for example — is hidden rather
+            than deleted: nothing is removed from the meeting's own archive folder.
+          </li>
+          <li>
             <strong>Limitation:</strong> changes announced verbally in the room only appear once an
             updated document is uploaded.
           </li>

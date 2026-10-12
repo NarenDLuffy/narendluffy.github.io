@@ -14,7 +14,7 @@ import {
   EventRow,
   FollowButton,
 } from "@/components/DraftActivity";
-import { relativeTime, unmappedArtifacts } from "@/services/draftService";
+import { activeEvents, relativeTime, unmappedArtifacts } from "@/services/draftService";
 import { ORIGIN_LABEL } from "@/services/draftLiveSource";
 import { cn } from "@/lib/utils";
 
@@ -49,7 +49,7 @@ function DraftsPage() {
   // Files the scanner could not attach to an agenda item are never dropped.
   const unmapped = index ? unmappedArtifacts(index) : [];
 
-  const feed = (index?.events ?? [])
+  const feed = (index ? activeEvents(index) : [])
     .slice()
     .sort((a, b) => b.detectedAt.localeCompare(a.detectedAt))
     .slice(0, 40);
@@ -98,6 +98,11 @@ function DraftsPage() {
                     ? "3GPP sync mirror — live."
                     : "Using the last published index."}
           </p>
+          {drafts.hiddenCount > 0 ? (
+            <p className="text-[11px] text-muted-foreground" role="status">
+              {drafts.hiddenCount} file(s) the meeting server no longer holds are hidden.
+            </p>
+          ) : null}
           {drafts.lastRefresh ? (
             <p className="text-[11px] text-muted-foreground" role="status" aria-live="polite">
               {drafts.lastRefresh.failed
