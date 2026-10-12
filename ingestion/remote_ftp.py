@@ -212,3 +212,79 @@ def fetch_bytes(url: str, max_bytes: int = 12 * 1024 * 1024) -> bytes | None:
     except Exception:
         return None
     return b"".join(chunks)
+
+
+def detected_host(meeting_id: str) -> str | None:
+    """A venue address already read from this meeting's documents, if any."""
+    if meeting_id in _detected:
+        return _detected[meeting_id]
+    from . import health  # local import: health reads this module, never the reverse
+
+    cached = health.cached_detected_host(meeting_id)
+    if cached:
+        _detected[meeting_id] = cached
+    return cached
+
+
+def _http_download(url: str, max_bytes: int) -> bytes | None:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "ran1-live/1.0"})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as res:
+            data = res.read(max_bytes + 1)
+        return data if len(data) <= max_bytes else None
+    except Exception:
+        return None
+
+
+def _docx_text(data: bytes) -> str:
+    """Active visible text of a .docx; empty when it cannot be read."""
+    try:
+        from docx import Document
+
+        from .docx_active_text import active_element_text
+
+        return active_element_text(Document(io.BytesIO(data)).element)
+    except Exception:
+        return ""
+
+
+def _venue_candidates(docs: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Documents most likely to print the venue's FTP address, cheapest first."""
+
+    def score(item: tuple[str, str]) -> tuple[int, int]:
+        name = item[0].lower()
+        hint = next((i for i, h in enumerate(VENUE_HINTS) if h in name), len(VENUE_HINTS))
+        return (hint, len(name))
+
+    docs = [d for d in docs if d[1] and d[1].lower().endswith(".docx")]
+    return sorted(docs, key=score)[:MAX_HOST_DOCS]
+
+
+def ensure_host(meeting_id: str, docs: list[tuple[str, str]]) -> str | None:
+    """Find the venue's remote FTP address in the meeting's own documents.
+
+    Never guessed: an address only counts when it is printed in a document the
+    meeting itself published *and* the saved login actually works there. A
+    verified address is remembered in the meeting's health record, so the
+    delegates' one-time entry is only needed when no document states it.
+    """
+    cached = detected_host(meeting_id)
+    if cached:
+        return cached
+    if not credentials():
+        return None
+    for name, url in _venue_candidates(docs):
+        data = fetch_bytes(url) if url.startswith("ftp://") else _http_download(
+            url, MAX_HOST_DOC_BYTES
+        )
+        if not data:
+            continue
+        for host in dict.fromkeys(HOST_RE.findall(_docx_text(data))):
+            if _connect(host) is not None:
+                _detected[meeting_id] = host
+                from . import health
+
+                health.remember_detected_host(meeting_id, host)
+                print(f"  remote FTP host {host} read from {name} and login verified")
+                return host
+    return None
