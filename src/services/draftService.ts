@@ -54,6 +54,8 @@ export interface DraftResult {
   liveCheckedAt?: string;
   /** Files the live probe found that the published index did not have. */
   freshCount?: number;
+  /** Snapshot files hidden because the live server no longer holds them. */
+  hiddenCount?: number;
   venueStatus?: VenueStatus;
 }
 
@@ -116,6 +118,7 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
       liveOrigin: live.origin,
       liveCheckedAt: live.checkedAt,
       freshCount: live.freshCount,
+      hiddenCount: live.hiddenCount,
       venueStatus: live.venueStatus,
     };
   } catch {

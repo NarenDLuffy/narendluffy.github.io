@@ -98,6 +98,11 @@ function DraftsPage() {
                     ? "3GPP sync mirror — live."
                     : "Using the last published index."}
           </p>
+          {drafts.hiddenCount > 0 ? (
+            <p className="text-[11px] text-muted-foreground" role="status">
+              {drafts.hiddenCount} file(s) the meeting server no longer holds are hidden.
+            </p>
+          ) : null}
           {drafts.lastRefresh ? (
             <p className="text-[11px] text-muted-foreground" role="status" aria-live="polite">
               {drafts.lastRefresh.failed
