@@ -73,6 +73,18 @@ def _meeting_meta(slug: str) -> dict[str, Any]:
     return data if isinstance(data, dict) else {}
 
 
+def _published(slug: str, file: str) -> dict[str, Any]:
+    """The data file people actually see, used when a section is not in the record yet."""
+    path = MEETINGS_DIR / slug / file
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
 def _hours_since(iso: str | None, now: datetime) -> float | None:
     if not iso:
         return None
