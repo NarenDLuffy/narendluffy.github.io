@@ -165,6 +165,15 @@ export function unmappedArtifacts(index: DraftIndex): DraftArtifact[] {
 }
 
 /**
+ * Events about files the live server no longer holds are history, not news:
+ * a withdrawn document must not keep its agenda item looking unread.
+ */
+export function activeEvents(index: DraftIndex): DraftEvent[] {
+  const gone = new Set(index.artifacts.filter((a) => a.removedAt).map((a) => a.id));
+  return index.events.filter((e) => !e.artifactId || !gone.has(e.artifactId));
+}
+
+/**
  * Newest-first ordering for two revisions of the same document.
  *
  * The same filename genuinely repeats across folders (Round 1 and Round 2 both
@@ -313,7 +322,7 @@ export function buildActivity(
     out.set(code, entry);
   });
 
-  index.events.forEach((e) => {
+  activeEvents(index).forEach((e) => {
     const code = e.agendaItemId ?? "unmapped";
     const entry = out.get(code) ?? emptyActivity(code, latestFl.get(code));
 
