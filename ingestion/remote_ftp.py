@@ -257,7 +257,10 @@ def _venue_candidates(docs: list[tuple[str, str]]) -> list[tuple[str, str]]:
         return (hint, len(name))
 
     docs = [d for d in docs if d[1] and d[1].lower().endswith(".docx")]
-    return sorted(docs, key=score)[:MAX_HOST_DOCS]
+    # Only probe documents whose name says it could carry the address — otherwise
+    # every refresh would download six unrelated files looking for one string.
+    hinted = [d for d in docs if any(h in d[0].lower() for h in VENUE_HINTS)]
+    return sorted(hinted, key=score)[:MAX_HOST_DOCS]
 
 
 def ensure_host(meeting_id: str, docs: list[tuple[str, str]]) -> str | None:
