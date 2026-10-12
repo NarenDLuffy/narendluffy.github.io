@@ -5,7 +5,7 @@
 - On the **Now** page, each current and upcoming session card will use its room’s established colour instead of the agenda/topic colour. The coloured edge and subtle card tint will match the same room in the timetable and Rooms page.
 - On each Now card, show a compact **Online** or **Offline** tag beside the room name. This keeps the mode attached to the room and avoids crowding the agenda list.
 - On the full **Schedule**, group the existing room columns under two spanning headings: **Online** and **Offline**. The room columns, individual room colours, session blocks, horizontal scrolling, filtering, and selection remain unchanged beneath those headings.
-- Treat the Main room as Online when its room identity comes from an online schedule table. Keep any room that lacks reliable mode evidence outside either forced classification rather than guessing.
+- Classify rooms directly from their source table: a room from an Online table is **Online**, and a room from an Offline table is **Offline**. This includes the Main room when it is in the Online table; no name-based guessing is used.
 
 ## Verification
 
