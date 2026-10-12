@@ -138,6 +138,19 @@ def main() -> int:
             f"{slug}: {index.scanState}, {len(index.artifacts)} artifacts, "
             f"{len(index.folders)} folders, {fresh} new event(s)"
         )
+        # Health record: what this scan achieved, and what it could not (health.py).
+        health.record(
+            slug,
+            drafts=health.drafts_section(
+                payload,
+                source_label=(
+                    "remote meeting FTP"
+                    if ftp_root and live_root == ftp_root
+                    else "3GPP sync mirror"
+                ),
+            ),
+            remote=remote_ftp.snapshot(meeting.get("id", slug)),
+        )
 
     if scanned == 0:
         print("no meeting currently requires a draft scan")
