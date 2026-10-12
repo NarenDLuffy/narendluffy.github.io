@@ -79,13 +79,33 @@ def host_for(meeting_id: str) -> str | None:
         return None
 
 
+def snapshot(meeting_id: str) -> dict:
+    """What the last remote-source decision was, for the health record."""
+    snap = dict(_status.get(meeting_id) or {})
+    snap.setdefault("credentials", bool(credentials()))
+    return snap
+
+
+def _note(meeting_id: str, state: str, host: str | None = None) -> None:
+    _status[meeting_id] = {"state": state, "host": host, "credentials": bool(credentials())}
+
+
 def remote_root(meeting_id: str, start: str | None, end: str | None) -> str | None:
     """ftp://host/RAN1/Inbox/ when the remote FTP should be used now."""
-    if not in_meeting_week(start, end) or not credentials():
+    if not credentials():
+        _note(meeting_id, "skipped-no-credentials")
         return None
-    host = host_for(meeting_id)
-    if not host or _connect(host) is None:
+    if not in_meeting_week(start, end):
+        _note(meeting_id, "outside-meeting-week")
         return None
+    host = host_for(meeting_id) or detected_host(meeting_id)
+    if not host:
+        _note(meeting_id, "skipped-no-host")
+        return None
+    if _connect(host) is None:
+        _note(meeting_id, "unreachable", host)
+        return None
+    _note(meeting_id, "read", host)
     return f"ftp://{host}{INBOX_PATH}"
 
 
