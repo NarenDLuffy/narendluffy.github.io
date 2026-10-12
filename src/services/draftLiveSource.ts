@@ -275,7 +275,7 @@ export function mergeLive(
   base.artifacts.forEach((a) => artifactByIdentity.set(identity(a.folderPath ?? "", a.filename), a));
   const folderByPath = new Map(base.folders.map((f) => [f.normalizedPath, f]));
 
-  crawlResult.folders.forEach((f) => {
+  live.folders.forEach((f) => {
     if (folderByPath.has(f.path)) {
       const existing = folderByPath.get(f.path)!;
       existing.lastSeenAt = now;
@@ -306,7 +306,7 @@ export function mergeLive(
 
   const freshEvents: DraftEvent[] = [];
 
-  crawlResult.files.forEach((file) => {
+  live.files.forEach((file) => {
     const key = identity(file.folderPath, file.name);
     const appearance: DraftArtifactSource = {
       sourceType: meta.sourceType,
@@ -391,7 +391,9 @@ export function mergeLive(
   base.lastSuccessfulScanAt = now;
   base.newEventIds = dedupedFresh.map((e) => e.id);
 
-  return { index: base, freshCount: dedupedFresh.length };
+  const hiddenCount = hideWithdrawn(base, live, now, Boolean(meta.reconcile));
+
+  return { index: base, freshCount: dedupedFresh.length, hiddenCount };
 }
 
 /* ---------- probe ---------- */
@@ -523,11 +525,14 @@ export async function probeLiveDrafts(
       venueStatus = result && result.files.length > 0 ? "available" : "unavailable";
     }
     if (!result || result.files.length === 0) continue;
-    const { index, freshCount } = mergeLive(published, result, {
+    const { index, freshCount, hiddenCount } = mergeLive(published, result, {
       meetingId: meeting.id,
       sourceType: candidate.sourceType,
       baseUrl: candidate.url,
       agendaCodes: codes,
+      // Inside the meeting week the live tree holds this meeting's files, so
+      // what it does not list is withdrawn rather than merely un-replicated.
+      reconcile: true,
     });
     return {
       index,
