@@ -205,8 +205,11 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
             )
         except Exception as exc:  # the mirror is optional
             print(f"  meeting-sync mirror unavailable: {exc}")
-        # Remote meeting FTP (host entered by a delegate), meeting week only.
+        # Remote meeting FTP, meeting week only. The address comes from a
+        # delegate's entry, or failing that from the meeting's own documents —
+        # and only after a real login proves it (nothing is ever guessed).
         try:
+            remote_ftp.ensure_host(meeting.id, [(s.fileName, s.url or "") for s in found])
             ftp_root = remote_ftp.remote_root(meeting.id, meeting.startDate, meeting.endDate)
             if ftp_root:
                 found.extend(
