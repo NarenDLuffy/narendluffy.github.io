@@ -1,0 +1,62 @@
+name: Verify data
+
+# Read-only daily pass over the published data. It commits nothing: its only job
+# is to fail loudly when the refresh jobs have quietly stopped delivering — a
+# stale timetable, a drafts index that stopped growing, a remote meeting server
+# nobody entered, a timetable still built from a Draft.
+#
+# The refresh jobs cannot report this themselves: each one only sees its own
+# source, and every optional source is allowed to fail silently so the site keeps
+# serving the last good data. This job is the one place that looks at all of it
+# at once and says "something is missing".
+on:
+  schedule:
+    # One daily pass, plus a tighter cadence while sessions are running.
+    - cron: "0 6 * * *"
+    - cron: "*/30 5-19 * * 1-5"
+  workflow_dispatch:
+
+concurrency:
+  group: verify-data
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install ingestion dependencies
+        run: |
+          pip install -r ingestion/requirements.txt
+          pip install pytest
+
+      - name: Parser and pipeline tests
+        run: python -m pytest ingestion/tests -q
+
+      - name: Public-build data guard
+        run: node scripts/check-public-data.mjs
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Draft merge checks
+        run: |
+          bun install --frozen-lockfile
+          bun run check:draft-merge
+
+      # Reads the health record both refresh jobs write; fails on anything a
+      # delegate would notice (stale timetable, unread venue copy, Draft-only
+      # schedule). See ingestion/health.py.
+      - name: Meeting health
+        run: node scripts/check-meeting-health.mjs

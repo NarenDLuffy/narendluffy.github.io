@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
+import { useMeetingHealth } from "@/hooks/useMeetingHealth";
 import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 
 export const Route = createFileRoute("/admin")({
@@ -42,6 +43,8 @@ function AdminPage() {
           source
         </p>
       </header>
+
+      <HealthPanel slug={meeting.slug} />
 
       {!bundle ? (
         <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
@@ -105,5 +108,91 @@ function AdminPage() {
         </>
       )}
     </div>
+  );
+}
+
+/**
+ * What the refresh jobs last managed to do for this meeting, and what they
+ * could not. The record is written by the updater itself (ingestion/health.py),
+ * so a source that was silently skipped shows up here instead of going unnoticed.
+ */
+function HealthPanel({ slug }: { slug: string }) {
+  const health = useMeetingHealth(slug);
+  if (!health) return null;
+
+  const warn = (health.warnings ?? []).filter((w) => w.level === "warn");
+  const info = (health.warnings ?? []).filter((w) => w.level !== "warn");
+  const sched = health.schedule;
+  const drafts = health.drafts;
+  const remote = health.remoteFtp;
+  const when = (iso?: string) => (iso ? new Date(iso).toLocaleString() : "never");
+
+  return (
+    <section className="space-y-2 rounded-lg border border-border bg-card p-3 text-sm">
+      <div className="flex items-baseline justify-between gap-2">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+          Pipeline health
+        </h2>
+        {health.updatedAt ? (
+          <span className="mono-code text-[11px] text-muted-foreground">
+            {when(health.updatedAt)}
+          </span>
+        ) : null}
+      </div>
+
+      <div className="mono-code grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-[11px]">
+        {sched ? (
+          <>
+            <span className="text-muted-foreground">Timetable</span>
+            <span>
+              {sched.sessionCount ?? 0} sessions · {sched.roomCount ?? 0} rooms ·{" "}
+              {sched.sourceCount ?? 0} sources
+            </span>
+            <span className="text-muted-foreground">Rebuilt</span>
+            <span>{when(sched.lastSuccessAt)}</span>
+          </>
+        ) : null}
+        {drafts ? (
+          <>
+            <span className="text-muted-foreground">Drafts</span>
+            <span>
+              {drafts.artifactCount ?? 0} files · {drafts.readFolderCount ?? 0}/
+              {drafts.folderCount ?? 0} folders read
+            </span>
+            <span className="text-muted-foreground">Scanned</span>
+            <span>
+              {when(drafts.lastSuccessAt)} · {drafts.source}
+            </span>
+          </>
+        ) : null}
+        {remote ? (
+          <>
+            <span className="text-muted-foreground">Remote server</span>
+            <span>
+              {remote.host ?? "not entered"} · {remote.state ?? "unknown"}
+              {remote.credentials === false ? " · login missing" : ""}
+            </span>
+          </>
+        ) : null}
+      </div>
+
+      {warn.length > 0 ? (
+        <ul className="space-y-1 rounded-md border border-warn/40 bg-warn/10 p-2 text-xs">
+          {warn.map((w) => (
+            <li key={w.text} className="text-foreground">
+              {w.text}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
+      {info.length > 0 ? (
+        <ul className="space-y-1 text-xs text-muted-foreground">
+          {info.map((w) => (
+            <li key={w.text}>{w.text}</li>
+          ))}
+        </ul>
+      ) : null}
+    </section>
   );
 }

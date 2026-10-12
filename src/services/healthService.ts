@@ -17,6 +17,7 @@ export type HealthSection = {
   roomCount?: number;
   artifactCount?: number;
   hiddenCount?: number;
+  sourceCount?: number;
   folderCount?: number;
   readFolderCount?: number;
   conflictCount?: number;
