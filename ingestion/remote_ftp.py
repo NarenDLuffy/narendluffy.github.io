@@ -30,6 +30,26 @@ APP_URL = os.environ.get("RAN1_APP_URL", "https://ran1.app")
 
 _conns: dict[str, ftplib.FTP] = {}
 
+# What the last remote-source decision was, per meeting, for the health record.
+_status: dict[str, dict] = {}
+# Hosts read out of the meeting's own documents and verified by a real login.
+_detected: dict[str, str] = {}
+
+# The venue's remote FTP address, as printed in the meeting's own documents.
+# Never guessed: a candidate only counts when the saved login works there.
+HOST_RE = re.compile(r"\b(RAN-[A-Za-z0-9][A-Za-z0-9-]*\.3gpp\.org)\b", re.I)
+VENUE_HINTS = (
+    "venue",
+    "floorplan",
+    "floor plan",
+    "logistic",
+    "information",
+    "invitation",
+    "arrival",
+)
+MAX_HOST_DOCS = 6
+MAX_HOST_DOC_BYTES = 4 * 1024 * 1024
+
 
 def in_meeting_week(start: str | None, end: str | None, today: date | None = None) -> bool:
     try:
