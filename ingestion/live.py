@@ -280,17 +280,24 @@ def _to_source(meeting: Meeting, url: str, name: str, retrieved_at: str) -> Sche
 REVISION_SUFFIX_RE = re.compile(r"[_\s-]*v?\d+(?:[._]\d+)*\s*$", re.I)
 
 
+DRAFT_PREFIX_RE = re.compile(r"^\W*draft[\s_-]+", re.I)
+
+
+def _is_draft(source: ScheduleSource) -> bool:
+    return bool(DRAFT_PREFIX_RE.match(source.fileName))
+
+
 def _revision_family(source: ScheduleSource) -> str:
     stem = source.fileName.rsplit(".", 1)[0]
+    stem = DRAFT_PREFIX_RE.sub("", stem)
     return REVISION_SUFFIX_RE.sub("", stem).strip().lower()
 
 
 def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     """Keep only the newest revision of each document family (…_v06 < …_v07 < …_v07_1).
 
-    The family key deliberately ignores which folder a copy came from, so the
-    same document mirrored in both the meeting folder and the meeting-sync
-    tree collapses to whichever copy carries the higher revision.
+    "Draft X v03" and "X v00" are one family: once the official (non-Draft)
+    file exists it always wins, whatever the version numbers.
     """
     best: dict[str, ScheduleSource] = {}
     for source in sources:
@@ -298,7 +305,8 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
         key = f"{folder.lower()}|{_revision_family(source)}"
 
         current = best.get(key)
-        if current is None or (source.revisionParts or []) > (current.revisionParts or []):
+        rank = (not _is_draft(source), source.revisionParts or [])
+        if current is None or rank > (not _is_draft(current), current.revisionParts or []):
             best[key] = source
     return sorted(best.values(), key=lambda s: s.fileName.lower())
 
