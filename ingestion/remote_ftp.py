@@ -16,8 +16,10 @@ Files are addressed as ftp://<host>/<path>; `fetch_bytes` downloads them.
 from __future__ import annotations
 
 import ftplib
+import io
 import json
 import os
+import re
 import urllib.request
 from datetime import date, timedelta
 from urllib.parse import quote, unquote, urlparse
