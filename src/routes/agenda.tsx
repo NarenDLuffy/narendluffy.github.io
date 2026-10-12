@@ -172,22 +172,20 @@ function AgendaPage() {
           <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             Draft activity for my items
           </h2>
-          {bookmarks.filter((c) => drafts.activity.has(c)).length === 0 ? (
+          {myActivity.length === 0 ? (
             <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
               No drafts or FL summaries uploaded yet for the items you follow.
             </p>
           ) : (
             <ol className="space-y-1.5">
-              {bookmarks
-                .filter((c) => drafts.activity.has(c))
-                .map((c) => (
-                  <li key={c}>
-                    <AgendaActivityCard
-                      activity={drafts.activity.get(c)!}
-                      title={bundle.agendaItems.find((a) => a.code === c)?.title}
-                    />
-                  </li>
-                ))}
+              {myActivity.map((c) => (
+                <li key={c}>
+                  <AgendaActivityCard
+                    activity={drafts.activity.get(c)!}
+                    title={bundle.agendaItems.find((a) => a.code === c)?.title}
+                  />
+                </li>
+              ))}
             </ol>
           )}
         </section>
@@ -197,13 +195,13 @@ function AgendaPage() {
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Follow agenda items
         </h2>
-        {bundle.agendaItems.length === 0 ? (
+        {chips.length === 0 ? (
           <p className="rounded-lg border border-dashed border-border p-3 text-xs text-muted-foreground">
             No agenda items discovered for this meeting yet.
           </p>
         ) : (
           <div className="flex flex-wrap gap-1.5">
-            {bundle.agendaItems.map((a) => (
+            {chips.map((a) => (
               <button
                 key={a.code}
                 type="button"
@@ -219,8 +217,10 @@ function AgendaPage() {
                 {isBookmarked(a.code) ? <Star className="size-3 fill-current" /> : null}
                 {a.code}
                 <DraftBadge
-                  count={drafts.activity.get(a.code)?.unreadCount ?? 0}
-                  important={(drafts.activity.get(a.code)?.flUpdates ?? 0) > 0}
+                  count={
+                    activityWithAncestors(drafts.activity, a.code)?.unreadCount ?? 0
+                  }
+                  important={(activityWithAncestors(drafts.activity, a.code)?.flUpdates ?? 0) > 0}
                 />
               </button>
             ))}
