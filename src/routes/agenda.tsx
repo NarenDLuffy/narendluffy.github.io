@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarPlus, Star, Trash2 } from "lucide-react";
 import { formatDuration, minutesOf, sessionMatchesAgenda } from "@/services/scheduleService";
+import { activityWithAncestors } from "@/services/draftService";
 import { useBookmarks } from "@/hooks/useBookmarks";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
 import { useDrafts } from "@/hooks/useDrafts";
@@ -62,6 +63,29 @@ function AgendaPage() {
     (acc[s.date] ??= []).push(s);
     return acc;
   }, {});
+
+  // Only leaves can be selected: an agenda branch (e.g. 10.4) is not where
+  // Tdocs live. A branch with no children is itself a leaf and stays.
+  const leaves = bundle.agendaItems.filter(
+    (a) => !bundle.agendaItems.some((b) => b.parent === a.code),
+  );
+  const chips = leaves.length > 0 ? leaves : bundle.agendaItems;
+
+  // Drafts filed at a branch code (a folder "10.4 (...)") count for the
+  // followed leaves under it, shown once — not once per followed child.
+  const activityCodes = new Set<string>();
+  for (const c of bookmarks) if (drafts.activity.has(c)) activityCodes.add(c);
+  for (const code of drafts.activity.keys()) {
+    if (code === "unmapped") continue;
+    if (bookmarks.some((b) => b !== code && b.startsWith(`${code}.`))) activityCodes.add(code);
+  }
+  const myActivity = [...activityCodes].sort((a, b) => {
+    const la = drafts.activity.get(a);
+    const lb = drafts.activity.get(b);
+    const stampA = la?.latestAt ?? la?.latestFileAt ?? "";
+    const stampB = lb?.latestAt ?? lb?.latestFileAt ?? "";
+    return stampB.localeCompare(stampA);
+  });
 
   return (
     <div className="space-y-5">
