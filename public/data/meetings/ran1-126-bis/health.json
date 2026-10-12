@@ -52,9 +52,27 @@
       "text": "3 unresolved source conflict(s)."
     },
     {
+      "level": "info",
+      "text": "3 file(s) the meeting server no longer holds are hidden."
+    },
+    {
+      "level": "info",
+      "text": "Only 147 of 148 draft folders were opened this scan."
+    },
+    {
       "level": "warn",
       "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-10-12T10:58:44Z"
+  "updatedAt": "2026-10-12T10:59:12Z",
+  "drafts": {
+    "state": "ok",
+    "lastSuccessAt": "2026-10-12T10:59:02Z",
+    "source": "3GPP sync mirror",
+    "artifactCount": 1143,
+    "hiddenCount": 3,
+    "folderCount": 148,
+    "readFolderCount": 147,
+    "eventCount": 500
+  }
 }
