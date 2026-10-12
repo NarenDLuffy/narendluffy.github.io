@@ -304,9 +304,11 @@ function HelpPage() {
           <li>
             <strong>Remote meeting FTP:</strong> during the meeting week the automatic refresh
             also reads the meeting's remote FTP server (e.g. RAN-Maastricht.3gpp.org), which works
-            from outside the venue wifi — handy at night from your hotel. The host name changes
-            every meeting: the Drafts page asks for it once, and the first person to enter it sets
-            it for everyone. You can skip the question.
+            from outside the venue wifi — handy at night from your hotel. The login is saved once
+            by the app owner and is the same at every meeting; only the address changes each
+            meeting, and it is entered here: the Drafts page asks for it once, and the first person
+            to enter it sets it for everyone. The stored address stays visible on the Drafts page,
+            and Change replaces it if the first entry was wrong. You can skip the question.
           </li>
           <li>
             <strong>Meeting week follows the live server:</strong> while the meeting is running,
