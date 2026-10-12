@@ -2,6 +2,18 @@ import type { AgendaItem, Room, ScheduleBundle } from "@/types/schedule";
 
 const ROOM_PALETTE = 8;
 
+export type RoomMode = "online" | "offline";
+
+/** The schedule table this room came from; names are never used to guess mode. */
+export function roomMode(
+  room: Pick<Room, "chairLaneId"> | undefined,
+): RoomMode | undefined {
+  const lane = room?.chairLaneId?.toLowerCase() ?? "";
+  if (lane.includes(":online:")) return "online";
+  if (lane.includes(":offline:")) return "offline";
+  return undefined;
+}
+
 /** Stable colour per room, by its column order in the meeting. */
 export function roomColor(
   room: Pick<Room, "order" | "sourceColor" | "chairRole"> | undefined,

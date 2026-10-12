@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import type { Room, Session } from "@/types/schedule";
 import { minutesOf } from "@/services/scheduleService";
-import { roomLabel, roomStyle } from "@/lib/rooms";
+import { roomLabel, roomMode, roomStyle, type RoomMode } from "@/lib/rooms";
 import { cn } from "@/lib/utils";
 
 const PX_PER_MIN = 1.6;
@@ -70,26 +70,51 @@ export function Timetable({
     layout.set(room.roomId, { sessions: roomSessions, laneOf, lanes: Math.max(1, laneEnd.length) });
   }
   const widthOf = (roomId: string) => 160 * (layout.get(roomId)?.lanes ?? 1);
+  const roomGroups: { mode: RoomMode | undefined; rooms: Room[]; width: number }[] = [];
+  for (const room of activeRooms) {
+    const mode = roomMode(room);
+    const previous = roomGroups.at(-1);
+    if (previous && previous.mode === mode) {
+      previous.rooms.push(room);
+      previous.width += widthOf(room.roomId);
+    } else {
+      roomGroups.push({ mode, rooms: [room], width: widthOf(room.roomId) });
+    }
+  }
 
   return (
     <div ref={scroller} className="max-h-[70vh] overflow-auto rounded-lg border border-border">
       <div className="min-w-max">
-        <div className="sticky top-0 z-20 flex border-b border-border bg-card">
-          <div className="w-12 shrink-0 border-r border-border" />
-          {activeRooms.map((room) => (
-            <Link
-              key={room.roomId}
-              to="/rooms/$roomId"
-              params={{ roomId: room.roomId }}
-              style={{ width: widthOf(room.roomId), ...roomStyle(room) }}
-              className="shrink-0 border-r border-b-[3px] border-r-border border-b-[var(--room-color)] px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
-            >
-              {roomLabel(room)}
-              {room.floor ? (
-                <div className="text-[10px] font-normal text-muted-foreground">{room.floor}</div>
-              ) : null}
-            </Link>
-          ))}
+        <div className="sticky top-0 z-20 border-b border-border bg-card">
+          <div className="flex border-b border-border">
+            <div className="w-12 shrink-0 border-r border-border" />
+            {roomGroups.map((group, index) => (
+              <div
+                key={`${group.mode ?? "rooms"}-${index}`}
+                style={{ width: group.width }}
+                className="shrink-0 border-r border-border px-2 py-1 text-center text-[10px] font-semibold uppercase text-muted-foreground last:border-r-0"
+              >
+                {group.mode ?? "Rooms"}
+              </div>
+            ))}
+          </div>
+          <div className="flex">
+            <div className="w-12 shrink-0 border-r border-border" />
+            {activeRooms.map((room) => (
+              <Link
+                key={room.roomId}
+                to="/rooms/$roomId"
+                params={{ roomId: room.roomId }}
+                style={{ width: widthOf(room.roomId), ...roomStyle(room) }}
+                className="shrink-0 border-r border-b-[3px] border-r-border border-b-[var(--room-color)] px-2 py-2 text-xs font-semibold leading-tight last:border-r-0 hover:bg-secondary"
+              >
+                {roomLabel(room)}
+                {room.floor ? (
+                  <div className="text-[10px] font-normal text-muted-foreground">{room.floor}</div>
+                ) : null}
+              </Link>
+            ))}
+          </div>
         </div>
 
 
@@ -135,7 +160,8 @@ export function Timetable({
 
 
           {activeRooms.map((room) => {
-            const entry = layout.get(room.roomId)!;
+            const entry = layout.get(room.roomId);
+            if (!entry) return null;
             const { sessions: roomSessions, laneOf, lanes: laneCount } = entry;
             return (
               <div
