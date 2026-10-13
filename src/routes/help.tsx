@@ -293,10 +293,10 @@ function HelpPage() {
             <strong>Times</strong> are always shown in the meeting's local time zone.
           </li>
           <li>
-            <strong>Where documents come from:</strong> before the meeting, only the meeting's own
-            3GPP folder. The day before and the day after, the meeting folder and Meetings Sync
-            together. On the meeting days themselves, only Meetings Sync (and the venue server
-            when you are on the meeting Wi-Fi). The newest version of each file wins.
+            <strong>Where documents come from:</strong> before the meeting (including the day
+            before), only the meeting's own 3GPP folder. On the meeting days, only Meetings Sync
+            (and the venue server when you are on the meeting Wi-Fi). The day after, the meeting
+            folder and Meetings Sync together. The newest version of each file wins.
           </li>
           <li>
             <strong>Timetable checks:</strong> an update is refused, and the previous timetable

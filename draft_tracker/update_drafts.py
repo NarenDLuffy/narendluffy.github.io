@@ -108,7 +108,7 @@ def main() -> int:
         # Keep archive discovery for non-active meetings so their snapshots do
         # not accidentally inherit files from the current meeting.
         # One rule, shared with the timetable (remote_ftp.meeting_phase): on
-        # meeting days Meetings Sync is the only source; the day before/after
+        # meeting days Meetings Sync is the only source; on the day after
         # this job keeps the meeting folder and the app adds Meetings Sync on
         # top (without hiding anything); otherwise the meeting folder only.
         phase = remote_ftp.meeting_phase(meeting.get("startDate"), meeting.get("endDate"))

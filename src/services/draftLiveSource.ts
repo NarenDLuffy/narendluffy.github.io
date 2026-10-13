@@ -476,21 +476,21 @@ const DAY_MS = 86_400_000;
 export type MeetingPhase = "before" | "edge" | "week" | "after";
 
 /**
- * Same rule as ingestion/remote_ftp.py meeting_phase: meeting days read the
- * live trees only; the day before/after merges them over the meeting-folder
- * snapshot without hiding anything; otherwise the snapshot alone.
+ * Same rule as ingestion/remote_ftp.py meeting_phase: up to the day before,
+ * the meeting-folder snapshot alone; meeting days, the live trees only; the
+ * day after, the live trees merged over the snapshot without hiding anything;
+ * later, the snapshot alone again.
  */
 export function meetingPhase(meeting: Meeting, now = Date.now()): MeetingPhase {
   const start = Date.parse(`${meeting.startDate}T00:00:00Z`);
   const end = Date.parse(`${meeting.endDate}T23:59:59Z`);
   if (Number.isNaN(start) || Number.isNaN(end)) return meeting.status === "active" ? "week" : "before";
-  if (now >= start && now <= end) return "week";
-  if (now >= start - DAY_MS && now < start) return "edge";
-  if (now > end && now <= end + DAY_MS) return "edge";
-  return now < start ? "before" : "after";
+  if (now < start) return "before";
+  if (now <= end) return "week";
+  return now <= end + DAY_MS ? "edge" : "after";
 }
 
-/** Live trees are read on meeting days and the day before/after. */
+/** Live trees are read on the meeting days and the day after. */
 export function inMeetingWeek(meeting: Meeting, now = Date.now()): boolean {
   const phase = meetingPhase(meeting, now);
   return phase === "week" || phase === "edge";

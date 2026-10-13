@@ -302,13 +302,17 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     file exists it always wins, whatever the version numbers.
     """
     best: dict[str, ScheduleSource] = {}
-    for source in sources:
-        folder = unquote(source.url or "").rstrip("/").rsplit("/", 2)[-2] if source.url else ""
-        key = f"{folder.lower()}|{_revision_family(source)}"
 
+    def rank(source: ScheduleSource) -> tuple:
+        # The same file is often uploaded twice (a chair's folder and drafts/):
+        # one family, one document. On a tie prefer the chair's own folder.
+        in_drafts = "/drafts/" in unquote(source.url or "").lower()
+        return (not _is_draft(source), source.revisionParts or [], not in_drafts)
+
+    for source in sources:
+        key = _revision_family(source)
         current = best.get(key)
-        rank = (not _is_draft(source), source.revisionParts or [])
-        if current is None or rank > (not _is_draft(current), current.revisionParts or []):
+        if current is None or rank(source) > rank(current):
             best[key] = source
     return sorted(best.values(), key=lambda s: s.fileName.lower())
 
