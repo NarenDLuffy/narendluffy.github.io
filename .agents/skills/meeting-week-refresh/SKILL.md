@@ -66,9 +66,9 @@ drafts side, `publish-and-verify` when the site itself changed.
 ## Which folders are read
 
 One rule for timetable and drafts (`meeting_phase` in `ingestion/remote_ftp.py`,
-`meetingPhase` in the app): before/after the meeting — the meeting folder only;
-the day before and after — Meetings Sync and the meeting folder; meeting days —
-Meetings Sync only (plus the venue server / remote FTP). Never fall back to the
+`meetingPhase` in the app): up to and including the day before — the meeting folder only; meeting days —
+Meetings Sync only (plus the venue server / remote FTP); the day after — Meetings
+Sync and the meeting folder; later — the meeting folder only. Never fall back to the
 meeting folder on a meeting day: keep the last good copy and let it fail loudly.
 
 ## Table sanity checks
