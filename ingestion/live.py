@@ -405,10 +405,76 @@ def parse_schedule_sources(
     else:
         rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
-    COVERAGE_GAPS[meeting.id] = coverage_gaps(sessions, result.sessions, rooms)
+    COVERAGE_GAPS[meeting.id] = [
+        *coverage_gaps(sessions, result.sessions, rooms),
+        *cell_checks(sessions, result.sessions, rooms),
+    ]
     order = {room.roomId: room.order for room in rooms}
     result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return rooms, result.sessions, result.conflicts
+
+
+def cell_checks(
+    parsed: list[Session], canonical: list[Session], rooms: list[Room]
+) -> list[str]:
+    """Catch text copied from the wrong table cell (Word merge/colour quirks).
+
+    1. One cell, one room: a single table cell read into two rooms means it
+       was read twice (the 14 Oct "Early dinner" continuation row).
+    2. The same agenda item in two rooms at overlapping times is refused unless
+       one document lists it in both rooms, in two different cells.
+    """
+
+    def mins(hhmm: str) -> int:
+        h, m = hhmm.split(":")
+        return int(h) * 60 + int(m)
+
+    names = {r.roomId: r.roomName for r in rooms}
+    errors: list[str] = []
+    cell_rooms: dict[str, set[str]] = {}
+    evidence: dict[tuple[str, str, str], list[tuple[int, int, str]]] = {}
+    for s in parsed:
+        if not s.roomId or s.kind not in ("session", "plenary"):
+            continue
+        for ref in s.sources:
+            if not ref.cell:
+                continue
+            cell_rooms.setdefault(ref.cell, set()).add(s.roomId)
+            for code in s.agendaItems:
+                evidence.setdefault((s.date, s.roomId, code), []).append(
+                    (mins(s.startTime), mins(s.endTime), ref.cell)
+                )
+    for cell, ids in sorted(cell_rooms.items()):
+        if len(ids) > 1:
+            file_id, _, day, start, *_ = cell.split("|")
+            errors.append(
+                f"{day} {int(start) // 60:02d}:{int(start) % 60:02d}: one table cell was read into "
+                f"{len(ids)} rooms ({', '.join(sorted(names.get(i, i) for i in ids))}) in {file_id}"
+            )
+
+    def cells(day: str, room: str, code: str, a: int, b: int) -> set[str]:
+        return {c for x, y, c in evidence.get((day, room, code), []) if x < b and a < y}
+
+    timed = [s for s in canonical if s.roomId and s.kind == "session" and s.agendaItems]
+    for i, a in enumerate(timed):
+        for b in timed[i + 1 :]:
+            if a.date != b.date or a.roomId == b.roomId:
+                continue
+            lo, hi = max(mins(a.startTime), mins(b.startTime)), min(mins(a.endTime), mins(b.endTime))
+            if lo >= hi:
+                continue
+            for code in set(a.agendaItems) & set(b.agendaItems):
+                ca = cells(a.date, a.roomId, code, lo, hi)
+                cb = cells(b.date, b.roomId, code, lo, hi)
+                listed_in_both = any(
+                    x.split("|")[0] == y.split("|")[0] and x != y for x in ca for y in cb
+                )
+                if not listed_in_both:
+                    errors.append(
+                        f"{a.date} {a.startTime}: {code} is in both {names.get(a.roomId, a.roomName)} "
+                        f"and {names.get(b.roomId, b.roomName)} at the same time"
+                    )
+    return errors
 
 
 # Per meeting: time a source document fills that the published timetable leaves
