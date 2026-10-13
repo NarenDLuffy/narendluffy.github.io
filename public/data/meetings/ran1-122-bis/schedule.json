@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:37:07Z",
+  "generatedAt": "2026-10-13T11:56:59Z",
   "meetingId": "ran1-122-bis",
   "sessions": [
     {
@@ -3099,28 +3099,25 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122-bis_wed_e1_0830_0910_mce",
+      "sessionId": "ran1-122-bis_wed_e1_0830_1030_r19ue-features",
       "meetingId": "ran1-122-bis",
       "date": "2025-10-15",
       "day": "Wednesday",
       "startTime": "08:30",
-      "endTime": "09:10",
+      "endTime": "10:30",
       "roomId": "ran1-122-bis-room-a05131b8",
       "roomName": "E1",
-      "topic": "MCE",
+      "topic": "R19UE features",
       "topicKey": "db21d7dd",
       "agendaItems": [],
       "agendaBreakdown": [],
       "group": "R19UE features",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 90 min, block is 120 min.",
       "sources": [
         {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
+          "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
         },
         {
@@ -3200,44 +3197,6 @@
           "sourceId": "ran1-122-bis-b337fb9f",
           "contributed": []
         },
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_e1_0910_0950_mimo",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "09:10",
-      "endTime": "09:50",
-      "roomId": "ran1-122-bis-room-a05131b8",
-      "roomName": "E1",
-      "topic": "MIMO",
-      "topicKey": "db21d7dd",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
         {
           "sourceId": "ran1-122-bis-fa437323",
           "contributed": []
@@ -3358,74 +3317,6 @@
       ],
       "derivation": "direct",
       "confidence": 0.85,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_e1_0950_1000_lte-broadcast",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "09:50",
-      "endTime": "10:00",
-      "roomId": "ran1-122-bis-room-a05131b8",
-      "roomName": "E1",
-      "topic": "LTE Broadcast",
-      "topicKey": "db21d7dd",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-f8876e46",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-4402ccb4",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122-bis_wed_e1_1000_1030_ai-ml",
-      "meetingId": "ran1-122-bis",
-      "date": "2025-10-15",
-      "day": "Wednesday",
-      "startTime": "10:00",
-      "endTime": "10:30",
-      "roomId": "ran1-122-bis-room-a05131b8",
-      "roomName": "E1",
-      "topic": "AI/ML",
-      "topicKey": "db21d7dd",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "R19UE features",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-bis-fa437323",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-bis-1bfbb8c6",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -5259,6 +5150,7 @@
       "group": "AI 8",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 110 min, block is 120 min.",
       "sources": [
         {
           "sourceId": "ran1-122-bis-b337fb9f",
@@ -5274,6 +5166,10 @@
         },
         {
           "sourceId": "ran1-122-bis-f8876e46",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-122-bis-4402ccb4",
           "contributed": []
         }
       ],
@@ -6301,7 +6197,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-13T03:37:07Z",
-    "lastAttemptAt": "2026-10-13T03:37:07Z"
+    "lastSuccessfulAt": "2026-10-13T11:56:59Z",
+    "lastAttemptAt": "2026-10-13T11:56:59Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:33:49Z",
+  "generatedAt": "2026-10-13T11:49:16Z",
   "meetingId": "ran1-120-bis",
   "sessions": [
     {
@@ -1849,7 +1849,20 @@
       "group": "7~24 GHz",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 60 min, block is 90 min.",
       "sources": [
+        {
+          "sourceId": "ran1-120-bis-d4624f73",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-b877a58f",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-bis-1b0a55b1",
+          "contributed": []
+        },
         {
           "sourceId": "ran1-120-bis-f20c90ad",
           "contributed": []
@@ -1867,8 +1880,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -2178,37 +2191,32 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_tue_online-room-1_1700_1730_ue-features",
+      "sessionId": "ran1-120-bis_tue_online-room-1_1700_1755_9.1.1",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
       "day": "Tuesday",
       "startTime": "17:00",
-      "endTime": "17:30",
+      "endTime": "17:55",
       "roomId": "ran1-120-bis-room-b510f6f2",
       "roomName": "Online room 1",
-      "topic": "UE features",
+      "topic": "9.1.1",
       "topicKey": "9296eb35",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.1.1"
+      ],
       "agendaBreakdown": [],
       "group": "AI/ML",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-120-bis-d4624f73",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b877a58f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b0a55b1",
+          "sourceId": "ran1-120-bis-f20c90ad",
           "contributed": []
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "parentAgendaItem": "9.1",
       "detailAvailable": true
     },
     {
@@ -2323,40 +2331,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120-bis_tue_online-room-1_1730_1800_ai-ml",
-      "meetingId": "ran1-120-bis",
-      "date": "2025-04-08",
-      "day": "Tuesday",
-      "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-120-bis-room-b510f6f2",
-      "roomName": "Online room 1",
-      "topic": "AI/ML",
-      "topicKey": "9296eb35",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "AI/ML",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-bis-d4624f73",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-b877a58f",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-bis-1b0a55b1",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120-bis_tue_offline-2-wuhan_1750_1930_close-by-7-15pm",
       "meetingId": "ran1-120-bis",
       "date": "2025-04-08",
@@ -2392,6 +2366,35 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-120-bis_tue_online-room-1_1755_1845_9.1.2",
+      "meetingId": "ran1-120-bis",
+      "date": "2025-04-08",
+      "day": "Tuesday",
+      "startTime": "17:55",
+      "endTime": "18:45",
+      "roomId": "ran1-120-bis-room-b510f6f2",
+      "roomName": "Online room 1",
+      "topic": "9.1.2",
+      "topicKey": "9296eb35",
+      "agendaItems": [
+        "9.1.2"
+      ],
+      "agendaBreakdown": [],
+      "group": "AI/ML",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-120-bis-f20c90ad",
+          "contributed": []
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "9.1",
       "detailAvailable": true
     },
     {
@@ -5969,7 +5972,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-13T03:33:49Z",
-    "lastAttemptAt": "2026-10-13T03:33:49Z"
+    "lastSuccessfulAt": "2026-10-13T11:49:16Z",
+    "lastAttemptAt": "2026-10-13T11:49:16Z"
   }
 }

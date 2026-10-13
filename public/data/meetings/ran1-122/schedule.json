@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:36:07Z",
+  "generatedAt": "2026-10-13T11:52:46Z",
   "meetingId": "ran1-122",
   "sessions": [
     {
@@ -2944,23 +2944,48 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-122_wed_convention-hall_1700_1730_8.3",
+      "sessionId": "ran1-122_wed_convention-hall_1700_1930_8.3",
       "meetingId": "ran1-122",
       "date": "2025-08-27",
       "day": "Wednesday",
       "startTime": "17:00",
-      "endTime": "17:30",
+      "endTime": "19:30",
       "roomId": "ran1-122-room-112c1739",
       "roomName": "Convention Hall",
-      "topic": "8.3",
+      "topic": "R19 CRs",
       "topicKey": "954bc241",
       "agendaItems": [
-        "8.3"
+        "8.3",
+        "8.9",
+        "8.12"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "8.3",
+          "label": "8.3",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.9",
+          "label": "8.9",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.12",
+          "label": "8.12",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 CRs",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 90 min, block is 150 min.",
       "sources": [
         {
           "sourceId": "ran1-122-fcf9365d",
@@ -2971,9 +2996,8 @@
           "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "derivation": "direct",
+      "confidence": 0.95,
       "detailAvailable": true
     },
     {
@@ -3094,72 +3118,6 @@
       ],
       "derivation": "inferred-duration",
       "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122_wed_convention-hall_1730_1800_8.9",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "17:30",
-      "endTime": "18:00",
-      "roomId": "ran1-122-room-112c1739",
-      "roomName": "Convention Hall",
-      "topic": "8.9",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.9"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-d3c63d8c",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-122_wed_convention-hall_1800_1830_8.12",
-      "meetingId": "ran1-122",
-      "date": "2025-08-27",
-      "day": "Wednesday",
-      "startTime": "18:00",
-      "endTime": "18:30",
-      "roomId": "ran1-122-room-112c1739",
-      "roomName": "Convention Hall",
-      "topic": "8.12",
-      "topicKey": "954bc241",
-      "agendaItems": [
-        "8.12"
-      ],
-      "agendaBreakdown": [],
-      "group": "R19 CRs",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-122-fcf9365d",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-122-d3c63d8c",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
       "detailAvailable": true
     },
     {
@@ -3673,7 +3631,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-13T03:36:07Z",
-    "lastAttemptAt": "2026-10-13T03:36:07Z"
+    "lastSuccessfulAt": "2026-10-13T11:52:46Z",
+    "lastAttemptAt": "2026-10-13T11:52:46Z"
   }
 }

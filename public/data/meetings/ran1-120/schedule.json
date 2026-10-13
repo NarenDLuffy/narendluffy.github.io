@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:32:12Z",
+  "generatedAt": "2026-10-13T11:44:43Z",
   "meetingId": "ran1-120",
   "sessions": [
     {
@@ -1576,21 +1576,44 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_online-room-1_1430_1450_xr",
+      "sessionId": "ran1-120_tue_online-room-1_1430_1600_r19-ue-features",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
       "day": "Tuesday",
       "startTime": "14:30",
-      "endTime": "14:50",
+      "endTime": "16:00",
       "roomId": "ran1-120-room-85e066f2",
       "roomName": "Online room 1",
-      "topic": "XR",
+      "topic": "R19 UE Features",
       "topicKey": "53699daf",
       "agendaItems": [],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": null,
+          "label": "XR",
+          "minutes": 20,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "NES",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": null,
+          "label": "R19 MCE",
+          "minutes": 30,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "R19 UE Features",
       "kind": "session",
       "status": "scheduled",
+      "note": "Minutes don't add up: items total 80 min, block is 90 min.",
       "sources": [
         {
           "sourceId": "ran1-120-b5f52174",
@@ -1603,10 +1626,18 @@
         {
           "sourceId": "ran1-120-b8b58fa9",
           "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-7a4e9a37",
+          "contributed": []
+        },
+        {
+          "sourceId": "ran1-120-534bb9df",
+          "contributed": []
         }
       ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "derivation": "direct",
+      "confidence": 0.85,
       "detailAvailable": true
     },
     {
@@ -1740,40 +1771,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_tue_online-room-1_1450_1520_nes",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "14:50",
-      "endTime": "15:20",
-      "roomId": "ran1-120-room-85e066f2",
-      "roomName": "Online room 1",
-      "topic": "NES",
-      "topicKey": "6d325414",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Duplex(40),",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
-      "detailAvailable": true
-    },
-    {
       "sessionId": "ran1-120_tue_offline2-delta-sigma_1450_1530_9.8.2",
       "meetingId": "ran1-120",
       "date": "2025-02-18",
@@ -1816,40 +1813,6 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "9.8",
-      "detailAvailable": true
-    },
-    {
-      "sessionId": "ran1-120_tue_online-room-1_1520_1550_r19-mce",
-      "meetingId": "ran1-120",
-      "date": "2025-02-18",
-      "day": "Tuesday",
-      "startTime": "15:20",
-      "endTime": "15:50",
-      "roomId": "ran1-120-room-85e066f2",
-      "roomName": "Online room 1",
-      "topic": "R19 MCE",
-      "topicKey": "6d325414",
-      "agendaItems": [],
-      "agendaBreakdown": [],
-      "group": "Duplex(40),",
-      "kind": "session",
-      "status": "scheduled",
-      "sources": [
-        {
-          "sourceId": "ran1-120-b5f52174",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-0e6d44a1",
-          "contributed": []
-        },
-        {
-          "sourceId": "ran1-120-b8b58fa9",
-          "contributed": []
-        }
-      ],
-      "derivation": "inferred-duration",
-      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -4675,7 +4638,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-120_thu_ran1-main_1700_1730_8.1",
+      "sessionId": "ran1-120_thu_ran1-main_1700_1730_any-remaining-issues",
       "meetingId": "ran1-120",
       "date": "2025-02-20",
       "day": "Thursday",
@@ -4683,13 +4646,11 @@
       "endTime": "17:30",
       "roomId": "ran1-120-room-bb0076fb",
       "roomName": "RAN1 Main",
-      "topic": ", 7",
-      "topicKey": "6ffc6669",
-      "agendaItems": [
-        "8.1"
-      ],
+      "topic": "Any remaining issues",
+      "topicKey": "04c47be4",
+      "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "R19 Duplex",
+      "group": "AI 8.1, 7",
       "kind": "session",
       "status": "scheduled",
       "sources": [
@@ -4703,8 +4664,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
-      "parentAgendaItem": "8",
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -5582,7 +5542,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-13T03:32:12Z",
-    "lastAttemptAt": "2026-10-13T03:32:12Z"
+    "lastSuccessfulAt": "2026-10-13T11:44:43Z",
+    "lastAttemptAt": "2026-10-13T11:44:43Z"
   }
 }

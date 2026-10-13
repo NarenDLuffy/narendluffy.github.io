@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "changeId": "session_removed-ran1-122-bis_wed_e1_0830_0910_mce-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-122-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "MCE removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122-bis_wed_e1_0830_0910_mce",
+    "sourceIds": [
+      "ran1-122-bis-fa437323",
+      "ran1-122-bis-1bfbb8c6",
+      "ran1-122-bis-f8876e46",
+      "ran1-122-bis-4402ccb4"
+    ],
+    "from": "E1"
+  },
+  {
+    "changeId": "session_removed-ran1-122-bis_wed_e1_0910_0950_mimo-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-122-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "MIMO removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122-bis_wed_e1_0910_0950_mimo",
+    "sourceIds": [
+      "ran1-122-bis-fa437323",
+      "ran1-122-bis-1bfbb8c6",
+      "ran1-122-bis-f8876e46",
+      "ran1-122-bis-4402ccb4"
+    ],
+    "from": "E1"
+  },
+  {
+    "changeId": "session_removed-ran1-122-bis_wed_e1_0950_1000_lte-broadcast-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-122-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "LTE Broadcast removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-122-bis_wed_e1_0950_1000_lte-broadcast",
+    "sourceIds": [
+      "ran1-122-bis-fa437323",
+      "ran1-122-bis-1bfbb8c6",
+      "ran1-122-bis-f8876e46",
+      "ran1-122-bis-4402ccb4"
+    ],
+    "from": "E1"
+  }
+]

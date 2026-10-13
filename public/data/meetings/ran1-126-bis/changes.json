@@ -1,70 +1,302 @@
 [
   {
-    "changeId": "start_time_changed-ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.1-2026-10-13T03:51:42+00:00",
+    "changeId": "session_added-ran1-126-bis_mon_room-203-2f_1100_1130_mimo-2026-10-13T12:16:03+00:00",
     "meetingId": "ran1-126-bis",
-    "detectedAt": "2026-10-13T03:51:42+00:00",
-    "type": "start_time_changed",
-    "title": "10.8.1 start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [
-      "10.8.1"
-    ],
-    "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.1",
-    "to": "11:40",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_mon_room-203-2f_1100_1130_mimo",
+    "to": "Room 203 (2F) 11:00-11:30",
     "sourceIds": [
-      "ran1-126-bis-209fd427"
-    ],
-    "from": "12:20"
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-d9d521df"
+    ]
   },
   {
-    "changeId": "end_time_changed-ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.1-2026-10-13T03:51:42+00:00",
+    "changeId": "session_added-ran1-126-bis_tue_room-203-2f_1430_1600_9.3.1-2026-10-13T12:16:03+00:00",
     "meetingId": "ran1-126-bis",
-    "detectedAt": "2026-10-13T03:51:42+00:00",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "R20 A-IoT added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.3.1",
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126-bis_tue_room-203-2f_1430_1600_9.3.1",
+    "to": "Room 203 (2F) 14:30-16:00",
+    "sourceIds": [
+      "ran1-126-bis-d9d521df",
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd"
+    ]
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_tue_yeongju-b-hall_1700_1730_9.3.1-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "start_time_changed",
+    "title": "9.3.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "9.3.1"
+    ],
+    "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1700_1730_9.3.1",
+    "to": "17:00",
+    "sourceIds": [
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_tue_yeongju-b-hall_1700_1730_9.3.1-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
     "type": "end_time_changed",
-    "title": "10.8.1 end time changed",
+    "title": "9.3.1 end time changed",
     "detail": "End time changed",
     "agendaItems": [
-      "10.8.1"
+      "9.3.1"
     ],
-    "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.1",
-    "to": "12:20",
+    "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1700_1730_9.3.1",
+    "to": "17:30",
     "sourceIds": [
-      "ran1-126-bis-209fd427"
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "18:30"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_tue_yeongju-b-hall_1730_1830_9.3.3-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "start_time_changed",
+    "title": "9.3.3 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1730_1830_9.3.3",
+    "to": "17:30",
+    "sourceIds": [
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "17:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_tue_yeongju-b-hall_1730_1830_9.3.3-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "end_time_changed",
+    "title": "9.3.3 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "9.3.3"
+    ],
+    "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1730_1830_9.3.3",
+    "to": "18:30",
+    "sourceIds": [
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "18:00"
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_wed_room-203-2f_1230_1300_mimo-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "MIMO added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_wed_room-203-2f_1230_1300_mimo",
+    "to": "Room 203 (2F) 12:30-13:00",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-d9d521df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_wed_room-201-2f_0900_1030_10.2.1-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "Hiroki added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1",
+      "10.8.x"
+    ],
+    "sessionId": "ran1-126-bis_wed_room-201-2f_0900_1030_10.2.1",
+    "to": "Room 201 (2F) 09:00-10:30",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-d9d521df"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_wed_room-203-2f_0910_0950_ai-ml-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "AI/ML added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_wed_room-203-2f_0910_0950_ai-ml",
+    "to": "Room 203 (2F) 09:10-09:50",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-d9d521df"
+    ]
+  },
+  {
+    "changeId": "room_changed-ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "room_changed",
+    "title": "MIMO moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2",
+    "to": "Yeongju A Hall",
+    "sourceIds": [
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "Room 203 (2F)"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "start_time_changed",
+    "title": "MIMO start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2",
+    "to": "09:50",
+    "sourceIds": [
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-d9d521df"
+    ],
+    "from": "12:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "end_time_changed",
+    "title": "MIMO end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "9.2"
+    ],
+    "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-d9d521df"
     ],
     "from": "13:00"
   },
   {
-    "changeId": "start_time_changed-ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.3-2026-10-13T03:51:42+00:00",
+    "changeId": "session_added-ran1-126-bis_thu_room-203-2f_0830_0910_ai-ml-2026-10-13T12:16:03+00:00",
     "meetingId": "ran1-126-bis",
-    "detectedAt": "2026-10-13T03:51:42+00:00",
-    "type": "start_time_changed",
-    "title": "10.8.3 start time changed",
-    "detail": "Start time changed",
-    "agendaItems": [
-      "10.8.3"
-    ],
-    "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.3",
-    "to": "12:20",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_added",
+    "title": "AI/ML added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_thu_room-203-2f_0830_0910_ai-ml",
+    "to": "Room 203 (2F) 08:30-09:10",
     "sourceIds": [
-      "ran1-126-bis-209fd427"
-    ],
-    "from": "11:40"
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-d9d521df"
+    ]
   },
   {
-    "changeId": "end_time_changed-ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.3-2026-10-13T03:51:42+00:00",
+    "changeId": "session_removed-ran1-126-bis_tue_room-203-2f_1430_1600_9.3.3-2026-10-13T12:16:03+00:00",
     "meetingId": "ran1-126-bis",
-    "detectedAt": "2026-10-13T03:51:42+00:00",
-    "type": "end_time_changed",
-    "title": "10.8.3 end time changed",
-    "detail": "End time changed",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "R20 A-IoT removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
-      "10.8.3"
+      "9.3.3",
+      "9.3.1"
     ],
-    "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.3",
-    "to": "13:00",
+    "sessionId": "ran1-126-bis_tue_room-203-2f_1430_1600_9.3.3",
     "sourceIds": [
+      "ran1-126-bis-209fd427",
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd"
+    ],
+    "from": "Room 203 (2F)"
+  },
+  {
+    "changeId": "session_removed-ran1-126-bis_wed_room-203-2f_0910_0950_ai-ml-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-126-bis_wed_room-203-2f_0910_0950_ai-ml",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
       "ran1-126-bis-209fd427"
     ],
-    "from": "12:20"
+    "from": "Room 203 (2F)"
+  },
+  {
+    "changeId": "session_removed-ran1-126-bis_wed_room-201-2f_0930_0936_10.8.x-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "Sensing removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.8.x"
+    ],
+    "sessionId": "ran1-126-bis_wed_room-201-2f_0930_0936_10.8.x",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-209fd427"
+    ],
+    "from": "Room 201 (2F)"
+  },
+  {
+    "changeId": "session_removed-ran1-126-bis_thu_room-203-2f_0830_0910_ai-ml-2026-10-13T12:16:03+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-13T12:16:03+00:00",
+    "type": "session_removed",
+    "title": "AI/ML removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "9.1"
+    ],
+    "sessionId": "ran1-126-bis_thu_room-203-2f_0830_0910_ai-ml",
+    "sourceIds": [
+      "ran1-126-bis-5dbb7698",
+      "ran1-126-bis-561748bd",
+      "ran1-126-bis-209fd427"
+    ],
+    "from": "Room 203 (2F)"
   }
 ]
