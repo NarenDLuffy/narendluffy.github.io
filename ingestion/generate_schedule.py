@@ -174,12 +174,14 @@ def main() -> int:
                 sep="\n  ",
                 file=sys.stderr,
             )
-            if previous is not None:
-                # The old schedule is still what people see: say so, don't go quiet.
-                sections[bundle.meeting.slug] = {
-                    **health.schedule_section(previous),
-                    "state": "validation-failed",
-                }
+            # The old schedule is still what people see: say so, don't go quiet.
+            sections[bundle.meeting.slug] = {
+                **(health.load(bundle.meeting.slug).get("schedule") or {}),
+                "state": "validation-failed",
+                "lastAttemptAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+                "gaps": [e for e in errors if "no session" in e],
+                "errors": errors[:20],
+            }
             continue
         bundle.changes = detect_changes(previous, bundle) + bundle.changes
         write_meeting(bundle)
