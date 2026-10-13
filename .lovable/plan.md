@@ -12,7 +12,7 @@ So: **not quite what you described.** The timetable still reads the meeting fold
 
 ### Change: one rule for both drafts and timetable
 - **Before the week:** read the meeting folder only.
-- **During the week (±1 day):** read Meetings Sync only, plus 10.10.10.10 over https when the device can reach it. The newest version wins.
+- **During the week (the meeting days themselves; on the day before and the day after, read Meetings Sync and the meeting folder together, newest version wins):** read Meetings Sync only, plus 10.10.10.10 over https when the device can reach it. The newest version wins.
 - The remote FTP stays as the night-time copy of 10.10.10.10 (same files, reachable from outside the venue). Say if you want it removed.
 - If Meetings Sync can't be reached during the week, keep the last good copy and flag it in Verify data. Don't fall back to the meeting folder.
 - Update the How to Use page and the meeting-week skill to match.
