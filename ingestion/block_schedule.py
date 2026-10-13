@@ -829,8 +829,10 @@ def _sessions_for_cell(
 
         span = seg_end - seg_start
         stated = [slot.minutes for slot in segment.slots]
-        if len(segment.slots) > 1 and all(stated) and sum(m or 0 for m in stated) <= span:
-            # Every item has stated minutes and they fit: back to back.
+        if len(segment.slots) > 1 and all(stated) and sum(m or 0 for m in stated) == span:
+            # Every item has stated minutes and they fill the block exactly: back
+            # to back. Minutes that fall short ("Waveform (30)", "Sensing (6)" in a
+            # 90-minute block) are a typo, not a schedule — never place them.
             slot_cursor = seg_start
             for slot in segment.slots:
                 slot_end = slot_cursor + (slot.minutes or 0)
