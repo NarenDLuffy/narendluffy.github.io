@@ -150,6 +150,15 @@ def _warnings(
                     "not been picked up.",
                 )
             )
+        for gap in sched.get("gaps") or []:
+            out.append(_warn("warn", f"Timetable gap: {gap}."))
+        if sched.get("shortBlockCount"):
+            out.append(
+                _warn(
+                    "info",
+                    f"{sched['shortBlockCount']} timetable block(s) shorter than 10 minutes.",
+                )
+            )
         if sched.get("lowConfidenceCount"):
             out.append(
                 _warn(
@@ -203,9 +212,10 @@ def _warnings(
             )
         )
     elif state == "skipped-no-host":
+        # Optional source: worth saying every time, never a failure on its own.
         out.append(
             _warn(
-                "warn",
+                "info",
                 "No remote meeting server address is known for this meeting, so the venue copy "
                 "is not read. Enter it on the Drafts page.",
             )
@@ -277,6 +287,14 @@ def remember_detected_host(slug: str, host: str) -> None:
     save(slug, record)
 
 
+def _len(start: str, end: str) -> int:
+    try:
+        (h1, m1), (h2, m2) = (map(int, start.split(":")), map(int, end.split(":")))
+        return (h2 * 60 + m2) - (h1 * 60 + m1)
+    except ValueError:
+        return 0
+
+
 def schedule_section(bundle: Any) -> dict[str, Any]:
     """Summarise a ScheduleBundle for the health record (never its contents)."""
     ingest = getattr(bundle, "ingest", None)
@@ -304,6 +322,13 @@ def schedule_section(bundle: Any) -> dict[str, Any]:
             for s in schedule_sources
         ],
         "draftOnly": draft_only,
+        "gaps": list(getattr(bundle, "coverage_gaps", []) or []),
+        "shortBlockCount": sum(
+            1
+            for s in sessions
+            if getattr(s, "kind", "session") == "session"
+            and _len(getattr(s, "startTime", "0:0"), getattr(s, "endTime", "0:0")) < 10
+        ),
         "conflictCount": len(list(getattr(bundle, "conflicts", []) or [])),
         "lowConfidenceCount": sum(
             1 for s in sources if (getattr(s, "confidence", 1) or 1) < 0.8
