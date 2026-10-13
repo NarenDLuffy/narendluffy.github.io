@@ -3,7 +3,7 @@
 ## What is checked so far (live published data, rebuilt 03:48 UTC today)
 - The timetable is built from: official v00, Sorour v00, **Hiroki Adhoc2 v03**, Chair notes v03. Hiroki v05 is not among them.
 - Wednesday 14 Oct, Room 201: "Sensing (10.8.x)" is published as **09:30–09:36**, marked "inferred duration". The next Room 201 block starts at 11:00, so the time after 09:36 is lost.
-- Almost every Wednesday-morning block is "inferred duration", i.e. its length came from minutes in brackets next to items (Sensing says "09:30–10:30 (60)" in both v03 and v05, but "(60)" is being read as 6 minutes), not from a stated end time.
+- Almost every Wednesday-morning block is "inferred duration", i.e. its length came from minutes in brackets next to items (verified in the files: Hiroki's own table says "9:30 - 10:30 | 6G ISAC (60)", but the shared grid copy in the same file, v03 and v05 alike, literally says ".10.8.x Sensing (6)" inside a "Hiroki (90)" block where Waveform is 30 — a typo the app trusted, even though 30 + 6 does not add up to 90), not from a stated end time.
 - Why v05 is skipped is **not confirmed yet**. It could be: the file is in a folder or under a name the search doesn't reach, its name doesn't name the meeting the way the meeting filter expects, or it lands in a different "series" than v03, so v03 is not seen as older.
 - Why Sensing gets 6 minutes is **not confirmed yet**. Most likely a number next to "10.8.x" in the cell (a count or a note, not minutes) is read as "6 min".
 
