@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-120",
   "schedule": {
-    "state": "ok",
+    "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:16:19Z",
-    "lastAttemptAt": "2026-10-13T12:16:19Z",
+    "lastAttemptAt": "2026-10-13T19:35:44Z",
     "sessionCount": 135,
     "roomCount": 5,
     "dates": [
@@ -99,12 +99,28 @@
     ],
     "draftOnly": false,
     "conflictCount": 1,
-    "lowConfidenceCount": 0
+    "lowConfidenceCount": 0,
+    "gaps": [
+      "2025-02-17 RAN1 Main: no session 15:45-16:00 although a schedule document fills it",
+      "2025-02-19 Online room 2: no session 14:50-15:30 although a schedule document fills it"
+    ],
+    "errors": [
+      "2025-02-17 RAN1 Main: no session 15:45-16:00 although a schedule document fills it",
+      "2025-02-19 Online room 2: no session 14:50-15:30 although a schedule document fills it"
+    ]
   },
   "remoteFtp": {
     "credentials": true
   },
   "warnings": [
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2025-02-17 RAN1 Main: no session 15:45-16:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2025-02-19 Online room 2: no session 14:50-15:30 although a schedule document fills it."
+    },
     {
       "level": "info",
       "text": "1 unresolved source conflict(s)."
@@ -114,5 +130,5 @@
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-13T12:40:54Z"
+  "updatedAt": "2026-10-13T19:35:45Z"
 }

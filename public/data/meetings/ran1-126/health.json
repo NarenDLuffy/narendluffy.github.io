@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-126",
   "schedule": {
-    "state": "ok",
+    "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:37:59Z",
-    "lastAttemptAt": "2026-10-13T12:37:59Z",
+    "lastAttemptAt": "2026-10-13T19:35:44Z",
     "sessionCount": 234,
     "roomCount": 5,
     "dates": [
@@ -44,16 +44,32 @@
     ],
     "draftOnly": false,
     "conflictCount": 5,
-    "lowConfidenceCount": 0
+    "lowConfidenceCount": 0,
+    "gaps": [
+      "2026-08-24 0.4 Brussels: no session 15:30-16:00 although a schedule document fills it",
+      "2026-08-25 1.1 Himalaya: no session 15:40-15:50 although a schedule document fills it"
+    ],
+    "errors": [
+      "2026-08-24 0.4 Brussels: no session 15:30-16:00 although a schedule document fills it",
+      "2026-08-25 1.1 Himalaya: no session 15:40-15:50 although a schedule document fills it"
+    ]
   },
   "remoteFtp": {
     "credentials": true
   },
   "warnings": [
     {
+      "level": "warn",
+      "text": "Timetable gap: 2026-08-24 0.4 Brussels: no session 15:30-16:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2026-08-25 1.1 Himalaya: no session 15:40-15:50 although a schedule document fills it."
+    },
+    {
       "level": "info",
       "text": "5 unresolved source conflict(s)."
     }
   ],
-  "updatedAt": "2026-10-13T12:40:54Z"
+  "updatedAt": "2026-10-13T19:35:45Z"
 }
