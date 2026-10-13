@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-13T12:39:14Z",
-    "lastAttemptAt": "2026-10-13T12:39:14Z",
-    "sessionCount": 248,
+    "lastSuccessAt": "2026-10-13T15:44:06Z",
+    "lastAttemptAt": "2026-10-13T15:44:06Z",
+    "sessionCount": 246,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -14,7 +14,7 @@
       "2026-10-15",
       "2026-10-16"
     ],
-    "sourceCount": 4,
+    "sourceCount": 5,
     "sources": [
       {
         "label": "Chair notes RAN1#126bis_v05",
@@ -35,9 +35,16 @@
         "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05",
         "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05.docx",
         "origin": "public"
+      },
+      {
+        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05",
+        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05.docx",
+        "origin": "public"
       }
     ],
     "draftOnly": false,
+    "gaps": [],
+    "shortBlockCount": 0,
     "conflictCount": 3,
     "lowConfidenceCount": 0
   },
@@ -60,11 +67,11 @@
       "text": "Only 173 of 174 draft folders were opened this scan."
     },
     {
-      "level": "warn",
+      "level": "info",
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-10-13T12:40:54Z",
+  "updatedAt": "2026-10-13T15:45:58Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-13T10:18:16Z",

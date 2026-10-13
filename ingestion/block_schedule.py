@@ -678,6 +678,13 @@ def parse_block_schedule_docx(
                 for cell in in_day:
                     if not cell.text.strip():
                         continue
+                    if cell.continued and cells[0].continued:
+                        # Same time block as the row above (e.g. an "Early
+                        # dinner" sub-row under 17:00 ~ 19:30): this cell was
+                        # already read there. Word often drops the lane colour
+                        # on continuation cells, so reading it again would put
+                        # another room's items into the white (Main) room.
+                        continue
                     room = room_for(cell, day_start, day_end)
                     produced = _sessions_for_cell(
                             cell.text,

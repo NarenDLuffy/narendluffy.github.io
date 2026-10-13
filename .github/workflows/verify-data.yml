@@ -22,6 +22,8 @@ concurrency:
 
 permissions:
   contents: read
+  # Lets this job restart the refresh jobs when GitHub skipped their schedule.
+  actions: write
 
 env:
   PYTHONDONTWRITEBYTECODE: "1"
@@ -30,9 +32,9 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -59,4 +61,17 @@ jobs:
       # delegate would notice (stale timetable, unread venue copy, Draft-only
       # schedule). See ingestion/health.py.
       - name: Meeting health
+        id: health
         run: node scripts/check-meeting-health.mjs
+
+      # GitHub silently skips scheduled runs when it is busy (8 h without a
+      # refresh on 13 Oct). When the data is stale, start the refresh jobs here
+      # so the gap repairs itself within one verify cycle — and still fail.
+      - name: Restart stale refresh jobs
+        if: failure() && steps.health.outputs.stale != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STALE: ${{ steps.health.outputs.stale }}
+        run: |
+          case "$STALE" in *schedule*) gh workflow run update-schedule.yml ;; esac
+          case "$STALE" in *drafts*) gh workflow run update-drafts.yml ;; esac

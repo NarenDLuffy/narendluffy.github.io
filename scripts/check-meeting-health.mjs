@@ -23,7 +23,14 @@ import { join } from "node:path";
 
 const ROOT = process.cwd();
 const DATA = join(ROOT, "public", "data");
-const MAX_AGE_HOURS = Number(process.env.HEALTH_MAX_AGE_HOURS ?? 6);
+// Tight during meeting-week session hours (weekdays 05–19 UTC covers Asian,
+// European and US venues), looser otherwise. An 8-hour silent gap must fail.
+function maxAgeHours(meeting) {
+  if (process.env.HEALTH_MAX_AGE_HOURS) return Number(process.env.HEALTH_MAX_AGE_HOURS);
+  const now = new Date();
+  const sessionHours = now.getUTCDay() >= 1 && now.getUTCDay() <= 5 && now.getUTCHours() >= 5 && now.getUTCHours() < 19;
+  return meeting?.status === "active" && sessionHours ? 2 : 6;
+}
 
 function arg(name) {
   const i = process.argv.indexOf(name);
@@ -58,6 +65,8 @@ if (!meeting) {
   process.exit(0);
 }
 
+const MAX_AGE_HOURS = maxAgeHours(meeting);
+const stale = [];
 const health = readJson(join(DATA, "meetings", meeting.slug, "health.json"));
 if (!health) {
   failures.push("no health record — the refresh jobs have not reported for this meeting");
@@ -71,10 +80,12 @@ if (!health) {
     }
     const age = ageHours(rec.lastSuccessAt);
     if (age === null) failures.push(`${section}: no last-success time`);
-    else if (age > MAX_AGE_HOURS)
+    else if (age > MAX_AGE_HOURS) {
+      stale.push(section);
       failures.push(
         `${section}: last success ${Math.round(age)} h ago (limit ${MAX_AGE_HOURS} h)`
       );
+    }
     if (rec.state && rec.state !== "ok") failures.push(`${section}: state "${rec.state}"`);
   }
   const remote = health.remoteFtp ?? {};
@@ -89,6 +100,10 @@ if (!health) {
 console.log(`health check — ${meeting.name} (${meeting.slug})`);
 for (const n of notes) console.log(`  note: ${n}`);
 for (const f of failures) console.error(`  FAIL: ${f}`);
+if (process.env.GITHUB_OUTPUT && stale.length) {
+  const { appendFileSync } = await import("node:fs");
+  appendFileSync(process.env.GITHUB_OUTPUT, `stale=${stale.join(",")}\n`);
+}
 if (failures.length) {
   console.error(`\n${failures.length} problem(s) with the ${meeting.slug} data`);
   process.exit(1);

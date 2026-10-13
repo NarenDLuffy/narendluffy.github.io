@@ -34,6 +34,12 @@ def validate(bundle: ScheduleBundle, previous: dict | None = None) -> list[str]:
         if not s.sources and s.kind not in ("break", "lunch"):
             errors.append(f"{s.sessionId}: missing source provenance")
 
+    # A gap the documents fill is always an error: an item was dropped.
+    from .live import COVERAGE_GAPS
+
+    errors.extend(COVERAGE_GAPS.get(bundle.meeting.id, []))
+
+
     if previous:
         # Compare distinct slots, not raw rows: when several chairs circulate
         # copies of the same week grid, deduplicating them legitimately reduces
