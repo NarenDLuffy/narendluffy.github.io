@@ -51,9 +51,10 @@ def _grid(path: str) -> None:
     _cell_props(row[0], "FFFFFF", "restart")
     _cell_props(row[1], FILLS[0], "restart")
     _cell_props(row[2], FILLS[1], "restart")
-    # Continuation sub-row: every cell continues the one above, without colour.
+    # Continuation sub-row: every cell continues the one above; Word stores
+    # them white, losing the lane colour (as in the real file).
     for cell in table.rows[2].cells:
-        _cell_props(cell, None, "continue")
+        _cell_props(cell, "FFFFFF", "continue")
     doc.save(path)
 
 
