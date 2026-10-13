@@ -406,9 +406,64 @@ def parse_schedule_sources(
     else:
         rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
+    COVERAGE_GAPS[meeting.id] = coverage_gaps(sessions, result.sessions, rooms)
     order = {room.roomId: room.order for room in rooms}
     result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return rooms, result.sessions, result.conflicts
+
+
+# Per meeting: time a source document fills that the published timetable leaves
+# empty. Read by validator.py — any entry blocks the publish.
+COVERAGE_GAPS: dict[str, list[str]] = {}
+
+
+def coverage_gaps(
+    parsed: list[Session], canonical: list[Session], rooms: list[Room]
+) -> list[str]:
+    """Minutes a document fills in a room that the canonical timeline leaves empty.
+
+    Every parsed session is evidence that its room is in use for that time. If
+    the merge leaves any part of it uncovered, an item was dropped (for example
+    by a block wrongly placed in another room): that is always an error.
+    """
+
+    def mins(hhmm: str) -> int:
+        h, m = hhmm.split(":")
+        return int(h) * 60 + int(m)
+
+    names = {r.roomId: r.roomName for r in rooms}
+    covered: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    for s in canonical:
+        if s.roomId and s.kind in ("session", "plenary"):
+            covered.setdefault((s.date, s.roomId), []).append(
+                (mins(s.startTime), mins(s.endTime))
+            )
+
+    missing: dict[tuple[str, str], set[int]] = {}
+    for s in parsed:
+        if not s.roomId or s.kind not in ("session", "plenary"):
+            continue
+        spans = covered.get((s.date, s.roomId), [])
+        for minute in range(mins(s.startTime), mins(s.endTime)):
+            if not any(a <= minute < b for a, b in spans):
+                missing.setdefault((s.date, s.roomId), set()).add(minute)
+
+    out: list[str] = []
+    for (day, room_id), minutes in sorted(missing.items()):
+        ordered = sorted(minutes)
+        start = prev = ordered[0]
+        for minute in [*ordered[1:], None]:
+            if minute is not None and minute == prev + 1:
+                prev = minute
+                continue
+            out.append(
+                f"{day} {names.get(room_id, room_id)}: no session "
+                f"{start // 60:02d}:{start % 60:02d}-{(prev + 1) // 60:02d}:{(prev + 1) % 60:02d} "
+                "although a schedule document fills it"
+            )
+            if minute is not None:
+                start = prev = minute
+    return out
 
 
 
