@@ -51,13 +51,27 @@ MAX_HOST_DOCS = 6
 MAX_HOST_DOC_BYTES = 4 * 1024 * 1024
 
 
-def in_meeting_week(start: str | None, end: str | None, today: date | None = None) -> bool:
+def meeting_phase(start: str | None, end: str | None, today: date | None = None) -> str:
+    """Which folders to read: one rule shared by the timetable and drafts.
+
+    before/after — the meeting folder only (Meetings Sync holds another meeting);
+    edge         — the day before or after: Meetings Sync AND the meeting folder;
+    week         — the meeting days: Meetings Sync only (plus the venue copy).
+    """
     try:
         s, e = date.fromisoformat(start or ""), date.fromisoformat(end or "")
     except ValueError:
-        return False
+        return "before"
     t = today or date.today()
-    return s - timedelta(days=1) <= t <= e + timedelta(days=1)
+    if s <= t <= e:
+        return "week"
+    if t == s - timedelta(days=1) or t == e + timedelta(days=1):
+        return "edge"
+    return "before" if t < s else "after"
+
+
+def in_meeting_week(start: str | None, end: str | None, today: date | None = None) -> bool:
+    return meeting_phase(start, end, today) in ("week", "edge")
 
 
 def credentials() -> tuple[str, str] | None:

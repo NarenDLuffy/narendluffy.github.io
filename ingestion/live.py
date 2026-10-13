@@ -179,35 +179,33 @@ def _belongs_to_meeting(meeting: Meeting, name: str) -> bool:
 def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
     """Every candidate document for this meeting, found recursively.
 
-    Two trees are walked:
-
-      * the meeting's own 3GPP folder (…/TSGR1_<n>/), and
-      * the live meeting-sync mirror (…/Meetings_3GPP_SYNC/RAN1/), which is
-        what the venue server replicates during the week. The mirror carries
-        the newest revisions (chair notes v03, a sub-chair plan v08_1) hours
-        before the meeting folder is updated.
-
-    Both trees are merged by revision family, so whichever copy is newest wins
-    and each refresh automatically picks up any freshly uploaded revision.
-    Chairs publish their session plans wherever suits them, so the whole tree
-    is walked; no folder, chair or room name is assumed anywhere.
+    One rule, shared with the drafts (remote_ftp.meeting_phase):
+      * before/after the meeting — the meeting's own 3GPP folder only;
+      * the day before / after   — Meetings Sync and the meeting folder;
+      * the meeting days         — Meetings Sync only (plus the remote FTP,
+        the night-time copy of the venue server).
+    Copies are merged by revision family, so the newest version wins. If
+    Meetings Sync can't be read on a meeting day, nothing is returned: the
+    validator then keeps the last good timetable rather than falling back.
     """
-    found: list[ScheduleSource] = [
-        _to_source(meeting, item.url, item.name, retrieved_at)
-        for item in walk_documents(folder_url)
-    ]
-    if meeting.status in ("active", "upcoming"):
+    phase = remote_ftp.meeting_phase(meeting.startDate, meeting.endDate)
+    found: list[ScheduleSource] = []
+    if phase != "week":
+        found.extend(
+            _to_source(meeting, item.url, item.name, retrieved_at)
+            for item in walk_documents(folder_url)
+        )
+    if phase in ("week", "edge"):
         try:
             found.extend(
                 _to_source(meeting, item.url, item.name, retrieved_at)
                 for item in walk_documents(SYNC_ROOT, subfolders=("Inbox",))
                 if _belongs_to_meeting(meeting, item.name)
             )
-        except Exception as exc:  # the mirror is optional
+        except Exception as exc:
             print(f"  meeting-sync mirror unavailable: {exc}")
-        # Remote meeting FTP, meeting week only. The address comes from a
-        # delegate's entry, or failing that from the meeting's own documents —
-        # and only after a real login proves it (nothing is ever guessed).
+        # The address comes from a delegate's entry, or failing that from the
+        # meeting's own documents — and only after a real login proves it.
         try:
             remote_ftp.ensure_host(meeting.id, [(s.fileName, s.url or "") for s in found])
             ftp_root = remote_ftp.remote_root(meeting.id, meeting.startDate, meeting.endDate)
@@ -219,6 +217,7 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
                 )
         except Exception as exc:  # optional
             print(f"  remote meeting FTP unavailable: {exc}")
+    print(f"  source phase: {phase}, {len(found)} candidate document(s)")
     return _latest_revisions(found)
 
 
