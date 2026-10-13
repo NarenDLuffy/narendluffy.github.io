@@ -366,6 +366,7 @@ def parse_schedule_sources(
         if not verdict.is_schedule:
             continue
         source.confidence = round(min(1.0, verdict.score / 30), 2)
+        SCHEDULE_PATHS.setdefault(meeting.id, []).append((source.fileName, path))
         # Both parsers are tried: the week grid layout first, the free-form
         # chair-notes layout as a fallback for the same file.
         parsed_rooms: list[Room] = []
@@ -480,6 +481,9 @@ def cell_checks(
 # Per meeting: time a source document fills that the published timetable leaves
 # empty. Read by validator.py — any entry blocks the publish.
 COVERAGE_GAPS: dict[str, list[str]] = {}
+# Per meeting: (file name, local path) of every schedule document parsed, so a
+# refused update can attach pictures of the tables to the GitHub run.
+SCHEDULE_PATHS: dict[str, list[tuple[str, str]]] = {}
 
 
 def coverage_gaps(
