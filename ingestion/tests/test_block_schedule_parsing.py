@@ -66,3 +66,17 @@ def test_room_names_match_across_files():
     assert norm_room("Yeongju B (1F)") == norm_room("Yeongju B, 1F")
     assert _heading_room_name("RAN1#126bis X’s Online Session Schedule (room: RAN1_Brk#2, Yeongju B, 1F)") == "Yeongju B"
     assert _heading_room_name("RAN1#126b Detailed Schedule for X’s RAN1 Session @Yeongju A (1F)") == "Yeongju A (1F)"
+
+
+def test_minutes_that_fall_short_are_never_placed():
+    # Hiroki v03/v05, Wednesday 08:30-10:30 Room 201: the grid copy says
+    # "Sensing (6)" (a typo for 60) inside a 90-minute block.
+    out = _cell(
+        "Xiaodong (30)\n6GR\n.10.5.5 (30)\n\nHiroki (90)\n6GR\n.10.2.1 Waveform(30)\n.10.8.x Sensing (6)"
+    )
+    times = [(s.startTime, s.endTime) for s in out]
+    assert ("08:30", "09:00") in times
+    assert ("09:00", "10:30") in times  # Hiroki's block stays whole
+    assert all(s.endTime != "09:36" for s in out)
+    hiroki = next(s for s in out if s.startTime == "09:00")
+    assert "items total 36 min, block is 90 min" in (hiroki.note or "")
