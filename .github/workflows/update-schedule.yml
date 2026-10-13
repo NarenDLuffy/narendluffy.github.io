@@ -65,12 +65,34 @@ jobs:
       # The public 3GPP source is always used here; meeting-local documents are
       # only ever read client-side by delegates on the venue network.
       - name: Discover meetings and refresh schedules
+        id: refresh
         timeout-minutes: 45
+        # A refused update still writes its status; commit it, then fail below.
+        continue-on-error: true
         run: |
           python -m ingestion.generate_schedule \
             ${{ inputs.force && '--force' || '' }} \
             ${{ inputs.fixtures && '--fixtures' || '' }} \
             ${{ inputs.meeting && format('--meeting {0}', inputs.meeting) || '' }}
+
+      # Pictures of the refused update's tables, for checking by eye only.
+      - name: Picture the tables of a refused update
+        if: steps.refresh.outcome == 'failure' && hashFiles('failed-schedule/**') != ''
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer poppler-utils > /dev/null
+          find failed-schedule -name '*.docx' -print0 | while IFS= read -r -d '' f; do
+            soffice --headless --convert-to pdf --outdir "$(dirname "$f")" "$f" > /dev/null 2>&1 || true
+            pdf="${f%.docx}.pdf"; [ -f "$pdf" ] && pdftoppm -png -r 110 "$pdf" "${f%.docx}-page"
+          done
+
+      - name: Upload refused-update pictures
+        if: steps.refresh.outcome == 'failure' && hashFiles('failed-schedule/**') != ''
+        uses: actions/upload-artifact@v5
+        with:
+          name: refused-schedule-${{ github.run_id }}
+          path: failed-schedule/
+          retention-days: 14
 
       - name: Commit updated data
         run: |
@@ -95,3 +117,10 @@ jobs:
           else
             echo "No schedule changes."
           fi
+
+      - name: Fail when the update was refused
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo "The timetable update was refused; the previous timetable is still published." >&2
+          cat failed-schedule/*/errors.txt 2>/dev/null >&2 || true
+          exit 1

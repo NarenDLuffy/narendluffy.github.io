@@ -293,6 +293,17 @@ function HelpPage() {
             <strong>Times</strong> are always shown in the meeting's local time zone.
           </li>
           <li>
+            <strong>Where documents come from:</strong> before the meeting, only the meeting's own
+            3GPP folder. The day before and the day after, the meeting folder and Meetings Sync
+            together. On the meeting days themselves, only Meetings Sync (and the venue server
+            when you are on the meeting Wi-Fi). The newest version of each file wins.
+          </li>
+          <li>
+            <strong>Timetable checks:</strong> an update is refused, and the previous timetable
+            kept, if a document fills time the timetable leaves empty, one table cell lands in two
+            rooms, or the same agenda item shows in two rooms at once without a document saying so.
+          </li>
+          <li>
             <strong>Venue server:</strong> during the meeting week the app tries to read drafts
             (and, if you switch it on in Schedule → sources, the schedule)
             directly from the meeting-local server at 10.10.10.10 — over HTTPS first, then plain

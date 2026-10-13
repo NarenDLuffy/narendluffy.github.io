@@ -696,6 +696,19 @@ def parse_block_schedule_docx(
                             block_end=block_end,
                             source=source,
                         )
+                    cell_ref = "|".join(
+                        (
+                            source.sourceId,
+                            f"t{child.getparent().index(child)}",
+                            day,
+                            str(block_start),
+                            f"c{cell.col_start}",
+                            hashlib.sha1(cell.text.strip().encode()).hexdigest()[:8],
+                        )
+                    )
+                    for item in produced:
+                        for ref in item.sources:
+                            ref.cell = cell_ref
                     if own_table:
                         for item in produced:
                             for ref in item.sources:

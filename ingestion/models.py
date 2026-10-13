@@ -117,6 +117,9 @@ class ScheduleSource:
 class SessionSourceRef:
     sourceId: str
     contributed: list[str] = field(default_factory=list)
+    # The table cell this block was read from (file|table|day|time|column|text):
+    # one cell must never land in two rooms (validator.py).
+    cell: str | None = None
 
 
 @dataclass

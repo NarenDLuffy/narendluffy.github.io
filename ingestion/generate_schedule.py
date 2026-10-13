@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -122,6 +123,27 @@ def build_bundles(force: bool) -> list[ScheduleBundle]:
     return build_live_bundles()
 
 
+def _keep_failed_documents(meeting_id: str, slug: str, errors: list[str]) -> None:
+    """Copy the refused update's documents to failed-schedule/ for the run.
+
+    The GitHub job turns them into pictures so the cause can be seen by eye;
+    the pictures never decide what goes into the timetable.
+    """
+    import shutil
+
+    from .live import SCHEDULE_PATHS
+
+    out = os.path.join("failed-schedule", slug)
+    os.makedirs(out, exist_ok=True)
+    for name, path in SCHEDULE_PATHS.get(meeting_id, []):
+        try:
+            shutil.copy(path, os.path.join(out, os.path.basename(name)))
+        except OSError:
+            pass
+    with open(os.path.join(out, "errors.txt"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(errors) + "\n")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="ignore hashes, full rebuild")
@@ -174,6 +196,7 @@ def main() -> int:
                 sep="\n  ",
                 file=sys.stderr,
             )
+            _keep_failed_documents(bundle.meeting.id, bundle.meeting.slug, errors)
             # The old schedule is still what people see: say so, don't go quiet.
             sections[bundle.meeting.slug] = {
                 **(health.load(bundle.meeting.slug).get("schedule") or {}),

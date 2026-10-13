@@ -62,3 +62,18 @@ to the GitHub repo, and read live by the site — so a refresh needs no publish.
 
 Related: `new-meeting-setup` before the week, `drafts-live-merge-check` for the
 drafts side, `publish-and-verify` when the site itself changed.
+
+## Which folders are read
+
+One rule for timetable and drafts (`meeting_phase` in `ingestion/remote_ftp.py`,
+`meetingPhase` in the app): before/after the meeting — the meeting folder only;
+the day before and after — Meetings Sync and the meeting folder; meeting days —
+Meetings Sync only (plus the venue server / remote FTP). Never fall back to the
+meeting folder on a meeting day: keep the last good copy and let it fail loudly.
+
+## Table sanity checks
+
+A refused update names one of: a gap a document fills, one table cell read into
+two rooms, or the same agenda item in two rooms at once that no document lists
+twice. The failed GitHub run attaches pictures of the tables — look at them,
+then fix the parser. Never relax a check to make a run pass.

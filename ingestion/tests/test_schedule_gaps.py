@@ -96,3 +96,35 @@ def test_a_dropped_item_is_reported_as_a_gap():
         "2026-10-14 Tamna BC Hall: no session 17:40-19:00 although a schedule document fills it"
     ]
     assert coverage_gaps(parsed, parsed, rooms) == []
+
+
+def test_one_cell_read_into_two_rooms_is_refused():
+    from dataclasses import replace
+
+    from ingestion.live import cell_checks
+
+    rooms = [
+        Room(roomId="r", meetingId="m", roomName="Tamna BC Hall", order=0),
+        Room(roomId="y", meetingId="m", roomName="Yeongju A Hall", order=1),
+    ]
+    good = _s("18:00", "18:30", room="y", code="10.3.2")
+    good.sources = [SessionSourceRef("s", ["time"], cell="s|t3|Wednesday|1020|c2|ab")]
+    copy = replace(good, roomId="r", sources=[SessionSourceRef("s", ["time"], cell=good.sources[0].cell)])
+    errors = cell_checks([good, copy], [good, copy], rooms)
+    assert any("one table cell was read into 2 rooms" in e for e in errors)
+    assert any("10.3.2 is in both" in e for e in errors)
+    assert cell_checks([good], [good], rooms) == []
+
+
+def test_item_listed_in_two_rooms_by_the_document_is_allowed():
+    from ingestion.live import cell_checks
+
+    rooms = [
+        Room(roomId="r", meetingId="m", roomName="Tamna BC Hall", order=0),
+        Room(roomId="y", meetingId="m", roomName="Yeongju A Hall", order=1),
+    ]
+    a = _s("18:00", "18:30", room="r", code="10.3.2")
+    a.sources = [SessionSourceRef("s", ["time"], cell="s|t3|Wednesday|1020|c1|aa")]
+    b = _s("18:00", "18:30", room="y", code="10.3.2")
+    b.sources = [SessionSourceRef("s", ["time"], cell="s|t3|Wednesday|1020|c2|bb")]
+    assert cell_checks([a, b], [a, b], rooms) == []

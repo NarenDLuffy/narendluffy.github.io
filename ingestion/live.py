@@ -179,35 +179,33 @@ def _belongs_to_meeting(meeting: Meeting, name: str) -> bool:
 def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> list[ScheduleSource]:
     """Every candidate document for this meeting, found recursively.
 
-    Two trees are walked:
-
-      * the meeting's own 3GPP folder (…/TSGR1_<n>/), and
-      * the live meeting-sync mirror (…/Meetings_3GPP_SYNC/RAN1/), which is
-        what the venue server replicates during the week. The mirror carries
-        the newest revisions (chair notes v03, a sub-chair plan v08_1) hours
-        before the meeting folder is updated.
-
-    Both trees are merged by revision family, so whichever copy is newest wins
-    and each refresh automatically picks up any freshly uploaded revision.
-    Chairs publish their session plans wherever suits them, so the whole tree
-    is walked; no folder, chair or room name is assumed anywhere.
+    One rule, shared with the drafts (remote_ftp.meeting_phase):
+      * before/after the meeting — the meeting's own 3GPP folder only;
+      * the day before / after   — Meetings Sync and the meeting folder;
+      * the meeting days         — Meetings Sync only (plus the remote FTP,
+        the night-time copy of the venue server).
+    Copies are merged by revision family, so the newest version wins. If
+    Meetings Sync can't be read on a meeting day, nothing is returned: the
+    validator then keeps the last good timetable rather than falling back.
     """
-    found: list[ScheduleSource] = [
-        _to_source(meeting, item.url, item.name, retrieved_at)
-        for item in walk_documents(folder_url)
-    ]
-    if meeting.status in ("active", "upcoming"):
+    phase = remote_ftp.meeting_phase(meeting.startDate, meeting.endDate)
+    found: list[ScheduleSource] = []
+    if phase != "week":
+        found.extend(
+            _to_source(meeting, item.url, item.name, retrieved_at)
+            for item in walk_documents(folder_url)
+        )
+    if phase in ("week", "edge"):
         try:
             found.extend(
                 _to_source(meeting, item.url, item.name, retrieved_at)
                 for item in walk_documents(SYNC_ROOT, subfolders=("Inbox",))
                 if _belongs_to_meeting(meeting, item.name)
             )
-        except Exception as exc:  # the mirror is optional
+        except Exception as exc:
             print(f"  meeting-sync mirror unavailable: {exc}")
-        # Remote meeting FTP, meeting week only. The address comes from a
-        # delegate's entry, or failing that from the meeting's own documents —
-        # and only after a real login proves it (nothing is ever guessed).
+        # The address comes from a delegate's entry, or failing that from the
+        # meeting's own documents — and only after a real login proves it.
         try:
             remote_ftp.ensure_host(meeting.id, [(s.fileName, s.url or "") for s in found])
             ftp_root = remote_ftp.remote_root(meeting.id, meeting.startDate, meeting.endDate)
@@ -219,6 +217,7 @@ def discover_sources(meeting: Meeting, folder_url: str, retrieved_at: str) -> li
                 )
         except Exception as exc:  # optional
             print(f"  remote meeting FTP unavailable: {exc}")
+    print(f"  source phase: {phase}, {len(found)} candidate document(s)")
     return _latest_revisions(found)
 
 
@@ -367,6 +366,7 @@ def parse_schedule_sources(
         if not verdict.is_schedule:
             continue
         source.confidence = round(min(1.0, verdict.score / 30), 2)
+        SCHEDULE_PATHS.setdefault(meeting.id, []).append((source.fileName, path))
         # Both parsers are tried: the week grid layout first, the free-form
         # chair-notes layout as a fallback for the same file.
         parsed_rooms: list[Room] = []
@@ -406,15 +406,84 @@ def parse_schedule_sources(
     else:
         rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
-    COVERAGE_GAPS[meeting.id] = coverage_gaps(sessions, result.sessions, rooms)
+    COVERAGE_GAPS[meeting.id] = [
+        *coverage_gaps(sessions, result.sessions, rooms),
+        *cell_checks(sessions, result.sessions, rooms),
+    ]
     order = {room.roomId: room.order for room in rooms}
     result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return rooms, result.sessions, result.conflicts
 
 
+def cell_checks(
+    parsed: list[Session], canonical: list[Session], rooms: list[Room]
+) -> list[str]:
+    """Catch text copied from the wrong table cell (Word merge/colour quirks).
+
+    1. One cell, one room: a single table cell read into two rooms means it
+       was read twice (the 14 Oct "Early dinner" continuation row).
+    2. The same agenda item in two rooms at overlapping times is refused unless
+       one document lists it in both rooms, in two different cells.
+    """
+
+    def mins(hhmm: str) -> int:
+        h, m = hhmm.split(":")
+        return int(h) * 60 + int(m)
+
+    names = {r.roomId: r.roomName for r in rooms}
+    errors: list[str] = []
+    cell_rooms: dict[str, set[str]] = {}
+    evidence: dict[tuple[str, str, str], list[tuple[int, int, str]]] = {}
+    for s in parsed:
+        if not s.roomId or s.kind not in ("session", "plenary"):
+            continue
+        for ref in s.sources:
+            if not ref.cell:
+                continue
+            cell_rooms.setdefault(ref.cell, set()).add(s.roomId)
+            for code in s.agendaItems:
+                evidence.setdefault((s.date, s.roomId, code), []).append(
+                    (mins(s.startTime), mins(s.endTime), ref.cell)
+                )
+    for cell, ids in sorted(cell_rooms.items()):
+        if len(ids) > 1:
+            file_id, _, day, start, *_ = cell.split("|")
+            errors.append(
+                f"{day} {int(start) // 60:02d}:{int(start) % 60:02d}: one table cell was read into "
+                f"{len(ids)} rooms ({', '.join(sorted(names.get(i, i) for i in ids))}) in {file_id}"
+            )
+
+    def cells(day: str, room: str, code: str, a: int, b: int) -> set[str]:
+        return {c for x, y, c in evidence.get((day, room, code), []) if x < b and a < y}
+
+    timed = [s for s in canonical if s.roomId and s.kind == "session" and s.agendaItems]
+    for i, a in enumerate(timed):
+        for b in timed[i + 1 :]:
+            if a.date != b.date or a.roomId == b.roomId:
+                continue
+            lo, hi = max(mins(a.startTime), mins(b.startTime)), min(mins(a.endTime), mins(b.endTime))
+            if lo >= hi:
+                continue
+            for code in set(a.agendaItems) & set(b.agendaItems):
+                ca = cells(a.date, a.roomId, code, lo, hi)
+                cb = cells(b.date, b.roomId, code, lo, hi)
+                listed_in_both = any(
+                    x.split("|")[0] == y.split("|")[0] and x != y for x in ca for y in cb
+                )
+                if not listed_in_both:
+                    errors.append(
+                        f"{a.date} {a.startTime}: {code} is in both {names.get(a.roomId, a.roomName)} "
+                        f"and {names.get(b.roomId, b.roomName)} at the same time"
+                    )
+    return errors
+
+
 # Per meeting: time a source document fills that the published timetable leaves
 # empty. Read by validator.py — any entry blocks the publish.
 COVERAGE_GAPS: dict[str, list[str]] = {}
+# Per meeting: (file name, local path) of every schedule document parsed, so a
+# refused update can attach pictures of the tables to the GitHub run.
+SCHEDULE_PATHS: dict[str, list[tuple[str, str]]] = {}
 
 
 def coverage_gaps(
