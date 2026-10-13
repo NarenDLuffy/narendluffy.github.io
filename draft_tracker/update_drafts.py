@@ -107,7 +107,12 @@ def main() -> int:
         # UI at 136 files while the sync drafts tree already held thousands.
         # Keep archive discovery for non-active meetings so their snapshots do
         # not accidentally inherit files from the current meeting.
-        live_root = SYNC_DRAFTS_ROOT if meeting.get("status") == "active" else None
+        # One rule, shared with the timetable (remote_ftp.meeting_phase): on
+        # meeting days Meetings Sync is the only source; the day before/after
+        # this job keeps the meeting folder and the app adds Meetings Sync on
+        # top (without hiding anything); otherwise the meeting folder only.
+        phase = remote_ftp.meeting_phase(meeting.get("startDate"), meeting.get("endDate"))
+        live_root = SYNC_DRAFTS_ROOT if phase == "week" else None
         source = Public3GPPDraftSource(folder, drafts_root_url=live_root)
         # The remote meeting FTP mirrors the venue server and is upstream of
         # the sync folder, so it wins whenever a delegate entered its host and

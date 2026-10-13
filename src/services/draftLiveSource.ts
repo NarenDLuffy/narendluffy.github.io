@@ -473,13 +473,27 @@ async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
 
 const DAY_MS = 86_400_000;
 
-/** Meeting week = status active, or today within start..end ± 1 day. */
-export function inMeetingWeek(meeting: Meeting, now = Date.now()): boolean {
-  if (meeting.status === "active") return true;
+export type MeetingPhase = "before" | "edge" | "week" | "after";
+
+/**
+ * Same rule as ingestion/remote_ftp.py meeting_phase: meeting days read the
+ * live trees only; the day before/after merges them over the meeting-folder
+ * snapshot without hiding anything; otherwise the snapshot alone.
+ */
+export function meetingPhase(meeting: Meeting, now = Date.now()): MeetingPhase {
   const start = Date.parse(`${meeting.startDate}T00:00:00Z`);
   const end = Date.parse(`${meeting.endDate}T23:59:59Z`);
-  if (Number.isNaN(start) || Number.isNaN(end)) return false;
-  return now >= start - DAY_MS && now <= end + DAY_MS;
+  if (Number.isNaN(start) || Number.isNaN(end)) return meeting.status === "active" ? "week" : "before";
+  if (now >= start && now <= end) return "week";
+  if (now >= start - DAY_MS && now < start) return "edge";
+  if (now > end && now <= end + DAY_MS) return "edge";
+  return now < start ? "before" : "after";
+}
+
+/** Live trees are read on meeting days and the day before/after. */
+export function inMeetingWeek(meeting: Meeting, now = Date.now()): boolean {
+  const phase = meetingPhase(meeting, now);
+  return phase === "week" || phase === "edge";
 }
 
 /** Files older than two weeks before the start are leftovers from the previous meeting. */
@@ -544,7 +558,8 @@ export async function probeLiveDrafts(
       agendaCodes: codes,
       // Inside the meeting week the live tree holds this meeting's files, so
       // what it does not list is withdrawn rather than merely un-replicated.
-      reconcile: true,
+      // Only on meeting days; the day before/after both trees count.
+      reconcile: meetingPhase(meeting) === "week",
     });
     return {
       index,
