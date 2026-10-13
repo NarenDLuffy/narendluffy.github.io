@@ -433,18 +433,24 @@ def coverage_gaps(
 
     names = {r.roomId: r.roomName for r in rooms}
     covered: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    # "RAN1#126b commences at 09:00" states the real start of the day: a generic
+    # 08:30 slot from another table before it is not a dropped item.
+    commences: dict[tuple[str, str], int] = {}
     for s in canonical:
         if s.roomId and s.kind in ("session", "plenary"):
             covered.setdefault((s.date, s.roomId), []).append(
                 (mins(s.startTime), mins(s.endTime))
             )
+            if re.search(r"commences", s.topic or "", re.I):
+                commences[(s.date, s.roomId)] = mins(s.startTime)
 
     missing: dict[tuple[str, str], set[int]] = {}
     for s in parsed:
         if not s.roomId or s.kind not in ("session", "plenary"):
             continue
         spans = covered.get((s.date, s.roomId), [])
-        for minute in range(mins(s.startTime), mins(s.endTime)):
+        first = commences.get((s.date, s.roomId), 0)
+        for minute in range(max(first, mins(s.startTime)), mins(s.endTime)):
             if not any(a <= minute < b for a, b in spans):
                 missing.setdefault((s.date, s.roomId), set()).add(minute)
 
