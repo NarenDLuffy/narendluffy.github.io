@@ -8,7 +8,7 @@
 - [x] Schedule: Hiroki v05 picked up; minutes that don't add up are never placed (Sensing "(6)")
 - [x] Schedule: Wednesday Tamna BC gaps fixed (continuation rows read twice); any gap a document fills now blocks the publish
 - [x] Verify data: missing remote address is a note; stale data fails and restarts the refresh jobs; Node 24 action versions
-- [ ] Activate skills: drafts-live-merge-check, new-meeting-setup, publish-and-verify (meeting-week-refresh is active)
+- [x] Four meeting-week skills active
 - [ ] User: enter this meeting's remote FTP host (RAN-<city>.3gpp.org) on the Drafts page
 - [ ] User: enable notifications on each device and test a summon alert end-to-end
 - [ ] User: confirm branch-level draft activity shows under a followed sub-item (e.g. 10.4.1)
