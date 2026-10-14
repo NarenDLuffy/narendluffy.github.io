@@ -99,6 +99,12 @@ def _warn(level: str, text: str) -> dict[str, str]:
     return {"level": level, "text": text}
 
 
+def _coarser(bundle: Any) -> list[str]:
+    from .live import GRANULARITY
+
+    return list(GRANULARITY.get(bundle.meeting.id, []))[:20]
+
+
 def _warnings(
     slug: str, record: dict[str, Any], meeting: dict[str, Any], now: datetime
 ) -> list[dict]:
@@ -152,6 +158,8 @@ def _warnings(
             )
         for gap in sched.get("gaps") or []:
             out.append(_warn("warn", f"Timetable gap: {gap}."))
+        for item in sched.get("coarser") or []:
+            out.append(_warn("warn", f"Less detail than the chair file: {item}."))
         if sched.get("shortBlockCount"):
             out.append(
                 _warn(
@@ -323,6 +331,7 @@ def schedule_section(bundle: Any) -> dict[str, Any]:
         ],
         "draftOnly": draft_only,
         "gaps": list(getattr(bundle, "coverage_gaps", []) or []),
+        "coarser": _coarser(bundle),
         "shortBlockCount": sum(
             1
             for s in sessions

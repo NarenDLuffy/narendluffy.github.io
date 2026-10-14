@@ -186,7 +186,12 @@ def candidates_from_session(session: Session) -> list[CandidateBlock]:
                 CandidateBlock(
                     startTime=slot.startTime,  # type: ignore[arg-type]
                     endTime=slot.endTime,  # type: ignore[arg-type]
-                    agendaItems=[code] if code else [],
+                    # One slot spanning the session keeps every item it names
+                    # ("7 pre-Rel-19 CRs, 8.2 R19 Duplex" → 7, 8.2).
+                    agendaItems=(
+                        list(session.agendaItems) if len(breakdown) == 1 and session.agendaItems
+                        else [code] if code else []
+                    ),
                     label=slot.label,
                     parentAgendaItem=_container_code(session.agendaItems, code),
                     derivation="inferred-duration" if slot.minutes else "direct",
@@ -319,6 +324,9 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         blocks,
         key=lambda b: (
             b.derivation == "split-from-parent",
+            # A block kept whole because its stated minutes don't add up is the
+            # weakest evidence: any document that tiles that time wins over it.
+            "Minutes don't add up" in (b.note or ""),
             -_own(b),
             -len(b.sourceIds),
             -b.specificity,
