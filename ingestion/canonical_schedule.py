@@ -54,15 +54,20 @@ def _hhmm(total: int) -> str:
 CODE_RE = re.compile(r"^\d{1,2}(?:\.[0-9x]{1,2})*$", re.I)
 
 
+def _base_code(code: str) -> str:
+    return re.sub(r"(\.x)+$", "", code, flags=re.I)
+
+
 def _depth(code: str | None) -> int:
-    return code.count(".") + 1 if code else 0
+    return _base_code(code).count(".") + 1 if code else 0
 
 
 def is_descendant(child: str | None, parent: str | None) -> bool:
     """10.8.1 is a descendant of 10.8; 10.8 is not a descendant of itself."""
-    if not child or not parent or child == parent:
+    if not child or not parent:
         return False
-    return child.startswith(parent + ".")
+    child, parent = _base_code(child), _base_code(parent)
+    return child != parent and child.startswith(parent + ".")
 
 
 def _slug(text: str) -> str:
@@ -346,10 +351,6 @@ def _own(block: CandidateBlock) -> int:
     if origin is None:
         return 0
     return int(any("own-table" in ref.contributed for ref in origin.sources))
-
-
-def _base_code(code: str) -> str:
-    return re.sub(r"(\.x)+$", "", code, flags=re.I)
 
 
 def _codes_compatible(broad: CandidateBlock, fine: CandidateBlock) -> bool:

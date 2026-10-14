@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-14T02:26:32Z",
-    "lastAttemptAt": "2026-10-14T02:26:32Z",
-    "sessionCount": 246,
+    "lastSuccessAt": "2026-10-14T05:20:44Z",
+    "lastAttemptAt": "2026-10-14T05:20:44Z",
+    "sessionCount": 249,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -17,8 +17,8 @@
     "sourceCount": 4,
     "sources": [
       {
-        "label": "Chair notes RAN1#126bis_v06",
-        "fileName": "Chair notes RAN1#126bis_v06.docx",
+        "label": "Chair notes RAN1#126bis_v08",
+        "fileName": "Chair notes RAN1#126bis_v08.docx",
         "origin": "public"
       },
       {
@@ -27,31 +27,31 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#126b Sorour sessions online and offline schedules - v00",
-        "fileName": "RAN1#126b Sorour sessions online and offline schedules - v00.docx",
+        "label": "RAN1#126b Sorour sessions online and offline schedules - v01",
+        "fileName": "RAN1#126b Sorour sessions online and offline schedules - v01.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05",
-        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v05.docx",
+        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v06",
+        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v06.docx",
         "origin": "public"
       }
     ],
     "draftOnly": false,
     "gaps": [],
     "shortBlockCount": 0,
-    "conflictCount": 3,
+    "conflictCount": 2,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
     {
       "level": "info",
-      "text": "3 unresolved source conflict(s)."
+      "text": "2 unresolved source conflict(s)."
     },
     {
       "level": "info",
@@ -62,11 +62,11 @@
       "text": "Only 187 of 188 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-10-14T02:29:07Z",
+  "updatedAt": "2026-10-14T05:22:15Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-14T01:24:14Z",

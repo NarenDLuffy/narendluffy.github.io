@@ -80,3 +80,29 @@ def test_minutes_that_fall_short_are_never_placed():
     assert all(s.endTime != "09:36" for s in out)
     hiroki = next(s for s in out if s.startTime == "09:00")
     assert "items total 36 min, block is 90 min" in (hiroki.note or "")
+
+
+def test_hiroki_v05_actual_cell_has_four_timed_children():
+    out = _cell("6G waveform (30)\n10.2.1\n\n6G 10.5.4.x (120)\n"
+                "10.5.4.2(20), 10.5.4.1(30), 10.5.4.4(30), 10.5.4.3(40)", 1020, 1170)
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in out] == [
+        ("17:00", "17:30", ["10.2.1"]), ("17:30", "17:50", ["10.5.4.2"]),
+        ("17:50", "18:20", ["10.5.4.1"]), ("18:20", "18:50", ["10.5.4.4"]),
+        ("18:50", "19:30", ["10.5.4.3"]),
+    ]
+
+
+def test_timed_wildcard_parent_does_not_double_count_minutes():
+    text = "6GR (120)\n.10.5.4.x(120)\n10.5.4.2(20), 10.5.4.1(30), 10.5.4.4(30), 10.5.4.3(40)"
+    assert len(_parse_cell(text)) == 1
+    assert [s.agendaItems for s in _cell(text, 1050, 1170)] == [
+        ["10.5.4.2"], ["10.5.4.1"], ["10.5.4.4"], ["10.5.4.3"],
+    ]
+
+
+def test_wildcard_children_with_mismatched_minutes_remain_untimed():
+    out = _cell("6GR (120)\n.10.5.4.x(120)\n10.5.4.2(20), 10.5.4.1(30)", 1050, 1170)
+    assert len(out) == 1
+    assert (out[0].startTime, out[0].endTime) == ("17:30", "19:30")
+    assert all(not s.startTime for s in out[0].agendaBreakdown)
+    assert "items total 50 min, block is 120 min" in (out[0].note or "")

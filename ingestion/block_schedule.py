@@ -36,6 +36,7 @@ from datetime import date, timedelta
 from docx import Document
 
 from .docx_active_text import active_paragraph_text
+from .canonical_schedule import is_descendant
 from .models import AgendaSlot, Room, ScheduleSource, Session, SessionSourceRef
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
@@ -331,7 +332,7 @@ def _parse_cell(text: str) -> list[_Segment]:
             and not (
                 current.slots
                 and (first_codes := AGENDA_CODE_RE.findall(current.slots[0].label))
-                and all(code.startswith(first_codes[0] + ".") for code, _ in codes)
+                and all(is_descendant(code, first_codes[0]) for code, _ in codes)
             )
         ):
             # Timed items after the head's minutes are used up: next block.
@@ -398,7 +399,7 @@ def _parse_cell(text: str) -> list[_Segment]:
 
         parent_codes = AGENDA_CODE_RE.findall(current.slots[0].label) if current and current.slots else []
         is_child_of_parent = bool(parent_codes) and any(
-            code.startswith(parent_codes[0] + ".") for code in AGENDA_CODE_RE.findall(label)
+            is_descendant(code, parent_codes[0]) for code in AGENDA_CODE_RE.findall(label)
         )
         if (
             is_item and minutes and current.minutes and allocated >= current.minutes
@@ -430,7 +431,7 @@ def _parse_cell(text: str) -> list[_Segment]:
         children = segment.slots[1:]
         if children and all(
             (codes := AGENDA_CODE_RE.findall(child.label))
-            and codes[0].startswith(parent + ".")
+            and is_descendant(codes[0], parent)
             for child in children
         ):
             segment.slots = children

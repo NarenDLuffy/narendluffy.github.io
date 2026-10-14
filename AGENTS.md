@@ -13,6 +13,7 @@
 - Rooms are one per (online|offline, cell colour) across ALL schedule files, merged in ingestion/room_resolver.py; names come from any file (colour legend above a table, one-room table headings) and never create a column alone; explicit “Main session”/“RAN1 #N commences” marks Main — no chair names, room counts or positions are hard-coded.
 - A name-only room is folded into the coloured room whose schedule clearly agrees with it (same date, overlapping time, same or parent/child agenda; name similarity lowers the bar but never merges alone) — the same room is often named differently across chair files.
 - Schedule times are never invented: a block splits only when items have stated minutes that fit; otherwise it stays one block listing its items (stated minutes kept, mismatch noted). Same-slot claims from several files resolve to the most detailed, chairs' own tables ranked above copies of the shared grid.
+- Schedule ancestry and specificity normalize terminal `.x` to the branch through canonical_schedule.is_descendant; block parsing shares this rule — explicitly timed children replace wildcard containers without counting parent minutes twice.
 - ICS export uses meetingTimeZone() which maps fixed Etc/ offsets to real DST zones by city — calendars stay correct in summer.
 - Venue mode UI is gated by VENUE_MODE_ENABLED in venueMode.ts (currently off) — plumbing kept for a future HTTPS venue server.
 - Schedule and drafts workflows share the "data-refresh" concurrency group and rebase-retry on push — they commit to the same branch.

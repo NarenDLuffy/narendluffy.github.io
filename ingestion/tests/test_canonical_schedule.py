@@ -162,3 +162,44 @@ def test_official_schedule_beats_draft_regardless_of_version():
         src("RAN1#126b online and offline schedules - v00.docx", [0]),
     ])
     assert [s.fileName for s in kept] == ["RAN1#126b online and offline schedules - v00.docx"]
+
+
+def test_wildcard_container_is_replaced_by_explicit_children():
+    broad = make("17:30", "19:30", items=["10.5.4.x"], source="grid")
+    detail = make("17:30", "19:30", items=["10.5.4.x"], source="chair", breakdown=[
+        ("10.5.4.2", "17:30", "17:50"), ("10.5.4.1", "17:50", "18:20"),
+        ("10.5.4.4", "18:20", "18:50"), ("10.5.4.3", "18:50", "19:30"),
+    ])
+    for inputs in ([broad, detail], [detail, broad]):
+        result = canonicalize(inputs)
+        assert [(s.startTime, s.endTime, s.agendaItems) for s in result.sessions] == [
+            ("17:30", "17:50", ["10.5.4.2"]), ("17:50", "18:20", ["10.5.4.1"]),
+            ("18:20", "18:50", ["10.5.4.4"]), ("18:50", "19:30", ["10.5.4.3"]),
+        ]
+        assert not result.conflicts
+
+
+def test_partial_wildcard_detail_preserves_unaccounted_time():
+    result = canonicalize([
+        make("17:30", "19:30", items=["10.5.4.X"], source="grid"),
+        make("17:30", "18:00", items=["10.5.4.2"], source="chair"),
+    ])
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in result.sessions] == [
+        ("17:30", "18:00", ["10.5.4.2"]), ("18:00", "19:30", ["10.5.4.X"]),
+    ]
+    assert result.sessions[-1].detailAvailable is False
+
+
+def test_wildcard_without_detail_stays_whole():
+    result = canonicalize([make("17:30", "19:30", items=["10.5.4.x"])])
+    assert len(result.sessions) == 1
+    assert result.sessions[0].agendaItems == ["10.5.4.x"]
+
+
+def test_wildcard_ancestry_is_branch_bounded():
+    from ingestion.canonical_schedule import is_descendant, _depth
+    assert is_descendant("10.5.4.2", "10.5.4.x")
+    assert not is_descendant("10.5.40.2", "10.5.4.x")
+    assert not is_descendant("10.5.3.2", "10.5.4.x")
+    assert not is_descendant("10.5.4.x", "10.5.4.2")
+    assert _depth("10.5.4.x") == _depth("10.5.4") < _depth("10.5.4.2")
