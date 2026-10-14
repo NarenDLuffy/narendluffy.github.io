@@ -1,4 +1,4 @@
-# Read Hiroki v06's finer breakdown, and catch this kind of miss automatically
+# Read every chair schedule's finer breakdown (Hiroki v06 is the first example), and catch this kind of miss automatically
 
 ## What is wrong now (checked in the saved Wednesday data)
 
