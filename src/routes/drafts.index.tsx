@@ -19,6 +19,16 @@ import { ORIGIN_LABEL } from "@/services/draftLiveSource";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/drafts/")({
+  head: () => ({
+    meta: [
+      { title: "Draft activity — RAN1 Live!" },
+      { name: "description", content: "Latest RAN1 meeting drafts and FL summaries grouped by agenda item." },
+      { property: "og:title", content: "Draft activity — RAN1 Live!" },
+      { property: "og:description", content: "Follow draft and FL summary updates for your RAN1 agenda items." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: DraftsPage,
 });
 
