@@ -30,7 +30,7 @@ from __future__ import annotations
 
 import hashlib
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, timedelta
 
 from docx import Document
@@ -48,6 +48,13 @@ TIME_RE = re.compile(r"(\d{1,2})[:.](\d{2})")
 BLOCK_RE = re.compile(r"(\d{1,2})[:.](\d{2})\s*(?:~|-|–|to)\s*(\d{1,2})[:.](\d{2})")
 BREAK_RE = re.compile(r"\b(break|lunch|coffee)\b", re.I)
 DURATION_RE = re.compile(r"\(\s*~?\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)\s*$", re.I)
+# "Maintenance (90-120)": a head whose length is a range. Its items' own
+# stated minutes decide the block when their sum falls inside the range.
+RANGE_DURATION_RE = re.compile(r"\(\s*(\d{1,3})\s*[-–~]\s*(\d{1,3})\s*(?:min|mins|minutes)?\s*\)\s*$", re.I)
+# "7 pre-Rel-19 CRs (50)" / "11 TEI20 (10)": a top-level agenda number opening
+# a timed item line under a head. Only read in that position, never in prose.
+LEADING_CODE_RE = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\s+(?=[A-Za-z])")
+LISTED_CODE_RE = re.compile(r"(?:^|[,;]\s*)(\d{1,2}(?:\.\d{1,2})*)\s+(?=[A-Za-z])")
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
 AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
 GENERIC_GRID_RE = re.compile(r"^\s*RAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\s*$", re.I)
@@ -223,6 +230,7 @@ class _Slot:
     label: str
     minutes: int | None
     group: str
+    codes: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -232,6 +240,8 @@ class _Segment:
     minutes: int | None
     slots: list[_Slot]
     raw: str
+    # Lower bound of a ranged head ("(90-120)"); minutes holds the upper bound.
+    min_minutes: int | None = None
 
 
 def _is_group_token(label: str) -> bool:
@@ -258,6 +268,17 @@ def _code_list(line: str) -> list[tuple[str, int | None]]:
         out.append((match.group(1), int(match.group(2)) if match.group(2) else None))
     return out
 
+
+
+def _item_codes(label: str) -> list[str]:
+    """Every agenda item a timed item line names, in order ("7 …, 8.2 …" → 7, 8.2)."""
+    found: list[tuple[int, str]] = [(m.start(1), m.group(1)) for m in LISTED_CODE_RE.finditer(label)]
+    found += [(m.start(1), m.group(1)) for m in AGENDA_CODE_RE.finditer(label)]
+    out: list[str] = []
+    for _, code in sorted(found):
+        if code not in out:
+            out.append(code)
+    return out
 
 
 def _parse_cell(text: str) -> list[_Segment]:
@@ -312,6 +333,8 @@ def _parse_cell(text: str) -> list[_Segment]:
         if current.slots and not any(slot.minutes for slot in current.slots):
             # "R20 A-IoT (60)" / "9.3.1": the untimed item list completes it.
             return True
+        if current.min_minutes is not None and allocated >= current.min_minutes:
+            return True
         return allocated >= current.minutes
 
     def tag_finished() -> bool:
@@ -351,10 +374,23 @@ def _parse_cell(text: str) -> list[_Segment]:
                     allocated += code_minutes
             continue
 
+        ranged = RANGE_DURATION_RE.search(line.rstrip(" ."))
+        if ranged and not line.startswith("."):
+            label = line.rstrip(" .")[: ranged.start()].strip(" .·-")
+            lo, hi = sorted((int(ranged.group(1)), int(ranged.group(2))))
+            current = _Segment(lead=None, group=label, minutes=hi, slots=[], raw=line, min_minutes=lo)
+            segments.append(current)
+            current_group, allocated = label, 0
+            continue
+
         label, minutes = _split_head(line)
         if not label:
             continue
-        is_item = line.startswith(".")
+        leading_code = (
+            minutes is not None and current is not None and current.minutes is not None
+            and not finished() and LEADING_CODE_RE.match(label)
+        )
+        is_item = line.startswith(".") or bool(leading_code)
         # Any timed, non-item line ("R20 A-IoT (40)", "Maintenance (80)") opens
         # a new block once the previous one has used up its minutes.
         heads_new = not is_item and (
@@ -411,7 +447,10 @@ def _parse_cell(text: str) -> list[_Segment]:
             segments.append(current)
             allocated = 0
         current.raw += "\n" + line
-        current.slots.append(_Slot(label=label, minutes=minutes, group=current_group or current.group))
+        current.slots.append(_Slot(
+            label=label, minutes=minutes, group=current_group or current.group,
+            codes=_item_codes(label) if leading_code else [],
+        ))
 
         if minutes:
             allocated += minutes
@@ -792,6 +831,11 @@ def _sessions_for_cell(
     total = block_end - block_start
 
     def seg_length(seg: _Segment) -> int | None:
+        if seg.min_minutes is not None:
+            stated = [slot.minutes for slot in seg.slots]
+            if stated and all(stated) and seg.min_minutes <= sum(stated) <= (seg.minutes or 0):
+                return sum(stated)  # type: ignore[arg-type]
+            return None
         if seg.minutes:
             return seg.minutes
         minutes = [slot.minutes for slot in seg.slots]
@@ -860,7 +904,8 @@ def _sessions_for_cell(
                 out.append(
                     _make_session(
                         start=slot_cursor, end=slot_end, title=slot.label,
-                        group=slot.group or segment.group, lead=segment.lead, note=None, **common,
+                        group=slot.group or segment.group, lead=segment.lead, note=None,
+                        codes=slot.codes or None, **common,
                     )
                 )
                 slot_cursor = slot_end
@@ -870,7 +915,8 @@ def _sessions_for_cell(
             out.append(
                 _make_session(
                     start=seg_start, end=seg_end, title=slot.label,
-                    group=slot.group or segment.group, lead=segment.lead, note=None, **common,
+                    group=slot.group or segment.group, lead=segment.lead, note=None,
+                    codes=slot.codes or None, **common,
                 )
             )
             continue
@@ -901,7 +947,7 @@ def _whole_block(
             if code not in codes:
                 codes.append(code)
         for slot in segment.slots:
-            slot_codes = AGENDA_CODE_RE.findall(slot.label)
+            slot_codes = slot.codes or AGENDA_CODE_RE.findall(slot.label)
             for code in slot_codes:
                 if code not in codes:
                     codes.append(code)
@@ -931,10 +977,16 @@ def _make_session(
     lead: str | None,
     note: str | None,
     source: ScheduleSource,
+    codes: list[str] | None = None,
 ) -> Session:
     clean = re.sub(r"\s+", " ", title).strip(" .·-") or group or "Session"
-    codes = AGENDA_CODE_RE.findall(clean)
-    label = AGENDA_CODE_RE.sub("", clean).strip(" .·-") if codes else clean
+    if codes:
+        label = LISTED_CODE_RE.sub(lambda m: m.group(0)[: m.start(1) - m.start(0)], clean)
+        label = AGENDA_CODE_RE.sub("", label)
+        label = re.sub(r"\s*,\s*,", ",", re.sub(r"\s+", " ", label)).strip(" .,·-/")
+    else:
+        codes = AGENDA_CODE_RE.findall(clean)
+        label = AGENDA_CODE_RE.sub("", clean).strip(" .·-/") if codes else clean
     if codes:
         label = re.sub(r"^AI\s+", "", label).strip()
     kind = "plenary" if re.search(r"commences|plenary|closing|session reports", clean, re.I) else "session"

@@ -414,6 +414,7 @@ def parse_schedule_sources(
         *coverage_gaps(sessions, result.sessions, rooms),
         *cell_checks(sessions, result.sessions, rooms),
     ]
+    GRANULARITY[meeting.id] = granularity_checks(sessions, result.sessions, rooms)
     order = {room.roomId: room.order for room in rooms}
     result.sessions.sort(key=lambda s: (s.date, s.startTime, order.get(s.roomId, 0)))
     return rooms, result.sessions, result.conflicts
@@ -480,6 +481,55 @@ def cell_checks(
                         f"and {names.get(b.roomId, b.roomName)} at the same time"
                     )
     return errors
+
+
+# Per meeting: published blocks a schedule document splits more finely. Shown
+# as warnings on the Ingestion status page and in Verify data.
+GRANULARITY: dict[str, list[str]] = {}
+
+
+def granularity_checks(
+    parsed: list[Session], canonical: list[Session], rooms: list[Room]
+) -> list[str]:
+    """A document said more than we published: flag it, never drop it silently.
+
+    For every published block, look at each document's own parse of that room
+    and time. If one document splits the block into two or more timed parts,
+    the published block is coarser than the evidence (range minutes not read,
+    bare agenda numbers, a grid copy beating the chair's table, ...).
+    """
+
+    def mins(hhmm: str) -> int:
+        h, m = hhmm.split(":")
+        return int(h) * 60 + int(m)
+
+    names = {r.roomId: r.roomName for r in rooms}
+    by_doc: dict[tuple[str, str, str], set[tuple[int, int, str]]] = {}
+    for s in parsed:
+        if not s.roomId or s.kind != "session":
+            continue
+        for ref in s.sources:
+            doc = (ref.cell or ref.sourceId).split("|")[0]
+            by_doc.setdefault((s.date, s.roomId, doc), set()).add(
+                (mins(s.startTime), mins(s.endTime), ", ".join(s.agendaItems) or s.topic)
+            )
+    out: list[str] = []
+    for c in canonical:
+        if not c.roomId or c.kind != "session":
+            continue
+        a, b = mins(c.startTime), mins(c.endTime)
+        for (day, room, doc), parts in by_doc.items():
+            if day != c.date or room != c.roomId:
+                continue
+            inside = sorted(p for p in parts if a <= p[0] and p[1] <= b and (p[0], p[1]) != (a, b))
+            if len({(x, y) for x, y, _ in inside}) >= 2:
+                detail = "; ".join(f"{x // 60:02d}:{x % 60:02d}-{y // 60:02d}:{y % 60:02d} {t}" for x, y, t in inside)
+                out.append(
+                    f"{c.date} {names.get(c.roomId, c.roomName)} {c.startTime}-{c.endTime} is published as one "
+                    f"block but {doc} splits it: {detail}"
+                )
+                break
+    return out
 
 
 # Per meeting: time a source document fills that the published timetable leaves

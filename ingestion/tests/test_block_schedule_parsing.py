@@ -106,3 +106,36 @@ def test_wildcard_children_with_mismatched_minutes_remain_untimed():
     assert (out[0].startTime, out[0].endTime) == ("17:30", "19:30")
     assert all(not s.startTime for s in out[0].agendaBreakdown)
     assert "items total 50 min, block is 120 min" in (out[0].note or "")
+
+
+def _v06_cell(text):
+    from ingestion.block_schedule import _sessions_for_cell
+    from ingestion.models import Room, ScheduleSource
+
+    room = Room(roomId="r", meetingId="m", roomName="Yeongju B Hall", order=0)
+    src = ScheduleSource(sourceId="s", meetingId="m", fileName="f.docx", label="f",
+                         type="offline_schedule", origin="public", retrievedAt="x")
+    return [
+        (s.startTime, s.endTime, s.agendaItems)
+        for s in _sessions_for_cell(text, meeting_id="m", day="Wednesday", day_date="2026-10-14",
+                                    room=room, block_start=14 * 60 + 30, block_end=16 * 60 + 30, source=src)
+    ]
+
+
+def test_ranged_head_with_bare_and_listed_codes_hiroki_v06():
+    text = ("\nMaintenance (90-120)\n8.2 R19 LP-WUS, R19/20 Mobility (30)\n"
+            "7 pre-Rel-19 CRs, 8.2 R19 Duplex(50)\n11 TEI20 (10)\nR20 Coverage RRC (30)")
+    assert _v06_cell(text) == [
+        ("14:30", "15:00", ["8.2"]), ("15:00", "15:50", ["7", "8.2"]),
+        ("15:50", "16:00", ["11"]), ("16:00", "16:30", []),
+    ]
+
+
+def test_ranged_head_whose_items_miss_the_range_is_not_split():
+    out = _v06_cell("Maintenance (90-120)\n8.2 LP-WUS (30)\n11 TEI20 (10)\nR20 Coverage RRC (30)")
+    assert ("14:30", "15:00", ["8.2"]) not in out
+
+
+def test_plain_numbers_in_prose_are_not_codes():
+    out = _v06_cell("Hiroki (120)\nR20\nA-IoT 2 rounds (120)")
+    assert all("2" not in items for _, _, items in out)

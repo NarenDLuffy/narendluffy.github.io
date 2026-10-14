@@ -203,3 +203,12 @@ def test_wildcard_ancestry_is_branch_bounded():
     assert not is_descendant("10.5.3.2", "10.5.4.x")
     assert not is_descendant("10.5.4.x", "10.5.4.2")
     assert _depth("10.5.4.x") == _depth("10.5.4") < _depth("10.5.4.2")
+
+
+def test_typo_whole_block_loses_to_a_chair_tiling():
+    typo = make("09:00", "10:30", items=["10.2.1", "10.8.x"], source="grid")
+    typo.note = "Minutes don't add up: items total 36 min, block is 90 min."
+    a = make("09:00", "09:30", items=["10.2"], source="chair", topic="6G waveform")
+    b = make("09:30", "10:30", items=["10.8.2", "10.8.3"], source="chair")
+    result = canonicalize([typo, a, b])
+    assert [(s.startTime, s.endTime) for s in result.sessions] == [("09:00", "09:30"), ("09:30", "10:30")]
