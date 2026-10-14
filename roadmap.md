@@ -11,6 +11,7 @@
 - [x] Four meeting-week skills active
 - [x] One folder rule for timetable + drafts; table cell sanity checks; pictures on refused runs
 - [x] Normalize wildcard parent matching, rebuild RAN1#126bis, and verify Hiroki's four stated child timings
+- [x] All chair schedules: read range minutes, bare agenda numbers, multi-item lines; granularity check + audit + skill
 - [ ] User: enter this meeting's remote FTP host (RAN-<city>.3gpp.org) on the Drafts page
 - [ ] User: enable notifications on each device and test a summon alert end-to-end
 - [ ] User: confirm branch-level draft activity shows under a followed sub-item (e.g. 10.4.1)
