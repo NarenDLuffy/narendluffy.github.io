@@ -77,3 +77,8 @@ A refused update names one of: a gap a document fills, one table cell read into
 two rooms, or the same agenda item in two rooms at once that no document lists
 twice. The failed GitHub run attaches pictures of the tables — look at them,
 then fix the parser. Never relax a check to make a run pass.
+
+## After every new chair-file version
+
+Run the `schedule-granularity-audit` skill (`python -m ingestion.audit_granularity --meeting <slug>`);
+it must report "no mismatches" before you call the refresh done.
