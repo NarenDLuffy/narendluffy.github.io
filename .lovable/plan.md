@@ -4,7 +4,7 @@
 
 Hiroki’s published v05 document contains the four stated durations in its detailed table: `10.5.4.2(20), 10.5.4.1(30), 10.5.4.4(30), 10.5.4.3(40)`, under `6G 10.5.4.x (120)`.
 
-The saved Wednesday schedule instead publishes one `10.5.4.x` block from 17:30 to 19:30. The parser recognizes the four timed children in this cell, but canonical schedule matching treats `10.5.4.x` as a literal parent: `10.5.4.2` does not start with `10.5.4.x.`. This prevents the detailed blocks from replacing the container. Wildcard and leaf codes also currently receive the same depth score.
+The saved Wednesday schedule instead publishes one `10.5.4.x` block from 17:30 to 19:30. The parser recognizes the four timed children in this cell, but the child-replacement check incorrectly uses the literal prefix `10.5.4.x.` instead of normalizing `10.5.4.x` to its parent branch `10.5.4`; another matching check already strips `.x`, so this is inconsistent handling, not the intended rule. This prevents the detailed blocks from replacing the container. Wildcard and leaf codes also currently receive the same depth score.
 
 ## Correction
 
