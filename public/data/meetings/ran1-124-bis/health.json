@@ -4,7 +4,7 @@
   "schedule": {
     "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:35:29Z",
-    "lastAttemptAt": "2026-10-14T02:29:07Z",
+    "lastAttemptAt": "2026-10-14T08:04:58Z",
     "sessionCount": 260,
     "roomCount": 6,
     "dates": [
@@ -51,14 +51,10 @@
     "conflictCount": 7,
     "lowConfidenceCount": 0,
     "gaps": [
-      "2026-04-17 A3: no session 16:30-17:00 although a schedule document fills it",
-      "2026-04-17 MDC Maurice de Cesare: no session 11:20-11:30 although a schedule document fills it",
-      "2026-04-17 MDC Maurice de Cesare: no session 12:10-13:00 although a schedule document fills it"
+      "2026-04-17 A3: no session 16:30-17:00 although a schedule document fills it"
     ],
     "errors": [
       "2026-04-17 A3: no session 16:30-17:00 although a schedule document fills it",
-      "2026-04-17 MDC Maurice de Cesare: no session 11:20-11:30 although a schedule document fills it",
-      "2026-04-17 MDC Maurice de Cesare: no session 12:10-13:00 although a schedule document fills it",
       "2026-04-14 12:00: 10.2.1 is in both A3 and Cettina De Cesare 2 at the same time",
       "2026-04-14 17:00: 9.3.1 is in both A3 and Cettina De Cesare 2 at the same time",
       "2026-04-16 11:00: 9.3.1 is in both A3 and Cettina De Cesare 2 at the same time",
@@ -74,14 +70,6 @@
       "text": "Timetable gap: 2026-04-17 A3: no session 16:30-17:00 although a schedule document fills it."
     },
     {
-      "level": "warn",
-      "text": "Timetable gap: 2026-04-17 MDC Maurice de Cesare: no session 11:20-11:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-04-17 MDC Maurice de Cesare: no session 12:10-13:00 although a schedule document fills it."
-    },
-    {
       "level": "info",
       "text": "7 unresolved source conflict(s)."
     },
@@ -90,5 +78,5 @@
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-14T02:29:07Z"
+  "updatedAt": "2026-10-14T08:04:58Z"
 }
