@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-15T01:36:59Z",
-    "lastAttemptAt": "2026-10-15T01:36:59Z",
-    "sessionCount": 252,
+    "lastSuccessAt": "2026-10-15T07:38:19Z",
+    "lastAttemptAt": "2026-10-15T07:38:19Z",
+    "sessionCount": 258,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -17,13 +17,13 @@
     "sourceCount": 4,
     "sources": [
       {
-        "label": "Chair notes RAN1#126bis_v10",
-        "fileName": "Chair notes RAN1#126bis_v10.docx",
+        "label": "Chair notes RAN1#126bis_v12",
+        "fileName": "Chair notes RAN1#126bis_v12.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#126b online and offline schedules - v02",
-        "fileName": "RAN1#126b online and offline schedules - v02.docx",
+        "label": "RAN1#126b online and offline schedules - v03",
+        "fileName": "RAN1#126b online and offline schedules - v03.docx",
         "origin": "public"
       },
       {
@@ -39,7 +39,9 @@
     ],
     "draftOnly": false,
     "gaps": [],
-    "coarser": [],
+    "coarser": [
+      "2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-033769ee splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.5.4.x"
+    ],
     "shortBlockCount": 0,
     "conflictCount": 3,
     "lowConfidenceCount": 0
@@ -50,6 +52,10 @@
     "credentials": true
   },
   "warnings": [
+    {
+      "level": "warn",
+      "text": "Less detail than the chair file: 2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-033769ee splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.5.4.x."
+    },
     {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
@@ -67,7 +73,7 @@
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-10-15T06:28:17Z",
+  "updatedAt": "2026-10-15T07:39:37Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-15T06:27:48Z",

@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-126-bis_fri_tamna-bc-hall_1100_1200_10.5.2.2-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_added",
+    "title": "10.5.2.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1100_1200_10.5.2.2",
+    "to": "Tamna BC Hall 11:00-12:00",
+    "sourceIds": [
+      "ran1-126-bis-033769ee"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_room-203-2f_0830_0930_10.8.x-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_added",
+    "title": "Sensing added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8.x"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-203-2f_0830_0930_10.8.x",
+    "to": "Room 203 (2F) 08:30-09:30",
+    "sourceIds": [
+      "ran1-126-bis-033769ee"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_tamna-bc-hall_1200_1300_10.5.2.3-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_added",
+    "title": "10.5.2.3 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.2.3"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1200_1300_10.5.2.3",
+    "to": "Tamna BC Hall 12:00-13:00",
+    "sourceIds": [
+      "ran1-126-bis-033769ee"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_room-203-2f_0930_1030_10.5.4.x-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_added",
+    "title": "10.5.4.x added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.5.4.x"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-203-2f_0930_1030_10.5.4.x",
+    "to": "Room 203 (2F) 09:30-10:30",
+    "sourceIds": [
+      "ran1-126-bis-033769ee"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_room-201-2f_1000_1030_10.4.2-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_added",
+    "title": "10.4.2 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.4.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-201-2f_1000_1030_10.4.2",
+    "to": "Room 201 (2F) 10:00-10:30",
+    "sourceIds": [
+      "ran1-126-bis-033769ee"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-126-bis_fri_tamna-bc-hall_1100_1300_sweep-2026-10-15T07:39:37+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T07:39:37+00:00",
+    "type": "session_removed",
+    "title": "Sweep removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1100_1300_sweep",
+    "sourceIds": [
+      "ran1-126-bis-69c4a89f",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "Tamna BC Hall"
+  }
+]
