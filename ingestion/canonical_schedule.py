@@ -324,6 +324,7 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     what is left here are partial overlaps, where the more detailed and better
     corroborated block wins and the coarser one is dropped.
     """
+    fresh = {t: i for i, t in enumerate(sorted({b.introducedAt for b in blocks}))}
     ranked = sorted(
         blocks,
         key=lambda b: (
@@ -331,6 +332,8 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
             # A block kept whole because its stated minutes don't add up is the
             # weakest evidence: any document that tiles that time wins over it.
             "Minutes don't add up" in (b.note or ""),
+            # Latest change: the table a chair edited most recently wins.
+            -fresh[b.introducedAt],
             -_own(b),
             -len(b.sourceIds),
             -b.specificity,
