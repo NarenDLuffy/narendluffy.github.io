@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Friday v05: preserve room identity when shading is omitted; Main 11:00–13:00 is Sweep; rebuild and audit all chair files
+
 - [x] Push notifications for "colleague needed" alerts
 - [x] Update "How to Use" (help.tsx) with summon alerts + notifications
 - [x] Drafts source cleanup: live server is the truth during the meeting week (old archive files hidden, no duplicate rows)
