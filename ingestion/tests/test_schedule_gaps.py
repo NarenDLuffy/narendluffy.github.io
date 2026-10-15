@@ -98,6 +98,71 @@ def test_a_dropped_item_is_reported_as_a_gap():
     assert coverage_gaps(parsed, parsed, rooms) == []
 
 
+def _lost_fill_grid(path, *, merged=False, ambiguous=False):
+    doc = Document()
+    doc.add_paragraph("RAN1#126b Online Session Schedule")
+    table = doc.add_table(rows=5, cols=4)
+    table.cell(0, 1).text = "Friday"
+    table.cell(0, 1).merge(table.cell(0, 3))
+    for row, span in zip(table.rows[1:4], ["08:30 ~ 10:30", "14:30 ~ 16:30", "17:00 ~ 19:00"]):
+        row.cells[0].text = span
+        for lane, fill in enumerate(["FFFFFF", "D9D9D9", "FFD966"], 1):
+            row.cells[lane].text = "6GR (120)\n.10.1 (120)"
+            _cell_props(row.cells[lane], fill, None)
+    if ambiguous:
+        # Equal evidence for two assignments: no safe column recovery.
+        for cell in table.rows[3].cells[1:]:
+            cell._tc.get_or_add_tcPr().remove(cell._tc.get_or_add_tcPr().find(qn("w:shd")))
+        for cell in table.rows[2].cells[1:]:
+            shd = cell._tc.get_or_add_tcPr().find(qn("w:shd"))
+            shd.set(qn("w:fill"), "FFFFFF")
+    row = table.rows[4].cells
+    row[0].text = "11:00 ~ 13:00 (120 min)"
+    texts = ["Sweep", "6GR (120)\n10.5.2.2 (60)\n10.5.2.3 (60)",
+             "6GR (120)\n.10.5.4.x (60)\n.10.2.1 Waveform (10)\n.10.8 Sensing (50)"]
+    for cell, text in zip(row[1:], texts):
+        cell.text = text
+        _cell_props(cell, "FFFFFF", None)
+    if merged:
+        row[1].merge(row[3]).text = "Sweep"
+    doc.save(path)
+
+
+def test_friday_v05_uncoloured_cells_keep_their_distinct_room_columns(tmp_path):
+    path = str(tmp_path / "lost-fill.docx")
+    _lost_fill_grid(path)
+    rooms, sessions = parse_block_schedule_docx(path, meeting_id="m", start_date="2026-10-12",
+                                               end_date="2026-10-16", source=SRC)
+    fills = {r.roomId: r.sourceColor for r in rooms}
+    blocks = [(fills[s.roomId], s.startTime, s.endTime, s.topic, s.agendaItems)
+              for s in sessions if "11:00" <= s.startTime < "13:00"]
+    assert blocks == [
+        ("FFFFFF", "11:00", "13:00", "Sweep", []),
+        ("D9D9D9", "11:00", "12:00", "10.5.2.2", ["10.5.2.2"]),
+        ("D9D9D9", "12:00", "13:00", "10.5.2.3", ["10.5.2.3"]),
+        ("FFD966", "11:00", "12:00", "10.5.4.x", ["10.5.4.x"]),
+        ("FFD966", "12:00", "12:10", "Waveform", ["10.2.1"]),
+        ("FFD966", "12:10", "13:00", "Sensing", ["10.8"]),
+    ]
+
+
+def test_merged_white_cell_is_not_copied_to_other_room_columns(tmp_path):
+    path = str(tmp_path / "merged.docx")
+    _lost_fill_grid(path, merged=True)
+    rooms, sessions = parse_block_schedule_docx(path, meeting_id="m", start_date="2026-10-12",
+                                               end_date="2026-10-16", source=SRC)
+    assert len([s for s in sessions if s.startTime == "11:00"]) == 1
+
+
+def test_ambiguous_column_fills_are_not_inferred(tmp_path):
+    path = str(tmp_path / "ambiguous.docx")
+    _lost_fill_grid(path, ambiguous=True)
+    rooms, sessions = parse_block_schedule_docx(path, meeting_id="m", start_date="2026-10-12",
+                                               end_date="2026-10-16", source=SRC)
+    fills = {r.roomId: r.sourceColor for r in rooms}
+    assert all(fills[s.roomId] == "FFFFFF" for s in sessions if "11:00" <= s.startTime < "13:00")
+
+
 def test_one_cell_read_into_two_rooms_is_refused():
     from dataclasses import replace
 

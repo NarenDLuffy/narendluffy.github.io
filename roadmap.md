@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Friday v05: preserve room identity when shading is omitted; Main 11:00–13:00 is Sweep; rebuild and audit all chair files (47 tests, no mismatches)
+- [ ] GitHub main must receive the rebuilt Friday schedule; live preview still reads its older copy first
+
 - [x] Push notifications for "colleague needed" alerts
 - [x] Update "How to Use" (help.tsx) with summon alerts + notifications
 - [x] Drafts source cleanup: live server is the truth during the meeting week (old archive files hidden, no duplicate rows)

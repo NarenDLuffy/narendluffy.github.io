@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-15T22:23:12Z",
-    "lastAttemptAt": "2026-10-15T22:23:12Z",
-    "sessionCount": 264,
+    "lastSuccessAt": "2026-10-15T23:24:12Z",
+    "lastAttemptAt": "2026-10-15T23:24:12Z",
+    "sessionCount": 263,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -32,8 +32,8 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v07",
-        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v07.docx",
+        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v08",
+        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v08.docx",
         "origin": "public"
       }
     ],
@@ -45,9 +45,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
     {
@@ -63,11 +63,11 @@
       "text": "Only 219 of 220 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-10-15T22:24:45Z",
+  "updatedAt": "2026-10-15T23:24:40Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-15T20:43:48Z",
