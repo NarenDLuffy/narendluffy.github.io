@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-126-bis",
   "schedule": {
-    "state": "validation-failed",
-    "lastSuccessAt": "2026-10-15T23:15:30Z",
-    "lastAttemptAt": "2026-10-15T23:23:40Z",
+    "state": "ok",
+    "lastSuccessAt": "2026-10-15T23:24:12Z",
+    "lastAttemptAt": "2026-10-15T23:24:12Z",
     "sessionCount": 263,
     "roomCount": 5,
     "dates": [
@@ -38,55 +38,11 @@
       }
     ],
     "draftOnly": false,
-    "gaps": [
-      "2026-10-12 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it",
-      "2026-10-12 201 201: no session 09:00-10:30 although a schedule document fills it",
-      "2026-10-12 201 201: no session 17:40-18:00 although a schedule document fills it",
-      "2026-10-12 203 203: no session 12:00-12:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 16:15-16:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it",
-      "2026-10-13 Yeongju B Hall Yeongju B Hall: no session 18:30-19:30 although a schedule document fills it",
-      "2026-10-13 201 201: no session 09:50-10:00 although a schedule document fills it",
-      "2026-10-13 201 201: no session 15:00-15:15 although a schedule document fills it",
-      "2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it",
-      "2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it",
-      "2026-10-14 Yeongju B Hall Yeongju B Hall: no session 19:25-19:30 although a schedule document fills it",
-      "2026-10-14 201 201: no session 15:00-15:10 although a schedule document fills it",
-      "2026-10-14 203 203: no session 09:50-10:30 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 14:50-16:30 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 17:30-19:30 although a schedule document fills it",
-      "2026-10-15 201 201: no session 12:20-12:30 although a schedule document fills it",
-      "2026-10-15 201 201: no session 18:20-18:30 although a schedule document fills it",
-      "2026-10-16 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:30-10:30 although a schedule document fills it"
-    ],
+    "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
     "conflictCount": 3,
-    "lowConfidenceCount": 0,
-    "errors": [
-      "2026-10-12 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it",
-      "2026-10-12 201 201: no session 09:00-10:30 although a schedule document fills it",
-      "2026-10-12 201 201: no session 17:40-18:00 although a schedule document fills it",
-      "2026-10-12 203 203: no session 12:00-12:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 16:15-16:30 although a schedule document fills it",
-      "2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it",
-      "2026-10-13 Yeongju B Hall Yeongju B Hall: no session 18:30-19:30 although a schedule document fills it",
-      "2026-10-13 201 201: no session 09:50-10:00 although a schedule document fills it",
-      "2026-10-13 201 201: no session 15:00-15:15 although a schedule document fills it",
-      "2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it",
-      "2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it",
-      "2026-10-14 Yeongju B Hall Yeongju B Hall: no session 19:25-19:30 although a schedule document fills it",
-      "2026-10-14 201 201: no session 15:00-15:10 although a schedule document fills it",
-      "2026-10-14 203 203: no session 09:50-10:30 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 14:50-16:30 although a schedule document fills it",
-      "2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 17:30-19:30 although a schedule document fills it",
-      "2026-10-15 201 201: no session 12:20-12:30 although a schedule document fills it",
-      "2026-10-15 201 201: no session 18:20-18:30 although a schedule document fills it"
-    ]
+    "lowConfidenceCount": 0
   },
   "remoteFtp": {
     "state": "skipped-no-credentials",
@@ -94,90 +50,6 @@
     "credentials": false
   },
   "warnings": [
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-12 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-12 201 201: no session 09:00-10:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-12 201 201: no session 17:40-18:00 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-12 203 203: no session 12:00-12:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 16:15-16:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 19:00-19:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 Yeongju B Hall Yeongju B Hall: no session 18:30-19:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 201 201: no session 09:50-10:00 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-13 201 201: no session 15:00-15:15 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:10-10:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-14 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-14 Yeongju B Hall Yeongju B Hall: no session 19:25-19:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-14 201 201: no session 15:00-15:10 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-14 203 203: no session 09:50-10:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 11:40-13:00 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 14:50-16:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-15 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 17:30-19:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-15 201 201: no session 12:20-12:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-15 201 201: no session 18:20-18:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-10-16 RAN1_Brk#2 \u00b7 Yeongju B \u00b7 1F: no session 09:30-10:30 although a schedule document fills it."
-    },
     {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
@@ -195,7 +67,7 @@
       "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-10-15T23:23:40Z",
+  "updatedAt": "2026-10-15T23:24:40Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-15T20:43:48Z",
