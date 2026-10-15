@@ -1,1 +1,199 @@
-[]
+[
+  {
+    "changeId": "start_time_changed-ran1-126-bis_fri_tamna-bc-hall_0830_0900_10.5.1.3-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.1.3 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0830_0900_10.5.1.3",
+    "to": "08:30",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "10:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_fri_tamna-bc-hall_0830_0900_10.5.1.3-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.1.3 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.1.3"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0830_0900_10.5.1.3",
+    "to": "09:00",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "10:30"
+  },
+  {
+    "changeId": "room_changed-ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "room_changed",
+    "title": "10.5.2.2 moved",
+    "detail": "Session changed room",
+    "agendaItems": [
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2",
+    "to": "Room 201 (2F)",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4"
+    ],
+    "from": "Tamna BC Hall"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.2.2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2",
+    "to": "08:30",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4"
+    ],
+    "from": "11:00"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.2.2 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.2.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_room-201-2f_0830_0915_10.5.2.2",
+    "to": "09:15",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4"
+    ],
+    "from": "12:00"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_fri_tamna-bc-hall_0900_0950_10.5.1.1-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.1.1 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.1.1"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0900_0950_10.5.1.1",
+    "to": "09:00",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "08:30"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_fri_tamna-bc-hall_0900_0950_10.5.1.1-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.1.1 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.1.1"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0900_0950_10.5.1.1",
+    "to": "09:50",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "09:20"
+  },
+  {
+    "changeId": "start_time_changed-ran1-126-bis_fri_tamna-bc-hall_0950_1030_10.5.1.2-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "start_time_changed",
+    "title": "10.5.1.2 start time changed",
+    "detail": "Start time changed",
+    "agendaItems": [
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0950_1030_10.5.1.2",
+    "to": "09:50",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "09:20"
+  },
+  {
+    "changeId": "end_time_changed-ran1-126-bis_fri_tamna-bc-hall_0950_1030_10.5.1.2-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "end_time_changed",
+    "title": "10.5.1.2 end time changed",
+    "detail": "End time changed",
+    "agendaItems": [
+      "10.5.1.2"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0950_1030_10.5.1.2",
+    "to": "10:30",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-fb38caa8"
+    ],
+    "from": "10:00"
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_tamna-bc-hall_1100_1110_10.2.1-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "session_added",
+    "title": "Waveform added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.2.1"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1100_1110_10.2.1",
+    "to": "Tamna BC Hall 11:00-11:10",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-126-bis_fri_tamna-bc-hall_1110_1200_10.8-2026-10-15T10:39:49+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-15T10:39:49+00:00",
+    "type": "session_added",
+    "title": "Sensing added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.8"
+    ],
+    "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1110_1200_10.8",
+    "to": "Tamna BC Hall 11:10-12:00",
+    "sourceIds": [
+      "ran1-126-bis-de1e83d4"
+    ]
+  }
+]
