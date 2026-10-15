@@ -646,6 +646,7 @@ def parse_block_schedule_docx(
                     label=_session_label(heading),
                 )
 
+        def room_for(cell: _Cell, day_start: int, day_end: int) -> Room:
             if lane_room is not None:
                 return lane_room
             width = max(1, day_end - day_start)
