@@ -411,6 +411,7 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
             if _codes_compatible(broader, finer):
                 if finer is other:
                     other.sourceIds = list(dict.fromkeys([*other.sourceIds, *keeper.sourceIds]))
+                    other.introducedAt = max(other.introducedAt, keeper.introducedAt)
                     keeper = other
                 else:
                     keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))

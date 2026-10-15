@@ -295,6 +295,9 @@ def _revision_family(source: ScheduleSource) -> str:
     return REVISION_SUFFIX_RE.sub("", stem).strip().lower()
 
 
+PREVIOUS_REVISION: dict[str, ScheduleSource] = {}
+
+
 def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     """Keep only the newest revision of each document family (…_v06 < …_v07 < …_v07_1).
 
@@ -302,6 +305,7 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     file exists it always wins, whatever the version numbers.
     """
     best: dict[str, ScheduleSource] = {}
+    ranked: dict[str, list[ScheduleSource]] = {}
 
     def rank(source: ScheduleSource) -> tuple:
         # The same file is often uploaded twice (a chair's folder and drafts/):
@@ -311,9 +315,16 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
 
     for source in sources:
         key = _revision_family(source)
+        ranked.setdefault(key, []).append(source)
         current = best.get(key)
         if current is None or rank(source) > rank(current):
             best[key] = source
+    # The previous revision of each family (Draft v03 is official v00's), for
+    # the latest-change rule; a second copy of the same file never counts.
+    for key, latest in best.items():
+        older = [s for s in ranked[key] if rank(s)[:2] < rank(latest)[:2]]
+        if older:
+            PREVIOUS_REVISION[latest.sourceId] = max(older, key=rank)
     return sorted(best.values(), key=lambda s: s.fileName.lower())
 
 
@@ -350,6 +361,46 @@ def _inspection_queue(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     return queue[:MAX_SCHEDULE_DOWNLOADS]
 
 
+def _parse_one(meeting: Meeting, source: ScheduleSource, path: str, offset: int):
+    # Both parsers are tried: the week grid layout first, the free-form
+    # chair-notes layout as a fallback for the same file.
+    parsed_rooms: list[Room] = []
+    parsed_sessions: list[Session] = []
+    try:
+        parsed_rooms, parsed_sessions = parse_block_schedule_docx(
+            path, meeting_id=meeting.id, start_date=meeting.startDate,
+            end_date=meeting.endDate, source=source,
+        )
+    except Exception as exc:
+        print(f"  grid parse failed for {source.fileName}: {exc}")
+    if not parsed_sessions:
+        try:
+            parsed_rooms, parsed_sessions = parse_schedule_docx(
+                path, meeting_id=meeting.id, start_date=meeting.startDate,
+                end_date=meeting.endDate, source=source,
+                room_order_offset=offset, owner_hint=_owner_hint(source.url or ""),
+            )
+        except Exception as exc:  # a malformed document must not break the run
+            print(f"  could not parse {source.fileName}: {exc}")
+    return parsed_rooms, parsed_sessions
+
+
+def _mark_latest_changes(meeting, source, sessions, history, offset) -> None:
+    """Compare with the family's previous revision (see revision_diff)."""
+    from .revision_diff import mark_edits
+
+    previous = PREVIOUS_REVISION.get(source.sourceId)
+    prev_sessions: list[Session] | None = None
+    if previous is not None:
+        prev_path = _local_path(previous) or (download_to_temp(previous.url) if previous.url else None)
+        if prev_path:
+            _, prev_sessions = _parse_one(meeting, previous, prev_path, offset)
+            prev_sessions = prev_sessions or None
+    edits = mark_edits(_revision_family(source), sessions, prev_sessions, history, source.retrievedAt)
+    against = previous.fileName if prev_sessions is not None and previous else "nothing (first release)"
+    print(f"  {source.fileName}: {edits} block(s) changed vs {against}")
+
+
 def parse_schedule_sources(
     meeting: Meeting, sources: list[ScheduleSource]
 ) -> tuple[list[Room], list[Session], list[ScheduleConflict]]:
@@ -360,8 +411,11 @@ def parse_schedule_sources(
     blocks, and canonicalize() merges them into the most detailed
     evidence-supported timeline (see canonical_schedule.py).
     """
+    from .revision_diff import load_history, save_history
+
     rooms: list[Room] = []
     sessions: list[Session] = []
+    history = load_history(meeting.slug)
     for source in _inspection_queue(sources):
         path = _local_path(source) or (download_to_temp(source.url) if source.url else None)
         if not path:
@@ -371,36 +425,16 @@ def parse_schedule_sources(
             continue
         source.confidence = round(min(1.0, verdict.score / 30), 2)
         SCHEDULE_PATHS.setdefault(meeting.id, []).append((source.fileName, path))
-        # Both parsers are tried: the week grid layout first, the free-form
-        # chair-notes layout as a fallback for the same file.
-        parsed_rooms: list[Room] = []
-        parsed_sessions: list[Session] = []
-        try:
-            parsed_rooms, parsed_sessions = parse_block_schedule_docx(
-                path,
-                meeting_id=meeting.id,
-                start_date=meeting.startDate,
-                end_date=meeting.endDate,
-                source=source,
-            )
-        except Exception as exc:
-            print(f"  grid parse failed for {source.fileName}: {exc}")
+        parsed_rooms, parsed_sessions = _parse_one(meeting, source, path, len(rooms))
         if not parsed_sessions:
-            try:
-                parsed_rooms, parsed_sessions = parse_schedule_docx(
-                    path,
-                    meeting_id=meeting.id,
-                    start_date=meeting.startDate,
-                    end_date=meeting.endDate,
-                    source=source,
-                    room_order_offset=len(rooms),
-                    owner_hint=_owner_hint(source.url or ""),
-                )
-            except Exception as exc:  # a malformed document must not break the run
-                print(f"  could not parse {source.fileName}: {exc}")
-                continue
+            continue
+        _mark_latest_changes(meeting, source, parsed_sessions, history, len(rooms))
         rooms.extend(parsed_rooms)
         sessions.extend(parsed_sessions)
+    try:
+        save_history(meeting.slug, history)
+    except OSError as exc:
+        print(f"  edit history not saved: {exc}")
 
 
     if any((room.chairLaneId or "").startswith(f"{meeting.id}:") for room in rooms):
