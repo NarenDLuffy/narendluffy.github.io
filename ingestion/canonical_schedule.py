@@ -102,6 +102,9 @@ class CandidateBlock:
     order: int = 0
     affinity: float = 0.0
     origin: Session | None = None
+    # When the content first appeared in its document family (revision_diff);
+    # "" = unknown. A fresh edit beats untouched copies, whatever the vote count.
+    introducedAt: str = ""
 
     @property
     def start(self) -> int:
@@ -175,6 +178,7 @@ def candidates_from_session(session: Session) -> list[CandidateBlock]:
         sessionLead=session.sessionLead,
         note=session.note,
         origin=session,
+        introducedAt=max((ref.introducedAt or "" for ref in session.sources), default=""),
     )
 
     breakdown = [s for s in (session.agendaBreakdown or []) if s.startTime and s.endTime]
@@ -398,6 +402,9 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
             out.extend(group)
             continue
         group.sort(key=lambda b: (-_own(b), -len(b.sourceIds), -b.specificity, -len(b.agendaItems)))
+        # Latest change first: an edit beats copies nobody touched; votes only
+        # decide among equally fresh (or all unknown) claims. Stable sort.
+        group.sort(key=lambda b: b.introducedAt, reverse=True)
         keeper = group[0]
         for other in group[1:]:
             finer, broader = (other, keeper) if other.specificity > keeper.specificity else (keeper, other)
@@ -409,7 +416,8 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
                     keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
                 continue
             said = ", ".join(other.agendaItems) or other.topic
-            keeper.note = _join_note(keeper.note, f"Another schedule file lists {said} here")
+            older = " (older copy)" if keeper.introducedAt > other.introducedAt else ""
+            keeper.note = _join_note(keeper.note, f"Another schedule file lists {said} here{older}")
             keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
         out.append(keeper)
     return out
@@ -499,6 +507,7 @@ def _merge_duplicates(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
             merged[key] = block
             continue
         current.sourceIds = list(dict.fromkeys([*current.sourceIds, *block.sourceIds]))
+        current.introducedAt = max(current.introducedAt, block.introducedAt)
         # A document that covers only this room (a sub-chair's own plan) knows
         # the slot better than the week grid, so its wording wins even when the
         # grid's placeholder is longer.
