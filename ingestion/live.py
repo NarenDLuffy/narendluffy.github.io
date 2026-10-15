@@ -295,7 +295,8 @@ def _revision_family(source: ScheduleSource) -> str:
     return REVISION_SUFFIX_RE.sub("", stem).strip().lower()
 
 
-PREVIOUS_REVISION: dict[str, ScheduleSource] = {}
+OLDER_REVISIONS: dict[str, list[ScheduleSource]] = {}
+MAX_LOOKBACK = 15
 
 
 def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
@@ -322,9 +323,12 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
     # The previous revision of each family (Draft v03 is official v00's), for
     # the latest-change rule; a second copy of the same file never counts.
     for key, latest in best.items():
-        older = [s for s in ranked[key] if rank(s)[:2] < rank(latest)[:2]]
+        older: dict[tuple, ScheduleSource] = {}
+        for s in sorted(ranked[key], key=rank):  # one copy per revision, own folder last wins
+            if rank(s)[:2] < rank(latest)[:2]:
+                older[tuple(rank(s)[:2])] = s
         if older:
-            PREVIOUS_REVISION[latest.sourceId] = max(older, key=rank)
+            OLDER_REVISIONS[latest.sourceId] = [older[k] for k in sorted(older, reverse=True)][:MAX_LOOKBACK]
     return sorted(best.values(), key=lambda s: s.fileName.lower())
 
 
@@ -385,20 +389,23 @@ def _parse_one(meeting: Meeting, source: ScheduleSource, path: str, offset: int)
     return parsed_rooms, parsed_sessions
 
 
-def _mark_latest_changes(meeting, source, sessions, history, offset) -> None:
-    """Compare with the family's previous revision (see revision_diff)."""
-    from .revision_diff import mark_edits
+def _mark_latest_changes(meeting, source, path, sessions, history, offset) -> None:
+    """Stamp when each block first appeared in its family (see revision_diff)."""
+    from .revision_diff import known, mark_edits, record_revision, revision_time
 
-    previous = PREVIOUS_REVISION.get(source.sourceId)
-    prev_sessions: list[Session] | None = None
-    if previous is not None:
-        prev_path = _local_path(previous) or (download_to_temp(previous.url) if previous.url else None)
-        if prev_path:
-            _, prev_sessions = _parse_one(meeting, previous, prev_path, offset)
-            prev_sessions = prev_sessions or None
-    edits = mark_edits(_revision_family(source), sessions, prev_sessions, history, source.retrievedAt)
-    against = previous.fileName if prev_sessions is not None and previous else "nothing (first release)"
-    print(f"  {source.fileName}: {edits} block(s) changed vs {against}")
+    family = _revision_family(source)
+    record_revision(history, family, source.fileName, revision_time(path, source.retrievedAt), sessions)
+    older = OLDER_REVISIONS.get(source.sourceId, [])
+    for prev in older:
+        if known(history, family, prev.fileName):
+            continue
+        prev_path = _local_path(prev) or (download_to_temp(prev.url) if prev.url else None)
+        if not prev_path:
+            continue
+        _, prev_sessions = _parse_one(meeting, prev, prev_path, offset)
+        record_revision(history, family, prev.fileName, revision_time(prev_path, ""), prev_sessions)
+    edits = mark_edits(history, family, source.fileName, [p.fileName for p in older], sessions)
+    print(f"  {source.fileName}: {edits} block(s) changed vs previous revision ({len(older)} older on file)")
 
 
 def parse_schedule_sources(
@@ -429,7 +436,7 @@ def parse_schedule_sources(
         if not parsed_sessions:
             continue
         try:
-            _mark_latest_changes(meeting, source, parsed_sessions, history, len(rooms))
+            _mark_latest_changes(meeting, source, path, parsed_sessions, history, len(rooms))
         except Exception as exc:  # the comparison only ranks; never block a run
             print(f"  latest-change check skipped for {source.fileName}: {exc}")
         rooms.extend(parsed_rooms)

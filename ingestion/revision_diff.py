@@ -1,25 +1,29 @@
 """Which schedule cells a chair actually edited ("latest change" rule).
 
 Secondary chairs copy the shared grid into their own notes and rarely touch it
-again, so counting files lets stale copies out-vote a fresh edit. Each parsed
-block is compared with the previous revision of its own document family; a
-block that differs (or is new) was introduced by this revision. The time a
-block was first seen is kept in edit-history.json, so an edit made in v05
-still beats untouched copies when v06 leaves it alone.
+again, so counting files lets stale copies out-vote a fresh edit. Every block
+gets introducedAt: when its content first appeared in its own document family,
+found by walking back through the family's revisions while the block is still
+there. Revision time is the document's own saved time (docProps/core.xml).
 
-introducedAt is "" when unknown (first release, no history): ranking then
-falls back to the older rules, and unknown never beats a known edit.
+Each revision's block signatures are kept in edit-history.json, so an older
+revision is downloaded and parsed once per meeting, never on every run.
+
+introducedAt is "" when unknown (first release, no older revision): ranking
+then falls back to the older rules, and unknown never beats a known edit.
 """
 
 from __future__ import annotations
 
 import json
 import re
+import zipfile
 from pathlib import Path
 
 from .models import Session
 
 HISTORY_NAME = "edit-history.json"
+ROOT = Path("public/data/meetings")
 
 
 def _codes(items: list[str]) -> tuple[str, ...]:
@@ -31,58 +35,73 @@ def signature(session: Session) -> str:
 
     Row position, spacing, dash type and x/X case never count as an edit.
     """
-    slots = tuple(
-        (
-            re.sub(r"\.x$", "", (s.code or "").lower()),
-            s.minutes,
-            s.startTime,
-            s.endTime,
-        )
+    slots = [
+        [re.sub(r"\.x$", "", (s.code or "").lower()), s.minutes, s.startTime, s.endTime]
         for s in (session.agendaBreakdown or [])
-    )
-    key = (session.date, session.roomId, session.startTime, session.endTime, _codes(session.agendaItems), slots)
+    ]
+    key = [session.date, session.roomId, session.startTime, session.endTime, list(_codes(session.agendaItems)), slots]
     return json.dumps(key, separators=(",", ":"))
 
 
-def load_history(slug: str, root: Path = Path("public/data/meetings")) -> dict[str, dict[str, str]]:
-    path = root / slug / HISTORY_NAME
+def revision_time(path: str, fallback: str) -> str:
+    """The document's own last-saved time, ISO; fallback when absent."""
     try:
-        return json.loads(path.read_text())
+        with zipfile.ZipFile(path) as z:
+            xml = z.read("docProps/core.xml").decode("utf-8", "ignore")
+        m = re.search(r"<dcterms:modified[^>]*>([^<]+)<", xml)
+        if m:
+            return m.group(1).strip()
+    except (OSError, KeyError, zipfile.BadZipFile):
+        pass
+    return fallback
+
+
+def load_history(slug: str, root: Path = ROOT) -> dict:
+    try:
+        data = json.loads((root / slug / HISTORY_NAME).read_text())
+        return data if isinstance(data, dict) and data.get("version") == 2 else {"version": 2}
     except (OSError, json.JSONDecodeError):
-        return {}
+        return {"version": 2}
 
 
-def save_history(slug: str, history: dict[str, dict[str, str]], root: Path = Path("public/data/meetings")) -> None:
+def save_history(slug: str, history: dict, root: Path = ROOT) -> None:
     path = root / slug / HISTORY_NAME
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(history, indent=1, sort_keys=True))
 
 
-def mark_edits(
-    family: str,
-    latest: list[Session],
-    previous: list[Session] | None,
-    history: dict[str, dict[str, str]],
-    seen_at: str,
-) -> int:
-    """Stamp introducedAt on every source ref of `latest`; returns edits found.
+def record_revision(history: dict, family: str, file_name: str, at: str, sessions: list[Session]) -> None:
+    history.setdefault("families", {}).setdefault(family, {})[file_name] = {
+        "at": at,
+        "sigs": sorted({signature(s) for s in sessions}),
+    }
 
-    * previous is None (first release) -> history value, else unknown.
-    * signature absent from previous   -> edited now (history keeps an older stamp
-      when the same content returns after a revert).
-    * signature present in previous    -> history value, else unknown.
+
+def known(history: dict, family: str, file_name: str) -> bool:
+    return file_name in history.get("families", {}).get(family, {})
+
+
+def mark_edits(history: dict, family: str, latest_name: str, older_names: list[str], sessions: list[Session]) -> int:
+    """Stamp introducedAt on every ref of `sessions` (the latest revision).
+
+    older_names is newest first. Returns how many blocks differ from the
+    previous revision (0 when there is none).
     """
-    fam = history.setdefault(family, {})
-    before = {signature(s) for s in previous} if previous is not None else None
+    revs = history.get("families", {}).get(family, {})
+    latest_at = revs.get(latest_name, {}).get("at", "")
+    chain = [(revs[n]["at"], set(revs[n]["sigs"])) for n in older_names if n in revs]
     edits = 0
-    for session in latest:
+    for session in sessions:
         sig = signature(session)
-        stamp = fam.get(sig, "")
-        if before is not None and sig not in before:
-            if not stamp:
-                stamp = seen_at
-                fam[sig] = stamp
-            edits += 1
+        stamp = ""
+        if chain:
+            stamp = latest_at
+            for at, sigs in chain:
+                if sig not in sigs:
+                    break
+                stamp = at
+            if sig not in chain[0][1]:
+                edits += 1
         for ref in session.sources:
             ref.introducedAt = stamp or None
     return edits
