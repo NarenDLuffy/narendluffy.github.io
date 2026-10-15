@@ -403,6 +403,8 @@ def _mark_latest_changes(meeting, source, path, sessions, history, offset) -> No
         if not prev_path:
             continue
         _, prev_sessions = _parse_one(meeting, prev, prev_path, offset)
+        if not prev_sessions:  # unreadable revision: skip it, never call everything an edit
+            continue
         record_revision(history, family, prev.fileName, revision_time(prev_path, ""), prev_sessions)
     edits = mark_edits(history, family, source.fileName, [p.fileName for p in older], sessions)
     print(f"  {source.fileName}: {edits} block(s) changed vs previous revision ({len(older)} older on file)")
