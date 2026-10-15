@@ -4,7 +4,7 @@
   "schedule": {
     "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:36:39Z",
-    "lastAttemptAt": "2026-10-15T09:52:00Z",
+    "lastAttemptAt": "2026-10-15T13:33:05Z",
     "sessionCount": 216,
     "roomCount": 5,
     "dates": [
@@ -46,14 +46,16 @@
     "conflictCount": 8,
     "lowConfidenceCount": 0,
     "gaps": [
+      "2026-05-18 Shanghai Function room (3F): no session 17:40-19:00 although a schedule document fills it",
+      "2026-05-19 Dalian Ballroom 1(3F): no session 11:40-12:00 although a schedule document fills it",
       "2026-05-20 Shanghai Function room (3F): no session 11:00-11:40 although a schedule document fills it",
-      "2026-05-20 Shanghai Function room (3F): no session 12:20-13:00 although a schedule document fills it",
-      "2026-05-21 Ballroom C (3F): no session 09:40-10:30 although a schedule document fills it"
+      "2026-05-20 Shanghai Function room (3F): no session 12:20-13:00 although a schedule document fills it"
     ],
     "errors": [
+      "2026-05-18 Shanghai Function room (3F): no session 17:40-19:00 although a schedule document fills it",
+      "2026-05-19 Dalian Ballroom 1(3F): no session 11:40-12:00 although a schedule document fills it",
       "2026-05-20 Shanghai Function room (3F): no session 11:00-11:40 although a schedule document fills it",
-      "2026-05-20 Shanghai Function room (3F): no session 12:20-13:00 although a schedule document fills it",
-      "2026-05-21 Ballroom C (3F): no session 09:40-10:30 although a schedule document fills it"
+      "2026-05-20 Shanghai Function room (3F): no session 12:20-13:00 although a schedule document fills it"
     ]
   },
   "remoteFtp": {
@@ -62,15 +64,19 @@
   "warnings": [
     {
       "level": "warn",
+      "text": "Timetable gap: 2026-05-18 Shanghai Function room (3F): no session 17:40-19:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2026-05-19 Dalian Ballroom 1(3F): no session 11:40-12:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
       "text": "Timetable gap: 2026-05-20 Shanghai Function room (3F): no session 11:00-11:40 although a schedule document fills it."
     },
     {
       "level": "warn",
       "text": "Timetable gap: 2026-05-20 Shanghai Function room (3F): no session 12:20-13:00 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2026-05-21 Ballroom C (3F): no session 09:40-10:30 although a schedule document fills it."
     },
     {
       "level": "info",
@@ -81,5 +87,5 @@
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-15T09:52:00Z"
+  "updatedAt": "2026-10-15T13:33:05Z"
 }
