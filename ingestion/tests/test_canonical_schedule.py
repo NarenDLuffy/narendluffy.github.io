@@ -212,3 +212,18 @@ def test_typo_whole_block_loses_to_a_chair_tiling():
     b = make("09:30", "10:30", items=["10.8.2", "10.8.3"], source="chair")
     result = canonicalize([typo, a, b])
     assert [(s.startTime, s.endTime) for s in result.sessions] == [("09:00", "09:30"), ("09:30", "10:30")]
+
+
+def test_tables_disagreeing_on_order_are_noted_not_silent():
+    """RAN1#126bis v04 Friday: the chair's grid says 10.5.1.3(30), 10.5.1.1(50),
+    10.5.1.2(40); the same file's detail table says 10.5.1.1(50), 10.5.1.2(40),
+    10.5.1.3(30). Whichever wins, the other order is visible on the blocks."""
+    detail = make("08:30", "10:30", items=["10.5.1"], source="detail", breakdown=[
+        ("10.5.1.1", "08:30", "09:20"), ("10.5.1.2", "09:20", "10:00"), ("10.5.1.3", "10:00", "10:30"),
+    ])
+    grid = make("08:30", "10:30", items=["10.5.1"], source="grid", breakdown=[
+        ("10.5.1.3", "08:30", "09:00"), ("10.5.1.1", "09:00", "09:50"), ("10.5.1.2", "09:50", "10:30"),
+    ])
+    result = canonicalize([detail, grid])
+    assert len(result.sessions) == 3
+    assert any("Another schedule table lists" in (s.note or "") for s in result.sessions)

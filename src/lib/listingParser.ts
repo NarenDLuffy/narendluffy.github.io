@@ -125,6 +125,8 @@ export const normalizeSegment = (s: string) => s.replace(/\s+/g, " ").trim().toL
  * The Inbox hierarchy is meeting-created, so depth is only bounded as a safety
  * guard — never truncated at an assumed semantic level.
  */
+const CONCURRENCY = 6;
+
 export async function walkListing(
   rootUrl: string,
   fetchText: (url: string) => Promise<string | null>,
@@ -135,11 +137,26 @@ export async function walkListing(
 
   const result: CrawlResult = { folders: [], files: [], readFolders: [] };
   let requests = 1;
+  // Folders are opened a few at a time: one-by-one made a 200-folder tree
+  // take minutes. Only the fetch holds a slot, so recursion cannot deadlock.
+  let active = 0;
+  const waiting: (() => void)[] = [];
+  const limited = async (url: string) => {
+    while (active >= CONCURRENCY) await new Promise<void>((r) => waiting.push(r));
+    active += 1;
+    try {
+      return await fetchText(url);
+    } finally {
+      active -= 1;
+      waiting.shift()?.();
+    }
+  };
 
-  const walk = async (html: string, url: string, path: string, depth: number) => {
+  const walk = async (html: string, url: string, path: string, depth: number): Promise<void> => {
     // Reaching here means this folder's own listing was fetched in full, so a
     // file missing from it is genuinely absent rather than simply unread.
     result.readFolders.push(path);
+    const children: Promise<void>[] = [];
     for (const entry of parseListing(html, url)) {
       const childPath = path
         ? `${path}/${normalizeSegment(entry.name)}`
@@ -154,8 +171,11 @@ export async function walkListing(
         });
         if (depth + 1 >= limits.maxDepth || requests >= limits.maxRequests) continue;
         requests += 1;
-        const childHtml = await fetchText(entry.href);
-        if (childHtml) await walk(childHtml, entry.href, childPath, depth + 1);
+        children.push(
+          limited(entry.href).then((childHtml) =>
+            childHtml ? walk(childHtml, entry.href, childPath, depth + 1) : undefined,
+          ),
+        );
       } else {
         const file: CrawlResult["files"][number] = {
           path: childPath,
@@ -168,6 +188,7 @@ export async function walkListing(
         result.files.push(file);
       }
     }
+    await Promise.all(children);
   };
 
   await walk(rootHtml, rootUrl, "", 0);

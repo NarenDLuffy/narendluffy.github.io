@@ -7,7 +7,8 @@ import { z } from "zod";
  * everyone; later submissions never overwrite it.
  */
 
-const HOST_RE = /^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$/i;
+// Underscores are allowed: real meeting hosts use them (e.g. jeju_icc.3gpp.org).
+const HOST_RE = /^[a-z0-9_]([a-z0-9_-]*[a-z0-9_])?(\.[a-z0-9_]([a-z0-9_-]*[a-z0-9_])?)+$/i;
 
 export const getMeetingFtpHost = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => z.object({ meetingId: z.string().min(1).max(80) }).parse(data))

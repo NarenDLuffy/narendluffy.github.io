@@ -100,8 +100,11 @@ export async function loadDrafts(meeting: Meeting): Promise<DraftResult> {
  * identity, so a file replicated to a second server later in the day stays one
  * artifact with one unread mark.
  */
-export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
-  const published = await loadDrafts(meeting);
+export async function loadDraftsLive(
+  meeting: Meeting,
+  snapshot?: DraftResult,
+): Promise<DraftResult> {
+  const published = snapshot ?? (await loadDrafts(meeting));
   try {
     const live = await probeLiveDrafts(meeting, published.index);
     if (live.origin === "published") {
@@ -126,11 +129,23 @@ export async function loadDraftsLive(meeting: Meeting): Promise<DraftResult> {
   }
 }
 
-export function draftsQueryOptions(meeting?: Meeting) {
+/** The saved snapshot alone: fast, so the page renders before the live crawl. */
+export function draftsSnapshotQueryOptions(meeting?: Meeting) {
+  return queryOptions({
+    queryKey: ["drafts-snapshot", meeting?.slug ?? "none"],
+    queryFn: (): Promise<DraftResult> =>
+      meeting ? loadDrafts(meeting) : Promise.resolve({ index: null, stale: false }),
+    enabled: Boolean(meeting),
+    staleTime: 60_000,
+    refetchInterval: 5 * 60_000,
+  });
+}
+
+export function draftsQueryOptions(meeting?: Meeting, snapshot?: DraftResult) {
   return queryOptions({
     queryKey: ["drafts", meeting?.slug ?? "none"],
     queryFn: () =>
-      meeting ? loadDraftsLive(meeting) : Promise.resolve({ index: null, stale: false }),
+      meeting ? loadDraftsLive(meeting, snapshot) : Promise.resolve({ index: null, stale: false }),
     enabled: Boolean(meeting),
     // Draft folders churn constantly during a session: check often, and keep
     // checking while the tab is in the background.

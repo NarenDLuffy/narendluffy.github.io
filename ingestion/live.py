@@ -522,6 +522,20 @@ def granularity_checks(
             if day != c.date or room != c.roomId:
                 continue
             inside = sorted(p for p in parts if a <= p[0] and p[1] <= b and (p[0], p[1]) != (a, b))
+            # Only a finer split of the SAME items is lost detail. Parts naming
+            # other items are a disagreement between tables, shown on the block
+            # as a note and counted as a conflict, not a granularity error.
+            if c.agendaItems:
+                from .canonical_schedule import _base_code, is_descendant
+
+                def fits(text: str) -> bool:
+                    codes = [x.strip() for x in text.split(",") if x.strip()]
+                    return bool(codes) and all(
+                        any(_base_code(k) == _base_code(i) or is_descendant(k, i) for i in c.agendaItems)
+                        for k in codes
+                    )
+
+                inside = [p for p in inside if fits(p[2])]
             if len({(x, y) for x, y, _ in inside}) >= 2:
                 detail = "; ".join(f"{x // 60:02d}:{x % 60:02d}-{y // 60:02d}:{y % 60:02d} {t}" for x, y, t in inside)
                 out.append(
