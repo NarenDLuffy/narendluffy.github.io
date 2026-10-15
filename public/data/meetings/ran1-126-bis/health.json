@@ -3,8 +3,8 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-15T09:46:21Z",
-    "lastAttemptAt": "2026-10-15T09:46:21Z",
+    "lastSuccessAt": "2026-10-15T10:36:13Z",
+    "lastAttemptAt": "2026-10-15T10:36:13Z",
     "sessionCount": 258,
     "roomCount": 5,
     "dates": [
@@ -39,23 +39,17 @@
     ],
     "draftOnly": false,
     "gaps": [],
-    "coarser": [
-      "2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-de1e83d4 splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.8"
-    ],
+    "coarser": [],
     "shortBlockCount": 0,
     "conflictCount": 3,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
-    {
-      "level": "warn",
-      "text": "Less detail than the chair file: 2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-de1e83d4 splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.8."
-    },
     {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
@@ -69,11 +63,11 @@
       "text": "Only 215 of 216 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-10-15T09:52:00Z",
+  "updatedAt": "2026-10-15T10:36:41Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-15T08:05:49Z",
