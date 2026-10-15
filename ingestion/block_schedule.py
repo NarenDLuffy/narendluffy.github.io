@@ -523,6 +523,7 @@ def parse_block_schedule_docx(
     pending_heading = ""
     table_index = 0
     lane_names: dict[tuple[str, str], str] = {}
+    last_fills: dict[int, str] = {}
     lane_numbers: dict[str, dict[str, int]] = {}
 
     def schedule_mode(heading: str) -> str:
@@ -646,7 +647,6 @@ def parse_block_schedule_docx(
                     label=_session_label(heading),
                 )
 
-        def room_for(cell: _Cell, day_start: int, day_end: int) -> Room:
             if lane_room is not None:
                 return lane_room
             width = max(1, day_end - day_start)
@@ -656,12 +656,17 @@ def parse_block_schedule_docx(
             key = f"{meeting_id}:{mode}:{fill or f'lane{lane}'}"
             return room_for_key(key, name=fill_names.get(fill or "", ""), fill=fill, main=main)
 
+        last_fills: dict[int, str] = {}
         merged_text: dict[int, str] = {}
         for row in rows[1:]:
             cells = _row_cells(row)
             if not cells:
                 continue
             for cell in cells:
+                if cell.fill:
+                    last_fills[cell.col_start] = cell.fill
+                elif cell.col_start in last_fills:
+                    cell.fill = last_fills[cell.col_start]
                 # Vertically merged cells carry their text only in the first
                 # row; repeat it for every time block they cover.
                 if cell.continued and not cell.text.strip():
