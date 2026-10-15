@@ -428,7 +428,10 @@ def parse_schedule_sources(
         parsed_rooms, parsed_sessions = _parse_one(meeting, source, path, len(rooms))
         if not parsed_sessions:
             continue
-        _mark_latest_changes(meeting, source, parsed_sessions, history, len(rooms))
+        try:
+            _mark_latest_changes(meeting, source, parsed_sessions, history, len(rooms))
+        except Exception as exc:  # the comparison only ranks; never block a run
+            print(f"  latest-change check skipped for {source.fileName}: {exc}")
         rooms.extend(parsed_rooms)
         sessions.extend(parsed_sessions)
     try:
