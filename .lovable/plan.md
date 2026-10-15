@@ -16,6 +16,12 @@ When several schedule files (or two tables in one file) disagree about the same 
    2. Then the existing rules: the chair's own table, then file count, then detail, then number of items.
 6. The losing version stays visible as a note, as it is today: "Another schedule file lists 10.5.3.2 here (older copy)".
 
+## What happens to voting
+Yes, the voting rule changes. Counting files stops being the main way to decide:
+- **Unchanged copies don't vote.** A file whose cell is identical to its own previous version gets no say against an edited cell. Its file still shows as a source.
+- **Edited beats everything else.** File count is only used when no block was edited (all unchanged or all v00), or to break a tie between edits from the same moment.
+- Without any edit, the outcome is the same as today. Only slots where someone actually changed something are decided differently.
+
 ## Corner cases
 - **First release (v00) or missing previous file**: marked unknown, so the current rules apply. Unknown never beats edited.
 - **The same file edits both of its tables in conflicting ways**: the grid wins on order and timing (grid vs detail tie-breaker). The detail table only adds finer splits for the same items. The block gets a note.
