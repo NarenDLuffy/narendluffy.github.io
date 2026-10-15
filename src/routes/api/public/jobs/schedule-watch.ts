@@ -63,7 +63,7 @@ export const Route = createFileRoute("/api/public/jobs/schedule-watch")({
         }
         if (newest <= lastRun) return Response.json({ action: "none", reason: "up to date", newestName });
 
-        const token = process.env.GITHUB_DISPATCH_TOKEN;
+        const token = process.env['GITHUB_DISPATCH_TOKEN'];
         if (!token) return Response.json({ action: "none", reason: "GITHUB_DISPATCH_TOKEN missing", newestName });
         const gh = {
           Authorization: `Bearer ${token}`,

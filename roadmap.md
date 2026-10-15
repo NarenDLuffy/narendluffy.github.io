@@ -15,3 +15,8 @@
 - [ ] User: enter this meeting's remote FTP host (RAN-<city>.3gpp.org) on the Drafts page
 - [ ] User: enable notifications on each device and test a summon alert end-to-end
 - [ ] User: confirm branch-level draft activity shows under a followed sub-item (e.g. 10.4.1)
+- [x] Drafts page shows the saved copy at once; live folders checked in the background, 6 at a time
+- [x] Remote FTP host accepts underscores (jeju_icc.3gpp.org)
+- [x] Timetable rebuilt from chair schedule v04; table disagreements shown on the blocks; Verify data no longer fails on them
+- [ ] User: create a GitHub token so the 5-minute backend watcher can start the timetable update (blocked on token)
+- [ ] User: decide whether the chair's grid or their detail table wins when they disagree (Friday 10.5.1 order)
