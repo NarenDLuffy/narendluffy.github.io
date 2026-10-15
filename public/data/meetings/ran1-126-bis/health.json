@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-15T09:46:21Z",
-    "lastAttemptAt": "2026-10-15T09:46:21Z",
-    "sessionCount": 258,
+    "lastSuccessAt": "2026-10-15T10:39:22Z",
+    "lastAttemptAt": "2026-10-15T10:39:22Z",
+    "sessionCount": 259,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -39,9 +39,7 @@
     ],
     "draftOnly": false,
     "gaps": [],
-    "coarser": [
-      "2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-de1e83d4 splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.8"
-    ],
+    "coarser": [],
     "shortBlockCount": 0,
     "conflictCount": 3,
     "lowConfidenceCount": 0
@@ -53,10 +51,6 @@
   },
   "warnings": [
     {
-      "level": "warn",
-      "text": "Less detail than the chair file: 2026-10-16 Tamna BC Hall 11:00-12:00 is published as one block but ran1-126-bis-de1e83d4 splits it: 11:00-11:10 10.2.1; 11:10-12:00 10.8."
-    },
-    {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
     },
@@ -67,13 +61,9 @@
     {
       "level": "info",
       "text": "Only 217 of 218 draft folders were opened this scan."
-    },
-    {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-10-15T10:34:27Z",
+  "updatedAt": "2026-10-15T10:39:49Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-15T10:33:53Z",

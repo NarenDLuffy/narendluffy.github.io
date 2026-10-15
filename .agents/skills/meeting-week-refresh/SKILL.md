@@ -82,3 +82,6 @@ then fix the parser. Never relax a check to make a run pass.
 
 Run the `schedule-granularity-audit` skill (`python -m ingestion.audit_granularity --meeting <slug>`);
 it must report "no mismatches" before you call the refresh done.
+
+## Latest-change check
+The rebuild log prints `<file>: N block(s) changed vs previous revision`. When a block looks wrong, check `public/data/meetings/<slug>/edit-history.json`: the winning block must be the one a chair edited most recently; notes marked "(older copy)" name the stale version. Never fix by changing votes; fix the signature or parse rule with a test.

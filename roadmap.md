@@ -19,4 +19,5 @@
 - [x] Remote FTP host accepts underscores (jeju_icc.3gpp.org)
 - [x] Timetable rebuilt from chair schedule v04; table disagreements shown on the blocks; Verify data no longer fails on them
 - [ ] User: create a GitHub token so the 5-minute backend watcher can start the timetable update (blocked on token)
-- [ ] User: decide whether the chair's grid or their detail table wins when they disagree (Friday 10.5.1 order)
+- [x] Latest-change rule: the table a chair edited most recently wins over untouched copies (Thu Room 201 10.5.3.4, Friday grid order)
+- [x] Voting question answered: file counts only break ties between equally fresh claims
