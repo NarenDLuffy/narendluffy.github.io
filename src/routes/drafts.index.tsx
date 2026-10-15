@@ -207,7 +207,14 @@ function DraftsPage() {
         </section>
       ) : null}
 
-      {!index ? (
+      {drafts.liveChecking && index ? (
+        <p className="text-[11px] text-muted-foreground">Checking live folders… showing the saved copy meanwhile.</p>
+      ) : null}
+      {!index && (drafts.isLoading || drafts.liveChecking) ? (
+        <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
+          Loading drafts…
+        </p>
+      ) : !index ? (
         <p className="rounded-lg border border-dashed border-border p-4 text-sm text-muted-foreground">
           No draft folder has been published for {meeting.name} yet. This page fills in
           automatically once uploads start appearing under the meeting's Inbox.

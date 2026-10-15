@@ -24,6 +24,7 @@ import { Route as MeetingsMeetingSlugRouteImport } from './routes/meetings.$meet
 import { Route as RoomsIndexRouteImport } from './routes/rooms.index'
 import { Route as RoomsRoomIdRouteImport } from './routes/rooms.$roomId'
 import { Route as ApiPublicMeetingFtpHostRouteImport } from './routes/api/public/meeting-ftp-host'
+import { Route as ApiPublicJobsScheduleWatchRouteImport } from './routes/api/public/jobs/schedule-watch'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -100,6 +101,12 @@ const ApiPublicMeetingFtpHostRoute = ApiPublicMeetingFtpHostRouteImport.update({
   path: '/api/public/meeting-ftp-host',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicJobsScheduleWatchRoute =
+  ApiPublicJobsScheduleWatchRouteImport.update({
+    id: '/api/public/jobs/schedule-watch',
+    path: '/api/public/jobs/schedule-watch',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -117,6 +124,7 @@ export interface FileRoutesByFullPath {
   '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
   '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
+  '/api/public/jobs/schedule-watch': typeof ApiPublicJobsScheduleWatchRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -133,6 +141,7 @@ export interface FileRoutesByTo {
   '/meetings': typeof MeetingsIndexRoute
   '/rooms': typeof RoomsIndexRoute
   '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
+  '/api/public/jobs/schedule-watch': typeof ApiPublicJobsScheduleWatchRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -151,6 +160,7 @@ export interface FileRoutesById {
   '/meetings/': typeof MeetingsIndexRoute
   '/rooms/': typeof RoomsIndexRoute
   '/api/public/meeting-ftp-host': typeof ApiPublicMeetingFtpHostRoute
+  '/api/public/jobs/schedule-watch': typeof ApiPublicJobsScheduleWatchRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -170,6 +180,7 @@ export interface FileRouteTypes {
     | '/meetings/'
     | '/rooms/'
     | '/api/public/meeting-ftp-host'
+    | '/api/public/jobs/schedule-watch'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -186,6 +197,7 @@ export interface FileRouteTypes {
     | '/meetings'
     | '/rooms'
     | '/api/public/meeting-ftp-host'
+    | '/api/public/jobs/schedule-watch'
   id:
     | '__root__'
     | '/'
@@ -203,6 +215,7 @@ export interface FileRouteTypes {
     | '/meetings/'
     | '/rooms/'
     | '/api/public/meeting-ftp-host'
+    | '/api/public/jobs/schedule-watch'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -219,6 +232,7 @@ export interface RootRouteChildren {
   MeetingsIndexRoute: typeof MeetingsIndexRoute
   RoomsIndexRoute: typeof RoomsIndexRoute
   ApiPublicMeetingFtpHostRoute: typeof ApiPublicMeetingFtpHostRoute
+  ApiPublicJobsScheduleWatchRoute: typeof ApiPublicJobsScheduleWatchRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -328,6 +342,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicMeetingFtpHostRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/jobs/schedule-watch': {
+      id: '/api/public/jobs/schedule-watch'
+      path: '/api/public/jobs/schedule-watch'
+      fullPath: '/api/public/jobs/schedule-watch'
+      preLoaderRoute: typeof ApiPublicJobsScheduleWatchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -358,6 +379,7 @@ const rootRouteChildren: RootRouteChildren = {
   MeetingsIndexRoute: MeetingsIndexRoute,
   RoomsIndexRoute: RoomsIndexRoute,
   ApiPublicMeetingFtpHostRoute: ApiPublicMeetingFtpHostRoute,
+  ApiPublicJobsScheduleWatchRoute: ApiPublicJobsScheduleWatchRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

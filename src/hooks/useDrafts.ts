@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
-import { buildActivity, draftsQueryOptions } from "@/services/draftService";
+import { buildActivity, draftsQueryOptions, draftsSnapshotQueryOptions } from "@/services/draftService";
 import {
   followedSince,
   getFollows,
@@ -21,7 +21,14 @@ import type { DraftNotificationPrefs } from "@/types/drafts";
  * the per-agenda rollup, and the device-local follow / seen / preference state.
  */
 export function useDrafts(meeting?: Meeting) {
-  const query = useQuery(draftsQueryOptions(meeting));
+  // Snapshot renders at once; the live crawl merges over it when it finishes.
+  const snapshot = useQuery(draftsSnapshotQueryOptions(meeting));
+  const live = useQuery({
+    ...draftsQueryOptions(meeting, snapshot.data),
+    enabled: Boolean(meeting) && snapshot.isFetched,
+  });
+  const query = live;
+  const data = live.data ?? snapshot.data;
   const meetingId = meeting?.id ?? "";
   const { bookmarks } = useBookmarks();
 
@@ -41,7 +48,7 @@ export function useDrafts(meeting?: Meeting) {
     () => "",
   );
 
-  const index = query.data?.index ?? null;
+  const index = data?.index ?? null;
   const follows = useMemo(() => (meetingId ? getFollows(meetingId) : []), [meetingId, followVersion]);
   const prefs = useMemo(() => getPrefs(), [prefsVersion]);
 
@@ -89,7 +96,7 @@ export function useDrafts(meeting?: Meeting) {
   const refreshNow = useCallback(async () => {
     setIsRefreshing(true);
     const before = new Map(
-      (query.data?.index?.artifacts ?? []).map((a) => [a.id, a.modifiedAt ?? a.lastSeenAt ?? ""]),
+      (data?.index?.artifacts ?? []).map((a) => [a.id, a.modifiedAt ?? a.lastSeenAt ?? ""]),
     );
     try {
       const result = await query.refetch();
@@ -114,7 +121,7 @@ export function useDrafts(meeting?: Meeting) {
     } finally {
       setIsRefreshing(false);
     }
-  }, [query]);
+  }, [query, data]);
 
   return {
     index,
@@ -124,16 +131,17 @@ export function useDrafts(meeting?: Meeting) {
     myItems,
     unreadCount,
     prefs,
-    stale: query.data?.stale ?? false,
-    liveOrigin: query.data?.liveOrigin,
-    liveCheckedAt: query.data?.liveCheckedAt,
-    hiddenCount: query.data?.hiddenCount ?? 0,
-    venueStatus: query.data?.venueStatus,
+    stale: data?.stale ?? false,
+    liveOrigin: live.data?.liveOrigin,
+    liveCheckedAt: live.data?.liveCheckedAt,
+    hiddenCount: live.data?.hiddenCount ?? 0,
+    venueStatus: live.data?.venueStatus,
     refresh: query.refetch,
     refreshNow,
     isRefreshing: isRefreshing || query.isFetching,
     lastRefresh,
-    isLoading: query.isLoading,
+    isLoading: snapshot.isLoading,
+    liveChecking: live.isFetching,
 
     isFollowing: (code: string) => follows.includes(code),
     toggleFollow: useCallback(

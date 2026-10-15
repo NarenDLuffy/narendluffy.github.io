@@ -347,6 +347,15 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         if clash and not all(
             o.start == block.start and o.end == block.end for o in clash
         ):
+            # A losing tiling that names the same items at other times is a
+            # disagreement between tables (often a chair's grid vs their detail
+            # table): keep it visible on the published blocks, never silent.
+            if set(block.agendaItems) & {c for o in clash for c in o.agendaItems}:
+                when = f"{block.start // 60:02d}:{block.start % 60:02d}-{block.end // 60:02d}:{block.end % 60:02d}"
+                said = ", ".join(block.agendaItems)
+                for o in clash:
+                    o.note = _join_note(o.note, f"Another schedule table lists {said} at {when}")
+                    o.sourceIds = list(dict.fromkeys([*o.sourceIds, *block.sourceIds]))
             continue
         kept.append(block)
     kept.sort(key=lambda b: (b.start, b.end, b.order))
