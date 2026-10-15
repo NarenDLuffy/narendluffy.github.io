@@ -120,6 +120,9 @@ class SessionSourceRef:
     # The table cell this block was read from (file|table|day|time|column|text):
     # one cell must never land in two rooms (validator.py).
     cell: str | None = None
+    # When this content first appeared in its document family (revision_diff):
+    # a fresh edit outranks untouched copies in other files.
+    introducedAt: str | None = None
 
 
 @dataclass
