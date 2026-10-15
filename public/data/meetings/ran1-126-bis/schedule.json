@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T10:36:13Z",
+  "generatedAt": "2026-10-15T10:38:22Z",
   "meetingId": "ran1-126-bis",
   "sessions": [
     {
@@ -8290,7 +8290,7 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_room-201-2f_1230_1300_10.5.3.2",
+      "sessionId": "ran1-126-bis_thu_room-201-2f_1230_1300_10.5.3.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
@@ -8298,18 +8298,24 @@
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-4a32de96",
       "roomName": "Room 201 (2F)",
-      "topic": "10.5.3.2",
+      "topic": "10.5.3.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.5.3.2"
+        "10.5.3.4"
       ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaodong",
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
-      "note": "Another schedule file lists 10.5.3.4 here",
+      "note": "Another schedule file lists 10.5.3.2 here (older copy)",
       "sources": [
+        {
+          "sourceId": "ran1-126-bis-de1e83d4",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
         {
           "sourceId": "ran1-126-bis-33f13c99",
           "contributed": [],
@@ -8318,12 +8324,6 @@
         },
         {
           "sourceId": "ran1-126-bis-fb38caa8",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-de1e83d4",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -8543,64 +8543,49 @@
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-865b413b",
       "roomName": "Room 203 (2F)",
-      "topic": "Hiroki",
-      "topicKey": "c94a6449",
+      "topic": "6G",
+      "topicKey": "779f8719",
       "agendaItems": [
         "10.5.4.x",
-        "10.5.4.3",
         "10.5.4.4",
-        "10.5.4.1",
-        "10.5.4.2"
+        "10.5.4.3",
+        "10.5.4.2",
+        "10.5.4.1"
       ],
       "agendaBreakdown": [
         {
-          "code": "10.5.4.x",
-          "label": "10.5.4.x",
-          "minutes": 120,
+          "code": "10.5.4.4",
+          "label": "10.5.4.4",
+          "minutes": null,
           "startTime": null,
           "endTime": null
         },
         {
           "code": "10.5.4.3",
           "label": "10.5.4.3",
-          "minutes": 35,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.5.4.4",
-          "label": "10.5.4.4",
-          "minutes": 40,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.5.4.1",
-          "label": "10.5.4.1",
-          "minutes": 50,
+          "minutes": null,
           "startTime": null,
           "endTime": null
         },
         {
           "code": "10.5.4.2",
           "label": "10.5.4.2",
-          "minutes": 25,
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.5.4.1",
+          "label": "10.5.4.1",
+          "minutes": null,
           "startTime": null,
           "endTime": null
         }
       ],
-      "sessionLead": "Hiroki",
-      "group": "Hiroki",
+      "group": "6G 10.5.4.x",
       "kind": "session",
       "status": "scheduled",
-      "note": "Minutes don't add up: items total 270 min, block is 120 min.",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-33f13c99",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-fb38caa8",
           "contributed": [],
@@ -8609,6 +8594,12 @@
         },
         {
           "sourceId": "ran1-126-bis-de1e83d4",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-126-bis-33f13c99",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -10706,7 +10697,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-15T10:36:13Z",
-    "lastAttemptAt": "2026-10-15T10:36:13Z"
+    "lastSuccessfulAt": "2026-10-15T10:38:22Z",
+    "lastAttemptAt": "2026-10-15T10:38:22Z"
   }
 }

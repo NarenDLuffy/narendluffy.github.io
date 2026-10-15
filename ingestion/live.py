@@ -326,7 +326,7 @@ def _latest_revisions(sources: list[ScheduleSource]) -> list[ScheduleSource]:
         older: dict[tuple, ScheduleSource] = {}
         for s in sorted(ranked[key], key=rank):  # one copy per revision, own folder last wins
             if rank(s)[:2] < rank(latest)[:2]:
-                older[tuple(rank(s)[:2])] = s
+                older[(rank(s)[0], tuple(rank(s)[1]))] = s
         if older:
             OLDER_REVISIONS[latest.sourceId] = [older[k] for k in sorted(older, reverse=True)][:MAX_LOOKBACK]
     return sorted(best.values(), key=lambda s: s.fileName.lower())
