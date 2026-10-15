@@ -602,17 +602,25 @@ def parse_block_schedule_docx(
         lane_fills: dict[int, dict[str, int]] = {}
         for row in rows[1:]:
             row_cells = _row_cells(row)
+            if not row_cells or not BLOCK_RE.search(row_cells[0].text) or BREAK_RE.search(row_cells[0].text):
+                continue
             for day_start, day_end in days.values():
                 width = max(1, day_end - day_start)
                 for cell in row_cells[1:]:
                     if not (cell.col_start < day_end and cell.col_end > day_start and cell.text.strip()):
                         continue
+                    if cell.continued or cell.col_end - cell.col_start != 1:
+                        continue  # merged cells are not evidence for a column's identity
                     if not cell.fill or re.fullmatch(r"TBD|N/?A", cell.text.strip(), re.I):
                         continue
                     lane = min(width - 1, max(0, cell.col_start - day_start))
                     counts = lane_fills.setdefault(lane, {})
                     counts[cell.fill] = counts.get(cell.fill, 0) + 1
-        preferred_fills = {lane: max(c, key=c.get) for lane, c in lane_fills.items() if c}
+        preferred_fills = {
+            lane: max(counts, key=counts.get)
+            for lane, counts in lane_fills.items()
+            if counts and sum(value == max(counts.values()) for value in counts.values()) == 1
+        }
         ordered_fills: list[str] = []
         for lane in sorted(preferred_fills):
             if preferred_fills[lane] not in ordered_fills:
@@ -703,6 +711,27 @@ def parse_block_schedule_docx(
                     if cell.col_start < day_end and cell.col_end > day_start
                 ]
                 in_day.sort(key=lambda cell: cell.col_start)
+                # Word can reset every cell in a day/slot to white while
+                # retaining the separate room columns (Friday main v05).
+                # Recover the identities only from an unambiguous, distinct
+                # table-wide column pattern. Never reinterpret merged cells,
+                # explicit coloured assignments, or continuation rows.
+                width = day_end - day_start
+                column_fills = [preferred_fills.get(lane) for lane in range(width)]
+                if (
+                    width > 1 and len(in_day) == width
+                    and all(fill is not None for fill in column_fills)
+                    and len(set(column_fills)) == width
+                    and all(
+                        cell.col_start == day_start + lane
+                        and cell.col_end == cell.col_start + 1
+                        and not cell.continued
+                        and cell.fill in (None, "FFFFFF")
+                        for lane, cell in enumerate(in_day)
+                    )
+                ):
+                    for lane, cell in enumerate(in_day):
+                        cell.fill = column_fills[lane]
                 if mode == "offline" and len(in_day) == 1 and len(ordered_fills) >= 2:
                     # One merged cell listing a placeholder per offline room
                     # ("To be assigned by A / To be assigned by B") is one per room.
