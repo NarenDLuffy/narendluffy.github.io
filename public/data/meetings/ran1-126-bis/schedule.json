@@ -1,47 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T23:03:36Z",
+  "generatedAt": "2026-10-17T01:28:34Z",
   "meetingId": "ran1-126-bis",
   "sessions": [
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_0900_1000_ran1-126b-commences-at-0",
+      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_0830_1000_agenda-items-1-2-3-4-5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
-      "startTime": "09:00",
+      "startTime": "08:30",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
       "roomName": "Tamna BC Hall",
-      "topic": "RAN1#126b commences at 09:00 on Monday",
-      "topicKey": "21232169",
+      "topic": "Agenda items 1, 2, 3, 4, 5",
+      "topicKey": "07ab94f0",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "RAN1#126b commences at 09:00 on Monday",
-      "kind": "plenary",
+      "group": "Agenda items 1, 2, 3, 4, 5",
+      "kind": "session",
       "status": "scheduled",
-      "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
         {
           "sourceId": "ran1-126-bis-00d0ecb6",
           "contributed": [],
           "cell": null,
           "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-33f13c99",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-80db0acd",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "detailAvailable": true
     },
     {
@@ -10872,7 +10859,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-16T23:03:36Z",
-    "lastAttemptAt": "2026-10-16T23:03:36Z"
+    "lastSuccessfulAt": "2026-10-17T01:28:34Z",
+    "lastAttemptAt": "2026-10-17T01:28:34Z"
   }
 }

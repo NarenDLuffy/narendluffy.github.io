@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-126-bis_mon_tamna-bc-hall_0830_1000_agenda-items-1-2-3-4-5-2026-10-17T01:32:17+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-17T01:32:17+00:00",
+    "type": "session_added",
+    "title": "Agenda items 1, 2, 3, 4, 5 added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_mon_tamna-bc-hall_0830_1000_agenda-items-1-2-3-4-5",
+    "to": "Tamna BC Hall 08:30-10:00",
+    "sourceIds": [
+      "ran1-126-bis-00d0ecb6"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-126-bis_mon_tamna-bc-hall_0900_1000_ran1-126b-commences-at-0-2026-10-17T01:32:17+00:00",
+    "meetingId": "ran1-126-bis",
+    "detectedAt": "2026-10-17T01:32:17+00:00",
+    "type": "session_removed",
+    "title": "RAN1#126b commences at 09:00 on Monday removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-126-bis_mon_tamna-bc-hall_0900_1000_ran1-126b-commences-at-0",
+    "sourceIds": [
+      "ran1-126-bis-00d0ecb6",
+      "ran1-126-bis-33f13c99",
+      "ran1-126-bis-80db0acd"
+    ],
+    "from": "Tamna BC Hall"
+  }
+]
