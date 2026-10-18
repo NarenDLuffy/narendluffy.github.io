@@ -3,9 +3,9 @@
   "meetingId": "ran1-126-bis",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-10-17T21:37:34Z",
-    "lastAttemptAt": "2026-10-17T21:37:34Z",
-    "sessionCount": 264,
+    "lastSuccessAt": "2026-10-18T00:12:43Z",
+    "lastAttemptAt": "2026-10-18T00:12:43Z",
+    "sessionCount": 251,
     "roomCount": 5,
     "dates": [
       "2026-10-12",
@@ -14,31 +14,26 @@
       "2026-10-15",
       "2026-10-16"
     ],
-    "sourceCount": 5,
+    "sourceCount": 4,
     "sources": [
       {
-        "label": "Chair notes RAN1#126bis_eom",
-        "fileName": "Chair notes RAN1#126bis_eom.docx",
+        "label": "Chair notes RAN1#126bis_v00",
+        "fileName": "Chair notes RAN1#126bis_v00.docx",
         "origin": "public"
       },
       {
-        "label": "Chair notes RAN1#126bis_v15",
-        "fileName": "Chair notes RAN1#126bis_v15.docx",
+        "label": "RAN1#126b online and offline schedules - v00",
+        "fileName": "RAN1#126b online and offline schedules - v00.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#126b online and offline schedules - v05",
-        "fileName": "RAN1#126b online and offline schedules - v05.docx",
+        "label": "RAN1#126b Sorour sessions online and offline schedules - v00",
+        "fileName": "RAN1#126b Sorour sessions online and offline schedules - v00.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#126b Sorour sessions online and offline schedules - v01",
-        "fileName": "RAN1#126b Sorour sessions online and offline schedules - v01.docx",
-        "origin": "public"
-      },
-      {
-        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v08",
-        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v08.docx",
+        "label": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v01",
+        "fileName": "RAN1#126bis schedule for Hiroki Adhoc2 sessions_v01.docx",
         "origin": "public"
       }
     ],
@@ -46,29 +41,19 @@
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 3,
+    "conflictCount": 0,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
-    "host": null,
     "credentials": true
   },
   "warnings": [
     {
       "level": "info",
-      "text": "3 unresolved source conflict(s)."
-    },
-    {
-      "level": "info",
       "text": "2005 file(s) the meeting server no longer holds are hidden."
-    },
-    {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-10-17T21:39:06Z",
+  "updatedAt": "2026-10-18T00:13:24Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-17T00:46:32Z",
