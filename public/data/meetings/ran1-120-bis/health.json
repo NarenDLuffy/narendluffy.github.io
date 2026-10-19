@@ -4,7 +4,7 @@
   "schedule": {
     "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:20:03Z",
-    "lastAttemptAt": "2026-10-18T23:21:57Z",
+    "lastAttemptAt": "2026-10-19T01:56:10Z",
     "sessionCount": 137,
     "roomCount": 5,
     "dates": [
@@ -101,14 +101,24 @@
     "conflictCount": 0,
     "lowConfidenceCount": 0,
     "gaps": [
+      "2025-04-07 Offline#1: Beijing: no session 15:30-16:00 although a schedule document fills it",
       "2025-04-08 RAN1 Main: no session 19:15-19:30 although a schedule document fills it",
+      "2025-04-08 Online room 2: no session 18:45-19:00 although a schedule document fills it",
+      "2025-04-08 Online room 1: no session 18:45-19:00 although a schedule document fills it",
       "2025-04-08 Offline#1: Beijing: no session 18:45-19:00 although a schedule document fills it",
-      "2025-04-09 Offline#2: Wuhan: no session 18:00-18:10 although a schedule document fills it"
+      "2025-04-09 Offline#2: Wuhan: no session 18:00-18:10 although a schedule document fills it",
+      "2025-04-10 Offline#2: Wuhan: no session 12:00-13:00 although a schedule document fills it",
+      "2025-04-10 Offline#1: Beijing: no session 15:30-16:30 although a schedule document fills it"
     ],
     "errors": [
+      "2025-04-07 Offline#1: Beijing: no session 15:30-16:00 although a schedule document fills it",
       "2025-04-08 RAN1 Main: no session 19:15-19:30 although a schedule document fills it",
+      "2025-04-08 Online room 2: no session 18:45-19:00 although a schedule document fills it",
+      "2025-04-08 Online room 1: no session 18:45-19:00 although a schedule document fills it",
       "2025-04-08 Offline#1: Beijing: no session 18:45-19:00 although a schedule document fills it",
-      "2025-04-09 Offline#2: Wuhan: no session 18:00-18:10 although a schedule document fills it"
+      "2025-04-09 Offline#2: Wuhan: no session 18:00-18:10 although a schedule document fills it",
+      "2025-04-10 Offline#2: Wuhan: no session 12:00-13:00 although a schedule document fills it",
+      "2025-04-10 Offline#1: Beijing: no session 15:30-16:30 although a schedule document fills it"
     ]
   },
   "remoteFtp": {
@@ -117,7 +127,19 @@
   "warnings": [
     {
       "level": "warn",
+      "text": "Timetable gap: 2025-04-07 Offline#1: Beijing: no session 15:30-16:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
       "text": "Timetable gap: 2025-04-08 RAN1 Main: no session 19:15-19:30 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2025-04-08 Online room 2: no session 18:45-19:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2025-04-08 Online room 1: no session 18:45-19:00 although a schedule document fills it."
     },
     {
       "level": "warn",
@@ -128,9 +150,17 @@
       "text": "Timetable gap: 2025-04-09 Offline#2: Wuhan: no session 18:00-18:10 although a schedule document fills it."
     },
     {
+      "level": "warn",
+      "text": "Timetable gap: 2025-04-10 Offline#2: Wuhan: no session 12:00-13:00 although a schedule document fills it."
+    },
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2025-04-10 Offline#1: Beijing: no session 15:30-16:30 although a schedule document fills it."
+    },
+    {
       "level": "info",
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-18T23:21:57Z"
+  "updatedAt": "2026-10-19T01:56:10Z"
 }
