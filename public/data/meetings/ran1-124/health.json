@@ -4,7 +4,7 @@
   "schedule": {
     "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:31:42Z",
-    "lastAttemptAt": "2026-10-19T17:40:35Z",
+    "lastAttemptAt": "2026-10-19T20:01:25Z",
     "sessionCount": 249,
     "roomCount": 6,
     "dates": [
@@ -61,18 +61,22 @@
     "conflictCount": 9,
     "lowConfidenceCount": 0,
     "gaps": [
-      "2026-02-10 F1+F2+F3: no session 17:45-18:00 although a schedule document fills it",
-      "2026-02-10 F1+F2+F3: no session 18:50-19:30 although a schedule document fills it",
-      "2026-02-11 J1: no session 14:30-15:50 although a schedule document fills it",
+      "2026-02-10 Lone Star Ballroom B: no session 17:45-18:00 although a schedule document fills it",
+      "2026-02-10 Lone Star Ballroom B: no session 18:50-19:30 although a schedule document fills it",
+      "2026-02-11 Lone Star Ballroom A4: no session 14:30-15:50 although a schedule document fills it",
       "2026-02-13 A3: no session 16:30-17:00 although a schedule document fills it",
-      "2026-02-13 F1+F2+F3: no session 16:30-17:00 although a schedule document fills it"
+      "2026-02-13 Lone Star Ballroom B: no session 16:30-17:00 although a schedule document fills it"
     ],
     "errors": [
-      "2026-02-10 F1+F2+F3: no session 17:45-18:00 although a schedule document fills it",
-      "2026-02-10 F1+F2+F3: no session 18:50-19:30 although a schedule document fills it",
-      "2026-02-11 J1: no session 14:30-15:50 although a schedule document fills it",
+      "2026-02-10 Lone Star Ballroom B: no session 17:45-18:00 although a schedule document fills it",
+      "2026-02-10 Lone Star Ballroom B: no session 18:50-19:30 although a schedule document fills it",
+      "2026-02-11 Lone Star Ballroom A4: no session 14:30-15:50 although a schedule document fills it",
       "2026-02-13 A3: no session 16:30-17:00 although a schedule document fills it",
-      "2026-02-13 F1+F2+F3: no session 16:30-17:00 although a schedule document fills it"
+      "2026-02-13 Lone Star Ballroom B: no session 16:30-17:00 although a schedule document fills it",
+      "2026-02-10 12:00: 10.2.1 is in both A3 and Seminar Theater at the same time",
+      "2026-02-11 09:30: 10.2.1 is in both A3 and Seminar Theater at the same time",
+      "2026-02-12 14:30: 10.2.1 is in both A3 and Seminar Theater at the same time",
+      "2026-02-13 09:30: 10.2.1 is in both A3 and Seminar Theater at the same time"
     ]
   },
   "remoteFtp": {
@@ -81,15 +85,15 @@
   "warnings": [
     {
       "level": "warn",
-      "text": "Timetable gap: 2026-02-10 F1+F2+F3: no session 17:45-18:00 although a schedule document fills it."
+      "text": "Timetable gap: 2026-02-10 Lone Star Ballroom B: no session 17:45-18:00 although a schedule document fills it."
     },
     {
       "level": "warn",
-      "text": "Timetable gap: 2026-02-10 F1+F2+F3: no session 18:50-19:30 although a schedule document fills it."
+      "text": "Timetable gap: 2026-02-10 Lone Star Ballroom B: no session 18:50-19:30 although a schedule document fills it."
     },
     {
       "level": "warn",
-      "text": "Timetable gap: 2026-02-11 J1: no session 14:30-15:50 although a schedule document fills it."
+      "text": "Timetable gap: 2026-02-11 Lone Star Ballroom A4: no session 14:30-15:50 although a schedule document fills it."
     },
     {
       "level": "warn",
@@ -97,7 +101,7 @@
     },
     {
       "level": "warn",
-      "text": "Timetable gap: 2026-02-13 F1+F2+F3: no session 16:30-17:00 although a schedule document fills it."
+      "text": "Timetable gap: 2026-02-13 Lone Star Ballroom B: no session 16:30-17:00 although a schedule document fills it."
     },
     {
       "level": "info",
@@ -108,5 +112,5 @@
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-19T17:40:35Z"
+  "updatedAt": "2026-10-19T20:01:25Z"
 }
