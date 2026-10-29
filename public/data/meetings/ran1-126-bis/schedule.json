@@ -1,45 +1,52 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T02:40:03Z",
+  "generatedAt": "2026-10-29T10:32:58Z",
   "meetingId": "ran1-126-bis",
   "sessions": [
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_0830_1000_agenda-items-1-2-3-4-5",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_0900_1000_ran1-126b-commences-at-0",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
-      "startTime": "08:30",
+      "startTime": "09:00",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
-      "topic": "Agenda items 1, 2, 3, 4, 5",
-      "topicKey": "07ab94f0",
+      "roomName": "TamnaBC (5F)",
+      "topic": "RAN1#126b commences at 09:00 on Monday",
+      "topicKey": "21232169",
       "agendaItems": [],
       "agendaBreakdown": [],
-      "group": "Agenda items 1, 2, 3, 4, 5",
-      "kind": "session",
+      "group": "RAN1#126b commences at 09:00 on Monday",
+      "kind": "plenary",
       "status": "scheduled",
+      "note": "Agenda items 1, 2, 3, 4, 5",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
+          "sourceId": "ran1-126-bis-561748bd",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
           "introducedAt": null
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1000_1030_10.5.1.1",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1000_1030_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "10:00",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -50,12 +57,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -91,12 +92,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -114,14 +109,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1100_1130_10.5.1.1",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1100_1130_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "11:00",
       "endTime": "11:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -132,12 +127,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -177,12 +166,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -221,12 +204,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -264,12 +241,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -288,14 +259,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1130_1220_10.5.1.2",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1130_1220_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "11:30",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -306,12 +277,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -350,12 +315,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -416,12 +375,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -433,14 +386,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1220_1300_10.5.1.3",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1220_1300_10.5.1.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -451,12 +404,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -496,12 +443,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -536,12 +477,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -559,14 +494,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1430_1530_10.4.x",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1430_1530_10.4.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -577,12 +512,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -602,14 +531,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1430_1510_9.4",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1430_1510_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:10",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN-NR",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -627,12 +556,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -645,14 +568,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1430_1530_9.3.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1430_1530_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "14:30",
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -665,12 +588,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -707,12 +624,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -752,12 +663,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -795,12 +700,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -870,12 +769,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -887,14 +780,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1510_1530_9.5",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1510_1530_9.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "15:10",
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "2bfc3eac",
       "agendaItems": [
@@ -905,12 +798,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -930,14 +817,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1530_1630_10.6.x",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1530_1630_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.6.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -948,12 +835,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -973,14 +854,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1530_1630_10.7.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1530_1630_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -991,12 +872,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1016,14 +891,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1530_1630_10.8.2",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1530_1630_10.8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "15:30",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.2",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -1036,12 +911,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -1078,12 +947,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1123,12 +986,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1163,12 +1020,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1186,14 +1037,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1700_1800_10.5.3.1",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1700_1800_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1204,12 +1055,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1229,14 +1074,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1700_1740_9.2",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1700_1740_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "17:40",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -1254,12 +1099,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -1272,14 +1111,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1700_1740_10.5.4.4",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1700_1740_10.5.4.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:00",
       "endTime": "17:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.4",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -1323,12 +1162,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1367,12 +1200,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1391,14 +1218,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1740_1810_10.3.2",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1740_1810_10.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:40",
       "endTime": "18:10",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1409,12 +1236,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1434,14 +1255,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1740_1820_10.5.4.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1740_1820_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "17:40",
       "endTime": "18:20",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.1",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -1485,12 +1306,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1529,12 +1344,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1553,14 +1362,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1800_1830_10.5.3.2",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1800_1830_10.5.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1571,12 +1380,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1596,14 +1399,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1810_1900_10.3.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1810_1900_10.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "18:10",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1614,12 +1417,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1659,12 +1456,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1683,14 +1474,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1820_1900_10.5.4.3",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1820_1900_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "18:20",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -1734,12 +1525,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -1758,14 +1543,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1830_1900_10.5.3.3",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1830_1900_10.5.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "18:30",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1776,12 +1561,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1819,12 +1598,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1870,12 +1643,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -1888,14 +1655,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_tamna-bc-hall_1900_1930_10.5.3.4",
+      "sessionId": "ran1-126-bis_mon_tamnabc-5f_1900_1930_10.5.3.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1906,12 +1673,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1931,14 +1692,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-a-hall_1900_1930_10.5.2.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-a-1f_1900_1930_10.5.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1949,12 +1710,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -1974,14 +1729,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_mon_yeongju-b-hall_1900_1930_10.2.1",
+      "sessionId": "ran1-126-bis_mon_yeongju-b-1f_1900_1930_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-12",
       "day": "Monday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -1992,12 +1747,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2017,14 +1766,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_0830_0910_10.5.1.3",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_0830_0910_10.5.1.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2035,12 +1784,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2060,14 +1803,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_0830_0920_10.7.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0830_0920_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2078,12 +1821,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2103,14 +1840,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_0830_0910_10.5.4.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_0830_0910_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.1",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -2177,12 +1914,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2241,12 +1972,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2258,14 +1983,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_0910_1000_10.5.1.2",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_0910_1000_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:10",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2276,12 +2001,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2301,14 +2020,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_0910_0950_10.5.4.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_0910_0950_10.5.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:10",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.2",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -2332,14 +2051,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_0920_0950_9.5",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0920_0950_9.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:20",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "2bfc3eac",
       "agendaItems": [
@@ -2350,12 +2069,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2375,14 +2088,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_0950_1030_9.4",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_0950_1030_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NR-NTN",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -2400,12 +2113,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -2418,14 +2125,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_0950_1030_10.5.4.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_0950_1030_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -2449,14 +2156,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1000_1030_10.5.1.1",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1000_1030_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "10:00",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2467,12 +2174,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2512,12 +2213,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2552,12 +2247,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2575,14 +2264,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1100_1140_10.5.5",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1100_1140_10.5.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2593,12 +2282,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2618,14 +2301,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1100_1140_9.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1100_1140_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AIML",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -2643,12 +2326,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -2661,14 +2338,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1100_1140_10.8.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1100_1140_10.8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.3",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -2712,12 +2389,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2755,12 +2426,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2800,12 +2465,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -2824,14 +2483,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1140_1220_10.4.2",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1140_1220_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -2842,12 +2501,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -2867,14 +2520,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1140_1220_9.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1140_1220_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -2892,12 +2545,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -2910,14 +2557,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1140_1220_10.8.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1140_1220_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.1",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -2961,12 +2608,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3005,12 +2646,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3029,14 +2664,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1220_1300_10.4.1",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1220_1300_10.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3047,12 +2682,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3072,14 +2701,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1220_1300_8.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1220_1300_8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AI",
       "topicKey": "1737c410",
       "agendaItems": [
@@ -3090,12 +2719,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3115,14 +2738,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1220_1300_9.3.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1220_1300_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -3135,12 +2758,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-bis-a242418b",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -3178,12 +2795,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3218,12 +2829,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3241,14 +2846,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1430_1530_10.6.x",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1430_1530_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.6.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3259,12 +2864,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3284,14 +2883,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1430_1500_10.5.2.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1430_1500_10.5.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "15:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3302,12 +2901,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3327,14 +2920,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1430_1440_11-tei20",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1430_1440_11-tei20",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:30",
       "endTime": "14:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "11 TEI20",
       "topicKey": "f244604b",
       "agendaItems": [],
@@ -3374,12 +2967,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3440,12 +3027,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3457,14 +3038,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1440_1505_8.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1440_1505_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "14:40",
       "endTime": "15:05",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "R19 Duplex, R19 ISAC CM, R19 XR",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -3488,14 +3069,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1500_1545_10.5.2.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1500_1545_10.5.2.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:00",
       "endTime": "15:45",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3506,12 +3087,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3531,14 +3106,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1505_1530_8.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1505_1530_8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:05",
       "endTime": "15:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "UE features",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -3582,12 +3157,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3606,14 +3175,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1530_1630_10.5.1.1",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1530_1630_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3624,12 +3193,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3649,14 +3212,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1530_1550_8.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1530_1550_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:30",
       "endTime": "15:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "R19 LP-WUS",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -3700,12 +3263,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3724,14 +3281,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1545_1630_10.5.2.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1545_1630_10.5.2.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:45",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3742,12 +3299,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3767,14 +3318,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1550_1630_10.2.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1550_1630_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "15:50",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "Waveform",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3785,12 +3336,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3830,12 +3375,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3874,12 +3413,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3914,12 +3447,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -3937,14 +3464,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1700_1730_10.5.3.2",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1700_1730_10.5.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "17:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3955,12 +3482,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -3980,14 +3501,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1700_1800_10.3.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1700_1800_10.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -3998,12 +3519,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4023,14 +3538,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1700_1800_9.3.3",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1700_1800_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.3",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -4074,12 +3589,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4118,12 +3627,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4142,14 +3645,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1730_1800_10.5.3.3",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1730_1800_10.5.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "17:30",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4160,12 +3663,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4205,12 +3702,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4249,12 +3740,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4273,14 +3758,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_tamna-bc-hall_1800_1830_10.5.3.4",
+      "sessionId": "ran1-126-bis_tue_tamnabc-5f_1800_1830_10.5.3.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4291,12 +3776,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4316,14 +3795,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-a-hall_1800_1830_10.3.2",
+      "sessionId": "ran1-126-bis_tue_yeongju-a-1f_1800_1830_10.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4334,12 +3813,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4359,14 +3832,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1800_1830_9.3.1",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1800_1830_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -4416,12 +3889,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -4434,14 +3901,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_tue_yeongju-b-hall_1830_1930_early-dinner",
+      "sessionId": "ran1-126-bis_tue_yeongju-b-1f_1830_1930_early-dinner",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-13",
       "day": "Tuesday",
       "startTime": "18:30",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "Early dinner",
       "topicKey": "059aafc3",
       "agendaItems": [],
@@ -4462,14 +3929,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_0830_0920_10.5.1.1",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_0830_0920_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4480,12 +3947,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4505,14 +3966,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0830_0910_10.7.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0830_0910_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4523,12 +3984,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4548,14 +4003,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0830_0910_9.3.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_0830_0910_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -4599,12 +4054,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4642,12 +4091,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4696,14 +4139,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0910_0950_9.4",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0910_0950_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "09:10",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NR-NTN",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -4721,12 +4164,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -4739,14 +4176,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0910_0950_9.3.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_0910_0950_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "09:10",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.3",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -4790,12 +4227,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -4813,14 +4244,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_0920_1000_10.5.1.3",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_0920_1000_10.5.1.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "09:20",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -4831,12 +4262,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -4902,14 +4327,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_0950_1030_9.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_0950_1030_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -4927,12 +4352,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -4945,14 +4364,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_0950_1030_9.3.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_0950_1030_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -4996,12 +4415,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5020,14 +4433,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1000_1030_10.5.1.2",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1000_1030_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "10:00",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5038,12 +4451,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5079,12 +4486,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5102,14 +4503,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1100_1200_10.5.3.1",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1100_1200_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "12:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5120,12 +4521,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5145,14 +4540,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1100_1200_9.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1100_1200_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "12:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AIML",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -5170,12 +4565,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -5188,14 +4577,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1100_1140_10.8.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1100_1140_10.8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.2",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -5239,12 +4628,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5282,12 +4665,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5327,12 +4704,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5351,14 +4722,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1140_1220_10.8.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1140_1220_10.8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.3",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -5382,14 +4753,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1200_1230_10.5.3.2",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1200_1230_10.5.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:00",
       "endTime": "12:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5400,12 +4771,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5425,14 +4790,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1200_1230_8.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1200_1230_8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:00",
       "endTime": "12:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AI",
       "topicKey": "1737c410",
       "agendaItems": [
@@ -5443,12 +4808,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5468,14 +4827,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1220_1300_10.8.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1220_1300_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.1",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -5499,14 +4858,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1230_1300_10.5.3.3",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1230_1300_10.5.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:30",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5517,12 +4876,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5542,14 +4895,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1230_1300_10.5.2.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1230_1300_10.5.2.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "12:30",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5560,12 +4913,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5610,12 +4957,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5647,12 +4988,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5687,12 +5022,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5710,14 +5039,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1430_1500_10.5.3.4",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1430_1500_10.5.3.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5728,12 +5057,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5753,14 +5076,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1430_1510_10.5.2.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1430_1510_10.5.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:10",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5771,12 +5094,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5796,14 +5113,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1430_1500_8.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1430_1500_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "14:30",
       "endTime": "15:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "R19 LP-WUS, R19/20 Mobility",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -5877,12 +5194,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5914,12 +5225,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -5938,14 +5243,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1500_1630_10.6.x",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1500_1630_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "15:00",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.6.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -5956,12 +5261,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -5981,14 +5280,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1500_1600_7",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1500_1600_7",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "15:00",
       "endTime": "16:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "pre-Rel-19 CRs, UE features, R19 Duplex",
       "topicKey": "5b30e2c5",
       "agendaItems": [
@@ -6013,14 +5312,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1510_1630_10.5.2.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1510_1630_10.5.2.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "15:10",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6031,12 +5330,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6105,12 +5398,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6142,12 +5429,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6166,14 +5447,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1600_1630_r20-coverage-rrc",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1600_1630_r20-coverage-rrc",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "16:00",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "R20 Coverage RRC",
       "topicKey": "478442c0",
       "agendaItems": [],
@@ -6182,12 +5463,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6226,12 +5501,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6266,12 +5535,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6289,14 +5552,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1700_1740_10.4.1",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1700_1740_10.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "17:40",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6307,12 +5570,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6332,14 +5589,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1700_1800_10.3.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1700_1800_10.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6350,12 +5607,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6375,30 +5626,24 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1700_1730_10.2.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1700_1730_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "17:00",
       "endTime": "17:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.2.1",
-      "topicKey": "f8e05aee",
+      "topicKey": "5ef55a59",
       "agendaItems": [
         "10.2.1"
       ],
       "agendaBreakdown": [],
-      "group": "6GR",
+      "group": "6G waveform",
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
@@ -6407,7 +5652,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.75,
+      "confidence": 0.7,
       "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
@@ -6431,12 +5676,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6476,12 +5715,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6500,14 +5733,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1730_1800_10.5.4.1",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1730_1800_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "17:30",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.1",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -6551,12 +5784,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6575,14 +5802,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1740_1820_10.4.2",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1740_1820_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "17:40",
       "endTime": "18:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6593,12 +5820,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6618,14 +5839,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1800_1830_10.3.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1800_1830_10.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6636,12 +5857,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6661,14 +5876,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1800_1820_10.5.4.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1800_1820_10.5.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:00",
       "endTime": "18:20",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.2",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -6712,12 +5927,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6756,12 +5965,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6780,14 +5983,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1820_1900_10.5.5",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1820_1900_10.5.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:20",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6798,12 +6001,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6823,14 +6020,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1820_1850_10.5.4.4",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1820_1850_10.5.4.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:20",
       "endTime": "18:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.4",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -6854,14 +6051,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-a-hall_1830_1930_10.5.2.2",
+      "sessionId": "ran1-126-bis_wed_yeongju-a-1f_1830_1930_10.5.2.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:30",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6872,12 +6069,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -6917,12 +6108,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -6941,14 +6126,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_yeongju-b-hall_1850_1930_10.5.4.3",
+      "sessionId": "ran1-126-bis_wed_yeongju-b-1f_1850_1930_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "18:50",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -6972,14 +6157,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_wed_tamna-bc-hall_1900_1930_10.5.3.1",
+      "sessionId": "ran1-126-bis_wed_tamnabc-5f_1900_1930_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-14",
       "day": "Wednesday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -6990,12 +6175,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7034,12 +6213,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7085,12 +6258,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -7103,14 +6270,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_0830_0920_10.5.1.1",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_0830_0920_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "09:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7121,12 +6288,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7146,14 +6307,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0830_0920_10.7.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0830_0920_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "09:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7164,12 +6325,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7189,14 +6344,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_0830_0910_10.2.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_0830_0910_10.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "Waveform",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7207,12 +6362,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7252,12 +6401,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7296,12 +6439,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7339,12 +6476,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7363,14 +6494,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_0910_1030_8.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_0910_1030_8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "09:10",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "7",
       "topicKey": "7e6989e7",
       "agendaItems": [
@@ -7381,12 +6512,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7428,12 +6553,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7452,14 +6571,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_0920_1000_10.5.1.2",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_0920_1000_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "09:20",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7470,12 +6589,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7495,14 +6608,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0920_0950_9.5",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0920_0950_9.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "09:20",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "2bfc3eac",
       "agendaItems": [
@@ -7513,12 +6626,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7558,12 +6665,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7582,14 +6683,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_0950_1030_9.4",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_0950_1030_9.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NR-NTN",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -7607,12 +6708,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -7625,14 +6720,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1000_1030_10.5.1.3",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1000_1030_10.5.1.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "10:00",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7643,12 +6738,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7684,12 +6773,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7707,14 +6790,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1100_1140_10.5.5",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1100_1140_10.5.5",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.5",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7725,12 +6808,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7750,14 +6827,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1100_1130_8.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1100_1130_8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "11:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AI",
       "topicKey": "1737c410",
       "agendaItems": [
@@ -7768,12 +6845,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -7793,14 +6864,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1100_1140_9.3.3",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1100_1140_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:00",
       "endTime": "11:40",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.3",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -7873,12 +6944,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7910,12 +6975,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -7934,14 +6993,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1130_1220_9.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1130_1220_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:30",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AIML",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -7959,12 +7018,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -7977,14 +7030,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1140_1220_10.4.1",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1140_1220_10.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -7995,12 +7048,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8020,14 +7067,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1140_1220_9.3.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1140_1220_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "11:40",
       "endTime": "12:20",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -8071,12 +7118,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8115,12 +7156,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8139,14 +7174,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1220_1300_10.4.2",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1220_1300_10.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.4.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8157,12 +7192,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8182,14 +7211,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1220_1300_9.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1220_1300_9.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "MIMO",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -8207,12 +7236,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-a242418b",
           "contributed": [],
           "cell": null,
@@ -8225,14 +7248,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1220_1300_9.3.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1220_1300_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "12:20",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -8276,12 +7299,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8316,12 +7333,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8339,14 +7350,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1430_1600_10.6.x",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1430_1600_10.6.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "16:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.6.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8357,12 +7368,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8382,14 +7387,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1430_1500_10.5.2.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1430_1500_10.5.2.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "15:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8400,12 +7405,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8425,14 +7424,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1430_1510_10.8.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1430_1510_10.8.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "14:30",
       "endTime": "15:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.1",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -8475,12 +7474,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8571,12 +7564,6 @@
           "contributed": [],
           "cell": null,
           "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
         }
       ],
       "derivation": "direct",
@@ -8584,14 +7571,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1500_1545_10.5.2.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1500_1545_10.5.2.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:00",
       "endTime": "15:45",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8602,12 +7589,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8647,12 +7628,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8671,14 +7646,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1510_1550_10.8.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1510_1550_10.8.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:10",
       "endTime": "15:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.2",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -8722,12 +7697,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8746,14 +7715,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1545_1630_10.5.2.3",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1545_1630_10.5.2.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:45",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8764,12 +7733,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8789,14 +7752,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1550_1630_10.8.3",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1550_1630_10.8.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "15:50",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.8.3",
       "topicKey": "c63f99f3",
       "agendaItems": [
@@ -8820,14 +7783,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1600_1630_10.5.3.1",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1600_1630_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "16:00",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8838,12 +7801,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8883,12 +7840,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8923,12 +7874,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -8946,14 +7891,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1700_1750_10.5.3.1",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1700_1750_10.5.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "17:50",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -8964,12 +7909,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -8989,14 +7928,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1700_1800_10.3.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1700_1800_10.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Channel coding",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9007,12 +7946,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9032,14 +7965,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1700_1730_10.5.4.4",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1700_1730_10.5.4.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "17:00",
       "endTime": "17:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.4",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -9083,12 +8016,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9127,12 +8054,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9150,14 +8071,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1730_1810_10.5.4.3",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1730_1810_10.5.4.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "17:30",
       "endTime": "18:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.3",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -9230,12 +8151,6 @@
           "introducedAt": null
         },
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9247,14 +8162,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1750_1830_10.5.3.2",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1750_1830_10.5.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "17:50",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9265,12 +8180,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9310,12 +8219,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9334,14 +8237,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1800_1830_10.3.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1800_1830_10.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "18:00",
       "endTime": "18:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "Modulation",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9352,12 +8255,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9377,14 +8274,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1810_1900_10.5.4.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1810_1900_10.5.4.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "18:10",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.1",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -9408,14 +8305,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1830_1900_10.5.3.3",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1830_1900_10.5.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "18:30",
       "endTime": "19:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9426,12 +8323,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9451,14 +8342,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-a-hall_1830_1930_9.1",
+      "sessionId": "ran1-126-bis_thu_yeongju-a-1f_1830_1930_9.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "18:30",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "AIML",
       "topicKey": "67daaad6",
       "agendaItems": [
@@ -9471,12 +8362,6 @@
       "sources": [
         {
           "sourceId": "ran1-126-bis-561748bd",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
           "contributed": [],
           "cell": null,
           "introducedAt": null
@@ -9514,12 +8399,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9538,14 +8417,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_tamna-bc-hall_1900_1930_10.5.3.4",
+      "sessionId": "ran1-126-bis_thu_tamnabc-5f_1900_1930_10.5.3.4",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.3.4",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9556,12 +8435,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9581,14 +8454,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_thu_yeongju-b-hall_1900_1930_10.5.4.2",
+      "sessionId": "ran1-126-bis_thu_yeongju-b-1f_1900_1930_10.5.4.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-15",
       "day": "Thursday",
       "startTime": "19:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "10.5.4.2",
       "topicKey": "779f8719",
       "agendaItems": [
@@ -9632,12 +8505,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -9656,14 +8523,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0830_0920_10.5.1.1",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_0830_0920_10.5.1.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "09:20",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.1",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9674,12 +8541,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9699,14 +8560,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-hall_0830_0930_10.7.1",
+      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_0830_0930_10.7.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "09:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "NTN",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9717,12 +8578,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9742,14 +8597,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0830_0910_9.3.1",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-1f_0830_0910_9.3.1",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "08:30",
       "endTime": "09:10",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.1",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -9773,14 +8628,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0910_0950_9.3.2",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-1f_0910_0950_9.3.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:10",
       "endTime": "09:50",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.2",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -9804,14 +8659,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_0920_1000_10.5.1.2",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_0920_1000_10.5.1.2",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:20",
       "endTime": "10:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.2",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9822,12 +8677,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9847,14 +8696,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-hall_0930_1030_10.5.2.x",
+      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_0930_1030_10.5.2.x",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:30",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "10.5.2.x",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9865,12 +8714,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9890,14 +8733,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_0950_1030_9.3.3",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-1f_0950_1030_9.3.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "09:50",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "9.3.3",
       "topicKey": "929f9bed",
       "agendaItems": [
@@ -9921,14 +8764,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1000_1030_10.5.1.3",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_1000_1030_10.5.1.3",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "10:00",
       "endTime": "10:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "10.5.1.3",
       "topicKey": "f8e05aee",
       "agendaItems": [
@@ -9939,12 +8782,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -9980,12 +8817,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10003,14 +8834,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1100_1300_sweep",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_1100_1300_sweep",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "Sweep",
       "topicKey": "ef4d07e4",
       "agendaItems": [],
@@ -10019,12 +8850,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -10043,14 +8868,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-a-hall_1100_1300_tbd",
+      "sessionId": "ran1-126-bis_fri_yeongju-a-1f_1100_1300_tbd",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3ae1b827",
-      "roomName": "Yeongju A Hall",
+      "roomName": "Yeongju A (1F)",
       "topic": "TBD",
       "topicKey": "1d9c8ac0",
       "agendaItems": [],
@@ -10071,14 +8896,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_1100_1300_tbd",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-1f_1100_1300_tbd",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "11:00",
       "endTime": "13:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "TBD",
       "topicKey": "1d9c8ac0",
       "agendaItems": [],
@@ -10115,12 +8940,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10138,14 +8957,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1430_1630_any-other-open-issues",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_1430_1630_any-other-open-issues",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "14:30",
       "endTime": "16:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "Any other open issues",
       "topicKey": "40db1e26",
       "agendaItems": [],
@@ -10154,12 +8973,6 @@
       "kind": "session",
       "status": "scheduled",
       "sources": [
-        {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
         {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
@@ -10195,12 +9008,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10235,12 +9042,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10274,12 +9075,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10297,14 +9092,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_tamna-bc-hall_1700_1930_any-other-open-issues",
+      "sessionId": "ran1-126-bis_fri_tamnabc-5f_1700_1930_any-other-open-issues",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "19:30",
       "roomId": "ran1-126-bis-room-bda89f04",
-      "roomName": "Tamna BC Hall",
+      "roomName": "TamnaBC (5F)",
       "topic": "Any other open issues",
       "topicKey": "40db1e26",
       "agendaItems": [],
@@ -10314,12 +9109,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10337,14 +9126,14 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-126-bis_fri_yeongju-b-hall_1700_1800_ran1-126b-expected-to-cl",
+      "sessionId": "ran1-126-bis_fri_yeongju-b-1f_1700_1800_ran1-126b-expected-to-cl",
       "meetingId": "ran1-126-bis",
       "date": "2026-10-16",
       "day": "Friday",
       "startTime": "17:00",
       "endTime": "18:00",
       "roomId": "ran1-126-bis-room-3d4808b9",
-      "roomName": "Yeongju B Hall",
+      "roomName": "Yeongju B (1F)",
       "topic": "RAN1#126b expected to close at 17:00",
       "topicKey": "c201cf29",
       "agendaItems": [],
@@ -10382,12 +9171,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10422,12 +9205,6 @@
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-126-bis-5dbb7698",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-126-bis-561748bd",
           "contributed": [],
           "cell": null,
@@ -10448,7 +9225,7 @@
   "conflicts": [],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-10-29T02:40:03Z",
-    "lastAttemptAt": "2026-10-29T02:40:03Z"
+    "lastSuccessfulAt": "2026-10-29T10:32:58Z",
+    "lastAttemptAt": "2026-10-29T10:32:58Z"
   }
 }
