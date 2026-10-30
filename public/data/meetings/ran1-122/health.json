@@ -4,7 +4,7 @@
   "schedule": {
     "state": "validation-failed",
     "lastSuccessAt": "2026-10-13T12:26:26Z",
-    "lastAttemptAt": "2026-10-29T22:21:38Z",
+    "lastAttemptAt": "2026-10-30T09:12:12Z",
     "sessionCount": 117,
     "roomCount": 5,
     "dates": [
@@ -80,13 +80,9 @@
     "draftOnly": false,
     "conflictCount": 0,
     "lowConfidenceCount": 0,
-    "gaps": [
-      "2025-08-25 Convention Hall: no session 10:00-10:30 although a schedule document fills it",
-      "2025-08-26 Convention Hall: no session 17:10-17:30 although a schedule document fills it"
-    ],
+    "gaps": [],
     "errors": [
-      "2025-08-25 Convention Hall: no session 10:00-10:30 although a schedule document fills it",
-      "2025-08-26 Convention Hall: no session 17:10-17:30 although a schedule document fills it"
+      "session coverage collapsed from 116 to 0 slots; refusing publish"
     ]
   },
   "remoteFtp": {
@@ -94,17 +90,9 @@
   },
   "warnings": [
     {
-      "level": "warn",
-      "text": "Timetable gap: 2025-08-25 Convention Hall: no session 10:00-10:30 although a schedule document fills it."
-    },
-    {
-      "level": "warn",
-      "text": "Timetable gap: 2025-08-26 Convention Hall: no session 17:10-17:30 although a schedule document fills it."
-    },
-    {
       "level": "info",
       "text": "No draft index has been published for this meeting yet."
     }
   ],
-  "updatedAt": "2026-10-29T22:21:38Z"
+  "updatedAt": "2026-10-30T09:12:12Z"
 }
