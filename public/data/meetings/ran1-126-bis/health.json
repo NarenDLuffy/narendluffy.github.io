@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-126-bis",
   "schedule": {
-    "state": "validation-failed",
-    "lastSuccessAt": "2026-10-31T22:37:15Z",
-    "lastAttemptAt": "2026-11-01T02:28:34Z",
+    "state": "ok",
+    "lastSuccessAt": "2026-11-01T16:21:18Z",
+    "lastAttemptAt": "2026-11-01T16:21:18Z",
     "sessionCount": 251,
     "roomCount": 5,
     "dates": [
@@ -47,10 +47,7 @@
     "coarser": [],
     "shortBlockCount": 0,
     "conflictCount": 0,
-    "lowConfidenceCount": 0,
-    "errors": [
-      "session coverage collapsed from 250 to 0 slots; refusing publish"
-    ]
+    "lowConfidenceCount": 0
   },
   "remoteFtp": {
     "credentials": true
@@ -61,7 +58,7 @@
       "text": "2005 file(s) the meeting server no longer holds are hidden."
     }
   ],
-  "updatedAt": "2026-11-01T02:28:34Z",
+  "updatedAt": "2026-11-01T16:26:27Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-10-17T00:46:32Z",
