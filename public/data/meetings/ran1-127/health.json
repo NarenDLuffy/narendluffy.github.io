@@ -3,14 +3,31 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-11T03:03:15Z",
-    "lastAttemptAt": "2026-11-11T03:03:15Z",
-    "sessionCount": 0,
-    "roomCount": 0,
-    "dates": [],
-    "sourceCount": 0,
-    "sources": [],
-    "draftOnly": false,
+    "lastSuccessAt": "2026-11-11T11:06:46Z",
+    "lastAttemptAt": "2026-11-11T11:06:46Z",
+    "sessionCount": 235,
+    "roomCount": 5,
+    "dates": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "sourceCount": 2,
+    "sources": [
+      {
+        "label": "Draft Chair notes RAN1#127_v02",
+        "fileName": "Draft Chair notes RAN1#127_v02.docx",
+        "origin": "public"
+      },
+      {
+        "label": "Draft RAN1#127 online and offline schedules - v01",
+        "fileName": "Draft RAN1#127 online and offline schedules - v01.docx",
+        "origin": "public"
+      }
+    ],
+    "draftOnly": true,
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
@@ -18,17 +35,10 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "outside-meeting-week",
-    "host": null,
     "credentials": true
   },
-  "warnings": [
-    {
-      "level": "info",
-      "text": "No timetable has been published for this meeting yet."
-    }
-  ],
-  "updatedAt": "2026-11-11T10:31:25Z",
+  "warnings": [],
+  "updatedAt": "2026-11-11T11:07:05Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-11T10:31:07Z",
