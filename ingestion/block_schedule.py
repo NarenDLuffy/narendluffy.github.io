@@ -281,6 +281,21 @@ def _item_codes(label: str) -> list[str]:
     return out
 
 
+def _items_minutes_after(lines: list[str], index: int) -> int:
+    """Stated minutes of the item lines that directly follow lines[index]."""
+    total = 0
+    for line in lines[index + 1:]:
+        codes = _code_list(line)
+        label, minutes = _split_head(line)
+        if codes:
+            total += sum(m or 0 for _, m in codes)
+        elif line.startswith(".") or LEADING_CODE_RE.match(label):
+            total += minutes or 0
+        else:
+            break
+    return total
+
+
 def _parse_cell(text: str) -> list[_Segment]:
     """Split a cell into consecutive sub-blocks.
 
@@ -391,6 +406,21 @@ def _parse_cell(text: str) -> list[_Segment]:
             and not finished() and LEADING_CODE_RE.match(label)
         )
         is_item = line.startswith(".") or bool(leading_code)
+
+        # "Sorour (90) / 6GR (90) / .10.5.4.1 (40) …": a timed work-area tag
+        # inside an open head is a sub-head naming the items below it, not a
+        # 90-minute item of its own — but only when those items' stated
+        # minutes fit inside it.
+        if (
+            not is_item and minutes and _is_group_token(label)
+            and current is not None and current.minutes is not None
+            and not finished() and allocated + minutes <= current.minutes
+        ):
+            following = _items_minutes_after(lines, line_index)
+            if 0 < following <= minutes:
+                current_group = label
+                current.raw += "\n" + line
+                continue
         # Any timed, non-item line ("R20 A-IoT (40)", "Maintenance (80)") opens
         # a new block once the previous one has used up its minutes.
         heads_new = not is_item and (

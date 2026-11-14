@@ -34,6 +34,7 @@ from pathlib import Path
 from . import health, remote_ftp
 from .change_detector import detect_changes
 from .fixtures import fixture_meetings
+from .models import ScheduleSource
 from .live import build_live_bundles
 from .meeting_discovery import compute_status, select_current
 from .models import SCHEMA_VERSION, ScheduleBundle
@@ -144,6 +145,43 @@ def _keep_failed_documents(meeting_id: str, slug: str, errors: list[str]) -> Non
         fh.write("\n".join(errors) + "\n")
 
 
+def revision_downgrades(before: list[dict], after: list[dict]) -> list[str]:
+    """Refuse a rebuild that reads an older revision than the one already published.
+
+    After the meeting the folders that held the final chair files (Meetings
+    Sync, the venue) are gone, and the meeting folder often only has early
+    revisions: rebuilding from those would replace the final schedule with a
+    stale one.
+    """
+    from .live import _is_draft, _revision_family
+    from .meeting_discovery import revision_parts
+
+    def rank(name: str) -> tuple:
+        probe = ScheduleSource(sourceId="", meetingId="", fileName=name, label="", type="chair_schedule", origin="public", retrievedAt="")
+        return (not _is_draft(probe), revision_parts(name) or [])
+
+    def families(items: list[dict]) -> dict[str, str]:
+        out: dict[str, str] = {}
+        for item in items:
+            name = item.get("fileName") or ""
+            if not name:
+                continue
+            probe = ScheduleSource(sourceId="", meetingId="", fileName=name, label="", type="chair_schedule", origin="public", retrievedAt="")
+            key = _revision_family(probe)
+            if key not in out or rank(name) > rank(out[key]):
+                out[key] = name
+        return out
+
+    old, new = families(before), families(after)
+    errors = []
+    for key, name in old.items():
+        if key not in new:
+            errors.append(f"published schedule used {name}, which this rebuild no longer finds; keeping it")
+        elif rank(new[key]) < rank(name):
+            errors.append(f"rebuild would read {new[key]}, older than the published {name}; keeping it")
+    return errors
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="ignore hashes, full rebuild")
@@ -187,7 +225,10 @@ def main() -> int:
     failed = 0
     for bundle in bundles:
         previous = read_previous(bundle.meeting.slug)
-        errors = validate(bundle, previous)
+        errors = validate(bundle, previous) + revision_downgrades(
+            (health.load(bundle.meeting.slug).get("schedule") or {}).get("sources") or [],
+            (health.schedule_section(bundle) or {}).get("sources") or [],
+        )
         if errors:
             failed += 1
             print(

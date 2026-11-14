@@ -139,3 +139,24 @@ def test_ranged_head_whose_items_miss_the_range_is_not_split():
 def test_plain_numbers_in_prose_are_not_codes():
     out = _v06_cell("Hiroki (120)\nR20\nA-IoT 2 rounds (120)")
     assert all("2" not in items for _, _, items in out)
+
+
+def test_timed_work_area_tag_under_chair_head_is_a_sub_head():
+    from ingestion.block_schedule import _parse_cell
+
+    segs = _parse_cell("Hiroki (90)\n6GR (90)\n.10.5.4.1 (40)\n.10.5.4.4 (20)\n.10.5.4.3 (30)")
+    assert len(segs) == 1
+    assert [(s.label, s.minutes) for s in segs[0].slots] == [
+        ("10.5.4.1", 40), ("10.5.4.4", 20), ("10.5.4.3", 30),
+    ]
+    assert all(s.group == "6GR" for s in segs[0].slots)
+
+
+def test_two_timed_sub_heads_share_one_chair_head():
+    from ingestion.block_schedule import _parse_cell
+
+    segs = _parse_cell(
+        "Sorour (120)\n6GR (60)\n10.3.1 Channel coding (30)\n\n.10.7.1 NTN (30)\nR20 (60)\n.9.5 NTN (30)\nNTN-NR (30)"
+    )
+    assert len(segs) == 1
+    assert [s.minutes for s in segs[0].slots] == [30, 30, 30, 30]
