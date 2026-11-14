@@ -40,7 +40,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "credentials": false
+    "state": "outside-meeting-week",
+    "host": null,
+    "credentials": true
   },
   "warnings": [
     {
@@ -52,12 +54,12 @@
       "text": "1 file(s) the meeting server no longer holds are hidden."
     }
   ],
-  "updatedAt": "2026-11-14T23:02:35Z",
+  "updatedAt": "2026-11-14T23:20:38Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-14T19:26:54Z",
+    "lastSuccessAt": "2026-11-14T23:20:03Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 570,
+    "artifactCount": 576,
     "hiddenCount": 1,
     "folderCount": 175,
     "readFolderCount": 174,
