@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-127_wed_room-225-226_0920_0950_9.5-2026-11-15T21:58:23+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-15T21:58:23+00:00",
+    "type": "session_added",
+    "title": "NTN added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "9.5"
+    ],
+    "sessionId": "ran1-127_wed_room-225-226_0920_0950_9.5",
+    "to": "Room 225-226 09:20-09:50",
+    "sourceIds": [
+      "ran1-127-417a0e29"
+    ]
+  },
+  {
+    "changeId": "session_added-ran1-127_wed_champion-ballroom-a_1800_1900_early-dinner-2026-11-15T21:58:23+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-15T21:58:23+00:00",
+    "type": "session_added",
+    "title": "Early dinner added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-127_wed_champion-ballroom-a_1800_1900_early-dinner",
+    "to": "Champion Ballroom A 18:00-19:00",
+    "sourceIds": [
+      "ran1-127-417a0e29"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-127_tue_online-room-1_0910_0950_6gr-2026-11-15T21:58:23+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-15T21:58:23+00:00",
+    "type": "session_removed",
+    "title": "6GR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-127_tue_online-room-1_0910_0950_6gr",
+    "sourceIds": [
+      "ran1-127-a313485c",
+      "ran1-127-656a1f13"
+    ],
+    "from": "Online room 1"
+  },
+  {
+    "changeId": "session_removed-ran1-127_wed_online-room-1_0800_1030_10.3.1-2026-11-15T21:58:23+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-15T21:58:23+00:00",
+    "type": "session_removed",
+    "title": "6GR removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.3.1",
+      "10.7.1",
+      "9.5"
+    ],
+    "sessionId": "ran1-127_wed_online-room-1_0800_1030_10.3.1",
+    "sourceIds": [
+      "ran1-127-a313485c",
+      "ran1-127-656a1f13"
+    ],
+    "from": "Online room 1"
+  }
+]

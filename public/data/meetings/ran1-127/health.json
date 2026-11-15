@@ -3,9 +3,9 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-15T17:28:09Z",
-    "lastAttemptAt": "2026-11-15T17:28:09Z",
-    "sessionCount": 255,
+    "lastSuccessAt": "2026-11-15T21:57:26Z",
+    "lastAttemptAt": "2026-11-15T21:57:26Z",
+    "sessionCount": 259,
     "roomCount": 5,
     "dates": [
       "2026-11-16",
@@ -14,7 +14,7 @@
       "2026-11-19",
       "2026-11-20"
     ],
-    "sourceCount": 3,
+    "sourceCount": 4,
     "sources": [
       {
         "label": "Draft Chair notes RAN1#127_v02",
@@ -30,31 +30,34 @@
         "label": "Draft RAN1#127 online and offline schedules - v02_hh",
         "fileName": "Draft RAN1#127 online and offline schedules - v02_hh.docx",
         "origin": "public"
+      },
+      {
+        "label": "RAN1#127 Sorour sessions online and offline schedules - v00",
+        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v00.docx",
+        "origin": "public"
       }
     ],
-    "draftOnly": true,
+    "draftOnly": false,
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 1,
+    "conflictCount": 3,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "outside-meeting-week",
-    "host": null,
     "credentials": true
   },
   "warnings": [
     {
       "level": "info",
-      "text": "1 unresolved source conflict(s)."
+      "text": "3 unresolved source conflict(s)."
     },
     {
       "level": "info",
       "text": "1 file(s) the meeting server no longer holds are hidden."
     }
   ],
-  "updatedAt": "2026-11-15T17:58:01Z",
+  "updatedAt": "2026-11-15T21:58:23Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-15T17:57:26Z",
