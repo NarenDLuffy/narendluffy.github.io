@@ -22,3 +22,4 @@
 - [x] Latest-change rule: the table a chair edited most recently wins over untouched copies (Thu Room 201 10.5.3.4, Friday grid order)
 - [x] Voting question answered: file counts only break ties between equally fresh claims
 - [x] Main online/offline grid controls every room's times and lunch; other files contribute detail only
+- [x] Fix Drafts crawl server error and prevent a failed crawl from blanking the page

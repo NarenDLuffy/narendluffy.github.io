@@ -13,6 +13,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { AppShell } from "../components/AppShell";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { reloadIfStaleServerFunction } from "../lib/staleServerFunction";
 
 function NotFoundComponent() {
   return (
@@ -40,6 +41,9 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
+    // Never leave a blank/error page just because an open tab survived an app
+    // update with an outdated server-function ID.
+    if (reloadIfStaleServerFunction(error)) return;
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 

@@ -15,6 +15,7 @@ import {
   type CrawlResult,
 } from "@/lib/listingParser";
 import { venueBlockedByScheme } from "@/lib/venueMode";
+import { reloadIfStaleServerFunction } from "@/lib/staleServerFunction";
 
 /**
  * Live draft probe, browser-side.
@@ -465,8 +466,10 @@ async function crawlViaProxy(url: string): Promise<CrawlResult | null> {
       files: result.files,
       readFolders: result.readFolders ?? [],
     };
-  } catch {
-    // No server function available (static export) or the crawl failed.
+  } catch (error) {
+    // An open tab may still hold the function ID from before an app update.
+    // Reload to the current ID; otherwise keep the published drafts visible.
+    reloadIfStaleServerFunction(error);
     return null;
   }
 }
