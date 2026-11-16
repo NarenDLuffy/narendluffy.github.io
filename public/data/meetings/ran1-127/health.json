@@ -3,9 +3,9 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-16T16:00:10Z",
-    "lastAttemptAt": "2026-11-16T16:00:10Z",
-    "sessionCount": 253,
+    "lastSuccessAt": "2026-11-16T20:26:18Z",
+    "lastAttemptAt": "2026-11-16T20:26:18Z",
+    "sessionCount": 254,
     "roomCount": 5,
     "dates": [
       "2026-11-16",
@@ -14,11 +14,11 @@
       "2026-11-19",
       "2026-11-20"
     ],
-    "sourceCount": 4,
+    "sourceCount": 5,
     "sources": [
       {
-        "label": "Draft Chair notes RAN1#127_v02",
-        "fileName": "Draft Chair notes RAN1#127_v02.docx",
+        "label": "Chair notes RAN1#127_v00",
+        "fileName": "Chair notes RAN1#127_v00.docx",
         "origin": "public"
       },
       {
@@ -27,13 +27,18 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v00",
-        "fileName": "RAN1#127 online and offline schedules - v00.docx",
+        "label": "RAN1#127 online and offline schedules - v00_hh",
+        "fileName": "RAN1#127 online and offline schedules - v00_hh.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#127 Sorour sessions online and offline schedules - v00",
-        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v00.docx",
+        "label": "RAN1#127 online and offline schedules - v01",
+        "fileName": "RAN1#127 online and offline schedules - v01.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#127 Sorour sessions online and offline schedules - v01",
+        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v01.docx",
         "origin": "public"
       }
     ],
@@ -41,18 +46,22 @@
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 1,
+    "conflictCount": 2,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
+    "state": "skipped-no-host",
     "host": null,
-    "credentials": false
+    "credentials": true
   },
   "warnings": [
     {
       "level": "info",
-      "text": "1 unresolved source conflict(s)."
+      "text": "2 unresolved source conflict(s)."
+    },
+    {
+      "level": "warn",
+      "text": "Drafts last scanned 9 h ago \u2014 the refresh is not keeping up."
     },
     {
       "level": "info",
@@ -63,11 +72,11 @@
       "text": "Only 190 of 191 draft folders were opened this scan."
     },
     {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-16T16:00:36Z",
+  "updatedAt": "2026-11-16T20:27:31Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-16T10:49:02Z",
