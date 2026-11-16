@@ -329,6 +329,8 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         blocks,
         key=lambda b: (
             b.derivation == "split-from-parent",
+            # Main room: the main chair's grid decides, never a sub-chair copy.
+            -_main_authority(b),
             # A block kept whole because its stated minutes don't add up is the
             # weakest evidence: any document that tiles that time wins over it.
             "Minutes don't add up" in (b.note or ""),
@@ -367,6 +369,14 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         kept.append(block)
     kept.sort(key=lambda b: (b.start, b.end, b.order))
     return kept
+
+
+def _main_authority(block: CandidateBlock) -> int:
+    """1 when the main chair's own week grid states this Main-room block."""
+    origin = block.origin
+    if origin is None:
+        return 0
+    return int(any("main-authority" in ref.contributed for ref in origin.sources))
 
 
 def _own(block: CandidateBlock) -> int:
@@ -408,6 +418,8 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         # Latest change first: an edit beats copies nobody touched; votes only
         # decide among equally fresh (or all unknown) claims. Stable sort.
         group.sort(key=lambda b: b.introducedAt, reverse=True)
+        # Main room: the main chair's grid wins over copies, however fresh.
+        group.sort(key=lambda b: -_main_authority(b))
         keeper = group[0]
         for other in group[1:]:
             finer, broader = (other, keeper) if other.specificity > keeper.specificity else (keeper, other)

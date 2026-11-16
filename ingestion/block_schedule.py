@@ -57,6 +57,7 @@ LEADING_CODE_RE = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\s+(?=[A-Za-z])")
 LISTED_CODE_RE = re.compile(r"(?:^|[,;]\s*)(\d{1,2}(?:\.\d{1,2})*)\s+(?=[A-Za-z])")
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
 AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
+MAIN_FILE_RE = re.compile(r"^\s*(?:draft\s+)?RAN1\s*#\s*\w+\s+online\s+and\s+offline\s+schedules?\s*-\s*v\d+\s*$", re.I)
 GENERIC_GRID_RE = re.compile(r"^\s*RAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\s*$", re.I)
 STARTS_AT_RE = re.compile(r"\bat\s+(\d{1,2})[:.](\d{2})", re.I)
 
@@ -786,6 +787,16 @@ def parse_block_schedule_docx(
                     sessions.extend(produced)
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
+    # The Main session belongs to the main chair: in their shared week-grid file
+    # (no other chair's name or initials in the file name) the Main lane is the
+    # authority; sub-chair copies of it never override it.
+    if MAIN_FILE_RE.match(re.sub(r"\.docx$", "", source.fileName or "", flags=re.I)):
+        for item in sessions:
+            room = rooms.get(item.roomId)
+            if room is not None and room.chairRole == "main":
+                for ref in item.sources:
+                    if "main-authority" not in ref.contributed:
+                        ref.contributed = [*ref.contributed, "main-authority"]
     # The same slot written twice (a chair repeating the plenary or their own
     # column in a detail table) is one session.
     unique: dict[tuple[str, str, str, str], Session] = {}
