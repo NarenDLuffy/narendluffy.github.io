@@ -3,8 +3,8 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-16T02:15:14Z",
-    "lastAttemptAt": "2026-11-16T02:15:14Z",
+    "lastSuccessAt": "2026-11-16T15:30:50Z",
+    "lastAttemptAt": "2026-11-16T15:30:50Z",
     "sessionCount": 259,
     "roomCount": 5,
     "dates": [
@@ -45,15 +45,11 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
-    {
-      "level": "warn",
-      "text": "Timetable last rebuilt 8 h ago \u2014 the refresh is not keeping up."
-    },
     {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
@@ -67,11 +63,11 @@
       "text": "Only 190 of 191 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-11-16T10:49:43Z",
+  "updatedAt": "2026-11-16T15:35:25Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-16T10:49:02Z",

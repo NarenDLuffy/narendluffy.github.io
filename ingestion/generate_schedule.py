@@ -120,8 +120,29 @@ def build_bundles(force: bool) -> list[ScheduleBundle]:
     the workflow's benefit: the portal response is small, so a full refresh is
     always performed.
     """
-    del force
-    return build_live_bundles()
+    from datetime import date
+
+    from .live import build_bundle
+    from .portal import fetch_meetings
+
+    return [build_bundle(pm) for pm in fetch_meetings("2025-01-01", "2028-12-31") if rebuild_due(pm.end_date, date.today(), force)]
+
+
+def rebuild_due(end_date: str, today, force: bool = False) -> bool:
+    """Automatic runs rebuild only meetings not yet over (plus the day after).
+
+    Finished meetings keep their final published schedule: their chair files are
+    gone from Meetings Sync, so rebuilding them only times out the job or is
+    refused, and that used to block the live meeting's refresh.
+    """
+    from datetime import date, timedelta
+
+    if force:
+        return True
+    try:
+        return date.fromisoformat(end_date[:10]) + timedelta(days=1) >= today
+    except ValueError:
+        return True
 
 
 def _keep_failed_documents(meeting_id: str, slug: str, errors: list[str]) -> None:
@@ -223,6 +244,7 @@ def main() -> int:
     published: list[ScheduleBundle] = []
     sections: dict[str, dict] = {}
     failed = 0
+    failed_live = 0
     for bundle in bundles:
         previous = read_previous(bundle.meeting.slug)
         errors = validate(bundle, previous) + revision_downgrades(
@@ -231,6 +253,8 @@ def main() -> int:
         )
         if errors:
             failed += 1
+            if compute_status(bundle.meeting.startDate, bundle.meeting.endDate) != "completed":
+                failed_live += 1
             print(
                 f"validation failed for {bundle.meeting.name}, keeping previous schedule:",
                 *errors,
@@ -270,7 +294,8 @@ def main() -> int:
         f"published {len(published)} meeting(s); "
         f"current meeting: {current.name if current else 'none'}"
     )
-    return 1 if failed and not published else 0
+    # Fail only when a meeting that is running or coming up was refused.
+    return 1 if failed_live else 0
 
 
 if __name__ == "__main__":
