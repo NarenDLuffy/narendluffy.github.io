@@ -456,6 +456,14 @@ def parse_schedule_sources(
     else:
         rooms, sessions = _name_tracks(rooms, sessions)
     result = canonicalize(sessions)
+    authority_rooms = {
+        session.roomId for session in sessions
+        if session.roomId and any("main-authority" in ref.contributed for ref in session.sources)
+    }
+    if authority_rooms:
+        # Rooms are part of the main grid's frame too. Other files can supply
+        # names and agenda detail, but cannot add a room of their own.
+        rooms = [room for room in rooms if room.roomId in authority_rooms]
     COVERAGE_GAPS[meeting.id] = [
         *coverage_gaps(sessions, result.sessions, rooms),
         *cell_checks(sessions, result.sessions, rooms),
@@ -607,7 +615,9 @@ def coverage_gaps(
 
     Every parsed session is evidence that its room is in use for that time. If
     the merge leaves any part of it uncovered, an item was dropped (for example
-    by a block wrongly placed in another room): that is always an error.
+    by a block wrongly placed in another room): that is always an error. When
+    the main shared grid is present, only its authoritative cells define the
+    time/room frame; chair-file blocks outside it are intentionally ignored.
     """
 
     def mins(hhmm: str) -> int:
@@ -627,9 +637,16 @@ def coverage_gaps(
             if re.search(r"commences", s.topic or "", re.I):
                 commences[(s.date, s.roomId)] = mins(s.startTime)
 
+    has_main_frame = any(
+        session.roomId and session.kind in ("session", "plenary")
+        and any("main-authority" in ref.contributed for ref in session.sources)
+        for session in parsed
+    )
     missing: dict[tuple[str, str], set[int]] = {}
     for s in parsed:
         if not s.roomId or s.kind not in ("session", "plenary"):
+            continue
+        if has_main_frame and not any("main-authority" in ref.contributed for ref in s.sources):
             continue
         spans = covered.get((s.date, s.roomId), [])
         first = commences.get((s.date, s.roomId), 0)

@@ -105,6 +105,9 @@ class CandidateBlock:
     # When the content first appeared in its document family (revision_diff);
     # "" = unknown. A fresh edit beats untouched copies, whatever the vote count.
     introducedAt: str = ""
+    # The main chair's shared grid owns the outer time/room frame. Detail from
+    # another file inherits this bit when it legitimately refines that frame.
+    mainAuthority: bool = False
 
     @property
     def start(self) -> int:
@@ -179,6 +182,7 @@ def candidates_from_session(session: Session) -> list[CandidateBlock]:
         note=session.note,
         origin=session,
         introducedAt=max((ref.introducedAt or "" for ref in session.sources), default=""),
+        mainAuthority=any("main-authority" in ref.contributed for ref in session.sources),
     )
 
     breakdown = [s for s in (session.agendaBreakdown or []) if s.startTime and s.endTime]
@@ -263,11 +267,39 @@ class CanonicalResult:
     conflicts: list[ScheduleConflict] = field(default_factory=list)
 
 
+def _within_main_frame(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
+    """Other files add detail inside the main grid; they never extend it.
+
+    Once a main shared grid is present, its session cells define every room and
+    outer boundary. A chair-only room, a stale extra session, or a detail block
+    crossing the main grid's boundary is not a new canonical session.
+    """
+    authority = [
+        b for b in blocks
+        if b.kind in {"session", "plenary"} and _main_authority(b)
+    ]
+    if not authority:
+        return blocks
+    frames: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    for block in authority:
+        frames.setdefault((block.date, block.roomId), []).append((block.start, block.end))
+    return [
+        block for block in blocks
+        if block.kind not in {"session", "plenary"}
+        or _main_authority(block)
+        or any(
+            start <= block.start and block.end <= end
+            for start, end in frames.get((block.date, block.roomId), [])
+        )
+    ]
+
+
 def canonicalize(sessions: list[Session]) -> CanonicalResult:
     """Collapse every parsed session from every document into one timeline."""
     candidates: list[CandidateBlock] = []
     for session in sessions:
         candidates.extend(candidates_from_session(session))
+    candidates = _within_main_frame(candidates)
     _score_room_affinity(candidates)
 
     conflicts: list[ScheduleConflict] = []
@@ -290,6 +322,13 @@ def _resolve_room_day(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
     """One room, one day: merge duplicates, then let detail replace breadth."""
     session_blocks = [b for b in blocks if b.kind in {"session", "plenary"}]
     non_sessions = [b for b in blocks if b.kind not in {"session", "plenary"}]
+    # Lunch and coffee times come from the main grid alone. If it states that
+    # kind of break on this day, discard every different chair-file version.
+    authoritative_kinds = {b.kind for b in non_sessions if _main_authority(b)}
+    non_sessions = [
+        b for b in non_sessions
+        if b.kind not in authoritative_kinds or _main_authority(b)
+    ]
 
     session_blocks, conflicts = _merge_duplicates(session_blocks)
     session_blocks = _resolve_same_slot(session_blocks)
@@ -328,9 +367,10 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     ranked = sorted(
         blocks,
         key=lambda b: (
-            b.derivation == "split-from-parent",
-            # Main room: the main chair's grid decides, never a sub-chair copy.
+            # Every room: the main chair's grid decides, never a sub-chair copy
+            # or the uncovered remainder of a sub-chair's broad container.
             -_main_authority(b),
+            b.derivation == "split-from-parent",
             # A block kept whole because its stated minutes don't add up is the
             # weakest evidence: any document that tiles that time wins over it.
             "Minutes don't add up" in (b.note or ""),
@@ -372,7 +412,9 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
 
 
 def _main_authority(block: CandidateBlock) -> int:
-    """1 when the main chair's own week grid states this Main-room block."""
+    """1 when the main chair's shared week grid states this block."""
+    if block.mainAuthority:
+        return 1
     origin = block.origin
     if origin is None:
         return 0
@@ -418,7 +460,7 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
         # Latest change first: an edit beats copies nobody touched; votes only
         # decide among equally fresh (or all unknown) claims. Stable sort.
         group.sort(key=lambda b: b.introducedAt, reverse=True)
-        # Main room: the main chair's grid wins over copies, however fresh.
+        # Every room: the main chair's grid wins over copies, however fresh.
         group.sort(key=lambda b: -_main_authority(b))
         keeper = group[0]
         for other in group[1:]:
@@ -427,6 +469,7 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
                 if finer is other:
                     other.sourceIds = list(dict.fromkeys([*other.sourceIds, *keeper.sourceIds]))
                     other.introducedAt = max(other.introducedAt, keeper.introducedAt)
+                    other.mainAuthority = bool(_main_authority(other) or _main_authority(keeper))
                     keeper = other
                 else:
                     keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
@@ -524,6 +567,7 @@ def _merge_duplicates(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
             continue
         current.sourceIds = list(dict.fromkeys([*current.sourceIds, *block.sourceIds]))
         current.introducedAt = max(current.introducedAt, block.introducedAt)
+        current.mainAuthority = bool(_main_authority(current) or _main_authority(block))
         # A document that covers only this room (a sub-chair's own plan) knows
         # the slot better than the week grid, so its wording wins even when the
         # grid's placeholder is longer.

@@ -58,7 +58,7 @@ LISTED_CODE_RE = re.compile(r"(?:^|[,;]\s*)(\d{1,2}(?:\.\d{1,2})*)\s+(?=[A-Za-z]
 TBD_RE = re.compile(r"\(\s*(tbd|n/?a)\s*\)\s*$", re.I)
 AGENDA_CODE_RE = re.compile(r"\b(\d{1,2}(?:\.(?:\d{1,2}|x))+)", re.I)
 MAIN_FILE_RE = re.compile(r"^\s*(?:draft\s+)?RAN1\s*#\s*\w+\s+online\s+and\s+offline\s+schedules?\s*-\s*v\d+\s*$", re.I)
-GENERIC_GRID_RE = re.compile(r"^\s*RAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\s*$", re.I)
+GENERIC_GRID_RE = re.compile(r"\bRAN1\s*#\s*\w+\s+(?:online|offline)(?:\s+and\s+offline)?\s+sessions?\s+schedules?\b", re.I)
 STARTS_AT_RE = re.compile(r"\bat\s+(\d{1,2})[:.](\d{2})", re.I)
 
 # Short work-area labels chairs use as a group tag rather than a person.
@@ -621,10 +621,11 @@ def parse_block_schedule_docx(
             continue
 
         mode = "offline" if "offline" in heading.lower() else "online"
-        # A chair's own table (detailed plan, personal schedule) rather than a
-        # copy of the shared week grid.
-        own_table = not GENERIC_GRID_RE.match(heading or "")
         single_lane = all(end - start <= 1 for start, end in days.values())
+        # A one-room table is a chair's detail plan. A multi-lane table is the
+        # shared week grid even when floating room labels make its heading long;
+        # the heading only disambiguates a one-lane shared grid.
+        own_table = single_lane and not GENERIC_GRID_RE.search(heading or "")
 
         # A few placeholder/TBD cells lose their lane fill in Word. Derive the
         # stable colour for each horizontal lane from the populated cells in
@@ -715,7 +716,10 @@ def parse_block_schedule_docx(
                             topic=title,
                             topicKey="break",
                             kind="lunch" if "lunch" in title.lower() else "break",
-                            sources=[SessionSourceRef(source.sourceId, ["break"])],
+                            sources=[SessionSourceRef(
+                                source.sourceId,
+                                ["break", *(["own-table"] if own_table else [])],
+                            )],
                         )
                 continue
             block = BLOCK_RE.search(label_text)
@@ -787,16 +791,14 @@ def parse_block_schedule_docx(
                     sessions.extend(produced)
 
     sessions = [s for s in sessions if s.startTime < s.endTime]
-    # The Main session belongs to the main chair: in their shared week-grid file
-    # (no other chair's name or initials in the file name) the Main lane is the
-    # authority; sub-chair copies of it never override it.
+    # The main chair's shared online/offline grid (no other chair's name or
+    # initials in the file name) owns every room's outer times and all breaks.
+    # Its one-room detail tables, like every other chair file, add detail only.
     if MAIN_FILE_RE.match(re.sub(r"\.docx$", "", source.fileName or "", flags=re.I)):
-        for item in sessions:
-            room = rooms.get(item.roomId)
-            if room is not None and room.chairRole == "main":
-                for ref in item.sources:
-                    if "main-authority" not in ref.contributed:
-                        ref.contributed = [*ref.contributed, "main-authority"]
+        for item in [*sessions, *breaks.values()]:
+            for ref in item.sources:
+                if "own-table" not in ref.contributed and "main-authority" not in ref.contributed:
+                    ref.contributed = [*ref.contributed, "main-authority"]
     # The same slot written twice (a chair repeating the plenary or their own
     # column in a detail table) is one session.
     unique: dict[tuple[str, str, str, str], Session] = {}
