@@ -478,7 +478,20 @@ def _parse_cell(text: str) -> list[_Segment]:
             and current.minutes is not None
             and not current.slots
         )
-        if current is None or (heads_new and finished()) or head_after_blank:
+        new_work_area = (
+            not is_item and minutes is not None and current is not None
+            and current.minutes is not None and bool(current.slots)
+            and _is_group_token(label) and _is_group_token(current.group)
+            and label.strip().lower() != current.group.strip().lower()
+            # A name-only item such as "NTN-NR (40)" still belongs to the open
+            # R20 head when its minutes fit; a new R20 head after 6GR's items
+            # cannot fit there and therefore starts its own section.
+            and allocated + minutes > current.minutes
+        )
+        if current is None or new_work_area or (heads_new and finished()) or head_after_blank:
+            # "6GR (90)" can contain only 80 minutes of items before "R20 (70)".
+            # R20 is still a new work area; the earlier head's typo must not
+            # swallow it or detach its items into overlapping blocks.
             lead = label if _looks_like_person(label) else None
             current = _Segment(
                 lead=lead,
@@ -915,6 +928,22 @@ def _sessions_for_cell(
         return None
 
     lengths = [seg_length(seg) for seg in segments]
+    item_lengths: list[int | None] = [
+        sum(slot.minutes or 0 for slot in seg.slots)
+        if seg.slots and all(slot.minutes for slot in seg.slots)
+        else None
+        for seg in segments
+    ]
+    if (
+        len(segments) > 1
+        and sum(length or 0 for length in lengths) > total
+        and all(length is not None for length in item_lengths)
+        and sum(length or 0 for length in item_lengths) == total
+    ):
+        # Group headings can be misstated ("6GR (90)" above 40+40 minutes,
+        # then "R20 (70)" above 30+40). The item minutes are also explicitly
+        # stated and tile the cell exactly, so they govern; no time is invented.
+        lengths = item_lengths
     known = sum(length or 0 for length in lengths)
     unknown = [i for i, length in enumerate(lengths) if not length]
     if len(segments) == 1:

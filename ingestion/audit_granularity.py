@@ -17,6 +17,7 @@ import sys
 from pathlib import Path
 
 CAUSES = [
+    ("overlapping-timeline", re.compile(r"overlapping published blocks")),
     ("range-minutes", re.compile(r"\(\s*\d+\s*[-–~]\s*\d+\s*\)")),
     ("wildcard-x", re.compile(r"\.x\b", re.I)),
     ("bare-codes", re.compile(r"(?:^|[;:]\s|\d\s)(\d{1,2})\s+[A-Za-z]")),

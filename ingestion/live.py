@@ -560,6 +560,26 @@ def cell_checks(
                         f"{a.date} {a.startTime}: {code} is in both {names.get(a.roomId, a.roomName)} "
                         f"and {names.get(b.roomId, b.roomName)} at the same time"
                     )
+
+    # One room has one timeline. Two canonical blocks occupying the same minute
+    # are never alternative columns: they are a parse/merge error and must not
+    # be published side by side (the Wednesday NTN-NR regression).
+    timelines: dict[tuple[str, str], list[Session]] = {}
+    for s in canonical:
+        if s.roomId and s.kind in ("session", "plenary"):
+            timelines.setdefault((s.date, s.roomId), []).append(s)
+    for (day, room_id), items in sorted(timelines.items()):
+        ordered = sorted(items, key=lambda s: (mins(s.startTime), mins(s.endTime)))
+        furthest = ordered[0]
+        for s in ordered[1:]:
+            if mins(s.startTime) < mins(furthest.endTime):
+                errors.append(
+                    f"{day} {names.get(room_id, room_id)}: overlapping published blocks "
+                    f"{furthest.startTime}-{furthest.endTime} {furthest.topic} and "
+                    f"{s.startTime}-{s.endTime} {s.topic}"
+                )
+            if mins(s.endTime) > mins(furthest.endTime):
+                furthest = s
     return errors
 
 

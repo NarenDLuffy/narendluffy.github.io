@@ -128,3 +128,15 @@ def test_item_listed_in_two_rooms_by_the_document_is_allowed():
     b = _s("18:00", "18:30", room="y", code="10.3.2")
     b.sources = [SessionSourceRef("s", ["time"], cell="s|t3|Wednesday|1020|c2|bb")]
     assert cell_checks([a, b], [a, b], rooms) == []
+
+
+def test_overlapping_published_blocks_in_one_room_are_refused():
+    from ingestion.live import cell_checks
+
+    rooms = [Room(roomId="r", meetingId="m", roomName="Room 225-226", order=0)]
+    a = _s("09:50", "10:30", code="10.3.1")
+    b = _s("09:50", "10:30", code="9.4")
+    b.topic = "NTN-NR"
+    errors = cell_checks([], [a, b], rooms)
+    assert any("overlapping published blocks" in e and "NTN-NR" in e for e in errors)
+    assert cell_checks([], [_s("09:20", "09:50"), _s("09:50", "10:30")], rooms) == []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T18:01:19Z",
+  "generatedAt": "2026-11-18T18:17:21Z",
   "meetingId": "ran1-127",
   "sessions": [
     {
@@ -4032,65 +4032,24 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-127_tue_bmo-221_1400_1630_10.2.1",
+      "sessionId": "ran1-127_tue_bmo-221_1400_1430_10.2.1",
       "meetingId": "ran1-127",
       "date": "2026-11-17",
       "day": "Tuesday",
       "startTime": "14:00",
-      "endTime": "16:30",
+      "endTime": "14:30",
       "roomId": "ran1-127-room-372d0437",
       "roomName": "BMO 221",
-      "topic": "Hiroki",
-      "topicKey": "c94a6449",
+      "topic": "Waveform",
+      "topicKey": "b1d57811",
       "agendaItems": [
-        "10.2.1",
-        "10.3.2",
-        "10.5.4.2",
-        "10.5.4.4",
-        "10.5.4.3"
+        "10.2.1"
       ],
-      "agendaBreakdown": [
-        {
-          "code": "10.2.1",
-          "label": "Waveform",
-          "minutes": 30,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.3.2",
-          "label": "Modulation",
-          "minutes": 30,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.5.4.2",
-          "label": "10.5.4.2",
-          "minutes": 20,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.5.4.4",
-          "label": "10.5.4.4",
-          "minutes": 30,
-          "startTime": null,
-          "endTime": null
-        },
-        {
-          "code": "10.5.4.3",
-          "label": "10.5.4.3",
-          "minutes": 40,
-          "startTime": null,
-          "endTime": null
-        }
-      ],
+      "agendaBreakdown": [],
       "sessionLead": "Hiroki",
-      "group": "Hiroki",
+      "group": "10",
       "kind": "session",
       "status": "scheduled",
-      "note": "Minutes don't add up: items total 180 min, block is 150 min.",
       "sources": [
         {
           "sourceId": "ran1-127-8b668a26",
@@ -4117,8 +4076,9 @@
           "introducedAt": null
         }
       ],
-      "derivation": "direct",
-      "confidence": 0.95,
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.2",
       "detailAvailable": true
     },
     {
@@ -4236,6 +4196,56 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-127_tue_bmo-221_1430_1500_10.3.2",
+      "meetingId": "ran1-127",
+      "date": "2026-11-17",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "roomId": "ran1-127-room-372d0437",
+      "roomName": "BMO 221",
+      "topic": "Modulation",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.3.2"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Sorour",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-c1580bdf",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.3",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-127_tue_champions-ballroom-a_1435_1535_10.5.3.1",
       "meetingId": "ran1-127",
       "date": "2026-11-17",
@@ -4335,6 +4345,106 @@
       "detailAvailable": true
     },
     {
+      "sessionId": "ran1-127_tue_bmo-221_1500_1520_10.5.4.2",
+      "meetingId": "ran1-127",
+      "date": "2026-11-17",
+      "day": "Tuesday",
+      "startTime": "15:00",
+      "endTime": "15:20",
+      "roomId": "ran1-127-room-372d0437",
+      "roomName": "BMO 221",
+      "topic": "10.5.4.2",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.2"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Hiroki",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-c1580bdf",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-127_tue_bmo-221_1520_1550_10.5.4.4",
+      "meetingId": "ran1-127",
+      "date": "2026-11-17",
+      "day": "Tuesday",
+      "startTime": "15:20",
+      "endTime": "15:50",
+      "roomId": "ran1-127-room-372d0437",
+      "roomName": "BMO 221",
+      "topic": "10.5.4.4",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.4"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Hiroki",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-c1580bdf",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.5.4",
+      "detailAvailable": true
+    },
+    {
       "sessionId": "ran1-127_tue_champions-ballroom-a_1535_1600_10.5.3.4",
       "meetingId": "ran1-127",
       "date": "2026-11-17",
@@ -4431,6 +4541,56 @@
       "derivation": "inferred-duration",
       "confidence": 0.75,
       "parentAgendaItem": "10.6.1",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-127_tue_bmo-221_1550_1630_10.5.4.3",
+      "meetingId": "ran1-127",
+      "date": "2026-11-17",
+      "day": "Tuesday",
+      "startTime": "15:50",
+      "endTime": "16:30",
+      "roomId": "ran1-127-room-372d0437",
+      "roomName": "BMO 221",
+      "topic": "10.5.4.3",
+      "topicKey": "f8e05aee",
+      "agendaItems": [
+        "10.5.4.3"
+      ],
+      "agendaBreakdown": [],
+      "sessionLead": "Hiroki",
+      "group": "6GR",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-c1580bdf",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.75,
+      "parentAgendaItem": "10.5.4",
       "detailAvailable": true
     },
     {
@@ -5398,6 +5558,24 @@
       "status": "scheduled",
       "sources": [
         {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
           "sourceId": "ran1-127-c1580bdf",
           "contributed": [],
           "cell": null,
@@ -5405,7 +5583,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.3",
       "detailAvailable": true
     },
@@ -5721,6 +5899,24 @@
       "status": "scheduled",
       "sources": [
         {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
           "sourceId": "ran1-127-c1580bdf",
           "contributed": [],
           "cell": null,
@@ -5728,7 +5924,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "10.7",
       "detailAvailable": true
     },
@@ -5900,6 +6096,24 @@
       "status": "scheduled",
       "sources": [
         {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
           "sourceId": "ran1-127-c1580bdf",
           "contributed": [],
           "cell": null,
@@ -5907,7 +6121,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.7,
+      "confidence": 0.75,
       "parentAgendaItem": "9",
       "detailAvailable": true
     },
@@ -6011,51 +6225,6 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-127_wed_room-225-226_0950_1030_10.3.1",
-      "meetingId": "ran1-127",
-      "date": "2026-11-18",
-      "day": "Wednesday",
-      "startTime": "09:50",
-      "endTime": "10:30",
-      "roomId": "ran1-127-room-a2fbefb5",
-      "roomName": "Room 225-226",
-      "topic": "6GR",
-      "topicKey": "f8e05aee",
-      "agendaItems": [
-        "10.3.1",
-        "10.7.1",
-        "9.5"
-      ],
-      "agendaBreakdown": [],
-      "group": "6GR",
-      "kind": "session",
-      "status": "scheduled",
-      "note": "Minutes don't add up: items total 160 min, block is 150 min. \u00b7 Detailed timing not available",
-      "sources": [
-        {
-          "sourceId": "ran1-127-8b668a26",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-127-f0903d3f",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-127-f10e7b62",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        }
-      ],
-      "derivation": "split-from-parent",
-      "confidence": 0.85,
-      "detailAvailable": false
-    },
-    {
       "sessionId": "ran1-127_wed_room-225-226_0950_1030_ntn-nr",
       "meetingId": "ran1-127",
       "date": "2026-11-18",
@@ -6075,6 +6244,24 @@
       "status": "scheduled",
       "sources": [
         {
+          "sourceId": "ran1-127-8b668a26",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f0903d3f",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
+          "sourceId": "ran1-127-f10e7b62",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        },
+        {
           "sourceId": "ran1-127-c1580bdf",
           "contributed": [],
           "cell": null,
@@ -6082,7 +6269,7 @@
         }
       ],
       "derivation": "inferred-duration",
-      "confidence": 0.6,
+      "confidence": 0.65,
       "detailAvailable": true
     },
     {
@@ -12290,7 +12477,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-11-18T18:01:19Z",
-    "lastAttemptAt": "2026-11-18T18:01:19Z"
+    "lastSuccessfulAt": "2026-11-18T18:17:21Z",
+    "lastAttemptAt": "2026-11-18T18:17:21Z"
   }
 }

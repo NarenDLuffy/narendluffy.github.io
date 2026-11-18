@@ -160,3 +160,20 @@ def test_two_timed_sub_heads_share_one_chair_head():
     )
     assert len(segs) == 1
     assert [s.minutes for s in segs[0].slots] == [30, 30, 30, 30]
+
+
+def test_group_head_typo_does_not_detach_ntn_nr_into_an_overlap():
+    # Exact RAN1#127 main v02 Wednesday Room 225-226 cell: heads total 160,
+    # while their explicitly timed items total the cell's actual 150 minutes.
+    out = _cell(
+        "6GR (90)\n.10.3.1 Channel coding (40)\n.10.7.1 NTN (40)\n"
+        "R20 (70)\n.9.5 NTN (30)\nNTN-NR (40)",
+        480,
+        630,
+    )
+    assert [(s.startTime, s.endTime, s.topic, s.agendaItems) for s in out] == [
+        ("08:00", "08:40", "Channel coding", ["10.3.1"]),
+        ("08:40", "09:20", "NTN", ["10.7.1"]),
+        ("09:20", "09:50", "NTN", ["9.5"]),
+        ("09:50", "10:30", "NTN-NR", []),
+    ]
