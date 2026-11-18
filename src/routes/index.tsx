@@ -14,13 +14,13 @@ import { useDeadlines } from "@/hooks/useDeadlines";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RAN1 Live! — RAN1 and RAN2 meeting schedules" },
+      { title: "3GPP Companion — RAN1 and RAN2 meeting schedules" },
       {
         name: "description",
         content:
           "Live RAN1 and RAN2 meeting schedules. See which sessions are running now, which room they are in, and what starts next.",
       },
-      { property: "og:title", content: "RAN1 Live! — RAN1 and RAN2 meeting schedules" },
+      { property: "og:title", content: "3GPP Companion — RAN1 and RAN2 meeting schedules" },
       {
         property: "og:description",
         content:

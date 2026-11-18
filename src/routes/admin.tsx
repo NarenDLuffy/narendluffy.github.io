@@ -6,13 +6,13 @@ import { LoadingState, NoMeetingState } from "@/components/ScheduleStates";
 export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
-      { title: "Ingestion status — RAN1 Live!" },
+      { title: "Ingestion status — 3GPP Companion" },
       {
         name: "description",
         content:
-          "Health of the RAN1 Live! ingestion pipeline: discovered documents, parser confidence and unresolved source conflicts.",
+          "Health of the 3GPP Companion ingestion pipeline: discovered documents, parser confidence and unresolved source conflicts.",
       },
-      { property: "og:title", content: "Ingestion status — RAN1 Live!" },
+      { property: "og:title", content: "Ingestion status — 3GPP Companion" },
       {
         property: "og:description",
         content: "Documents, parser confidence and conflicts behind the published RAN1 schedule.",

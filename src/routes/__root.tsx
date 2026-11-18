@@ -83,14 +83,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RAN1 Live! — unofficial RAN1 and RAN2 meeting companion" },
+      { title: "3GPP Companion — unofficial RAN1 and RAN2 meeting companion" },
       {
         name: "description",
         content:
           "Live, searchable RAN1 and RAN2 meeting schedules, drafts, rooms and colleague presence.",
       },
       { name: "theme-color", content: "#141a20" },
-      { property: "og:title", content: "RAN1 Live!" },
+      { property: "og:title", content: "3GPP Companion" },
       {
         property: "og:description",
         content:

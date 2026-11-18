@@ -4,13 +4,13 @@ import type { ReactNode } from "react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "How to use RAN1 Live! — RAN1 and RAN2 guide" },
+      { title: "How to use 3GPP Companion — RAN1 and RAN2 guide" },
       {
         name: "description",
         content:
           "A short RAN1 and RAN2 guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
       },
-      { property: "og:title", content: "How to use RAN1 Live! for RAN1 and RAN2" },
+      { property: "og:title", content: "How to use 3GPP Companion for RAN1 and RAN2" },
       {
         property: "og:description",
         content:
@@ -36,7 +36,7 @@ function HelpPage() {
   return (
     <article className="space-y-4">
       <header className="space-y-2">
-        <h1 className="text-xl font-semibold tracking-tight">How to use RAN1 Live!</h1>
+        <h1 className="text-xl font-semibold tracking-tight">How to use 3GPP Companion</h1>
         <p className="text-sm text-muted-foreground">
           No account, no install. Open it on your phone and add it to your home screen for a
           full-screen app (Safari: Share → Add to Home Screen; Chrome: ⋮ → Install).
@@ -219,7 +219,7 @@ function HelpPage() {
               device opts in separately from the Company page.
               <ul className="mt-1 list-circle space-y-1 pl-4">
                 <li>
-                  <strong>iPhone:</strong> in Safari tap Share → Add to Home Screen, open RAN1 Live!
+                  <strong>iPhone:</strong> in Safari tap Share → Add to Home Screen, open 3GPP Companion
                   from your home screen, then Company → Notifications → Enable. (Deleted the app
                   before? Just add it again — nothing auto-prompts.)
                 </li>
@@ -241,7 +241,7 @@ function HelpPage() {
 
         <Section title="What this app stores">
           <p>
-            RAN1 Live! has no accounts, no passwords and no tracking. Here is everything it
+            3GPP Companion has no accounts, no passwords and no tracking. Here is everything it
             stores, in plain terms:
           </p>
           <ul className="list-disc space-y-1 pl-4">
