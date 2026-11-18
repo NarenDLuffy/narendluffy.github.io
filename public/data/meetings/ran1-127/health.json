@@ -3,8 +3,8 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-17T22:19:02Z",
-    "lastAttemptAt": "2026-11-17T22:19:02Z",
+    "lastSuccessAt": "2026-11-18T04:16:26Z",
+    "lastAttemptAt": "2026-11-18T04:16:26Z",
     "sessionCount": 253,
     "roomCount": 5,
     "dates": [
@@ -14,11 +14,11 @@
       "2026-11-19",
       "2026-11-20"
     ],
-    "sourceCount": 7,
+    "sourceCount": 8,
     "sources": [
       {
-        "label": "Chair notes RAN1#127_v03",
-        "fileName": "Chair notes RAN1#127_v03.docx",
+        "label": "Chair notes RAN1#127_v05",
+        "fileName": "Chair notes RAN1#127_v05.docx",
         "origin": "public"
       },
       {
@@ -37,18 +37,23 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v02",
-        "fileName": "RAN1#127 online and offline schedules - v02.docx",
-        "origin": "public"
-      },
-      {
         "label": "RAN1#127 online and offline schedules - v02_hh2",
         "fileName": "RAN1#127 online and offline schedules - v02_hh2.docx",
         "origin": "public"
       },
       {
+        "label": "RAN1#127 online and offline schedules - v03",
+        "fileName": "RAN1#127 online and offline schedules - v03.docx",
+        "origin": "public"
+      },
+      {
         "label": "RAN1#127 Sorour sessions online and offline schedules - v02",
         "fileName": "RAN1#127 Sorour sessions online and offline schedules - v02.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1_127_Daily_Schedule_Online+Offline_v02",
+        "fileName": "RAN1_127_Daily_Schedule_Online+Offline_v02.pdf",
         "origin": "public"
       }
     ],
@@ -56,7 +61,7 @@
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 2,
+    "conflictCount": 3,
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
@@ -67,7 +72,7 @@
   "warnings": [
     {
       "level": "info",
-      "text": "2 unresolved source conflict(s)."
+      "text": "3 unresolved source conflict(s)."
     },
     {
       "level": "info",
@@ -82,7 +87,7 @@
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-18T03:52:53Z",
+  "updatedAt": "2026-11-18T04:18:07Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-18T03:52:10Z",
