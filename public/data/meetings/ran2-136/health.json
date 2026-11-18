@@ -3,8 +3,8 @@
   "meetingId": "ran2-136",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-18T20:26:28Z",
-    "lastAttemptAt": "2026-11-18T20:26:28Z",
+    "lastSuccessAt": "2026-11-18T21:26:49Z",
+    "lastAttemptAt": "2026-11-18T21:26:49Z",
     "sessionCount": 116,
     "roomCount": 4,
     "dates": [
@@ -30,17 +30,10 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
-    "host": null,
-    "credentials": false
+    "credentials": true
   },
-  "warnings": [
-    {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
-    }
-  ],
-  "updatedAt": "2026-11-18T20:28:32Z",
+  "warnings": [],
+  "updatedAt": "2026-11-18T21:26:53Z",
   "drafts": {
     "state": "baseline",
     "lastSuccessAt": "2026-11-18T20:28:28Z",
