@@ -5,6 +5,7 @@ import { getSelectedMeetingId, subscribeSelection } from "@/services/meetingSele
 import { scheduleQueryOptions } from "@/services/scheduleService";
 import { useMeetingClock } from "./useMeetingClock";
 import { meetingTimeZone } from "@/lib/ics";
+import { groupOfMeeting, useWorkingGroup } from "@/lib/workingGroup";
 
 /**
  * The one place the app decides which meeting it is showing.
@@ -20,10 +21,13 @@ export function useActiveMeeting(slug?: string) {
     () => "",
   );
 
-  const meetings = meetingsQuery.data?.meetings ?? [];
+  const group = useWorkingGroup();
+  const allMeetings = meetingsQuery.data?.meetings ?? [];
+  // Only the chosen working group's meetings (RAN1 or RAN2) are ever shown.
+  const meetings = allMeetings.filter((m) => groupOfMeeting(m) === group);
   const current = selectCurrentMeeting(meetings);
   const explicit = slug
-    ? meetings.find((m) => m.slug === slug)
+    ? allMeetings.find((m) => m.slug === slug)
     : selectedId
       ? meetings.find((m) => m.id === selectedId)
       : undefined;
@@ -33,6 +37,7 @@ export function useActiveMeeting(slug?: string) {
   const clock = useMeetingClock(meeting ? meetingTimeZone(meeting) : "UTC");
 
   return {
+    group,
     meetings,
     meeting,
     current,

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran2-136",
+  "schedule": {
+    "state": "ok",
+    "lastSuccessAt": "2026-11-18T20:26:28Z",
+    "lastAttemptAt": "2026-11-18T20:26:28Z",
+    "sessionCount": 116,
+    "roomCount": 4,
+    "dates": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "sourceCount": 1,
+    "sources": [
+      {
+        "label": "RAN2 session schedule",
+        "fileName": "R2_136_Schedule_v07.docx",
+        "origin": "public"
+      }
+    ],
+    "draftOnly": false,
+    "gaps": [],
+    "coarser": [],
+    "shortBlockCount": 0,
+    "conflictCount": 0,
+    "lowConfidenceCount": 0
+  },
+  "remoteFtp": {
+    "state": "skipped-no-credentials",
+    "host": null,
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+    }
+  ],
+  "updatedAt": "2026-11-18T20:28:32Z",
+  "drafts": {
+    "state": "baseline",
+    "lastSuccessAt": "2026-11-18T20:28:28Z",
+    "source": "3GPP sync mirror",
+    "artifactCount": 73,
+    "hiddenCount": 0,
+    "folderCount": 32,
+    "readFolderCount": 32,
+    "eventCount": 0
+  }
+}

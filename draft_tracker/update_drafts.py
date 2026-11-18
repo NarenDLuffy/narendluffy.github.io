@@ -112,7 +112,11 @@ def main() -> int:
         # this job keeps the meeting folder and the app adds Meetings Sync on
         # top (without hiding anything); otherwise the meeting folder only.
         phase = remote_ftp.meeting_phase(meeting.get("startDate"), meeting.get("endDate"))
-        live_root = SYNC_DRAFTS_ROOT if phase == "week" else None
+        from ingestion.groups import group_for
+
+        wg = group_for(slug)
+        sync_root = SYNC_DRAFTS_ROOT if wg.key == "RAN1" else f"{wg.sync_root}Inbox/Drafts/"
+        live_root = sync_root if phase == "week" else None
         source = Public3GPPDraftSource(folder, drafts_root_url=live_root)
         # The remote meeting FTP mirrors the venue server and is upstream of
         # the sync folder, so it wins whenever a delegate entered its host and

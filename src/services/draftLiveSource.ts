@@ -1,4 +1,5 @@
 import type { Meeting } from "@/types/meeting";
+import { draftRoots, groupOfMeeting } from "@/lib/workingGroup";
 import type {
   DraftArtifact,
   DraftArtifactSource,
@@ -59,7 +60,7 @@ export const SYNC_DRAFTS_BASE = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN
  */
 export function draftsTreeUrl(url: string): string {
   const root = url.replace(/\/?$/, "/");
-  return root.endsWith("/drafts/") ? root : `${root}drafts/`;
+  return /\/drafts\/$/i.test(root) ? root : `${root}drafts/`;
 }
 
 const REQUEST_TIMEOUT_MS = 3500;
@@ -407,16 +408,18 @@ type Candidate = {
   via: "browser" | "proxy";
 };
 
-function candidateBases(): Candidate[] {
+function candidateBases(meeting: Meeting): Candidate[] {
+  const group = groupOfMeeting(meeting);
+  const roots = draftRoots(group);
   const settings = getLocalSourceSettings();
   // The schedule source has historically used /ftp/RAN/RAN1/Inbox/. That is
   // not the drafts tree. Only accept a configured URL when it explicitly
   // points at the dynamic SYNC drafts Inbox; otherwise use the known drafts
   // root. This matters especially on a new phone with untouched settings.
-  const configuredDraftsUrl = settings.baseUrl?.includes("/Meetings_3GPP_SYNC/RAN1/Inbox/")
+  const configuredDraftsUrl = settings.baseUrl?.includes(`/Meetings_3GPP_SYNC/${group}/Inbox/`)
     ? settings.baseUrl
     : null;
-  const venue = draftsTreeUrl(configuredDraftsUrl ?? VENUE_DRAFTS_BASE);
+  const venue = configuredDraftsUrl ? draftsTreeUrl(configuredDraftsUrl) : roots.venue;
 
   const candidates: Candidate[] = [];
   // HTTPS venue twin first: works from any page (including https://ran1.app),
@@ -425,7 +428,7 @@ function candidateBases(): Candidate[] {
   if (!configuredDraftsUrl) {
     candidates.push({
       origin: "venue",
-      url: VENUE_DRAFTS_BASE_HTTPS,
+      url: roots.venueHttps,
       sourceType: "meeting-local",
       via: "browser",
     });
@@ -445,13 +448,13 @@ function candidateBases(): Candidate[] {
   // browser is refused by CORS on www.3gpp.org.
   candidates.push({
     origin: "sync-proxy",
-    url: SYNC_DRAFTS_BASE,
+    url: roots.sync,
     sourceType: "public",
     via: "proxy",
   });
   // Direct read, last resort: only ever succeeds on a static export where no
   // server function exists and the mirror happens to send CORS headers.
-  candidates.push({ origin: "sync", url: SYNC_DRAFTS_BASE, sourceType: "public", via: "browser" });
+  candidates.push({ origin: "sync", url: roots.sync, sourceType: "public", via: "browser" });
 
   return candidates;
 }
@@ -544,7 +547,7 @@ export async function probeLiveDrafts(
   }
   const cutoff = staleCutoff(meeting);
 
-  for (const candidate of candidateBases()) {
+  for (const candidate of candidateBases(meeting)) {
     const raw =
       candidate.via === "proxy" ? await crawlViaProxy(candidate.url) : await crawl(candidate.url);
     const result = raw

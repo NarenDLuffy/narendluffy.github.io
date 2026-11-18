@@ -14,6 +14,8 @@ import { walkListing, type CrawlResult } from "./listingParser";
  */
 
 export const SYNC_ROOT_PREFIX = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/";
+/** Sync trees of every followed working group. */
+export const SYNC_ROOT_PREFIXES = [SYNC_ROOT_PREFIX, "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN2/"];
 
 const REQUEST_TIMEOUT_MS = 8_000;
 const MAX_DEPTH = 12;
@@ -47,9 +49,9 @@ async function fetchText(url: string): Promise<string | null> {
   }
 }
 
-/** Only ever crawl inside the public RAN1 sync tree. */
+/** Only ever crawl inside the public RAN1/RAN2 sync trees. */
 export function isAllowedSyncUrl(url: string): boolean {
-  return url.startsWith(SYNC_ROOT_PREFIX);
+  return !url.includes("..") && SYNC_ROOT_PREFIXES.some((p) => url.startsWith(p));
 }
 
 export async function crawlSync(url: string): Promise<CrawlResult | null> {

@@ -17,6 +17,7 @@ import { VenueModeBanner } from "@/components/VenueModeBanner";
 import { VENUE_MODE_ENABLED } from "@/lib/venueMode";
 import { formatDateRange } from "@/services/meetingService";
 import { cn } from "@/lib/utils";
+import { WorkingGroupSwitch } from "@/components/WorkingGroupSwitch";
 
 const NAV = [
   { to: "/", label: "Now", icon: Clock },
@@ -34,7 +35,7 @@ const STATUS_LABEL = {
 } as const;
 
 export function AppShell({ children }: { children: ReactNode }) {
-  const { meeting, bundle, stale, clock, isCurrent } = useActiveMeeting();
+  const { meeting, bundle, stale, clock, isCurrent, group } = useActiveMeeting();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { unreadCount } = useDrafts(meeting);
 
@@ -56,7 +57,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <Link to="/meetings" className="min-w-0 flex-1" aria-label="Switch meeting">
             <div className="flex items-baseline gap-2">
               <span className="mono-code text-base font-semibold tracking-tight">
-                {meeting?.name ?? "RAN1 Live!"}
+                {meeting?.name ?? `${group} Live!`}
               </span>
               <span className="truncate text-xs text-muted-foreground">
                 {meeting
@@ -119,6 +120,8 @@ export function AppShell({ children }: { children: ReactNode }) {
               How to use
             </Link>
           </nav>
+
+          <WorkingGroupSwitch />
 
           <div className="mono-code shrink-0 rounded-md bg-secondary px-2 py-1 text-right text-sm font-semibold tabular">
             {clock.localTime || "--:--"}

@@ -46,14 +46,19 @@ class PortalMeeting:
     country: str | None
     folder_url: str | None
     raw: dict[str, Any]
+    group: str = "RAN1"
 
     @property
     def slug(self) -> str:
-        return f"ran1-{self.number}-bis" if self.type == "bis" else f"ran1-{self.number}"
+        prefix = self.group.lower()
+        return f"{prefix}-{self.number}-bis" if self.type == "bis" else f"{prefix}-{self.number}"
 
 
-def fetch_meetings(start: str, end: str) -> list[PortalMeeting]:
-    """Every RAN1 meeting the portal knows about in the given window."""
+def fetch_meetings(start: str, end: str, group: str = "RAN1") -> list[PortalMeeting]:
+    """Every meeting of one working group the portal knows about in the window."""
+    from .groups import GROUPS
+
+    wg = GROUPS[group]
     payload = {
         "getMeetingsInput": {
             "StartRow": 0,
@@ -62,7 +67,7 @@ def fetch_meetings(start: str, end: str) -> list[PortalMeeting]:
             "SortAscending": True,
             "StartDate": f"{start} 00:00:00",
             "EndDate": f"{end} 00:00:00",
-            "Tbs": [RAN1_TB_ID],
+            "Tbs": [wg.tb_id],
             "IncludeChildTbs": False,
             "IncludeNonTBMeetings": False,
             "Reference": "",
@@ -71,19 +76,20 @@ def fetch_meetings(start: str, end: str) -> list[PortalMeeting]:
     }
     response = _session.post(MEETINGS_ENDPOINT, json=payload, timeout=45)
     response.raise_for_status()
-    return [m for m in (_to_meeting(row) for row in response.json()) if m]
+    return [m for m in (_to_meeting(row, group) for row in response.json()) if m]
 
 
-def _to_meeting(row: dict[str, Any]) -> PortalMeeting | None:
+def _to_meeting(row: dict[str, Any], group: str = "RAN1") -> PortalMeeting | None:
     title = (row.get("Title") or row.get("ShortTitle") or "").strip()
-    match = TITLE_RE.search(title.replace("3GPP", "3GPP "))
+    title_re = re.compile(TITLE_RE.pattern.replace("RAN1", re.escape(group)), re.I)
+    match = title_re.search(title.replace("3GPP", "3GPP "))
     if not match:
         return None  # training sessions, social events, other technical bodies
     number = int(match.group("number"))
     kind = "bis" if match.group("suffix") else "regular"
     return PortalMeeting(
         portal_id=int(row["Id"]),
-        name=f"RAN1#{number}-bis" if kind == "bis" else f"RAN1#{number}",
+        name=f"{group}#{number}-bis" if kind == "bis" else f"{group}#{number}",
         number=number,
         type=kind,
         start_date=str(row["StartDate"])[:10],
@@ -93,6 +99,7 @@ def _to_meeting(row: dict[str, Any]) -> PortalMeeting | None:
         country=row.get("Country") or None,
         folder_url=_https_folder(row.get("MtgDocURL")),
         raw=row,
+        group=group,
     )
 
 
@@ -107,7 +114,9 @@ def _https_folder(url: str | None) -> str | None:
         return None
     folder = url.replace("https://ftp.3gpp.org/", "https://www.3gpp.org/ftp/")
     folder = folder.replace("http://ftp.3gpp.org/", "https://www.3gpp.org/ftp/")
-    return folder if folder.endswith("/") else folder + "/"
+    folder = folder if folder.endswith("/") else folder + "/"
+    # RAN2's portal entries point at the Docs/ sub-folder; the meeting folder is its parent.
+    return re.sub(r"Docs/$", "", folder, flags=re.I)
 
 
 # --- timezone resolution -----------------------------------------------------

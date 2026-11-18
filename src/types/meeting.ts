@@ -13,6 +13,8 @@ export type MeetingType = "regular" | "bis" | "adhoc" | "other";
 
 export type MeetingStatus = "upcoming" | "active" | "completed";
 
+export type WorkingGroup = "RAN1" | "RAN2";
+
 export interface MeetingSourceFolders {
   /** Public 3GPP meeting folder, e.g. .../tsg_ran/WG1_RL1/TSGR1_126/ */
   meetingFolder?: string;
@@ -51,6 +53,8 @@ export interface Meeting {
   floorplanUrl?: string;
   /** ISO timestamp of the last successful ingestion run for this meeting */
   lastIngestedAt?: string;
+  /** Working group; absent on older RAN1 records */
+  workingGroup?: WorkingGroup;
 }
 
 export interface MeetingIndex {

@@ -25,3 +25,5 @@
 - [x] Fix Drafts crawl server error and prevent a failed crawl from blanking the page
 - [x] Keep NTN-NR inside Room 225-226's single Wednesday timeline, not as an overlapping block
 - [x] Verify Wednesday BMO 221 against Hiroki's DOCX and daily PDF: both state only Sensing (90); no other room's split copied
+
+- [x] RAN1/RAN2 working-group switch: schedule, Now, agenda, rooms, Drafts (Inbox/Drafts), watcher

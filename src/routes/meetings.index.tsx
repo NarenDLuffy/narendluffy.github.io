@@ -1,6 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { CheckCircle2, ChevronRight, CircleDot, Clock3 } from "lucide-react";
+import { groupOfMeeting } from "@/lib/workingGroup";
 import { meetingIndexQueryOptions, formatDateRange, selectCurrentMeeting } from "@/services/meetingService";
 import { setSelectedMeetingId } from "@/services/meetingSelection";
 import { useActiveMeeting } from "@/hooks/useActiveMeeting";
@@ -36,12 +37,12 @@ export const Route = createFileRoute("/meetings/")({
 
 function MeetingsPage() {
   const { data, isLoading } = useQuery(meetingIndexQueryOptions);
-  const { meeting: activeMeeting } = useActiveMeeting();
+  const { meeting: activeMeeting, group } = useActiveMeeting();
   const navigate = useNavigate();
 
   if (isLoading) return <LoadingState label="Discovering meetings…" />;
 
-  const meetings = data?.meetings ?? [];
+  const meetings = (data?.meetings ?? []).filter((m) => groupOfMeeting(m) === group);
   if (meetings.length === 0) return <NoMeetingState />;
 
   const current = selectCurrentMeeting(meetings);

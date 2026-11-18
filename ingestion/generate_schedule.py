@@ -122,10 +122,34 @@ def build_bundles(force: bool) -> list[ScheduleBundle]:
     """
     from datetime import date
 
-    from .live import build_bundle
+    return [build_for(pm) for pm in all_portal_meetings() if rebuild_due(pm.end_date, date.today(), force)]
+
+
+def all_portal_meetings():
+    """Every followed working group's meetings (RAN1, RAN2); one group failing never stops the other."""
+    from .groups import GROUPS
     from .portal import fetch_meetings
 
-    return [build_bundle(pm) for pm in fetch_meetings("2025-01-01", "2028-12-31") if rebuild_due(pm.end_date, date.today(), force)]
+    found = []
+    for key in GROUPS:
+        try:
+            found.extend(fetch_meetings("2025-01-01", "2028-12-31", key))
+        except Exception as exc:  # noqa: BLE001
+            print(f"{key}: portal unavailable: {exc}", file=sys.stderr)
+    return found
+
+
+def build_for(pm) -> ScheduleBundle:
+    """RAN2 has one week grid per meeting; RAN1 merges its chair files."""
+    from .groups import GROUPS
+
+    if GROUPS[pm.group].schedule_style == "single_grid":
+        from .ran2_schedule import build_bundle as build_grid
+
+        return build_grid(pm)
+    from .live import build_bundle
+
+    return build_bundle(pm)
 
 
 def rebuild_due(end_date: str, today, force: bool = False) -> bool:
@@ -221,15 +245,12 @@ def main() -> int:
     if args.fixtures:
         bundles = fixture_meetings()
     elif args.meeting:
-        from .live import build_bundle
-        from .portal import fetch_meetings
-
         wanted = args.meeting.lower()
         bundles = []
-        for pm in fetch_meetings("2025-01-01", "2028-12-31"):
+        for pm in all_portal_meetings():
             label = pm.slug
             if wanted in label.lower() or wanted in (pm.name or "").lower():
-                bundles.append(build_bundle(pm))
+                bundles.append(build_for(pm))
     else:
         try:
             bundles = build_bundles(args.force)

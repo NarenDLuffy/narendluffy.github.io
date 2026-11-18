@@ -122,6 +122,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
             agenda=f"{pm.folder_url}Agenda/" if pm.folder_url else None,
         ),
         lastIngestedAt=_iso(now),
+        workingGroup=pm.group,
     )
 
     agenda_items: list[AgendaItem] = []

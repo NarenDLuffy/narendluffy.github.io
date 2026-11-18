@@ -38,6 +38,9 @@ def validate(bundle: ScheduleBundle, previous: dict | None = None) -> list[str]:
     from .live import COVERAGE_GAPS
 
     errors.extend(COVERAGE_GAPS.get(bundle.meeting.id, []))
+    from .ran2_schedule import PROBLEMS
+
+    errors.extend(PROBLEMS.get(bundle.meeting.id, []))
 
 
     if previous:

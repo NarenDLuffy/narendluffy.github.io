@@ -9,6 +9,8 @@ const REPO = "NarenDLuffy/narendluffy.github.io";
 const WORKFLOW = "update-schedule.yml";
 const DATA = `https://raw.githubusercontent.com/${REPO}/main/public/data/`;
 const INBOX = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
+// RAN2 keeps its single week grid in the Agenda folder.
+const RAN2_AGENDA = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN2/Agenda/";
 const UA = { "User-Agent": "Mozilla/5.0 (ran1-live schedule watch)" };
 const DAY = 86_400_000;
 
@@ -21,6 +23,33 @@ async function text(url: string): Promise<string | null> {
   }
 }
 
+async function newestIn(folders: string[]): Promise<{ newest: number; name: string }> {
+  let newest = 0;
+  let name = "";
+  for (const folder of folders) {
+    const html = await text(folder);
+    if (!html) continue;
+    for (const f of parseListing(html, folder)) {
+      if (f.isDir || !/schedul/i.test(f.name) || !/\.docx$/i.test(f.name)) continue;
+      const t = Date.parse(f.modifiedAt ?? "") || 0;
+      if (t > newest) {
+        newest = t;
+        name = f.name;
+      }
+    }
+  }
+  return { newest, name };
+}
+
+async function newestInInbox(inbox: string): Promise<{ newest: number; name: string }> {
+  const html = await text(inbox);
+  if (!html) return { newest: 0, name: "" };
+  const folders = parseListing(html, inbox)
+    .filter((e) => e.isDir && /notes|chair|schedul/i.test(e.name))
+    .map((e) => e.href);
+  return newestIn(folders);
+}
+
 export const Route = createFileRoute("/api/public/jobs/schedule-watch")({
   server: {
     handlers: {
@@ -29,39 +58,33 @@ export const Route = createFileRoute("/api/public/jobs/schedule-watch")({
         if (authFailure) return authFailure;
 
         const meetings = JSON.parse((await text(`${DATA}meetings.json?t=${Date.now()}`)) ?? "{}");
-        const active = (meetings.meetings ?? []).find((m: { status: string }) => m.status === "active");
-        if (!active) return Response.json({ action: "none", reason: "no active meeting" });
         const now = Date.now();
-        const start = Date.parse(`${active.startDate}T00:00:00Z`);
-        const end = Date.parse(`${active.endDate}T23:59:59Z`);
-        // Meetings Sync is read only on meeting days and the day after.
-        if (now < start || now > end + DAY) return Response.json({ action: "none", reason: "not meeting week" });
+        // Every followed working group (RAN1, RAN2) with a meeting running now.
+        const live = (meetings.meetings ?? []).filter(
+          (m: { status: string; startDate: string; endDate: string }) => {
+            const start = Date.parse(`${m.startDate}T00:00:00Z`);
+            const end = Date.parse(`${m.endDate}T23:59:59Z`);
+            // Meetings Sync is read only on meeting days and the day after.
+            return now >= start && now <= end + DAY;
+          },
+        ) as { slug: string; workingGroup?: string }[];
+        if (live.length === 0) return Response.json({ action: "none", reason: "not meeting week" });
 
-        const health = JSON.parse(
-          (await text(`${DATA}meetings/${active.slug}/health.json?t=${now}`)) ?? "{}",
-        );
-        const lastRun = Date.parse(health?.schedule?.lastAttemptAt ?? "") || 0;
-
-        const inboxHtml = await text(INBOX);
-        if (!inboxHtml) return Response.json({ action: "none", reason: "inbox unreachable" });
-        const folders = parseListing(inboxHtml, INBOX).filter(
-          (e) => e.isDir && /notes|chair|schedul/i.test(e.name),
-        );
-        let newest = 0;
-        let newestName = "";
-        for (const folder of folders) {
-          const html = await text(folder.href);
-          if (!html) continue;
-          for (const f of parseListing(html, folder.href)) {
-            if (f.isDir || !/schedul/i.test(f.name) || !/\.docx$/i.test(f.name)) continue;
-            const t = Date.parse(f.modifiedAt ?? "") || 0;
-            if (t > newest) {
-              newest = t;
-              newestName = f.name;
-            }
+        let due = "";
+        for (const m of live) {
+          const health = JSON.parse(
+            (await text(`${DATA}meetings/${m.slug}/health.json?t=${now}`)) ?? "{}",
+          );
+          const lastRun = Date.parse(health?.schedule?.lastAttemptAt ?? "") || 0;
+          const ran2 = m.workingGroup === "RAN2" || m.slug.startsWith("ran2-");
+          const { newest, name } = ran2 ? await newestIn([RAN2_AGENDA]) : await newestInInbox(INBOX);
+          if (newest > lastRun) {
+            due = name;
+            break;
           }
         }
-        if (newest <= lastRun) return Response.json({ action: "none", reason: "up to date", newestName });
+        if (!due) return Response.json({ action: "none", reason: "up to date" });
+        const newestName = due;
 
         const token = process.env['GITHUB_DISPATCH_TOKEN'];
         if (!token) return Response.json({ action: "none", reason: "GITHUB_DISPATCH_TOKEN missing", newestName });

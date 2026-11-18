@@ -63,6 +63,8 @@ class Meeting:
     sources: MeetingSourceFolders | None = None
     floorplanUrl: str | None = None
     lastIngestedAt: str | None = None
+    #: "RAN1" or "RAN2" — which working group the meeting belongs to.
+    workingGroup: str | None = None
 
     def to_json(self) -> dict[str, Any]:
         data = _clean(asdict(self))

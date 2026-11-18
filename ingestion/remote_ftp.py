@@ -123,7 +123,9 @@ def remote_root(meeting_id: str, start: str | None, end: str | None) -> str | No
         _note(meeting_id, "unreachable", host)
         return None
     _note(meeting_id, "read", host)
-    return f"ftp://{host}{INBOX_PATH}"
+    from .groups import group_for
+
+    return f"ftp://{host}/{group_for(meeting_id).sync_name}/Inbox/"
 
 
 def _connect(host: str) -> ftplib.FTP | None:
