@@ -179,20 +179,19 @@ export function agendaMatches(code: string, filter: string): boolean {
   return Boolean(prefix) && filter.startsWith(`${prefix}.`);
 }
 
-/**
- * RAN2 only: its schedule often names just the parent topic (8.2 "AIoT"),
- * while My agenda follows leaves (8.2.4) — a parent block covers them.
- * RAN1 keeps the one-way rule above unchanged.
- */
 export function isRan2Meeting(meetingId: string | undefined): boolean {
   return Boolean(meetingId?.startsWith("ran2-"));
 }
 
+/**
+ * A block marked with a parent item (10.8 "Sensing") covers the leaves under
+ * it, so following 10.8.1 shows that block. Same rule for RAN1 and RAN2; the
+ * RAN2-specific work (topic names, draft tags) lives in its own ingestion.
+ */
 export function sessionMatchesAgenda(session: Session, filters: string[]): boolean {
   if (filters.length === 0) return true;
-  const ran2 = isRan2Meeting(session.meetingId);
   return session.agendaItems.some((code) =>
-    filters.some((f) => agendaMatches(code, f) || (ran2 && f.startsWith(`${code}.`))),
+    filters.some((f) => agendaMatches(code, f) || f.startsWith(`${code}.`)),
   );
 }
 

@@ -3,9 +3,9 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-18T21:31:34Z",
-    "lastAttemptAt": "2026-11-18T21:31:34Z",
-    "sessionCount": 265,
+    "lastSuccessAt": "2026-11-18T23:56:49Z",
+    "lastAttemptAt": "2026-11-18T23:56:49Z",
+    "sessionCount": 266,
     "roomCount": 5,
     "dates": [
       "2026-11-16",
@@ -17,8 +17,8 @@
     "sourceCount": 6,
     "sources": [
       {
-        "label": "Chair notes RAN1#127_v07",
-        "fileName": "Chair notes RAN1#127_v07.docx",
+        "label": "Chair notes RAN1#127_v08",
+        "fileName": "Chair notes RAN1#127_v08.docx",
         "origin": "public"
       },
       {
@@ -32,8 +32,8 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v02_hh3",
-        "fileName": "RAN1#127 online and offline schedules - v02_hh3.docx",
+        "label": "RAN1#127 online and offline schedules - v02_hh4",
+        "fileName": "RAN1#127 online and offline schedules - v02_hh4.docx",
         "origin": "public"
       },
       {
@@ -55,9 +55,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
     {
@@ -73,11 +73,11 @@
       "text": "Only 236 of 237 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-11-18T21:34:32Z",
+  "updatedAt": "2026-11-18T23:57:55Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-18T19:27:46Z",

@@ -306,6 +306,30 @@ def _items_minutes_after(lines: list[str], index: int) -> int:
     return total
 
 
+def _nested_in_previous(slots: list["_Slot"], label: str, minutes: int | None) -> bool:
+    """True when a timed item details the timed item just before it.
+
+    ".10.8 Sensing (50) / 10.8.3 (50) / .10.5.4.1 (60)" under "6GR (110)":
+    10.8.3 is the content of the 50 Sensing minutes, not 50 more minutes.
+    """
+    if not minutes or not slots:
+        return False
+    codes = AGENDA_CODE_RE.findall(label)
+    if not codes:
+        return False
+    used = 0
+    for slot in reversed(slots):
+        slot_codes = AGENDA_CODE_RE.findall(slot.label)
+        if not slot_codes:
+            return False
+        if is_descendant(codes[0], slot_codes[0]) and slot_codes[0] != codes[0]:
+            return bool(slot.minutes) and used + minutes <= slot.minutes
+        if not is_descendant(slot_codes[0], codes[0].rsplit(".", 1)[0]):
+            return False
+        used += slot.minutes or 0
+    return False
+
+
 def _parse_cell(text: str) -> list[_Segment]:
     """Split a cell into consecutive sub-blocks.
 
@@ -387,8 +411,18 @@ def _parse_cell(text: str) -> list[_Segment]:
         if line_index in hard_break:
             current, current_group, allocated = None, "", 0
         codes = _code_list(line)
+        # "A-IoT Phase2 (60) / 9.3.3 (60)": the code list is the agenda item of
+        # the named item just above it, filling exactly its minutes.
+        names_previous = bool(
+            codes and current is not None and current.slots
+            and not AGENDA_CODE_RE.findall(current.slots[-1].label)
+            and current.slots[-1].minutes
+            and all(m for _, m in codes)
+            and sum(m or 0 for _, m in codes) == current.slots[-1].minutes
+        )
         if (
             codes
+            and not names_previous
             and current is not None
             and current.minutes
             and allocated >= current.minutes
@@ -406,12 +440,15 @@ def _parse_cell(text: str) -> list[_Segment]:
         if codes and current is not None:
             # "9.3.3, 9.3.1, 9.3.2" under a head is the ordered list of agenda
             # items sharing that head's time, not a work-area tag.
+            if names_previous:
+                current.slots[-1].minutes = -current.slots[-1].minutes  # marks a named container
             for code, code_minutes in codes:
                 current.raw += "\n" + code
+                nested = names_previous or _nested_in_previous(current.slots, code, code_minutes)
                 current.slots.append(
                     _Slot(label=code, minutes=code_minutes, group=current_group or current.group)
                 )
-                if code_minutes:
+                if code_minutes and not nested:
                     allocated += code_minutes
             continue
 
@@ -519,12 +556,13 @@ def _parse_cell(text: str) -> list[_Segment]:
             segments.append(current)
             allocated = 0
         current.raw += "\n" + line
+        nested = _nested_in_previous(current.slots, label, minutes)
         current.slots.append(_Slot(
             label=label, minutes=minutes, group=current_group or current.group,
             codes=_item_codes(label) if leading_code else [],
         ))
 
-        if minutes:
+        if minutes and not nested:
             allocated += minutes
 
     # A parent item can be followed by its timed descendants in the same cell:
@@ -549,7 +587,51 @@ def _parse_cell(text: str) -> list[_Segment]:
             if segment.minutes is None or segment.minutes == first.minutes:
                 segment.minutes = first.minutes
 
+    for segment in segments:
+        _expand_nested_slots(segment)
+
     return segments
+
+
+def _expand_nested_slots(segment: "_Segment") -> None:
+    """Replace a timed item by its timed children when they fill it exactly.
+
+    "6GR (110) / .10.8 Sensing (50) / 10.8.3 (50) / .10.5.4.1 (60)" becomes
+    10.8.3 (50) then 10.5.4.1 (60). Children that do not add up to the parent's
+    minutes are left alone, so no time is invented.
+    """
+    slots = segment.slots
+    out: list[_Slot] = []
+    i = 0
+    while i < len(slots):
+        slot = slots[i]
+        if slot.minutes is not None and slot.minutes < 0:
+            # Named container ("A-IoT Phase2 (60)") whose code list follows.
+            j, minutes = i + 1, -slot.minutes
+            while j < len(slots) and AGENDA_CODE_RE.findall(slots[j].label) and minutes > 0:
+                minutes -= slots[j].minutes or 0
+                slots[j].group = slots[j].group or slot.group
+                j += 1
+            out.extend(slots[i + 1:j])
+            i = j
+            continue
+        codes = AGENDA_CODE_RE.findall(slot.label)
+        if codes and slot.minutes:
+            j, total = i + 1, 0
+            while j < len(slots):
+                child_codes = AGENDA_CODE_RE.findall(slots[j].label)
+                if not (child_codes and slots[j].minutes and child_codes[0] != codes[0]
+                        and is_descendant(child_codes[0], codes[0])):
+                    break
+                total += slots[j].minutes or 0
+                j += 1
+            if j > i + 1 and total == slot.minutes:
+                out.extend(slots[i + 1:j])
+                i = j
+                continue
+        out.append(slot)
+        i += 1
+    segment.slots = out
 
 
 

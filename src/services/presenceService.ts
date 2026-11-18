@@ -221,7 +221,7 @@ export function buildCoverage(
           (c) =>
             c === f ||
             c.startsWith(`${f}.`) ||
-            (bundle.meeting.id.startsWith("ran2-") && f.startsWith(`${c}.`)),
+            f.startsWith(`${c}.`),
         ),
       ).length,
     }));
