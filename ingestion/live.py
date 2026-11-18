@@ -76,6 +76,27 @@ def _topic_key(text: str) -> str:
     return hashlib.sha1(text.lower().encode()).hexdigest()[:8]
 
 
+def _block_sibling_codes(session, sessions) -> set[str]:
+    """Agenda codes of the touching sessions of the same head (room, day, group).
+
+    "R20 (60) / NTN-NR (40) / .9.5 NTN (20)": the name-only part cannot be 9.5.
+    """
+    same = sorted(
+        (x for x in sessions if x.roomId == session.roomId and x.date == session.date
+         and x.group == session.group and x.kind not in ("break", "lunch")),
+        key=lambda x: x.startTime,
+    )
+    i = next(k for k, x in enumerate(same) if x is session)
+    chain = [session]
+    k = i
+    while k > 0 and same[k - 1].endTime == same[k].startTime:
+        k -= 1; chain.append(same[k])
+    k = i
+    while k + 1 < len(same) and same[k].endTime == same[k + 1].startTime:
+        k += 1; chain.append(same[k])
+    return {c for x in chain if x is not session for c in x.agendaItems}
+
+
 def _parent_code(code: str) -> str | None:
     return code.rsplit(".", 1)[0] if "." in code else None
 
@@ -131,7 +152,7 @@ def build_bundle(pm: PortalMeeting, *, with_documents: bool = True) -> ScheduleB
         pairs = [(a.code, a.title) for a in agenda_items]
         for s in sessions:
             if not s.agendaItems and s.kind not in ("break", "lunch"):
-                code = map_topic(s.topic, pairs)
+                code = map_topic(f"{s.group or ''} {s.topic}".strip(), pairs, _block_sibling_codes(s, sessions))
                 if code:
                     s.agendaItems = [code]
         meeting.schedulePublished = bool(sessions)

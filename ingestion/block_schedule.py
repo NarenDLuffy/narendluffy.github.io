@@ -317,7 +317,21 @@ def _parse_cell(text: str) -> list[_Segment]:
     """
     lines: list[str] = []
     after_blank: set[int] = set()
+    # "|" closes the open head: ".9.5 NTN (20) | 6GR (90)" — what follows is a
+    # new block, never an item of the previous head.
+    hard_break: set[int] = set()
+    pieces: list[str] = []
     for raw_line in text.split("\n"):
+        parts = raw_line.split("|")
+        for n, part in enumerate(parts):
+            if n:
+                pieces.append("\x00")
+            pieces.append(part)
+    for raw_line in pieces:
+        if raw_line == "\x00":
+            if lines:
+                hard_break.add(len(lines))
+            continue
         stripped = raw_line.strip()
         if not stripped:
             if lines:
@@ -361,6 +375,8 @@ def _parse_cell(text: str) -> list[_Segment]:
         return allocated >= current.minutes
 
     for line_index, line in enumerate(lines):
+        if line_index in hard_break:
+            current, current_group, allocated = None, "", 0
         codes = _code_list(line)
         if (
             codes
@@ -418,7 +434,10 @@ def _parse_cell(text: str) -> list[_Segment]:
             and not finished() and allocated + minutes <= current.minutes
         ):
             following = _items_minutes_after(lines, line_index)
-            if 0 < following <= minutes:
+            # "R20 (60) / NTN-NR (40) / .9.5 (20)": the tag and the items
+            # together fill the head, so the tag is an item of its own.
+            fits_as_item = following < minutes and allocated + minutes + following <= current.minutes
+            if 0 < following <= minutes and not fits_as_item:
                 current_group = label
                 current.raw += "\n" + line
                 continue

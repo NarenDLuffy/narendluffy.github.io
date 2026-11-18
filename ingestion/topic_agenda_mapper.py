@@ -16,9 +16,11 @@ IGNORE = {"nr", "for", "and", "the", "of", "in", "on", "phase", "r20", "6gr", "r
 
 
 def _tokens(text: str) -> set[str]:
-    text = text.lower().replace("-", "")
+    text = text.lower()
+    # "NR-NTN" yields nr, ntn and the joined "nrntn"; "A-IoT" keeps "aiot".
+    joined = {w.replace("-", "") for w in re.findall(r"[a-z0-9]+(?:-[a-z0-9]+)+", text)}
     text = re.sub(r"(?<=[a-z])(?=\d)|(?<=\d)(?=[a-z])", " ", text)
-    return {t for t in re.split(r"[^a-z0-9]+", text) if t}
+    return {t for t in re.split(r"[^a-z0-9]+", text) if t} | joined
 
 
 def _title_vocab(title: str) -> set[str]:
@@ -34,15 +36,26 @@ def _scope(topic: str, top_titles: dict[str, str]) -> set[str]:
     if re.search(r"\b6gr?\b", low):
         return {c for c, t in top_titles.items() if "6g" in t.lower()}
     if re.search(r"\br(?:el)?-?20\b", low):
-        return {c for c, t in top_titles.items() if re.search(r"rel(?:ease)?[- ]?20", t.lower())}
+        # "R20" is the 5G-Advanced Release 20 work; the 6G study is "6GR".
+        return {c for c, t in top_titles.items()
+                if re.search(r"rel(?:ease)?[- ]?20", t.lower()) and "6g" not in t.lower()}
     return {c for c, t in top_titles.items() if not re.match(r"\s*(maintenance|pre-)", t.lower())}
 
 
-def map_topic(topic: str, agenda: Iterable[tuple[str, str]]) -> str | None:
-    items = [(c, t) for c, t in agenda if c and t]
+def map_topic(
+    topic: str, agenda: Iterable[tuple[str, str]], exclude: Iterable[str] = ()
+) -> str | None:
+    """`exclude`: codes the same block already lists explicitly — the name
+    refers to a different item, so they are not candidates."""
+    excluded = set(exclude)
+    items = [(c, t) for c, t in agenda if c and t and c not in excluded]
     top_titles = {c: t for c, t in items if "." not in c}
     scope = _scope(topic, top_titles)
-    wanted = _tokens(topic) - IGNORE
+    wanted = {w for w in _tokens(topic) - IGNORE if "-" not in w}
+    # A joined hyphen form ("ntnnr") is only a hint when its parts are not
+    # already wanted; matching uses the separate parts.
+    parts = set(re.findall(r"[a-z0-9]+", topic.lower()))
+    wanted = {w for w in wanted if w in parts or not any(w.startswith(x) for x in parts if len(x) < len(w))}
     wanted = {w for w in wanted if not w.isdigit()}
     if not wanted or not scope:
         return None
