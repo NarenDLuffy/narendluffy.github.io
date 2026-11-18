@@ -48,6 +48,13 @@ def _agenda_codes(slug: str) -> dict[str, str]:
         return {}
 
 
+def _ran2_resolver(slug: str):
+    from ingestion.ran2_topics import folder_topic, resolve_topic
+
+    codes = _agenda_codes(slug)
+    return lambda name: resolve_topic(folder_topic(name), codes)
+
+
 def _meeting_folder(slug: str) -> str | None:
     path = MEETINGS_DIR / slug / "meeting.json"
     if not path.exists():
@@ -135,6 +142,7 @@ def main() -> int:
             source=source,
             agenda_codes=_agenda_codes(slug),
             previous=previous,
+            topic_resolver=_ran2_resolver(slug) if wg.key == "RAN2" else None,
             monitoring=meeting.get("status") != "completed",
             config=ScanConfig(hash_files=args.hash),
         )

@@ -179,9 +179,21 @@ export function agendaMatches(code: string, filter: string): boolean {
   return Boolean(prefix) && filter.startsWith(`${prefix}.`);
 }
 
+/**
+ * RAN2 only: its schedule often names just the parent topic (8.2 "AIoT"),
+ * while My agenda follows leaves (8.2.4) — a parent block covers them.
+ * RAN1 keeps the one-way rule above unchanged.
+ */
+export function isRan2Meeting(meetingId: string | undefined): boolean {
+  return Boolean(meetingId?.startsWith("ran2-"));
+}
+
 export function sessionMatchesAgenda(session: Session, filters: string[]): boolean {
   if (filters.length === 0) return true;
-  return session.agendaItems.some((code) => filters.some((f) => agendaMatches(code, f)));
+  const ran2 = isRan2Meeting(session.meetingId);
+  return session.agendaItems.some((code) =>
+    filters.some((f) => agendaMatches(code, f) || (ran2 && f.startsWith(`${code}.`))),
+  );
 }
 
 export function searchSession(session: Session, q: string): boolean {

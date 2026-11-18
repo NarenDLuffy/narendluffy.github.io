@@ -384,7 +384,7 @@
       "endTime": "13:00",
       "roomId": "ran2-136-brk-1-room",
       "roomName": "Brk 1 room",
-      "topic": "EUTRA&NR15161718 (Mattias) con\u2019t",
+      "topic": "EUTRA&NR15161718 (Mattias) con’t",
       "topicKey": "eba821b9",
       "agendaItems": [
         "7.10",
@@ -968,7 +968,7 @@
         },
         {
           "code": "9.2.1",
-          "label": "UE capabilities con\u2019t",
+          "label": "UE capabilities con’t",
           "minutes": null,
           "startTime": null,
           "endTime": null
@@ -1250,7 +1250,7 @@
       "mode": "offline",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 10:30\u201312:00 is outside the 11:00\u201313:00 slot.",
+      "note": "Chair-written time 10:30–12:00 is outside the 11:00–13:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -1426,7 +1426,9 @@
       "roomName": "Brk 1 room",
       "topic": "CP offlines (measurements)",
       "topicKey": "b0231303",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.4.2"
+      ],
       "agendaBreakdown": [],
       "mode": "offline",
       "kind": "session",
@@ -1811,12 +1813,14 @@
       "roomName": "Brk 2 room",
       "topic": "A-IoT offline (vivo)",
       "topicKey": "ed24947a",
-      "agendaItems": [],
+      "agendaItems": [
+        "8.2"
+      ],
       "agendaBreakdown": [],
       "mode": "offline",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 16:30\u201317:00 is outside the 17:00\u201319:00 slot.",
+      "note": "Chair-written time 16:30–17:00 is outside the 17:00–19:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -1842,7 +1846,7 @@
       "agendaBreakdown": [],
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 16:30\u201317:00 is outside the 17:00\u201319:00 slot.",
+      "note": "Chair-written time 16:30–17:00 is outside the 17:00–19:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -1956,7 +1960,9 @@
       "roomName": "Brk 1 room",
       "topic": "ISAC offline (Xiaomi)",
       "topicKey": "f350d1b4",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.5"
+      ],
       "agendaBreakdown": [],
       "sessionLead": "Xiaomi",
       "mode": "offline",
@@ -2187,12 +2193,14 @@
       "roomName": "Brk 1 room",
       "topic": "RRC modeling (Samsung)",
       "topicKey": "342176a7",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.3.2.1"
+      ],
       "agendaBreakdown": [],
       "sessionLead": "Samsung",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 10:00\u201311:00 is outside the 08:30\u201310:30 slot.",
+      "note": "Chair-written time 10:00–11:00 is outside the 08:30–10:30 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -2406,7 +2414,9 @@
       "roomName": "Brk 1 room",
       "topic": "CP 6G (System information)?",
       "topicKey": "8e6552f1",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.3.2.3"
+      ],
       "agendaBreakdown": [],
       "kind": "session",
       "status": "scheduled",
@@ -2724,7 +2734,7 @@
       "sessionLead": "Qualcomm",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 16:30\u201317:00 is outside the 17:00\u201319:00 slot.",
+      "note": "Chair-written time 16:30–17:00 is outside the 17:00–19:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -2765,12 +2775,14 @@
       "roomName": "Brk 3 room",
       "topic": "[AT136][102][AI-MOB] (Ericsson)",
       "topicKey": "27da3729",
-      "agendaItems": [],
+      "agendaItems": [
+        "8.3"
+      ],
       "agendaBreakdown": [],
       "sessionLead": "Ericsson",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 16:30\u201317:30 is outside the 17:00\u201319:00 slot.",
+      "note": "Chair-written time 16:30–17:30 is outside the 17:00–19:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -2846,7 +2858,9 @@
       "roomName": "Main room",
       "topic": "Continue with the 6G NTN offline, remaining proposals from R2-2608316 (Erlin)",
       "topicKey": "46de07c1",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.6"
+      ],
       "agendaBreakdown": [],
       "sessionLead": "Erlin",
       "mode": "offline",
@@ -2873,7 +2887,9 @@
       "roomName": "Brk 1 room",
       "topic": "UP Offlines",
       "topicKey": "fdae2dba",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.3.1"
+      ],
       "agendaBreakdown": [],
       "mode": "offline",
       "kind": "session",
@@ -2921,7 +2937,7 @@
         },
         {
           "code": "8.14",
-          "label": "TEI20 \u2013 NTN related (Sergio)",
+          "label": "TEI20 – NTN related (Sergio)",
           "minutes": null,
           "startTime": null,
           "endTime": null
@@ -3002,7 +3018,9 @@
       "roomName": "Brk 1 room",
       "topic": "QoS offline",
       "topicKey": "ca92b794",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.3.1.2"
+      ],
       "agendaBreakdown": [],
       "mode": "offline",
       "kind": "session",
@@ -3067,7 +3085,7 @@
       "mode": "offline",
       "kind": "session",
       "status": "scheduled",
-      "note": "Chair-written time 10:30\u201311:30 is outside the 11:00\u201313:00 slot.",
+      "note": "Chair-written time 10:30–11:30 is outside the 11:00–13:00 slot.",
       "sources": [
         {
           "sourceId": "ran2-136-e2f041e0f6",
@@ -3106,7 +3124,9 @@
       "roomName": "Brk 1 room",
       "topic": "UP offlines",
       "topicKey": "fdae2dba",
-      "agendaItems": [],
+      "agendaItems": [
+        "9.3.1"
+      ],
       "agendaBreakdown": [],
       "mode": "offline",
       "kind": "session",
@@ -3296,7 +3316,9 @@
       "roomName": "Brk 2 room",
       "topic": "CB for Rel-19 MIMO, LPWUS (if needed, details TBD)",
       "topicKey": "44f69e1b",
-      "agendaItems": [],
+      "agendaItems": [
+        "7.4"
+      ],
       "agendaBreakdown": [],
       "kind": "session",
       "status": "scheduled",
@@ -3466,14 +3488,14 @@
         },
         {
           "code": "9.3.3.4",
-          "label": "Early reporting con\u2019t (including CP related aspects)",
+          "label": "Early reporting con’t (including CP related aspects)",
           "minutes": null,
           "startTime": null,
           "endTime": null
         },
         {
           "code": "9.3.3.2",
-          "label": "AI/ML con\u2019t if needed",
+          "label": "AI/ML con’t if needed",
           "minutes": null,
           "startTime": null,
           "endTime": null
@@ -3669,7 +3691,7 @@
         },
         {
           "code": "9.4.2",
-          "label": "measurements con\u2019t (if needed or time allows)",
+          "label": "measurements con’t (if needed or time allows)",
           "minutes": null,
           "startTime": null,
           "endTime": null

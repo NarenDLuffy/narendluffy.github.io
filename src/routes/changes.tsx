@@ -69,7 +69,7 @@ function ChangesPage() {
       !onlyMine
         ? true
         : bookmarks.length > 0 &&
-          sessionMatchesAgenda({ agendaItems: c.agendaItems } as never, bookmarks),
+          sessionMatchesAgenda({ agendaItems: c.agendaItems, meetingId: (c as { meetingId?: string }).meetingId } as never, bookmarks),
     );
 
   const time = (iso: string) =>

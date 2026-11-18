@@ -65,7 +65,9 @@ def _title_of(name: str) -> str:
 class AgendaMapper:
     """Resolves folder names against the meeting's canonical agenda items."""
 
-    def __init__(self, agenda_codes: dict[str, str]):
+    def __init__(self, agenda_codes: dict[str, str], topic_resolver=None):
+        #: RAN2 only: maps a folder's topic tag ("[AIoT]") to an agenda code.
+        self.topic_resolver = topic_resolver
         # code -> title
         self.codes = {c.rstrip("."): t for c, t in agenda_codes.items()}
         self.by_title: dict[str, str] = {}
@@ -98,6 +100,11 @@ class AgendaMapper:
             best, score = self._best_title_match(title, parent_code)
             if best and score >= 0.88:
                 return AgendaMapping(best, round(score, 2), "title-similar")
+
+        if self.topic_resolver:
+            tagged = self.topic_resolver(name)
+            if tagged:
+                return AgendaMapping(tagged, 0.8, "tag")
 
         if parent_code:
             # Any folder with no agenda signal of its own - a round, an FL

@@ -216,10 +216,13 @@ export function buildCoverage(
       startTime: s.startTime,
       endTime: s.endTime,
       colleaguesPresent: presence.filter((p) => p.roomId === s.roomId).length,
-      colleaguesFollowing: s.agendaItems.filter((code) =>
-        follows.some((f) => code === f || code.startsWith(`${f}.`)),
-      ).length
-        ? follows.filter((f) => s.agendaItems.some((c) => c === f || c.startsWith(`${f}.`))).length
-        : 0,
+      colleaguesFollowing: follows.filter((f) =>
+        s.agendaItems.some(
+          (c) =>
+            c === f ||
+            c.startsWith(`${f}.`) ||
+            (bundle.meeting.id.startsWith("ran2-") && f.startsWith(`${c}.`)),
+        ),
+      ).length,
     }));
 }

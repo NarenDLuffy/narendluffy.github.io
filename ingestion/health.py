@@ -179,6 +179,17 @@ def _warnings(
                 _warn("info", f"{sched['conflictCount']} unresolved source conflict(s).")
             )
 
+    if slug.startswith("ran2-"):
+        # RAN2 names topics instead of agenda numbers; show what stays unlinked.
+        rows = _published(slug, "schedule.json").get("sessions") or []
+        loose = [r for r in rows if r.get("kind") not in ("break", "lunch") and not r.get("agendaItems")]
+        if loose:
+            out.append(_warn("info", f"{len(loose)} RAN2 block(s) have no agenda item (e.g. '{loose[0].get('topic')}'), so My agenda cannot show them."))
+        folders = _published(slug, "drafts.json").get("folders") or []
+        unmapped = [f for f in folders if f.get("normalizedPath") and not f.get("agendaItemId")]
+        if unmapped:
+            out.append(_warn("info", f"{len(unmapped)} RAN2 draft folder(s) are not linked to an agenda item."))
+
     # --- drafts ---
     if not files:
         out.append(

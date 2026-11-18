@@ -111,13 +111,14 @@ def scan_meeting(
     source: Any,
     agenda_codes: dict[str, str],
     previous: dict[str, Any] | None = None,
+    topic_resolver: Any = None,
     monitoring: bool = True,
     config: ScanConfig | None = None,
 ) -> DraftIndex:
     """One stateful scan pass. Never raises for an unreachable source."""
     config = config or ScanConfig()
     detected_at = now_iso()
-    mapper = AgendaMapper(agenda_codes)
+    mapper = AgendaMapper(agenda_codes, topic_resolver)
     folders, artifacts, events, has_baseline, baselined_at = _rehydrate(previous)
     baseline_scan = not has_baseline
 

@@ -423,6 +423,16 @@ def build_bundle(pm: PortalMeeting, *, today: date | None = None) -> ScheduleBun
                 agenda.append(AgendaItem(code=slot.code, meetingId=meeting.id, title=slot.label,
                                          parent=slot.code.rsplit(".", 1)[0] if "." in slot.code else None))
                 known.add(slot.code)
+    # Name-only blocks ("ISAC offline (Xiaomi)") get their agenda item from
+    # the RAN2 agenda titles; unclear ones stay unlinked and are reported.
+    from .ran2_topics import resolve_topic
+    titles = {a.code: a.title for a in agenda}
+    for s in sessions:
+        if s.agendaItems or s.kind in ("break", "lunch"):
+            continue
+        code = resolve_topic(s.topic, titles)
+        if code:
+            s.agendaItems = [code]
     meeting.schedulePublished = bool(sessions)
     return ScheduleBundle(
         generatedAt=_iso(now), meeting=meeting, rooms=rooms, sessions=sessions,
