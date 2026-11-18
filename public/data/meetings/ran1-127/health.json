@@ -71,6 +71,10 @@
   },
   "warnings": [
     {
+      "level": "warn",
+      "text": "Timetable last rebuilt 7 h ago \u2014 the refresh is not keeping up."
+    },
+    {
       "level": "info",
       "text": "3 unresolved source conflict(s)."
     },
@@ -80,22 +84,22 @@
     },
     {
       "level": "info",
-      "text": "Only 223 of 224 draft folders were opened this scan."
+      "text": "Only 229 of 230 draft folders were opened this scan."
     },
     {
       "level": "info",
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-18T04:18:07Z",
+  "updatedAt": "2026-11-18T11:21:26Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-18T03:52:10Z",
+    "lastSuccessAt": "2026-11-18T11:20:40Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 2373,
+    "artifactCount": 2435,
     "hiddenCount": 1,
-    "folderCount": 224,
-    "readFolderCount": 223,
+    "folderCount": 230,
+    "readFolderCount": 229,
     "eventCount": 500
   }
 }
