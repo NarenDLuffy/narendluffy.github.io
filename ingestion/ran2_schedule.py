@@ -300,7 +300,9 @@ def parse_ran2_docx(path: str, meeting: Meeting, source: ScheduleSource):
                 if not emitted:
                     problems.append(f"{day} {room.roomName} {start}-{end}: cell has text but no block was published")
                 open_cells[c] = emitted
-    # One room never holds two blocks at once: trim to the earlier block's end.
+    # One room never holds two blocks at once. A chair-written later start
+    # ("@10:00" after an open-ended item) shortens the earlier item; any other
+    # overlap is a reading problem and refuses the publish.
     by_room: dict[tuple, list[Session]] = {}
     for s in sessions:
         by_room.setdefault((s.date, s.roomId), []).append(s)
@@ -310,11 +312,9 @@ def parse_ran2_docx(path: str, meeting: Meeting, source: ScheduleSource):
         last_end = ""
         for s in group:
             if last_end and s.startTime < last_end:
-                s.note = (s.note + " " if s.note else "") + f"Starts after the previous item ends ({last_end})."
-                s.startTime = last_end
-            if s.endTime <= s.startTime:
-                problems.append(f"{s.date} {s.roomName} {s.topic}: fully overlapped by the previous item")
-                continue
+                problems.append(
+                    f"{s.date} {s.roomName} {s.startTime}-{s.endTime} {s.topic}: overlaps the previous item (ends {last_end})"
+                )
             kept.append(s)
             last_end = max(last_end, s.endTime)
     # Breaks from the "Breaks" paragraph, in every room and day without a session then.
