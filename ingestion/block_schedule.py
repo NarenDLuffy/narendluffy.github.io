@@ -196,6 +196,15 @@ def _heading_room_name(heading: str) -> str | None:
         ]
         if physical:
             return physical[0]
+    # "Detailed Schedule for RAN1 Brk#2 Session (BMO 214-215)": a trailing
+    # bracket after a session label names the room.
+    tail = re.search(r"\(\s*([^()]+?)\s*\)\s*$", heading or "")
+    if tail and _SESSION_LABEL_RE.search(heading[: tail.start()]):
+        name = tail.group(1).strip(" -–—:·")
+        if (re.search(r"[A-Za-z]", name) and not _SESSION_LABEL_RE.search(name)
+                and not re.fullmatch(r"\d{1,2}\s*F", name, re.I)
+                and not re.search(r"\b(mon|tue|wed|thu|fri)", name, re.I)):
+            return name
     return None
 
 

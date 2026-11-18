@@ -20,3 +20,14 @@ def test_ntn_nr_maps_to_the_item_not_listed_beside_it():
 
 def test_ntn_nr_without_context_is_not_guessed():
     assert map_topic("R20 NTN-NR", AGENDA) is None
+
+
+def test_detail_table_room_in_trailing_brackets():
+    from ingestion.block_schedule import _heading_room_name
+    assert _heading_room_name("RAN1#127 Detailed Schedule for RAN1 Brk#2 Session\t(BMO 214-215)") == "BMO 214-215"
+    assert _heading_room_name("RAN1#127 Online Session Schedule (Monday)") is None
+
+
+def test_chair_copy_tag_number_orders_revisions():
+    from ingestion.meeting_discovery import revision_parts
+    assert revision_parts("X - v02_hh3.docx") > revision_parts("X - v02_hh2.docx")

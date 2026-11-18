@@ -80,7 +80,12 @@ def revision_parts(file_name: str) -> list[int]:
     m = REVISION_RE.search(file_name)
     if not m:
         return []
-    return [int(p) for p in re.split(r"[._]", m.group("rev")) if p.isdigit()]
+    parts = [int(p) for p in re.split(r"[._]", m.group("rev")) if p.isdigit()]
+    # A chair's own copy numbers its edits after a tag: "v02_hh2" < "v02_hh3".
+    tail = re.match(r"_[a-z]+(\d+)\b", file_name[m.end():], re.I)
+    if tail:
+        parts.append(int(tail.group(1)))
+    return parts
 
 
 def is_schedule_document(file_name: str) -> bool:

@@ -35,6 +35,8 @@ chair/sub-chair schedule file, not one person's.
 | wildcard-x | `10.5.4.x` stays one block though children are timed | `canonical_schedule.is_descendant` / `_base_code` |
 | continuation rows | another room's items appear, gaps | never re-read vertical-merge continuation cells |
 | pipe separator / name-only item | "R20 (60) / NTN-NR (40) / .9.5 (20) \| 6GR (90)" kept whole, NTN-NR has no code | "\|" ends the head in `_parse_cell`; mapper gets group + sibling-code `exclude` |
+| detail table in wrong room | one-room table "…Brk#2 Session (BMO 214-215)" lands in Main, audit silent | `_heading_room_name` reads a trailing "(room)" after a session label |
+| chair copy revision ignored | "v02_hh3" treated equal to "v02_hh2" | `revision_parts` adds the tag number; `_revision_family` groups v00_hh…v02_hh3 |
 | typo minutes | "Sensing (6)" in a 90-min block | block stays whole with "Minutes don't add up" note, and **loses** to any chair tiling (`_drop_overlaps`) |
 | grid copy beats chair table | chair's detail ignored, coarse block wins | ranking in `_drop_overlaps` / `_resolve_same_slot` (`_own`, specificity) |
 

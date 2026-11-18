@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "meetingId": "ran1-127",
   "schedule": {
-    "state": "validation-failed",
-    "lastSuccessAt": "2026-11-18T13:31:47Z",
-    "lastAttemptAt": "2026-11-18T14:18:52Z",
-    "sessionCount": 253,
+    "state": "ok",
+    "lastSuccessAt": "2026-11-18T18:01:19Z",
+    "lastAttemptAt": "2026-11-18T18:01:19Z",
+    "sessionCount": 262,
     "roomCount": 5,
     "dates": [
       "2026-11-16",
@@ -14,11 +14,11 @@
       "2026-11-19",
       "2026-11-20"
     ],
-    "sourceCount": 8,
+    "sourceCount": 6,
     "sources": [
       {
-        "label": "Chair notes RAN1#127_v05",
-        "fileName": "Chair notes RAN1#127_v05.docx",
+        "label": "Chair notes RAN1#127_v06",
+        "fileName": "Chair notes RAN1#127_v06.docx",
         "origin": "public"
       },
       {
@@ -27,23 +27,13 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v00_hh",
-        "fileName": "RAN1#127 online and offline schedules - v00_hh.docx",
+        "label": "RAN1#127 online and offline schedules - v02",
+        "fileName": "RAN1#127 online and offline schedules - v02.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v01_hh1",
-        "fileName": "RAN1#127 online and offline schedules - v01_hh1.docx",
-        "origin": "public"
-      },
-      {
-        "label": "RAN1#127 online and offline schedules - v02_hh2",
-        "fileName": "RAN1#127 online and offline schedules - v02_hh2.docx",
-        "origin": "public"
-      },
-      {
-        "label": "RAN1#127 online and offline schedules - v03",
-        "fileName": "RAN1#127 online and offline schedules - v03.docx",
+        "label": "RAN1#127 online and offline schedules - v02_hh3",
+        "fileName": "RAN1#127 online and offline schedules - v02_hh3.docx",
         "origin": "public"
       },
       {
@@ -61,11 +51,8 @@
     "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 3,
-    "lowConfidenceCount": 0,
-    "errors": [
-      "rebuild would read RAN1#127 online and offline schedules - v02.docx, older than the published RAN1#127 online and offline schedules - v03.docx; keeping it"
-    ]
+    "conflictCount": 2,
+    "lowConfidenceCount": 0
   },
   "remoteFtp": {
     "state": "skipped-no-credentials",
@@ -75,7 +62,7 @@
   "warnings": [
     {
       "level": "info",
-      "text": "3 unresolved source conflict(s)."
+      "text": "2 unresolved source conflict(s)."
     },
     {
       "level": "info",
@@ -90,7 +77,7 @@
       "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-11-18T14:18:52Z",
+  "updatedAt": "2026-11-18T18:01:59Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-18T13:37:42Z",

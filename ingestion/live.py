@@ -313,6 +313,11 @@ def _is_draft(source: ScheduleSource) -> bool:
 def _revision_family(source: ScheduleSource) -> str:
     stem = source.fileName.rsplit(".", 1)[0]
     stem = DRAFT_PREFIX_RE.sub("", stem)
+    # "… - v02_hh3": the tag ("hh") names the chair's copy; v00_hh, v01_hh1 and
+    # v02_hh3 are one family, separate from the untagged main file.
+    tagged = re.search(r"[_\s-]*v\d+(?:[._]\d+)*_([a-z]+)\d*\s*$", stem, re.I)
+    if tagged:
+        return (stem[: tagged.start()].strip() + " [" + tagged.group(1) + "]").lower()
     return REVISION_SUFFIX_RE.sub("", stem).strip().lower()
 
 

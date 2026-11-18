@@ -247,10 +247,19 @@ def main() -> int:
     failed_live = 0
     for bundle in bundles:
         previous = read_previous(bundle.meeting.slug)
-        errors = validate(bundle, previous) + revision_downgrades(
+        # During the meeting days Meetings Sync is the live source: a revision
+        # the chairs removed there was withdrawn, so a rebuild without it is
+        # current, not a downgrade. The guard protects the final schedule
+        # once those folders are cleared after the meeting.
+        from . import remote_ftp
+        downgrades = revision_downgrades(
             (health.load(bundle.meeting.slug).get("schedule") or {}).get("sources") or [],
             (health.schedule_section(bundle) or {}).get("sources") or [],
         )
+        if downgrades and remote_ftp.meeting_phase(bundle.meeting.startDate, bundle.meeting.endDate) == "week":
+            print(f"{bundle.meeting.name}: revisions withdrawn on Meetings Sync:", *downgrades, sep="\n  ")
+            downgrades = []
+        errors = validate(bundle, previous) + downgrades
         if errors:
             failed += 1
             if compute_status(bundle.meeting.startDate, bundle.meeting.endDate) != "completed":
