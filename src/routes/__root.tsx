@@ -83,17 +83,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RAN1 Live! — unofficial RAN1 meeting companion" },
+      { title: "RAN1 Live! — unofficial RAN1 and RAN2 meeting companion" },
       {
         name: "description",
         content:
-          "Live, searchable RAN1 meeting schedule built from the chair and sub-chair documents.",
+          "Live, searchable RAN1 and RAN2 meeting schedules, drafts, rooms and colleague presence.",
       },
       { name: "theme-color", content: "#141a20" },
       { property: "og:title", content: "RAN1 Live!" },
       {
         property: "og:description",
-        content: "Unofficial RAN1 meeting-week companion: now, timetable, rooms and changes.",
+        content:
+          "Unofficial RAN1 and RAN2 meeting-week companion: schedules, drafts, rooms and changes.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

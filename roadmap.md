@@ -27,3 +27,4 @@
 - [x] Verify Wednesday BMO 221 against Hiroki's DOCX and daily PDF: both state only Sensing (90); no other room's split copied
 
 - [x] RAN1/RAN2 working-group switch: schedule, Now, agenda, rooms, Drafts (Inbox/Drafts), watcher
+- [x] App description and How to Use explain RAN1 and RAN2 support

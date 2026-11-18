@@ -4,17 +4,17 @@ import type { ReactNode } from "react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "How to use RAN1 Live! — guide for delegates" },
+      { title: "How to use RAN1 Live! — RAN1 and RAN2 guide" },
       {
         name: "description",
         content:
-          "A short tour of RAN1 Live!: live schedule, drafts tracker, my agenda, FL deadlines, rooms and room presence — no account needed.",
+          "A short RAN1 and RAN2 guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
       },
-      { property: "og:title", content: "How to use RAN1 Live!" },
+      { property: "og:title", content: "How to use RAN1 Live! for RAN1 and RAN2" },
       {
         property: "og:description",
         content:
-          "Everything RAN1 Live! can do during meeting week, explained for delegates in two minutes.",
+          "How to follow RAN1 or RAN2 meeting week with schedules, drafts, rooms and colleague alerts.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
@@ -48,6 +48,31 @@ function HelpPage() {
       </header>
 
       <div className="grid gap-3 md:grid-cols-2">
+        <Section title="Choose RAN1 or RAN2">
+          <p>
+            Use the <strong>RAN1 | RAN2</strong> switch at the top of any page. The whole app
+            follows your choice, and your device remembers it.
+          </p>
+          <ul className="list-disc space-y-1 pl-4">
+            <li>
+              Now, Schedule, My agenda, Drafts, Rooms, Changes, Meetings and Company all change to
+              the selected working group.
+            </li>
+            <li>
+              Each group keeps its own meetings, rooms, agenda items, drafts, check-ins and
+              colleague alerts; switching groups does not combine them.
+            </li>
+            <li>
+              <strong>RAN1</strong> uses its main online/offline schedule plus chair detail files.{" "}
+              <strong>RAN2</strong> uses the single schedule document in its Agenda folder.
+            </li>
+            <li>
+              Drafts come from each group's own inbox. RAN2 uses <code>Inbox/Drafts</code> with a
+              capital D.
+            </li>
+          </ul>
+        </Section>
+
         <Section title="Now">
           <p>
             What is running this minute, in meeting-local time: session, room, agenda items and
@@ -130,8 +155,8 @@ function HelpPage() {
               export.
             </li>
             <li>
-              The RAN1 email reflector is members-only behind an ETSI login, so deadlines cannot be
-              read automatically — they are manual and stay on your own device.
+              The RAN1 and RAN2 email reflectors are members-only behind an ETSI login, so deadlines
+              cannot be read automatically — they are manual and stay on your own device.
             </li>
           </ul>
         </Section>
@@ -263,9 +288,9 @@ function HelpPage() {
 
         <Section title="Meetings">
           <p>
-            Switch meetings. Meetings are discovered from the official 3GPP portal, so past meetings
-            stay browsable and the next one appears automatically — the current meeting is selected
-            for you.
+            Switch meetings within the working group selected at the top. RAN1 and RAN2 meetings are
+            discovered from the official 3GPP portal, so past meetings stay browsable and the next
+            one appears automatically — the current meeting is selected for you.
           </p>
           <Link to="/meetings" className="inline-block underline underline-offset-2">
             Open Meetings
@@ -304,7 +329,7 @@ function HelpPage() {
             rooms, or the same agenda item shows in two rooms at once without a document saying so.
           </li>
           <li>
-            <strong>Venue server:</strong> during the meeting week the app tries to read drafts
+            <strong>RAN1 venue server:</strong> during the meeting week the app tries to read drafts
             (and, if you switch it on in Schedule → sources, the schedule)
             directly from the meeting-local server at 10.10.10.10 — over HTTPS first, then plain
             HTTP. The HTTPS read only succeeds if that server's security certificate is officially
