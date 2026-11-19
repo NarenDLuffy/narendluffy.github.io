@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-127",
   "schedule": {
-    "state": "ok",
+    "state": "validation-failed",
     "lastSuccessAt": "2026-11-18T23:56:49Z",
-    "lastAttemptAt": "2026-11-18T23:56:49Z",
+    "lastAttemptAt": "2026-11-19T03:24:29Z",
     "sessionCount": 266,
     "roomCount": 5,
     "dates": [
@@ -48,11 +48,16 @@
       }
     ],
     "draftOnly": false,
-    "gaps": [],
+    "gaps": [
+      "2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it"
+    ],
     "coarser": [],
     "shortBlockCount": 0,
     "conflictCount": 2,
-    "lowConfidenceCount": 0
+    "lowConfidenceCount": 0,
+    "errors": [
+      "2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it"
+    ]
   },
   "remoteFtp": {
     "state": "skipped-no-host",
@@ -60,6 +65,10 @@
     "credentials": true
   },
   "warnings": [
+    {
+      "level": "warn",
+      "text": "Timetable gap: 2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it."
+    },
     {
       "level": "info",
       "text": "2 unresolved source conflict(s)."
@@ -77,7 +86,7 @@
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-19T01:29:15Z",
+  "updatedAt": "2026-11-19T03:24:29Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-19T01:25:26Z",
