@@ -39,3 +39,15 @@ def test_group_from_slug_and_docs_folder():
     assert group_for("ran2-136").key == "RAN2"
     assert group_for("ran1-127").key == "RAN1"
     assert _https_folder("https://www.3gpp.org/ftp/tsg_ran/WG2_RL2/TSGR2_136/Docs/").endswith("TSGR2_136/")
+
+
+def test_spaced_end_minutes_are_part_of_time():
+    from ingestion.ran2_schedule import split_cell
+    segs = split_cell("12-13 :00 AI phy offlines", "11:00", "13:00")
+    assert [(s["start"], s["end"], s["lines"]) for s in segs] == [(720, 780, ["AI phy offlines"])]
+
+
+def test_letter_tag_keeps_topic_name():
+    from ingestion.ran2_schedule import _clean_label
+    assert _clean_label("[MOB] offlines") == "MOB offlines"
+    assert _clean_label("NR20 AIoT [2] [AT136][004]") == "NR20 AIoT"

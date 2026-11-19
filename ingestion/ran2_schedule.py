@@ -49,7 +49,7 @@ SLOT_RE = re.compile(rf"^\s*{_T}\s*[–—-]\s*{_T}\s*$")
 # "From 15:30:", "14:30-15:30 Offline…", "14:30 [9.3.2.5] …".
 MARK_RE = re.compile(
     rf"^\s*(?:(?P<at>@)\s*|(?P<from>from)\s+)?(?P<h1>\d{{1,2}})(?:\s?[:.]?\s?(?P<m1>[0-5]\d))?"
-    rf"(?:\s*[–—-]\s*(?P<h2>\d{{1,2}})(?:[:.]?\s?(?P<m2>[0-5]\d))?)?\s*:?(?=\s|$|\[)",
+    rf"(?:\s*[–—-]\s*(?P<h2>\d{{1,2}})(?:\s?[:.]?\s?(?P<m2>[0-5]\d))?)?\s*:?(?=\s|$|\[)",
     re.I,
 )
 CODE_RE = re.compile(r"\[\[?\s*(\d+(?:\.\d+)*)\s*(?:\]|(?=\s))")
@@ -145,7 +145,10 @@ def _codes(line: str) -> list[str]:
 
 def _clean_label(line: str) -> str:
     text = CODE_RE.sub("", line)
-    text = re.sub(r"\[[^\]]*\]", "", text)  # budgets, [AT136][004] tags
+    # Letter-only tags name the topic ("[MOB] offlines" -> "MOB offlines");
+    # tags with digits are budgets or e-mail numbers ([2], [AT136][004]).
+    text = re.sub(r"\[([A-Za-z][A-Za-z/&\- ]*)\]", r"\1", text)
+    text = re.sub(r"\[[^\]]*\]", "", text)
     return re.sub(r"\s+", " ", text).strip(" :,-–")
 
 
