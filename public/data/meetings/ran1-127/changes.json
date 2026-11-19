@@ -1,107 +1,41 @@
 [
   {
-    "changeId": "session_added-ran1-127_thu_room-214-215_0800_0850_10.8.3-2026-11-18T23:57:55+00:00",
+    "changeId": "session_added-ran1-127_thu_room-214-215_0950_1030_8.1-2026-11-19T10:16:23+00:00",
     "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
+    "detectedAt": "2026-11-19T10:16:23+00:00",
     "type": "session_added",
-    "title": "10.8.3 added",
+    "title": "TEI, AI 7 added",
     "detail": "New session in the schedule",
     "agendaItems": [
-      "10.8.3"
+      "8.1",
+      "7",
+      "11"
     ],
-    "sessionId": "ran1-127_thu_room-214-215_0800_0850_10.8.3",
-    "to": "Room 214-215 08:00-08:50",
+    "sessionId": "ran1-127_thu_room-214-215_0950_1030_8.1",
+    "to": "Room 214-215 09:50-10:30",
     "sourceIds": [
+      "ran1-127-8b668a26",
       "ran1-127-4412e952",
-      "ran1-127-8b668a26",
-      "ran1-127-f0903d3f",
-      "ran1-127-c1580bdf"
+      "ran1-127-317b6c9f",
+      "ran1-127-a2a8f554"
     ]
   },
   {
-    "changeId": "session_added-ran1-127_fri_room-214-215_0800_0830_10.8.1-2026-11-18T23:57:55+00:00",
+    "changeId": "session_removed-ran1-127_thu_room-214-215_0950_1030_8.1-2026-11-19T10:16:23+00:00",
     "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
-    "type": "session_added",
-    "title": "10.8.1 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.1"
-    ],
-    "sessionId": "ran1-127_fri_room-214-215_0800_0830_10.8.1",
-    "to": "Room 214-215 08:00-08:30",
-    "sourceIds": [
-      "ran1-127-4412e952"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-127_fri_room-214-215_0830_0920_10.8.2-2026-11-18T23:57:55+00:00",
-    "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
-    "type": "session_added",
-    "title": "10.8.2 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "10.8.2"
-    ],
-    "sessionId": "ran1-127_fri_room-214-215_0830_0920_10.8.2",
-    "to": "Room 214-215 08:30-09:20",
-    "sourceIds": [
-      "ran1-127-4412e952"
-    ]
-  },
-  {
-    "changeId": "session_added-ran1-127_fri_room-214-215_0930_1030_9.3.3-2026-11-18T23:57:55+00:00",
-    "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
-    "type": "session_added",
-    "title": "9.3.3 added",
-    "detail": "New session in the schedule",
-    "agendaItems": [
-      "9.3.3"
-    ],
-    "sessionId": "ran1-127_fri_room-214-215_0930_1030_9.3.3",
-    "to": "Room 214-215 09:30-10:30",
-    "sourceIds": [
-      "ran1-127-4412e952",
-      "ran1-127-8b668a26",
-      "ran1-127-f0903d3f",
-      "ran1-127-c1580bdf"
-    ]
-  },
-  {
-    "changeId": "session_removed-ran1-127_fri_room-214-215_0920_0930_r20-2026-11-18T23:57:55+00:00",
-    "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
+    "detectedAt": "2026-11-19T10:16:23+00:00",
     "type": "session_removed",
-    "title": "R20 removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran1-127_fri_room-214-215_0920_0930_r20",
-    "sourceIds": [
-      "ran1-127-8b668a26",
-      "ran1-127-f0903d3f",
-      "ran1-127-f10e7b62",
-      "ran1-127-c1580bdf"
-    ],
-    "from": "Room 214-215"
-  },
-  {
-    "changeId": "session_removed-ran1-127_fri_room-214-215_0930_1030_a-iot-phase2-2026-11-18T23:57:55+00:00",
-    "meetingId": "ran1-127",
-    "detectedAt": "2026-11-18T23:57:55+00:00",
-    "type": "session_removed",
-    "title": "A-IoT Phase2 removed",
+    "title": "TEI, AI 7 removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [
-      "9.3"
+      "8.1"
     ],
-    "sessionId": "ran1-127_fri_room-214-215_0930_1030_a-iot-phase2",
+    "sessionId": "ran1-127_thu_room-214-215_0950_1030_8.1",
     "sourceIds": [
       "ran1-127-8b668a26",
-      "ran1-127-f0903d3f",
-      "ran1-127-f10e7b62",
-      "ran1-127-c1580bdf"
+      "ran1-127-4412e952",
+      "ran1-127-317b6c9f",
+      "ran1-127-a2a8f554"
     ],
     "from": "Room 214-215"
   }

@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-127",
   "schedule": {
-    "state": "validation-failed",
-    "lastSuccessAt": "2026-11-18T23:56:49Z",
-    "lastAttemptAt": "2026-11-19T03:24:29Z",
+    "state": "ok",
+    "lastSuccessAt": "2026-11-19T10:15:41Z",
+    "lastAttemptAt": "2026-11-19T10:15:41Z",
     "sessionCount": 266,
     "roomCount": 5,
     "dates": [
@@ -17,8 +17,8 @@
     "sourceCount": 6,
     "sources": [
       {
-        "label": "Chair notes RAN1#127_v08",
-        "fileName": "Chair notes RAN1#127_v08.docx",
+        "label": "Chair notes RAN1#127_v09",
+        "fileName": "Chair notes RAN1#127_v09.docx",
         "origin": "public"
       },
       {
@@ -27,18 +27,18 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 online and offline schedules - v02",
-        "fileName": "RAN1#127 online and offline schedules - v02.docx",
-        "origin": "public"
-      },
-      {
         "label": "RAN1#127 online and offline schedules - v02_hh4",
         "fileName": "RAN1#127 online and offline schedules - v02_hh4.docx",
         "origin": "public"
       },
       {
-        "label": "RAN1#127 Sorour sessions online and offline schedules - v03",
-        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v03.docx",
+        "label": "RAN1#127 online and offline schedules - v04",
+        "fileName": "RAN1#127 online and offline schedules - v04.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN1#127 Sorour sessions online and offline schedules - v04",
+        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v04.docx",
         "origin": "public"
       },
       {
@@ -48,30 +48,25 @@
       }
     ],
     "draftOnly": false,
-    "gaps": [
-      "2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it"
-    ],
+    "gaps": [],
     "coarser": [],
     "shortBlockCount": 0,
-    "conflictCount": 2,
-    "lowConfidenceCount": 0,
-    "errors": [
-      "2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it"
-    ]
+    "conflictCount": 5,
+    "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
+    "state": "skipped-no-credentials",
     "host": null,
-    "credentials": true
+    "credentials": false
   },
   "warnings": [
     {
-      "level": "warn",
-      "text": "Timetable gap: 2026-11-20 Room 225-226: no session 08:40-08:50 although a schedule document fills it."
+      "level": "info",
+      "text": "5 unresolved source conflict(s)."
     },
     {
-      "level": "info",
-      "text": "2 unresolved source conflict(s)."
+      "level": "warn",
+      "text": "Drafts last scanned 6 h ago \u2014 the refresh is not keeping up."
     },
     {
       "level": "info",
@@ -82,11 +77,11 @@
       "text": "Only 247 of 248 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-11-19T03:52:36Z",
+  "updatedAt": "2026-11-19T10:16:23Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-19T03:51:14Z",

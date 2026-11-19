@@ -467,6 +467,9 @@ def _parse_cell(text: str) -> list[_Segment]:
         leading_code = (
             minutes is not None and current is not None and current.minutes is not None
             and not finished() and LEADING_CODE_RE.match(label)
+            # "[TBD] (20) / 9.5 NTN (30)": an item longer than what is left
+            # of the head is the next block, not part of that head.
+            and allocated + minutes <= current.minutes
         )
         is_item = line.startswith(".") or bool(leading_code)
 
@@ -493,6 +496,19 @@ def _parse_cell(text: str) -> list[_Segment]:
             _looks_like_person(label) or _is_group_token(label) or minutes is not None
         )
 
+        if (
+            not is_item and minutes is None and current is not None
+            and current.minutes and LEADING_CODE_RE.match(label)
+            and not any(slot.minutes for slot in current.slots)
+        ):
+            # "TEI, AI 7/8.1 (40) / 7 pre-Rel-19 CRs / 8.1 Duplex / 11 TEI20":
+            # the untimed agenda items sharing that head's time, in order.
+            current.raw += "\n" + line
+            current.slots.append(_Slot(
+                label=label, minutes=None, group=current_group or current.group,
+                codes=_item_codes(label),
+            ))
+            continue
         if not is_item and minutes is None:
             # Bare work-area tag: labels the items that follow.
             if current is None or (tag_finished() and not _looks_like_person(label)):
@@ -525,7 +541,12 @@ def _parse_cell(text: str) -> list[_Segment]:
             # cannot fit there and therefore starts its own section.
             and allocated + minutes > current.minutes
         )
-        if current is None or new_work_area or (heads_new and finished()) or head_after_blank:
+        code_overflow = (
+            not is_item and minutes is not None and current is not None
+            and current.minutes is not None and bool(LEADING_CODE_RE.match(label))
+            and allocated + minutes > current.minutes
+        )
+        if current is None or new_work_area or (heads_new and finished()) or head_after_blank or code_overflow:
             # "6GR (90)" can contain only 80 minutes of items before "R20 (70)".
             # R20 is still a new work area; the earlier head's typo must not
             # swallow it or detach its items into overlapping blocks.
@@ -539,7 +560,8 @@ def _parse_cell(text: str) -> list[_Segment]:
             )
             segments.append(current)
             current_group = "" if lead else label
-            allocated = 0
+            # "9.5 NTN (30)" as a head is itself the item filling its minutes.
+            allocated = minutes if (minutes and LEADING_CODE_RE.match(label)) else 0
             continue
 
         parent_codes = AGENDA_CODE_RE.findall(current.slots[0].label) if current and current.slots else []
@@ -1013,7 +1035,8 @@ def _sessions_for_cell(
     item_lengths: list[int | None] = [
         sum(slot.minutes or 0 for slot in seg.slots)
         if seg.slots and all(slot.minutes for slot in seg.slots)
-        else None
+        # ".10.7.1 NTN (40)" heading a cell is its own timed item.
+        else (seg.minutes if not seg.slots and seg.group and LEADING_CODE_RE.match(seg.group) else None)
         for seg in segments
     ]
     if (

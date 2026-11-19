@@ -367,6 +367,8 @@ def _drop_overlaps(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
     ranked = sorted(
         blocks,
         key=lambda b: (
+            # A short leftover of a main-grid slot only fills time nothing else claims.
+            b.derivation == "split-from-parent" and b.end - b.start < MIN_FRAGMENT_MINUTES,
             # Every room: the main chair's grid decides, never a sub-chair copy
             # or the uncovered remainder of a sub-chair's broad container.
             -_main_authority(b),
@@ -474,6 +476,12 @@ def _resolve_same_slot(blocks: list[CandidateBlock]) -> list[CandidateBlock]:
                 else:
                     keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
                 continue
+            if keeper.agendaItems and set(keeper.agendaItems) < set(other.agendaItems):
+                # Same slot, the other table lists every item the keeper names
+                # plus more ("TEI, AI 7/8.1" → 7, 8.1, 11): that is detail.
+                keeper.agendaItems = list(dict.fromkeys([*other.agendaItems, *keeper.agendaItems]))
+                keeper.sourceIds = list(dict.fromkeys([*keeper.sourceIds, *other.sourceIds]))
+                continue
             said = ", ".join(other.agendaItems) or other.topic
             older = " (older copy)" if keeper.introducedAt > other.introducedAt else ""
             keeper.note = _join_note(keeper.note, f"Another schedule file lists {said} here{older}")
@@ -522,7 +530,9 @@ def _remaining_of(container: CandidateBlock, detailed: list[CandidateBlock]) -> 
 
     fragments: list[CandidateBlock] = []
     for start, end in gaps:
-        if end - start < MIN_FRAGMENT_MINUTES:
+        # The main grid's time is never left empty: a short uncovered piece of
+        # its slot stays visible (another table tiles that time differently).
+        if end - start < MIN_FRAGMENT_MINUTES and not _main_authority(container):
             continue
         fragment = _clone(container, start, end)
         fragment.derivation = "split-from-parent"
