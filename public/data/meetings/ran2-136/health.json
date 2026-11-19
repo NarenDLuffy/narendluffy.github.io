@@ -3,8 +3,8 @@
   "meetingId": "ran2-136",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T03:24:25Z",
-    "lastAttemptAt": "2026-11-19T03:24:25Z",
+    "lastSuccessAt": "2026-11-19T13:01:28Z",
+    "lastAttemptAt": "2026-11-19T13:01:28Z",
     "sessionCount": 116,
     "roomCount": 4,
     "dates": [
@@ -30,15 +30,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
-    "host": null,
     "credentials": true
   },
   "warnings": [
-    {
-      "level": "warn",
-      "text": "Timetable last rebuilt 7 h ago \u2014 the refresh is not keeping up."
-    },
     {
       "level": "info",
       "text": "14 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
@@ -46,13 +40,9 @@
     {
       "level": "info",
       "text": "3 RAN2 draft folder(s) are not linked to an agenda item."
-    },
-    {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-19T11:19:31Z",
+  "updatedAt": "2026-11-19T13:01:31Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-19T11:19:26Z",
