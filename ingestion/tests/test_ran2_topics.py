@@ -31,3 +31,10 @@ def test_mapper_tag_only_when_resolver_given():
     assert plain.agenda_item_id is None  # RAN1 behaviour unchanged
     ran2 = AgendaMapper(AGENDA, lambda n: resolve_topic(folder_topic(n), AGENDA)).map_folder(name, None)
     assert ran2.agenda_item_id == "8.3"
+
+
+def test_maint_folder_maps_to_maintenance_session():
+    from ingestion.ran2_topics import folder_topic, resolve_topic
+    agenda = {"10.6": "Session on maintenance and SON/MDT", "6.0.2": "Rel-18 corrections"}
+    name = "[AT136][601][Maint] Correction to SI Update (vivo)"
+    assert resolve_topic(folder_topic(name), agenda) == "10.6"

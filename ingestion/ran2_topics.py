@@ -37,6 +37,7 @@ ALIASES: list[tuple[str, str]] = [
     (r"\btei\s*20\b", r"^TEI20$"),
     (r"\btei\s*19\b", r"^TEI19$"),
     (r"\bmob\b", r"^Mobility Enh"),
+    (r"\bmaint(?:enance)?\b", r"^Session on maintenance"),
 ]
 
 
