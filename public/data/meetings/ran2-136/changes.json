@@ -1,124 +1,113 @@
 [
   {
-    "changeId": "session_added-ran2-136-0e3d01e356-2026-11-19T16:15:48+00:00",
+    "changeId": "session_added-ran2-136-b1202b129c-2026-11-19T21:31:23+00:00",
     "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
     "type": "session_added",
-    "title": "Maint Correction to SI Update (vivo) added",
-    "detail": "New session in the schedule",
-    "agendaItems": [],
-    "sessionId": "ran2-136-0e3d01e356",
-    "to": "Brk 3 room 16:30-17:00",
-    "sourceIds": [
-      "ran2-136-9708d511ba"
-    ]
-  },
-  {
-    "changeId": "session_added-ran2-136-e0cb196404-2026-11-19T16:15:48+00:00",
-    "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
-    "type": "session_added",
-    "title": "AIoT Impact analysis for DO-A for T2 (Qualcomm) added",
+    "title": "CB Kyeongin added",
     "detail": "New session in the schedule",
     "agendaItems": [
-      "8.2"
+      "8.4.3"
     ],
-    "sessionId": "ran2-136-e0cb196404",
-    "to": "Brk 1 room 16:30-17:00",
+    "sessionId": "ran2-136-b1202b129c",
+    "to": "Brk 1 room 14:30-16:30",
     "sourceIds": [
-      "ran2-136-9708d511ba"
+      "ran2-136-692991931b"
     ]
   },
   {
-    "changeId": "session_added-ran2-136-2b9e8718f6-2026-11-19T16:15:48+00:00",
+    "changeId": "session_added-ran2-136-5b0b8ba5ac-2026-11-19T21:31:23+00:00",
     "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
     "type": "session_added",
-    "title": "AI-MOB (Ericsson) added",
+    "title": "CB Sergio (end by 18:30) added",
     "detail": "New session in the schedule",
     "agendaItems": [
-      "8.3"
+      "5.3",
+      "6.0.2.17",
+      "7.8.2",
+      "8.7",
+      "8.7.2",
+      "8.7.3"
     ],
-    "sessionId": "ran2-136-2b9e8718f6",
-    "to": "Brk 3 room 16:30-17:30",
+    "sessionId": "ran2-136-5b0b8ba5ac",
+    "to": "Brk 2 room 17:00-19:00",
     "sourceIds": [
-      "ran2-136-9708d511ba"
+      "ran2-136-692991931b"
     ]
   },
   {
-    "changeId": "session_added-ran2-136-296c335103-2026-11-19T16:15:48+00:00",
+    "changeId": "session_added-ran2-136-ca5c217085-2026-11-19T21:31:23+00:00",
     "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
     "type": "session_added",
-    "title": "MOB offlines added",
+    "title": "CB Sergio added",
     "detail": "New session in the schedule",
+    "agendaItems": [
+      "8.14"
+    ],
+    "sessionId": "ran2-136-ca5c217085",
+    "to": "Brk 1 room 11:00-11:15",
+    "sourceIds": [
+      "ran2-136-692991931b"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran2-136-296c335103-2026-11-19T21:31:23+00:00",
+    "meetingId": "ran2-136",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
+    "type": "session_removed",
+    "title": "MOB offlines removed",
+    "detail": "Session no longer in schedule",
     "agendaItems": [
       "8.4"
     ],
     "sessionId": "ran2-136-296c335103",
-    "to": "Brk 3 room 11:30-12:00",
-    "sourceIds": [
-      "ran2-136-9708d511ba"
-    ]
-  },
-  {
-    "changeId": "session_removed-ran2-136-2f5647cb7f-2026-11-19T16:15:48+00:00",
-    "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
-    "type": "session_removed",
-    "title": "Correction to SI Update (vivo) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [],
-    "sessionId": "ran2-136-2f5647cb7f",
     "sourceIds": [
       "ran2-136-9708d511ba"
     ],
     "from": "Brk 3 room"
   },
   {
-    "changeId": "session_removed-ran2-136-b387d4c9fc-2026-11-19T16:15:48+00:00",
+    "changeId": "session_removed-ran2-136-b1202b129c-2026-11-19T21:31:23+00:00",
     "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
     "type": "session_removed",
-    "title": "Impact analysis for DO-A for T2 (Qualcomm) removed",
+    "title": "CB Kyeongin removed",
     "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.2"
-    ],
-    "sessionId": "ran2-136-b387d4c9fc",
+    "agendaItems": [],
+    "sessionId": "ran2-136-b1202b129c",
     "sourceIds": [
       "ran2-136-9708d511ba"
     ],
     "from": "Brk 1 room"
   },
   {
-    "changeId": "session_removed-ran2-136-51c129923e-2026-11-19T16:15:48+00:00",
+    "changeId": "session_removed-ran2-136-45cbcf9e17-2026-11-19T21:31:23+00:00",
     "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
     "type": "session_removed",
-    "title": "[AT136][102][AI-MOB] (Ericsson) removed",
-    "detail": "Session no longer in schedule",
-    "agendaItems": [
-      "8.3"
-    ],
-    "sessionId": "ran2-136-51c129923e",
-    "sourceIds": [
-      "ran2-136-9708d511ba"
-    ],
-    "from": "Brk 3 room"
-  },
-  {
-    "changeId": "session_removed-ran2-136-f51cd83525-2026-11-19T16:15:48+00:00",
-    "meetingId": "ran2-136",
-    "detectedAt": "2026-11-19T16:15:48+00:00",
-    "type": "session_removed",
-    "title": "offlines removed",
+    "title": "CB Sergio removed",
     "detail": "Session no longer in schedule",
     "agendaItems": [],
-    "sessionId": "ran2-136-f51cd83525",
+    "sessionId": "ran2-136-45cbcf9e17",
     "sourceIds": [
       "ran2-136-9708d511ba"
     ],
-    "from": "Brk 3 room"
+    "from": "Brk 2 room"
+  },
+  {
+    "changeId": "session_removed-ran2-136-c46bff3882-2026-11-19T21:31:23+00:00",
+    "meetingId": "ran2-136",
+    "detectedAt": "2026-11-19T21:31:23+00:00",
+    "type": "session_removed",
+    "title": "CB Sergio removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran2-136-c46bff3882",
+    "sourceIds": [
+      "ran2-136-9708d511ba"
+    ],
+    "from": "Brk 1 room"
   }
 ]

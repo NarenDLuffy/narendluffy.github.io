@@ -3,9 +3,9 @@
   "meetingId": "ran2-136",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T16:15:48Z",
-    "lastAttemptAt": "2026-11-19T16:15:48Z",
-    "sessionCount": 116,
+    "lastSuccessAt": "2026-11-19T21:31:12Z",
+    "lastAttemptAt": "2026-11-19T21:31:12Z",
+    "sessionCount": 112,
     "roomCount": 4,
     "dates": [
       "2026-11-16",
@@ -18,7 +18,7 @@
     "sources": [
       {
         "label": "RAN2 session schedule",
-        "fileName": "R2_136_Schedule_v09.docx",
+        "fileName": "R2_136_Schedule_v11.docx",
         "origin": "public"
       }
     ],
@@ -30,25 +30,19 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-host",
-    "host": null,
     "credentials": true
   },
   "warnings": [
     {
       "level": "info",
-      "text": "12 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
+      "text": "9 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
     },
     {
       "level": "info",
       "text": "3 RAN2 draft folder(s) are not linked to an agenda item."
-    },
-    {
-      "level": "info",
-      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-19T19:32:52Z",
+  "updatedAt": "2026-11-19T21:31:23Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-19T19:32:45Z",
