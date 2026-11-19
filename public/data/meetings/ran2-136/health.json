@@ -30,18 +30,33 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
+    "state": "skipped-no-host",
+    "host": null,
     "credentials": true
   },
-  "warnings": [],
-  "updatedAt": "2026-11-18T21:34:32Z",
+  "warnings": [
+    {
+      "level": "info",
+      "text": "13 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
+    },
+    {
+      "level": "info",
+      "text": "3 RAN2 draft folder(s) are not linked to an agenda item."
+    },
+    {
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+    }
+  ],
+  "updatedAt": "2026-11-19T01:29:40Z",
   "drafts": {
-    "state": "baseline",
-    "lastSuccessAt": "2026-11-18T20:28:28Z",
+    "state": "ok",
+    "lastSuccessAt": "2026-11-19T01:29:16Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 73,
+    "artifactCount": 93,
     "hiddenCount": 0,
-    "folderCount": 32,
-    "readFolderCount": 32,
-    "eventCount": 0
+    "folderCount": 37,
+    "readFolderCount": 37,
+    "eventCount": 25
   }
 }

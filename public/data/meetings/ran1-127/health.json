@@ -55,9 +55,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
+    "state": "skipped-no-host",
     "host": null,
-    "credentials": false
+    "credentials": true
   },
   "warnings": [
     {
@@ -70,22 +70,22 @@
     },
     {
       "level": "info",
-      "text": "Only 236 of 237 draft folders were opened this scan."
+      "text": "Only 246 of 247 draft folders were opened this scan."
     },
     {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-18T23:57:55Z",
+  "updatedAt": "2026-11-19T01:29:15Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-18T19:27:46Z",
+    "lastSuccessAt": "2026-11-19T01:25:26Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 2573,
+    "artifactCount": 2685,
     "hiddenCount": 68,
-    "folderCount": 237,
-    "readFolderCount": 236,
+    "folderCount": 247,
+    "readFolderCount": 246,
     "eventCount": 500
   }
 }
