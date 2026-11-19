@@ -55,9 +55,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
-    "host": null,
-    "credentials": false
+    "state": "read",
+    "host": "calgarybmocentre.3gpp.org",
+    "credentials": true
   },
   "warnings": [
     {
@@ -65,31 +65,27 @@
       "text": "5 unresolved source conflict(s)."
     },
     {
-      "level": "warn",
-      "text": "Drafts last scanned 6 h ago \u2014 the refresh is not keeping up."
-    },
-    {
       "level": "info",
       "text": "68 file(s) the meeting server no longer holds are hidden."
     },
     {
       "level": "info",
-      "text": "Only 247 of 248 draft folders were opened this scan."
+      "text": "Only 255 of 256 draft folders were opened this scan."
     },
     {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+      "level": "info",
+      "text": "Remote meeting server calgarybmocentre.3gpp.org is being read."
     }
   ],
-  "updatedAt": "2026-11-19T10:16:23Z",
+  "updatedAt": "2026-11-19T11:19:25Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T03:51:14Z",
+    "lastSuccessAt": "2026-11-19T11:18:53Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 2706,
+    "artifactCount": 2769,
     "hiddenCount": 68,
-    "folderCount": 248,
-    "readFolderCount": 247,
+    "folderCount": 256,
+    "readFolderCount": 255,
     "eventCount": 500
   }
 }

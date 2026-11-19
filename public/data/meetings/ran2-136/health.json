@@ -36,6 +36,10 @@
   },
   "warnings": [
     {
+      "level": "warn",
+      "text": "Timetable last rebuilt 7 h ago \u2014 the refresh is not keeping up."
+    },
+    {
       "level": "info",
       "text": "14 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
     },
@@ -48,15 +52,15 @@
       "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-19T03:52:44Z",
+  "updatedAt": "2026-11-19T11:19:31Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T03:52:37Z",
+    "lastSuccessAt": "2026-11-19T11:19:26Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 96,
+    "artifactCount": 102,
     "hiddenCount": 0,
     "folderCount": 37,
     "readFolderCount": 37,
-    "eventCount": 28
+    "eventCount": 34
   }
 }
