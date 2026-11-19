@@ -23,14 +23,14 @@ export function matchComebackFolder(folderName: string, rows: Comeback[]): Comeb
   const m = FOLDER_RE.exec(folderName);
   if (!m) return null;
   const num = m[1];
-  const key = nameKey(m[2]);
+  const key = nameKey(m[2] ?? "");
   let hits = rows.filter((r) => nameKey(r.name) === key);
   if (hits.length === 0 && num) hits = rows.filter((r) => nameKey(`${num}${r.name}`) === key);
   if (hits.length > 1 && num) {
     const byNum = hits.filter((r) => r.number === num);
     if (byNum.length) hits = byNum;
   }
-  return hits.length === 1 ? hits[0] : null;
+  return hits.length === 1 ? (hits[0] ?? null) : null;
 }
 
 const ORDER = { open: 0, closed: 1, removed: 2 } as const;
