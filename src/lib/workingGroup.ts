@@ -2,23 +2,27 @@ import { useSyncExternalStore } from "react";
 import type { Meeting, WorkingGroup } from "@/types/meeting";
 
 /**
- * The working group the user follows (RAN1 or RAN2). Every page reads the
+ * The working group the user follows (RAN1, RAN2 or RAN3). Every page reads the
  * meetings of the chosen group only; the choice is remembered per device.
  */
-export const WORKING_GROUPS: WorkingGroup[] = ["RAN1", "RAN2"];
+export const WORKING_GROUPS: WorkingGroup[] = ["RAN1", "RAN2", "RAN3"];
 
 const KEY = "ran1live.workingGroup";
 const listeners = new Set<() => void>();
 
 export function groupOfMeeting(meeting: Pick<Meeting, "slug" | "workingGroup"> | undefined | null): WorkingGroup {
   if (meeting?.workingGroup) return meeting.workingGroup;
-  return meeting?.slug?.toLowerCase().startsWith("ran2-") ? "RAN2" : "RAN1";
+  const slug = meeting?.slug?.toLowerCase() ?? "";
+  if (slug.startsWith("ran2-")) return "RAN2";
+  if (slug.startsWith("ran3-")) return "RAN3";
+  return "RAN1";
 }
 
 export function getWorkingGroup(): WorkingGroup {
   if (typeof window === "undefined") return "RAN1";
   try {
-    return window.localStorage.getItem(KEY) === "RAN2" ? "RAN2" : "RAN1";
+    const v = window.localStorage.getItem(KEY);
+    return v === "RAN2" || v === "RAN3" ? v : "RAN1";
   } catch {
     return "RAN1";
   }
@@ -43,9 +47,9 @@ export function useWorkingGroup(): WorkingGroup {
   return useSyncExternalStore(subscribeWorkingGroup, getWorkingGroup, () => "RAN1" as WorkingGroup);
 }
 
-/** Live drafts trees for a group. RAN2 names the folder "Drafts". */
+/** Live drafts trees for a group. RAN2 and RAN3 name the folder "Drafts". */
 export function draftRoots(group: WorkingGroup) {
-  const folder = group === "RAN2" ? "Drafts" : "drafts";
+  const folder = group !== "RAN1" ? "Drafts" : "drafts";
   const path = `/ftp/Meetings_3GPP_SYNC/${group}/Inbox/${folder}/`;
   return {
     venue: `http://10.10.10.10${path}`,

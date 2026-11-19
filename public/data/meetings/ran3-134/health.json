@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran3-134",
+  "schedule": {
+    "state": "ok",
+    "lastSuccessAt": "2026-11-19T20:08:03Z",
+    "lastAttemptAt": "2026-11-19T20:08:03Z",
+    "sessionCount": 52,
+    "roomCount": 3,
+    "dates": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "sourceCount": 2,
+    "sources": [
+      {
+        "label": "RAN3 chair notes (main session)",
+        "fileName": "RAN3_134_agenda_20261119_0921.docx",
+        "origin": "public"
+      },
+      {
+        "label": "RAN3 offline discussion rooms",
+        "fileName": "RAN3 offline discussion_ver_06.xlsx",
+        "origin": "public"
+      }
+    ],
+    "draftOnly": false,
+    "gaps": [],
+    "coarser": [],
+    "shortBlockCount": 0,
+    "conflictCount": 0,
+    "lowConfidenceCount": 0
+  },
+  "remoteFtp": {
+    "credentials": false
+  },
+  "warnings": [],
+  "updatedAt": "2026-11-19T20:08:06Z",
+  "drafts": {
+    "state": "baseline",
+    "lastSuccessAt": "2026-11-19T20:05:15Z",
+    "source": "3GPP sync mirror",
+    "artifactCount": 172,
+    "hiddenCount": 0,
+    "folderCount": 29,
+    "readFolderCount": 29,
+    "eventCount": 0
+  }
+}

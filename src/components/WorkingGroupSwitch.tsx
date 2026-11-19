@@ -2,7 +2,7 @@ import { setSelectedMeetingId } from "@/services/meetingSelection";
 import { WORKING_GROUPS, setWorkingGroup, useWorkingGroup } from "@/lib/workingGroup";
 import { cn } from "@/lib/utils";
 
-/** RAN1 / RAN2 switch: the whole app follows the chosen working group. */
+/** RAN1 / RAN2 / RAN3 switch: the whole app follows the chosen working group. */
 export function WorkingGroupSwitch() {
   const group = useWorkingGroup();
   return (

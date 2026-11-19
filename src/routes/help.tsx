@@ -4,17 +4,17 @@ import type { ReactNode } from "react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "How to use 3GPP Companion — RAN1 and RAN2 guide" },
+      { title: "How to use 3GPP Companion — RAN1, RAN2 and RAN3 guide" },
       {
         name: "description",
         content:
-          "A short RAN1 and RAN2 guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
+          "A short RAN1, RAN2 and RAN3 guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
       },
-      { property: "og:title", content: "How to use 3GPP Companion for RAN1 and RAN2" },
+      { property: "og:title", content: "How to use 3GPP Companion for RAN1, RAN2 and RAN3" },
       {
         property: "og:description",
         content:
-          "How to follow RAN1 or RAN2 meeting week with schedules, drafts, rooms and colleague alerts.",
+          "How to follow RAN1, RAN2 or RAN3 meeting week with schedules, drafts, rooms and colleague alerts.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
@@ -48,9 +48,9 @@ function HelpPage() {
       </header>
 
       <div className="grid gap-3 md:grid-cols-2">
-        <Section title="Choose RAN1 or RAN2">
+        <Section title="Choose RAN1, RAN2 or RAN3">
           <p>
-            Use the <strong>RAN1 | RAN2</strong> switch at the top of any page. The whole app
+            Use the <strong>RAN1 | RAN2 | RAN3</strong> switch at the top of any page. The whole app
             follows your choice, and your device remembers it.
           </p>
           <ul className="list-disc space-y-1 pl-4">
@@ -64,11 +64,14 @@ function HelpPage() {
             </li>
             <li>
               <strong>RAN1</strong> uses its main online/offline schedule plus chair detail files.{" "}
-              <strong>RAN2</strong> uses the single schedule document in its Agenda folder.
+              <strong>RAN2</strong> uses the single schedule document in its Agenda folder.{" "}
+              <strong>RAN3</strong> takes the main session from the weekday table at the end of
+              the newest chair notes (<code>Inbox/Chairs_Notes</code>) and the offline rooms from
+              the <code>Offline_meeting_room</code> spreadsheet (one sheet per day).
             </li>
             <li>
-              Drafts come from each group's own inbox. RAN2 uses <code>Inbox/Drafts</code> with a
-              capital D.
+              Drafts come from each group's own inbox. RAN2 and RAN3 use <code>Inbox/Drafts</code>{" "}
+              with a capital D.
             </li>
           </ul>
         </Section>
@@ -288,7 +291,7 @@ function HelpPage() {
 
         <Section title="Meetings">
           <p>
-            Switch meetings within the working group selected at the top. RAN1 and RAN2 meetings are
+            Switch meetings within the working group selected at the top. RAN1, RAN2 and RAN3 meetings are
             discovered from the official 3GPP portal, so past meetings stay browsable and the next
             one appears automatically — the current meeting is selected for you.
           </p>

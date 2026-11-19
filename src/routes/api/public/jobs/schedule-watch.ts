@@ -11,6 +11,11 @@ const DATA = `https://raw.githubusercontent.com/${REPO}/main/public/data/`;
 const INBOX = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN1/Inbox/";
 // RAN2 keeps its single week grid in the Agenda folder.
 const RAN2_AGENDA = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN2/Agenda/";
+// RAN3: main session in the chair notes, offlines in the room spreadsheet.
+const RAN3_SOURCES = [
+  "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN3/Inbox/Chairs_Notes/",
+  "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN3/Offline_meeting_room/",
+];
 const UA = { "User-Agent": "Mozilla/5.0 (ran1-live schedule watch)" };
 const DAY = 86_400_000;
 
@@ -23,14 +28,17 @@ async function text(url: string): Promise<string | null> {
   }
 }
 
-async function newestIn(folders: string[]): Promise<{ newest: number; name: string }> {
+async function newestIn(
+  folders: string[],
+  accept: (name: string) => boolean = (n) => /schedul/i.test(n) && /\.docx$/i.test(n),
+): Promise<{ newest: number; name: string }> {
   let newest = 0;
   let name = "";
   for (const folder of folders) {
     const html = await text(folder);
     if (!html) continue;
     for (const f of parseListing(html, folder)) {
-      if (f.isDir || !/schedul/i.test(f.name) || !/\.docx$/i.test(f.name)) continue;
+      if (f.isDir || !accept(f.name)) continue;
       const t = Date.parse(f.modifiedAt ?? "") || 0;
       if (t > newest) {
         newest = t;
@@ -77,7 +85,12 @@ export const Route = createFileRoute("/api/public/jobs/schedule-watch")({
           );
           const lastRun = Date.parse(health?.schedule?.lastAttemptAt ?? "") || 0;
           const ran2 = m.workingGroup === "RAN2" || m.slug.startsWith("ran2-");
-          const { newest, name } = ran2 ? await newestIn([RAN2_AGENDA]) : await newestInInbox(INBOX);
+          const ran3 = m.workingGroup === "RAN3" || m.slug.startsWith("ran3-");
+          const { newest, name } = ran3
+            ? await newestIn(RAN3_SOURCES, (n) => /agenda.*\.docx$|offline.*\.xlsx$/i.test(n))
+            : ran2
+              ? await newestIn([RAN2_AGENDA])
+              : await newestInInbox(INBOX);
           if (newest > lastRun) {
             due = name;
             break;
