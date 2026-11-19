@@ -77,12 +77,15 @@ export async function loadSchedule(meeting: Meeting): Promise<ScheduleResult> {
 
   try {
     const dir = `meetings/${slug}`;
-    const [schedule, rooms, agendaItems, sources, changes] = await Promise.all([
+    const [schedule, rooms, agendaItems, sources, changes, comebacks] = await Promise.all([
       getJson<ScheduleFile | null>(`${dir}/schedule.json`, null),
       getJson<Room[]>(`${dir}/rooms.json`, []),
       getJson<AgendaItem[]>(`${dir}/agenda.json`, []),
       getJson<ScheduleSource[]>(`${dir}/sources.json`, []),
       getJson<ScheduleChange[]>(`${dir}/changes.json`, []),
+      slug.startsWith("ran3-")
+        ? getJson<import("@/lib/comebacks").Comeback[]>(`${dir}/comebacks.json`, []).catch(() => [])
+        : Promise.resolve([]),
     ]);
 
     if (schedule) {
@@ -95,6 +98,7 @@ export async function loadSchedule(meeting: Meeting): Promise<ScheduleResult> {
         agendaItems,
         sources,
         changes,
+        comebacks,
         conflicts: schedule.conflicts ?? [],
         ingest: schedule.ingest ?? {
           state: "ok",

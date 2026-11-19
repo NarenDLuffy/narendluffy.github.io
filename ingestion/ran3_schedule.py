@@ -36,6 +36,7 @@ from .models import (
     SessionSourceRef,
 )
 from .portal import PortalMeeting, list_folder
+from .ran3_comebacks import keep_removed, link_folders, name_key, parse_comebacks
 from .ran2_schedule import PROBLEMS, WEEKDAYS, _day_date, _grid_rows, _iso, _key
 
 TIME_RE = re.compile(r"(?<!\d)(\d{1,2})[:.]?(\d{2})(?!\d)")
@@ -342,6 +343,47 @@ def parse_agenda(path: str, meeting_id: str) -> list[AgendaItem]:
     return list(items.values())
 
 
+def comeback_code(text: str, rows: list[dict] | None) -> str | None:
+    """Agenda code of a block naming a comeback: "6G Offline (CB#9)" or its name."""
+    if not rows:
+        return None
+    nums = set(re.findall(r"\bCB\s*#\s*(\d+)\b", text, re.I))
+    hits = {r["agendaCode"] for r in rows if r.get("number") and r["number"] in nums}
+    if not hits:
+        key = name_key(text)
+        hits = {r["agendaCode"] for r in rows if len(name_key(r["name"])) >= 6 and name_key(r["name"]) in key}
+    return hits.pop() if len(hits) == 1 else None
+
+
+def _comebacks_with_folders(meeting: Meeting, phase: str, comebacks) -> list[dict] | None:
+    """Link comebacks to Drafts folders and keep ones the chair removed (health.py notes the gaps)."""
+    import json
+    from pathlib import Path
+    from urllib.parse import unquote
+
+    prev_path = Path("public/data/meetings") / meeting.slug / "comebacks.json"
+    try:
+        previous = json.loads(prev_path.read_text()) if prev_path.exists() else []
+    except json.JSONDecodeError:
+        previous = []
+    if comebacks is None:
+        return previous or None
+    comebacks = keep_removed(comebacks, previous)
+    roots = []
+    if phase in ("week", "edge"):
+        roots.append(GROUPS["RAN3"].sync_root + "Inbox/Drafts/")
+    if phase != "week" and meeting.sources.inbox:
+        roots.append(meeting.sources.inbox + "Drafts/")
+    names: list[str] = []
+    for root in roots:
+        try:
+            names += [unquote(u.rstrip("/").rsplit("/", 1)[-1]) for u in list_folder(root)]
+        except Exception:  # noqa: BLE001
+            pass
+    link_folders(comebacks, list(dict.fromkeys(names)))
+    return [c.to_json() for c in comebacks]
+
+
 def overlap_problems(sessions: list[Session]) -> list[str]:
     out = []
     by: dict[tuple, list[Session]] = {}
@@ -405,22 +447,28 @@ def build_bundle(pm: PortalMeeting, *, today: date | None = None) -> ScheduleBun
     sources: list[ScheduleSource] = []
     agenda: list[AgendaItem] = []
     problems: list[str] = []
+    comebacks = None
     if notes_url and (path := download_to_temp(notes_url)):
         src = _source(meeting, notes_url, path, "RAN3 chair notes (main session)", "main_schedule", now)
         try:
             agenda = parse_agenda(path, meeting.id)
         except Exception as exc:  # noqa: BLE001
             print(f"  agenda unreadable: {exc}")
+        try:
+            comebacks = parse_comebacks(path)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  comebacks unreadable: {exc}")
         r, s, p = parse_chair_grid(path, meeting, src)
         rooms += r; sessions += s; problems += p; sources.append(src)
     if off_url and (path := download_to_temp(off_url)):
         src = _source(meeting, off_url, path, "RAN3 offline discussion rooms", "offline_schedule", now)
         r, s, p = parse_offline_sheet(path, meeting, src, order0=len(rooms))
         rooms += r; sessions += s; problems += p; sources.append(src)
+    cb_rows = _comebacks_with_folders(meeting, phase, comebacks)
     titles = {a.code: a.title for a in agenda}
     for s in sessions:
         if not s.agendaItems and s.kind == "session":
-            code = resolve_topic(s.topic, titles)
+            code = comeback_code(f"{s.topic} {s.note or ''}", cb_rows) or resolve_topic(s.topic, titles)
             if code:
                 s.agendaItems = [code]
     # Drop rooms with no sessions (e.g. an empty 6G offline lane).
@@ -432,7 +480,7 @@ def build_bundle(pm: PortalMeeting, *, today: date | None = None) -> ScheduleBun
     meeting.schedulePublished = bool(sessions)
     return ScheduleBundle(
         generatedAt=_iso(now), meeting=meeting, rooms=rooms, sessions=sessions,
-        agendaItems=agenda, sources=sources,
+        agendaItems=agenda, sources=sources, comebacks=cb_rows,
         ingest=IngestStatus(state="ok", lastSuccessfulAt=_iso(now), lastAttemptAt=_iso(now),
                             message=None if sessions else "No RAN3 session schedule published yet."),
     )

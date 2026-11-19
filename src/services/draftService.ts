@@ -1,5 +1,6 @@
 import { queryOptions } from "@tanstack/react-query";
 import { fetchData } from "@/lib/dataUrl";
+import type { Comeback } from "@/lib/comebacks";
 import { probeLiveDrafts, type LiveDraftOrigin, type VenueStatus } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
@@ -106,7 +107,16 @@ export async function loadDraftsLive(
 ): Promise<DraftResult> {
   const published = snapshot ?? (await loadDrafts(meeting));
   try {
-    const live = await probeLiveDrafts(meeting, published.index);
+    let comebacks: Comeback[] = [];
+    if (meeting.slug.startsWith("ran3-")) {
+      try {
+        const res = await fetchData(`meetings/${meeting.slug}/comebacks.json`);
+        if (res.ok) comebacks = (await res.json()) as Comeback[];
+      } catch {
+        /* comebacks are optional */
+      }
+    }
+    const live = await probeLiveDrafts(meeting, published.index, [], comebacks);
     if (live.origin === "published") {
       return {
         ...published,

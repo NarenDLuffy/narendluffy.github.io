@@ -190,6 +190,18 @@ def _warnings(
         if unmapped:
             out.append(_warn("info", f"{len(unmapped)} RAN2 draft folder(s) are not linked to an agenda item."))
 
+    if slug.startswith("ran3-"):
+        # Comebacks: notes only — a CB without a folder is normal early in the week.
+        cbs = _published(slug, "comebacks.json")
+        cbs = cbs if isinstance(cbs, list) else []
+        missing = [c["name"] for c in cbs if c.get("status") == "open" and not c.get("folder")]
+        if missing:
+            out.append(_warn("info", f"{len(missing)} open comeback(s) have no Drafts folder yet: {', '.join(missing[:5])}."))
+        folders = _published(slug, "drafts.json").get("folders") or []
+        loose_cb = [f.get("name") for f in folders if str(f.get("name", "")).upper().startswith("CB") and not f.get("agendaItemId")]
+        if loose_cb:
+            out.append(_warn("info", f"{len(loose_cb)} comeback folder(s) are not linked to an agenda item (e.g. '{loose_cb[0]}')."))
+
     # --- drafts ---
     if not files:
         out.append(

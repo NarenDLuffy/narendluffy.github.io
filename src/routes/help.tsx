@@ -73,6 +73,13 @@ function HelpPage() {
               Drafts come from each group's own inbox. RAN2 and RAN3 use <code>Inbox/Drafts</code>{" "}
               with a capital D.
             </li>
+            <li>
+              <strong>RAN3 comebacks:</strong> the pink <code>CB: # 2_Name</code> lines under each
+              agenda item in the chair notes. Each has its own Drafts folder (
+              <code>CB # 2_Name</code>), so starring the agenda item also shows that folder's drafts.
+              When the chair removes "CB:" the comeback shows as <em>closed</em> under My agenda; its
+              drafts stay visible.
+            </li>
           </ul>
         </Section>
 

@@ -10,6 +10,7 @@ import { MeetingBanner } from "@/components/MeetingBanner";
 import { LoadingState, NoMeetingState, NoScheduleState } from "@/components/ScheduleStates";
 import { buildIcs, downloadIcs } from "@/lib/ics";
 import { cn } from "@/lib/utils";
+import { comebacksFor } from "@/lib/comebacks";
 import type { Session } from "@/types/schedule";
 
 export const Route = createFileRoute("/agenda")({
@@ -167,6 +168,44 @@ function AgendaPage() {
           </section>
         ))
       )}
+      {bookmarks.length > 0 && comebacksFor(bundle.comebacks ?? [], bookmarks).length > 0 ? (
+        <section>
+          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Comebacks for my items
+          </h2>
+          <ol className="space-y-1.5">
+            {comebacksFor(bundle.comebacks ?? [], bookmarks).map((cb) => (
+              <li
+                key={cb.name}
+                className={cn(
+                  "flex items-center gap-2 rounded-md border border-border bg-card p-2.5 text-sm",
+                  cb.status !== "open" && "opacity-60",
+                )}
+              >
+                <span className="mono-code w-14 shrink-0 text-xs text-muted-foreground">{cb.agendaCode}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-medium">
+                    CB #{cb.number ? ` ${cb.number}_` : " "}
+                    {cb.name}
+                  </span>
+                  <span className="block truncate text-xs text-muted-foreground">
+                    {cb.folder ? `Drafts folder: ${cb.folder}` : "No Drafts folder yet"}
+                  </span>
+                </span>
+                <span
+                  className={cn(
+                    "rounded px-1.5 py-0.5 text-[10px] font-bold uppercase",
+                    cb.status === "open" ? "bg-live/15 text-live" : "bg-muted text-muted-foreground",
+                  )}
+                >
+                  {cb.status}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
+
       {bookmarks.length > 0 ? (
         <section>
           <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">

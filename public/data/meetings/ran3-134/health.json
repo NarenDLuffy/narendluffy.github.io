@@ -35,18 +35,20 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "credentials": true
+    "state": "skipped-no-credentials",
+    "host": null,
+    "credentials": false
   },
   "warnings": [],
   "updatedAt": "2026-11-19T22:01:20Z",
   "drafts": {
-    "state": "baseline",
-    "lastSuccessAt": "2026-11-19T20:05:15Z",
+    "state": "ok",
+    "lastSuccessAt": "2026-11-19T22:01:26Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 172,
+    "artifactCount": 203,
     "hiddenCount": 0,
-    "folderCount": 29,
-    "readFolderCount": 29,
-    "eventCount": 0
+    "folderCount": 31,
+    "readFolderCount": 31,
+    "eventCount": 33
   }
 }

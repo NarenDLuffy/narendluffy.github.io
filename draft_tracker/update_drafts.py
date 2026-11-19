@@ -55,6 +55,23 @@ def _ran2_resolver(slug: str):
     return lambda name: resolve_topic(folder_topic(name), codes)
 
 
+def _ran3_resolver(slug: str):
+    """RAN3: a "CB # n_Name" folder belongs to its comeback's agenda item."""
+    from ingestion.ran3_comebacks import match_folder
+
+    path = MEETINGS_DIR / slug / "comebacks.json"
+    try:
+        rows = json.loads(path.read_text()) if path.exists() else []
+    except json.JSONDecodeError:
+        rows = []
+
+    def resolve(name: str):
+        hit = match_folder(name, rows)
+        return hit.get("agendaCode") if hit else None
+
+    return resolve
+
+
 def _meeting_folder(slug: str) -> str | None:
     path = MEETINGS_DIR / slug / "meeting.json"
     if not path.exists():
@@ -142,7 +159,10 @@ def main() -> int:
             source=source,
             agenda_codes=_agenda_codes(slug),
             previous=previous,
-            topic_resolver=_ran2_resolver(slug) if wg.key == "RAN2" else None,
+            topic_resolver=(
+                _ran2_resolver(slug) if wg.key == "RAN2"
+                else _ran3_resolver(slug) if wg.key == "RAN3" else None
+            ),
             monitoring=meeting.get("status") != "completed",
             config=ScanConfig(hash_files=args.hash),
         )

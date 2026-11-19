@@ -79,6 +79,8 @@ def write_meeting(bundle: ScheduleBundle) -> None:
     (out / "agenda.json").write_text(json.dumps(data["agendaItems"], indent=2))
     (out / "sources.json").write_text(json.dumps(data["sources"], indent=2))
     (out / "changes.json").write_text(json.dumps(data["changes"], indent=2))
+    if bundle.comebacks is not None:
+        (out / "comebacks.json").write_text(json.dumps(bundle.comebacks, indent=2))
 
 
 def write_index(bundles: list[ScheduleBundle]) -> None:

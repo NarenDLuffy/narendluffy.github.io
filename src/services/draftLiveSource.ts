@@ -1,3 +1,4 @@
+import { matchComebackFolder, type Comeback } from "@/lib/comebacks";
 import type { Meeting } from "@/types/meeting";
 import { draftRoots, groupOfMeeting } from "@/lib/workingGroup";
 import type {
@@ -127,9 +128,12 @@ async function crawl(rootUrl: string): Promise<CrawlResult | null> {
 
 const AGENDA_RE = /(?:^|[^\d])(\d{1,2}(?:\.\d{1,2}){0,4})(?=[^\d]|$)/;
 
-function agendaFromPath(path: string, known: Set<string>): string | null {
+function agendaFromPath(path: string, known: Set<string>, comebacks: Comeback[] = []): string | null {
   const segments = path.split("/");
   for (let i = segments.length - 1; i >= 0; i -= 1) {
+    // RAN3: "CB # 2_R19PSCellinfo" belongs to its comeback's agenda item.
+    const cb = comebacks.length ? matchComebackFolder(segments[i] ?? "", comebacks) : null;
+    if (cb) return cb.agendaCode;
     const match = AGENDA_RE.exec(segments[i] ?? "");
     if (!match) continue;
     let code = match[1];
@@ -253,6 +257,7 @@ export function mergeLive(
     sourceType: DraftSourceType;
     baseUrl: string;
     agendaCodes: Set<string>;
+    comebacks?: Comeback[];
     /** True when the live tree is authoritative — i.e. during the meeting week. */
     reconcile?: boolean;
   },
@@ -291,7 +296,7 @@ export function mergeLive(
       sourceType: meta.sourceType,
       firstSeenAt: now,
       lastSeenAt: now,
-      agendaItemId: agendaFromPath(f.path, meta.agendaCodes),
+      agendaItemId: agendaFromPath(f.path, meta.agendaCodes, meta.comebacks),
       agendaConfidence: 0.6,
       agendaMethod: "live-path",
       parentPath: f.parent || null,
@@ -353,7 +358,7 @@ export function mergeLive(
       documentKey: key,
       firstSeenAt: now,
       lastSeenAt: now,
-      agendaItemId: folder?.agendaItemId ?? agendaFromPath(file.path, meta.agendaCodes),
+      agendaItemId: folder?.agendaItemId ?? agendaFromPath(file.path, meta.agendaCodes, meta.comebacks),
       folderPath: file.folderPath,
       depth: file.path.split("/").length - 1,
       size: file.size ?? null,
@@ -517,6 +522,7 @@ export async function probeLiveDrafts(
   meeting: Meeting,
   published: DraftIndex | null,
   agendaCodes: string[] = [],
+  comebacks: Comeback[] = [],
 ): Promise<LiveDraftReport> {
   const checkedAt = new Date().toISOString();
   if (typeof window === "undefined") {
@@ -562,6 +568,7 @@ export async function probeLiveDrafts(
       sourceType: candidate.sourceType,
       baseUrl: candidate.url,
       agendaCodes: codes,
+      comebacks,
       // Inside the meeting week the live tree holds this meeting's files, so
       // what it does not list is withdrawn rather than merely un-replicated.
       // Only on meeting days; the day before/after both trees count.

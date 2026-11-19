@@ -202,4 +202,6 @@ export interface ScheduleBundle {
   changes: ScheduleChange[];
   conflicts: ScheduleConflict[];
   ingest: IngestStatus;
+  /** RAN3 only: comebacks from the chair notes. */
+  comebacks?: import("@/lib/comebacks").Comeback[];
 }

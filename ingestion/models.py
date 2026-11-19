@@ -245,6 +245,8 @@ class ScheduleBundle:
     changes: list[ScheduleChange] = field(default_factory=list)
     conflicts: list[ScheduleConflict] = field(default_factory=list)
     ingest: IngestStatus | None = None
+    #: RAN3 only: comebacks from the chair notes (ran3_comebacks.Comeback.to_json()).
+    comebacks: list[dict[str, Any]] | None = None
     schemaVersion: int = SCHEMA_VERSION
 
     def to_json(self) -> dict[str, Any]:
