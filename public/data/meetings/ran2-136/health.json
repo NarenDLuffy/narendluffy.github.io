@@ -30,9 +30,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
+    "state": "skipped-no-host",
     "host": null,
-    "credentials": false
+    "credentials": true
   },
   "warnings": [
     {
@@ -40,19 +40,19 @@
       "text": "9 RAN2 block(s) have no agenda item (e.g. 'CP offlines (ASN.1 examples)'), so My agenda cannot show them."
     },
     {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
     }
   ],
-  "updatedAt": "2026-11-19T23:23:00Z",
+  "updatedAt": "2026-11-20T01:26:25Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T23:22:56Z",
+    "lastSuccessAt": "2026-11-20T01:26:21Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 150,
+    "artifactCount": 159,
     "hiddenCount": 0,
     "folderCount": 37,
     "readFolderCount": 37,
-    "eventCount": 82
+    "eventCount": 91
   }
 }

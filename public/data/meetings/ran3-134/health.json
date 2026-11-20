@@ -35,20 +35,29 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
+    "state": "skipped-no-host",
     "host": null,
-    "credentials": false
+    "credentials": true
   },
-  "warnings": [],
-  "updatedAt": "2026-11-19T22:01:20Z",
+  "warnings": [
+    {
+      "level": "info",
+      "text": "3 comeback folder(s) are not linked to an agenda item (e.g. 'CB # 19_TEI20mobrestriction')."
+    },
+    {
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+    }
+  ],
+  "updatedAt": "2026-11-20T01:26:33Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T22:01:26Z",
+    "lastSuccessAt": "2026-11-20T01:26:26Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 203,
+    "artifactCount": 262,
     "hiddenCount": 0,
-    "folderCount": 31,
-    "readFolderCount": 31,
-    "eventCount": 33
+    "folderCount": 52,
+    "readFolderCount": 52,
+    "eventCount": 113
   }
 }
