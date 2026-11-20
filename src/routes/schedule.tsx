@@ -50,7 +50,7 @@ export const Route = createFileRoute("/schedule")({
 });
 
 function SchedulePage() {
-  const { meeting, bundle, stale, isCurrent, isLoading, origin, clock } = useActiveMeeting();
+  const { meeting, bundle, stale, isCurrent, isLoading, clock } = useActiveMeeting();
   const search = Route.useSearch();
   const navigate = useNavigate({ from: "/schedule" });
   const [nowKey, setNowKey] = useState(0);
@@ -216,7 +216,7 @@ function SchedulePage() {
         onOpenChange={(open) => !open && setSelected(null)}
       />
 
-      <SourcePanel bundle={bundle} meeting={meeting} origin={origin} />
+      <SourcePanel bundle={bundle} meeting={meeting} />
     </div>
   );
 }
