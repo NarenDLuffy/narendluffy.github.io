@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "changeId": "session_added-ran2-136-0e3d01e356-2026-11-20T03:12:05+00:00",
+    "meetingId": "ran2-136",
+    "detectedAt": "2026-11-20T03:12:05+00:00",
+    "type": "session_added",
+    "title": "Maint Correction to SI Update (vivo) added",
+    "detail": "New session in the schedule",
+    "agendaItems": [
+      "10.6"
+    ],
+    "sessionId": "ran2-136-0e3d01e356",
+    "to": "Brk 3 room 16:30-17:00",
+    "sourceIds": [
+      "ran2-136-a74bc2d931"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran2-136-0e3d01e356-2026-11-20T03:12:05+00:00",
+    "meetingId": "ran2-136",
+    "detectedAt": "2026-11-20T03:12:05+00:00",
+    "type": "session_removed",
+    "title": "Maint Correction to SI Update (vivo) removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [],
+    "sessionId": "ran2-136-0e3d01e356",
+    "sourceIds": [
+      "ran2-136-692991931b"
+    ],
+    "from": "Brk 3 room"
+  }
+]
