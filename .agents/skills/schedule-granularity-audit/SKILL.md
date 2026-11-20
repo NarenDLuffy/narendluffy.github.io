@@ -30,8 +30,9 @@ chair/sub-chair schedule file, not one person's.
 | Cause | Symptom | Fix pattern |
 | --- | --- | --- |
 | range-minutes | "Maintenance (90-120)" kept whole or mis-timed | `RANGE_DURATION_RE` head; items' sum must fall in the range (`_Segment.min_minutes`) |
-| bare-codes | "7 pre-Rel-19 CRs (50)", "11 TEI20" lose their item | `LEADING_CODE_RE`/`_item_codes`, only at the start of a timed line under a head |
+| bare-codes | "7 pre-Rel-19 CRs (50)", "11 TEI20" lose their item | `LEADING_CODE_RE`/`_item_codes`; `_make_session` also keeps a code-led timed head's top-level code |
 | several items on one line | "7 …, 8.2 … (50)" keeps only one code | `_Slot.codes`; single-slot breakdown keeps all `agendaItems` (canonical) |
+| multi-item tail excluded | a 5/10/75 chair cell collapses because the final 75-minute segment lists several codes | chair-owned timed segments join a complete retiling regardless of item count; `granularity_checks` flags a fresh, gapless, same-table retiling that canonical output drops |
 | wildcard-x | `10.5.4.x` stays one block though children are timed | `canonical_schedule.is_descendant` / `_base_code` |
 | continuation rows | another room's items appear, gaps | never re-read vertical-merge continuation cells |
 | pipe separator / name-only item | "R20 (60) / NTN-NR (40) / .9.5 (20) \| 6GR (90)" kept whole, NTN-NR has no code | "\|" ends the head in `_parse_cell`; mapper gets group + sibling-code `exclude` |

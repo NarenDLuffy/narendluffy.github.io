@@ -83,6 +83,31 @@ def test_fresh_complete_chair_tiling_replaces_a_broad_main_cell():
     ]
 
 
+def test_complete_chair_tiling_accepts_a_multi_item_final_segment():
+    """hh7 Friday Room 214-215: 5 + 10 + 75 minutes, not one Sensing block."""
+    main = make("11:00", "12:30", source="main", items=["10.8"], authority=True)
+    main.sources[0].introducedAt = "2026-11-20T09:00:00Z"
+    details = [
+        make("11:00", "11:05", source="hiroki", items=["11"], topic="TEI20"),
+        make("11:05", "11:15", source="hiroki", items=["10.2.1"], topic="Waveform"),
+        make(
+            "11:15", "12:30", source="hiroki",
+            items=["10.8.1", "10.8.2", "10.8.3"], topic="Sensing",
+            breakdown=[("10.8.1", "11:15", "12:30")],
+        ),
+    ]
+    for detail in details:
+        detail.sources[0].introducedAt = "2026-11-20T10:00:00Z"
+
+    result = canonicalize([main, *details])
+
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in result.sessions] == [
+        ("11:00", "11:05", ["11"]),
+        ("11:05", "11:15", ["10.2.1"]),
+        ("11:15", "12:30", ["10.8.1", "10.8.2", "10.8.3"]),
+    ]
+
+
 def test_other_files_leftover_container_never_displaces_a_main_grid_child():
     main = make(
         "11:00", "12:30", source="main", items=["10.5"], authority=True,

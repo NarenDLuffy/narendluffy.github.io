@@ -1233,7 +1233,11 @@ def _make_session(
         label = AGENDA_CODE_RE.sub("", label)
         label = re.sub(r"\s*,\s*,", ",", re.sub(r"\s+", " ", label)).strip(" .,·-/")
     else:
-        codes = AGENDA_CODE_RE.findall(clean)
+        leading = LEADING_CODE_RE.match(clean)
+        codes = list(dict.fromkeys([
+            *([leading.group(1)] if leading else []),
+            *AGENDA_CODE_RE.findall(clean),
+        ]))
         label = AGENDA_CODE_RE.sub("", clean).strip(" .·-/") if codes else clean
     if codes:
         label = re.sub(r"^AI\s+", "", label).strip()

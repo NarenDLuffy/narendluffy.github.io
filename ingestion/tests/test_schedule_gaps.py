@@ -232,3 +232,32 @@ def test_overlapping_published_blocks_in_one_room_are_refused():
     errors = cell_checks([], [a, b], rooms)
     assert any("overlapping published blocks" in e and "NTN-NR" in e for e in errors)
     assert cell_checks([], [_s("09:20", "09:50"), _s("09:50", "10:30")], rooms) == []
+
+
+def test_granularity_audit_catches_a_complete_fresh_chair_tiling():
+    from ingestion.live import granularity_checks
+
+    rooms = [Room(roomId="r", meetingId="m", roomName="Room 214-215", order=0)]
+    main = _s("11:00", "12:30", code="10.8")
+    main.sources = [SessionSourceRef(
+        "main", ["main-authority"], introducedAt="2026-11-20T09:00:00Z",
+    )]
+    details = [
+        _s("11:00", "11:05", code="11"),
+        _s("11:05", "11:15", code="10.2.1"),
+        _s("11:15", "12:30", code="10.8.1"),
+    ]
+    details[-1].agendaItems = ["10.8.1", "10.8.2", "10.8.3"]
+    for detail in details:
+        detail.sources = [SessionSourceRef(
+            "hh7", ["own-table"], cell="hh7|t5|Friday|660|c5|20f39b3c",
+            introducedAt="2026-11-20T10:00:00Z",
+        )]
+
+    errors = granularity_checks([main, *details], [main], rooms)
+    assert len(errors) == 1
+    assert "11:00-11:05 11" in errors[0]
+    assert "11:15-12:30 10.8.1, 10.8.2, 10.8.3" in errors[0]
+
+    main.sources[0].introducedAt = "2026-11-20T11:00:00Z"
+    assert granularity_checks([main, *details], [main], rooms) == []

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-20T13:32:32Z",
+  "generatedAt": "2026-11-20T13:38:21Z",
   "meetingId": "ran1-127",
   "sessions": [
     {
@@ -12212,51 +12212,118 @@
       "detailAvailable": true
     },
     {
-      "sessionId": "ran1-127_fri_room-214-215_1100_1230_10.8",
+      "sessionId": "ran1-127_fri_room-214-215_1100_1105_11",
       "meetingId": "ran1-127",
       "date": "2026-11-20",
       "day": "Friday",
       "startTime": "11:00",
+      "endTime": "11:05",
+      "roomId": "ran1-127-room-70e772c5",
+      "roomName": "Room 214-215",
+      "topic": "11 TEI20",
+      "topicKey": "f244604b",
+      "agendaItems": [
+        "11"
+      ],
+      "agendaBreakdown": [],
+      "group": "11 TEI20",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-9ca30538",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-127_fri_room-214-215_1105_1115_10.2.1",
+      "meetingId": "ran1-127",
+      "date": "2026-11-20",
+      "day": "Friday",
+      "startTime": "11:05",
+      "endTime": "11:15",
+      "roomId": "ran1-127-room-70e772c5",
+      "roomName": "Room 214-215",
+      "topic": "Waveform",
+      "topicKey": "9c886869",
+      "agendaItems": [
+        "10.2.1"
+      ],
+      "agendaBreakdown": [],
+      "group": "10.2.1 Waveform",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran1-127-9ca30538",
+          "contributed": [],
+          "cell": null,
+          "introducedAt": null
+        }
+      ],
+      "derivation": "inferred-duration",
+      "confidence": 0.7,
+      "parentAgendaItem": "10.2",
+      "detailAvailable": true
+    },
+    {
+      "sessionId": "ran1-127_fri_room-214-215_1115_1230_10.8.1",
+      "meetingId": "ran1-127",
+      "date": "2026-11-20",
+      "day": "Friday",
+      "startTime": "11:15",
       "endTime": "12:30",
       "roomId": "ran1-127-room-70e772c5",
       "roomName": "Room 214-215",
       "topic": "6GR",
       "topicKey": "f8e05aee",
       "agendaItems": [
-        "10.8"
+        "10.8.1",
+        "10.8.2",
+        "10.8.3"
       ],
-      "agendaBreakdown": [],
+      "agendaBreakdown": [
+        {
+          "code": "10.8.1",
+          "label": "10.8.1",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8.2",
+          "label": "10.8.2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8.3",
+          "label": "10.8.3",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
       "group": "6GR",
       "kind": "session",
       "status": "scheduled",
       "sources": [
         {
-          "sourceId": "ran1-127-8b668a26",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-127-317b6c9f",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
           "sourceId": "ran1-127-9ca30538",
-          "contributed": [],
-          "cell": null,
-          "introducedAt": null
-        },
-        {
-          "sourceId": "ran1-127-007b0f98",
           "contributed": [],
           "cell": null,
           "introducedAt": null
         }
       ],
       "derivation": "direct",
-      "confidence": 0.95,
+      "confidence": 0.9,
       "detailAvailable": true
     },
     {
@@ -12613,7 +12680,7 @@
   ],
   "ingest": {
     "state": "ok",
-    "lastSuccessfulAt": "2026-11-20T13:32:32Z",
-    "lastAttemptAt": "2026-11-20T13:32:32Z"
+    "lastSuccessfulAt": "2026-11-20T13:38:21Z",
+    "lastAttemptAt": "2026-11-20T13:38:21Z"
   }
 }

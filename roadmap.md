@@ -25,6 +25,7 @@
 - [x] Fix Drafts crawl server error and prevent a failed crawl from blanking the page
 - [x] Keep NTN-NR inside Room 225-226's single Wednesday timeline, not as an overlapping block
 - [x] Verify Wednesday BMO 221 against Hiroki's DOCX and daily PDF: both state only Sensing (90); no other room's split copied
+- [x] Preserve Hiroki hh7's Friday Room 214-215 5/10/75 split and make the granularity audit catch complete chair retilings
 
 - [x] RAN1/RAN2 working-group switch: schedule, Now, agenda, rooms, Drafts (Inbox/Drafts), watcher
 - [x] App description and How to Use explain RAN1 and RAN2 support

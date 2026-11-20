@@ -336,8 +336,10 @@ def _resolve_room_day(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
 
     # Every atomic block that resolves an agenda item is potential detail for
     # a broader block covering the same time in the same room. A chair's own
-    # top-level item (for example 8.1) also participates in a complete retiling.
-    detail = [b for b in session_blocks if b.atomic and (b.specificity >= 2 or _own(b))]
+    # table also participates as a whole: its final timed segment may list
+    # several items sharing one period, and excluding it would make an otherwise
+    # complete, gapless retiling look partial (for example 5 + 10 + 75 minutes).
+    detail = [b for b in session_blocks if (b.atomic and b.specificity >= 2) or _own(b)]
 
     kept: list[CandidateBlock] = []
     for block in session_blocks:

@@ -54,3 +54,23 @@ def test_shared_code_list_does_not_collapse_hiroki_hh7_friday_cell():
         ("09:30", "10:30", ["9.3.1", "9.3.2", "9.3.3"]),
     ]
     assert all("Minutes don't add up" not in (s.note or "") for s in sessions)
+
+
+def test_hiroki_hh7_friday_late_morning_keeps_code_led_heads_and_multi_item_tail():
+    # Exact hh7 Friday BMO 214-215 11:00-12:30 cell. The three untimed codes
+    # share the final 75 minutes; no per-child timing is invented.
+    text = "11 TEI20 (5)\n10.2.1 Waveform (10)\n\n6GR (75)\n.10.8 Sensing (75)\n10.8.1, 10.8.2, 10.8.3"
+    room = Room(roomId="r", meetingId="ran1-127", roomName="BMO 214-215", order=0)
+    source = ScheduleSource(
+        sourceId="hh7", meetingId="ran1-127", fileName="hh7.docx", label="hh7",
+        type="offline_schedule", origin="public", retrievedAt="now",
+    )
+    sessions = _sessions_for_cell(
+        text, meeting_id="ran1-127", day="Friday", day_date="2026-11-20",
+        room=room, block_start=11 * 60, block_end=12 * 60 + 30, source=source,
+    )
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in sessions] == [
+        ("11:00", "11:05", ["11"]),
+        ("11:05", "11:15", ["10.2.1"]),
+        ("11:15", "12:30", ["10.8.1", "10.8.2", "10.8.3"]),
+    ]

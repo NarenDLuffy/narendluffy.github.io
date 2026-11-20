@@ -605,28 +605,64 @@ def granularity_checks(
         return int(h) * 60 + int(m)
 
     names = {r.roomId: r.roomName for r in rooms}
-    by_doc: dict[tuple[str, str, str], set[tuple[int, int, str]]] = {}
+    # start, end, items/topic, chair-owned table, introduced-at, table id
+    Part = tuple[int, int, str, bool, str, str]
+    by_doc: dict[tuple[str, str, str], set[Part]] = {}
     for s in parsed:
         if not s.roomId or s.kind != "session":
             continue
         for ref in s.sources:
-            doc = (ref.cell or ref.sourceId).split("|")[0]
-            by_doc.setdefault((s.date, s.roomId, doc), set()).add(
-                (mins(s.startTime), mins(s.endTime), ", ".join(s.agendaItems) or s.topic)
-            )
+            cell_parts = (ref.cell or "").split("|")
+            doc = cell_parts[0] if cell_parts[0] else ref.sourceId
+            table = cell_parts[1] if len(cell_parts) > 1 else ""
+            by_doc.setdefault((s.date, s.roomId, doc), set()).add((
+                mins(s.startTime), mins(s.endTime), ", ".join(s.agendaItems) or s.topic,
+                "own-table" in ref.contributed, ref.introducedAt or "", table,
+            ))
+
+    def gapless(parts: list[Part], start: int, end: int) -> bool:
+        spans = sorted({(p[0], p[1]) for p in parts})
+        if len(spans) < 2:
+            return False
+        cursor = start
+        for part_start, part_end in spans:
+            if part_start != cursor or part_end <= part_start:
+                return False
+            cursor = part_end
+        return cursor == end
+
     out: list[str] = []
     for c in canonical:
         if not c.roomId or c.kind != "session":
             continue
         a, b = mins(c.startTime), mins(c.endTime)
+        container_introduced = max((ref.introducedAt or "" for ref in c.sources), default="")
         for (day, room, doc), parts in by_doc.items():
             if day != c.date or room != c.roomId:
                 continue
-            inside = sorted(p for p in parts if a <= p[0] and p[1] <= b and (p[0], p[1]) != (a, b))
-            # Only a finer split of the SAME items is lost detail. Parts naming
-            # other items are a disagreement between tables, shown on the block
-            # as a note and counted as a conflict, not a granularity error.
-            if c.agendaItems:
+            inside = sorted(
+                (p for p in parts if a <= p[0] and p[1] <= b and (p[0], p[1]) != (a, b)),
+                key=lambda p: (p[0], p[1]),
+            )
+
+            # A fresh chair-owned table may legitimately retile the whole main
+            # cell, including a neighbouring agenda item. Such a complete
+            # gapless tiling is lost detail even when its items differ from the
+            # broad container; partial or stale disagreements remain notes.
+            own_parts = [p for p in inside if p[3]]
+            complete: list[Part] = []
+            for table in {p[5] for p in own_parts}:
+                tiling = [p for p in own_parts if p[5] == table]
+                fresh = max((p[4] for p in tiling), default="")
+                if gapless(tiling, a, b) and (
+                    not container_introduced or fresh >= container_introduced
+                ):
+                    complete = tiling
+                    break
+
+            if complete:
+                inside = complete
+            elif c.agendaItems:
                 from .canonical_schedule import _base_code, is_descendant
 
                 def fits(text: str) -> bool:
@@ -637,8 +673,11 @@ def granularity_checks(
                     )
 
                 inside = [p for p in inside if fits(p[2])]
-            if len({(x, y) for x, y, _ in inside}) >= 2:
-                detail = "; ".join(f"{x // 60:02d}:{x % 60:02d}-{y // 60:02d}:{y % 60:02d} {t}" for x, y, t in inside)
+            if len({(p[0], p[1]) for p in inside}) >= 2:
+                detail = "; ".join(
+                    f"{p[0] // 60:02d}:{p[0] % 60:02d}-{p[1] // 60:02d}:{p[1] % 60:02d} {p[2]}"
+                    for p in inside
+                )
                 out.append(
                     f"{c.date} {names.get(c.roomId, c.roomName)} {c.startTime}-{c.endTime} is published as one "
                     f"block but {doc} splits it: {detail}"
