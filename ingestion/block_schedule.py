@@ -814,13 +814,25 @@ def parse_block_schedule_docx(
                     name=heading_name,
                     label=_session_label(heading),
                 )
+            else:
+                # A one-room detail table whose heading names no room has no
+                # room identity of its own. In particular, white cell shading
+                # is not evidence for Main: room_resolver may match the table
+                # to a coloured room from its agenda timeline instead.
+                lane_room = room_for_key(
+                    f"{meeting_id}:detail:{source.sourceId}:t{table_index}"
+                )
 
         def room_for(cell: _Cell, day_start: int, day_end: int) -> Room:
             if lane_room is not None:
                 return lane_room
             width = max(1, day_end - day_start)
             lane = min(width - 1, max(0, cell.col_start - day_start))
-            fill = cell.fill if cell.fill in ordered_fills else preferred_fills.get(lane, cell.fill)
+            # The table-wide lane colour is stronger evidence than this cell's
+            # fill. Word sometimes paints a whole row white; that white is also
+            # Main's real colour, so trusting the cell would merge every lane
+            # into Main and drop the other rooms during canonicalization.
+            fill = preferred_fills.get(lane, cell.fill)
             main = mode == "online" and is_main_evidence(cell.text, heading)
             key = f"{meeting_id}:{mode}:{fill or f'lane{lane}'}"
             return room_for_key(key, name=fill_names.get(fill or "", ""), fill=fill, main=main)

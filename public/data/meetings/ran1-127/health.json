@@ -3,9 +3,9 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-19T21:58:02Z",
-    "lastAttemptAt": "2026-11-19T21:58:02Z",
-    "sessionCount": 266,
+    "lastSuccessAt": "2026-11-20T01:03:59Z",
+    "lastAttemptAt": "2026-11-20T01:03:59Z",
+    "sessionCount": 268,
     "roomCount": 5,
     "dates": [
       "2026-11-16",
@@ -17,8 +17,8 @@
     "sourceCount": 6,
     "sources": [
       {
-        "label": "Chair notes RAN1#127_v10",
-        "fileName": "Chair notes RAN1#127_v10.docx",
+        "label": "Chair notes RAN1#127_v11",
+        "fileName": "Chair notes RAN1#127_v11.docx",
         "origin": "public"
       },
       {
@@ -37,8 +37,8 @@
         "origin": "public"
       },
       {
-        "label": "RAN1#127 Sorour sessions online and offline schedules - v04",
-        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v04.docx",
+        "label": "RAN1#127 Sorour sessions online and offline schedules - v05",
+        "fileName": "RAN1#127 Sorour sessions online and offline schedules - v05.docx",
         "origin": "public"
       },
       {
@@ -55,9 +55,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "read",
-    "host": "calgarybmocentre.3gpp.org",
-    "credentials": true
+    "state": "skipped-no-credentials",
+    "host": null,
+    "credentials": false
   },
   "warnings": [
     {
@@ -73,11 +73,11 @@
       "text": "Only 260 of 261 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "Remote meeting server calgarybmocentre.3gpp.org is being read."
+      "level": "warn",
+      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
     }
   ],
-  "updatedAt": "2026-11-19T22:01:20Z",
+  "updatedAt": "2026-11-20T01:04:32Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-19T19:31:51Z",

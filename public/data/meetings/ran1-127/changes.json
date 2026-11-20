@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "changeId": "session_added-ran1-127_fri_champions-ballroom-a_1100_1230_sweep-2026-11-20T01:04:32+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-20T01:04:32+00:00",
+    "type": "session_added",
+    "title": "Sweep added",
+    "detail": "New session in the schedule",
+    "agendaItems": [],
+    "sessionId": "ran1-127_fri_champions-ballroom-a_1100_1230_sweep",
+    "to": "Champions Ballroom A 11:00-12:30",
+    "sourceIds": [
+      "ran1-127-8b668a26",
+      "ran1-127-b77b7f48",
+      "ran1-127-317b6c9f",
+      "ran1-127-007b0f98"
+    ]
+  },
+  {
+    "changeId": "session_removed-ran1-127_fri_champions-ballroom-a_1100_1230_10.5.2.3-2026-11-20T01:04:32+00:00",
+    "meetingId": "ran1-127",
+    "detectedAt": "2026-11-20T01:04:32+00:00",
+    "type": "session_removed",
+    "title": "PUxCH removed",
+    "detail": "Session no longer in schedule",
+    "agendaItems": [
+      "10.5.2.3"
+    ],
+    "sessionId": "ran1-127_fri_champions-ballroom-a_1100_1230_10.5.2.3",
+    "sourceIds": [
+      "ran1-127-007b0f98",
+      "ran1-127-8b668a26",
+      "ran1-127-b77b7f48",
+      "ran1-127-317b6c9f"
+    ],
+    "from": "Champions Ballroom A"
+  }
+]

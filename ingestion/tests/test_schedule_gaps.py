@@ -78,6 +78,98 @@ def test_continuation_rows_are_not_read_twice(tmp_path):
     ]
 
 
+def test_all_white_row_keeps_the_three_established_room_lanes(tmp_path):
+    """RAN1#127 Friday 11:00: Word paints all three cells white.
+
+    White is genuinely Main's colour elsewhere, but here it is missing formatting
+    in the other two lanes. The table-wide lane colours must keep all three rooms.
+    """
+    path = str(tmp_path / "white-row.docx")
+    doc = Document()
+    doc.add_paragraph("RAN1#127 Online Session Schedule")
+    table = doc.add_table(rows=3, cols=4)
+    table.cell(0, 1).merge(table.cell(0, 3))
+    table.cell(0, 1).text = "Friday"
+    table.cell(1, 0).text = "08:00 ~ 10:30 (150 min)"
+    table.cell(2, 0).text = "11:00 ~ 12:30 (90 min)"
+    morning = ["Main session\n10.5.1 (150)", "10.7.1 (150)", "10.8 (150)"]
+    after_coffee = [
+        "Sweep",
+        "6GR (90)\n.10.5.2.2 (30)\n.10.5.2.3 (60)",
+        "6GR (TBD)\n.10.8 Sensing (TBD)",
+    ]
+    for lane, fill in enumerate(["FFFFFF", "D9D9D9", "FFD966"], 1):
+        table.cell(1, lane).text = morning[lane - 1]
+        table.cell(2, lane).text = after_coffee[lane - 1]
+        _cell_props(table.cell(1, lane), fill, None)
+        _cell_props(table.cell(2, lane), "FFFFFF", None)
+    doc.save(path)
+
+    rooms, sessions = parse_block_schedule_docx(
+        path, meeting_id="m", start_date="2026-11-16", end_date="2026-11-20", source=SRC
+    )
+    by_colour = {room.sourceColor: room.roomId for room in rooms}
+    published = [
+        (s.roomId, s.startTime, s.endTime, s.agendaItems)
+        for s in sessions if s.startTime >= "11:00"
+    ]
+    assert len({room_id for room_id, *_ in published}) == 3
+    assert (by_colour["D9D9D9"], "11:00", "11:30", ["10.5.2.2"]) in published
+    assert (by_colour["D9D9D9"], "11:30", "12:30", ["10.5.2.3"]) in published
+    assert (by_colour["FFD966"], "11:00", "12:30", ["10.8"]) in published
+    assert (by_colour["FFFFFF"], "11:00", "12:30", []) in published
+
+
+def test_unnamed_white_detail_table_does_not_displace_main(tmp_path):
+    """Sorour's one-room table is white but belongs to Room 225-226, not Main."""
+    from ingestion.canonical_schedule import canonicalize
+    from ingestion.room_resolver import resolve_rooms
+
+    path = str(tmp_path / "unnamed-detail.docx")
+    doc = Document()
+    doc.add_paragraph("RAN1#127 Online Session Schedule")
+    grid = doc.add_table(rows=4, cols=3)
+    grid.cell(0, 1).merge(grid.cell(0, 2))
+    grid.cell(0, 1).text = "Friday"
+    rows = [
+        ("08:00 ~ 09:00 (60 min)", "RAN1#127 commences\nMain session\n10.5.1 (60)", "10.7.1 (60)", "10.7.1 NTN (60)"),
+        ("09:00 ~ 10:00 (60 min)", "Main session\n10.5.2 (60)", "10.5.2.2 (60)", "10.5.2.2 PDSCH (60)"),
+        ("11:00 ~ 12:30 (90 min)", "Sweep", "6GR (90)\n.10.5.2.3 (90)", "6GR (90)\nAI 10.5.2.3 PUxCH (90)"),
+    ]
+    for row_index, (time, main, grey, _) in enumerate(rows, 1):
+        grid.cell(row_index, 0).text = time
+        grid.cell(row_index, 1).text = main
+        grid.cell(row_index, 2).text = grey
+        _cell_props(grid.cell(row_index, 1), "FFFFFF", None)
+        _cell_props(grid.cell(row_index, 2), "D9D9D9", None)
+
+    doc.add_paragraph("RAN1#127 Detailed Schedule for Sorour’s RAN1 Session")
+    detail = doc.add_table(rows=4, cols=2)
+    detail.cell(0, 1).text = "Friday"
+    for row_index, (time, _, _, detail_text) in enumerate(rows, 1):
+        detail.cell(row_index, 0).text = time
+        detail.cell(row_index, 1).text = detail_text
+        _cell_props(detail.cell(row_index, 1), "FFFFFF", None)
+    doc.save(path)
+    source = ScheduleSource(
+        sourceId="main", meetingId="m", fileName="RAN1#127 online and offline schedules - v04.docx",
+        label="main", type="main_schedule", origin="public", retrievedAt="now",
+    )
+
+    rooms, sessions = parse_block_schedule_docx(
+        path, meeting_id="m", start_date="2026-11-16", end_date="2026-11-20", source=source
+    )
+    rooms, sessions = resolve_rooms("m", rooms, sessions)
+    result = canonicalize(sessions)
+    main_id = next(room.roomId for room in rooms if room.chairRole == "main")
+    grey_id = next(room.roomId for room in rooms if room.sourceColor == "D9D9D9")
+    after_coffee = [s for s in result.sessions if s.startTime == "11:00"]
+    assert {(s.roomId, s.topic, tuple(s.agendaItems)) for s in after_coffee} == {
+        (main_id, "Sweep", ()),
+        (grey_id, "10.5.2.3", ("10.5.2.3",)),
+    }
+
+
 def _s(start: str, end: str, room: str = "r", code: str = "10.4.1") -> Session:
     return Session(
         sessionId=f"{room}{start}", meetingId="m", date="2026-10-14", day="Wednesday",
