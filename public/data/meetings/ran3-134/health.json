@@ -35,18 +35,25 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
+    "state": "skipped-no-host",
+    "host": null,
     "credentials": true
   },
-  "warnings": [],
-  "updatedAt": "2026-11-20T13:42:04Z",
+  "warnings": [
+    {
+      "level": "info",
+      "text": "No remote meeting server address is known for this meeting, so the venue copy is not read. Enter it on the Drafts page."
+    }
+  ],
+  "updatedAt": "2026-11-20T13:47:24Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-20T11:08:34Z",
+    "lastSuccessAt": "2026-11-20T13:47:16Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 275,
+    "artifactCount": 291,
     "hiddenCount": 0,
-    "folderCount": 53,
-    "readFolderCount": 53,
-    "eventCount": 127
+    "folderCount": 54,
+    "readFolderCount": 54,
+    "eventCount": 144
   }
 }
