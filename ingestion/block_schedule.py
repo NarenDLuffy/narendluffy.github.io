@@ -280,6 +280,26 @@ def _code_list(line: str) -> list[tuple[str, int | None]]:
 
 
 
+def _shared_code_list(line: str) -> tuple[list[str], int] | None:
+    """Codes and their one shared duration: "9.3.1, [9.3.3], LS/TP (60)".
+
+    This is detail for the named timed item immediately above it, not another
+    60-minute head. Restrict the extra text to list punctuation and uppercase
+    acronyms so an ordinary prose heading cannot be swallowed by this rule.
+    """
+    match = DURATION_RE.search(line)
+    if not match:
+        return None
+    body = line[: match.start()].strip()
+    codes = AGENDA_CODE_RE.findall(body)
+    if not codes or "," not in body:
+        return None
+    remainder = re.sub(r"[\s\[\](),;/]", "", AGENDA_CODE_RE.sub("", body))
+    if remainder and not re.fullmatch(r"[A-Z0-9&+\-]+", remainder):
+        return None
+    return codes, int(match.group(1))
+
+
 def _item_codes(label: str) -> list[str]:
     """Every agenda item a timed item line names, in order ("7 …, 8.2 …" → 7, 8.2)."""
     found: list[tuple[int, str]] = [(m.start(1), m.group(1)) for m in LISTED_CODE_RE.finditer(label)]
@@ -410,6 +430,17 @@ def _parse_cell(text: str) -> list[_Segment]:
     for line_index, line in enumerate(lines):
         if line_index in hard_break:
             current, current_group, allocated = None, "", 0
+        shared = _shared_code_list(line)
+        if (
+            shared and current is not None and current.slots
+            and not AGENDA_CODE_RE.findall(current.slots[-1].label)
+            and current.slots[-1].minutes == shared[1]
+        ):
+            # "A-IoT Phase2 (60) / 9.3.1, [9.3.3], LS/TP (60)": all codes
+            # describe the same 60-minute item; their shared time is not added again.
+            current.raw += "\n" + line
+            current.slots[-1].codes = shared[0]
+            continue
         codes = _code_list(line)
         # "A-IoT Phase2 (60) / 9.3.3 (60)": the code list is the agenda item of
         # the named item just above it, filling exactly its minutes.

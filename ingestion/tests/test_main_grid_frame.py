@@ -58,6 +58,31 @@ def test_main_grid_controls_all_rooms_and_times_but_accepts_inner_detail():
     ]
 
 
+def test_fresh_complete_chair_tiling_replaces_a_broad_main_cell():
+    """hh7 Friday: 8.1 (30), then 10.8.1 (30) and 10.8.2 (20)."""
+    main = make(
+        "08:00", "09:20", source="main", items=["10.8"], authority=True,
+    )
+    main.sources[0].introducedAt = "2026-11-20T09:00:00Z"
+    detail = make(
+        "08:00", "09:20", source="hiroki", items=["8.1", "10.8"],
+        breakdown=[
+            ("8.1", "08:00", "08:30"),
+            ("10.8.1", "08:30", "09:00"),
+            ("10.8.2", "09:00", "09:20"),
+        ],
+    )
+    detail.sources[0].introducedAt = "2026-11-20T10:00:00Z"
+
+    result = canonicalize([main, detail])
+
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in result.sessions] == [
+        ("08:00", "08:30", ["8.1"]),
+        ("08:30", "09:00", ["10.8.1"]),
+        ("09:00", "09:20", ["10.8.2"]),
+    ]
+
+
 def test_other_files_leftover_container_never_displaces_a_main_grid_child():
     main = make(
         "11:00", "12:30", source="main", items=["10.5"], authority=True,

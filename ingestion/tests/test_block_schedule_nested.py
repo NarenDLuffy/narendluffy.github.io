@@ -1,4 +1,5 @@
-from ingestion.block_schedule import _parse_cell
+from ingestion.block_schedule import _parse_cell, _sessions_for_cell
+from ingestion.models import Room, ScheduleSource
 
 
 def _slots(text):
@@ -31,3 +32,25 @@ def test_code_lines_after_short_head_are_their_own_blocks():
     # Sorour RAN1#127 v04 Friday Room 225-226.
     groups = _parse_cell("[TBD\xa0: AI/ML,MIMO]? (20)\n9.5 NTN (30)\n10.7.1 NTN (30)\n9.4 NR-NTN (40)\n.10.5.2.2 (30)")
     assert [g.minutes for g in groups][:4] == [20, 30, 30, 40]
+
+
+def test_shared_code_list_does_not_collapse_hiroki_hh7_friday_cell():
+    # Exact hh7 Friday BMO 214-215 cell: 30 + 50 + 10 + 60 = 150 minutes.
+    text = "8.1 ISAC (30)\n\n6GR (50)\n.10.8 Sensing (50)\n10.8.1 (30)\n10.8.2 (20)\n\n10.5.4.x post-meeting email discussion (10)\n\nR20 (60)\nA-IoT Phase2 (60)\n9.3.1, 9.3.2, [9.3.3], LS/TP (60)"
+    room = Room(roomId="r", meetingId="ran1-127", roomName="BMO 214-215", order=0)
+    source = ScheduleSource(
+        sourceId="hh7", meetingId="ran1-127", fileName="hh7.docx", label="hh7",
+        type="offline_schedule", origin="public", retrievedAt="now",
+    )
+    sessions = _sessions_for_cell(
+        text, meeting_id="ran1-127", day="Friday", day_date="2026-11-20",
+        room=room, block_start=8 * 60, block_end=10 * 60 + 30, source=source,
+    )
+    assert [(s.startTime, s.endTime, s.agendaItems) for s in sessions] == [
+        ("08:00", "08:30", ["8.1"]),
+        ("08:30", "09:00", ["10.8.1"]),
+        ("09:00", "09:20", ["10.8.2"]),
+        ("09:20", "09:30", ["10.5.4.x"]),
+        ("09:30", "10:30", ["9.3.1", "9.3.2", "9.3.3"]),
+    ]
+    assert all("Minutes don't add up" not in (s.note or "") for s in sessions)

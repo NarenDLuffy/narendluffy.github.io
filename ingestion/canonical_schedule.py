@@ -335,8 +335,9 @@ def _resolve_room_day(blocks: list[CandidateBlock]) -> tuple[list[CandidateBlock
     session_blocks.sort(key=lambda b: (b.start, b.end, b.order))
 
     # Every atomic block that resolves an agenda item is potential detail for
-    # a broader block covering the same time in the same room.
-    detail = [b for b in session_blocks if b.atomic and b.specificity >= 2]
+    # a broader block covering the same time in the same room. A chair's own
+    # top-level item (for example 8.1) also participates in a complete retiling.
+    detail = [b for b in session_blocks if b.atomic and (b.specificity >= 2 or _own(b))]
 
     kept: list[CandidateBlock] = []
     for block in session_blocks:
@@ -497,20 +498,47 @@ def _covering(container: CandidateBlock, detailed: list[CandidateBlock]) -> list
     container's agenda items or - when the container carries the same code -
     the same item. A block about an unrelated agenda item never removes time
     from a container: that is a conflict, not a split.
+
+    Exception: a fresh chair-owned table may retile the whole main-grid cell,
+    including a neighbouring item before the children (8.1 then 10.8.1/10.8.2).
+    That is accepted only as a gapless, edge-to-edge tiling from one document;
+    a partial or stale contradictory table cannot displace the main grid.
     """
-    inside: list[CandidateBlock] = []
-    for block in detailed:
-        if block.start < container.start or block.end > container.end:
-            continue
-        if block is container:
-            continue
+    inside = [
+        block for block in detailed
+        if block is not container and block.start >= container.start and block.end <= container.end
+    ]
+    if _main_authority(container):
+        own = [block for block in inside if _own(block)]
+        source_ids = sorted({source for block in own for source in block.sourceIds})
+        for source_id in source_ids:
+            tiling = sorted(
+                (block for block in own if source_id in block.sourceIds),
+                key=lambda block: (block.start, block.end),
+            )
+            if len(tiling) < 2:
+                continue
+            cursor = container.start
+            for block in tiling:
+                if block.start != cursor:
+                    break
+                cursor = block.end
+            fresh = max(block.introducedAt for block in tiling)
+            if (
+                cursor == container.end and tiling[0].start == container.start
+                and (not container.introducedAt or fresh >= container.introducedAt)
+            ):
+                return tiling
+
+    related: list[CandidateBlock] = []
+    for block in inside:
         code = block.primary_code
         if not container.agendaItems:
-            inside.append(block)
+            related.append(block)
             continue
         if any(is_descendant(code, item) or code == item for item in container.agendaItems):
-            inside.append(block)
-    return inside
+            related.append(block)
+    return related
 
 
 def _remaining_of(container: CandidateBlock, detailed: list[CandidateBlock]) -> list[CandidateBlock]:
