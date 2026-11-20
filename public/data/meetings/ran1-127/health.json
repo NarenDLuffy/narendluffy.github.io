@@ -3,8 +3,8 @@
   "meetingId": "ran1-127",
   "schedule": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-20T13:38:21Z",
-    "lastAttemptAt": "2026-11-20T13:38:21Z",
+    "lastSuccessAt": "2026-11-20T13:41:07Z",
+    "lastAttemptAt": "2026-11-20T13:41:07Z",
     "sessionCount": 271,
     "roomCount": 5,
     "dates": [
@@ -55,9 +55,9 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "skipped-no-credentials",
-    "host": null,
-    "credentials": false
+    "state": "read",
+    "host": "calgarybmocentre.3gpp.org",
+    "credentials": true
   },
   "warnings": [
     {
@@ -77,11 +77,11 @@
       "text": "Only 271 of 272 draft folders were opened this scan."
     },
     {
-      "level": "warn",
-      "text": "Remote meeting FTP login is not saved in GitHub (MEETING_FTP_USER / MEETING_FTP_PASS), so the venue copy is never read."
+      "level": "info",
+      "text": "Remote meeting server calgarybmocentre.3gpp.org is being read."
     }
   ],
-  "updatedAt": "2026-11-20T13:38:58Z",
+  "updatedAt": "2026-11-20T13:42:04Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-20T11:05:30Z",
