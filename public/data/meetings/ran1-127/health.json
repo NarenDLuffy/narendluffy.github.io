@@ -61,6 +61,10 @@
   },
   "warnings": [
     {
+      "level": "warn",
+      "text": "Timetable last rebuilt 7 h ago \u2014 the refresh is not keeping up."
+    },
+    {
       "level": "info",
       "text": "4 unresolved source conflict(s)."
     },
@@ -70,22 +74,22 @@
     },
     {
       "level": "info",
-      "text": "Only 268 of 269 draft folders were opened this scan."
+      "text": "Only 271 of 272 draft folders were opened this scan."
     },
     {
       "level": "info",
       "text": "Remote meeting server calgarybmocentre.3gpp.org is being read."
     }
   ],
-  "updatedAt": "2026-11-20T03:44:29Z",
+  "updatedAt": "2026-11-20T11:08:20Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-20T03:43:48Z",
+    "lastSuccessAt": "2026-11-20T11:05:30Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 3028,
+    "artifactCount": 3073,
     "hiddenCount": 68,
-    "folderCount": 269,
-    "readFolderCount": 268,
+    "folderCount": 272,
+    "readFolderCount": 271,
     "eventCount": 500
   }
 }
