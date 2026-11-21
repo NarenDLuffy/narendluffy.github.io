@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "meetingId": "ran1-127",
   "schedule": {
-    "state": "ok",
+    "state": "validation-failed",
     "lastSuccessAt": "2026-11-20T21:31:36Z",
-    "lastAttemptAt": "2026-11-20T21:31:36Z",
+    "lastAttemptAt": "2026-11-21T01:34:44Z",
     "sessionCount": 271,
     "roomCount": 5,
     "dates": [
@@ -57,7 +57,10 @@
     "coarser": [],
     "shortBlockCount": 1,
     "conflictCount": 4,
-    "lowConfidenceCount": 0
+    "lowConfidenceCount": 0,
+    "errors": [
+      "published schedule used RAN1_127_Daily_Schedule_Online+Offline_v02.pdf, which this rebuild no longer finds; keeping it"
+    ]
   },
   "remoteFtp": {
     "state": "unreachable",
@@ -86,7 +89,7 @@
       "text": "Remote meeting server calgarybmocentre.3gpp.org was entered but did not answer."
     }
   ],
-  "updatedAt": "2026-11-21T00:48:41Z",
+  "updatedAt": "2026-11-21T01:34:44Z",
   "drafts": {
     "state": "ok",
     "lastSuccessAt": "2026-11-21T00:47:52Z",
