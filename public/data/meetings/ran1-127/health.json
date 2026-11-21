@@ -60,7 +60,7 @@
     "lowConfidenceCount": 0
   },
   "remoteFtp": {
-    "state": "read",
+    "state": "unreachable",
     "host": "calgarybmocentre.3gpp.org",
     "credentials": true
   },
@@ -75,26 +75,26 @@
     },
     {
       "level": "info",
-      "text": "69 file(s) the meeting server no longer holds are hidden."
+      "text": "2466 file(s) the meeting server no longer holds are hidden."
     },
     {
       "level": "info",
-      "text": "Only 272 of 273 draft folders were opened this scan."
+      "text": "Only 179 of 273 draft folders were opened this scan."
     },
     {
-      "level": "info",
-      "text": "Remote meeting server calgarybmocentre.3gpp.org is being read."
+      "level": "warn",
+      "text": "Remote meeting server calgarybmocentre.3gpp.org was entered but did not answer."
     }
   ],
-  "updatedAt": "2026-11-20T21:33:00Z",
+  "updatedAt": "2026-11-21T00:48:41Z",
   "drafts": {
     "state": "ok",
-    "lastSuccessAt": "2026-11-20T19:04:37Z",
+    "lastSuccessAt": "2026-11-21T00:47:52Z",
     "source": "3GPP sync mirror",
-    "artifactCount": 3137,
-    "hiddenCount": 69,
+    "artifactCount": 740,
+    "hiddenCount": 2466,
     "folderCount": 273,
-    "readFolderCount": 272,
+    "readFolderCount": 179,
     "eventCount": 500
   }
 }
