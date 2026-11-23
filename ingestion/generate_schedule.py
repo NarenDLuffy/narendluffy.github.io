@@ -159,6 +159,10 @@ def build_for(pm) -> ScheduleBundle:
         from .ran4_schedule import build_bundle as build_ran4
 
         return build_ran4(pm)
+    if GROUPS[pm.group].schedule_style == "sa1_grid":
+        from .sa1_schedule import build_bundle as build_sa1
+
+        return build_sa1(pm)
     if GROUPS[pm.group].schedule_style == "session_plan":
         from .sa2_schedule import build_bundle as build_sa2
 

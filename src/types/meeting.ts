@@ -14,7 +14,7 @@ export type MeetingType = "regular" | "bis" | "adhoc" | "other";
 export type MeetingStatus = "upcoming" | "active" | "completed";
 
 /** "RAN" is the TSG RAN plenary. */
-export type WorkingGroup = "RAN" | "RAN1" | "RAN2" | "RAN3" | "RAN4" | "SA2";
+export type WorkingGroup = "RAN" | "RAN1" | "RAN2" | "RAN3" | "RAN4" | "SA1" | "SA2";
 
 export interface MeetingSourceFolders {
   /** Public 3GPP meeting folder, e.g. .../tsg_ran/WG1_RL1/TSGR1_126/ */

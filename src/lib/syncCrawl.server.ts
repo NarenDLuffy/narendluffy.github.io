@@ -19,6 +19,7 @@ export const SYNC_ROOT_PREFIXES = [SYNC_ROOT_PREFIX, "https://www.3gpp.org/ftp/M
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN3/",
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN/",
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN4/",
+  "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/SA1/",
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/SA2/",
 ];
 

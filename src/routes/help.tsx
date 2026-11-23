@@ -4,17 +4,17 @@ import type { ReactNode } from "react";
 export const Route = createFileRoute("/help")({
   head: () => ({
     meta: [
-      { title: "How to use 3GPP Companion — RAN1–RAN4, SA2 and RAN Plenary guide" },
+      { title: "How to use 3GPP Companion — RAN1–RAN4, SA1, SA2 and RAN Plenary guide" },
       {
         name: "description",
         content:
-          "A short RAN1–RAN4, SA2 and RAN Plenary guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
+          "A short RAN1–RAN4, SA1, SA2 and RAN Plenary guide: schedules, drafts, my agenda, rooms and colleague presence — no account needed.",
       },
-      { property: "og:title", content: "How to use 3GPP Companion for RAN Plenary, RAN1–RAN4 and SA2" },
+      { property: "og:title", content: "How to use 3GPP Companion for RAN Plenary, RAN1–RAN4, SA1 and SA2" },
       {
         property: "og:description",
         content:
-          "How to follow a RAN Plenary, RAN1–RAN4 or SA2 meeting week with schedules, drafts, rooms and colleague alerts.",
+          "How to follow a RAN Plenary, RAN1–RAN4, SA1 or SA2 meeting week with schedules, drafts, rooms and colleague alerts.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary" },
@@ -59,10 +59,10 @@ function HelpPage() {
             project for ideas used here.
           </p>
         </Section>
-        <Section title="Choose RAN Plenary, RAN1, RAN2, RAN3, RAN4 or SA2">
+        <Section title="Choose RAN Plenary, RAN1, RAN2, RAN3, RAN4, SA1 or SA2">
           <p>
             Use the <strong>working group dropdown</strong> (e.g. "RAN1 ▾") at the top of any page.
-            SA1 is listed as coming soon. The whole app
+            The whole app
             follows your choice, and your device remembers it.
           </p>
           <ul className="list-disc space-y-1 pl-4">
@@ -98,10 +98,14 @@ function HelpPage() {
               quarter (Q1–Q5) is one block listing everything both day columns name — it is never
               split at a guessed half-time. Agenda numbers come only from what is written, e.g.{" "}
               <code>(20.6.18)</code> or <code>(20.6.12 – 16)</code>; "[9]" is a tdoc count. SA2
-              Drafts folders are named by work item, so they may not link to an agenda item.
+              Drafts folders are named by work item, so they may not link to an agenda item.{" "}
+              <strong>SA1</strong> reads the chair's Q0–Q5 week grid in <code>SA1/Inbox/agenda</code>{" "}
+              (the "Breakout sessions schedule" or the weekday table in "Agenda for SA1#&lt;n&gt;",
+              whichever was saved last): Plenary / Breakout 1 and Breakout 2 lanes, a line such as
+              "(19:15-20:30)" gets its own block, and agenda numbers come from lines like "7.4.3 AI".
             </li>
             <li>
-              Drafts come from each group's own inbox. RAN2, RAN3, RAN4 and SA2 use <code>Inbox/Drafts</code>{" "}
+              Drafts come from each group's own inbox. RAN2, RAN3, RAN4, SA1 and SA2 use <code>Inbox/Drafts</code>{" "}
               with a capital D.
             </li>
             <li>
@@ -329,7 +333,7 @@ function HelpPage() {
 
         <Section title="Meetings">
           <p>
-            Switch meetings within the working group selected at the top. RAN Plenary, RAN1–RAN4 and SA2 meetings are
+            Switch meetings within the working group selected at the top. RAN Plenary, RAN1–RAN4, SA1 and SA2 meetings are
             discovered from the official 3GPP portal, so past meetings stay browsable and the next
             one appears automatically — the current meeting is selected for you.
           </p>

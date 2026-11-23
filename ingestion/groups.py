@@ -37,6 +37,8 @@ GROUPS: dict[str, WorkingGroup] = {
     "RAN4": WorkingGroup("RAN4", 382, "ran4", "RAN4", "pptx_slides"),
     "RAN": WorkingGroup("RAN", 373, "ran", "RAN", "time_plan"),
     #: SA2: "S2-…_SA2-<n>-Session Plan - rNN.docx" in Inbox/Drafts/_Session_Plan_Updates (sa2_schedule.py).
+    #: SA1: chair Q0–Q5 grid in Inbox/agenda (sa1_schedule.py).
+    "SA1": WorkingGroup("SA1", 384, "sa1", "SA1", "sa1_grid"),
     "SA2": WorkingGroup("SA2", 385, "sa2", "SA2", "session_plan"),
 }
 

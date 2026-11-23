@@ -16,6 +16,7 @@ const RAN2_AGENDA = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN2/Agenda/";
 const RANP_CHAIR = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN/Inbox/Chair/";
 // RAN4: "RAN4_<n>_meeting_schedule_vNN.pptx" + topic list in Meeting_Arrangements.
 const SA2_PLANS = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/SA2/Inbox/Drafts/_Session_Plan_Updates/";
+const SA1_AGENDA = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/SA1/Inbox/agenda/";
 const RAN4_ARR = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN4/Inbox/Meeting_Arrangements/";
 const RAN3_SOURCES = [
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN3/Inbox/Chairs_Notes/",
@@ -94,7 +95,10 @@ export const Route = createFileRoute("/api/public/jobs/schedule-watch")({
           const ranp = m.workingGroup === "RAN" || m.slug.startsWith("ran-");
           const ran4 = m.workingGroup === "RAN4" || m.slug.startsWith("ran4-");
           const sa2 = m.workingGroup === "SA2" || m.slug.startsWith("sa2-");
-          const { newest, name } = sa2
+          const sa1 = m.workingGroup === "SA1" || m.slug.startsWith("sa1-");
+          const { newest, name } = sa1
+            ? await newestIn([SA1_AGENDA], (n) => /(breakout.*schedule|agenda for).*\.docx$/i.test(n))
+            : sa2
             ? await newestIn([SA2_PLANS], (n) => /session\s*plan.*\.(docx|zip)$/i.test(n))
             : ran4
             ? await newestIn([RAN4_ARR], (n) => /meeting_schedule.*\.pptx$|list_topics.*\.xlsx$/i.test(n))
