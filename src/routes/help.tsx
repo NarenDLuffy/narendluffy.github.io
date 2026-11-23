@@ -71,14 +71,17 @@ function HelpPage() {
           <ul className="list-disc space-y-1 pl-4">
             <li>Both turn chair schedule files into a readable timetable for several 3GPP groups.</li>
             <li>Both read where each group posts its schedule (RAN4 slides, SA1 agenda, SA2 Session Plan).</li>
-            <li>Both show draft discussions per agenda item with versions and summaries.</li>
+            <li>Both connect draft documents to the meeting's agenda items.</li>
           </ul>
           <p><strong>Different</strong></p>
           <ul className="list-disc space-y-1 pl-4">
             <li>This app adds room check-in, "colleague needed" alerts, phone notifications and My agenda.</li>
             <li>This app merges several chair files per meeting and keeps track of which file said what.</li>
             <li>This app never guesses times: unclear blocks stay whole instead of being split.</li>
-            <li>The Drafts activity view here is its own simpler design, not a copy.</li>
+            <li>
+              This app's per-agenda Activity timeline of draft versions and moderator summaries
+              comes from a separate project reference, not 3GPPSchedule.
+            </li>
           </ul>
           <p><strong>Ideas taken from it</strong></p>
           <ul className="list-disc space-y-1 pl-4">
@@ -86,7 +89,6 @@ function HelpPage() {
             <li>Pick the newest schedule by its own revision, and never replace it with an older one.</li>
             <li>Where each working group's schedule file lives.</li>
             <li>Spot breaks from cell colours and keep unplaced text as notes.</li>
-            <li>A per-agenda timeline of draft versions and moderator summaries.</li>
           </ul>
         </Section>
         <Section title="Choose RAN Plenary, RAN1, RAN2, RAN3, RAN4, SA1 or SA2">
