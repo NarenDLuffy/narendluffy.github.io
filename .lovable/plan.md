@@ -39,6 +39,14 @@ For each group: add it to the group switch, schedule reader, agenda, rooms, Draf
 - The moderator's numbered summaries appear as clear "Summary #N" milestones across the top, so you can see what is new since the last summary.
 - Built entirely from the saved scan, so it adds no load on 3GPP.
 
+## Part D — Ideas borrowed from his project, with credit
+- **Newest file by its inner revision number:** PowerPoint and Word store a revision count inside the file, and it is used before the file name or date.
+- **No backwards steps:** if the newest file vanishes from the server, keep the newer version already built.
+- **Breaks by cell colour:** not by words like "Lunch".
+- **Leftover text kept as a note:** text that doesn't fit the grid is shown as a note, never dropped.
+- **FTP fallback:** if the 3GPP website refuses a request, try the FTP route once.
+- **Credit on the main page:** a small "Thanks to" line on the home page. It names Karl (karlla1220) and links to his 3GPPSchedule project for these ideas and the RAN4/SA1/SA2 folder layouts. The same credit goes in the Help page.
+
 ## Order
 A (load) → B: RAN4 → SA2 → SA1 → C (activity view). Each step is tested against a real past meeting's files before going live.
 
