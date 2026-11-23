@@ -32,19 +32,19 @@ For each group: add it to the group switch, schedule reader, agenda, rooms, Draf
 - **Drafts for these groups:** use each group's Inbox/Drafts tree through the shared scan from Part A. Folders are linked to agenda items by their leading number, and unmatched ones are shown under "Other".
 - **Later:** RAN Plenary, SA3–6 and CT, once we've looked at where each publishes its schedule.
 
-## Part C — Drafts discussion graph (like the picture)
-- On each agenda item's Drafts page, add a "Discussion graph" view next to the current list.
-- One coloured line per thread, grouped from file names (FL summary Part N, template, draft LS, company uploads).
-- Each dot is an upload with its version and company, newest on top. The moderator's numbered summaries show as bars.
-- Filters: All drafts, FL summary only, Company uploads.
+## Part C — Drafts activity view (our own, simple design)
+- On each agenda item's Drafts page, add an "Activity" view next to the current list.
+- One card per discussion thread (for example "FL summary – Part 2", "Draft LS on DMRS power boosting", "Company uploads"). Each card shows the latest version, who uploaded it and when, and a "new since you last looked" dot.
+- Under each card, a small horizontal timeline of its versions (v0 → v1 → v2). Tap one to open the file.
+- The moderator's numbered summaries appear as clear "Summary #N" milestones across the top, so you can see what is new since the last summary.
 - Built entirely from the saved scan, so it adds no load on 3GPP.
 
 ## Order
-A (load) → B: RAN4 → SA2 → SA1 → C (graph). Each step is tested against a real past meeting's files before going live.
+A (load) → B: RAN4 → SA2 → SA1 → C (activity view). Each step is tested against a real past meeting's files before going live.
 
 ## Technical details
 - Table `drafts_live_scan` (group, meeting, result JSON, validators per folder, scanned_at, lock_until). Public read access, written only by the server. `/api/public/jobs/drafts-scan` runs on a managed 2-minute schedule and checks the meeting phase.
 - Conditional requests use ETag/Last-Modified stored per URL. Ingestion gets a shared `ingestion/http_cache.py` (on-disk bytes + validators + SHA check), saved by actions/cache between runs.
 - New `ingestion/groups.py` entries. New files `ran4_schedule.py` (PPTX via zipfile + lxml), `sa1_schedule.py`, `sa2_schedule.py`, and a shared `agenda_csv.py`. Tests use real cells from past meetings.
-- Graph: a thread classifier in `src/lib/draftThreads.ts`, which parses names like "FL summary #1 (Part3) … v2 vivo" and "R1-26xxxxx". The graph is drawn with SVG and needs no new library.
+- Activity view: a thread classifier in `src/lib/draftThreads.ts`, which parses names like "FL summary #1 (Part3) … v2 vivo" and "R1-26xxxxx". Uses the existing UI parts, with no new library.
 - Presence and alerts move to realtime doorbell events, replacing the setInterval polling.
