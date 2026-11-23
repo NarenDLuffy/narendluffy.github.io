@@ -37,6 +37,6 @@
 - [x] Credit to Karl (karlla1220) on home page and Help
 - [ ] Presence/alerts pushed live instead of polled
 - [ ] "Only if changed" requests + shared download cache for ingestion; jobs slow outside meeting window
-- [ ] RAN Plenary schedule reader (time plan DOCX, text-colour rooms, shared blocks)
+- [x] RAN Plenary schedule reader (Main + Breakout lanes, breaks, meetings during breaks; RAN#113 built)
 - [ ] RAN4 (PPTX), SA2 (Session Plan), SA1 (chair agenda) readers
 - [ ] Drafts Activity view (threads, versions, Summary #N milestones)
