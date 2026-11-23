@@ -1050,7 +1050,9 @@ def _apply_chair_note_titles(
         if not text:
             continue
         explicit = AGENDA_HEADING_RE.match(text)
-        if explicit and len(text) < 120:
+        # Body lines often start with a number ("2 symbols for PSS…"); a
+        # top-level code is only a title when the paragraph is a heading.
+        if explicit and len(text) < 120 and ("." in explicit.group(1) or style.startswith("heading")):
             code, title = explicit.group(1), explicit.group(2).strip(" \t-–:")
             if not re.match(r"^[\d:.\s-]+$", title):
                 titles.setdefault(code, title)
