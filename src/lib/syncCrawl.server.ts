@@ -17,6 +17,7 @@ export const SYNC_ROOT_PREFIX = "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN
 /** Sync trees of every followed working group. */
 export const SYNC_ROOT_PREFIXES = [SYNC_ROOT_PREFIX, "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN2/",
   "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN3/",
+  "https://www.3gpp.org/ftp/Meetings_3GPP_SYNC/RAN/",
 ];
 
 const REQUEST_TIMEOUT_MS = 8_000;

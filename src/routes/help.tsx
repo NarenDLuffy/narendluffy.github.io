@@ -59,10 +59,10 @@ function HelpPage() {
             project for ideas used here.
           </p>
         </Section>
-        <Section title="Choose RAN1, RAN2 or RAN3">
+        <Section title="Choose RAN Plenary, RAN1, RAN2 or RAN3">
           <p>
             Use the <strong>working group dropdown</strong> (e.g. "RAN1 ▾") at the top of any page.
-            RAN Plenary, RAN4, SA1 and SA2 are listed as coming soon. The whole app
+            RAN4, SA1 and SA2 are listed as coming soon. The whole app
             follows your choice, and your device remembers it.
           </p>
           <ul className="list-disc space-y-1 pl-4">
@@ -75,6 +75,9 @@ function HelpPage() {
               colleague alerts; switching groups does not combine them.
             </li>
             <li>
+              <strong>RAN Plenary</strong> reads the chair's "RAN#&lt;n&gt; time plan" in{" "}
+              <code>RAN/Inbox/Chair</code>: Main and Breakout lanes, breaks, and meetings held
+              during breaks; agenda numbers only where the plan writes "AI x".{" "}
               <strong>RAN1</strong> uses its main online/offline schedule plus chair detail files.{" "}
               <strong>RAN2</strong> uses the single schedule document in its Agenda folder.{" "}
               <strong>RAN3</strong> takes the main session from the weekday table at the end of

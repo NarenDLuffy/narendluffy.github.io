@@ -18,7 +18,8 @@ class WorkingGroup:
     #: Folder name under /ftp/Meetings_3GPP_SYNC/ and on the venue server.
     sync_name: str
     #: "single_grid": one schedule DOCX per meeting (RAN2); "chair_files": RAN1;
-    #: "chair_notes_plus_sheet": chair-notes weekday table + offline XLSX (RAN3).
+    #: "chair_notes_plus_sheet": chair-notes weekday table + offline XLSX (RAN3);
+    #: "time_plan": RAN Plenary chair time plan DOCX.
     schedule_style: str
 
     @property
@@ -30,6 +31,8 @@ GROUPS: dict[str, WorkingGroup] = {
     "RAN1": WorkingGroup("RAN1", 379, "ran1", "RAN1", "chair_files"),
     "RAN2": WorkingGroup("RAN2", 380, "ran2", "RAN2", "single_grid"),
     "RAN3": WorkingGroup("RAN3", 381, "ran3", "RAN3", "chair_notes_plus_sheet"),
+    #: TSG RAN plenary: "RAN#<n> time plan vNN" in Inbox/Chair (ranp_schedule.py).
+    "RAN": WorkingGroup("RAN", 373, "ran", "RAN", "time_plan"),
 }
 
 

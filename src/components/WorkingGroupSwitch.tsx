@@ -1,10 +1,10 @@
 import { setSelectedMeetingId } from "@/services/meetingSelection";
-import { WORKING_GROUPS, setWorkingGroup, useWorkingGroup } from "@/lib/workingGroup";
+import { WORKING_GROUPS, groupLabel, setWorkingGroup, useWorkingGroup } from "@/lib/workingGroup";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import type { WorkingGroup } from "@/types/meeting";
 
 /** Groups on the roadmap; listed so delegates see what is coming, not selectable yet. */
-const COMING_SOON = ["RAN Plenary", "RAN4", "SA1", "SA2"];
+const COMING_SOON = ["RAN4", "SA1", "SA2"];
 
 /** Working-group dropdown: the whole app follows the chosen group. */
 export function WorkingGroupSwitch() {
@@ -18,13 +18,13 @@ export function WorkingGroupSwitch() {
         setWorkingGroup(g as WorkingGroup);
       }}
     >
-      <SelectTrigger aria-label="Working group" className="mono-code h-8 w-[92px] shrink-0 text-xs font-semibold">
-        <SelectValue />
+      <SelectTrigger aria-label="Working group" className="mono-code h-8 w-[124px] shrink-0 text-xs font-semibold">
+        <SelectValue>{groupLabel(group)}</SelectValue>
       </SelectTrigger>
       <SelectContent>
         {WORKING_GROUPS.map((g) => (
           <SelectItem key={g} value={g} className="mono-code text-xs">
-            {g}
+            {groupLabel(g)}
           </SelectItem>
         ))}
         <SelectGroup>

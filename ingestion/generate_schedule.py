@@ -153,6 +153,10 @@ def build_for(pm) -> ScheduleBundle:
         from .ran3_schedule import build_bundle as build_ran3
 
         return build_ran3(pm)
+    if GROUPS[pm.group].schedule_style == "time_plan":
+        from .ranp_schedule import build_bundle as build_ranp
+
+        return build_ranp(pm)
     from .live import build_bundle
 
     return build_bundle(pm)

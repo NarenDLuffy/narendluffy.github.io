@@ -5,7 +5,12 @@ import type { Meeting, WorkingGroup } from "@/types/meeting";
  * The working group the user follows (RAN1, RAN2 or RAN3). Every page reads the
  * meetings of the chosen group only; the choice is remembered per device.
  */
-export const WORKING_GROUPS: WorkingGroup[] = ["RAN1", "RAN2", "RAN3"];
+export const WORKING_GROUPS: WorkingGroup[] = ["RAN", "RAN1", "RAN2", "RAN3"];
+
+/** Display name: the plenary reads better spelled out. */
+export function groupLabel(group: WorkingGroup): string {
+  return group === "RAN" ? "RAN Plenary" : group;
+}
 
 const KEY = "ran1live.workingGroup";
 const listeners = new Set<() => void>();
@@ -15,6 +20,7 @@ export function groupOfMeeting(meeting: Pick<Meeting, "slug" | "workingGroup"> |
   const slug = meeting?.slug?.toLowerCase() ?? "";
   if (slug.startsWith("ran2-")) return "RAN2";
   if (slug.startsWith("ran3-")) return "RAN3";
+  if (slug.startsWith("ran-")) return "RAN";
   return "RAN1";
 }
 
@@ -22,7 +28,7 @@ export function getWorkingGroup(): WorkingGroup {
   if (typeof window === "undefined") return "RAN1";
   try {
     const v = window.localStorage.getItem(KEY);
-    return v === "RAN2" || v === "RAN3" ? v : "RAN1";
+    return v === "RAN" || v === "RAN2" || v === "RAN3" ? v : "RAN1";
   } catch {
     return "RAN1";
   }
