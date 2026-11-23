@@ -1,4 +1,4 @@
-# Lighter on 3GPP, ready for many users, plus RAN4, SA1, SA2 and a drafts discussion graph
+# Lighter on 3GPP, ready for many users, plus RAN Plenary, RAN4, SA1, SA2 and a drafts discussion graph
 
 ## What his project shows (karlla1220/3GPPSchedule)
 - He supports RAN1–4, SA1, SA2 and RAN Plenary. He has no SA3–6 and no CT.
@@ -30,7 +30,7 @@ For each group: add it to the group switch, schedule reader, agenda, rooms, Draf
 - **SA1:** Word agenda reader. Find the table whose first row has 3 or more weekdays. Rows without a written time take the gap between their neighbours. Rooms come from "MEETING ROOMS" and in-cell labels. Newest file by day and time in its name; a "schedule" Word file wins when present. Unpack zipped agendas.
 - **SA2:** Session Plan reader for the Q0–Q5 × room grid, half-day columns, merged cells and accepted tracked changes. Newest file is the highest "rN", zipped files are unpacked. Agenda from agenda.csv.
 - **Drafts for these groups:** use each group's Inbox/Drafts tree through the shared scan from Part A. Folders are linked to agenda items by their leading number, and unmatched ones are shown under "Other".
-- **Later:** RAN Plenary, SA3–6 and CT, once we've looked at where each publishes its schedule.
+- **Later:** SA3–6 and CT, once we've looked at where each publishes its schedule.
 
 ## Part C — Drafts activity view (our own, simple design)
 - On each agenda item's Drafts page, add an "Activity" view next to the current list.
@@ -39,16 +39,33 @@ For each group: add it to the group switch, schedule reader, agenda, rooms, Draf
 - The moderator's numbered summaries appear as clear "Summary #N" milestones across the top, so you can see what is new since the last summary.
 - Built entirely from the saved scan, so it adds no load on 3GPP.
 
+## Part E — RAN Plenary, and a group dropdown
+- **Group dropdown:** the RAN1 / RAN2 / RAN3 buttons in the header become one dropdown ("RAN1 ▾"). It lists RAN Plenary, RAN1–4, SA1 and SA2, and remembers your choice.
+- **Where RAN Plenary's schedule lives:**
+  - Meetings_3GPP_SYNC/RAN/Inbox/Chair, as "RAN#<n> time plan v<NN>.docx", sometimes zipped. The highest meeting, then the highest version, wins.
+  - The agenda comes from tsg_ran/TSG_RAN/TSGR_<n>/Agenda/agenda.csv, or the Sync copy from day one of the meeting.
+- **How it fits our schedule:**
+  - **Rooms come from the coloured room guide:** the text colour of each room's name matches the text colour of its sessions.
+  - **Black (uncoloured) topics are shared:** they belong to the whole meeting, not a room. They show as one full-width "All rooms" block, not as a booking of every room.
+  - **"Main:" or "in RAN main room" goes to Main**, even in black text.
+  - **Sessions that move rooms are shown in each room they use,** for example Tuesday 12:30 moving from Madrid 1–2 to Neptuno and PTA Alcala. "TBD" stays as written.
+  - **Breaks show by name on the timeline.** Meetings during breaks stay visible.
+  - **Agenda codes only from numbers written in the time plan.** Topics with no number stay without a code, never guessed.
+  - **The text just before each topic table is shown as a notice above that day,** in its original wording, with highlights and strikethrough kept.
+  - **No downgrades:** if the Chair folder disappears or only has older versions, keep the last good schedule.
+- **His use of an AI model:** he lets Gemini read the whole document, then double-checks the result and asks once for a fix if the check fails. We stay with our rule of never inventing times. The reader is built on clear rules. If a cell can't be read, an AI suggestion can be shown to admins only, never published automatically (same idea as the advisory helper we discussed).
+- **Drafts for RAN Plenary:** RAN/Inbox drafts folders through the shared scan, linked by agenda number.
+
 ## Part D — Ideas borrowed from his project, with credit
 - **Newest file by its inner revision number:** PowerPoint and Word store a revision count inside the file, and it is used before the file name or date.
 - **No backwards steps:** if the newest file vanishes from the server, keep the newer version already built.
 - **Breaks by cell colour:** not by words like "Lunch".
 - **Leftover text kept as a note:** text that doesn't fit the grid is shown as a note, never dropped.
 - **FTP fallback:** if the 3GPP website refuses a request, try the FTP route once.
-- **Credit on the main page:** a small "Thanks to" line on the home page. It names Karl (karlla1220) and links to his 3GPPSchedule project for these ideas and the RAN4/SA1/SA2 folder layouts. The same credit goes in the Help page.
+- **Credit on the main page:** a small "Thanks to" line on the home page. It names Karl (karlla1220) and links to his 3GPPSchedule project for these ideas and the RAN Plenary/RAN4/SA1/SA2 folder layouts. The same credit goes in the Help page.
 
 ## Order
-A (load) → B: RAN4 → SA2 → SA1 → C (activity view). Each step is tested against a real past meeting's files before going live.
+A (load) → dropdown → RAN Plenary → RAN4 → SA2 → SA1 → C (activity view). Each step is tested against a real past meeting's files before going live.
 
 ## Technical details
 - Table `drafts_live_scan` (group, meeting, result JSON, validators per folder, scanned_at, lock_until). Public read access, written only by the server. `/api/public/jobs/drafts-scan` runs on a managed 2-minute schedule and checks the meeting phase.
