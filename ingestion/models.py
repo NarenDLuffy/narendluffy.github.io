@@ -247,6 +247,8 @@ class ScheduleBundle:
     ingest: IngestStatus | None = None
     #: RAN3 only: comebacks from the chair notes (ran3_comebacks.Comeback.to_json()).
     comebacks: list[dict[str, Any]] | None = None
+    #: RAN4 only: moderator topic number -> agenda codes ("201" -> ["7.4.2", …]).
+    topics: dict[str, list[str]] | None = None
     schemaVersion: int = SCHEMA_VERSION
 
     def to_json(self) -> dict[str, Any]:

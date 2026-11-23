@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran4-118",
+  "schedule": {
+    "state": "validation-failed",
+    "lastAttemptAt": "2026-11-23T13:39:00Z",
+    "gaps": [],
+    "errors": [
+      "2026-02-11 Main 08:30: no time for '6G RRM on SSB and periodicity'",
+      "2026-02-11 Main 17:00: no time for '[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)'",
+      "2026-02-11 Ad hoc 17:00: no time for 'band combination database, Chaired by Johannes(Nokia)'",
+      "2026-02-11 Main: 18:00\u201318:00 ends before it starts ('Main Ad-hoc:')",
+      "2026-02-12 Main 17:00: no time for '[107] 6G AI, Chaired by Jackson (Samsung)'"
+    ]
+  },
+  "remoteFtp": {
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "No timetable has been published for this meeting yet."
+    },
+    {
+      "level": "info",
+      "text": "No draft index has been published for this meeting yet."
+    }
+  ],
+  "updatedAt": "2026-11-23T13:39:00Z"
+}

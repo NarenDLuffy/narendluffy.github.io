@@ -62,6 +62,9 @@ def _title_of(name: str) -> str:
     return normalize_name(stripped)
 
 
+RAN4_TOPIC_RE = re.compile(r"^\s*\[\d+(?:bis)?\]\s*\[(\d{3}(?:-[A-Z])?)\]", re.I)
+
+
 class AgendaMapper:
     """Resolves folder names against the meeting's canonical agenda items."""
 
@@ -79,6 +82,13 @@ class AgendaMapper:
     def map_folder(self, name: str, parent: AgendaMapping | None) -> AgendaMapping:
         """Map one folder, given the mapping of its nearest mapped ancestor."""
         parent_code = parent.agenda_item_id if parent else None
+
+        # RAN4 "[121][201] NR_RRM_Ph6": the topic number, not "121", names the item.
+        if getattr(self.topic_resolver, "topic_first", False) and RAN4_TOPIC_RE.match(name):
+            tagged = self.topic_resolver(name)
+            if tagged:
+                return AgendaMapping(tagged, 0.9, "topic-list")
+            return AgendaMapping(parent_code, 0.5, "inherited-from-ancestor") if parent_code else UNMAPPED
 
         code = extract_code(name)
         if code:

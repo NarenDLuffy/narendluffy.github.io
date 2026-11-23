@@ -1,0 +1,7044 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T13:38:56Z",
+  "meetingId": "ran4-119",
+  "sessions": [
+    {
+      "sessionId": "ran4-119-1b0c7aefea",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "1. Opening of the meeting",
+      "topicKey": "8006780a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "2. Approval of the agenda \u00b7 3. Letters / reports from other groups / meetings \u00b7 4. Incoming LS \u00b7 5. On 6G TR \u00b7 6. On spectrum and non-spectrum WI",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|09:00|1|09:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b7fe82e0fe",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: Rel-20 OTA",
+      "topicKey": "914ba52e",
+      "agendaItems": [
+        "7.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.3",
+          "label": "BR1 Ad-hoc: Rel-20 OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[212] NR_UE_OTA_Enh, chaired by Ruixin Wang (vivo)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|09:30|4|09:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-e4750d24bf",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.4.2",
+        "7.4.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.4.2",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.4.3.2",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[201] NR_RRM_Ph6",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.4.2",
+            "7.4.3.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|09:30|2|09:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b6fb1855c6",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "5G UE RF",
+      "topicKey": "9b01cff7",
+      "agendaItems": [
+        "7.1.2",
+        "7.1.4",
+        "7.1.3",
+        "7.1.5.1",
+        "7.1.5.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.1.2",
+          "label": "5G UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.4",
+          "label": "5G UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.3",
+          "label": "5G UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.5.1",
+          "label": "5G UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.5.2",
+          "label": "5G UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[340] NR_UE_RF_Ph5 (16) \u00b7 [341] NR_UE_RF_Ph5_Part2 (26)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.1.2",
+            "7.1.4",
+            "7.1.3",
+            "7.1.5.1",
+            "7.1.5.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|09:30|3|09:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-6d0ff1ca5c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[111] 6G RAN4 operation efficiency",
+      "topicKey": "e30fb98f",
+      "agendaItems": [
+        "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.12",
+          "label": "[111] 6G RAN4 operation efficiency",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|09:30|1|09:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b39cf8acef",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-2a8f0bb29d",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [105] 6G RRM Chaired by Jerry (Apple)",
+      "topicKey": "1483e32a",
+      "agendaItems": [
+        "8.6.2",
+        "8.6.3",
+        "8.6.1",
+        "8.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.6.2",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.3",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.1",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.4",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.6.2",
+            "8.6.3",
+            "8.6.1",
+            "8.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|11:00|4|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-fea3169f88",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.7.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.7.5",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[202] NR_UAV_req_RRM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.7.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|11:00|2|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1c130b0584",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "5G UE RF (cont)",
+      "topicKey": "f4c07eae",
+      "agendaItems": [
+        "7.6.2",
+        "7.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.6.2",
+          "label": "5G UE RF (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.6.3",
+          "label": "5G UE RF (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NTN \u00b7 [346] NR_IoT_NTN_Ph2 (15)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.6.2",
+            "7.6.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|11:00|3|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-9b076e905b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[101] System Parameter()",
+      "topicKey": "e8abc344",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6",
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.3",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|11:00|1|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1926e30fc0",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-d2aa046a1b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-hoc: 5G BSRF: [345] NR_BS_RF_Ph2, chaired by Torbj\u00f6rn (Ericsson)",
+      "topicKey": "273c25b7",
+      "agendaItems": [
+        "7.2.2",
+        "7.2.3",
+        "7.2.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.2.2",
+          "label": "BR2 Ad-hoc: 5G BSRF: [345] NR_BS_RF_Ph2, chaired by Torbj\u00f6rn (Ericsson)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.2.3",
+          "label": "BR2 Ad-hoc: 5G BSRF: [345] NR_BS_RF_Ph2, chaired by Torbj\u00f6rn (Ericsson)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.2.4",
+          "label": "BR2 Ad-hoc: 5G BSRF: [345] NR_BS_RF_Ph2, chaired by Torbj\u00f6rn (Ericsson)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.2.2",
+            "7.2.3",
+            "7.2.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|14:30|4|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-fd14777b63",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 AI",
+      "topicKey": "7273a406",
+      "agendaItems": [
+        "7.10"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.10",
+          "label": "Rel-20 AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[214] NR_AIML_air_Ph2",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.10"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|14:30|2|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-000a621c9d",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "NTN (cont)",
+      "topicKey": "263218a3",
+      "agendaItems": [
+        "7.6.4.1",
+        "7.6.4.2",
+        "7.14.2",
+        "7.14.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.6.4.1",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.6.4.2",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.14.2",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.14.3",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[347] NR_IoT_NTN_Ph2_Part2 (19) \u00b7 [348] Study_NR_NTN_GNSS_resilient (15)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.6.4.1",
+            "7.6.4.2",
+            "7.14.2",
+            "7.14.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|14:30|3|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-9bc8e916fc",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[101] System Parameter()",
+      "topicKey": "e8abc344",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6",
+        "8.2.3",
+        "8.2.4",
+        "8.2.5",
+        "8.3.1",
+        "8.3.2",
+        "8.3.3",
+        "8.3.6",
+        "8.3.4",
+        "8.3.5",
+        "8.3.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.3",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.1",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.2",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.3",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.6",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.4",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.5",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.7",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "---3:30pm \u00b7 [102] General RF and UE RF",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5",
+            "8.3.1",
+            "8.3.2",
+            "8.3.3",
+            "8.3.6",
+            "8.3.4",
+            "8.3.5",
+            "8.3.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|14:30|1|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-d6fad51256",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: 6G testability/OTA",
+      "topicKey": "eec00398",
+      "agendaItems": [
+        "8.11"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.11",
+          "label": "BR1 Ad-hoc: 6G testability/OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[213] 6G testability and OTA, chaired by Ruixin Wang (vivo)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.11"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|14:30|4|15:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-53d43086c1",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-83327fa03d",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: R20 AI: [214] NR_AIML_air_Ph2, Chaired by Tom (E///)",
+      "topicKey": "d4cbb39b",
+      "agendaItems": [
+        "7.10"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.10",
+          "label": "BR1 Ad-hoc: R20 AI: [214] NR_AIML_air_Ph2, Chaired by Tom (E///)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.10"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|17:00|4|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-04aa2ac9a2",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.11"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.11",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[204] NR_MIMO_Ph6_RRM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.11"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|17:00|2|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-8459abafe0",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "NTN (cont)",
+      "topicKey": "263218a3",
+      "agendaItems": [
+        "7.15.2",
+        "7.15.3",
+        "7.15.4",
+        "7.16.2",
+        "7.16.3",
+        "7.16.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.15.2",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.15.3",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.15.4",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.16.2",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.16.3",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.16.4",
+          "label": "NTN (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[349] LTE_TN_NR_NTN_handover (16) \u00b7 [350] LTE_IoT_NTN_high_power (8)  [Moved to Tues]",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.15.2",
+            "7.15.3",
+            "7.15.4",
+            "7.16.2",
+            "7.16.3",
+            "7.16.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|17:00|3|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-3ce20e42ed",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[102] General RF and UE RF",
+      "topicKey": "b0bc981b",
+      "agendaItems": [
+        "8.3.1",
+        "8.3.2",
+        "8.3.3",
+        "8.3.6",
+        "8.3.4",
+        "8.3.5",
+        "8.3.7",
+        "8.9"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3.1",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.2",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.3",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.6",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.4",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.5",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.7",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.9",
+          "label": "[102] General RF and UE RF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[108] Spectrum sharing",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.3.1",
+            "8.3.2",
+            "8.3.3",
+            "8.3.6",
+            "8.3.4",
+            "8.3.5",
+            "8.3.7",
+            "8.9"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|17:00|1|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1d087ee219",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: [214] NR_AIML_air_Ph2, Chaired by Tom (E///)",
+      "topicKey": "7b813e80",
+      "agendaItems": [
+        "7.10"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.10",
+          "label": "BR1 Ad-hoc: [214] NR_AIML_air_Ph2, Chaired by Tom (E///)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.10"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|18:00|4|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-f720be8aa6",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "BR1 Ad-hoc: RRM Maintenance",
+      "topicKey": "3ddf8ebb",
+      "agendaItems": [
+        "10.4.1",
+        "10.4.2",
+        "10.8",
+        "4.5.3",
+        "4.6.2",
+        "10.4.3",
+        "10.9.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.4.1",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.4.2",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.3",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.2",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.4.3",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9.2",
+          "label": "BR1 Ad-hoc: RRM Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[215][216] RRM_Maintenance_Up_to_R17 & RRM_Maintenance_R18_R19, Chaired by Zhang Li (Huawei)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "10.4.1",
+            "10.4.2",
+            "10.8",
+            "4.5.3",
+            "4.6.2",
+            "10.4.3",
+            "10.9.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|18:00|2|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-aacf8dfefd",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: Sensing coexistence",
+      "topicKey": "c7f945a4",
+      "agendaItems": [
+        "8.10.4",
+        "8.10.5",
+        "8.10.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.10.4",
+          "label": "BR2 Ad-hoc: Sensing coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.5",
+          "label": "BR2 Ad-hoc: Sensing coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.6",
+          "label": "BR2 Ad-hoc: Sensing coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[362] 6G_Sensing, chaired by Fei (ZTE)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.10.4",
+            "8.10.5",
+            "8.10.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|18:00|3|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-454979d1a3",
+      "meetingId": "ran4-119",
+      "date": "2026-05-18",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Main Ad-hoc: [102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+      "topicKey": "aaea42d2",
+      "agendaItems": [
+        "8.3.1",
+        "8.3.2",
+        "8.3.3",
+        "8.3.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3.1",
+          "label": "Main Ad-hoc: [102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.2",
+          "label": "Main Ad-hoc: [102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.3",
+          "label": "Main Ad-hoc: [102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.6",
+          "label": "Main Ad-hoc: [102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.3.1",
+            "8.3.2",
+            "8.3.3",
+            "8.3.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-18|18:00|1|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-ee09a39697",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "08:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: TN \u2013 NTN handover",
+      "topicKey": "343c1d17",
+      "agendaItems": [
+        "7.15.2",
+        "7.15.3",
+        "7.15.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.15.2",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.15.3",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.15.4",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[349] LTE_TN_NR_NTN_handover, chaired by Lingyu (CATT",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.15.2",
+            "7.15.3",
+            "7.15.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|3|08:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-a781af7450",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: 6G OTA",
+      "topicKey": "5d2e4473",
+      "agendaItems": [
+        "8.11"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.11",
+          "label": "BR1 Ad-hoc: 6G OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[213] 6G testability and OTA, Chaired by Ruixin Wang (vivo)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.11"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|4|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-ba642ec038",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.13",
+        "7.17.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.13",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.3",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[206] NR_Mob_Ph5_RRM \u00b7 [207] Ambient_IoT_Ph2_RRM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.13",
+            "7.17.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|2|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-4535044e0e",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: TN \u2013 NTN handover",
+      "topicKey": "343c1d17",
+      "agendaItems": [
+        "4.5.5",
+        "4.6.5",
+        "4.2.1.4",
+        "10.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "4.5.5",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.5",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.4",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.4",
+          "label": "BR2 Ad-hoc: TN \u2013 NTN handover",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[306] papers on TEI-19 [NR_TN_NR NTN_HO_req] , chaired by Shiyuan (CMCC",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "4.5.5",
+            "4.6.5",
+            "4.2.1.4",
+            "10.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|3|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-6ac730c5af",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[107] 6G AI",
+      "topicKey": "26ad8ec9",
+      "agendaItems": [
+        "8.8.1",
+        "8.8.2",
+        "8.8.3",
+        "8.8.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.8.1",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.2",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.3",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.4",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "(107-B and 107-A)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.8.1",
+            "8.8.2",
+            "8.8.3",
+            "8.8.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|1|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-739d9f034c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+      "topicKey": "98e1ee98",
+      "agendaItems": [
+        "7.1.2",
+        "7.1.4",
+        "7.1.3",
+        "7.1.5.1",
+        "7.1.5.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.1.2",
+          "label": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.4",
+          "label": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.3",
+          "label": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.5.1",
+          "label": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.1.5.2",
+          "label": "BR2 Ad-hoc: 5G UE RF: [340] NR_UE_RF_Ph",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[341] NR_UE_RF_Ph5_Part2 \u00b7 Chaired by Alok (Nokia) and Tina (Samsung)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.1.2",
+            "7.1.4",
+            "7.1.3",
+            "7.1.5.1",
+            "7.1.5.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|3|09:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-d23ccf9808",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+      "topicKey": "53f69744",
+      "agendaItems": [
+        "10.6.1",
+        "10.6.2",
+        "10.6.5",
+        "4.2.3",
+        "4.5.5",
+        "4.6.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.2",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.5",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.3",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.5",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.5",
+          "label": "BR2 Ad-hoc: NTN RF maint , incl coffee break",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[301] NR_IoT_NTN_Maint_Legacy_RF \u00b7 [305] NR_IoT_NTN_Maintenance \u00b7 Chaired by Daniel (MTK)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "10.6.1",
+            "10.6.2",
+            "10.6.5",
+            "4.2.3",
+            "4.5.5",
+            "4.6.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|3|10:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-69ec48d44a",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+      "topicKey": "8ebb7f54",
+      "agendaItems": [
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.3",
+          "label": "[101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "[101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "[101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|08:30|1|10:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1f76372bc9",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-hoc: Spectrum basket work items",
+      "topicKey": "d6a9dad3",
+      "agendaItems": [
+        "5.6.1",
+        "5.6.2",
+        "5.6.3",
+        "5.6.4",
+        "5.6.5",
+        "5.6.6",
+        "5.6.7",
+        "5.6.8",
+        "5.6.9",
+        "5.5.1",
+        "5.5.2",
+        "5.5.3",
+        "5.5.4",
+        "5.5.5",
+        "5.5.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "5.6.1",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.2",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.3",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.4",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.5",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.6",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.7",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.8",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.9",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.1",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.2",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.3",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.4",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.5",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.6",
+          "label": "BR2 Ad-hoc: Spectrum basket work items",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[324] NR_CADC_SUL(including band combination database), chaired by Per (Ericsson) \u00b7 [323] NTN_bands_Features, chaired by Daniel (Apple)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "5.6.1",
+            "5.6.2",
+            "5.6.3",
+            "5.6.4",
+            "5.6.5",
+            "5.6.6",
+            "5.6.7",
+            "5.6.8",
+            "5.6.9",
+            "5.5.1",
+            "5.5.2",
+            "5.5.3",
+            "5.5.4",
+            "5.5.5",
+            "5.5.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|11:00|4|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c427269de1",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 Demod",
+      "topicKey": "7801af35",
+      "agendaItems": [
+        "7.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.5",
+          "label": "Rel-20 Demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[208] NR_demod_Ph6",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|11:00|2|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-6878561fbd",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "NTN",
+      "topicKey": "cdd20435",
+      "agendaItems": [
+        "7.16.2",
+        "7.16.3",
+        "7.16.4",
+        "7.8.2",
+        "7.8.3",
+        "7.7.2",
+        "7.7.3",
+        "7.7.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.16.2",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.16.3",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.16.4",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.8.2",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.8.3",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.7.2",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.7.3",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.7.4",
+          "label": "NTN",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[350] LTE_IoT_NTN_high_power (8) \u00b7 UE RF \u00b7 [342] NR_low_band_CA_switching (11) \u00b7 Rel-20 UAV \u00b7 [351] NR_UAV (15)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.16.2",
+            "7.16.3",
+            "7.16.4",
+            "7.8.2",
+            "7.8.3",
+            "7.7.2",
+            "7.7.3",
+            "7.7.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|11:00|3|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-57824ae442",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[105] 6G RRM",
+      "topicKey": "a5116cb8",
+      "agendaItems": [
+        "8.6.2",
+        "8.6.3",
+        "8.6.1",
+        "8.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.6.2",
+          "label": "[105] 6G RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.3",
+          "label": "[105] 6G RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.1",
+          "label": "[105] 6G RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.4",
+          "label": "[105] 6G RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.6.2",
+            "8.6.3",
+            "8.6.1",
+            "8.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|11:00|1|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-89393092db",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-0346c9babb",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-hoc: 1.5 GHz Japan: [118bis][327] NR_1.5GHz_Japan, chaired by Yasuki (KDDI)",
+      "topicKey": "bb0c7386",
+      "agendaItems": [
+        "5.10.1",
+        "5.10.2",
+        "5.10.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "5.10.1",
+          "label": "BR2 Ad-hoc: 1.5 GHz Japan: [118bis][327] NR_1.5GHz_Japan, chaired by Yasuki (KDDI)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.10.2",
+          "label": "BR2 Ad-hoc: 1.5 GHz Japan: [118bis][327] NR_1.5GHz_Japan, chaired by Yasuki (KDDI)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.10.3",
+          "label": "BR2 Ad-hoc: 1.5 GHz Japan: [118bis][327] NR_1.5GHz_Japan, chaired by Yasuki (KDDI)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "5.10.1",
+            "5.10.2",
+            "5.10.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|4|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1dc8a41e09",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.12",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[205] NR_AIML_Mob_RRM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|2|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-4ab6d0957f",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "6G SI: BSRF",
+      "topicKey": "fbbb109d",
+      "agendaItems": [
+        "8.4.1.1",
+        "8.4.1.2",
+        "8.4.1.3",
+        "8.4.2.1",
+        "8.4.2.2",
+        "8.4.3.1",
+        "8.4.3.2",
+        "8.4.3.3",
+        "8.4.4",
+        "8.4.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.4.1.1",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.1.2",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.1.3",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.2.1",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.2.2",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.3.1",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.3.2",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.3.3",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.4",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.5",
+          "label": "6G SI: BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[360] 6G_BSRF_requirements (31) \u00b7 [361] 6G_BSRF_coexistence_AAS (43)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.4.1.1",
+            "8.4.1.2",
+            "8.4.1.3",
+            "8.4.2.1",
+            "8.4.2.2",
+            "8.4.3.1",
+            "8.4.3.2",
+            "8.4.3.3",
+            "8.4.4",
+            "8.4.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|3|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1692dab793",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:45",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[101] System Parameter()",
+      "topicKey": "e8abc344",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6",
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.3",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|1|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-949235a9a8",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-hoc: NTN: [348] GNSS resilient, chaired by Dorin (Thales)",
+      "topicKey": "9fe12590",
+      "agendaItems": [
+        "7.14.2",
+        "7.14.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.14.2",
+          "label": "BR2 Ad-hoc: NTN: [348] GNSS resilient, chaired by Dorin (Thales)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.14.3",
+          "label": "BR2 Ad-hoc: NTN: [348] GNSS resilient, chaired by Dorin (Thales)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.14.2",
+            "7.14.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|4|15:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-d8ce3aac4b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 Demod",
+      "topicKey": "7801af35",
+      "agendaItems": [
+        "7.9"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.9",
+          "label": "Rel-20 Demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[209] FS_NR_demod_SCM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.9"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|2|15:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-88ba4c6d05",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "15:45",
+      "endTime": "16:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[104] Spectrum",
+      "topicKey": "913b1d1d",
+      "agendaItems": [
+        "8.5.1",
+        "8.5.2",
+        "8.5.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.5.1",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.2",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.3",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.5.1",
+            "8.5.2",
+            "8.5.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|1|15:45",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-7e1edb09e4",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[105] 6G RRM Chaired by Jerry (Apple)",
+      "topicKey": "746a4730",
+      "agendaItems": [
+        "8.6.2",
+        "8.6.3",
+        "8.6.1",
+        "8.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.6.2",
+          "label": "[105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.3",
+          "label": "[105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.1",
+          "label": "[105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.4",
+          "label": "[105] 6G RRM Chaired by Jerry (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.6.2",
+            "8.6.3",
+            "8.6.1",
+            "8.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|14:30|1|16:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-7bd705bc3d",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [111] 6G operation efficiency by Aijun (CATT)",
+      "topicKey": "638b82b8",
+      "agendaItems": [
+        "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.12",
+          "label": "Main Ad-hoc: [111] 6G operation efficiency by Aijun (CATT)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|17:00|4|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-4f7c9dd097",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM Cont.",
+      "topicKey": "70c85ed2",
+      "agendaItems": [
+        "7.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.12",
+          "label": "Rel-20 RRM Cont.",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[205] NR_AIML_Mob_RRM",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|17:00|2|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b68cbea7ef",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "6G SI BSRF (cont)",
+      "topicKey": "70ef28d8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|17:00|3|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-917471392f",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[104] Spectrum",
+      "topicKey": "913b1d1d",
+      "agendaItems": [
+        "8.5.1",
+        "8.5.2",
+        "8.5.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.5.1",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.2",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.3",
+          "label": "[104] Spectrum",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.5.1",
+            "8.5.2",
+            "8.5.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|17:00|1|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-906a0637a4",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "18:15",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [111] 6G operation efficiency by Aijun (CATT)",
+      "topicKey": "638b82b8",
+      "agendaItems": [
+        "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.12",
+          "label": "Main Ad-hoc: [111] 6G operation efficiency by Aijun (CATT)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|18:00|4|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-365a0612b2",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "BR1 Ad-hoc: [205] NR_AIML_Mob_RRM, Chaired by Qiuge Guo (OPPO)",
+      "topicKey": "29918c2f",
+      "agendaItems": [
+        "7.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.12",
+          "label": "BR1 Ad-hoc: [205] NR_AIML_Mob_RRM, Chaired by Qiuge Guo (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|18:00|2|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-91e6fb0513",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Adhoc: 6G BSRF requirements",
+      "topicKey": "65267ec6",
+      "agendaItems": [
+        "8.4.1.1",
+        "8.4.1.2",
+        "8.4.1.3",
+        "8.4.2.1",
+        "8.4.2.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.4.1.1",
+          "label": "BR2 Adhoc: 6G BSRF requirements",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.1.2",
+          "label": "BR2 Adhoc: 6G BSRF requirements",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.1.3",
+          "label": "BR2 Adhoc: 6G BSRF requirements",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.2.1",
+          "label": "BR2 Adhoc: 6G BSRF requirements",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.2.2",
+          "label": "BR2 Adhoc: 6G BSRF requirements",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[360] 6G_BSRF_requirements, chaired by Dominique (Ericsson)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.4.1.1",
+            "8.4.1.2",
+            "8.4.1.3",
+            "8.4.2.1",
+            "8.4.2.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|18:00|3|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-884e309075",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Main Ad hoc: [101-A] System Parameter, Chaired by Leo (Huawei)",
+      "topicKey": "0087c948",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "Main Ad hoc: [101-A] System Parameter, Chaired by Leo (Huawei)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "Main Ad hoc: [101-A] System Parameter, Chaired by Leo (Huawei)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "Main Ad hoc: [101-A] System Parameter, Chaired by Leo (Huawei)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|18:00|1|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-e88201c0ac",
+      "meetingId": "ran4-119",
+      "date": "2026-05-19",
+      "day": "Tuesday",
+      "startTime": "18:15",
+      "endTime": "19:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "6G SI TR skeleton and process by Joe (AT&T)",
+      "topicKey": "755ec189",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-19|18:00|4|18:15",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-bb71832406",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: [209] FS_NR_demod_SCM, Chaired by Ryan (BT)",
+      "topicKey": "a50b553e",
+      "agendaItems": [
+        "7.9"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.9",
+          "label": "BR1 Ad-hoc: [209] FS_NR_demod_SCM, Chaired by Ryan (BT)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.9"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|4|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c22f163039",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 and 6G OTA",
+      "topicKey": "970e348f",
+      "agendaItems": [
+        "8.11",
+        "7.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.11",
+          "label": "Rel-20 and 6G OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.3",
+          "label": "Rel-20 and 6G OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[213] 6G testability and OTA \u00b7 [212] NR_UE_OTA_Enh",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.11",
+            "7.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|2|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-8ef1da99c3",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: UE RF LBCA: [342] NR_low_band_CA_switching, chaired by James (Apple)",
+      "topicKey": "0eec0d0d",
+      "agendaItems": [
+        "7.8.2",
+        "7.8.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.8.2",
+          "label": "BR2 Ad-hoc: UE RF LBCA: [342] NR_low_band_CA_switching, chaired by James (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.8.3",
+          "label": "BR2 Ad-hoc: UE RF LBCA: [342] NR_low_band_CA_switching, chaired by James (Apple)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.8.2",
+            "7.8.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|3|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-4180b5b7ad",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[107] 6G AI",
+      "topicKey": "26ad8ec9",
+      "agendaItems": [
+        "8.8.1",
+        "8.8.2",
+        "8.8.3",
+        "8.8.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.8.1",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.2",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.3",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.4",
+          "label": "[107] 6G AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.8.1",
+            "8.8.2",
+            "8.8.3",
+            "8.8.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|1|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-ad8c050f89",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "5G BSRF",
+      "topicKey": "b912f435",
+      "agendaItems": [
+        "7.2.2",
+        "7.2.3",
+        "7.2.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.2.2",
+          "label": "5G BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.2.3",
+          "label": "5G BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.2.4",
+          "label": "5G BSRF",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[345] NR_BS_RF_Ph2 (15) \u00b7 Ambient IoT \u00b7 [352] A-IoT_sys_outdoor (34) \u00b7 (Ambient IoT may start if [345] finishes early)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.2.2",
+            "7.2.3",
+            "7.2.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|3|09:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-25fc6e0d7b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BDaT Ad-hoc: IoT and NR NTN RRM maint",
+      "topicKey": "55678d9a",
+      "agendaItems": [
+        "4.5.5",
+        "4.6.5",
+        "4.2.1.4",
+        "10.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "4.5.5",
+          "label": "BDaT Ad-hoc: IoT and NR NTN RRM maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.5",
+          "label": "BDaT Ad-hoc: IoT and NR NTN RRM maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.4",
+          "label": "BDaT Ad-hoc: IoT and NR NTN RRM maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.4",
+          "label": "BDaT Ad-hoc: IoT and NR NTN RRM maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[306] NR_IoT_NTN_Maintenance_RRM, chaired by Derrick (ZTE)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "4.5.5",
+            "4.6.5",
+            "4.2.1.4",
+            "10.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|4|09:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-9cbb3f149f",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "[363] 6G_Sensing, chaired by Mustafa (Qualcomm)",
+      "topicKey": "c3f8e523",
+      "agendaItems": [
+        "8.10.1",
+        "8.10.2",
+        "8.10.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.10.1",
+          "label": "[363] 6G_Sensing, chaired by Mustafa (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.2",
+          "label": "[363] 6G_Sensing, chaired by Mustafa (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.3",
+          "label": "[363] 6G_Sensing, chaired by Mustafa (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.10.1",
+            "8.10.2",
+            "8.10.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|3|10:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-73aad225a3",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[108] Spectrum sharing by Jingjing (CMCC)",
+      "topicKey": "00fe16f2",
+      "agendaItems": [
+        "8.9"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.9",
+          "label": "[108] Spectrum sharing by Jingjing (CMCC)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.9"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|08:30|1|10:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-681892be6e",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: R20 AI",
+      "topicKey": "9f3c53d3",
+      "agendaItems": [
+        "7.10"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.10",
+          "label": "BR1 Ad-hoc: R20 AI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[214] NR_AIML_air_Ph2, Chaired by Tom (E///)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.10"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|4|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-d2d42bbd28",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "6G OTA",
+      "topicKey": "d5f0dd54",
+      "agendaItems": [
+        "7.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.3",
+          "label": "6G OTA",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[212] NR_UE_OTA_Enh",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|2|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-f3f7795e92",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Ambient IoT",
+      "topicKey": "6b361461",
+      "agendaItems": [
+        "7.17.2",
+        "7.17.4",
+        "7.17.5.1",
+        "7.17.5.2",
+        "7.17.5.3",
+        "7.17.6.1",
+        "7.17.6.2",
+        "7.17.6.3",
+        "7.17.6.4",
+        "7.17.7",
+        "10.3",
+        "10.8",
+        "10.9.3",
+        "4.5.2",
+        "4.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.17.2",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.4",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.1",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.2",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.3",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.6.1",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.6.2",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.6.3",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.6.4",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.7",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.3",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9.3",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.2",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.3",
+          "label": "Ambient IoT",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[352] A-IoT_sys_outdoor (34) \u00b7 [353] A-IoT_indoor_test (20) \u00b7 BR2 Ad-hoc: BS RF maintenance \u00b7 [303] BSRF_Maintenance_Legacy_TEI (18) \u00b7 [304] BSRF_Maintenance_TEI (28) \u00b7 (f time available)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.17.2",
+            "7.17.4",
+            "7.17.5.1",
+            "7.17.5.2",
+            "7.17.5.3",
+            "7.17.6.1",
+            "7.17.6.2",
+            "7.17.6.3",
+            "7.17.6.4",
+            "7.17.7",
+            "10.3",
+            "10.8",
+            "10.9.3",
+            "4.5.2",
+            "4.6.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|3|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-3ff4bbbb33",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[101] System Parameter()",
+      "topicKey": "e8abc344",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6",
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.3",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "[101] System Parameter()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|1|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-44569dd5ca",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "[112] R19 NR_AIML_air and [119] R19 NR AIML air maintenance Chaired by Vali (Qualcomm)",
+      "topicKey": "46d04bf3",
+      "agendaItems": [
+        "6.1",
+        "4.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "6.1",
+          "label": "[112] R19 NR_AIML_air and [119] R19 NR AIML air maintenance Chaired by Vali (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.4",
+          "label": "[112] R19 NR_AIML_air and [119] R19 NR AIML air maintenance Chaired by Vali (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "6.1",
+            "4.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|4|12:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-231f82cd0b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "6G demod",
+      "topicKey": "4571561a",
+      "agendaItems": [
+        "8.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.7",
+          "label": "6G demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[210] 6G Demod_Part1",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|11:00|2|12:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-86acb6946f",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-c2ae79c22e",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+      "topicKey": "b9e23491",
+      "agendaItems": [
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.3",
+          "label": "Main Ad-hoc: [101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "Main Ad-hoc: [101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "Main Ad-hoc: [101-B] System Parameter, Chaired by Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|4|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-2538d1e8d5",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "6G demod",
+      "topicKey": "4571561a",
+      "agendaItems": [
+        "8.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.7",
+          "label": "6G demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[210] 6G Demod_Part1 Cont. \u00b7 [211] 6G Demod_Part2",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|2|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-08b8e94ec9",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "6G SI: Sensing",
+      "topicKey": "bf5f807a",
+      "agendaItems": [
+        "8.10.4",
+        "8.10.5",
+        "8.10.6",
+        "8.10.1",
+        "8.10.2",
+        "8.10.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.10.4",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.5",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.6",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.1",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.2",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.3",
+          "label": "6G SI: Sensing",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[362] 6G_Sensing (25) \u00b7 [363] 6G_Sensing (34)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.10.4",
+            "8.10.5",
+            "8.10.6",
+            "8.10.1",
+            "8.10.2",
+            "8.10.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|3|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-88ee56ba6c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[105] 6G RRM()",
+      "topicKey": "e402a719",
+      "agendaItems": [
+        "8.6.2",
+        "8.6.3",
+        "8.6.1",
+        "8.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.6.2",
+          "label": "[105] 6G RRM()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.3",
+          "label": "[105] 6G RRM()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.1",
+          "label": "[105] 6G RRM()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.4",
+          "label": "[105] 6G RRM()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.6.2",
+            "8.6.3",
+            "8.6.1",
+            "8.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|1|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c55e44e220",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-Hoc: Ambient IoT system parameters",
+      "topicKey": "22a63464",
+      "agendaItems": [
+        "7.17.2",
+        "7.17.4",
+        "7.17.5.1",
+        "7.17.5.2",
+        "7.17.5.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.17.2",
+          "label": "BR2 Ad-Hoc: Ambient IoT system parameters",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.4",
+          "label": "BR2 Ad-Hoc: Ambient IoT system parameters",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.1",
+          "label": "BR2 Ad-Hoc: Ambient IoT system parameters",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.2",
+          "label": "BR2 Ad-Hoc: Ambient IoT system parameters",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.17.5.3",
+          "label": "BR2 Ad-Hoc: Ambient IoT system parameters",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[352] A-IoT system parameters, chaired by Ling Lin (Huawei)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.17.2",
+            "7.17.4",
+            "7.17.5.1",
+            "7.17.5.2",
+            "7.17.5.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|4|15:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-147388531a",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+      "topicKey": "0797e71e",
+      "agendaItems": [
+        "8.3.1",
+        "8.3.2",
+        "8.3.3",
+        "8.3.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3.1",
+          "label": "[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.2",
+          "label": "[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.3",
+          "label": "[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.6",
+          "label": "[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.3.1",
+            "8.3.2",
+            "8.3.3",
+            "8.3.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|14:30|1|16:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-61235b6c28",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [105] 6G RRM Chaired by Jinyup (LGE)",
+      "topicKey": "986c747b",
+      "agendaItems": [
+        "8.6.2",
+        "8.6.3",
+        "8.6.1",
+        "8.6.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.6.2",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jinyup (LGE)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.3",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jinyup (LGE)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.1",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jinyup (LGE)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.6.4",
+          "label": "Main Ad-hoc: [105] 6G RRM Chaired by Jinyup (LGE)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.6.2",
+            "8.6.3",
+            "8.6.1",
+            "8.6.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|17:00|4|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b04888d9f4",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "6G demod",
+      "topicKey": "4571561a",
+      "agendaItems": [
+        "8.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.7",
+          "label": "6G demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[211] 6G Demod_Part2 Cont.",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|17:00|2|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-93a7cc9dba",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "6G SI: Sensing (cont)",
+      "topicKey": "5f14d2d4",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|17:00|3|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-ee95a33da5",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[102] General RF and UE RF ()",
+      "topicKey": "fe9ce3a9",
+      "agendaItems": [
+        "8.3.1",
+        "8.3.2",
+        "8.3.3",
+        "8.3.6",
+        "8.3.4",
+        "8.3.5",
+        "8.3.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3.1",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.2",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.3",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.6",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.4",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.5",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.7",
+          "label": "[102] General RF and UE RF ()",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.3.1",
+            "8.3.2",
+            "8.3.3",
+            "8.3.6",
+            "8.3.4",
+            "8.3.5",
+            "8.3.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|17:00|1|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-99a9d66b02",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+      "topicKey": "b790afd0",
+      "agendaItems": [
+        "8.8.1",
+        "8.8.2",
+        "8.8.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.8.1",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.2",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.3",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.8.1",
+            "8.8.2",
+            "8.8.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|18:00|4|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-70f5afc214",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "BR1 Ad hoc: Demod",
+      "topicKey": "e060c1f4",
+      "agendaItems": [
+        "7.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.5",
+          "label": "BR1 Ad hoc: Demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[208] NR_demod_Ph6, Chaired by Jingzhou Wu (China Telecom)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|18:00|2|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1bf4d91075",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: 6G coexistence",
+      "topicKey": "b8a1f096",
+      "agendaItems": [
+        "8.4.3.1",
+        "8.4.3.2",
+        "8.4.3.3",
+        "8.4.4",
+        "8.4.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.4.3.1",
+          "label": "BR2 Ad-hoc: 6G coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.3.2",
+          "label": "BR2 Ad-hoc: 6G coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.3.3",
+          "label": "BR2 Ad-hoc: 6G coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.4",
+          "label": "BR2 Ad-hoc: 6G coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.4.5",
+          "label": "BR2 Ad-hoc: 6G coexistence",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[361] 6G_BSRF_coexistence_AAS, coexistence part, chaired by Michal (Huawei)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.4.3.1",
+            "8.4.3.2",
+            "8.4.3.3",
+            "8.4.4",
+            "8.4.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|18:00|3|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-0749585073",
+      "meetingId": "ran4-119",
+      "date": "2026-05-20",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Main Ad hoc: [102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)",
+      "topicKey": "95c368f9",
+      "agendaItems": [
+        "8.3.4",
+        "8.3.5",
+        "8.3.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.3.4",
+          "label": "Main Ad hoc: [102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.5",
+          "label": "Main Ad hoc: [102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.7",
+          "label": "Main Ad hoc: [102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.3.4",
+            "8.3.5",
+            "8.3.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-20|18:00|1|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c0137b103e",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: Demod",
+      "topicKey": "28858c99",
+      "agendaItems": [
+        "8.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.7",
+          "label": "BR1 Ad-hoc: Demod",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[210] [211] 6G Demod_Part1&Part2",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|4|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-442b4eca00",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Rel-20 RRM",
+      "topicKey": "6f1436ab",
+      "agendaItems": [
+        "7.8.4",
+        "10.4.1",
+        "10.4.2",
+        "10.8",
+        "4.5.3",
+        "4.6.2",
+        "10.4.3",
+        "10.9.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.8.4",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.4.1",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.4.2",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.3",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.2",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.4.3",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9.2",
+          "label": "Rel-20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[203] NR_LBCA_Sw_enh_RRM \u00b7 RRM Maintenance \u00b7 [215] RRM_Maintenance_Up_to_R17 \u00b7 [216] RRM_Maintenance_R18_R19",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.8.4",
+            "10.4.1",
+            "10.4.2",
+            "10.8",
+            "4.5.3",
+            "4.6.2",
+            "10.4.3",
+            "10.9.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|2|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-e097d2888e",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "5G basket and spectrum WI",
+      "topicKey": "cc1d271e",
+      "agendaItems": [
+        "5.2.1",
+        "5.2.2",
+        "5.2.3",
+        "5.2.4",
+        "5.3.1",
+        "5.3.2",
+        "5.3.3",
+        "5.3.4",
+        "5.3.5",
+        "5.3.6",
+        "5.3.7",
+        "5.4.1",
+        "5.4.2",
+        "5.4.3",
+        "5.4.4",
+        "5.4.5",
+        "5.5.1",
+        "5.5.2",
+        "5.5.3",
+        "5.5.4",
+        "5.5.5",
+        "5.5.6",
+        "5.6.1",
+        "5.6.2",
+        "5.6.3",
+        "5.6.4",
+        "5.6.5",
+        "5.6.6",
+        "5.6.7",
+        "5.6.8",
+        "5.6.9",
+        "5.7.1",
+        "5.7.2",
+        "5.7.3",
+        "5.7.4",
+        "5.7.5",
+        "5.8.1",
+        "5.8.2",
+        "5.10.1",
+        "5.10.2",
+        "5.10.3",
+        "5.11.1",
+        "5.11.2",
+        "5.11.3",
+        "5.11.4",
+        "5.12.1",
+        "5.12.2",
+        "5.12.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "5.2.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.2.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.2.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.2.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.5",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.6",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.3.7",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.4.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.4.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.4.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.4.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.4.5",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.5",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.5.6",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.5",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.6",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.7",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.8",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.6.9",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.7.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.7.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.7.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.7.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.7.5",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.8.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.8.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.10.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.10.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.10.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.11.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.11.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.11.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.11.4",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.12.1",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.12.2",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "5.12.3",
+          "label": "5G basket and spectrum WI",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[320] NR_LTE_combos_Features_R20 (9) \u00b7 [321] DC_xBLTE_yBNR_R20 (22) \u00b7 [322] NR_bands_Features_R20 (0) \u00b7 [323] NTN_Bands_Features_R20 (20) \u00b7 [324] NR_CADC_SUL_R20 (51) \u00b7 [325] NR_Bands_BW_PC_BC_RedCap (11) \u00b7 [326] LTE_CA_xBDL_yBUL (0) \u00b7 [327] NR_1.5GHz_Japan (18) \u00b7 [328] NR_EESS_PC1_40GHz (9) \u00b7 [329] New_CBW_5G_broadcast_over_GSO (5)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "5.2.1",
+            "5.2.2",
+            "5.2.3",
+            "5.2.4",
+            "5.3.1",
+            "5.3.2",
+            "5.3.3",
+            "5.3.4",
+            "5.3.5",
+            "5.3.6",
+            "5.3.7",
+            "5.4.1",
+            "5.4.2",
+            "5.4.3",
+            "5.4.4",
+            "5.4.5",
+            "5.5.1",
+            "5.5.2",
+            "5.5.3",
+            "5.5.4",
+            "5.5.5",
+            "5.5.6",
+            "5.6.1",
+            "5.6.2",
+            "5.6.3",
+            "5.6.4",
+            "5.6.5",
+            "5.6.6",
+            "5.6.7",
+            "5.6.8",
+            "5.6.9",
+            "5.7.1",
+            "5.7.2",
+            "5.7.3",
+            "5.7.4",
+            "5.7.5",
+            "5.8.1",
+            "5.8.2",
+            "5.10.1",
+            "5.10.2",
+            "5.10.3",
+            "5.11.1",
+            "5.11.2",
+            "5.11.3",
+            "5.11.4",
+            "5.12.1",
+            "5.12.2",
+            "5.12.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|3|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-0b2b3f8cd3",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[112] R19 NR_AIML_air (43)",
+      "topicKey": "35492a65",
+      "agendaItems": [
+        "6.1",
+        "8.3.4",
+        "8.3.5",
+        "8.3.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "6.1",
+          "label": "[112] R19 NR_AIML_air (43)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.4",
+          "label": "[112] R19 NR_AIML_air (43)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.5",
+          "label": "[112] R19 NR_AIML_air (43)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.3.7",
+          "label": "[112] R19 NR_AIML_air (43)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "COEFEE BREAK AH[102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "6.1",
+            "8.3.4",
+            "8.3.5",
+            "8.3.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|1|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-e93ae8c5ab",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "[201] NR_RRM_Ph6",
+      "topicKey": "ae3f90c2",
+      "agendaItems": [
+        "7.4.2",
+        "7.4.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.4.2",
+          "label": "[201] NR_RRM_Ph6",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.4.3.2",
+          "label": "[201] NR_RRM_Ph6",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.4.2",
+            "7.4.3.2"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|2|10:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-66e10943e7",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Segmented precompensation, chaired by Rafhael (Nokia)",
+      "topicKey": "b7bcd947",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|08:30|3|10:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-e913da05e5",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-dfbb462b9c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR1 Ad-hoc: R20 RRM",
+      "topicKey": "ba1aec15",
+      "agendaItems": [
+        "7.11"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.11",
+          "label": "BR1 Ad-hoc: R20 RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[204] NR_MIMO_Ph6_RRM, Chaired by Miao Wang (MediaTek)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.11"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|11:00|4|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-9b87f01f93",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Demod and OTA Maintenance",
+      "topicKey": "bdf7492c",
+      "agendaItems": [
+        "10.5.1",
+        "10.8",
+        "4.5.4",
+        "4.6.4",
+        "10.5.2",
+        "10.9.2",
+        "4.5.6",
+        "10.9",
+        "8.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.5.1",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.4",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.4",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.5.2",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9.2",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.6",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.7",
+          "label": "Demod and OTA Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[217] Demod_Maintenance_up_to_R17 \u00b7 [218] Demod_Maintenance_R18_R19 \u00b7 [219] OTA_Maintenance \u00b7 Ad-hoc on [210] [211] 6G Demod_Part1&Part2 after online disucssion",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "10.5.1",
+            "10.8",
+            "4.5.4",
+            "4.6.4",
+            "10.5.2",
+            "10.9.2",
+            "4.5.6",
+            "10.9",
+            "8.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|11:00|2|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-ff7574e2e5",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "5G Basket and spectrum (cont)",
+      "topicKey": "5cf8f618",
+      "agendaItems": [
+        "10.6.1",
+        "10.6.2",
+        "10.6.5",
+        "10.6.3",
+        "10.8",
+        "10.9.3",
+        "10.3",
+        "4.5.2",
+        "4.6.3",
+        "4.2.3",
+        "4.5.5",
+        "4.6.5",
+        "4.2.1.4",
+        "10.6.4",
+        "4.2.1.1",
+        "4.2.1.2",
+        "4.2.1.3",
+        "4.5.7"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "10.6.1",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.2",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.5",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.9.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.2",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.5",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.5",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.4",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.6.4",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.1",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.2",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.2.1.3",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.7",
+          "label": "5G Basket and spectrum (cont)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Maintenance \u00b7 [301] NR_IoT_NTN_Maint_Legacy_RF (40) \u00b7 [302] NR_IoT_NTN_Maint_Legacy_Demod_TEI (5) \u00b7 [303] BSRF_Maintenance_Legacy_TEI (18) \u00b7 [304] BSRF_Maintenance_TEI (28) \u00b7 [305] NR_IoT_NTN_Maintenance (21) \u00b7 [306] NR_IoT_NTN_Maintenance_RRM (56) \u00b7 [307] Ku_band_Maintenance (5) \u00b7 [308] Ambient_IoT_Maintenance (9)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "10.6.1",
+            "10.6.2",
+            "10.6.5",
+            "10.6.3",
+            "10.8",
+            "10.9.3",
+            "10.3",
+            "4.5.2",
+            "4.6.3",
+            "4.2.3",
+            "4.5.5",
+            "4.6.5",
+            "4.2.1.4",
+            "10.6.4",
+            "4.2.1.1",
+            "4.2.1.2",
+            "4.2.1.3",
+            "4.5.7"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|11:00|3|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-43816361a6",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Maintenance",
+      "topicKey": "5b30e2c5",
+      "agendaItems": [
+        "4.2.2",
+        "10.7",
+        "4.5.1",
+        "4.3",
+        "4.6.1",
+        "10.2.3",
+        "10.2.1",
+        "10.2.2",
+        "10.8",
+        "4.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "4.2.2",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.7",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.5.1",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.3",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.6.1",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.2.3",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.2.1",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.2.2",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "10.8",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.4",
+          "label": "Maintenance",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[113] R19_spectrum_maintenance () \u00b7 [114] R19_UERF_maintenance_Part1() \u00b7 [115] R19_UERF_maintenance_Part2 () \u00b7 [116] Upto_R17_UERF_maintenance() \u00b7 [117] R18_UERF_maintenance () \u00b7 [119] R19 NR AIML air maintenance",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "4.2.2",
+            "10.7",
+            "4.5.1",
+            "4.3",
+            "4.6.1",
+            "10.2.3",
+            "10.2.1",
+            "10.2.2",
+            "10.8",
+            "4.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|11:00|1|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-7f79103f8c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "[206] NR_Mob_Ph5_RRM, Chaired by Roy Hu (OPPO)",
+      "topicKey": "f262169f",
+      "agendaItems": [
+        "7.13"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.13",
+          "label": "[206] NR_Mob_Ph5_RRM, Chaired by Roy Hu (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.13"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|11:00|4|12:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-0c01bb2c6b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-58d6207c0b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "BR2 Ad-hoc: NTN: [347] NR_IoT_NTN_Ph2",
+      "topicKey": "629090b8",
+      "agendaItems": [
+        "7.6.4.1",
+        "7.6.4.2",
+        "7.6.2",
+        "7.6.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.6.4.1",
+          "label": "BR2 Ad-hoc: NTN: [347] NR_IoT_NTN_Ph2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.6.4.2",
+          "label": "BR2 Ad-hoc: NTN: [347] NR_IoT_NTN_Ph2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.6.2",
+          "label": "BR2 Ad-hoc: NTN: [347] NR_IoT_NTN_Ph2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.6.3",
+          "label": "BR2 Ad-hoc: NTN: [347] NR_IoT_NTN_Ph2",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[346] NR_IoT_NTN_Ph2 \u00b7 Chaired by Jeffery (MTK) and Tank (CHTTL)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.6.4.1",
+            "7.6.4.2",
+            "7.6.2",
+            "7.6.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|4|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-6cb3970736",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Ad-hoc: 14:30 to 16:30 [205] NR_AIML_Mob_RRM",
+      "topicKey": "3022268d",
+      "agendaItems": [
+        "7.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.12",
+          "label": "Ad-hoc: 14:30 to 16:30 [205] NR_AIML_Mob_RRM",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|2|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-424f6215cc",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Maintenance (cont)",
+      "topicKey": "50d3c625",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Ad-hoc:  6G coex 7 GHz Starting 14:45 \u00b7 6G coexistence, chaired by Michal (Huawei)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|3|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-1e27209cb4",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "16:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "EARLY RETURN TO",
+      "topicKey": "d0409ce8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "General RF and UE RF \u00b7 Spectrum \u00b7 Operational efficiency \u00b7 Spectrum sharing \u00b7 RRM \u00b7 System parameter",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|1|14:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-69de530425",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "NTN-NTN coexistence, chaired by Michal",
+      "topicKey": "af96fe50",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|3|16:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-150c3ed828",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "[111] 6G operation efficiency by Aijun (CATT)",
+      "topicKey": "5286dd1d",
+      "agendaItems": [
+        "8.12"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.12",
+          "label": "[111] 6G operation efficiency by Aijun (CATT)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.12"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|14:30|1|16:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-013d20b981",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad hoc: [104] Spectrum, Chaired by Johannes(Nokia)",
+      "topicKey": "0817180e",
+      "agendaItems": [
+        "8.5.1",
+        "8.5.2",
+        "8.5.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.5.1",
+          "label": "Main Ad hoc: [104] Spectrum, Chaired by Johannes(Nokia)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.2",
+          "label": "Main Ad hoc: [104] Spectrum, Chaired by Johannes(Nokia)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.5.3",
+          "label": "Main Ad hoc: [104] Spectrum, Chaired by Johannes(Nokia)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.5.1",
+            "8.5.2",
+            "8.5.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|17:00|4|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c5596b9e30",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Ad-hoc or Early Return-to",
+      "topicKey": "14475a0a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|17:00|2|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-0d3699f267",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: Rel-20 UAV: [351] NR_UAV chaired by Bin (Qualcomm)",
+      "topicKey": "bb5eb03a",
+      "agendaItems": [
+        "7.7.2",
+        "7.7.3",
+        "7.7.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "7.7.2",
+          "label": "BR2 Ad-hoc: Rel-20 UAV: [351] NR_UAV chaired by Bin (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.7.3",
+          "label": "BR2 Ad-hoc: Rel-20 UAV: [351] NR_UAV chaired by Bin (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.7.4",
+          "label": "BR2 Ad-hoc: Rel-20 UAV: [351] NR_UAV chaired by Bin (Qualcomm)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "7.7.2",
+            "7.7.3",
+            "7.7.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|17:00|3|17:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-efb45340e9",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "17:15",
+      "endTime": "18:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+      "topicKey": "b790afd0",
+      "agendaItems": [
+        "8.8.1",
+        "8.8.2",
+        "8.8.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.8.1",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.2",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.8.3",
+          "label": "Main Ad-hoc: [107-A] 6G AI, Chaired by Jackson (Samsung)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.8.1",
+            "8.8.2",
+            "8.8.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|17:00|1|17:15",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-7d0d1733ac",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-ad-hoc",
+      "roomName": "Ad hoc",
+      "topic": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+      "topicKey": "08b2133c",
+      "agendaItems": [
+        "8.2.1",
+        "8.2.2",
+        "8.2.6",
+        "8.2.3",
+        "8.2.4",
+        "8.2.5"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.2.1",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.2",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.6",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.3",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.4",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.2.5",
+          "label": "Main Ad hoc: [101] System Parameter, Chaired by Leo (Huawei)/Jinqiang (OPPO)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.2.1",
+            "8.2.2",
+            "8.2.6",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|18:00|4|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-c8d52aeb4c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Ad-hoc: [213] 6G testability and OTA & [212] NR_UE_OTA_Enh, Chaired by Ruixin (vivo)",
+      "topicKey": "5570288a",
+      "agendaItems": [
+        "8.11",
+        "7.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.11",
+          "label": "Ad-hoc: [213] 6G testability and OTA & [212] NR_UE_OTA_Enh, Chaired by Ruixin (vivo)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "7.3",
+          "label": "Ad-hoc: [213] 6G testability and OTA & [212] NR_UE_OTA_Enh, Chaired by Ruixin (vivo)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.11",
+            "7.3"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|18:00|2|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-468c968b9d",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "BR2 Ad-hoc: 6G Sensing coex",
+      "topicKey": "99ba243f",
+      "agendaItems": [
+        "8.10.4",
+        "8.10.5",
+        "8.10.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.10.4",
+          "label": "BR2 Ad-hoc: 6G Sensing coex",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.5",
+          "label": "BR2 Ad-hoc: 6G Sensing coex",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "8.10.6",
+          "label": "BR2 Ad-hoc: 6G Sensing coex",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "[362] 6G_sensing coex, chaired by Fei (ZTE)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.10.4",
+            "8.10.5",
+            "8.10.6"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|18:00|3|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-072235a9be",
+      "meetingId": "ran4-119",
+      "date": "2026-05-21",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Main Ad-hoc: [107-B] 6G AI, Chaired by Santhan (Ericsson)",
+      "topicKey": "ce0370d3",
+      "agendaItems": [
+        "8.8.4"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "8.8.4",
+          "label": "Main Ad-hoc: [107-B] 6G AI, Chaired by Santhan (Ericsson)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "mode": "offline",
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [
+            "8.8.4"
+          ],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-21|18:00|1|18:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-bd6c55cbe8",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Return to",
+      "topicKey": "6e7a662a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "5G PHY AI and AI mobility \u00b7 5G RRM \u00b7 Demod",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|08:00|2|08:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-30e02b994b",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "10:30",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Return to",
+      "topicKey": "6e7a662a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G system parameter \u00b7 6G UE RF \u00b7 6G spectrum \u00b7 6G spectrum sharing",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|08:00|1|08:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-de100716a9",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "08:30",
+      "endTime": "10:30",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Return to",
+      "topicKey": "6e7a662a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NTN RRM (306) \u00b7 NTN UE RF, SAN RF (301, 302, 305, 307) \u00b7 Rel-20 NTN (346, 347, 348, 349, 350) \u00b7 A-IoT (308, 352, 353) \u00b7 UAV (351) \u00b7 5G BSRF (303, 304, 345)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|08:00|3|08:30",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-20f3184b1c",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-b5c896f925",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:45",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Return to",
+      "topicKey": "6e7a662a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Demod: Cont. \u00b7 OTA",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|11:00|2|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b66a04a423",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:45",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Return to",
+      "topicKey": "6e7a662a",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Spectrum (320, 321, 322, 323, 324, 325, 326, 327 328 329) \u00b7 5G UE RF (340, 341, 342) \u00b7 6G BSRF and coex (360, 361) \u00b7 6G Sensing (362, 363)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|11:00|3|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-43de4b4822",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:45",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "6G RRM",
+      "topicKey": "5b2f3748",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "6G AI \u00b7 6G operation efficiency \u00b7 5GA R19 AI \u00b7 5GA spectrum and RF maintenance",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|11:00|1|11:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-fb67a61ac6",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "12:45",
+      "endTime": "13:45",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "ran4-119-a0f2975b85",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br1",
+      "roomName": "BR1",
+      "topic": "Return to (final round)",
+      "topicKey": "a092fcc9",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "(until end of meeting)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|15:00|2|15:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-50270517ee",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-br2",
+      "roomName": "BR2",
+      "topic": "Return to (final round)",
+      "topicKey": "a092fcc9",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "(until end of meeting)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|15:00|3|15:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    },
+    {
+      "sessionId": "ran4-119-b884ecbfa4",
+      "meetingId": "ran4-119",
+      "date": "2026-05-22",
+      "day": "Friday",
+      "startTime": "15:00",
+      "endTime": "18:00",
+      "roomId": "ran4-119-main",
+      "roomName": "Main",
+      "topic": "13 Any other business",
+      "topicKey": "e46b0a76",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "mode": "online",
+      "kind": "session",
+      "status": "scheduled",
+      "note": "14 Close of the meeting \u00b7 (until end of meeting)",
+      "sources": [
+        {
+          "sourceId": "ran4-119-5f02353f31",
+          "contributed": [],
+          "cell": "RAN4_119_meeting_schedule_v11.pptx|2026-05-22|15:00|1|15:00",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran4-pptx"
+    }
+  ],
+  "conflicts": [],
+  "ingest": {
+    "state": "ok",
+    "lastSuccessfulAt": "2026-11-23T13:38:56Z",
+    "lastAttemptAt": "2026-11-23T13:38:56Z"
+  }
+}

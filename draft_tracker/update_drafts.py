@@ -72,6 +72,25 @@ def _ran3_resolver(slug: str):
     return resolve
 
 
+def _ran4_resolver(slug: str):
+    """RAN4: "[121][201] NR_RRM_Ph6" -> the first agenda item of topic 201 (topics.json)."""
+    from draft_tracker.agenda_mapper import RAN4_TOPIC_RE
+
+    path = MEETINGS_DIR / slug / "topics.json"
+    try:
+        topics = json.loads(path.read_text()) if path.exists() else {}
+    except json.JSONDecodeError:
+        topics = {}
+
+    def resolve(name: str):
+        m = RAN4_TOPIC_RE.match(name)
+        codes = topics.get(m.group(1).upper(), []) if m else []
+        return codes[0] if codes else None
+
+    resolve.topic_first = True  # type: ignore[attr-defined]
+    return resolve
+
+
 def _meeting_folder(slug: str) -> str | None:
     path = MEETINGS_DIR / slug / "meeting.json"
     if not path.exists():
@@ -161,7 +180,8 @@ def main() -> int:
             previous=previous,
             topic_resolver=(
                 _ran2_resolver(slug) if wg.key == "RAN2"
-                else _ran3_resolver(slug) if wg.key == "RAN3" else None
+                else _ran3_resolver(slug) if wg.key == "RAN3"
+                else _ran4_resolver(slug) if wg.key == "RAN4" else None
             ),
             monitoring=meeting.get("status") != "completed",
             config=ScanConfig(hash_files=args.hash),

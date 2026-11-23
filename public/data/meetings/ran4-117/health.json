@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran4-117",
+  "schedule": {
+    "state": "validation-failed",
+    "lastAttemptAt": "2026-11-23T13:39:00Z",
+    "gaps": [],
+    "errors": [
+      "2025-11-17 BR1: 18:00\u201318:00 ends before it starts ('Demod Ad-hoc:')",
+      "2025-11-18 Ad hoc: 11:00\u201311:00 ends before it starts ('BDaT Ad-hoc:  Rel-19 Maintenance')",
+      "2025-11-19 Ad hoc: 11:00\u201309:30 ends before it starts ('RRM Ad-hoc:')",
+      "2025-11-19 Ad hoc: 18:00\u201318:00 ends before it starts ('Main Ad-hoc:')",
+      "2025-11-19 Ad hoc 09:30-13:00 [217] NR_XR_Ph3_RRM, Chaired by Rafael Paiva (Nokia): overlaps the previous item (ends 10:30)",
+      "2025-11-20 Ad hoc 18:00-19:30 Main Ad hoc: [111] 6G RAN4 operation efficiency, Chaired by Aijun (CATT): overlaps the previous item (ends 18:15)"
+    ]
+  },
+  "remoteFtp": {
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "No timetable has been published for this meeting yet."
+    },
+    {
+      "level": "info",
+      "text": "No draft index has been published for this meeting yet."
+    }
+  ],
+  "updatedAt": "2026-11-23T13:39:00Z"
+}

@@ -1,6 +1,7 @@
 import { queryOptions } from "@tanstack/react-query";
 import { fetchData } from "@/lib/dataUrl";
 import type { Comeback } from "@/lib/comebacks";
+import type { TopicMap } from "@/lib/ran4Topics";
 import { probeLiveDrafts, type LiveDraftOrigin, type VenueStatus } from "./draftLiveSource";
 import type { Meeting } from "@/types/meeting";
 import type {
@@ -116,7 +117,16 @@ export async function loadDraftsLive(
         /* comebacks are optional */
       }
     }
-    const live = await probeLiveDrafts(meeting, published.index, [], comebacks);
+    let topics: TopicMap | undefined;
+    if (meeting.slug.startsWith("ran4-")) {
+      try {
+        const res = await fetchData(`meetings/${meeting.slug}/topics.json`);
+        topics = res.ok ? ((await res.json()) as TopicMap) : {};
+      } catch {
+        topics = {};
+      }
+    }
+    const live = await probeLiveDrafts(meeting, published.index, [], comebacks, topics);
     if (live.origin === "published") {
       return {
         ...published,

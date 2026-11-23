@@ -1,4 +1,5 @@
 import { matchComebackFolder, type Comeback } from "@/lib/comebacks";
+import { topicFolderCode, type TopicMap } from "@/lib/ran4Topics";
 import type { Meeting } from "@/types/meeting";
 import { draftRoots, groupOfMeeting } from "@/lib/workingGroup";
 import type {
@@ -128,9 +129,22 @@ async function crawl(rootUrl: string): Promise<CrawlResult | null> {
 
 const AGENDA_RE = /(?:^|[^\d])(\d{1,2}(?:\.\d{1,2}){0,4})(?=[^\d]|$)/;
 
-function agendaFromPath(path: string, known: Set<string>, comebacks: Comeback[] = []): string | null {
+function agendaFromPath(
+  path: string,
+  known: Set<string>,
+  comebacks: Comeback[] = [],
+  topics?: TopicMap,
+): string | null {
   const segments = path.split("/");
   for (let i = segments.length - 1; i >= 0; i -= 1) {
+    // RAN4: "[121][201] NR_RRM_Ph6" is named by topic; "121" is the meeting.
+    if (topics) {
+      const t = topicFolderCode(segments[i] ?? "", topics);
+      if (t !== undefined) {
+        if (t) return t;
+        continue;
+      }
+    }
     // RAN3: "CB # 2_R19PSCellinfo" belongs to its comeback's agenda item.
     const cb = comebacks.length ? matchComebackFolder(segments[i] ?? "", comebacks) : null;
     if (cb) return cb.agendaCode;
@@ -258,6 +272,8 @@ export function mergeLive(
     baseUrl: string;
     agendaCodes: Set<string>;
     comebacks?: Comeback[];
+    /** RAN4 only: topic -> agenda items (topics.json). */
+    topics?: TopicMap;
     /** True when the live tree is authoritative — i.e. during the meeting week. */
     reconcile?: boolean;
   },
@@ -296,7 +312,7 @@ export function mergeLive(
       sourceType: meta.sourceType,
       firstSeenAt: now,
       lastSeenAt: now,
-      agendaItemId: agendaFromPath(f.path, meta.agendaCodes, meta.comebacks),
+      agendaItemId: agendaFromPath(f.path, meta.agendaCodes, meta.comebacks, meta.topics),
       agendaConfidence: 0.6,
       agendaMethod: "live-path",
       parentPath: f.parent || null,
@@ -358,7 +374,7 @@ export function mergeLive(
       documentKey: key,
       firstSeenAt: now,
       lastSeenAt: now,
-      agendaItemId: folder?.agendaItemId ?? agendaFromPath(file.path, meta.agendaCodes, meta.comebacks),
+      agendaItemId: folder?.agendaItemId ?? agendaFromPath(file.path, meta.agendaCodes, meta.comebacks, meta.topics),
       folderPath: file.folderPath,
       depth: file.path.split("/").length - 1,
       size: file.size ?? null,
@@ -523,6 +539,7 @@ export async function probeLiveDrafts(
   published: DraftIndex | null,
   agendaCodes: string[] = [],
   comebacks: Comeback[] = [],
+  topics?: TopicMap,
 ): Promise<LiveDraftReport> {
   const checkedAt = new Date().toISOString();
   if (typeof window === "undefined") {
@@ -569,6 +586,7 @@ export async function probeLiveDrafts(
       baseUrl: candidate.url,
       agendaCodes: codes,
       comebacks,
+      ...(topics ? { topics } : {}),
       // Inside the meeting week the live tree holds this meeting's files, so
       // what it does not list is withdrawn rather than merely un-replicated.
       // Only on meeting days; the day before/after both trees count.

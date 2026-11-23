@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran4-118-bis",
+  "schedule": {
+    "state": "validation-failed",
+    "lastAttemptAt": "2026-11-23T13:39:00Z",
+    "gaps": [],
+    "errors": [
+      "2026-04-14 Main 08:30: no time for '[101-B] System Parameter, Chaired by Jingqiang (OPPO)'",
+      "2026-04-15 Main 08:30: no time for '[102-A] 6G General RF and UE RF, Chaired by Toni (Qualcomm)'",
+      "2026-04-16 Main 08:30: no time for '[102-B] 6G General RF and UE RF, Chaired by Haijie (Xiaomi)'",
+      "2026-04-16 BR2 15:30-16:30 BR2 Ad-hoc: Rel-20 UAV: [351] NR_UAV chaired by Bin (Qualcomm): overlaps the previous item (ends 16:30)"
+    ]
+  },
+  "remoteFtp": {
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "No timetable has been published for this meeting yet."
+    },
+    {
+      "level": "info",
+      "text": "No draft index has been published for this meeting yet."
+    }
+  ],
+  "updatedAt": "2026-11-23T13:39:00Z"
+}

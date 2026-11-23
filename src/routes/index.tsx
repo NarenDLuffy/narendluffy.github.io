@@ -14,17 +14,17 @@ import { useDeadlines } from "@/hooks/useDeadlines";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "3GPP Companion — RAN Plenary, RAN1, RAN2 and RAN3 meeting schedules" },
+      { title: "3GPP Companion — RAN Plenary, RAN1, RAN2, RAN3 and RAN4 meeting schedules" },
       {
         name: "description",
         content:
-          "Live RAN Plenary, RAN1, RAN2 and RAN3 meeting schedules. See which sessions are running now, which room they are in, and what starts next.",
+          "Live RAN Plenary, RAN1, RAN2, RAN3 and RAN4 meeting schedules. See which sessions are running now, which room they are in, and what starts next.",
       },
-      { property: "og:title", content: "3GPP Companion — RAN Plenary, RAN1, RAN2 and RAN3 meeting schedules" },
+      { property: "og:title", content: "3GPP Companion — RAN Plenary, RAN1, RAN2, RAN3 and RAN4 meeting schedules" },
       {
         property: "og:description",
         content:
-          "Live RAN Plenary, RAN1, RAN2 and RAN3 schedules built automatically from the published meeting documents.",
+          "Live RAN Plenary, RAN1, RAN2, RAN3 and RAN4 schedules built automatically from the published meeting documents.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

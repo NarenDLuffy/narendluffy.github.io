@@ -21,8 +21,8 @@ export const crawlSyncDrafts = createServerFn({ method: "POST" })
           .url()
           .max(300)
           .refine(
-            (u) => /^https:\/\/www\.3gpp\.org\/ftp\/Meetings_3GPP_SYNC\/RAN[123]?\//.test(u),
-            "url must be inside a public RAN/RAN1/RAN2/RAN3 sync tree",
+            (u) => /^https:\/\/www\.3gpp\.org\/ftp\/Meetings_3GPP_SYNC\/RAN[1-4]?\//.test(u),
+            "url must be inside a public RAN/RAN1–RAN4 sync tree",
           ),
       })
       .parse(data),

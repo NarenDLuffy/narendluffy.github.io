@@ -81,6 +81,8 @@ def write_meeting(bundle: ScheduleBundle) -> None:
     (out / "changes.json").write_text(json.dumps(data["changes"], indent=2))
     if bundle.comebacks is not None:
         (out / "comebacks.json").write_text(json.dumps(bundle.comebacks, indent=2))
+    if bundle.topics is not None:
+        (out / "topics.json").write_text(json.dumps(bundle.topics, indent=2))
 
 
 def write_index(bundles: list[ScheduleBundle]) -> None:
@@ -153,6 +155,10 @@ def build_for(pm) -> ScheduleBundle:
         from .ran3_schedule import build_bundle as build_ran3
 
         return build_ran3(pm)
+    if GROUPS[pm.group].schedule_style == "pptx_slides":
+        from .ran4_schedule import build_bundle as build_ran4
+
+        return build_ran4(pm)
     if GROUPS[pm.group].schedule_style == "time_plan":
         from .ranp_schedule import build_bundle as build_ranp
 

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "meetingId": "ran4-120-bis",
+  "schedule": {
+    "state": "validation-failed",
+    "lastAttemptAt": "2026-11-23T13:39:00Z",
+    "gaps": [],
+    "errors": [
+      "2026-10-13 BR1 14:30: no time for '[202] NR_UAV_req_RRM'",
+      "2026-10-13 Ad hoc 11:00-13:00 BR1 Ad-hoc: 5G-A & 6G OTA: overlaps the previous item (ends 12:00)",
+      "2026-10-13 Ad hoc 12:00-13:00 BR2 Ad-hoc: NR_UE_RF: [340] NR_UE_RF_Ph5, chaired by Alok (Nokia): overlaps the previous item (ends 13:00)"
+    ]
+  },
+  "remoteFtp": {
+    "credentials": false
+  },
+  "warnings": [
+    {
+      "level": "info",
+      "text": "No timetable has been published for this meeting yet."
+    },
+    {
+      "level": "info",
+      "text": "No draft index has been published for this meeting yet."
+    }
+  ],
+  "updatedAt": "2026-11-23T13:39:00Z"
+}

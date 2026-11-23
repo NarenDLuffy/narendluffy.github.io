@@ -38,5 +38,6 @@
 - [ ] Presence/alerts pushed live instead of polled
 - [ ] "Only if changed" requests + shared download cache for ingestion; jobs slow outside meeting window
 - [x] RAN Plenary schedule reader (Main + Breakout lanes, breaks, meetings during breaks; RAN#113 built)
-- [ ] RAN4 (PPTX), SA2 (Session Plan), SA1 (chair agenda) readers
+- [x] RAN4 schedule slides reader (RAN4#119–#121 built; topic list links agenda items and Drafts folders)
+- [ ] SA2 (Session Plan), SA1 (chair agenda) readers
 - [ ] Drafts Activity view (threads, versions, Summary #N milestones)
