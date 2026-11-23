@@ -78,10 +78,6 @@ function HelpPage() {
             <li>This app adds room check-in, "colleague needed" alerts, phone notifications and My agenda.</li>
             <li>This app merges several chair files per meeting and keeps track of which file said what.</li>
             <li>This app never guesses times: unclear blocks stay whole instead of being split.</li>
-            <li>
-              This app's per-agenda Activity timeline of draft versions and moderator summaries
-              comes from a separate project reference, not 3GPPSchedule.
-            </li>
           </ul>
           <p><strong>Ideas taken from it</strong></p>
           <ul className="list-disc space-y-1 pl-4">
