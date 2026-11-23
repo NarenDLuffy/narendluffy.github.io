@@ -87,7 +87,6 @@ function HelpPage() {
           <ul className="list-disc space-y-1 pl-4">
             <li>Only download a file again when it has changed, and list each folder once per update.</li>
             <li>Pick the newest schedule by its own revision, and never replace it with an older one.</li>
-            <li>Where each working group's schedule file lives.</li>
             <li>Spot breaks from cell colours and keep unplaced text as notes.</li>
           </ul>
         </Section>
