@@ -140,7 +140,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <main className="mx-auto max-w-6xl px-4 pb-28 pt-3 md:pb-12">{children}</main>
 
-      <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
+      <p className="mx-auto max-w-6xl px-4 pb-1 text-[11px] leading-snug text-muted-foreground md:pb-2">
         Unofficial RAN Plenary, RAN1, RAN2, RAN3, RAN4, SA1 and SA2 meeting companion. Schedule information is automatically generated
         from meeting documents and may contain errors.{" "}
         <Link to="/help" className="underline underline-offset-2">
@@ -160,6 +160,11 @@ export function AppShell({ children }: { children: ReactNode }) {
           3GPPSchedule
         </a>{" "}
         project for ideas used here.
+      </p>
+
+      <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
+        This is a personal pet project developed independently and is not affiliated with or
+        endorsed by Ericsson or 3GPP.
       </p>
 
       <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 backdrop-blur md:hidden">
