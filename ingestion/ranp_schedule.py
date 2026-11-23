@@ -261,9 +261,11 @@ def build_bundle(pm: PortalMeeting, *, today: date | None = None) -> ScheduleBun
     agenda: list[AgendaItem] = []
     for a_url in ([f"{folder}Agenda/agenda.csv"] if folder else []) + ([SYNC_AGENDA + "agenda.csv"] if phase in ("week", "edge") else []):
         try:
-            r = requests.get(a_url, timeout=30)
-            if r.ok and r.text.strip():
-                agenda = parse_agenda_csv(r.content.decode("utf-8", "replace"), meeting.id)
+            from .http_cache import cached_get
+
+            body = cached_get(a_url, timeout=30)
+            if body and body.strip():
+                agenda = parse_agenda_csv(body.decode("utf-8", "replace"), meeting.id)
                 if agenda:
                     break
         except Exception:  # noqa: BLE001

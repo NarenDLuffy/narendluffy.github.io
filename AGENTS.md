@@ -21,3 +21,5 @@
 - The backend job /api/public/jobs/schedule-watch (every 5 min) dispatches update-schedule.yml when Meetings Sync holds a schedule DOCX newer than health.lastAttemptAt — GitHub's own cron drops runs for hours.
 
 - ingestion/ has its own AGENTS.md (schedule parsing and canonical rules) — read it before changing files there.
+- Presence and alerts refresh on a data-free Realtime broadcast "doorbell" (src/lib/doorbell.ts, channel = hash of company code + meeting) with a slow poll fallback — instant updates without exposing the company code or adding polling load.
+- Ingestion downloads go through ingestion/http_cache.py (ETag/Last-Modified under .ingestion-state) — unchanged 3GPP files cost a 304, not a full download.

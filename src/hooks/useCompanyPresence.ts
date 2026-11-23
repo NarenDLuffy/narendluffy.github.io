@@ -13,6 +13,7 @@ import {
   subscribeRemotePresenceStatus,
   useSharedPresence,
 } from "@/services/remotePresenceStore";
+import { ringDoorbell, subscribeDoorbell } from "@/lib/doorbell";
 
 // Shared, backend-backed presence: check-ins are visible on every device that
 // uses the same company code, not just the device that checked in.
@@ -53,7 +54,9 @@ export function useCompanyPresence(meetingId: string | undefined) {
     void refresh();
     const id = setInterval(() => {
       if (document.visibilityState === "visible") void refresh();
-    }, 30_000);
+    }, 120_000);
+    const unsub =
+      meetingId && identity.groupId ? subscribeDoorbell(identity.groupId, meetingId, () => void refresh()) : () => {};
     const onVisible = () => {
       if (document.visibilityState === "visible") void refresh();
     };
@@ -61,10 +64,11 @@ export function useCompanyPresence(meetingId: string | undefined) {
     window.addEventListener("focus", onVisible);
     return () => {
       clearInterval(id);
+      unsub();
       document.removeEventListener("visibilitychange", onVisible);
       window.removeEventListener("focus", onVisible);
     };
-  }, [refresh, identity.groupId]);
+  }, [refresh, identity.groupId, meetingId]);
 
   const join = useCallback((groupId: string, displayName: string) => {
     saveIdentity({ groupId, displayName });
@@ -83,15 +87,17 @@ export function useCompanyPresence(meetingId: string | undefined) {
       if (!meetingId) return;
       await checkIn({ meetingId, roomId, ...(sessionId ? { sessionId } : {}) });
       await refresh();
+      if (identity.groupId) void ringDoorbell(identity.groupId, meetingId);
     },
-    [meetingId, refresh],
+    [meetingId, refresh, identity.groupId],
   );
 
   const exit = useCallback(async () => {
     if (!meetingId) return;
     await checkOut(meetingId);
     await refresh();
-  }, [meetingId, refresh]);
+    if (identity.groupId) void ringDoorbell(identity.groupId, meetingId);
+  }, [meetingId, refresh, identity.groupId]);
 
   const mine = presence.find((p) => p.userId === identity.userId);
 

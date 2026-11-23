@@ -1,3 +1,4 @@
+import { DraftThreads } from "@/components/DraftThreads";
 import { createFileRoute, useParams } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
 import { DraftBreadcrumbs, DraftTree } from "@/components/DraftTree";
@@ -131,6 +132,8 @@ function DraftDetailPage() {
           </div>
         </section>
       ) : null}
+
+      <DraftThreads artifacts={artifacts} />
 
       <section>
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted-foreground">

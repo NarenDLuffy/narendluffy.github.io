@@ -6,6 +6,7 @@ import {
   type CompanyAlert,
 } from "@/lib/alerts.functions";
 import { getIdentity } from "@/services/presenceService";
+import { ringDoorbell, subscribeDoorbell } from "@/lib/doorbell";
 
 const DISMISS_KEY = "ran1live.company.dismissedAlerts.v1";
 const CHANGED = "ran1live:alerts-changed";
@@ -42,7 +43,9 @@ export function useCompanyAlerts(meetingId: string | undefined) {
     void refresh();
     const poll = setInterval(() => {
       if (document.visibilityState === "visible") void refresh();
-    }, 20_000);
+    }, 120_000);
+    const gid = getIdentity().groupId;
+    const unsub = meetingId && gid ? subscribeDoorbell(gid, meetingId, () => void refresh()) : () => {};
     const tick = setInterval(() => setNow(Date.now()), 30_000);
     const onVisible = () => {
       if (document.visibilityState === "visible") void refresh();
@@ -53,12 +56,13 @@ export function useCompanyAlerts(meetingId: string | undefined) {
     window.addEventListener(CHANGED, onChanged);
     return () => {
       clearInterval(poll);
+      unsub();
       clearInterval(tick);
       document.removeEventListener("visibilitychange", onVisible);
       window.removeEventListener("focus", onVisible);
       window.removeEventListener(CHANGED, onChanged);
     };
-  }, [refresh]);
+  }, [refresh, meetingId]);
 
   const dismiss = useCallback((ids: string[]) => {
     const live = new Set(alerts.map((a) => a.id));
@@ -72,7 +76,8 @@ export function useCompanyAlerts(meetingId: string | undefined) {
     if (!id.groupId) return;
     await cancelCompanyAlert({ data: { groupCode: id.groupId, id: alertId, senderId: id.userId } });
     await refresh();
-  }, [refresh]);
+    if (meetingId) void ringDoorbell(id.groupId, meetingId);
+  }, [refresh, meetingId]);
 
   const visible = alerts.filter(
     (a) => !dismissed.includes(a.id) && new Date(a.expiresAt).getTime() > now,
@@ -106,4 +111,5 @@ export async function summonColleague(args: {
     },
   });
   window.dispatchEvent(new Event(CHANGED));
+  void ringDoorbell(id.groupId, args.meetingId);
 }

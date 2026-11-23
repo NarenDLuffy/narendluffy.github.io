@@ -52,12 +52,11 @@ def download_to_temp(url: str) -> str | None:
         if content is None:
             return None
     else:
-        try:
-            response = http.get(url, timeout=60)
-            response.raise_for_status()
-        except Exception:
+        from .http_cache import cached_get
+
+        content = cached_get(url, timeout=60, session=http)
+        if content is None:
             return None
-        content = response.content
     suffix = os.path.splitext(unquote(url))[1][:8] or ".bin"
     fd, path = tempfile.mkstemp(suffix=suffix)
     with os.fdopen(fd, "wb") as handle:
@@ -1034,9 +1033,12 @@ def _apply_chair_note_titles(
         import docx  # type: ignore
         from .portal import _session  # type: ignore
 
-        response = _session.get(newest.url, timeout=60)
-        response.raise_for_status()
-        document = docx.Document(io.BytesIO(response.content))
+        from .http_cache import cached_get
+
+        body = cached_get(newest.url, timeout=60, session=_session)
+        if body is None:
+            raise RuntimeError("download failed")
+        document = docx.Document(io.BytesIO(body))
     except Exception as exc:  # optional enrichment
         print(f"  chair-notes agenda titles unavailable: {exc}")
         return items
