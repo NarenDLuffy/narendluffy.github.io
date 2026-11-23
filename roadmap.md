@@ -34,7 +34,7 @@
 - [x] Shared Drafts scan for everyone (one 3GPP crawl per tree per ~90 s, database lock)
 - [x] Hidden tabs/locked phones stop refreshing Drafts, presence and alerts; slower polling
 - [x] Working-group dropdown (new groups listed as coming soon)
-- [x] Credit to Karl (karlla1220) on home page and Help
+- [x] Credit to Duckhyun Bae (karlla1220) on home page and Help
 - [x] Presence/alerts pushed live instead of polled (live ping, 2-min fallback poll)
 - [x] "Only if changed" requests + shared download cache for ingestion (jobs already scan by meeting phase)
 - [x] RAN Plenary schedule reader (Main + Breakout lanes, breaks, meetings during breaks; RAN#113 built)

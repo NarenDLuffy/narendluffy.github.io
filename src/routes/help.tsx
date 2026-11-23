@@ -52,7 +52,7 @@ function HelpPage() {
           <p>
             Live Drafts folders are scanned once for everyone (about every 90 seconds) and shared,
             so more users do not mean more requests to 3GPP. Hidden tabs and locked phones do not
-            refresh. Thanks to Karl (karlla1220) and his{" "}
+            refresh. Thanks to Duckhyun Bae and his{" "}
             <a href="https://github.com/karlla1220/3GPPSchedule" target="_blank" rel="noreferrer" className="underline">
               3GPPSchedule
             </a>{" "}

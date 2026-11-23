@@ -150,7 +150,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <Link to="/admin" className="underline underline-offset-2">
           Ingestion status
         </Link>
-        {" · "}Thanks to Karl (karlla1220) and his{" "}
+        {" · "}Thanks to Duckhyun Bae and his{" "}
         <a
           href="https://github.com/karlla1220/3GPPSchedule"
           target="_blank"
