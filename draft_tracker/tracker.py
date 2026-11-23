@@ -280,6 +280,10 @@ def scan_meeting(
             modifiedAt=node.modified_at,
         )
         agenda_id = mapping.agenda_item_id if mapping else None
+        # SA1/SA2: a tdoc number in the file name names its agenda item (tdoc list).
+        by_tdoc = getattr(mapper.topic_resolver, "file_code", None)
+        if by_tdoc:
+            agenda_id = by_tdoc(node.name) or agenda_id
 
         if existing is None:
             artifact = DraftArtifact(

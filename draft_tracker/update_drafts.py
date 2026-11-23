@@ -91,6 +91,26 @@ def _ran4_resolver(slug: str):
     return resolve
 
 
+def _sa_resolver(slug: str, group: str):
+    """SA1/SA2: files by tdoc number (TDoc_List xlsx in Docs/), folders by work-item acronym."""
+    from draft_tracker.sa_tdocs import make_resolver, parse_tdoc_list
+
+    tdocs: dict[str, str] = {}
+    folder = _meeting_folder(slug)
+    number = slug.split("-")[1] if "-" in slug else ""
+    if folder and number:
+        try:
+            from ingestion.http_cache import cached_get
+
+            body = cached_get(f"{folder}Docs/TDoc_List_Meeting_{group}%23{number}.xlsx", timeout=60)
+            if body:
+                tdocs = parse_tdoc_list(body)
+        except Exception as exc:  # noqa: BLE001 - no tdoc list yet: folders only
+            print(f"{slug}: tdoc list unavailable: {exc}")
+    print(f"{slug}: {len(tdocs)} tdocs with agenda items")
+    return make_resolver(_agenda_codes(slug), tdocs)
+
+
 def _meeting_folder(slug: str) -> str | None:
     path = MEETINGS_DIR / slug / "meeting.json"
     if not path.exists():
@@ -181,7 +201,8 @@ def main() -> int:
             topic_resolver=(
                 _ran2_resolver(slug) if wg.key == "RAN2"
                 else _ran3_resolver(slug) if wg.key == "RAN3"
-                else _ran4_resolver(slug) if wg.key == "RAN4" else None
+                else _ran4_resolver(slug) if wg.key == "RAN4"
+                else _sa_resolver(slug, wg.key) if wg.key in ("SA1", "SA2") else None
             ),
             monitoring=meeting.get("status") != "completed",
             config=ScanConfig(hash_files=args.hash),
