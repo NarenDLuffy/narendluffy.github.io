@@ -19,7 +19,8 @@ class WorkingGroup:
     sync_name: str
     #: "single_grid": one schedule DOCX per meeting (RAN2); "chair_files": RAN1;
     #: "chair_notes_plus_sheet": chair-notes weekday table + offline XLSX (RAN3);
-    #: "time_plan": RAN Plenary chair time plan DOCX; "pptx_slides": RAN4 schedule slides.
+    #: "time_plan": RAN Plenary chair time plan DOCX; "pptx_slides": RAN4 schedule slides;
+    #: "session_plan": SA2 convenors' session plan DOCX.
     schedule_style: str
 
     @property
@@ -35,6 +36,8 @@ GROUPS: dict[str, WorkingGroup] = {
     #: RAN4: "RAN4_<n>_meeting_schedule_vNN.pptx" in Inbox/Meeting_Arrangements (ran4_schedule.py).
     "RAN4": WorkingGroup("RAN4", 382, "ran4", "RAN4", "pptx_slides"),
     "RAN": WorkingGroup("RAN", 373, "ran", "RAN", "time_plan"),
+    #: SA2: "S2-…_SA2-<n>-Session Plan - rNN.docx" in Inbox/Drafts/_Session_Plan_Updates (sa2_schedule.py).
+    "SA2": WorkingGroup("SA2", 385, "sa2", "SA2", "session_plan"),
 }
 
 

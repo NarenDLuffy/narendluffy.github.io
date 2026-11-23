@@ -141,7 +141,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <main className="mx-auto max-w-6xl px-4 pb-28 pt-3 md:pb-12">{children}</main>
 
       <p className="mx-auto max-w-6xl px-4 pb-28 text-[11px] leading-snug text-muted-foreground md:pb-8">
-        Unofficial RAN Plenary, RAN1, RAN2, RAN3 and RAN4 meeting companion. Schedule information is automatically generated
+        Unofficial RAN Plenary, RAN1, RAN2, RAN3, RAN4 and SA2 meeting companion. Schedule information is automatically generated
         from meeting documents and may contain errors.{" "}
         <Link to="/help" className="underline underline-offset-2">
           How to use this site

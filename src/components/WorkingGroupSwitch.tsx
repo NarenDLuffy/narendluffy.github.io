@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import type { WorkingGroup } from "@/types/meeting";
 
 /** Groups on the roadmap; listed so delegates see what is coming, not selectable yet. */
-const COMING_SOON = ["SA1", "SA2"];
+const COMING_SOON = ["SA1"];
 
 /** Working-group dropdown: the whole app follows the chosen group. */
 export function WorkingGroupSwitch() {

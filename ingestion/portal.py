@@ -85,6 +85,8 @@ def _to_meeting(row: dict[str, Any], group: str = "RAN1") -> PortalMeeting | Non
     match = title_re.search(title.replace("3GPP", "3GPP "))
     if not match:
         return None  # training sessions, social events, other technical bodies
+    if re.match(r"\s*-\s*AH\b", title.replace("3GPP", "3GPP ")[match.end():], re.I):
+        return None  # SA2's "#178-AH-e" ad-hoc e-meetings reuse the number; never overwrite the real meeting
     number = int(match.group("number"))
     kind = "bis" if match.group("suffix") else "regular"
     return PortalMeeting(

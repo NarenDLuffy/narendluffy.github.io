@@ -1,0 +1,2484 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T18:36:01Z",
+  "meetingId": "sa2-170",
+  "sessions": [
+    {
+      "sessionId": "sa2-170-ecb788382c",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Opening (1), Agenda (2), Reports (3)",
+      "topicKey": "070e0828",
+      "agendaItems": [
+        "1",
+        "2",
+        "3",
+        "4.1",
+        "19.50"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "1",
+          "label": "Opening (1), Agenda (2), Reports (3)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "2",
+          "label": "Opening (1), Agenda (2), Reports (3)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "3",
+          "label": "Opening (1), Agenda (2), Reports (3)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "4.1",
+          "label": "Opening (1), Agenda (2), Reports (3)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "19.50",
+          "label": "Opening (1), Agenda (2), Reports (3)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Common Issues (4.1) [15] \u00b7 Rel-19 (19.50) [9]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "1",
+            "2",
+            "3",
+            "4.1",
+            "19.50"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|09:00-10:30|r5|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1b14fe5f45",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-9bf61f9c7c",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "5GSAT_Ph3-ARC (19.1.2) [29]",
+      "topicKey": "a02fc426",
+      "agendaItems": [
+        "19.1.2",
+        "20.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.1.2",
+          "label": "5GSAT_Ph3-ARC (19.1.2) [29]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "20.1.1",
+          "label": "5GSAT_Ph3-ARC (19.1.2) [29]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "FS_5GSAT_Ph4_ARC (20.1.1) [73]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.1.2",
+            "20.1.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|11:00-12:30|r10|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-233b7095ce",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Pre-Rel-19 maint",
+      "topicKey": "6f3aebef",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "GMEC [9]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|11:00-12:30|r11|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-bf6d851b8a",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "TEI19 maintenance [10]",
+      "topicKey": "f5c651bf",
+      "agendaItems": [
+        "19.10.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.10.2",
+          "label": "TEI19 maintenance [10]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "UAS_Ph3 (19.10.2) [17]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.10.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|11:00-12:30|r9|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-7bdcc9759b",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Drafting: FS_6G_ARC (1300)",
+      "topicKey": "7e2cdeaa",
+      "agendaItems": [
+        "1300"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "1300",
+          "label": "Drafting: FS_6G_ARC (1300)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "1300"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|12:30-14:00|r12|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-2da3f0edfc",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "FS_5GSAT_Ph4_ARC (20.1.1) [73]",
+      "topicKey": "db518e7a",
+      "agendaItems": [
+        "20.1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.1.1",
+          "label": "FS_5GSAT_Ph4_ARC (20.1.1) [73]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.1.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|14:00-15:30|r14|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1c582c944b",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "FS_EnergySys_Ph2 (20.4.1) [53]",
+      "topicKey": "47da67ae",
+      "agendaItems": [
+        "20.4.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.4.1",
+          "label": "FS_EnergySys_Ph2 (20.4.1) [53]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.4.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|14:00-15:30|r15|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-074e258649",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "5G_ProSe_Ph3 (19.7.2) [17]",
+      "topicKey": "bfe6d469",
+      "agendaItems": [
+        "19.7.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.7.2",
+          "label": "5G_ProSe_Ph3 (19.7.2) [17]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.7.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|14:00-15:30|r13|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-3843ae8553",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-414f71b2ab",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "AIML_CN (19.15.2) [80]",
+      "topicKey": "34d3bb75",
+      "agendaItems": [
+        "19.15.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.15.2",
+          "label": "AIML_CN (19.15.2) [80]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.15.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|16:00-17:30|r18|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-6a19ac08de",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "AmbientIoT-ARC (19.14.2) [96]",
+      "topicKey": "90c932db",
+      "agendaItems": [
+        "19.14.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.14.2",
+          "label": "AmbientIoT-ARC (19.14.2) [96]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.14.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|16:00-17:30|r19|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-3e581ac8de",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "MASSS (19.13.2) [5]",
+      "topicKey": "fb78cc29",
+      "agendaItems": [
+        "19.13.2",
+        "19.6.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.13.2",
+          "label": "MASSS (19.13.2) [5]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "19.6.2",
+          "label": "MASSS (19.13.2) [5]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "VMR_Ph2 (19.6.2) [7]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.13.2",
+            "19.6.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|16:00-17:30|r17|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-350b4c798a",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-73150d00c6",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "FS_SMS2EC_ARC (20.8.1) [31]",
+      "topicKey": "424cbb41",
+      "agendaItems": [
+        "20.8.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.8.1",
+          "label": "FS_SMS2EC_ARC (20.8.1) [31]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.8.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|18:00-19:30|r22|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-16e4415627",
+      "meetingId": "sa2-170",
+      "date": "2025-08-25",
+      "day": "Monday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "FS_Sensing_ARC (20.2.1) [74]",
+      "topicKey": "2ee5b41b",
+      "agendaItems": [
+        "20.2.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.2.1",
+          "label": "FS_Sensing_ARC (20.2.1) [74]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.2.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-25|18:00-19:30|r23|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-2598efba6f",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Drafting: R20 AIML_CN_Ph2",
+      "topicKey": "c28b6f21",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|08:00-08:50|r2|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-de23080376",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Drafting: R20 AmbientIoT",
+      "topicKey": "e54c7b56",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|08:00-08:50|r3|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-3d3172a531",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Drafting: TEI20",
+      "topicKey": "0db948c6",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|08:00-08:50|r1|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-2a262fb456",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "08:50",
+      "endTime": "09:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-eef6a53e0b",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "FS_AIML_CN_Ph2 (20.3.1) [48]",
+      "topicKey": "37d0093a",
+      "agendaItems": [
+        "20.3.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.3.1",
+          "label": "FS_AIML_CN_Ph2 (20.3.1) [48]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.3.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|09:00-10:30|r6|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-d5b12c3a40",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "FS_AmbientIoT_ARC_Ph2 (20.5.1) [64]",
+      "topicKey": "cab605e1",
+      "agendaItems": [
+        "20.5.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.5.1",
+          "label": "FS_AmbientIoT_ARC_Ph2 (20.5.1) [64]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.5.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|09:00-10:30|r7|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-7ed6fba3a7",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Pre-Rel-19 maint",
+      "topicKey": "6f3aebef",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "5.x, 6.x, 7.x [14] \u00b7 5GSAT_ARC [3]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|09:00-10:30|r5|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c49c57c0b9",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-222c472fac",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "XRM_Ph2 (19.3.2) [61]",
+      "topicKey": "04d7f041",
+      "agendaItems": [
+        "19.3.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.3.2",
+          "label": "XRM_Ph2 (19.3.2) [61]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Pre-Rel-19 maint \u00b7 XRM [6] \u00b7 EDGE_Ph2 [4] \u00b7 NG_RTC [1]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.3.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|11:00-12:30|r10|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-31bb3c870d",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6",
+        "1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.1",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "General [21], WT1.1 [27]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6",
+            "1.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|11:00-12:30|r9|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-575cfe5f4f",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Drafting: FS_6G_ARC (1300)",
+      "topicKey": "7e2cdeaa",
+      "agendaItems": [
+        "1300"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "1300",
+          "label": "Drafting: FS_6G_ARC (1300)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "1300"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|12:30-14:00|r12|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-279b057f52",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "eEDGE_5GC_Ph3 (19.9.2) [28]",
+      "topicKey": "9aae2add",
+      "agendaItems": [
+        "19.9.2",
+        "19.2.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.9.2",
+          "label": "eEDGE_5GC_Ph3 (19.9.2) [28]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "19.2.2",
+          "label": "eEDGE_5GC_Ph3 (19.9.2) [28]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "NG_RTC_Ph2 (19.2.2) [42]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.9.2",
+            "19.2.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|14:00-15:30|r14|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-8df41ba2a9",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "WT3 [36], WT5 [29]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|14:00-15:30|r13|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-aadd333752",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-44d5102906",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "FS_NG_RTC_Ph3_ARC (20.7.1) [20]",
+      "topicKey": "e317743c",
+      "agendaItems": [
+        "20.7.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.7.1",
+          "label": "FS_NG_RTC_Ph3_ARC (20.7.1) [20]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.7.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|16:00-17:30|r18|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c99cbeb366",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "UIA_ARC (19.8.2) [25]",
+      "topicKey": "99f2a95a",
+      "agendaItems": [
+        "19.8.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.8.2",
+          "label": "UIA_ARC (19.8.2) [25]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.8.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|16:00-17:30|r19|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-8030850b46",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "WT5 [29], WT6 [21]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|16:00-17:30|r17|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-d12163f15a",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-bdc044ed0b",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "FS_Sensing_ARC (20.2.1) [74]",
+      "topicKey": "2ee5b41b",
+      "agendaItems": [
+        "20.2.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.2.1",
+          "label": "FS_Sensing_ARC (20.2.1) [74]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.2.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|18:00-19:30|r23|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-fa7e218a6e",
+      "meetingId": "sa2-170",
+      "date": "2025-08-26",
+      "day": "Tuesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Pre-Rel-19 maint",
+      "topicKey": "6f3aebef",
+      "agendaItems": [
+        "9.23.2",
+        "9.11.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "9.23.2",
+          "label": "Pre-Rel-19 maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "9.11.2",
+          "label": "Pre-Rel-19 maint",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "MINT [2] \u00b7 REDCAP [7] \u00b7 eNA_Ph3 (9.23.2) [10] \u00b7 eNS_Ph3 (9.11.2) [4]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "9.23.2",
+            "9.11.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-26|18:00-19:30|r21|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-cc654470fa",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Drafting: R20 FS_EnergySys_Ph2",
+      "topicKey": "0688f00c",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|08:00-08:50|r2|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-e8e997db53",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Drafting: TEI20",
+      "topicKey": "0db948c6",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|08:00-08:50|r1|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c3b9492fa2",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "08:50",
+      "endTime": "09:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-17a3e22865",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6",
+        "1.2",
+        "1.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.2",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.1",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "WT1.2 [86], WT1.1 [27]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6",
+            "1.2",
+            "1.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|09:00-10:30|r5|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-485c631824",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1d666f6335",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "EnergySys (19.4.2) [31]",
+      "topicKey": "7957e3b6",
+      "agendaItems": [
+        "19.4.2"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "19.4.2",
+          "label": "EnergySys (19.4.2) [31]",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "19.4.2"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|11:00-12:30|r11|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-8a6d5f5c57",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6",
+        "1.4",
+        "1.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.4",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.3",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "WT1.4 [11], WT1.3 [13], WT2 [16] (start after EnergySys)",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6",
+            "1.4",
+            "1.3"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|11:00-12:30|r9|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-13a263d04c",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Drafting: FS_ARCH_enIMS (1300)",
+      "topicKey": "ae521fc3",
+      "agendaItems": [
+        "1300"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "1300",
+          "label": "Drafting: FS_ARCH_enIMS (1300)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Drafting: FS_6G_ARC WT4 (1300)",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "1300"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|12:30-14:00|r12|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-5c84e8e23c",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "FS_6G_ARC (20.6.x)",
+      "topicKey": "458e30c7",
+      "agendaItems": [
+        "20.6",
+        "1.3"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "20.6",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        },
+        {
+          "code": "1.3",
+          "label": "FS_6G_ARC (20.6.x)",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "WT1.3 [13], WT7 [11], WT8 [6], WT4 [18]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "20.6",
+            "1.3"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|14:00-15:30|r13|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-498dd73486",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-975fc52829",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Work planning (30.x), etc",
+      "topicKey": "bf151ae6",
+      "agendaItems": [
+        "30"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "30",
+          "label": "Work planning (30.x), etc",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Including discussion of FS_ARCH_enIMS, TEI20 items [90]",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "30"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|16:00-17:30|r17|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-b53198efde",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-8b466a8279",
+      "meetingId": "sa2-170",
+      "date": "2025-08-27",
+      "day": "Wednesday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "For this meeting: finish by 17:30",
+      "topicKey": "b52bc66d",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-27|18:00-19:30|r21|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-605223b296",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|08:00-08:50|r2|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-11186ddb86",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|08:00-08:50|r3|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c95f35cf56",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|08:00-08:50|r1|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1f23601080",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "08:50",
+      "endTime": "09:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-6295ddbc71",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|09:00-10:30|r6|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-ccbbcec059",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|09:00-10:30|r7|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-275415227e",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|09:00-10:30|r5|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-442b8a9aa6",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-3c5aa8afa4",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|11:00-12:30|r10|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c4ba1c24c6",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|11:00-12:30|r11|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-77194e4543",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|11:00-12:30|r9|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-774c825dd7",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-edd85d2640",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|14:00-15:30|r14|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-688449d5bf",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|14:00-15:30|r15|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-764eb0e750",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|14:00-15:30|r13|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-794604820e",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-448268e5c5",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|16:00-17:30|r18|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-33c82916eb",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|16:00-17:30|r19|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-18b4a0520d",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|16:00-17:30|r17|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-e8897878f1",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-6fb9432169",
+      "meetingId": "sa2-170",
+      "date": "2025-08-28",
+      "day": "Thursday",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Work planning (30.x), etc",
+      "topicKey": "bf151ae6",
+      "agendaItems": [
+        "30"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "30",
+          "label": "Work planning (30.x), etc",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "Including discussion of FS_ARCH_enIMS, TEI20 items",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "30"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-28|18:00-19:30|r21|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-4e7ac74c9d",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|08:00-08:50|r2|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1991983e83",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|08:00-08:50|r3|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-6b03253c5d",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|08:00-08:50|r1|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-0a2ddde712",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "08:50",
+      "endTime": "09:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-8be314c1e4",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|09:00-10:30|r6|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1f73fe7474",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|09:00-10:30|r7|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-1a943a1327",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|09:00-10:30|r5|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-481ec05d9c",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "10:30",
+      "endTime": "11:00",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Coffee break",
+      "topicKey": "4c26a5db",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "break",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-7e58ca6d8a",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-1",
+      "roomName": "Breakout 1",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|11:00-12:30|r10|breakout1",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-6e2ac69273",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-breakout-2",
+      "roomName": "Breakout 2",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|11:00-12:30|r11|breakout2",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-75831896de",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Revisions",
+      "topicKey": "65b6bfc8",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "session",
+      "status": "scheduled",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|11:00-12:30|r9|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-c82aafb89b",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Lunch",
+      "topicKey": "09453054",
+      "agendaItems": [],
+      "agendaBreakdown": [],
+      "kind": "lunch",
+      "status": "scheduled",
+      "sources": [],
+      "derivation": "ran3-grid"
+    },
+    {
+      "sessionId": "sa2-170-d889497a56",
+      "meetingId": "sa2-170",
+      "date": "2025-08-29",
+      "day": "Friday",
+      "startTime": "13:30",
+      "endTime": "16:30",
+      "roomId": "sa2-170-main",
+      "roomName": "Main",
+      "topic": "Plenary session",
+      "topicKey": "c7933a04",
+      "agendaItems": [
+        "30.1"
+      ],
+      "agendaBreakdown": [
+        {
+          "code": "30.1",
+          "label": "Plenary session",
+          "minutes": null,
+          "startTime": null,
+          "endTime": null
+        }
+      ],
+      "kind": "session",
+      "status": "scheduled",
+      "note": "14:00 List of agreed tdocs for block approval \u00b7 Revisions (including 30.1) \u00b7 15:00 block approval of agreed tdocs \u00b7 Agreed tdocs not available by the time of the block approval may be turned to status OPEN on request.",
+      "sources": [
+        {
+          "sourceId": "sa2-170-9d98998400",
+          "contributed": [
+            "30.1"
+          ],
+          "cell": "S2-2506105_SA2-170-Session Plan - r8.zip|plan|2025-08-29|14:00-15:30|r13|main",
+          "introducedAt": null
+        }
+      ],
+      "derivation": "ran3-grid"
+    }
+  ],
+  "conflicts": [],
+  "ingest": {
+    "state": "ok",
+    "lastSuccessfulAt": "2026-11-23T18:36:01Z",
+    "lastAttemptAt": "2026-11-23T18:36:01Z"
+  }
+}

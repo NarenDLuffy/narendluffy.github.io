@@ -39,5 +39,6 @@
 - [x] "Only if changed" requests + shared download cache for ingestion (jobs already scan by meeting phase)
 - [x] RAN Plenary schedule reader (Main + Breakout lanes, breaks, meetings during breaks; RAN#113 built)
 - [x] RAN4 schedule slides reader (RAN4#119–#121 built; topic list links agenda items and Drafts folders)
-- [ ] SA2 (Session Plan), SA1 (chair agenda) readers
+- [x] SA2 session plan reader (SA2#167–#178 built)
+- [ ] SA1 (chair agenda) reader
 - [x] Drafts Activity view (threads, versions, Summary #N milestones)

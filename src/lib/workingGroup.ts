@@ -2,10 +2,10 @@ import { useSyncExternalStore } from "react";
 import type { Meeting, WorkingGroup } from "@/types/meeting";
 
 /**
- * The working group the user follows (RAN Plenary, RAN1–RAN4). Every page reads the
+ * The working group the user follows (RAN Plenary, RAN1–RAN4, SA2). Every page reads the
  * meetings of the chosen group only; the choice is remembered per device.
  */
-export const WORKING_GROUPS: WorkingGroup[] = ["RAN", "RAN1", "RAN2", "RAN3", "RAN4"];
+export const WORKING_GROUPS: WorkingGroup[] = ["RAN", "RAN1", "RAN2", "RAN3", "RAN4", "SA2"];
 
 /** Display name: the plenary reads better spelled out. */
 export function groupLabel(group: WorkingGroup): string {
@@ -21,6 +21,7 @@ export function groupOfMeeting(meeting: Pick<Meeting, "slug" | "workingGroup"> |
   if (slug.startsWith("ran2-")) return "RAN2";
   if (slug.startsWith("ran3-")) return "RAN3";
   if (slug.startsWith("ran4-")) return "RAN4";
+  if (slug.startsWith("sa2-")) return "SA2";
   if (slug.startsWith("ran-")) return "RAN";
   return "RAN1";
 }
@@ -29,7 +30,7 @@ export function getWorkingGroup(): WorkingGroup {
   if (typeof window === "undefined") return "RAN1";
   try {
     const v = window.localStorage.getItem(KEY);
-    return v === "RAN" || v === "RAN2" || v === "RAN3" || v === "RAN4" ? v : "RAN1";
+    return v === "RAN" || v === "RAN2" || v === "RAN3" || v === "RAN4" || v === "SA2" ? v : "RAN1";
   } catch {
     return "RAN1";
   }
