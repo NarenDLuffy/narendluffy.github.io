@@ -1,61 +1,50 @@
-# Reduce load on 3GPP servers and on the app
+# Lighter on 3GPP, ready for many users, plus RAN4, SA1, SA2 and a drafts discussion graph
 
-## Goal
-Load on 3GPP and on our backend should stay the same whether 5 or 500 delegates use the app. Every number shown should stay as fresh as it is today, or within 1–2 minutes of it.
+## What his project shows (karlla1220/3GPPSchedule)
+- He supports RAN1–4, SA1, SA2 and RAN Plenary. He has no SA3–6 and no CT.
+- **Each group publishes its schedule differently:**
+  - **RAN4:** a PowerPoint (PPTX) with one slide per day. Rooms run across, times run down, and orange cells are breaks. A topic list in Excel and the agenda list (agenda.csv) sit next to it.
+  - **SA1:** Word chair agendas such as "Agenda for SA1#115_Thursday_1030". The newest one is picked by the day and time in its name. Sometimes a separate "schedule" Word file takes over the timetable.
+  - **SA2:** a Word "Session Plan – rN", sometimes zipped, found in Inbox/Drafts/_Session_Plan_Updates. It is a grid of quarters (Q0–Q5) × rooms per day.
+- **How he keeps load low:**
+  - He keeps a saved cache of every file and asks 3GPP "send it only if it changed".
+  - Each folder listing is read once per run.
+  - Builds run about every 20 minutes, and two builds never run at once.
+- **The drafts picture (specDuck):** it is a timeline per agenda item. Each line is a discussion thread (Part 1–4, template, draft LS). Each dot is an upload, labelled with its version and company. Purple bars mark the moderator's numbered summaries (R1-26xxxxx).
+- He shows no software license. I'll rebuild these readers in our own code from the public 3GPP folders, rather than copying his files. It's still worth asking him for permission or a license if you want to borrow more.
 
-## What causes load today
-- **Drafts page:** every open copy rescans about 200 folder pages on 3GPP once a minute, even in the background. Its 30-second memory isn't shared between users.
-- **Room presence:** every open app asks our backend every 20 seconds.
-- **Backup alerts:** every open app asks every 15 seconds.
-- **Schedule and Drafts snapshots:** re-downloaded every 5 minutes. Meeting info every 15.
-- **Background jobs:** Drafts every 5 minutes on weekdays, Schedule every 5 minutes plus the watcher. This is fine, but it runs at full speed in weeks with no meeting.
+## Part A — Reduce load (do this first)
+1. **One shared Drafts scan for everyone.**
+   - A backend job scans each group's live Drafts tree and saves the result.
+   - It runs every 2 minutes on meeting days, every 15 minutes around the meeting, and hourly otherwise. Groups without a meeting are skipped.
+   - Phones read only the saved copy. If it is stale, a single refresh runs behind a lock.
+2. **"Only if changed" requests.** Ask 3GPP to send a folder or file only when it has changed, like he does. Recheck busy Inbox and Round folders every time, quiet ones less often, and pause briefly between batches.
+3. **Hidden tabs do nothing.** No refreshing in the background or with the screen off; refresh once when the user returns.
+4. **Room presence and backup alerts are pushed** instead of every phone asking every 15–20 seconds. A slow 2-minute check stays as a backup.
+5. **Background jobs follow the meeting calendar.** Full speed only during the meeting window, slow otherwise. Downloaded files are cached between runs (the Schedule job already does this for Word files; extend it to every file).
+6. **Shared caching on data files** (about 60 seconds), so many users share one download.
 
-## Changes
+## Part B — New working groups
+For each group: add it to the group switch, schedule reader, agenda, rooms, Drafts root and health checks. RAN1–3 stay untouched. Same rules as today: never invent times, and block the publish on overlaps or gaps.
+- **RAN4:** PPTX slide reader (built-in zip/XML reading, no extra library). Orange cells = breaks, struck-through text skipped. The newest file is chosen by the revision number inside the file, then the file's date. The Excel topic list and agenda.csv give the agenda codes and titles.
+- **SA1:** Word agenda reader. Find the table whose first row has 3 or more weekdays. Rows without a written time take the gap between their neighbours. Rooms come from "MEETING ROOMS" and in-cell labels. Newest file by day and time in its name; a "schedule" Word file wins when present. Unpack zipped agendas.
+- **SA2:** Session Plan reader for the Q0–Q5 × room grid, half-day columns, merged cells and accepted tracked changes. Newest file is the highest "rN", zipped files are unpacked. Agenda from agenda.csv.
+- **Drafts for these groups:** use each group's Inbox/Drafts tree through the shared scan from Part A. Folders are linked to agenda items by their leading number, and unmatched ones are shown under "Other".
+- **Later:** RAN Plenary, SA3–6 and CT, once we've looked at where each publishes its schedule.
 
-### 1. One shared Drafts scan for everyone (biggest win)
-- A backend job scans the live Drafts tree once for each working group and saves the result in the database.
-- It runs every 2 minutes on meeting days, every 15 minutes in the 3 days before and after, and every hour otherwise.
-- It only scans groups that have a meeting in that window.
-- Phones only read that saved result. They never scan 3GPP themselves.
-- If the saved result is more than 2 minutes old, one user's visit can trigger a single new scan. A lock makes sure two scans never run at once.
+## Part C — Drafts discussion graph (like the picture)
+- On each agenda item's Drafts page, add a "Discussion graph" view next to the current list.
+- One coloured line per thread, grouped from file names (FL summary Part N, template, draft LS, company uploads).
+- Each dot is an upload with its version and company, newest on top. The moderator's numbered summaries show as bars.
+- Filters: All drafts, FL summary only, Company uploads.
+- Built entirely from the saved scan, so it adds no load on 3GPP.
 
-### 2. Gentler scanning
-- Ask 3GPP for a folder only if it changed, where the server supports that. Unchanged folders cost almost nothing.
-- Recheck busy folders (the latest Inbox and Round folders) every time. Recheck quiet ones every 4th time.
-- Keep the 240-page limit and 6 parallel requests, and add a short pause between batches.
-
-### 3. Phones stop working when nobody is looking
-- Pause all refreshes when the tab is hidden or the screen is off. Refresh once when the user comes back.
-- New Drafts refresh: every 60 seconds while the page is open, reading only our saved copy.
-- Schedule: every 5 minutes on meeting days, 30 minutes otherwise.
-
-### 4. Room presence and backup alerts: push instead of asking
-- Use live updates from the backend for check-ins and alerts, so phones stop asking every 15–20 seconds.
-- Keep a slow fallback check (every 2 minutes) only if the live connection drops.
-
-### 5. Background jobs follow the meeting calendar
-- Drafts and Schedule jobs run at full speed only during the meeting window (the week, plus a day on each side). Outside it they run hourly or a few times a day.
-- The schedule watcher keeps its 5-minute check, which only matters in meeting week.
-- The Drafts GitHub job stops scanning live folders that the shared scan already covers. It only writes the daily saved snapshot.
-
-### 6. Faster, cheaper data files
-- Serve schedule and drafts files with short shared caching (about 60 seconds), so many users share one download.
-
-## Expected effect
-```text
-                        today (30 users)        after (any number of users)
-3GPP Drafts pages/min   up to ~6,000            ~100 (one scan per 2 min, mostly "unchanged")
-Backend presence calls  ~150/min                near zero (live updates)
-Hidden/background tabs  full load               nothing
-```
+## Order
+A (load) → B: RAN4 → SA2 → SA1 → C (graph). Each step is tested against a real past meeting's files before going live.
 
 ## Technical details
-- New table `drafts_live_scan` (group, meeting slug, result JSON, scanned_at, lock_until). Public read access, written only by the server.
-- New `/api/public/jobs/drafts-scan` route on a managed schedule (every 2 minutes). The handler checks `meetingPhase` and does nothing when the group is out of its window. It reuses `crawlSync` and `walkListing`.
-- `loadDraftsLive` reads the table, with a stale-triggered refresh behind the lock. Drop `refetchIntervalInBackground`.
-- Conditional requests use `If-Modified-Since`/ETag, kept per folder in the scan record. Fall back to a full read when the server ignores them.
-- Presence and alerts move to the realtime doorbell pattern, replacing `setInterval` polling in `useCompanyPresence` and `useCompanyAlerts`.
-- Pause refreshes with React Query's `refetchIntervalInBackground: false` plus a `visibilitychange` guard on the custom intervals.
-- Slow the GitHub cron schedules outside meeting windows using phase checks at job start. The cron entries themselves stay put so they can't drift.
-- Add tests: phase-based scan interval, lock prevents double scan, hidden tab does not poll.
-- Venue server (10.10.10.10) is untouched: it stays switched off.
+- Table `drafts_live_scan` (group, meeting, result JSON, validators per folder, scanned_at, lock_until). Public read access, written only by the server. `/api/public/jobs/drafts-scan` runs on a managed 2-minute schedule and checks the meeting phase.
+- Conditional requests use ETag/Last-Modified stored per URL. Ingestion gets a shared `ingestion/http_cache.py` (on-disk bytes + validators + SHA check), saved by actions/cache between runs.
+- New `ingestion/groups.py` entries. New files `ran4_schedule.py` (PPTX via zipfile + lxml), `sa1_schedule.py`, `sa2_schedule.py`, and a shared `agenda_csv.py`. Tests use real cells from past meetings.
+- Graph: a thread classifier in `src/lib/draftThreads.ts`, which parses names like "FL summary #1 (Part3) … v2 vivo" and "R1-26xxxxx". The graph is drawn with SVG and needs no new library.
+- Presence and alerts move to realtime doorbell events, replacing the setInterval polling.
