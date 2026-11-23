@@ -157,11 +157,11 @@ export function draftsQueryOptions(meeting?: Meeting, snapshot?: DraftResult) {
     queryFn: () =>
       meeting ? loadDraftsLive(meeting, snapshot) : Promise.resolve({ index: null, stale: false }),
     enabled: Boolean(meeting),
-    // Draft folders churn constantly during a session: check often, and keep
-    // checking while the tab is in the background.
-    staleTime: 20_000,
-    refetchInterval: 60_000,
-    refetchIntervalInBackground: true,
+    // Reads the server's shared scan (one 3GPP crawl per ~90 s for everyone);
+    // hidden tabs and locked screens never refresh.
+    staleTime: 60_000,
+    refetchInterval: 90_000,
+    refetchIntervalInBackground: false,
     refetchOnWindowFocus: true,
   });
 }

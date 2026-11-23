@@ -89,6 +89,27 @@ export type Database = {
         }
         Relationships: []
       }
+      drafts_crawl_cache: {
+        Row: {
+          lock_until: string
+          result: Json | null
+          root: string
+          scanned_at: string | null
+        }
+        Insert: {
+          lock_until?: string
+          result?: Json | null
+          root: string
+          scanned_at?: string | null
+        }
+        Update: {
+          lock_until?: string
+          result?: Json | null
+          root?: string
+          scanned_at?: string | null
+        }
+        Relationships: []
+      }
       meeting_settings: {
         Row: {
           meeting_id: string
@@ -142,7 +163,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      claim_drafts_crawl: {
+        Args: { _lock_seconds: number; _root: string }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never

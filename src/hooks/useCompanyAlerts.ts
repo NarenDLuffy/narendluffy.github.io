@@ -40,7 +40,9 @@ export function useCompanyAlerts(meetingId: string | undefined) {
   useEffect(() => {
     setDismissed(readDismissed());
     void refresh();
-    const poll = setInterval(() => void refresh(), 15_000);
+    const poll = setInterval(() => {
+      if (document.visibilityState === "visible") void refresh();
+    }, 20_000);
     const tick = setInterval(() => setNow(Date.now()), 30_000);
     const onVisible = () => {
       if (document.visibilityState === "visible") void refresh();

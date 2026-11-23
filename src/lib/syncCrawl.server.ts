@@ -56,10 +56,55 @@ export function isAllowedSyncUrl(url: string): boolean {
   return !url.includes("..") && SYNC_ROOT_PREFIXES.some((p) => url.startsWith(p));
 }
 
+/** One shared scan per tree for every user: reuse a saved result this fresh. */
+export const SHARED_FRESH_MS = 90_000;
+const LOCK_SECONDS = 60;
+
+type Admin = (typeof import("@/integrations/supabase/client.server"))["supabaseAdmin"];
+
+async function sharedRead(admin: Admin, root: string) {
+  const { data } = await admin
+    .from("drafts_crawl_cache")
+    .select("result, scanned_at")
+    .eq("root", root)
+    .maybeSingle();
+  if (!data?.result || !data.scanned_at) return null;
+  return { result: data.result as unknown as CrawlResult, at: Date.parse(data.scanned_at) };
+}
+
+/**
+ * Crawl one sync tree, shared across all users and server instances: a saved
+ * scan younger than SHARED_FRESH_MS is served as-is, and only the caller that
+ * wins the database lock actually reads 3GPP — so load stays one scan per
+ * ~90 s per tree no matter how many delegates have Drafts open.
+ */
 export async function crawlSync(url: string): Promise<CrawlResult | null> {
   const root = url.replace(/\/?$/, "/");
   const hit = cache.get(root);
   if (hit && Date.now() - hit.at < CACHE_TTL_MS) return hit.result;
+
+  let admin: Admin | null = null;
+  try {
+    admin = (await import("@/integrations/supabase/client.server")).supabaseAdmin;
+  } catch {
+    admin = null;
+  }
+  if (admin) {
+    try {
+      const saved = await sharedRead(admin, root);
+      if (saved && Date.now() - saved.at < SHARED_FRESH_MS) {
+        cache.set(root, { at: saved.at, result: saved.result });
+        return saved.result;
+      }
+      const { data: claimed } = await admin.rpc("claim_drafts_crawl", {
+        _root: root,
+        _lock_seconds: LOCK_SECONDS,
+      });
+      if (!claimed) return saved?.result ?? null; // someone else is scanning
+    } catch {
+      /* shared cache unavailable: fall through to a direct scan */
+    }
+  }
 
   const result = await walkListing(root, fetchText, {
     maxDepth: MAX_DEPTH,
@@ -67,5 +112,17 @@ export async function crawlSync(url: string): Promise<CrawlResult | null> {
   });
   if (!result) return null;
   cache.set(root, { at: Date.now(), result });
+  if (admin) {
+    try {
+      await admin.from("drafts_crawl_cache").upsert({
+        root,
+        result: result as never,
+        scanned_at: new Date().toISOString(),
+        lock_until: new Date(0).toISOString(),
+      });
+    } catch {
+      /* best effort */
+    }
+  }
   return result;
 }

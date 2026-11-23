@@ -51,7 +51,9 @@ export function useCompanyPresence(meetingId: string | undefined) {
 
   useEffect(() => {
     void refresh();
-    const id = setInterval(() => void refresh(), 20_000);
+    const id = setInterval(() => {
+      if (document.visibilityState === "visible") void refresh();
+    }, 30_000);
     const onVisible = () => {
       if (document.visibilityState === "visible") void refresh();
     };

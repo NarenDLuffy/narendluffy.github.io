@@ -48,9 +48,21 @@ function HelpPage() {
       </header>
 
       <div className="grid gap-3 md:grid-cols-2">
+        <Section title="Light on the 3GPP servers">
+          <p>
+            Live Drafts folders are scanned once for everyone (about every 90 seconds) and shared,
+            so more users do not mean more requests to 3GPP. Hidden tabs and locked phones do not
+            refresh. Thanks to Karl (karlla1220) and his{" "}
+            <a href="https://github.com/karlla1220/3GPPSchedule" target="_blank" rel="noreferrer" className="underline">
+              3GPPSchedule
+            </a>{" "}
+            project for ideas used here.
+          </p>
+        </Section>
         <Section title="Choose RAN1, RAN2 or RAN3">
           <p>
-            Use the <strong>RAN1 | RAN2 | RAN3</strong> switch at the top of any page. The whole app
+            Use the <strong>working group dropdown</strong> (e.g. "RAN1 ▾") at the top of any page.
+            RAN Plenary, RAN4, SA1 and SA2 are listed as coming soon. The whole app
             follows your choice, and your device remembers it.
           </p>
           <ul className="list-disc space-y-1 pl-4">

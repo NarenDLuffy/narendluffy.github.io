@@ -200,6 +200,7 @@ function NowPage() {
       >
         Open full timetable <ArrowRight className="size-4" />
       </Link>
+
     </div>
   );
 }

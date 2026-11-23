@@ -1,35 +1,41 @@
 import { setSelectedMeetingId } from "@/services/meetingSelection";
 import { WORKING_GROUPS, setWorkingGroup, useWorkingGroup } from "@/lib/workingGroup";
-import { cn } from "@/lib/utils";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
+import type { WorkingGroup } from "@/types/meeting";
 
-/** RAN1 / RAN2 / RAN3 switch: the whole app follows the chosen working group. */
+/** Groups on the roadmap; listed so delegates see what is coming, not selectable yet. */
+const COMING_SOON = ["RAN Plenary", "RAN4", "SA1", "SA2"];
+
+/** Working-group dropdown: the whole app follows the chosen group. */
 export function WorkingGroupSwitch() {
   const group = useWorkingGroup();
   return (
-    <div
-      role="radiogroup"
-      aria-label="Working group"
-      className="mono-code flex shrink-0 rounded-md border border-border p-0.5 text-xs font-semibold"
+    <Select
+      value={group}
+      onValueChange={(g) => {
+        if (g === group) return;
+        setSelectedMeetingId("");
+        setWorkingGroup(g as WorkingGroup);
+      }}
     >
-      {WORKING_GROUPS.map((g) => (
-        <button
-          key={g}
-          type="button"
-          role="radio"
-          aria-checked={group === g}
-          onClick={() => {
-            if (g === group) return;
-            setSelectedMeetingId("");
-            setWorkingGroup(g);
-          }}
-          className={cn(
-            "rounded px-2 py-1 transition-colors",
-            group === g ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground",
-          )}
-        >
-          {g}
-        </button>
-      ))}
-    </div>
+      <SelectTrigger aria-label="Working group" className="mono-code h-8 w-[92px] shrink-0 text-xs font-semibold">
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent>
+        {WORKING_GROUPS.map((g) => (
+          <SelectItem key={g} value={g} className="mono-code text-xs">
+            {g}
+          </SelectItem>
+        ))}
+        <SelectGroup>
+          <SelectLabel className="text-xs text-muted-foreground">Coming soon</SelectLabel>
+          {COMING_SOON.map((g) => (
+            <SelectItem key={g} value={`soon:${g}`} disabled className="mono-code text-xs">
+              {g}
+            </SelectItem>
+          ))}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
   );
 }

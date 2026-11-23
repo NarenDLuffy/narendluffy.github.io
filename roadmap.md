@@ -29,3 +29,14 @@
 
 - [x] RAN1/RAN2 working-group switch: schedule, Now, agenda, rooms, Drafts (Inbox/Drafts), watcher
 - [x] App description and How to Use explain RAN1 and RAN2 support
+
+## Load reduction + new groups (approved plan)
+- [x] Shared Drafts scan for everyone (one 3GPP crawl per tree per ~90 s, database lock)
+- [x] Hidden tabs/locked phones stop refreshing Drafts, presence and alerts; slower polling
+- [x] Working-group dropdown (new groups listed as coming soon)
+- [x] Credit to Karl (karlla1220) on home page and Help
+- [ ] Presence/alerts pushed live instead of polled
+- [ ] "Only if changed" requests + shared download cache for ingestion; jobs slow outside meeting window
+- [ ] RAN Plenary schedule reader (time plan DOCX, text-colour rooms, shared blocks)
+- [ ] RAN4 (PPTX), SA2 (Session Plan), SA1 (chair agenda) readers
+- [ ] Drafts Activity view (threads, versions, Summary #N milestones)
